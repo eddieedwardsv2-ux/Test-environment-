@@ -4,7 +4,7 @@
 
 | # | Video | Views | Length | Transcript |
 |---|---|---|---|---|
-| 1 | [I Built Another Andrej Karpathy Using Claude](https://www.youtube.com/watch?v=bvGptCLDhyo) | 58,000 | 10:45 | – |
+| 1 | [I Built Another Andrej Karpathy Using Claude](https://www.youtube.com/watch?v=bvGptCLDhyo) | 58,000 | 10:45 | ✅ [transcript](bvGptCLDhyo-transcript.md) |
 | 2 | [Master 96% of Codex in under 35 minutes](https://www.youtube.com/watch?v=DFlELTiSPk8) | 56,000 | 34:34 | – |
 | 3 | [Claude Code Mods Are Game Changers. Set Up These 5 NOW.](https://www.youtube.com/watch?v=9hetShMMp2s) | 188,000 | 11:19 | – |
 | 4 | [How to Actually Build & Sell Software with AI as a Non-Techie](https://www.youtube.com/watch?v=l8ywUsEJ2XQ) | – | 1h09 | – |
@@ -19,7 +19,7 @@
 | 13 | [I Tested Opus 5.5 vs. GPT-6 Sol on 10 Real Use Cases](https://www.youtube.com/watch?v=eF3yeJuifoQ) | 201,000 | 34:21 | – |
 | 14 | [Build & Sell with Codex (5+ Hour Course)](https://www.youtube.com/watch?v=X-pbJWKmwi0) | 96,000 | 5h10 | – |
 | 15 | [I Tested Jev on 12 Real Use Cases. My Honest Thoughts.](https://www.youtube.com/watch?v=ymgH8jS6Wb8) | 360,000 | 16:08 | – |
-| 16 | ★ [How to Build Codex Skills Better than 99% of People](https://www.youtube.com/watch?v=9KOtMsZ9I28) | 48,000 | 27:05 | – |
+| 16 | ★ [How to Build Codex Skills Better than 99% of People](https://www.youtube.com/watch?v=9KOtMsZ9I28) | 48,000 | 27:05 | ✅ [transcript](9KOtMsZ9I28-transcript.md) |
 | 17 | [Anthropic’s CEO: How to Build a 1 Person Business with Claude](https://www.youtube.com/watch?v=QDsenEcAJIk) | 171,000 | 11:40 | – |
 | 18 | [This ONE GPT-6 Astra Skill Replaces Your Higgsfield Subscription](https://www.youtube.com/watch?v=oWCcN6hSFjA) | 118,000 | 12:01 | – |
 | 19 | [How to Build GPT-6 Astra Automations (that don’t eat your usage limit)](https://www.youtube.com/watch?v=FqnNL8fnUWo) | 70,000 | 35:26 | – |
@@ -57,7 +57,7 @@
 | 51 | [How to Sell Claude Workflows (Without Starting an Agency)](https://www.youtube.com/watch?v=zpS6JGJNaGg) | 39,000 | 8:05 | – |
 | 52 | [I Made Codex and Claude Code Build the Same App. One Clearly Won.](https://www.youtube.com/watch?v=WCrnS09vpfo) | 192,000 | 21:14 | – |
 | 53 | [Codex's Browser Agent Automates Literally Anything](https://www.youtube.com/watch?v=CB5bG4mvnS0) | 64,000 | 16:28 | – |
-| 54 | ★ [I Deleted All My Claude Skills... And Claude Got Smarter](https://www.youtube.com/watch?v=XNQBCRcwXV4) | 127,000 | 11:56 | – |
+| 54 | ★ [I Deleted All My Claude Skills... And Claude Got Smarter](https://www.youtube.com/watch?v=XNQBCRcwXV4) | 127,000 | 11:56 | ✅ [transcript](XNQBCRcwXV4-transcript.md) |
 | 55 | [Grok Bot is For Real. What You Need to Know.](https://www.youtube.com/watch?v=PQBYZQqan2g) | 120,000 | 20:32 | – |
 | 56 | [How to Build a One Person AI Business (Using Claude Code)](https://www.youtube.com/watch?v=LVAHYV4Xrto) | 135,000 | 24:52 | – |
 | 57 | [Build & Sell AI SaaS Products (2 HOUR COURSE)](https://www.youtube.com/watch?v=IVx8OSMbTss) | 99,000 | 2h22 | – |
@@ -65,7 +65,7 @@
 | 59 | [18 Months of Pricing AI Automations in 21 Mins](https://www.youtube.com/watch?v=Lg5TYWPSg6M) | 29,000 | 21:20 | – |
 | 60 | [This AI Technology Will Replace Millions (Here's How to Prepare)](https://www.youtube.com/watch?v=Ums8suyAG1A) | 68,000 | 14:03 | – |
 | 61 | [I Tested Opus 5 vs. Fable 5. What You Need to Know.](https://www.youtube.com/watch?v=2J3uX8iRNng) | 97,000 | 30:53 | – |
-| 62 | [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) | 56,000 | 25:04 | – |
+| 62 | [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) | 56,000 | 25:04 | ✅ [transcript](Ek1NBfnnTH0-transcript.md) |
 | 63 | [How I’d Make Money with Claude if my life depended on it](https://www.youtube.com/watch?v=vY0EzTP-7EA) | 207,000 | 9:19 | – |
 | 64 | [Why Your AI Offer Isn't Selling, and How to Fix That](https://www.youtube.com/watch?v=8MEJen0nblQ) | 42,000 | 55:41 | – |
 | 65 | [The $200K AI Job That Didn't Exist Last Year](https://www.youtube.com/watch?v=eFOTQpbGcy8) | 104,000 | 10:15 | – |
@@ -86,12 +86,12 @@
 | 80 | [Finally. Agent Loops Clearly Explained.](https://www.youtube.com/watch?v=EuzYhzB0vbI) | 160,000 | 14:34 | – |
 | 81 | [GLM 5.2 in Claude Code is Blowing My Mind](https://www.youtube.com/watch?v=2OD14-0cot4) | 176,000 | 15:43 | – |
 | 82 | [How to Use Claude Code Better Than 98% of People](https://www.youtube.com/watch?v=RzLV8sfFdMM) | – | 1h08 | – |
-| 83 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 280,000 | 31:00 | – |
+| 83 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 280,000 | 31:00 | ✅ [transcript](DTCyvo6cC54-transcript.md) |
 | 84 | [We Might Actually Need to Stop AI](https://www.youtube.com/watch?v=CvA8-aScqio) | 40,000 | 12:28 | – |
 | 85 | [Learn These 6 AI Skills Now (Before Everyone Else Does)](https://www.youtube.com/watch?v=3XIGcM7VICc) | 137,000 | 20:15 | – |
 | 86 | [Claude Fable 5 Made This Entire Video By Itself.](https://www.youtube.com/watch?v=ONmaDdOBGig) | 155,000 | 5:47 | – |
 | 87 | [From Zero to Head of AI in 1 Year (as a regular person)](https://www.youtube.com/watch?v=diY71x7GUjI) | 25,000 | 41:50 | – |
-| 88 | ★ [I Turned Claude Into the Ultimate Second Brain](https://www.youtube.com/watch?v=8QQ_INxAhRs) | 379,000 | 34:21 | – |
+| 88 | ★ [I Turned Claude Into the Ultimate Second Brain](https://www.youtube.com/watch?v=8QQ_INxAhRs) | 379,000 | 34:21 | ✅ [transcript](8QQ_INxAhRs-transcript.md) |
 | 89 | [Claude Mythos is Finally Here.](https://www.youtube.com/watch?v=dYrrEKXtttk) | 101,000 | 8:41 | – |
 | 90 | [How to Build Claude Subagents Better Than 99% of People](https://www.youtube.com/watch?v=e18sdZLwP7o) | 88,000 | 26:42 | – |
 | 91 | [Is Claude Mythos Coming?](https://www.youtube.com/watch?v=lkR6mvqQQlk) | 37,000 | 12:25 | – |
@@ -100,7 +100,7 @@
 | 94 | [I Tested Every Claude Code Feature, These 12 Are the Best](https://www.youtube.com/watch?v=vfWTyEreOEc) | 118,000 | 20:15 | – |
 | 95 | [100 Years of Artificial Intelligence Explained](https://www.youtube.com/watch?v=NHFbAg2b54U) | 16,000 | 17:22 | – |
 | 96 | [Claude Code Dynamic Workflows Clearly Explained](https://www.youtube.com/watch?v=jZgcWCzxh1I) | 120,000 | 16:32 | – |
-| 97 | ★ [I Turned Claude Opus 4.8 Into My Entire AI Operating System](https://www.youtube.com/watch?v=0WDkwMxj13s) | 165,000 | 28:57 | – |
+| 97 | ★ [I Turned Claude Opus 4.8 Into My Entire AI Operating System](https://www.youtube.com/watch?v=0WDkwMxj13s) | 165,000 | 28:57 | ✅ [transcript](0WDkwMxj13s-transcript.md) |
 | 98 | [Opus 4.8 Just Dropped. Here's How To Actually Use It.](https://www.youtube.com/watch?v=q5lg3npxjAc) | 167,000 | 13:44 | – |
 | 99 | [100 Hours Testing Claude Code vs ChatGPT Codex (honest results)](https://www.youtube.com/watch?v=RLjaUES9P8A) | 150,000 | 26:34 | – |
 | 100 | [The Playbook for a $100M AI Agency](https://www.youtube.com/watch?v=8ktcSaSTvxk) | 45,000 | 1h44 | – |

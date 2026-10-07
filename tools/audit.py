@@ -36,8 +36,9 @@ for md in ROOT.glob("**/*.md"):
             err(f"{md.relative_to(ROOT)}: broken link -> {link}")
 for readme in (ROOT / "research").glob("*/README.md"):
     folder, text = readme.parent, readme.read_text()
+    marks_text = text + ((folder / "videos.md").read_text() if (folder / "videos.md").exists() else "")
     files = list(folder.glob("*-transcript.md"))
-    marks = re.findall(r"✅ \[transcript\]\(([^)]+)\)", text)
+    marks = set(re.findall(r"✅ \[transcript\]\(([^)]+)\)", marks_text))
     m = re.search(r"\*\*(\d+) transcribed\*\*", text)
     if m and int(m.group(1)) != len(files):
         err(f"{readme.relative_to(ROOT)} says {m.group(1)} transcribed, folder has {len(files)}")

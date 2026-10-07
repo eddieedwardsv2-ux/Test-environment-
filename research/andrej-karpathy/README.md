@@ -3,7 +3,7 @@
 Channel: https://www.youtube.com/channel/UCXUPKJO5MZQN11PqgIvyuvQ (X: @karpathy, 486 posts saved in [x-posts.md](x-posts.md))
 Focus: how LLMs work and how to use them; famous for teaching by building from scratch.
 
-Coverage: **17 videos listed** (2026-10-07, newest first), **0 transcribed**.
+Coverage: **17 videos listed** (2026-10-07, newest first), **4 transcribed**.
 Why Charlie wants him: teaching style and engineering rigour ("prove it, don't claim it"), for safer AI working practices.
 Also queued: his Sequoia talk "From Vibe Coding to Agentic Engineering" (https://www.youtube.com/watch?v=96jN2OCOfLs), on Sequoia's channel.
 
@@ -11,11 +11,12 @@ Also queued: his Sequoia talk "From Vibe Coding to Agentic Engineering" (https:/
 
 | # | Video | Views | Length | Transcript |
 |---|---|---|---|---|
-| 1 | ★ [How I use LLMs](https://www.youtube.com/watch?v=EWvNQjAaOHw) | 2,700,000 | 2h11 | – |
-| 2 | ★ [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) | 9,800,000 | 3h31 | – |
+| S | [From Vibe Coding to Agentic Engineering (Sequoia talk, not on his channel)](https://www.youtube.com/watch?v=96jN2OCOfLs) | – | ✅ [transcript](96jN2OCOfLs-transcript.md) | ✅ [transcript](96jN2OCOfLs-transcript.md) |
+| 1 | ★ [How I use LLMs](https://www.youtube.com/watch?v=EWvNQjAaOHw) | 2,700,000 | 2h11 | ✅ [transcript](EWvNQjAaOHw-transcript.md) |
+| 2 | ★ [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) | 9,800,000 | 3h31 | ✅ [transcript](7xTGNNLPyMI-transcript.md) |
 | 3 | [Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU) | 1,100,000 | 4h01 | – |
 | 4 | [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) | 1,200,000 | 2h13 | – |
-| 5 | ★ [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) | 4,100,000 | 59:48 | – |
+| 5 | ★ [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) | 4,100,000 | 59:48 | ✅ [transcript](zjkBMFhNj_g-transcript.md) |
 | 6 | [Let's build GPT: from scratch, in code, spelled out.](https://www.youtube.com/watch?v=kCc8FmEb1nY) | 8,000,000 | 1h56 | – |
 | 7 | [Building makemore Part 5: Building a WaveNet](https://www.youtube.com/watch?v=t3YJ5hKiMQ0) | 299,000 | 56:22 | – |
 | 8 | [Building makemore Part 4: Becoming a Backprop Ninja](https://www.youtube.com/watch?v=q8SA3rM6ckI) | 382,000 | 1h55 | – |

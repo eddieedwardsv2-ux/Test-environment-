@@ -47,7 +47,7 @@ Most relevant to Charlie: *Hermes: your video clipping machine* (clipper idea).
 | 35 | [Free Grok Bot and all of this week’s news](https://www.youtube.com/watch?v=PdM8YNuLEgc) | – | 11:36 | – |
 | 36 | [He earns $5k building agents](https://www.youtube.com/watch?v=FIhj0yb9KPI) | 105,000 | 28:26 | – |
 | 37 | [10 Github Repos That Solve Your Token Problems](https://www.youtube.com/watch?v=BKAPj1OJ-t4) | 17,000 | 13:57 | – |
-| 38 | [Matt Pocock Built the Skills Repo Every AI Coder Is Using](https://www.youtube.com/watch?v=LMpMmOWTtVk) | – | 29:45 | ✅ [transcript](LMpMmOWTtVk-transcript.md) |
+| 38 | [Matt Pocock Built the Skills Repo Every AI Coder Is Using](https://www.youtube.com/watch?v=LMpMmOWTtVk) | ✅ [transcript](LMpMmOWTtVk-transcript.md) | 29:45 | ✅ [transcript](LMpMmOWTtVk-transcript.md) |
 | 39 | [SpaceX launched the easy ai agent](https://www.youtube.com/watch?v=rznGK-txQyU) | – | 28:34 | – |
 | 40 | [Explaining The Week’s Top 10 Repos](https://www.youtube.com/watch?v=TlTUwzzJ_WE) | 32,000 | 29:42 | – |
 | 41 | [Apple should have built this](https://www.youtube.com/watch?v=_WXIpV5YJAU) | 10,000 | 15:39 | – |
@@ -106,7 +106,7 @@ Most relevant to Charlie: *Hermes: your video clipping machine* (clipper idea).
 | 94 | [Did Claude just beat Codex? (Opus 4.8 analysis)](https://www.youtube.com/watch?v=V_g3rlQ0st8) | – | 20:29 | – |
 | 95 | [Free ChatGPT, Claude, AI Notetaker, and more](https://www.youtube.com/watch?v=psZrQ7xGGaQ) | 27,000 | 30:14 | – |
 | 96 | [Founders react: real Hermes use](https://www.youtube.com/watch?v=IZ9muG8XdLQ) | 27,000 | 38:45 | – |
-| 97 | [I Built an AI Employee With Claude & Obsidian](https://www.youtube.com/watch?v=ty49TiLlKPM) | – | 11:49 | ✅ [transcript](ty49TiLlKPM-transcript.md) |
+| 97 | [I Built an AI Employee With Claude & Obsidian](https://www.youtube.com/watch?v=ty49TiLlKPM) | ✅ [transcript](ty49TiLlKPM-transcript.md) | 11:49 | ✅ [transcript](ty49TiLlKPM-transcript.md) |
 | 98 | [Anthropic beats OpenAI? + 5 AI Stories You Missed](https://www.youtube.com/watch?v=jWT8ZZC5wRI) | – | 22:41 | – |
 | 99 | [How to have Hermes run your business](https://www.youtube.com/watch?v=T4gibRVtt-I) | 6,500 | 20:47 | – |
 | 100 | [Free Claude Code + 9 other apps](https://www.youtube.com/watch?v=uizJfkoKgyU) | 15,000 | 27:42 | – |

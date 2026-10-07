@@ -54,6 +54,7 @@ jobs:
         run: |
           [ -d fetched ] && cp -rn fetched/. research/ || true
           python3 research/process_queue.py --cleanup
+          python3 tools/update_coverage.py
           git config user.name "transcripts-bot"
           git config user.email "actions@users.noreply.github.com"
           git add research
