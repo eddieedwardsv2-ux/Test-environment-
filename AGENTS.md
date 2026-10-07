@@ -56,6 +56,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md` |
 | Nick Saraev's view on a plan or question | the `nick-brain` agent; its knowledge is in `research/nick-saraev/brain/` |
 | Add new sources to a creator brain | the `brain-ingest` skill |
+| Make ChatGPT work the same way | `exports/chatgpt-instructions.md` (paste into custom instructions); keep in step with `context/working-rules.md` |
 | Research a new creator end to end | the `research-creator` skill (`.claude/skills/research-creator/`) |
 | Fetch a YouTube transcript | `python3 research/get_transcript.py <creator> <url>`; if rate-limited, add to `research/transcript-queue.txt` (GitHub fetches hourly) |
 | Fetch a creator's X posts | `python3 research/get_x_posts.py <creator> <handle>` |

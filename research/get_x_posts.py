@@ -62,7 +62,8 @@ if __name__ == "__main__":
     for p in posts:
         when = datetime.fromtimestamp(p["created_timestamp"]).strftime("%Y-%m-%d")
         tag = f" (repost of @{p['author']['screen_name']})" if p.get("reposted_by") else ""
-        text = p.get("text", "").replace("\n", " ")
+        # "](" inside a post would read as a markdown link; break it up.
+        text = p.get("text", "").replace("\n", " ").replace("](", "] (")
         out.append(f"- **[{when}]({p['url']})**{tag} · {p.get('likes', 0)} likes · "
                    f"{p.get('views') or 0} views — {text}")
     folder.mkdir(parents=True, exist_ok=True)

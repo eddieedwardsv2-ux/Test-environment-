@@ -2,6 +2,9 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Build Karpathy and Nate brains lean, in the background, after
+  Nick's; ChatGPT gets the same rules via exports/chatgpt-instructions.md —
+  Charlie wants all three teachers' ways of working in every AI he uses.
 - 2026-10-07 — Adopt Karpathy's 7 rules (via Nate) as how every agent works
   and teaches; enforce rule 5 with a Stop-hook run gate (tools/run_gate.sh
   runs the audit before an agent may finish) and a `teach` skill that checks

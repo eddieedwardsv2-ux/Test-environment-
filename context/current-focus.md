@@ -13,6 +13,9 @@ and do its practice task.
   live in CLAUDE.md?
 
 ## Parking Lot
+- Karpathy and Nate brains: build with `brain-ingest` + rules once their queued
+  transcripts land (X posts already saved); then a "council" that asks Nick,
+  Nate and Karpathy side by side
 - Creator "advisor" agents (Nate's Karpathy idea): an agent that answers
   as Nick or Nate would, built from their research wiki
 - Dan Martell second-brain content (one creator at a time)
