@@ -57,17 +57,17 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | R1 | The root file is a router: it points rather than stores | "I treat this almost purely as a router" | Ek1 12:46 | ✅ `AGENTS.md` |
 | R2 | A short role line, then a "where things live" table | "But here is where you actually go to find data." | Ek1 13:17 | ✅ |
 | R3 | One route per topic. Without a route the AI won't look there | "you probably just didn't give Claude the knowledge to go look there" | DTC 4:34 | ✅ `tools/audit.py` checks every route exists |
-| R4 | Keep it lean | "if it grows too big, it can start to get messy and feel ignored" | DTC 5:04 | ✅ 94 lines; R13 gives the limit. The template is about 40 |
+| R4 | Keep it lean | "if it grows too big, it can start to get messy and feel ignored" | DTC 5:04 | ✅ 67 lines; R13 gives the limit. The template is about 45 |
 | R5 | One router for every tool (import rather than copy) | "you can literally just reference inside of your claude.md at agents.md" | DTC 22:49 | ✅ `CLAUDE.md` = `@AGENTS.md` |
 | R6 | Tool-agnostic: just files and folders | "you're building things to be tool agnostic" | bCl 2:04 | ✅ plus `exports/chatgpt-instructions.md` |
 | R7 | Routes to decisions, projects and the knowledge base | "Here's where decisions live. Here's templates. Here's references. Here's projects." | Ek1 13:47 | ✅ |
 | R8 | Lists skills and when to use them; a new skill gets registered and logged | "It's going to register the skill in claw.md and it's going to log its decisions." | bCl 1:30:08 | ✅ audit errors if a skill isn't routed |
 | R9 | Update the router whenever you add folders or files | "you're going to just want to make sure that your claused file is getting updated as well" | bCl 28:34 | ✅ capability-map rule plus audit |
 | R10 | Read the wiki only when needed | "I said don't read from the wiki unless you actually need it." | bCl 2:20:23 | ✅ smallest-context rule |
-| R11 | Shape: one identity line, a few core rules, then mostly a routing map | "I go into a routing map and that's the majority of my agents.mmd" | yys 6:07 | ⏳ our rules section is about half of `AGENTS.md`; the template follows it. Charlie decides whether to move rules to `context/working-rules.md` |
+| R11 | Shape: one identity line, a few core rules, then mostly a routing map | "I go into a routing map and that's the majority of my agents.mmd" | yys 6:07 | 🔧 rules cut to one line each (router 94 → 67 lines); details in `context/working-rules.md` |
 | R12 | Each wiki has its own routing rules inside it | "inside the wiki, what happens is there are routing rules set up" | hQv 12:40 | ✅ each `brain/index.md` says which transcript to load |
 | R13 | Router under 200 lines: it is re-read with every message | "So keep it under 200 lines." | jdb 5:36:27 | 🔧 `tools/audit.py` errors above 200 (now 94) |
-| R14 | Don't build until 95% sure what's wanted; ask follow-ups first | "Do not make any changes until you have 95% confidence in what you need to build." | jdb 5:32:54 | ⏳ in the template; Charlie decides for this router (his own rule says ask only if the outcome is unclear) |
+| R14 | Don't build until 95% sure what's wanted; ask follow-ups first | "Do not make any changes until you have 95% confidence in what you need to build." | jdb 5:32:54 | 🔧 merged into the "Aim for the outcome" rule; also in the template |
 | R15 | The router keeps decisions, not conversations | "Save decisions, not conversations." | jdb 5:44:05 | ✅ `decisions.md` |
 | R16 | Turn repeated failures into a one-line lesson | "When something fails repeatedly, when Nate has to reexplain, or when a workaround is found for a platform tool or limitation, add a oneline bullet here." | jdb 5:44:36 | ✅ done as a fix to the right file (backtrack rule) rather than a lessons list |
 | R17 | Router edits only apply in a new session | "the edit actually doesn't apply until you restart that session." | jdb 5:55:15 | ✅ helper agents told to re-read `AGENTS.md` from disk |
@@ -153,7 +153,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | X1 | Secrets in `.env`, excluded from Git, never pasted in chat | "gets excluded from anytime we do a public push" | bCl 41:50 | 🔧 `.gitignore`; `AGENTS.md` secrets row |
 | X2 | The AI gets its own account and least-privilege keys; prompts aren't permissions | "A prompt is never a permission layer." | 8QQ 24:31; bCl 38:44 | ➖ no connections yet; apply when connecting |
 | X3 | API plus a reference .md rather than many MCPs | "having a bunch of MCP servers loaded into your project actually eats more tokens" | bCl 39:45 | ➖ apply when connecting |
-| X4 | Block risky actions in settings (a deny list), not by asking nicely | "Can you help me update the settings file so that you physically cannot do those things?" | jdb 1:14:28 | ⏳ Charlie decides: deny force-push and mass delete in `.claude/settings.json` |
+| X4 | Block risky actions in settings (a deny list), not by asking nicely | "Can you help me update the settings file so that you physically cannot do those things?" | jdb 1:14:28 | 🔧 `.claude/settings.json` denies force-push, hard reset, git clean and `rm -rf` (tested: blocked) |
 | X5 | Keys in `.env` beat app connectors, which are lost when you switch tools | "If you rely on these connections, that is not great" | jdb 1:37:24 | ✅ Git and scripts, not connectors, do the repo's work |
 
 ## 7. Working habits

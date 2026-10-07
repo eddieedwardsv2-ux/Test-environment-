@@ -4,6 +4,11 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-07 — **Applied R11, R14, X4** (all Nate requirements; reversible
+  in Git; Charlie can undo any): router rules cut to one line each, details
+  moved to `context/working-rules.md` (94 → 67 lines); 95%-confidence merged
+  into "Aim for the outcome"; `.claude/settings.json` deny list blocks
+  force-push, hard reset, git clean and `rm -rf` (tested: blocked).
 - 2026-10-07 — **v1 extended to 20 Nate videos** (6 more, incl. the 6h
   Non-Coders course): 92 requirements, every quote checked. New checks in
   `tools/audit.py`: router under 200 lines (Nate's limit), skill/agent front
