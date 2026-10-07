@@ -1,0 +1,39 @@
+# Fetch YouTube captions on GitHub's runners (YouTube blocks Claude's cloud IP).
+# Run from the Actions tab or `gh workflow run transcripts.yml -f creator=... -f videos="id1 id2"`.
+# Raw .vtt captions land in research/<creator>/raw/; Claude cleans them into
+# <id>-transcript.md with research/get_transcript.py's dedupe.
+name: transcripts
+on:
+  workflow_dispatch:
+    inputs:
+      creator: { description: "research folder, e.g. nick-saraev", required: true }
+      videos: { description: "space-separated video IDs", required: true }
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q yt-dlp
+      - name: Download English captions
+        env:
+          CREATOR: ${{ inputs.creator }}
+          VIDEOS: ${{ inputs.videos }}
+        run: |
+          mkdir -p "research/$CREATOR/raw"
+          for v in $VIDEOS; do
+            yt-dlp --js-runtimes node --skip-download --write-auto-subs --write-subs \
+              --sub-langs "en.*" --sub-format vtt \
+              -o "research/$CREATOR/raw/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=$v" \
+              || echo "FAILED $v"
+          done
+          ls -la "research/$CREATOR/raw"
+      - name: Save to the repo
+        run: |
+          git config user.name "transcripts-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add research
+          git diff --cached --quiet && echo "nothing fetched" && exit 1
+          git commit -m "Raw captions for ${{ inputs.creator }}: ${{ inputs.videos }}"
+          git push
