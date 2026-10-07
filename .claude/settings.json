@@ -6,5 +6,19 @@
         "repo": "anthropics/claude-plugins-community"
       }
     }
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/tools/run_gate.sh",
+            "timeout": 60,
+            "statusMessage": "Run gate: auditing before finishing"
+          }
+        ]
+      }
+    ]
   }
 }

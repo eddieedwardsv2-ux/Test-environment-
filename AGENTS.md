@@ -10,6 +10,9 @@ building a YouTube channel about it. Explain in plain UK English, one next
 step at a time, and end working replies with **Now:** and **Done when:**.
 
 ## Rules that always apply
+- **Karpathy's 7 working rules** (`context/working-rules.md`): build it to
+  understand it, smallest version first, predict-run-compare, show the wrong
+  version, prove it don't claim it, say what you assumed, simpler wins.
 - When Charlie asks "can't you…", "can you…" or "could you have…", read it as
   "the perfect outcome would be…" and work towards that outcome; don't just
   answer yes or no. Ask only if the outcome itself is unclear.
@@ -44,7 +47,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Need | Look in |
 |---|---|
 | Who Charlie is, devices, goals | `context/about-me.md` |
-| How to teach him (roles, learning loop) | `context/how-i-learn.md` |
+| How to teach him (roles, learning loop) | `context/how-i-learn.md`; to teach a topic use the `teach` skill |
 | Current priority and Parking Lot | `context/current-focus.md` |
 | What works/blocked in cloud sessions (YouTube, GitHub) | `context/environment.md` — read before any YouTube or GitHub task |
 | Past decisions and why | `decisions.md` (append new ones with a date) |

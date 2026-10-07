@@ -34,5 +34,8 @@ README.md. Read every transcript you are given **in full** before writing.
    GitHub project and no business data yet, and what to skip for now (with why).
 6. **Flashcards**: 6–10, one fact per card, Q/A format.
 7. **One practice task** he can finish in under 20 minutes, with "Done when".
+   Follow `context/working-rules.md`: start from the smallest idea, include
+   one "predict before you look" moment and one common wrong version with
+   why it fails; label anything unsourced (inferring).
 
 Finish by replying with the file path and a 3-line summary of what you wrote.

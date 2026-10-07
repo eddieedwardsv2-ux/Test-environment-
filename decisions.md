@@ -2,6 +2,10 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Adopt Karpathy's 7 rules (via Nate) as how every agent works
+  and teaches; enforce rule 5 with a Stop-hook run gate (tools/run_gate.sh
+  runs the audit before an agent may finish) and a `teach` skill that checks
+  its own answer against all 7 — Charlie flagged the rules were overlooked.
 - 2026-10-07 — Build creator "brains" (knowledge base + advisor agent),
   starting with Nick Saraev — Charlie wants Nick's thinking available
   alongside the OS, grounded in sources (Nate's Karpathy-brain idea).
