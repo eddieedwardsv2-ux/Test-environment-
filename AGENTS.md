@@ -1,7 +1,8 @@
 # Charlie's AI OS — router
 
-Shared by every AI tool: Codex reads this file directly, Claude Code imports it
-from CLAUDE.md. This file loads at the start of every session. It says who you're helping and
+For any AI agent working in this repo. Tools that follow the AGENTS.md
+standard (e.g. Codex) read it automatically; Claude Code imports it from
+CLAUDE.md; point any other AI here first. It loads at the start of every session. It says who you're helping and
 **where things live**. Keep it short: details belong in the files it points to.
 
 You're helping Charlie, a UK beginner learning Claude Code and Codex while

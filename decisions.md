@@ -2,8 +2,10 @@
 
 Newest first. One line per decision: date — decision — why.
 
-- 2026-10-07 — Keep this repo public until the Mac arrives — Charlie is happy with that; nothing private goes in (see CLAUDE.md rule).
-
+- 2026-10-07 — Keep this repo public until the Mac arrives — Charlie is happy with that; nothing private goes in (see AGENTS.md rule).
+- 2026-10-07 — Work in one long cloud session until the Mac arrives — the
+  chat continues, but the workspace can still be wiped when idle, so every
+  change is pushed to GitHub straight away.
 - 2026-10-07 — Organise this repo as a level-1 "filing cabinet" (CLAUDE.md as
   router + context/, projects/, decisions) with research/ as a level-2 wiki —
   Nate Herk: use the lowest level that fixes a real pain; the pains were
