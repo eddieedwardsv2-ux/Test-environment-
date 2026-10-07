@@ -14,3 +14,6 @@ Mark each review ✅ (knew it) or ❌ (didn't) with the date.
 | 7 | What does "push" do? | Sends your saved commits up to GitHub. | 2026-10-07 | |
 | 8 | Why does YouTube block Claude in the cloud but not on a home computer? | It blocks data-centre internet addresses to stop mass scraping; home connections are trusted. | 2026-10-07 | |
 | 9 | What should CLAUDE.md be, per Nate Herk? | A router: a map of where things live, not a giant instruction dump. | 2026-10-07 | |
+| 10 | What does "anonymised" mean? | Names and identifying details removed, so you can't tell who said what. | 2026-10-07 | |
+| 11 | How do Claude Code and Codex share one instruction file? | Put it in AGENTS.md (Codex reads it); CLAUDE.md contains `@AGENTS.md` to import it. | 2026-10-07 | |
+| 12 | Why doesn't Claude's auto memory last in cloud sessions? | It's saved on the machine, and cloud workspaces are wiped; only files pushed to GitHub last. | 2026-10-07 | |

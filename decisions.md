@@ -8,7 +8,7 @@ Newest first. One line per decision: date — decision — why.
   router + context/, projects/, decisions) with research/ as a level-2 wiki —
   Nate Herk: use the lowest level that fixes a real pain; the pains were
   re-explaining between sessions and growing research notes.
-- 2026-10-07 — AGENTS.md just points to CLAUDE.md — one source of truth so
+- 2026-10-07 — Router lives in AGENTS.md; CLAUDE.md imports it with @AGENTS.md (official docs pattern) — one source of truth so
   Claude Code and Codex never get different instructions.
 - 2026-10-07 — Transcripts via youtube-transcript.ai (free, no sign-up) —
   YouTube blocks cloud servers; tested 9+ alternatives first.

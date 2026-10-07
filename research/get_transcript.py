@@ -52,19 +52,28 @@ def fetch(video):
 
 
 def dedupe(words):
-    """Auto-captions roll each line 2-3 times; drop immediately repeated phrases."""
+    """Auto-captions roll each line 2-3 times; drop the rolled-over repeats.
+
+    Phrases of 3+ words are dropped when doubled. Short phrases (1-2 words) are
+    only dropped when tripled, because people really do say "more knowledge,
+    more knowledge" but almost never say a phrase three times running.
+    """
     out = []
     for w in words:
         out.append(w)
-        for n in range(min(30, len(out) // 2), 2, -1):
-            if out[-n:] == out[-2 * n:-n]:
-                del out[-n:]
+        for n in range(min(30, len(out) // 2), 0, -1):
+            copies = 2 if n >= 3 else 3
+            if len(out) >= copies * n and all(
+                    out[-n:] == out[-(k + 1) * n:-k * n] for k in range(1, copies)):
+                del out[-(copies - 1) * n:]
                 break
     return out
 
 
 def clean(raw):
     header, _, body = raw.partition("## Transcript")
+    # The service's word count includes the caption repeats we remove.
+    header = re.sub(r" · Words: \d+", "", header)
     lines, tail = [], []
     for stamp, text in re.findall(r"^\[(\d+:\d+(?::\d+)?)\]\s*(.*)$", body, re.M):
         words = dedupe(tail + text.split())[len(tail):] if tail else dedupe(text.split())
@@ -87,10 +96,12 @@ if __name__ == "__main__":
         vid = re.search(r"(?:v=|youtu\.be/|^)([\w-]{11})", arg).group(1)
         url = f"https://www.youtube.com/watch?v={vid}"
         try:
-            header, lines = clean(fetch(vid))
+            raw = fetch(vid)
         except Exception as e:
             print(f"{vid}: UNAVAILABLE ({e})")
             continue
+        (folder / f"{vid}-raw.txt").write_text(raw)  # keep the original for re-cleaning
+        header, lines = clean(raw)
         body = [header, "", "Fetched via youtube-transcript.ai (free, no sign-up).",
                 "Auto-captions: names may be misheard; repeats removed.", "", "---", ""]
         body += [f"**[{s}]({url}&t={seconds(s)}s)** {t}\n" for s, t in lines]

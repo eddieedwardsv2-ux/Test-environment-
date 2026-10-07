@@ -1,7 +1,7 @@
 # Lesson: Organising an AI OS / second brain (Nate Herk, two videos)
 
 Sources:
-- **AI OS** = [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) (2026-07-23). Its transcript has no timestamps, so links go to the nearest **chapter** (from README.md), not the exact second.
+- **AI OS** = [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) (2026-07-23). Links go to the nearest **chapter**; the transcript now has exact timestamps if you want the precise second.
 - **Second Brain** = [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) (2026-06-17). Links go to the exact moment.
 
 Everything below comes from the transcripts unless marked *(tutor's note)*.
@@ -101,10 +101,10 @@ Raw material goes in (for Nate, YouTube transcripts) and Claude Code "auto-creat
 **9. Privacy.**
 Anything you process with Claude goes to Anthropic, "so that's not private". He says you might not want to send client data, and could use open-source models instead ([21:18](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1278s)).
 
-**Features to check against official docs** (they may have changed):
-- Claude Code "auto memory" toggled via `/memory` ([10:39](https://www.youtube.com/watch?v=DTCyvo6cC54&t=639s)).
-- Referencing `@agents.md` inside CLAUDE.md to pull that file in ([22:49](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1369s)).
-- The model name "Opus 4.8" mentioned in the AI OS audit demo.
+**Features checked against official docs** ([code.claude.com/docs/en/memory](https://code.claude.com/docs/en/memory), 2026-10-07):
+- ✅ Auto memory exists and is toggled in `/memory` ([10:39](https://www.youtube.com/watch?v=DTCyvo6cC54&t=639s)). It's stored on the machine (`~/.claude/projects/<project>/memory/`), so **cloud sessions lose it**: keep anything important in the repo.
+- ✅ `@AGENTS.md` inside CLAUDE.md imports that file ([22:49](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1369s)). The docs recommend this: shared instructions in AGENTS.md, CLAUDE.md imports them. This repo now does exactly that.
+- The model name "Opus 4.8" in the demo is just the model he used in July; not important.
 
 ---
 
@@ -133,7 +133,7 @@ Anything you process with Claude goes to Anthropic, "so that's not private". He 
 - ✅ CLAUDE.md rewritten as a router, with a "Where things live" table.
 - ✅ `context/` (about-me, how-i-learn, current-focus, environment), `decisions.md`, `projects/youtube-channel/`, `learning/flashcards.md`.
 - ✅ `research/README.md` as the wiki index, plus one README per creator.
-- ✅ AGENTS.md points Codex to CLAUDE.md (one source of truth, so they never drift).
+- ✅ The router lives in AGENTS.md (Codex reads it); CLAUDE.md imports it with `@AGENTS.md` (one source of truth, so they never drift).
 
 **Keep doing:** use the backtrack trick whenever Claude says it can't find something you know is there, and add a dated line to `decisions.md` when you change direction.
 

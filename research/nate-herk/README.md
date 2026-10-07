@@ -1,15 +1,15 @@
 # Nate Herk | AI Automation — research notes
 
-Coverage: 2 videos assigned, 2 transcribed. Transcripts are pasted in from
-Charlie's phone (YouTube blocks cloud servers).
+Coverage: 2 videos assigned, 2 transcribed (with timestamps) via
+`research/get_transcript.py`. Lesson: [AI OS + second brain](lesson-ai-os-and-second-brain.md).
 
 | Video | Date | Length | Views | Transcript |
 |---|---|---|---|---|
 | [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) | 2026-07-23 | 25 min | 56.6k | ✅ [transcript](Ek1NBfnnTH0-transcript.md) |
-| [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 2026-06-17 | 31 min | 280.5k | ✅ [transcript](DTCyvo6cC54-transcript.md) (not yet analysed) |
+| [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 2026-06-17 | 31 min | 280.5k | ✅ [transcript](DTCyvo6cC54-transcript.md) (analysed in the lesson) |
 
 ## Claims from the descriptions
-AI OS video: **all confirmed by transcript** (2026-10-07). Second brain: unverified.
+Both videos: **all confirmed by transcript** (2026-10-07).
 - **AI OS video:** CLAUDE.md should be a *routing file* (says where things
   are), not a giant system prompt. Four ways context fails: poisoning, bloat,
   confusion, clash. Separates "expertise" context from "situational" context.

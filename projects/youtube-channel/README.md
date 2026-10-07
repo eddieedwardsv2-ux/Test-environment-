@@ -17,7 +17,11 @@ What people *said* (anonymised — group posts aren't ours to republish):
 
 Theories (not yet evidence): few tradespeople use AI; those who do get poor
 results from weak prompts; some pay for trade software with dated AI features.
-**Test:** post the 3-question survey (Parking Lot) and log replies here.
+**Test:** post this in the group (check its rules first), then log replies here:
+> Following the AI thread, genuine questions for the group:
+> 1. Do you use AI for anything? What for?
+> 2. If you tried it and gave up, what went wrong?
+> 3. Do you pay for any job or quoting software? Does it have AI built in?
 
 ## Video ideas
 - "I asked AI to interview me before it helped me" (first test video)

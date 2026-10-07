@@ -8,8 +8,9 @@ the `video-tutor` agent. Anything not from a transcript is marked as such.
 |---|---|---|---|---|
 | [Nate Herk](nate-herk/README.md) | AI OS, second brain, Claude Code | 2 | 2 | [AI OS + second brain](nate-herk/lesson-ai-os-and-second-brain.md) |
 
-**Queued (Parking Lot):** Dan Martell (second brain), The Next New Thing
-(GitHub tools roundups; 159 videos listed, none transcribed).
+| [The Next New Thing](the-next-new-thing/README.md) | Free GitHub tools round-ups | 159 listed | 0 | – |
+
+**Queued (Parking Lot):** Dan Martell (second brain).
 
 **Add a creator:** `python3 research/get_transcript.py <creator-folder> <url>`
 (a few videos at a time — rate-limited), then ask the `video-tutor` agent.
