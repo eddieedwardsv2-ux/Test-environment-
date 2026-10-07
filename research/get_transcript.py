@@ -5,8 +5,8 @@ youtube-transcript.ai runs a free, keyless MCP endpoint on servers YouTube
 still serves. If it stops working, fall back to pasting from a phone or
 running yt-dlp on the Mac.
 
-The free endpoint is rate-limited (it refused after ~4 calls on 2026-10-07),
-so fetch a few videos at a time, not a whole channel.
+The free endpoint is rate-limited (on 2026-10-07 it refused after ~4 calls,
+then again after 2 more an hour later), so fetch a few videos per session.
 
 Usage:  python3 research/get_transcript.py <creator-folder> <url-or-id> [...]
 Writes: research/<creator-folder>/<id>-transcript.md
@@ -92,6 +92,7 @@ def seconds(stamp):
 if __name__ == "__main__":
     folder = Path(__file__).parent / sys.argv[1]
     folder.mkdir(parents=True, exist_ok=True)
+    failed = 0
     for arg in sys.argv[2:]:
         vid = re.search(r"(?:v=|youtu\.be/|^)([\w-]{11})", arg).group(1)
         url = f"https://www.youtube.com/watch?v={vid}"
@@ -99,6 +100,7 @@ if __name__ == "__main__":
             raw = fetch(vid)
         except Exception as e:
             print(f"{vid}: UNAVAILABLE ({e})")
+            failed += 1
             continue
         (folder / f"{vid}-raw.txt").write_text(raw)  # keep the original for re-cleaning
         header, lines = clean(raw)
@@ -108,3 +110,5 @@ if __name__ == "__main__":
         out = folder / f"{vid}-transcript.md"
         out.write_text("\n".join(body))
         print(f"{vid}: OK {sum(len(t.split()) for _, t in lines)} words -> {out}")
+    # Non-zero exit so chained commands (&&) don't treat a failure as success.
+    sys.exit(1 if failed else 0)

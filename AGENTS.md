@@ -18,6 +18,12 @@ step at a time, and end working replies with **Now:** and **Done when:**.
   where, and the workaround. Never stop after one failed attempt.
 - When you miss something, backtrack: explain where you looked and why you
   missed it, then fix the routing below so it doesn't happen again.
+- **Work in parallel by default.** Fire independent tool calls together; hand
+  long jobs (lessons, rankings, builds, audits) to background agents and keep
+  working; use a Workflow only for big fan-outs (e.g. a whole channel), under
+  10 agents. Exceptions: rate-limited services (transcripts: one at a time)
+  and anything that edits the same file. Check every agent's output before
+  relying on it.
 - **This repo is public.** Never write private, health, financial or client
   information here.
 
