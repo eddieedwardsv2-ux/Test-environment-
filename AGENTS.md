@@ -52,6 +52,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Flashcards | App: https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 — its `cards` database is the single source of truth (ArtifactData). `learning/flashcards.md` is a backup copy: regenerate it after adding cards. Page source: `learning/flashcards-app.html` |
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md` |
 | Nick Saraev's view on a plan or question | the `nick-brain` agent; its knowledge is in `research/nick-saraev/brain/` |
+| Add new sources to a creator brain | the `brain-ingest` skill |
 | Research a new creator end to end | the `research-creator` skill (`.claude/skills/research-creator/`) |
 | Fetch a YouTube transcript | `python3 research/get_transcript.py <creator> <url>`; if rate-limited, add to `research/transcript-queue.txt` (GitHub fetches hourly) |
 | Fetch a creator's X posts | `python3 research/get_x_posts.py <creator> <handle>` |

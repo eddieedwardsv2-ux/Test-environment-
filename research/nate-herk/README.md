@@ -1,11 +1,12 @@
 # Nate Herk | AI Automation — research notes
 
-Coverage: 2 videos assigned, 2 transcribed (with timestamps) via
+Coverage: 3 videos assigned, 3 transcribed (with timestamps) via
 `research/get_transcript.py`. Lesson: [AI OS + second brain](lesson-ai-os-and-second-brain.md).
 
 | Video | Date | Length | Views | Transcript |
 |---|---|---|---|---|
 | [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) | 2026-07-23 | 25 min | 56.6k | ✅ [transcript](Ek1NBfnnTH0-transcript.md) |
+| [I Built Another Andrej Karpathy Using Claude](https://www.youtube.com/watch?v=bvGptCLDhyo) | 2026-10-05 | 11 min | 58.8k | ✅ [transcript](bvGptCLDhyo-transcript.md) |
 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 2026-06-17 | 31 min | 280.5k | ✅ [transcript](DTCyvo6cC54-transcript.md) (analysed in the lesson) |
 
 ## Claims from the descriptions
@@ -46,3 +47,13 @@ agency playbook. The free Skool group holds his free resources.
    agent can too.
 
 Not yet checked: his free "OS audit" skill (in his free Skool group).
+
+## Key lessons — Karpathy brain video (bvGptCLDhyo, from transcript)
+Four steps to turn an expert's public content into an agent: **crawl**
+everything (one agent per source, in parallel), **compile** it into an LLM
+wiki with an index and log, **distil rules** each backed by an exact quote
+(unsourced = "inferring"), then an **agent + skills** (teach, ingest) and test
+on real tasks. Applied here as Nick's brain: `research/nick-saraev/brain/`,
+`.claude/agents/nick-brain.md`, `.claude/skills/brain-ingest/`.
+Quote worth keeping (Karpathy, via Nate, 10:08): "you can outsource your
+thinking, but you cannot outsource your understanding."
