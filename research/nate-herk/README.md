@@ -1,13 +1,15 @@
 # Nate Herk | AI Automation — research notes
 
-Coverage: 3 videos assigned, 3 transcribed (with timestamps) via
-`research/get_transcript.py`. Lesson: [AI OS + second brain](lesson-ai-os-and-second-brain.md).
+Coverage: **9 transcribed** (with timestamps) via `research/get_transcript.py`.
+**Primary (the foundation curriculum):** "Steal My Exact AI OS Setup" and "I
+Built Another Andrej Karpathy Using Claude". The rest are supporting evidence.
+Brain: [index](brain/index.md). Lesson: [AI OS + second brain](lesson-ai-os-and-second-brain.md).
 
 | Video | Date | Length | Views | Transcript |
 |---|---|---|---|---|
-| [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) | 2026-07-23 | 25 min | 56.6k | ✅ [transcript](Ek1NBfnnTH0-transcript.md) |
-| [I Built Another Andrej Karpathy Using Claude](https://www.youtube.com/watch?v=bvGptCLDhyo) | 2026-10-05 | 11 min | 58.8k | ✅ [transcript](bvGptCLDhyo-transcript.md) |
-| [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 2026-06-17 | 31 min | 280.5k | ✅ [transcript](DTCyvo6cC54-transcript.md) (analysed in the lesson) |
+| [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) | 2026-07-23 | 25 min | 56.6k | ✅ [transcript](steal-my-exact-ai-os-setup-5-simple-tips--Ek1NBfnnTH0-transcript.md) |
+| [I Built Another Andrej Karpathy Using Claude](https://www.youtube.com/watch?v=bvGptCLDhyo) | 2026-10-05 | 11 min | 58.8k | ✅ [transcript](i-built-another-andrej-karpathy-using-claude--bvGptCLDhyo-transcript.md) |
+| [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 2026-06-17 | 31 min | 280.5k | ✅ [transcript](every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md) (analysed in the lesson) |
 
 ## Claims from the descriptions
 Both videos: **all confirmed by transcript** (2026-10-07).

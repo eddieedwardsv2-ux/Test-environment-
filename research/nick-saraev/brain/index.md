@@ -14,8 +14,9 @@ It is a summary of his views with sources, not Nick himself.
 
 ## Coverage and gaps (2026-10-07)
 - **In the brain:** 6 videos, 359 X posts.
-- **Queued for transcripts** (GitHub, hourly): his 4 long courses (Claude Code
-  full course, Codex course, Claude Code advanced, "most important video").
+- **Transcribed but not yet ingested** (2026-10-07): his 4 long courses (Claude
+  Code full course, Codex course, Claude Code advanced, "most important
+  video"). Run `brain-ingest` to add them; until then, say so if asked.
 - **Not covered:** his other ~305 videos, anything before April 2026 on X,
   his paid Maker School content.
 

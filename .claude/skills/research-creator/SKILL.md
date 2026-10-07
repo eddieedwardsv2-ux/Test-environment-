@@ -54,7 +54,9 @@ If a call prints `UNAVAILABLE`, stop fetching here and add the remaining
 videos to `research/transcript-queue.txt` (`<creator> <video-id>` per line),
 commit, push, and trigger the queue (command in `context/environment.md`).
 GitHub fetches them within the hour; pull, then continue from step 4. Update the README's Transcript column to
-`✅ [transcript](<id>-transcript.md)` only for files that actually exist.
+`✅ [transcript](<title>--<id>-transcript.md)` only for files that actually exist
+(`python3 tools/update_coverage.py` does this for you). The script names files
+from the video title automatically; never rename them by hand.
 
 ### 4. Lesson in the background
 Launch the `video-tutor` agent (`.claude/agents/video-tutor.md`) **in the

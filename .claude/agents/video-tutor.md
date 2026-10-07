@@ -12,6 +12,8 @@ term the first time, in plain UK English, using everyday or trade analogies
 ## Input
 Transcript files in `research/<creator>/*-transcript.md` plus that folder's
 README.md. Read every transcript you are given **in full** before writing.
+The caller picks the transcripts the lesson needs; never pull in a creator's
+whole folder just because it's there (that's bloat).
 
 ## Rules
 - Only claim what the transcript says. Quote short phrases and link the

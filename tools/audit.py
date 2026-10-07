@@ -39,11 +39,32 @@ for readme in (ROOT / "research").glob("*/README.md"):
     marks_text = text + ((folder / "videos.md").read_text() if (folder / "videos.md").exists() else "")
     files = list(folder.glob("*-transcript.md"))
     marks = set(re.findall(r"✅ \[transcript\]\(([^)]+)\)", marks_text))
-    m = re.search(r"\*\*(\d+) transcribed\*\*", text)
-    if m and int(m.group(1)) != len(files):
-        err(f"{readme.relative_to(ROOT)} says {m.group(1)} transcribed, folder has {len(files)}")
+    # Any "N transcribed" claim, bold or prose (Nate's README said "3
+    # transcribed" with 8 files and the old bold-only check missed it).
+    for n in re.findall(r"(\d+)\**\s+transcribed", text):
+        if int(n) != len(files):
+            err(f"{readme.relative_to(ROOT)} says {n} transcribed, folder has {len(files)}")
     if marks and len(marks) != len(files):
         warn(f"{readme.relative_to(ROOT)}: {len(marks)} ✅ marks but {len(files)} transcript files")
+
+# 2a. Transcript filenames: "<title-slug>--<video-id>-transcript.md" with a
+#     matching -raw.txt, so Charlie can read folders by eye and tools find
+#     files by ID (research/get_transcript.py names them automatically).
+NAME = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*--[\w-]{11}-(transcript\.md|raw\.txt)")
+for f in list((ROOT / "research").glob("*/*-transcript.md")) + list((ROOT / "research").glob("*/*-raw.txt")):
+    if not NAME.fullmatch(f.name):
+        err(f"{f.relative_to(ROOT)}: name should be <title-slug>--<video-id>-transcript.md / -raw.txt")
+    elif f.name.endswith("-transcript.md") and not f.with_name(f.name[:-len("transcript.md")] + "raw.txt").exists():
+        warn(f"{f.relative_to(ROOT)}: no matching -raw.txt (original kept for re-cleaning)")
+
+# 2c. Brain contract: every creator brain has the four pages an advisor
+#     agent and the brain-ingest skill rely on, and an agent that uses it.
+for brain in (ROOT / "research").glob("*/brain"):
+    for page in ("index.md", "concepts.md", "rules.md", "log.md"):
+        if not (brain / page).exists():
+            err(f"{brain.relative_to(ROOT)} is missing {page}")
+    if not any(str(brain.relative_to(ROOT)) in a.read_text() for a in (ROOT / ".claude/agents").glob("*.md")):
+        warn(f"{brain.relative_to(ROOT)} has no agent in .claude/agents/ that reads it")
 
 # 2b. Partial transcripts: last timestamp well before the video's length means
 #     the service cut it short (found 2026-10-07 on 3-4 hour courses).
@@ -58,6 +79,13 @@ for tr in (ROOT / "research").glob("*/*-transcript.md"):
     stamps = re.findall(r"^\*\*\[([0-9:]+)\]", text, re.M)
     if dur and stamps and secs(dur.group(1)) - secs(stamps[-1]) > 300:
         warn(f"{tr.relative_to(ROOT)} is PARTIAL: ends at {stamps[-1]} of {dur.group(1)}; re-fetch it")
+
+# 2d. Reverse routing: every skill and agent is named in the router, so a
+#     capability can't exist that no session knows to reuse.
+for cap in list((ROOT / ".claude/skills").glob("*/SKILL.md")) + list((ROOT / ".claude/agents").glob("*.md")):
+    name = cap.parent.name if cap.name == "SKILL.md" else cap.stem
+    if name not in router:
+        err(f"{cap.relative_to(ROOT)} is not named in AGENTS.md (nothing routes to it)")
 
 # 3. Freshness: environment facts older than ~3 months should be re-tested.
 env = (ROOT / "context/environment.md").read_text()

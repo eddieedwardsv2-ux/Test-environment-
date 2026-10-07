@@ -1,10 +1,19 @@
 # Current focus
 
-**Priority:** learn how to organise an AI OS / second brain (Nate Herk's two
-videos), and apply it to this repo.
+**Priority:** prove the AI-OS routing + knowledge foundation (decision of
+2026-10-07). Curriculum: Nate Herk's two primary videos:
+1. "Steal My Exact AI OS Setup (5 simple tips)" — context, routing, audits
+2. "I Built Another Andrej Karpathy Using Claude" — turning raw material into a brain
 
-**Next step:** read `research/nate-herk/lesson-ai-os-and-second-brain.md`
-and do its practice task.
+His other Nate transcripts (e.g. "Every Level of a Claude Second Brain") are
+supporting evidence only.
+
+**Next step:** pass the tests in `system/foundation-tests.md`; then Charlie
+explains the system back (router, raw evidence vs brain, audit, the four
+failure modes, backtracking).
+
+**Gated until "Foundation gate passed":** Nick Saraev's build/ship lessons as
+the active learning programme. His research and `nick-brain` stay usable.
 
 ## Open quiz
 - Name the failure type: (1) old and new price lists both saved, AI quotes the
@@ -13,13 +22,10 @@ and do its practice task.
   live in CLAUDE.md?
 
 ## Parking Lot
-- Karpathy and Nate brains: build with `brain-ingest` + rules once their queued
-  transcripts land (X posts already saved); then a "council" that asks Nick,
-  Nate and Karpathy side by side
-- Creator "advisor" agents (Nate's Karpathy idea): an agent that answers
-  as Nick or Nate would, built from their research wiki
+- Karpathy brain, then a "council" that asks Nick, Nate and Karpathy side by
+  side (after the foundation gate; Karpathy's X posts and 4 transcripts saved)
 - Dan Martell second-brain content (one creator at a time)
-- Nate's free "OS audit" skill and free "AIOS kit" (both in his free Skool group; Charlie pastes them in) — check before installing
+- Nate's free "OS audit" skill and free "AIOS kit" (both in his free Skool group; Charlie pastes them in) — compare with our `os-audit` skill
 - Post the AI question in the decorators' Facebook group (see projects/youtube-channel)
 - Unlisted test video for the channel
 - On the Mac: install context7 and superpowers plugins; test watch-video plugin

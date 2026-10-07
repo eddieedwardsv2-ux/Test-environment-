@@ -1,6 +1,20 @@
 # Decision log
 
 Newest first. One line per decision: date — decision — why.
+This is history: what's true now is in `AGENTS.md` and
+`context/current-focus.md`. A later entry can supersede an earlier one.
+
+- 2026-10-07 — **Foundation first** (supersedes "starting with Nick" and
+  "Karpathy and Nate brains after Nick's" below): the AI-OS routing +
+  knowledge foundation from Nate's two primary videos ("Steal My Exact AI OS
+  Setup", "I Built Another Andrej Karpathy Using Claude") must pass the tests
+  in `system/foundation-tests.md` before Nick's build/ship lessons become the
+  active priority. Nick's research and agent stay as they are. Karpathy brain
+  and the council wait in the Parking Lot — Charlie's A-D outcomes, worked
+  out with ChatGPT's audit of this repo.
+- 2026-10-07 — Transcript files named `<title>--<video-id>-transcript.md`
+  (named automatically from the transcript's title; tools find files by ID)
+  — Charlie should be able to read folders by eye; the ID stays for tools.
 
 - 2026-10-07 — Build Karpathy and Nate brains lean, in the background, after
   Nick's; ChatGPT gets the same rules via exports/chatgpt-instructions.md —

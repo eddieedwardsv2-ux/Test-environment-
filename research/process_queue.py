@@ -15,6 +15,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from get_transcript import find_transcript
+
 QUEUE = Path(__file__).parent / "transcript-queue.txt"
 lines = QUEUE.read_text().splitlines() if QUEUE.exists() else []
 entries = lambda: [l for l in lines if len(l.split()) == 2 and not l.startswith("#")]
@@ -23,8 +25,8 @@ if sys.argv[1:] == ["--cleanup"]:
     def fetched(line):
         creator, video = line.split()
         vid = video[-11:]
-        f = Path(__file__).parent / creator / f"{vid}-transcript.md"
-        return f.exists() and "truncated at" not in f.read_text()[-2000:]
+        f = find_transcript(Path(__file__).parent / creator, vid)
+        return f is not None and "truncated at" not in f.read_text()[-2000:]
     keep = [l for l in lines if l not in entries() or not fetched(l)]
     QUEUE.write_text("\n".join(keep) + "\n")
     print(f"cleanup: {len(lines) - len(keep)} removed, {sum(1 for l in keep if l in entries())} still queued")

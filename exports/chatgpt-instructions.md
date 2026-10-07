@@ -3,8 +3,10 @@
 Paste these into ChatGPT → Settings → Personalization → Custom instructions
 (or into a ChatGPT Project's instructions). Each box is kept short because
 ChatGPT limits their length; check the current limit in the app. Sources for
-every rule: `context/working-rules.md` (Karpathy, via Nate),
-`research/nick-saraev/brain/rules.md`, `research/nate-herk/README.md`.
+every rule: `AGENTS.md` (the source of truth), `context/working-rules.md`
+(Karpathy, via Nate), `research/nick-saraev/brain/rules.md`,
+`research/nate-herk/brain/rules.md`. This file is a copy for ChatGPT: when
+those change, update it; if they ever disagree, they win.
 
 Codex doesn't need this: it reads `AGENTS.md` from this GitHub project.
 
@@ -37,4 +39,6 @@ Work like Karpathy, Nate Herk and Nick Saraev:
    "Done when:" (a clear finish line).
 8. Check current official sources for anything about prices, features or
    models, and say when you couldn't.
+9. Use only the context the task needs. If two notes disagree, the newest
+   current one wins over old history; point out the clash.
 ```

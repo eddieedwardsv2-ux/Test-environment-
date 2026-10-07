@@ -9,7 +9,9 @@ The free endpoint is rate-limited (on 2026-10-07 it refused after ~4 calls,
 then again after 2 more an hour later), so fetch a few videos per session.
 
 Usage:  python3 research/get_transcript.py <creator-folder> <url-or-id> [...]
-Writes: research/<creator-folder>/<id>-transcript.md
+Writes: research/<creator-folder>/<title-slug>--<id>-transcript.md (+ -raw.txt)
+The title comes from the transcript header, so no renaming by hand. Always
+find a transcript with find_transcript(); never build the filename yourself.
 """
 import json
 import re
@@ -104,6 +106,30 @@ def clean(raw):
     return header.strip(), lines
 
 
+def slug(title, limit=60):
+    """'Steal My Exact AI OS Setup (5 tips)' -> 'steal-my-exact-ai-os-setup-5-tips'."""
+    words = re.sub(r"[^a-z0-9]+", " ", title.lower().replace("'", "")).split()
+    out = ""
+    for w in words:
+        if len(out) + len(w) + 1 > limit:
+            break
+        out = f"{out}-{w}" if out else w
+    return out or "untitled"
+
+
+def find_transcript(folder, vid, kind="transcript.md"):
+    """The saved file for this video ID, whatever its title part, or None."""
+    hits = sorted(Path(folder).glob(f"*{vid}-{kind}"))
+    hits = [h for h in hits if h.name == f"{vid}-{kind}" or h.name.endswith(f"--{vid}-{kind}")]
+    return hits[0] if hits else None
+
+
+def video_id(path):
+    """Video ID from a transcript filename (old '<id>-...' or new '<slug>--<id>-...')."""
+    m = re.search(r"(?:^|--)([\w-]{11})-(?:transcript\.md|raw\.txt)$", Path(path).name)
+    return m.group(1) if m else None
+
+
 def seconds(stamp):
     secs = 0
     for part in stamp.split(":"):
@@ -124,12 +150,17 @@ if __name__ == "__main__":
             print(f"{vid}: UNAVAILABLE ({e})")
             failed += 1
             continue
-        (folder / f"{vid}-raw.txt").write_text(raw)  # keep the original for re-cleaning
         header, lines = clean(raw)
+        title = re.search(r"# Transcript: (.+)", header)
+        stem = f"{slug(title.group(1))}--{vid}" if title else vid
+        for old in (find_transcript(folder, vid), find_transcript(folder, vid, "raw.txt")):
+            if old:
+                old.unlink()  # re-fetch replaces the old copy instead of leaving two
+        (folder / f"{stem}-raw.txt").write_text(raw)  # keep the original for re-cleaning
         body = [header, "", "Fetched via youtube-transcript.ai (free, no sign-up).",
                 "Auto-captions: names may be misheard; repeats removed.", "", "---", ""]
         body += [f"**[{s}]({url}&t={seconds(s)}s)** {t}\n" for s, t in lines]
-        out = folder / f"{vid}-transcript.md"
+        out = folder / f"{stem}-transcript.md"
         out.write_text("\n".join(body))
         print(f"{vid}: OK {sum(len(t.split()) for _, t in lines)} words -> {out}")
     # Non-zero exit so chained commands (&&) don't treat a failure as success.

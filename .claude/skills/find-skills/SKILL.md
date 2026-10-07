@@ -94,10 +94,13 @@ Learn more: https://skills.sh/vercel-labs/agent-skills/react-best-practices
 
 ### Step 6: Offer to Install
 
-If the user wants to proceed, you can install the skill for them:
+If the user wants to proceed, you can install the skill for them. In
+Charlie's repo: only Anthropic-reviewed or well-known skills, only with his
+OK, and into the project (no `-g`), because user-wide installs are wiped
+with each cloud session:
 
 ```bash
-npx skills add <owner/repo@skill> -g -y
+npx skills add <owner/repo@skill> -y
 ```
 
 The `-g` flag installs globally (user-level) and `-y` skips confirmation prompts.

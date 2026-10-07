@@ -10,18 +10,18 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 
 | # | Video | Views | Length | Transcript |
 |---|---|---|---|---|
-| 1 | ★ [Here's What I'd Learn Instead of AI Automation in 2027](https://www.youtube.com/watch?v=638GQZ9UZ4w) | 168,000 | 24:00 | ✅ [transcript](638GQZ9UZ4w-transcript.md) |
-| 2 | ★ [How I Learn Complex Skills & Difficult Subjects So Fast with AI](https://www.youtube.com/watch?v=FSXHk4hMrY8) | 83,000 | 29:36 | ✅ [transcript](FSXHk4hMrY8-transcript.md) |
+| 1 | ★ [Here's What I'd Learn Instead of AI Automation in 2027](https://www.youtube.com/watch?v=638GQZ9UZ4w) | 168,000 | 24:00 | ✅ [transcript](heres-what-id-learn-instead-of-ai-automation-in-2027--638GQZ9UZ4w-transcript.md) |
+| 2 | ★ [How I Learn Complex Skills & Difficult Subjects So Fast with AI](https://www.youtube.com/watch?v=FSXHk4hMrY8) | 83,000 | 29:36 | ✅ [transcript](how-i-learn-complex-skills-difficult-subjects-so-fast-with--FSXHk4hMrY8-transcript.md) |
 | 3 | [GPT-6-Astra on The New ULTRAFAST $500 Plan Is Scary...](https://www.youtube.com/watch?v=KtMMRcEj1sk) | 48,000 | 12:44 | – |
-| 4 | [Why You Should Stop Listening To AI News](https://www.youtube.com/watch?v=x55Fj_syFcI) | 37,000 | 10:42 | ✅ [transcript](x55Fj_syFcI-transcript.md) |
-| 5 | ★ [I Spent $31,141 & 1,000 Hours On Claude Code To Learn This](https://www.youtube.com/watch?v=45K3zHckCnQ) | 114,000 | 26:00 | ✅ [transcript](45K3zHckCnQ-transcript.md) |
+| 4 | [Why You Should Stop Listening To AI News](https://www.youtube.com/watch?v=x55Fj_syFcI) | 37,000 | 10:42 | ✅ [transcript](why-you-should-stop-listening-to-ai-news--x55Fj_syFcI-transcript.md) |
+| 5 | ★ [I Spent $31,141 & 1,000 Hours On Claude Code To Learn This](https://www.youtube.com/watch?v=45K3zHckCnQ) | 114,000 | 26:00 | ✅ [transcript](i-spent-31-141-1-000-hours-on-claude-code-to-learn-this--45K3zHckCnQ-transcript.md) |
 | 6 | [I Love AI, But GPT-6-Astra Terrifies Me](https://www.youtube.com/watch?v=DtfwNoL7Ndw) | 41,000 | 3:18 | – |
-| 7 | [I Found a Way To Use AI Agents Like Codex Completely For FREE](https://www.youtube.com/watch?v=IJS08TVGut0) | 89,000 | 9:41 | ✅ [transcript](IJS08TVGut0-transcript.md) |
+| 7 | [I Found a Way To Use AI Agents Like Codex Completely For FREE](https://www.youtube.com/watch?v=IJS08TVGut0) | 89,000 | 9:41 | ✅ [transcript](i-found-a-way-to-use-ai-agents-like-codex-completely-for--IJS08TVGut0-transcript.md) |
 | 8 | [I Uploaded A Fruit Fly Brain To Reply To My Emails](https://www.youtube.com/watch?v=GmCbzlb091A) | 87,000 | 12:40 | – |
 | 9 | [I Think GPT-6-Astra Just Changed YouTube](https://www.youtube.com/watch?v=MujaqZS9wtM) | 50,000 | 20:56 | – |
-| 10 | [The most important video you'll ever watch in the age of AI](https://www.youtube.com/watch?v=QLLuZbuTIRc) | 218,000 | 5h02 | ✅ [transcript](QLLuZbuTIRc-transcript.md) |
+| 10 | [The most important video you'll ever watch in the age of AI](https://www.youtube.com/watch?v=QLLuZbuTIRc) | 218,000 | 5h02 | ✅ [transcript](the-most-important-video-youll-ever-watch-in-the-age-of-ai--QLLuZbuTIRc-transcript.md) |
 | 11 | [Fable 5.1 Just Dropped. It's Not Even Close.](https://www.youtube.com/watch?v=yeWi6YdDOMM) | 81,000 | 10:23 | – |
-| 12 | [The Only Codex Course You Need in 2026 (4.5 Hours)](https://www.youtube.com/watch?v=DJZISqryDfw) | 80,000 | 4h37 | ✅ [transcript](DJZISqryDfw-transcript.md) |
+| 12 | [The Only Codex Course You Need in 2026 (4.5 Hours)](https://www.youtube.com/watch?v=DJZISqryDfw) | 80,000 | 4h37 | ✅ [transcript](the-only-codex-course-you-need-in-2026-4-5-hours--DJZISqryDfw-transcript.md) |
 | 13 | [CLAUDE CODE MARKETING FULL COURSE (6 HOURS)](https://www.youtube.com/watch?v=yulWjh3rq28) | 164,000 | 6h02 | – |
 | 14 | [The Viral $1 Website Effect That Looks Like $10K (Tutorial)](https://www.youtube.com/watch?v=KDkR0cJRiJk) | 29,000 | 22:53 | – |
 | 15 | [I Spent $400 Benching Opus-5. Here's What It Can Do](https://www.youtube.com/watch?v=k1DTxuBur-Y) | 65,000 | 15:53 | – |
@@ -46,7 +46,7 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 | 34 | [Claude Managed Agents Just Dropped, And It Kills n8n](https://www.youtube.com/watch?v=Ob5Vu-gD3mo) | 177,000 | 16:31 | – |
 | 35 | [Claude Mythos Preview: Everything You Need to Know](https://www.youtube.com/watch?v=oCuttuCQmZg) | 92,000 | 40:23 | – |
 | 36 | [Paperclip Sucks, Actually](https://www.youtube.com/watch?v=QufcrM79snw) | 115,000 | 10:37 | – |
-| 37 | [CLAUDE CODE ADVANCED FULL COURSE (3 HOURS)](https://www.youtube.com/watch?v=UPtmKh1vMN8) | 503,000 | 3h18 | ✅ [transcript](UPtmKh1vMN8-transcript.md) |
+| 37 | [CLAUDE CODE ADVANCED FULL COURSE (3 HOURS)](https://www.youtube.com/watch?v=UPtmKh1vMN8) | 503,000 | 3h18 | ✅ [transcript](claude-code-advanced-full-course-3-hours--UPtmKh1vMN8-transcript.md) |
 | 38 | [Claude Computer Use Just Dropped, Here's How to Hack It](https://www.youtube.com/watch?v=2u93VTYvG5U) | 67,000 | 14:52 | – |
 | 39 | [Claude Channels Just Dropped, And It Kills OpenClaw (Again)](https://www.youtube.com/watch?v=ot3NM5OVFmc) | 62,000 | 21:00 | – |
 | 40 | [COLD EMAIL COPYWRITING & OUTREACH Full Course 2026](https://www.youtube.com/watch?v=uSTGNHGFOAo) | 163,000 | 3h59 | – |
@@ -59,7 +59,7 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 | 47 | [CLAUDE SKILLS FULL COURSE: Automate Your Work (2026)](https://www.youtube.com/watch?v=sduaTkhIm_w) | 167,000 | 47:44 | – |
 | 48 | [VIBE CODING FULL COURSE: Gemini 3.1 + Antigravity (6 Hrs)](https://www.youtube.com/watch?v=gcuR_-rzlDw) | 371,000 | 6h23 | – |
 | 49 | [Gemini 3.1 Pro + Antigravity Destroys Every Site Designer](https://www.youtube.com/watch?v=czLrUyA_Bh4) | 258,000 | 9:51 | – |
-| 50 | [CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)](https://www.youtube.com/watch?v=QoQBzR1NIqI) | 2,600,000 | 4h10 | ✅ [transcript](QoQBzR1NIqI-transcript.md) |
+| 50 | [CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)](https://www.youtube.com/watch?v=QoQBzR1NIqI) | 2,600,000 | 4h10 | ✅ [transcript](claude-code-full-course-4-hours-build-sell-2026--QoQBzR1NIqI-transcript.md) |
 | 51 | [Opus-4.6 Just Did Something Crazy](https://www.youtube.com/watch?v=W6VockLeov4) | 33,000 | 11:22 | – |
 | 52 | [Advice for working in a post-AGI world](https://www.youtube.com/watch?v=Z6bKoFVZG7A) | 19,000 | 11:23 | – |
 | 53 | [US Lost 108K Jobs in Jan 2026, Most Gone Forever (AI)](https://www.youtube.com/watch?v=nTWe3P7hjxs) | 32,000 | 19:42 | – |
@@ -102,7 +102,7 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 | 90 | [Stop Selling Workflows, This Will Make You More Money](https://www.youtube.com/watch?v=Td8ymV1Cc_8) | 19,000 | 14:13 | – |
 | 91 | [How to Buy Yourself $1M In Social Proof (For Beginners)](https://www.youtube.com/watch?v=c7Iw14CVluY) | 37,000 | 13:13 | – |
 | 92 | [I Tested 900 AI Offers: Here's What Actually Worked](https://www.youtube.com/watch?v=T5-RXi-Zk_g) | 30,000 | 9:53 | – |
-| 93 | [What I'd Learn Instead of Automation in 2026](https://www.youtube.com/watch?v=YIl-awY250k) | 563,000 | 14:39 | ✅ [transcript](YIl-awY250k-transcript.md) |
+| 93 | [What I'd Learn Instead of Automation in 2026](https://www.youtube.com/watch?v=YIl-awY250k) | 563,000 | 14:39 | ✅ [transcript](what-id-learn-instead-of-automation-in-2026--YIl-awY250k-transcript.md) |
 | 94 | [Most Automation Content Today Is P*rn.](https://www.youtube.com/watch?v=BdCIfVfEvXw) | 27,000 | 11:38 | – |
 | 95 | [How Two Best Friends Built a $25K/mo AI Agency (Tech Skills)](https://www.youtube.com/watch?v=m4yA2A-gPwk) | 16,000 | 36:13 | – |
 | 96 | [$1,000,000 AI Automation & Agents Advice for 5 Hours Straight](https://www.youtube.com/watch?v=L4Qbx8OM9l4) | 56,000 | 4h24 | – |

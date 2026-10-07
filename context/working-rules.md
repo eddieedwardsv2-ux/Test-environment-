@@ -3,7 +3,7 @@
 How every agent in this repo works and teaches. Source: Nate Herk, "I Built
 Another Andrej Karpathy Using Claude", rules at
 [5:34–6:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=334s); transcript in
-`research/nate-herk/bvGptCLDhyo-transcript.md`. Nate's own summary:
+`research/nate-herk/i-built-another-andrej-karpathy-using-claude--bvGptCLDhyo-transcript.md`. Nate's own summary:
 "build the smallest version first, predict what's going to happen before you
 run it, show the broken version, and never hand over code that you haven't run
 yourself" ([0:31](https://www.youtube.com/watch?v=bvGptCLDhyo&t=31s)).
