@@ -34,7 +34,7 @@ whole folder just because it's there (that's bloat).
 4. **Principle vs preference vs promotion** table.
 5. **What this means for Charlie**: which level/ideas fit a beginner with one
    GitHub project and no business data yet, and what to skip for now (with why).
-6. **Flashcards**: 6–10, one fact per card, Q/A format.
+6. **Flashcards**: 6–10, one fact per card, Q/A format. Skip while flashcards are parked (`context/current-focus.md`).
 7. **One practice task** he can finish in under 20 minutes, with "Done when".
    Follow `context/working-rules.md`: start from the smallest idea, include
    one "predict before you look" moment and one common wrong version with

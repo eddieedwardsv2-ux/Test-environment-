@@ -71,7 +71,7 @@ When the lesson arrives:
 1. **Spot-check 3 quotes/timestamps** against the `*-transcript.md` files
    (grep the quote; open the `&t=` time). Fix anything wrong or unsupported.
    Fill in the Lessons link in `research/README.md`.
-2. **Flashcards:** add 3–5 multiple-choice cards to the flashcard app's
+2. **Flashcards** (skip while parked: `context/current-focus.md`): add 3–5 multiple-choice cards to the flashcard app's
    `cards` database with the `ArtifactData` tool (app URL is in `AGENTS.md`).
    List the collection first to find the next free number. Each card:
    `id`/doc id `cNN` (next free), `n` (next free number), `q` (plain-English

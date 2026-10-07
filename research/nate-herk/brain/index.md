@@ -29,5 +29,5 @@ The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.m
 
 ## Coverage and gaps (2026-10-07)
 - **In the brain:** 2 primary videos; 4 supporting videos cited for single points.
-- **Read but not ingested yet (2026-10-07):** all 14 saved transcripts were read for `system/standard-ai-os-v1.md`, which lists 66 verified requirements with quotes. The other 8 transcripts (9KOtMsZ9I28, 0WDkwMxj13s, 3XIGcM7VICc, bCljOfCH8Ms, yysILVsfLFM, c0kaKxM2pHg, LrgfmZkl3nc, 9hetShMMp2s) and the X posts are not yet in concepts.md or rules.md: use the `brain-ingest` skill. No X themes page: not yet verified.
+- **Saved but not ingested yet:** the brain pages use the 6 videos listed under Sources above. Every other saved transcript (list: `../README.md`) is read and summarised, with checked quotes, in `system/standard-ai-os-v1.md`, but not yet in concepts.md or rules.md: use the `brain-ingest` skill. The X posts are not ingested either. No X themes page: not yet verified.
 - **Adding to the brain:** use the `brain-ingest` skill; it updates every page a source touches, then this index and the log.

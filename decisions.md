@@ -4,6 +4,9 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-07 — **First weekly audit saved** (`audits/2026-10-07.md`): fixed
+  stale Nate counts (brain index, nate-brain agent), parked-flashcard steps in
+  4 capabilities, about-me "Now" → "Long-term goal". Router test 10/10.
 - 2026-10-07 — **Applied R11, R14, X4** (all Nate requirements; reversible
   in Git; Charlie can undo any): router rules cut to one line each, details
   moved to `context/working-rules.md` (94 → 67 lines); 95%-confidence merged

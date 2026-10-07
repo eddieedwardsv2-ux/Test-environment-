@@ -32,4 +32,4 @@ Check your own draft, not Charlie. Fix any line that fails before sending:
 5 every claim is shown, run or sourced · 6 assumptions stated ·
 7 nothing extra that isn't earning its place.
 Then add 1-3 multiple-choice flashcards to the app quietly (see AGENTS.md), and
-only mention them at a milestone.
+only mention them at a milestone. Skip while flashcards are parked (`context/current-focus.md`).

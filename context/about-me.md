@@ -11,7 +11,7 @@
 - Subscriptions: ChatGPT Plus (includes Codex) and Claude.
 
 ## Goals
-- **Now:** learn Claude Code and Codex properly, using current methods.
+- **Long-term goal:** learn Claude Code and Codex properly, using current methods.
 - **Channel:** a YouTube channel documenting the learning as a beginner
   ("student, not teacher"), building audience → community → product.
 - **Tools:** a research agent that takes a creator's name and turns their

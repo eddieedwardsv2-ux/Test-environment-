@@ -45,4 +45,4 @@ hand. A brain lives in `research/<creator>/brain/`:
    step is refused (no write access), stop, say exactly which step failed,
    and don't report the brain as updated.
 7. **Report** in 3 lines: what went in, what changed, any rule promoted.
-   A brain update is a milestone: mention new flashcards if you added any.
+   A brain update is a milestone: mention new flashcards if you added any. Skip while flashcards are parked (`context/current-focus.md`).
