@@ -1,14 +1,15 @@
 # Nate Herk | AI Automation — research notes
 
-Coverage: 2 videos assigned. Transcripts: **not yet obtained** (YouTube blocks
-cloud servers). Notes below come from titles, descriptions and chapter lists only.
+Coverage: 2 videos assigned, 1 transcribed. Transcripts are pasted in from
+Charlie's phone (YouTube blocks cloud servers).
 
 | Video | Date | Length | Views | Transcript |
 |---|---|---|---|---|
-| [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) | 2026-07-23 | 25 min | 56.6k | ❌ pending |
+| [Steal My Exact AI OS Setup (5 simple tips)](https://www.youtube.com/watch?v=Ek1NBfnnTH0) | 2026-07-23 | 25 min | 56.6k | ✅ [transcript](Ek1NBfnnTH0-transcript.md) |
 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 2026-06-17 | 31 min | 280.5k | ❌ pending |
 
-## Claims from the descriptions (unverified until transcribed)
+## Claims from the descriptions
+AI OS video: **all confirmed by transcript** (2026-10-07). Second brain: unverified.
 - **AI OS video:** CLAUDE.md should be a *routing file* (says where things
   are), not a giant system prompt. Four ways context fails: poisoning, bloat,
   confusion, clash. Separates "expertise" context from "situational" context.
@@ -29,3 +30,19 @@ cloud servers). Notes below come from titles, descriptions and chapter lists onl
 ## Promotional content to discount
 Sponsor (Hyperagent), affiliate links (Glaido, Hostinger), paid Skool tier and
 agency playbook. The free Skool group holds his free resources.
+
+## Key lessons — AI OS video (from transcript)
+1. **Four ways context fails:** poisoning (a false fact), bloat (too much to
+   search), confusion (irrelevant or missing facts, so it guesses), clash (two
+   sources disagree, e.g. old vs new policy).
+2. **Expertise vs situational context:** expertise = always needed (who you
+   are, rules), lives in CLAUDE.md. Situational = looked up just in time
+   (one customer, one job), never kept loaded.
+3. **Five tips:** CLAUDE.md as a router (map of where things live) · have AI
+   audit itself regularly · automate data that updates on a schedule · split
+   knowledge into separate areas as it grows · when the AI misses something,
+   make it *backtrack* and explain why, then fix the routing.
+4. **Test:** can you find any file yourself without searching? If yes, an
+   agent can too.
+
+Not yet checked: his free "OS audit" skill (in his free Skool group).
