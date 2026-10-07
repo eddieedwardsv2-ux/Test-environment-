@@ -1,6 +1,6 @@
 """Fetch a YouTube transcript for free, with no sign-up, from a cloud session.
 
-Why this service: YouTube blocks cloud servers directly (see CLAUDE.md), but
+Why this service: YouTube blocks cloud servers directly (see context/environment.md), but
 youtube-transcript.ai runs a free, keyless MCP endpoint on servers YouTube
 still serves. If it stops working, fall back to pasting from a phone or
 running yt-dlp on the Mac.
