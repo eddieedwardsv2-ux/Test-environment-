@@ -29,6 +29,10 @@ step at a time, and end working replies with **Now:** and **Done when:**.
   name at most 2 plugins that would genuinely help, with one line why.
   Charlie isn't a coder, so families 2, 6, 7 and 8 matter most. Install only
   with his OK.
+- **Small spends are fine when they save repeated workarounds.** Free first,
+  but anything under about £5-10 is worth proposing if the knowledge gained is
+  worth it (e.g. TwitterAPI.io: ~$0.15 per 1,000 posts). Always ask Charlie
+  before any sign-up or payment; he does the sign-up, keys go in secrets.
 - **This repo is public.** Never write private, health, financial or client
   information here.
 

@@ -13,6 +13,8 @@ and do its practice task.
   live in CLAUDE.md?
 
 ## Parking Lot
+- Creator "advisor" agents (Nate's Karpathy idea): an agent that answers
+  as Nick or Nate would, built from their research wiki
 - Dan Martell second-brain content (one creator at a time)
 - Nate's free "OS audit" skill (in his free Skool group) — check before installing
 - Post the AI question in the decorators' Facebook group (see projects/youtube-channel)

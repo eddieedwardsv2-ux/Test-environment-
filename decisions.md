@@ -2,6 +2,11 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Spending rule: free first, but under ~£5-10 is fine when the
+  knowledge is worth it (Nate pulled all of Karpathy's X posts for ~$1) —
+  saves repeating the same workarounds. Charlie approves each spend.
+- 2026-10-07 — X: free tool default raised to 25 pages (~6 months); full
+  history via TwitterAPI.io (~$0.15/1,000 posts) only if needed.
 - 2026-10-07 — Transcript queue run hourly by GitHub Actions — YouTube blocks
   all data centres (GitHub too), but the free transcript service limits per
   IP, so GitHub's runner adds its own allowance. No phone, sign-up or Mac.

@@ -6,7 +6,9 @@ volunteer-run service, so it may change or rate-limit; if it fails, paste
 posts in by hand.
 
 Usage:  python3 research/get_x_posts.py <creator-folder> <x-handle> [pages]
-Writes: research/<creator-folder>/x-posts.md (newest first, ~19 posts per page)
+Writes: research/<creator-folder>/x-posts.md (newest first, ~15-19 posts per page)
+For a full history (years), TwitterAPI.io costs ~$0.15 per 1,000 posts (2026)
+but needs Charlie's sign-up and payment; ask first.
 """
 import json
 import sys
@@ -50,7 +52,7 @@ def fetch(handle, pages):
 
 if __name__ == "__main__":
     folder, handle = Path(__file__).parent / sys.argv[1], sys.argv[2].lstrip("@")
-    pages = int(sys.argv[3]) if len(sys.argv) > 3 else 3
+    pages = int(sys.argv[3]) if len(sys.argv) > 3 else 25  # 25 pages ≈ 350 posts ≈ 6 months (tested)
     posts = fetch(handle, pages)
     out = [f"# X posts: @{handle}", "",
            f"Fetched {datetime.now():%Y-%m-%d} via FxTwitter (free, no sign-up). "
