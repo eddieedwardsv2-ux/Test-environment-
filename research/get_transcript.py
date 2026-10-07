@@ -14,6 +14,7 @@ Writes: research/<creator-folder>/<id>-transcript.md
 import json
 import re
 import sys
+import time
 import urllib.request
 from pathlib import Path
 
@@ -37,7 +38,26 @@ def rpc(method, params=None, msg_id=1):
     return json.loads(text) if text.strip() else None
 
 
+TXT = "https://youtube-transcript.ai/transcript/{video}.txt?lang=en"
+
+
 def fetch(video):
+    """Plain-text download first: it returns the full transcript. The MCP
+    route below cuts transcripts at 120,000 characters (found 2026-10-07 when
+    3-4 hour courses came back with only the first 30-97 minutes)."""
+    req = urllib.request.Request(TXT.format(video=video), headers={"User-Agent": "curl/8.5.0", "Accept": "*/*"})
+    for attempt in range(3):  # the service briefly refuses back-to-back big downloads
+        try:
+            text = urllib.request.urlopen(req, timeout=180).read().decode()
+            if "## Transcript" in text and "truncated at" not in text[-400:]:
+                return text
+        except Exception:
+            pass
+        time.sleep(10 * (attempt + 1))
+    return fetch_mcp(video)  # fallback; refuses truncated results
+
+
+def fetch_mcp(video):
     rpc("initialize", {"protocolVersion": "2025-06-18", "capabilities": {},
                        "clientInfo": {"name": "charlie-research", "version": "1"}})
     rpc("notifications/initialized", msg_id=None)
@@ -48,6 +68,8 @@ def fetch(video):
     text = "".join(c.get("text", "") for c in res["result"]["content"])
     if "## Transcript" not in text:  # e.g. rate-limit notice after a few calls
         raise RuntimeError(text.strip()[:200])
+    if "truncated at" in text[-400:]:
+        raise RuntimeError("transcript was cut short by the service (truncated)")
     return text
 
 

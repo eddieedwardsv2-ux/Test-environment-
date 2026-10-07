@@ -44,6 +44,20 @@ for readme in (ROOT / "research").glob("*/README.md"):
     if marks and len(marks) != len(files):
         warn(f"{readme.relative_to(ROOT)}: {len(marks)} ✅ marks but {len(files)} transcript files")
 
+# 2b. Partial transcripts: last timestamp well before the video's length means
+#     the service cut it short (found 2026-10-07 on 3-4 hour courses).
+def secs(t):
+    n = 0
+    for part in t.split(":"):
+        n = n * 60 + int(part)
+    return n
+for tr in (ROOT / "research").glob("*/*-transcript.md"):
+    text = tr.read_text()
+    dur = re.search(r"Duration: ([0-9:]+)", text)
+    stamps = re.findall(r"^\*\*\[([0-9:]+)\]", text, re.M)
+    if dur and stamps and secs(dur.group(1)) - secs(stamps[-1]) > 300:
+        warn(f"{tr.relative_to(ROOT)} is PARTIAL: ends at {stamps[-1]} of {dur.group(1)}; re-fetch it")
+
 # 3. Freshness: environment facts older than ~3 months should be re-tested.
 env = (ROOT / "context/environment.md").read_text()
 dates = [datetime.strptime(d, "%Y-%m-%d").date() for d in re.findall(r"\d{4}-\d{2}-\d{2}", env)]

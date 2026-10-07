@@ -3,7 +3,7 @@
 Channel: https://www.youtube.com/channel/UCbo-KbSjJDG6JWQ_MTZ_rNA
 Focus: Claude Code, Codex, AI agents and selling AI services; long full courses plus opinion pieces.
 
-Coverage: **316 videos listed** (2026-10-07, newest first), **6 transcribed**.
+Coverage: **316 videos listed** (2026-10-07, newest first), **8 transcribed**.
 Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 
 **Start with (★):** how he learns with AI, what 1,000 hours of Claude Code taught him, and what he'd learn now.
@@ -21,7 +21,7 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 | 9 | [I Think GPT-6-Astra Just Changed YouTube](https://www.youtube.com/watch?v=MujaqZS9wtM) | 50,000 | 20:56 | – |
 | 10 | [The most important video you'll ever watch in the age of AI](https://www.youtube.com/watch?v=QLLuZbuTIRc) | 218,000 | 5h02 | – |
 | 11 | [Fable 5.1 Just Dropped. It's Not Even Close.](https://www.youtube.com/watch?v=yeWi6YdDOMM) | 81,000 | 10:23 | – |
-| 12 | [The Only Codex Course You Need in 2026 (4.5 Hours)](https://www.youtube.com/watch?v=DJZISqryDfw) | 80,000 | 4h37 | – |
+| 12 | [The Only Codex Course You Need in 2026 (4.5 Hours)](https://www.youtube.com/watch?v=DJZISqryDfw) | 80,000 | 4h37 | ✅ [transcript](DJZISqryDfw-transcript.md) |
 | 13 | [CLAUDE CODE MARKETING FULL COURSE (6 HOURS)](https://www.youtube.com/watch?v=yulWjh3rq28) | 164,000 | 6h02 | – |
 | 14 | [The Viral $1 Website Effect That Looks Like $10K (Tutorial)](https://www.youtube.com/watch?v=KDkR0cJRiJk) | 29,000 | 22:53 | – |
 | 15 | [I Spent $400 Benching Opus-5. Here's What It Can Do](https://www.youtube.com/watch?v=k1DTxuBur-Y) | 65,000 | 15:53 | – |
@@ -46,7 +46,7 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 | 34 | [Claude Managed Agents Just Dropped, And It Kills n8n](https://www.youtube.com/watch?v=Ob5Vu-gD3mo) | 177,000 | 16:31 | – |
 | 35 | [Claude Mythos Preview: Everything You Need to Know](https://www.youtube.com/watch?v=oCuttuCQmZg) | 92,000 | 40:23 | – |
 | 36 | [Paperclip Sucks, Actually](https://www.youtube.com/watch?v=QufcrM79snw) | 115,000 | 10:37 | – |
-| 37 | [CLAUDE CODE ADVANCED FULL COURSE (3 HOURS)](https://www.youtube.com/watch?v=UPtmKh1vMN8) | 503,000 | 3h18 | – |
+| 37 | [CLAUDE CODE ADVANCED FULL COURSE (3 HOURS)](https://www.youtube.com/watch?v=UPtmKh1vMN8) | 503,000 | 3h18 | ✅ [transcript](UPtmKh1vMN8-transcript.md) |
 | 38 | [Claude Computer Use Just Dropped, Here's How to Hack It](https://www.youtube.com/watch?v=2u93VTYvG5U) | 67,000 | 14:52 | – |
 | 39 | [Claude Channels Just Dropped, And It Kills OpenClaw (Again)](https://www.youtube.com/watch?v=ot3NM5OVFmc) | 62,000 | 21:00 | – |
 | 40 | [COLD EMAIL COPYWRITING & OUTREACH Full Course 2026](https://www.youtube.com/watch?v=uSTGNHGFOAo) | 163,000 | 3h59 | – |
