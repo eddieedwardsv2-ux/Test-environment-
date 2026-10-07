@@ -4,10 +4,12 @@
 # of the cloud session's. Results are committed to research/<creator>/.
 name: transcripts
 on:
+  schedule:
+    - cron: "23 * * * *"   # hourly: work through research/transcript-queue.txt
   workflow_dispatch:
     inputs:
-      creator: { description: "research folder, e.g. nick-saraev", required: true }
-      videos: { description: "space-separated video IDs", required: true }
+      creator: { description: "research folder, e.g. nick-saraev (blank = process the queue)", required: false }
+      videos: { description: "space-separated video IDs (blank = process the queue)", required: false }
 permissions:
   contents: write
 jobs:
@@ -15,16 +17,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { ref: main }
       - name: Fetch transcripts via the free service (GitHub's IP has its own allowance)
         env:
           CREATOR: ${{ inputs.creator }}
           VIDEOS: ${{ inputs.videos }}
-        run: python3 research/get_transcript.py "$CREATOR" $VIDEOS || echo "some videos unavailable"
+        run: |
+          if [ -n "$CREATOR" ] && [ -n "$VIDEOS" ]; then
+            python3 research/get_transcript.py "$CREATOR" $VIDEOS || echo "some videos unavailable"
+          else
+            python3 research/process_queue.py 3
+          fi
       - name: Save to the repo
         run: |
           git config user.name "transcripts-bot"
           git config user.email "actions@users.noreply.github.com"
           git add research
-          git diff --cached --quiet && echo "nothing fetched" && exit 1
-          git commit -m "Raw captions for ${{ inputs.creator }}: ${{ inputs.videos }}"
+          git diff --cached --quiet && echo "nothing new" && exit 0
+          git commit -m "Transcripts fetched by GitHub Actions"
           git push

@@ -2,6 +2,9 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Transcript queue run hourly by GitHub Actions — YouTube blocks
+  all data centres (GitHub too), but the free transcript service limits per
+  IP, so GitHub's runner adds its own allowance. No phone, sign-up or Mac.
 - 2026-10-07 — Flashcards: no scoring, no rescheduling; app shows right/wrong
   only, with New and Practise-all modes — Charlie doesn't want wrong answers
   to hold him back or a judging system to maintain.

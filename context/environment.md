@@ -12,6 +12,13 @@ Tested 2026-10-07. Re-test anything older than a few months before relying on it
 - WORKS for transcripts, no sign-up: `python3 research/get_transcript.py <creator> <url>`
   (youtube-transcript.ai's free keyless endpoint). Rate-limited after ~4 calls,
   so fetch a few videos at a time.
+- **Automatic queue (no phone, no sign-up):** add `<creator> <video-id>` lines
+  to `research/transcript-queue.txt` and push. GitHub Actions
+  (`.github/workflows/transcripts.yml`) runs hourly at :23, fetches up to 3
+  from GitHub's own IP (separate allowance) and commits them. Run it now with
+  `gh api -X POST repos/eddieedwardsv2-ux/Test-environment-/actions/workflows/transcripts.yml/dispatches -f ref=main`
+  (the `gh workflow` shortcut needs GraphQL, which is blocked here).
+  yt-dlp on GitHub's runners is blocked by YouTube too (tested).
 - Fallbacks: Supadata (~100/month free) or TranscriptAPI (100 trial) need
   Charlie's sign-up; keys go in an environment secret, never in git. On his
   own devices: paste from youtubetotranscript.com on his phone, or on the Mac

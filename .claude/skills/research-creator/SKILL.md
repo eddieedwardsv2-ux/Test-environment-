@@ -50,9 +50,10 @@ service is rate-limited after ~4 calls; never in parallel):
 ```bash
 python3 research/get_transcript.py <creator> <video-id>
 ```
-If a call prints `UNAVAILABLE`, stop fetching. Tell Charlie which videos are
-missing and ask him to paste the transcript from youtubetotranscript.com on
-his phone. Update the README's Transcript column to
+If a call prints `UNAVAILABLE`, stop fetching here and add the remaining
+videos to `research/transcript-queue.txt` (`<creator> <video-id>` per line),
+commit, push, and trigger the queue (command in `context/environment.md`).
+GitHub fetches them within the hour; pull, then continue from step 4. Update the README's Transcript column to
 `✅ [transcript](<id>-transcript.md)` only for files that actually exist.
 
 ### 4. Lesson in the background
