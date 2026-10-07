@@ -30,8 +30,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | What works/blocked in cloud sessions (YouTube, GitHub) | `context/environment.md` — read before any YouTube or GitHub task |
 | Past decisions and why | `decisions.md` (append new ones with a date) |
 | Projects (e.g. the YouTube channel) | `projects/<name>/` |
-| Flashcards: question list | `learning/flashcards.md` (add new cards here AND to the app) |
-| Flashcards: review app + results | https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 — source `learning/flashcards-app.html`; progress lives in its `cards` database (read it with ArtifactData) |
+| Flashcards | App: https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 — its `cards` database is the single source of truth (ArtifactData). `learning/flashcards.md` is a backup copy: regenerate it after adding cards. Page source: `learning/flashcards-app.html` |
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md` |
 | Fetch a YouTube transcript | `python3 research/get_transcript.py <creator> <url>` |
 | Fetch a creator's X posts | `python3 research/get_x_posts.py <creator> <handle>` |

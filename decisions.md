@@ -2,6 +2,11 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Flashcards: multiple choice in plain English; prompts only at
+  milestones (lesson or build finished, or 5+ due), not every reply; the app's
+  database is the single source of truth (flashcards.md is a backup) — Charlie
+  found questions unclear and per-reply quizzes too frequent; two card lists
+  would "clash" (Nate's failure mode).
 - 2026-10-07 — Daily 18:59 UK flashcard check (Routine "Flashcard check",
   trig_01MjF4jCRr9MHQbbmeuryFYS) messages Charlie in this session when cards
   are due — flashcards should come to him, not wait to be remembered.

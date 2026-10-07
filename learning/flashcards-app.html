@@ -41,6 +41,11 @@ h1 { font: 800 1.6rem/1.1 var(--display); margin: 0; text-wrap: balance }
 .reveal { grid-column: 1 / -1; background: var(--accent); color: var(--accent-fg) }
 .miss { background: transparent; color: var(--bad); border: 2px solid var(--bad) !important }
 .got { background: var(--good); color: var(--surface) }
+.choices { display: grid; gap: 8px }
+.choice { text-align: left; font: 400 1rem/1.35 var(--body); padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer }
+.choice:disabled { cursor: default; opacity: .7 }
+.choice.right { border: 2px solid var(--good); opacity: 1 }
+.choice.wrong { border: 2px solid var(--bad); opacity: 1 }
 button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px }
 .done, .empty, .note { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 20px; display: grid; gap: 8px }
 .done h2, .empty h2 { font: 800 1.3rem var(--display); margin: 0 }
@@ -66,7 +71,7 @@ button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px }
     <button id="tab-all" role="tab" aria-selected="false">All cards</button>
   </nav>
   <section id="view"></section>
-  <div class="note"><p>Got it moves a card to a longer gap: 1 day, 3 days, 1 week, then 1 month. Missed it brings it back today. Claude reads your results to plan practice.</p></div>
+  <div class="note"><p>Pick an answer. Right moves a card to a longer gap: 1 day, 3 days, 1 week, then 1 month. Wrong brings it back today. Claude reads your results to plan practice.</p></div>
 </main>
 
 <script>
@@ -78,6 +83,9 @@ const chipColor = (t) => `var(--chip-${TOPIC_LABEL[t] ? t : "ai-os"})`;
 const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) k === "class" ? e.className = v : k === "style" ? e.style.cssText = v : e.setAttribute(k, v); for (const k of kids) e.append(k); return e; };
 
 let db = null, cards = [], tab = "review", revealed = false, sessionDone = 0, busy = false;
+// Multiple-choice state: choices[0] is always the correct answer in the data.
+let order = [], shuffledFor = null, picked = null;
+const shuffle = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const view = document.getElementById("view"), count = document.getElementById("count");
 
 function due() { return cards.filter(c => (c.due || "").slice(0, 10) <= today()).sort((a, b) => (a.due || "").localeCompare(b.due || "") || a.n - b.n); }
@@ -121,7 +129,26 @@ function render() {
       revealed ? el("p", { class: "a" }, c.a) : el("p", { class: "hint" }, "Say the answer out loud first, then check.")),
     el("div", { class: "actions" }));
   const actions = card.querySelector(".actions");
-  if (!revealed) {
+  if (Array.isArray(c.choices) && c.choices.length) {
+    // Multiple choice: options are shuffled once per showing of the card.
+    if (shuffledFor !== c.id) { order = shuffle(c.choices.map((_, i) => i)); shuffledFor = c.id; picked = null; }
+    const face = card.querySelector(".face");
+    face.lastChild.remove();
+    const list = el("div", { class: "choices" });
+    order.forEach((i, k) => {
+      const b = el("button", { class: "choice", id: `choice-${k}` }, c.choices[i]);
+      if (picked !== null) { b.disabled = true; if (i === 0) b.classList.add("right"); else if (i === picked) b.classList.add("wrong"); }
+      b.onclick = () => { picked = i; render(); };
+      list.append(b);
+    });
+    face.append(list);
+    if (picked !== null) {
+      face.append(el("p", { class: "a" }, (picked === 0 ? "Right. " : "Not quite. ") + c.a));
+      const next = el("button", { class: "reveal", id: "next" }, "Next card");
+      next.onclick = () => { const ok = picked === 0; picked = null; shuffledFor = null; grade(c, ok); };
+      actions.append(next);
+    }
+  } else if (!revealed) {
     const r = el("button", { class: "reveal", id: "reveal" }, "Show answer");
     r.onclick = () => { revealed = true; render(); };
     actions.append(r);
