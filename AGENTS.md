@@ -24,6 +24,10 @@ step at a time, and end working replies with **Now:** and **Done when:**.
   10 agents. Exceptions: rate-limited services (transcripts: one at a time)
   and anything that edits the same file. Check every agent's output before
   relying on it.
+- **Check in proportion to risk.** Always verify anything you tell Charlie is
+  done (file exists, pushed) and every agent's quotes/links. Cheap structural
+  checks run automatically: `python3 tools/audit.py` (also on every push via
+  GitHub Actions). Don't re-audit the whole repo after small edits.
 - **Suggest tools proactively.** At the start of any new task or project,
   check `research/plugin-map.md` (all 9 families, Charlie's watchlist) and
   name at most 2 plugins that would genuinely help, with one line why.

@@ -1,0 +1,11 @@
+# Runs tools/audit.py on every push so routing, indexes and the transcript
+# queue are checked automatically, in parallel with the work. A red cross on
+# the commit in GitHub means the audit found an ERROR; read the job log.
+name: audit
+on: [push, workflow_dispatch]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/audit.py

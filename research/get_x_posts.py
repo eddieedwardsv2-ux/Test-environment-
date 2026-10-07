@@ -42,7 +42,9 @@ def fetch(handle, pages):
         if cursor:
             url += "?cursor=" + urllib.parse.quote(cursor)
         data = get(url)
-        posts += [p for p in data.get("results", []) if p.get("type") == "status"]
+        seen = {p["id"] for p in posts}  # pages can overlap: skip repeats
+        posts += [p for p in data.get("results", [])
+                  if p.get("type") == "status" and p["id"] not in seen]
         cursor = (data.get("cursor") or {}).get("bottom")
         if not cursor:
             break
