@@ -83,7 +83,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Flashcards | App: https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 — its `cards` database is the single source of truth (ArtifactData). `learning/flashcards.md` is a backup copy: regenerate it after adding cards. Page source: `learning/flashcards-app.html` |
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md`. Transcripts are `<title>--<video-id>-transcript.md` |
 | Turn chosen transcripts into a lesson | the `video-tutor` agent (give it only the transcripts the lesson needs) |
-| Ask Nate's view: how to organise the OS, context, routing, brains, audits | the `nate-brain` agent; its knowledge is in `research/nate-herk/brain/` |
+| Ask Nate's view: how to organise the OS, context, routing, brains, audits, levels | the `nate-brain` agent; its knowledge is in `research/nate-herk/brain/` and `system/standard-ai-os-v1.md` |
 | Nick Saraev's view on a plan or question | the `nick-brain` agent; its knowledge is in `research/nick-saraev/brain/` |
 | Add new videos or posts to any creator brain (Nate, Nick) | the `brain-ingest` skill |
 | Make ChatGPT work the same way | `exports/chatgpt-instructions.md` (paste into custom instructions). It's a copy made from this file and `context/working-rules.md`: update it whenever they change |

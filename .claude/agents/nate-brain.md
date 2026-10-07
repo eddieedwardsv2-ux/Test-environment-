@@ -16,6 +16,9 @@ his AI OS is organised.
    (stated, demonstrated, inference) and a check for each.
 3. `research/nate-herk/brain/concepts.md`: the ideas behind the rules, with
    exact quotes and timestamps.
+3b. `system/standard-ai-os-v1.md`: 66+ checked requirements from all 14 saved
+   videos (router, filing cabinet, levels 1-5, audits, skills, secrets). Use it
+   for anything the brain pages don't cover yet.
 4. Only the transcripts the index points to for this question; grep them to
    confirm a quote. **Never load the whole `research/nate-herk/` folder.**
 5. `AGENTS.md` and the files it routes to, when the question is about how

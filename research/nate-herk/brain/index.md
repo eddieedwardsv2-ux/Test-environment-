@@ -23,7 +23,7 @@ The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.m
 |---|---|
 | wrong answers, context, routing, audits, freshness, folders, crons, clients, backtracking | Ek1NBfnnTH0 |
 | building a creator brain, ingestion, provenance, agents/skills, hooks, testing | bvGptCLDhyo |
-| levels of second-brain complexity | DTCyvo6cC54 (supporting) |
+| levels of second-brain complexity, semantic search, when to move up a level | DTCyvo6cC54 (supporting); summary in `system/standard-ai-os-v1.md` |
 | LLM-wiki set-up step by step | hQvwMj7IJe4 (supporting) |
 | whether skills are too specific | XNQBCRcwXV4 (supporting) |
 
