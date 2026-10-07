@@ -1,8 +1,5 @@
 # Videos waiting for transcripts: "<creator-folder> <video-id>", one per line.
 # GitHub fetches up to 3 an hour and removes each line once its transcript is saved.
-nick-saraev QoQBzR1NIqI
-nick-saraev DJZISqryDfw
-nick-saraev UPtmKh1vMN8
 nick-saraev QLLuZbuTIRc
 andrej-karpathy EWvNQjAaOHw
 andrej-karpathy zjkBMFhNj_g
