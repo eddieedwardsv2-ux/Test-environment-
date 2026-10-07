@@ -70,6 +70,12 @@ From Nate ([1:34](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=94s) to
   (tool limits, what's blocked, what's next).
 - **Duplicate capabilities**: a new skill, agent or script that repeats an
   existing one (compare `.claude/skills/`, `.claude/agents/`, `tools/`, `research/*.py`).
+- **Competing descriptions**: two skills or agents whose descriptions would
+  answer the same request (Nate: "make sure two skills aren't competing for
+  the same request", HIRDzMtuWFk 4:02).
+- **Trigger test** for any skill added or changed since the last report: three
+  requests, one obvious, one reworded, one unrelated that must NOT fire it
+  (HIRDzMtuWFk 4:33). Say which skill each would load and why.
 - **Reverse routing**: important files or capabilities that nothing routes to
   (Nate: "it will also look in the reverse direction",
   [11:15](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=675s)). List every

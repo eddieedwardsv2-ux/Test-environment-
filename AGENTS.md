@@ -78,7 +78,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Check a page or visual output looks right | `python3 tools/screenshot.py <page>`, then look at the PNGs (needs `pip install playwright` each cloud session) |
 | Get knowledge out of Charlie's head (interview) | the `grill-me` skill; notes saved in `brainstorms/` |
 | What works/blocked in cloud sessions (YouTube, GitHub) | `context/environment.md` — read before any YouTube or GitHub task |
-| Past decisions and why | `decisions.md` (append new ones with a date) |
+| Past decisions and why | `decisions.md` (add new ones at the top, with a date) |
 | Projects (e.g. the YouTube channel) | `projects/<name>/` |
 | Flashcards | App: https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 — its `cards` database is the single source of truth (ArtifactData). `learning/flashcards.md` is a backup copy: regenerate it after adding cards. Page source: `learning/flashcards-app.html` |
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md`. Transcripts are `<title>--<video-id>-transcript.md` |
@@ -90,5 +90,5 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Research a new creator end to end | the `research-creator` skill (`.claude/skills/research-creator/`) |
 | Fetch a YouTube transcript | `python3 research/get_transcript.py <creator> <url>`; if rate-limited, add to `research/transcript-queue.txt` (GitHub fetches hourly) |
 | Fetch a creator's X posts | `python3 research/get_x_posts.py <creator> <handle>` |
-| Specialist agents and skills | `.claude/agents/`, `.claude/skills/`; find and install new skills with the `find-skills` skill |
+| Specialist agents and skills | `.claude/agents/`, `.claude/skills/` (Codex reads the same skills via `.agents/skills`); find and install new skills with the `find-skills` skill |
 | What kinds of plugins exist (9 families) | `research/plugin-map.md` — check before saying a tool doesn't exist |

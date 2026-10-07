@@ -9,5 +9,6 @@ Add this only when you have about 30+ notes and keep forgetting what's in them.
   `log.md` (what was added when), `concepts.md` and `rules.md` (every claim
   with an exact quote and its source; anything unsourced is labelled
   "inference").
-- **Ingest** updates every page a new source touches, then the index and log.
+- **Ingest** (ask the AI to "ingest this source") updates every page a new
+  source touches, then the index and log. Make it a skill once you do it often.
 - Only store what will still be useful in a year; you decide what goes in.

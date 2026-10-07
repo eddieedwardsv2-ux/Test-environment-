@@ -9,9 +9,9 @@ Brain", "Learn These 6 AI Skills Now" and "I Built Another Andrej Karpathy",
 then every other saved Nate video (`research/nate-herk/`).
 
 **Next step:** checklist written and applied (`system/standard-ai-os-v1.md`).
-Open: Charlie decides R11 (move some always-on rules out of `AGENTS.md` to
-make it mostly a routing map?), runs the first weekly `os-audit` and the first
-`grill-me` session; then ingest the 8 new Nate transcripts into his brain.
+Open: Charlie decides R11 (slim the router), R14 (95%-confidence rule) and
+X4 (deny list in settings); then the first weekly `os-audit`, the first
+`grill-me` session, and ingest the 14 new Nate transcripts into his brain.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work until Standard AI-OS v1 is done.

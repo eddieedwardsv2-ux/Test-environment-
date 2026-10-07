@@ -99,6 +99,27 @@ for n, line in enumerate(queue.read_text().splitlines() if queue.exists() else [
     if line.strip() and not line.startswith("#") and not re.fullmatch(r"[a-z0-9-]+ [\w-]{11}", line.strip()):
         err(f"transcript-queue.txt line {n} is malformed: {line!r}")
 
+# 4b. Router size (Nate, jdbOVepEtUE 5:36:27: "keep it under 200 lines", it is
+#     re-read with every message) and skill/agent front matter (an unclosed
+#     quote or missing description silently stops a skill or agent firing).
+for router in [ROOT / "AGENTS.md"] + list((ROOT / "templates").glob("*/AGENTS.md")):
+    lines = len(router.read_text().splitlines())
+    if lines > 200:
+        err(f"{router.relative_to(ROOT)} is {lines} lines; Nate's limit is 200")
+for cap in list(ROOT.glob(".claude/skills/*/SKILL.md")) + list(ROOT.glob(".claude/agents/*.md")) \
+        + list(ROOT.glob("templates/*/.claude/skills/*/SKILL.md")):
+    text = cap.read_text()
+    fm = re.match(r"---\n(.*?)\n---\n", text, re.S)
+    if not fm:
+        err(f"{cap.relative_to(ROOT)}: front matter missing or not closed with ---")
+        continue
+    for key in ("name", "description"):
+        m = re.search(rf"^{key}:\s*(.+)$", fm.group(1), re.M)
+        if not m:
+            err(f"{cap.relative_to(ROOT)}: front matter has no {key}")
+        elif m.group(1).count('"') % 2 or (m.group(1).startswith("'") and not m.group(1).rstrip().endswith("'")):
+            err(f"{cap.relative_to(ROOT)}: {key} has an unclosed quote")
+
 # 5. Poisoning: every quote in a requirements doc is verbatim at its timestamp.
 sys.path.insert(0, str(ROOT / "tools"))
 from check_quotes import check

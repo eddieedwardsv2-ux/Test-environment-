@@ -4,6 +4,13 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-07 — **v1 extended to 20 Nate videos** (6 more, incl. the 6h
+  Non-Coders course): 92 requirements, every quote checked. New checks in
+  `tools/audit.py`: router under 200 lines (Nate's limit), skill/agent front
+  matter valid. `os-audit` adds overlap and trigger tests. `.agents/skills`
+  links to `.claude/skills` so Codex sees the same skills. Fresh-session
+  tests: repo 12/12, template 9/9. Open for Charlie: R11 (slim router),
+  R14 (95%-confidence rule), X4 (deny list in settings).
 - 2026-10-07 — **Park flashcards** with the rest of Nick's teaching: focus
   stays on Nate and the OS. The app and cards stay; nothing deleted.
 - 2026-10-07 — **Standard AI-OS v1 written and applied**: 66 requirements

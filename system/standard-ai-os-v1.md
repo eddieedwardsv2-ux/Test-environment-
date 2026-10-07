@@ -6,8 +6,9 @@ standard plus Charlie's personal details. Decision: `decisions.md`, 2026-10-07.
 
 **Sources.** The four core videos are Ek1, DTC, 3XI and bvG. (Charlie named
 three links; bvG is assumed to be the fourth because the brain was already
-built from it.) Supporting: 9 of the other 10 saved Nate transcripts are cited below
-(all 14 were read; 9hetShMMp2s, Claude Code mods, added nothing new).
+built from it.) Supporting: the other 16 saved Nate transcripts (all 20 read; 9hetShMMp2s,
+Claude Code mods, added nothing new). Rows 2026-10-07b come from the 6 added
+last: jdb (6h course), RzL, e18, zKB, kB9, HIR.
 When videos disagree, the newer one wins (upload order is in `research/nate-herk/videos.md`).
 
 | Code | Video (transcript) |
@@ -25,6 +26,11 @@ When videos disagree, the newer one wins (upload order is in `research/nate-herk
 | 0WD | [Opus 4.8 Entire AI OS](../research/nate-herk/i-turned-claude-opus-4-8-into-my-entire-ai-operating-system--0WDkwMxj13s-transcript.md) |
 | 9KO | [Codex Skills](../research/nate-herk/how-to-build-codex-skills-better-than-99-of-people--9KOtMsZ9I28-transcript.md) |
 | XNQ | [I Deleted All My Claude Skills](../research/nate-herk/i-deleted-all-my-claude-skills-and-claude-got-smarter--XNQBCRcwXV4-transcript.md) |
+| jdb | [Claude Code for Non-Coders (6h course)](../research/nate-herk/claude-code-for-non-coders-6-hour-course--jdbOVepEtUE-transcript.md) |
+| RzL | [Claude Code Better Than 98% (mostly guest Cole Medin)](../research/nate-herk/how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) |
+| e18 | [Claude Subagents Better Than 99%](../research/nate-herk/how-to-build-claude-subagents-better-than-99-of-people--e18sdZLwP7o-transcript.md) |
+| kB9 | [Claude Code Projects in Codex](../research/nate-herk/how-to-use-your-claude-code-projects-in-codex-in-5-mins--kB9iMD0EjT8-transcript.md) |
+| HIR | [What to Build Instead of AI Agents](../research/nate-herk/anthropic-engineer-explains-what-to-build-instead-of-ai--HIRDzMtuWFk-transcript.md) |
 
 **Status:** ✅ met · 🔧 fixed 2026-10-07 · ⏳ open · ➖ deliberately not now (reason given).
 Quotes are verbatim auto-captions, so mishearings such as "cloudmd" and
@@ -51,7 +57,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | R1 | The root file is a router: it points rather than stores | "I treat this almost purely as a router" | Ek1 12:46 | ✅ `AGENTS.md` |
 | R2 | A short role line, then a "where things live" table | "But here is where you actually go to find data." | Ek1 13:17 | ✅ |
 | R3 | One route per topic. Without a route the AI won't look there | "you probably just didn't give Claude the knowledge to go look there" | DTC 4:34 | ✅ `tools/audit.py` checks every route exists |
-| R4 | Keep it lean | "if it grows too big, it can start to get messy and feel ignored" | DTC 5:04 | ✅ 88 lines; no number given. `os-audit` checks bloat. The template is 40 |
+| R4 | Keep it lean | "if it grows too big, it can start to get messy and feel ignored" | DTC 5:04 | ✅ 94 lines; R13 gives the limit. The template is about 40 |
 | R5 | One router for every tool (import rather than copy) | "you can literally just reference inside of your claude.md at agents.md" | DTC 22:49 | ✅ `CLAUDE.md` = `@AGENTS.md` |
 | R6 | Tool-agnostic: just files and folders | "you're building things to be tool agnostic" | bCl 2:04 | ✅ plus `exports/chatgpt-instructions.md` |
 | R7 | Routes to decisions, projects and the knowledge base | "Here's where decisions live. Here's templates. Here's references. Here's projects." | Ek1 13:47 | ✅ |
@@ -60,6 +66,11 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | R10 | Read the wiki only when needed | "I said don't read from the wiki unless you actually need it." | bCl 2:20:23 | ✅ smallest-context rule |
 | R11 | Shape: one identity line, a few core rules, then mostly a routing map | "I go into a routing map and that's the majority of my agents.mmd" | yys 6:07 | ⏳ our rules section is about half of `AGENTS.md`; the template follows it. Charlie decides whether to move rules to `context/working-rules.md` |
 | R12 | Each wiki has its own routing rules inside it | "inside the wiki, what happens is there are routing rules set up" | hQv 12:40 | ✅ each `brain/index.md` says which transcript to load |
+| R13 | Router under 200 lines: it is re-read with every message | "So keep it under 200 lines." | jdb 5:36:27 | 🔧 `tools/audit.py` errors above 200 (now 94) |
+| R14 | Don't build until 95% sure what's wanted; ask follow-ups first | "Do not make any changes until you have 95% confidence in what you need to build." | jdb 5:32:54 | ⏳ in the template; Charlie decides for this router (his own rule says ask only if the outcome is unclear) |
+| R15 | The router keeps decisions, not conversations | "Save decisions, not conversations." | jdb 5:44:05 | ✅ `decisions.md` |
+| R16 | Turn repeated failures into a one-line lesson | "When something fails repeatedly, when Nate has to reexplain, or when a workaround is found for a platform tool or limitation, add a oneline bullet here." | jdb 5:44:36 | ✅ done as a fix to the right file (backtrack rule) rather than a lessons list |
+| R17 | Router edits only apply in a new session | "the edit actually doesn't apply until you restart that session." | jdb 5:55:15 | ✅ helper agents told to re-read `AGENTS.md` from disk |
 
 ## 2. Filing cabinet
 | # | Requirement | Nate's words | Src | Here |
@@ -76,6 +87,8 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | F10 | Back up the whole folder to GitHub | "push this main folder to GitHub and everything backs up" | Ek1 12:46 | ✅ (public repo, so nothing private: an `AGENTS.md` rule) |
 | F11 | No layout is proven; routing is what matters | "there is not yet a standard way that has been proven the best way" | DTC 6:34 | ✅ we follow his example |
 | F12 | Browse test: can you find a thing without searching? | "see if you could find it without searching, without asking Claude" | Ek1 18:20 | ✅ fresh-session routing test (below) |
+| F13 | Codex reads `AGENTS.md`, `.codex/` for config, `.agents/` for skills | "you'd have your agents at MD with the dot codex folder for your config and your agents. And then you'd have a separate folder for your skills called dot agents" | kB9 3:04 | 🔧 `.agents/skills` links to `.claude/skills` (one copy, both tools) |
+| F14 | Shared skills and agents live in the repo, not the global folder | "If you want to share them with your team, keep them in your projects, keep them in your repo." | e18 24:57 | ✅ cloud sessions wipe the global folder anyway |
 
 ## 3. Knowledge base (level 2)
 | # | Requirement | Nate's words | Src | Here |
@@ -92,6 +105,8 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | K10 | Markdown wiki is enough until hundreds of pages | "if you have hundreds of pages with good indexes, you're fine with wiki graph" | bCl 2:23:27 | ✅ no vector DB |
 | K11 | Memory is an index, not a dump | "it's an index, not a dump" | Lrg 5:34 | ✅ repo is the memory; brain `index.md` |
 | K12 | After each ingest, check there are new index and log entries | "We should see a new record in the index as well as a new record in the log" | hQv 10:38 | ✅ `brain-ingest` steps 4–5 |
+| K13 | The router holds rules; memory holds learned facts | "cloudmd is the rules. Memory is, you know, learned facts." | jdb 2:04:50 | ✅ facts in `context/` and brains, not the router |
+| K14 | Save a working set-up so it's never researched again | "save the endpoint so you understand like we've done this before. I don't want you to research it every time" | jdb 1:07:47 | ✅ `context/environment.md`, `tools/` |
 
 ## 4. Maintenance
 | # | Requirement | Nate's words | Src | Here |
@@ -105,6 +120,9 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | M7 | Backtrack after a miss, then fix the route | "Have it update the routing." | Ek1 23:22 | ✅ `AGENTS.md` rule, `os-audit` backtrack |
 | M8 | Feed every correction back into the system | "every time you correct AI, you feed that correction back into the system" | 3XI 6:37 | ✅ backtrack rule |
 | M9 | Test in a fresh session: teammate or stranger? | "does this answer like a teammate" | bCl 12:44; 0WD 7:09 | ✅ routing test below |
+| M10 | Check skill and agent front matter is valid (an unclosed quote stops it firing) | "You have to close off the quotes if you open them up" | jdb 2:37:42; e18 16:21 | 🔧 `tools/audit.py` checks name, description and closing `---` |
+| M11 | Trigger-test a skill: obvious, reworded and unrelated requests | "The first one is an obvious request that should trigger it." | HIR 4:33 | 🔧 `os-audit` step for new or changed skills |
+| M12 | Fix a failure in the smallest lasting place | "update the skill in the smallest durable place" | HIR 6:05 | ✅ `os-audit` backtrack step 6 |
 
 ## 5. Skills, agents, tools
 | # | Requirement | Nate's words | Src | Here |
@@ -120,6 +138,13 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | S9 | Every skill has a verification step | "every single skill that I build works in some sort of verification loop" | 9KO 9:40 | ✅ each skill ends with a check |
 | S10 | Hand off before clearing: what was done, files, open decisions, next step | "here's what we did. Here's the files that were created. Here are open decisions. Here's what's next." | 0WD 22:24 | 🔧 router: update `current-focus.md` Next step before a session ends |
 | S12 | Check visual output by screenshotting it and looking | "we built a plan to add visual validation" | bCl 1:03:37 | 🔧 `tools/screenshot.py` (phone + desktop, script errors); flashcards app passed 2026-10-07 |
+| S13 | Define acceptance criteria and check against real evidence | "Before returning the final output, define the acceptance criteria." | HIR 8:05 | ✅ **Done when:**, run gate, quote checker |
+| S14 | Descriptions use the words a person would say; no two skills compete | "Put the words a real person would use inside the description and make sure two skills aren't competing for the same request." | HIR 4:02 | 🔧 `os-audit` checks for overlapping descriptions |
+| S15 | New skills report only; earn autonomy after many runs | "Once we've ran the skill 10, 20, 30 times and we've kind of like battle tested it and we feel more confident in it, then we can maybe make it a little bit more autonomous." | jdb 1:47:37 | ✅ `os-audit` read-only; `grill-me` asks before changing files |
+| S16 | Use a sub-agent when the output is a pile you'd never re-read | "is this about to dump a pile of stuff into my chat that I'll never read again?" | jdb 2:43:47 | ✅ smallest-context and parallel rules |
+| S17 | Don't overuse sub-agents (not for quick or dependent steps) | "if you're forcing too many sub agents, you're going to get worse results" | e18 24:57 | ✅ parallel rule: plan dependencies first |
+| S18 | Sub-agents are made read-only by their tools, not by a prompt | "you can put that so that these sub-agents are explicitly read-only" | e18 7:10 | ✅ `nate-brain`, `nick-brain`: Read, Glob, Grep only |
+| S19 | Keep scripts that worked in files, not in the chat | "don't leave that code trapped inside the chat" | HIR 2:02 | ✅ `tools/`, `research/*.py` |
 | S11 | Re-test skills when a new model arrives | "run you this model through your skills. Make sure they all still work." | XNQ 1:34 | ➖ do it at the next model change |
 
 ## 6. Secrets and connections
@@ -128,6 +153,8 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | X1 | Secrets in `.env`, excluded from Git, never pasted in chat | "gets excluded from anytime we do a public push" | bCl 41:50 | 🔧 `.gitignore`; `AGENTS.md` secrets row |
 | X2 | The AI gets its own account and least-privilege keys; prompts aren't permissions | "A prompt is never a permission layer." | 8QQ 24:31; bCl 38:44 | ➖ no connections yet; apply when connecting |
 | X3 | API plus a reference .md rather than many MCPs | "having a bunch of MCP servers loaded into your project actually eats more tokens" | bCl 39:45 | ➖ apply when connecting |
+| X4 | Block risky actions in settings (a deny list), not by asking nicely | "Can you help me update the settings file so that you physically cannot do those things?" | jdb 1:14:28 | ⏳ Charlie decides: deny force-push and mass delete in `.claude/settings.json` |
+| X5 | Keys in `.env` beat app connectors, which are lost when you switch tools | "If you rely on these connections, that is not great" | jdb 1:37:24 | ✅ Git and scripts, not connectors, do the repo's work |
 
 ## 7. Working habits
 | # | Requirement | Nate's words | Src | Here |
@@ -137,9 +164,13 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | H3 | Ask why; run it before saying it works | "Never accept AI output without asking why" | bCl 6:37 | ✅ Karpathy rule 5 |
 | H4 | Keep your own understanding | "you can outsource your thinking, but you cannot outsource your understanding" | bvG 10:08 | ✅ `teach` skill, flashcards |
 | H5 | Get your own OS working before a team's | "You can't scale a system if you haven't lived in it yourself." | bCl 2:31:32 | ✅ |
+| H6 | `/clear` between unrelated tasks | "Use slashclear between unrelated tasks." | jdb 5:30:53 | ✅ one task per session; hand-off rule |
+| H7 | Hand off to a new session at about 250-300k tokens | "if we get past 250,000 300,000, I'm going to do a session handoff" | jdb 2:00:48 | ✅ `current-focus.md` Next step hand-off |
+| H8 | Watch agents while they work | "Watch your agents as they're working and they're building things." | jdb 4:38:33 | ✅ check every agent's output (`AGENTS.md`) |
 
 ## Deliberately not adopted (Nate's tensions)
 - **Levels 3–5** (semantic search, graph, always-on). "If there's not pain, then why create more?" (DTC 4:04)
+- **Agent teams** (agents talking to each other): "they're very very expensive. So try to use them very sparingly." (jdb 5:42:35). Sub-agents only.
 - **Bypass permissions.** He uses them (bCl 43:21) but flags "you do run that risk of full autonomy". This public repo keeps asking first.
 - **Ingesting emails or Slack into the brain.** "you don't want to ingest into a second brain because that's just noise" (DTC 27:23): fetch live instead.
 - **Auto Dream.** Nate says it isn't confirmed (Lrg 6:05). Our memory is this repo plus the weekly audit.
