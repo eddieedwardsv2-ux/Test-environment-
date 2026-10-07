@@ -1,7 +1,7 @@
-# Fetch YouTube captions on GitHub's runners (YouTube blocks Claude's cloud IP).
-# Run from the Actions tab or `gh workflow run transcripts.yml -f creator=... -f videos="id1 id2"`.
-# Raw .vtt captions land in research/<creator>/raw/; Claude cleans them into
-# <id>-transcript.md with research/get_transcript.py's dedupe.
+# Fetch YouTube transcripts on GitHub's runners. YouTube blocks every data
+# centre (GitHub's too, tested 2026-10-07), but the free youtube-transcript.ai
+# service rate-limits per IP, so GitHub's runner gets its own allowance on top
+# of the cloud session's. Results are committed to research/<creator>/.
 name: transcripts
 on:
   workflow_dispatch:
@@ -15,20 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install -q yt-dlp
-      - name: Download English captions
+      - name: Fetch transcripts via the free service (GitHub's IP has its own allowance)
         env:
           CREATOR: ${{ inputs.creator }}
           VIDEOS: ${{ inputs.videos }}
-        run: |
-          mkdir -p "research/$CREATOR/raw"
-          for v in $VIDEOS; do
-            yt-dlp --js-runtimes node --skip-download --write-auto-subs --write-subs \
-              --sub-langs "en.*" --sub-format vtt \
-              -o "research/$CREATOR/raw/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=$v" \
-              || echo "FAILED $v"
-          done
-          ls -la "research/$CREATOR/raw"
+        run: python3 research/get_transcript.py "$CREATOR" $VIDEOS || echo "some videos unavailable"
       - name: Save to the repo
         run: |
           git config user.name "transcripts-bot"
