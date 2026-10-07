@@ -16,9 +16,11 @@ Never stop after a single failed attempt.
   Chromium via Playwright: Cloudflare/login walls) and WebFetch all failed
   for transcripts (tested 2026-10-07). Video lists, titles and descriptions
   DO work (yt-dlp `--flat-playlist`, Invidious `/api/v1/videos/<id>`).
-- Untested option: transcript APIs with free tiers (Supadata ~100/month,
-  TranscriptAPI 100 trial) run on their own servers. Needs Charlie's
-  sign-up approval; store the key as an environment secret, never in git.
+- WORKS (no sign-up): `python3 research/get_transcript.py <creator> <url>`
+  uses youtube-transcript.ai's free keyless endpoint. Rate-limited after
+  ~4 calls, so fetch a few videos at a time. Fallbacks needing sign-up:
+  Supadata (~100/month free), TranscriptAPI (100 trial); key goes in an
+  environment secret, never in git.
 - Transcripts work on Charlie's own devices: paste from a transcript site
   opened on his phone, or on his Mac run
   `yt-dlp --skip-download --write-auto-subs --sub-langs en <url>`.
