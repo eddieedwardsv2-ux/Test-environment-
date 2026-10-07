@@ -22,9 +22,8 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 - When you miss something, backtrack: explain where you looked and why you
   missed it, then fix the routing below so it doesn't happen again.
 - **Foundation first.** The active priority lives only in
-  `context/current-focus.md` (now: Standard AI-OS v1 from Nate; Nick parked).
-  Don't start parked work until that file says so. Before a session ends,
-  update its **Next step** (what was done, open decisions, what's next).
+  `context/current-focus.md`; don't start parked work until that file says
+  so. Before a session ends, update its **Next step** (what was done, open decisions, what's next).
 - **Reuse before building.** Before making any new skill, script, agent,
   workflow or folder convention, check `system/capability-map.md`; extend or
   combine what exists. New only if nothing fits.
@@ -48,7 +47,8 @@ step at a time, and end working replies with **Now:** and **Done when:**.
   skills (branch, push, merge) are the preferred path, not proof: if a push
   or write is refused, say exactly where and never report it as done. Cheap
   structural checks run automatically: `python3 tools/audit.py` (also on
-  every push via GitHub Actions); reasoning checks (clash, bloat, stale
+  every push via GitHub Actions, and before an agent finishes via the Stop-hook
+  run gate `tools/run_gate.sh`); reasoning checks (clash, bloat, stale
   facts) use the `os-audit` skill. Don't re-audit everything after small edits.
 - **Suggest tools proactively.** At the start of any new task or project,
   check `research/plugin-map.md` (all 9 families, Charlie's watchlist) and
@@ -69,10 +69,12 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | How to teach him (roles, learning loop) | `context/how-i-learn.md`; to teach a topic use the `teach` skill |
 | Current priority and Parking Lot | `context/current-focus.md` |
 | How the OS is built (layers, context types, failure modes) | `system/architecture.md` |
-| Nate's standard: every requirement, quote and status | `system/standard-ai-os-v1.md`; blank copy for a new OS: `templates/standard-ai-os-v1/` |
+| Nate's standard: every requirement, quote and status | `system/standard-ai-os-v1.md` |
+| Blank, not-yet-personalised copy of this OS | `templates/standard-ai-os-v1/` |
+| API keys and secrets | `.env` locally (Git ignores it); in cloud sessions and GitHub, environment secrets (`context/environment.md`). Never in files or chat |
 | What tools, skills, agents and scripts already exist | `system/capability-map.md` — check before building anything |
 | Tests the foundation must pass (A-D) | `system/foundation-tests.md` |
-| Audit the OS for clash, bloat, stale or missing routes | the `os-audit` skill (reasoning, weekly; reports saved in `audits/`) after `python3 tools/audit.py` (structure) |
+| Audit the OS for clash, bloat, stale or missing routes | the `os-audit` skill (reasoning, weekly; reports saved in `audits/`) after `python3 tools/audit.py` (structure; runs automatically on every push and before an agent finishes via the Stop-hook run gate `tools/run_gate.sh`) |
 | Get knowledge out of Charlie's head (interview) | the `grill-me` skill; notes saved in `brainstorms/` |
 | What works/blocked in cloud sessions (YouTube, GitHub) | `context/environment.md` — read before any YouTube or GitHub task |
 | Past decisions and why | `decisions.md` (append new ones with a date) |
@@ -80,9 +82,9 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Flashcards | App: https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 — its `cards` database is the single source of truth (ArtifactData). `learning/flashcards.md` is a backup copy: regenerate it after adding cards. Page source: `learning/flashcards-app.html` |
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md`. Transcripts are `<title>--<video-id>-transcript.md` |
 | Turn chosen transcripts into a lesson | the `video-tutor` agent (give it only the transcripts the lesson needs) |
-| How to organise the OS, context, routing, brains, audits (Nate) | the `nate-brain` agent; its knowledge is in `research/nate-herk/brain/` |
+| Ask Nate's view: how to organise the OS, context, routing, brains, audits | the `nate-brain` agent; its knowledge is in `research/nate-herk/brain/` |
 | Nick Saraev's view on a plan or question | the `nick-brain` agent; its knowledge is in `research/nick-saraev/brain/` |
-| Add new sources to a creator brain | the `brain-ingest` skill |
+| Add new videos or posts to any creator brain (Nate, Nick) | the `brain-ingest` skill |
 | Make ChatGPT work the same way | `exports/chatgpt-instructions.md` (paste into custom instructions). It's a copy made from this file and `context/working-rules.md`: update it whenever they change |
 | Research a new creator end to end | the `research-creator` skill (`.claude/skills/research-creator/`) |
 | Fetch a YouTube transcript | `python3 research/get_transcript.py <creator> <url>`; if rate-limited, add to `research/transcript-queue.txt` (GitHub fetches hourly) |

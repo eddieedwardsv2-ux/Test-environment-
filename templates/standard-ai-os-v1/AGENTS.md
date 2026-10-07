@@ -33,8 +33,10 @@ priority is in `context/current-focus.md`.
 | What matters now, what's parked | `context/current-focus.md` |
 | Past decisions and why (append with a date) | `decisions.md` |
 | Ongoing work and deliverables | `projects/<name>/` |
-| Knowledge base: raw sources + derived brain (level 2, add when needed) | `research/README.md` |
-| Skills (repeatable procedures) and agents (specialists) | `.claude/skills/`, `.claude/agents/` |
+| Knowledge base: raw sources (transcripts, articles) + derived brain (level 2, add when needed) | `research/README.md` |
+| Skills: `grill-me` (interview me), `os-audit` (weekly check) | `.claude/skills/` |
+| Specialist agents (create when first needed) | `.claude/agents/` |
+| How to set this OS up | `README.md` |
 | Interview notes from grill-me sessions | `brainstorms/` (created by the skill) |
 | Audit reports (read the latest before a new audit) | `audits/` (created by the audit) |
 | Old material that's no longer current | `archives/` (create when first needed) |

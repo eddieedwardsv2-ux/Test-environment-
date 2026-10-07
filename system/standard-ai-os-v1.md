@@ -6,7 +6,8 @@ standard plus Charlie's personal details. Decision: `decisions.md`, 2026-10-07.
 
 **Sources.** The four core videos are Ek1, DTC, 3XI and bvG. (Charlie named
 three links; bvG is assumed to be the fourth because the brain was already
-built from it.) Supporting: the other 10 saved Nate transcripts (all 14 read).
+built from it.) Supporting: 9 of the other 10 saved Nate transcripts are cited below
+(all 14 were read; 9hetShMMp2s, Claude Code mods, added nothing new).
 When videos disagree, the newer one wins (upload order is in `research/nate-herk/videos.md`).
 
 | Code | Video (transcript) |
@@ -123,7 +124,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 ## 6. Secrets and connections
 | # | Requirement | Nate's words | Src | Here |
 |---|---|---|---|---|
-| X1 | Secrets in `.env`, excluded from Git, never pasted in chat | "gets excluded from anytime we do a public push" | bCl 41:50 | 🔧 `.gitignore`; keys go in secrets (`AGENTS.md`) |
+| X1 | Secrets in `.env`, excluded from Git, never pasted in chat | "gets excluded from anytime we do a public push" | bCl 41:50 | 🔧 `.gitignore`; `AGENTS.md` secrets row |
 | X2 | The AI gets its own account and least-privilege keys; prompts aren't permissions | "A prompt is never a permission layer." | 8QQ 24:31; bCl 38:44 | ➖ no connections yet; apply when connecting |
 | X3 | API plus a reference .md rather than many MCPs | "having a bunch of MCP servers loaded into your project actually eats more tokens" | bCl 39:45 | ➖ apply when connecting |
 
