@@ -38,6 +38,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Projects (e.g. the YouTube channel) | `projects/<name>/` |
 | Flashcards | App: https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 — its `cards` database is the single source of truth (ArtifactData). `learning/flashcards.md` is a backup copy: regenerate it after adding cards. Page source: `learning/flashcards-app.html` |
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md` |
+| Research a new creator end to end | the `research-creator` skill (`.claude/skills/research-creator/`) |
 | Fetch a YouTube transcript | `python3 research/get_transcript.py <creator> <url>` |
 | Fetch a creator's X posts | `python3 research/get_x_posts.py <creator> <handle>` |
 | Specialist agents and skills | `.claude/agents/`, `.claude/skills/` |
