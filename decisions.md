@@ -4,6 +4,8 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-07 — **Park flashcards** with the rest of Nick's teaching: focus
+  stays on Nate and the OS. The app and cards stay; nothing deleted.
 - 2026-10-07 — **Standard AI-OS v1 written and applied**: 66 requirements
   from all 14 saved Nate videos, each quote checked against its timestamp, in
   `system/standard-ai-os-v1.md`; blank copy in `templates/standard-ai-os-v1/`.
