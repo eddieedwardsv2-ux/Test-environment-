@@ -122,11 +122,15 @@ for cap in list(ROOT.glob(".claude/skills/*/SKILL.md")) + list(ROOT.glob(".claud
 
 # 5. Poisoning: every quote in a requirements doc is verbatim at its timestamp.
 sys.path.insert(0, str(ROOT / "tools"))
-from check_quotes import check
+from check_quotes import check, check_linked
 for doc in [ROOT / "system/standard-ai-os-v1.md"]:
     if doc.exists():
         for f in check(doc)[1]:
             err(f)
+#    Every brain quote cited as "quote" — [m:ss](youtube link) is checked too.
+for page in ROOT.glob("research/*/brain/*.md"):
+    for f in check_linked(page)[1]:
+        err(f)
 
 for w in warns:
     print("WARN ", w)
