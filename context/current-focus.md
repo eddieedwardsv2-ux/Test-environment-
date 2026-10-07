@@ -16,7 +16,7 @@ and do its practice task.
 - Creator "advisor" agents (Nate's Karpathy idea): an agent that answers
   as Nick or Nate would, built from their research wiki
 - Dan Martell second-brain content (one creator at a time)
-- Nate's free "OS audit" skill (in his free Skool group) — check before installing
+- Nate's free "OS audit" skill and free "AIOS kit" (both in his free Skool group; Charlie pastes them in) — check before installing
 - Post the AI question in the decorators' Facebook group (see projects/youtube-channel)
 - Unlisted test video for the channel
 - On the Mac: install context7 and superpowers plugins; test watch-video plugin

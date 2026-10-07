@@ -3,7 +3,7 @@
 Channel: https://www.youtube.com/channel/UCbo-KbSjJDG6JWQ_MTZ_rNA
 Focus: Claude Code, Codex, AI agents and selling AI services; long full courses plus opinion pieces.
 
-Coverage: **316 videos listed** (2026-10-07, newest first), **3 transcribed**.
+Coverage: **316 videos listed** (2026-10-07, newest first), **6 transcribed**.
 Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 
 **Start with (★):** how he learns with AI, what 1,000 hours of Claude Code taught him, and what he'd learn now.
@@ -13,10 +13,10 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 | 1 | ★ [Here's What I'd Learn Instead of AI Automation in 2027](https://www.youtube.com/watch?v=638GQZ9UZ4w) | 168,000 | 24:00 | ✅ [transcript](638GQZ9UZ4w-transcript.md) |
 | 2 | ★ [How I Learn Complex Skills & Difficult Subjects So Fast with AI](https://www.youtube.com/watch?v=FSXHk4hMrY8) | 83,000 | 29:36 | ✅ [transcript](FSXHk4hMrY8-transcript.md) |
 | 3 | [GPT-6-Astra on The New ULTRAFAST $500 Plan Is Scary...](https://www.youtube.com/watch?v=KtMMRcEj1sk) | 48,000 | 12:44 | – |
-| 4 | [Why You Should Stop Listening To AI News](https://www.youtube.com/watch?v=x55Fj_syFcI) | 37,000 | 10:42 | – |
+| 4 | [Why You Should Stop Listening To AI News](https://www.youtube.com/watch?v=x55Fj_syFcI) | 37,000 | 10:42 | ✅ [transcript](x55Fj_syFcI-transcript.md) |
 | 5 | ★ [I Spent $31,141 & 1,000 Hours On Claude Code To Learn This](https://www.youtube.com/watch?v=45K3zHckCnQ) | 114,000 | 26:00 | ✅ [transcript](45K3zHckCnQ-transcript.md) |
 | 6 | [I Love AI, But GPT-6-Astra Terrifies Me](https://www.youtube.com/watch?v=DtfwNoL7Ndw) | 41,000 | 3:18 | – |
-| 7 | [I Found a Way To Use AI Agents Like Codex Completely For FREE](https://www.youtube.com/watch?v=IJS08TVGut0) | 89,000 | 9:41 | – |
+| 7 | [I Found a Way To Use AI Agents Like Codex Completely For FREE](https://www.youtube.com/watch?v=IJS08TVGut0) | 89,000 | 9:41 | ✅ [transcript](IJS08TVGut0-transcript.md) |
 | 8 | [I Uploaded A Fruit Fly Brain To Reply To My Emails](https://www.youtube.com/watch?v=GmCbzlb091A) | 87,000 | 12:40 | – |
 | 9 | [I Think GPT-6-Astra Just Changed YouTube](https://www.youtube.com/watch?v=MujaqZS9wtM) | 50,000 | 20:56 | – |
 | 10 | [The most important video you'll ever watch in the age of AI](https://www.youtube.com/watch?v=QLLuZbuTIRc) | 218,000 | 5h02 | – |
@@ -102,7 +102,7 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 | 90 | [Stop Selling Workflows, This Will Make You More Money](https://www.youtube.com/watch?v=Td8ymV1Cc_8) | 19,000 | 14:13 | – |
 | 91 | [How to Buy Yourself $1M In Social Proof (For Beginners)](https://www.youtube.com/watch?v=c7Iw14CVluY) | 37,000 | 13:13 | – |
 | 92 | [I Tested 900 AI Offers: Here's What Actually Worked](https://www.youtube.com/watch?v=T5-RXi-Zk_g) | 30,000 | 9:53 | – |
-| 93 | [What I'd Learn Instead of Automation in 2026](https://www.youtube.com/watch?v=YIl-awY250k) | 563,000 | 14:39 | – |
+| 93 | [What I'd Learn Instead of Automation in 2026](https://www.youtube.com/watch?v=YIl-awY250k) | 563,000 | 14:39 | ✅ [transcript](YIl-awY250k-transcript.md) |
 | 94 | [Most Automation Content Today Is P*rn.](https://www.youtube.com/watch?v=BdCIfVfEvXw) | 27,000 | 11:38 | – |
 | 95 | [How Two Best Friends Built a $25K/mo AI Agency (Tech Skills)](https://www.youtube.com/watch?v=m4yA2A-gPwk) | 16,000 | 36:13 | – |
 | 96 | [$1,000,000 AI Automation & Agents Advice for 5 Hours Straight](https://www.youtube.com/watch?v=L4Qbx8OM9l4) | 56,000 | 4h24 | – |
