@@ -1,19 +1,18 @@
 # Current focus
 
-**Priority:** prove the AI-OS routing + knowledge foundation (decision of
-2026-10-07). Curriculum: Nate Herk's two primary videos:
-1. "Steal My Exact AI OS Setup (5 simple tips)" — context, routing, audits
-2. "I Built Another Andrej Karpathy Using Claude" — turning raw material into a brain
+**Priority:** build **Standard AI-OS v1** (decision of 2026-10-07, later
+entry): a not-yet-personalised AI OS made only from what Nate Herk teaches,
+whose router (`AGENTS.md`, read by Claude via `CLAUDE.md`) files everything
+like a filing cabinet and works before any knowledge base is added.
+Sources: Nate's "Steal My Exact AI OS Setup", "Every Level of a Claude Second
+Brain", "Learn These 6 AI Skills Now" and "I Built Another Andrej Karpathy",
+then every other saved Nate video (`research/nate-herk/`).
 
-His other Nate transcripts (e.g. "Every Level of a Claude Second Brain") are
-supporting evidence only.
+**Next step:** finish the checklist of Nate's requirements and audit this
+repo against it (`system/standard-ai-os-v1.md` once written).
 
-**Next step:** pass the tests in `system/foundation-tests.md`; then Charlie
-explains the system back (router, raw evidence vs brain, audit, the four
-failure modes, backtracking).
-
-**Gated until "Foundation gate passed":** Nick Saraev's build/ship lessons as
-the active learning programme. His research and `nick-brain` stay usable.
+**Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
+they are, but no Nick work until Standard AI-OS v1 is done.
 
 ## Open quiz
 - Name the failure type: (1) old and new price lists both saved, AI quotes the
@@ -22,6 +21,8 @@ the active learning programme. His research and `nick-brain` stay usable.
   live in CLAUDE.md?
 
 ## Parking Lot
+- Nick Saraev: build/ship lessons, brain-ingest of his 4 courses, his advice
+  as a teaching programme (parked 2026-10-07 for Standard AI-OS v1)
 - Karpathy brain, then a "council" that asks Nick, Nate and Karpathy side by
   side (after the foundation gate; Karpathy's X posts and 4 transcripts saved)
 - Dan Martell second-brain content (one creator at a time)

@@ -4,6 +4,11 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-07 — **Park Nick; build Standard AI-OS v1 from Nate** (supersedes
+  "Foundation first" below as the current priority): a not-yet-personalised
+  router + filing cabinet made only from Nate Herk's teaching, audited
+  against his videos before any knowledge base is added. Nick's research and
+  agent stay but are parked — Charlie wants a correct standard router first.
 - 2026-10-07 — **Foundation first** (supersedes "starting with Nick" and
   "Karpathy and Nate brains after Nick's" below): the AI-OS routing +
   knowledge foundation from Nate's two primary videos ("Steal My Exact AI OS

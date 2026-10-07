@@ -30,7 +30,7 @@
 | 24 | [Thank You for 1M Subscribers](https://www.youtube.com/watch?v=5QmOhvVssxY) | 37,000 | 6:40 | – |
 | 25 | [GPT-6 Astra Finally Solves AI Video Editing (full guide)](https://www.youtube.com/watch?v=o3IEkKXXXvo) | 336,000 | 29:58 | – |
 | 26 | [I Turned GPT-6 Astra Into a 24/7 Stock Trader (tutorial)](https://www.youtube.com/watch?v=TLQLfa7yH4I) | 532,000 | 17:05 | – |
-| 27 | [I Turned GPT-6 Astra Into the Ultimate AI Second Brain](https://www.youtube.com/watch?v=yysILVsfLFM) | 218,000 | 19:49 | – |
+| 27 | [I Turned GPT-6 Astra Into the Ultimate AI Second Brain](https://www.youtube.com/watch?v=yysILVsfLFM) | 218,000 | 19:49 | ✅ [transcript](i-turned-gpt-6-astra-into-the-ultimate-ai-second-brain--yysILVsfLFM-transcript.md) |
 | 28 | [I Tested GPT-6 Astra vs Fable 5.1 on 15 Real Use Cases](https://www.youtube.com/watch?v=WfJPBVXPt8k) | 396,000 | 38:36 | – |
 | 29 | [GPT-6 Astra Voice Mode Automates Literally Anything](https://www.youtube.com/watch?v=9oi-b5Dvtso) | 206,000 | 14:45 | – |
 | 30 | [GPT-6 Astra FINALLY Kills AI Website Slop](https://www.youtube.com/watch?v=QhmhUgccaS0) | 317,000 | 8:37 | – |
@@ -88,7 +88,7 @@
 | 82 | [How to Use Claude Code Better Than 98% of People](https://www.youtube.com/watch?v=RzLV8sfFdMM) | – | 1h08 | – |
 | 83 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 280,000 | 31:00 | ✅ [transcript](every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md) |
 | 84 | [We Might Actually Need to Stop AI](https://www.youtube.com/watch?v=CvA8-aScqio) | 40,000 | 12:28 | – |
-| 85 | [Learn These 6 AI Skills Now (Before Everyone Else Does)](https://www.youtube.com/watch?v=3XIGcM7VICc) | 137,000 | 20:15 | – |
+| 85 | [Learn These 6 AI Skills Now (Before Everyone Else Does)](https://www.youtube.com/watch?v=3XIGcM7VICc) | 137,000 | 20:15 | ✅ [transcript](learn-these-6-ai-skills-now-before-everyone-else-does--3XIGcM7VICc-transcript.md) |
 | 86 | [Claude Fable 5 Made This Entire Video By Itself.](https://www.youtube.com/watch?v=ONmaDdOBGig) | 155,000 | 5:47 | – |
 | 87 | [From Zero to Head of AI in 1 Year (as a regular person)](https://www.youtube.com/watch?v=diY71x7GUjI) | 25,000 | 41:50 | – |
 | 88 | ★ [I Turned Claude Into the Ultimate Second Brain](https://www.youtube.com/watch?v=8QQ_INxAhRs) | 379,000 | 34:21 | ✅ [transcript](i-turned-claude-into-the-ultimate-second-brain--8QQ_INxAhRs-transcript.md) |
@@ -96,7 +96,7 @@
 | 90 | [How to Build Claude Subagents Better Than 99% of People](https://www.youtube.com/watch?v=e18sdZLwP7o) | 88,000 | 26:42 | – |
 | 91 | [Is Claude Mythos Coming?](https://www.youtube.com/watch?v=lkR6mvqQQlk) | 37,000 | 12:25 | – |
 | 92 | [AGI is Here. Anthropic Just Proved It.](https://www.youtube.com/watch?v=NDeyhGnNECc) | 85,000 | 12:37 | – |
-| 93 | [The Skill That 10x’d My Claude Code Projects](https://www.youtube.com/watch?v=c0kaKxM2pHg) | 122,000 | 7:24 | – |
+| 93 | [The Skill That 10x’d My Claude Code Projects](https://www.youtube.com/watch?v=c0kaKxM2pHg) | 122,000 | 7:24 | ✅ [transcript](the-skill-that-10x-d-my-claude-code-projects--c0kaKxM2pHg-transcript.md) |
 | 94 | [I Tested Every Claude Code Feature, These 12 Are the Best](https://www.youtube.com/watch?v=vfWTyEreOEc) | 118,000 | 20:15 | – |
 | 95 | [100 Years of Artificial Intelligence Explained](https://www.youtube.com/watch?v=NHFbAg2b54U) | 16,000 | 17:22 | – |
 | 96 | [Claude Code Dynamic Workflows Clearly Explained](https://www.youtube.com/watch?v=jZgcWCzxh1I) | 120,000 | 16:32 | – |
@@ -121,7 +121,7 @@
 | 115 | [Higgsfield Just Turned Claude Into a Creative Agency](https://www.youtube.com/watch?v=xn6Z5PYyAIE) | 128,000 | 35:28 | – |
 | 116 | [Building Realistic Voice Agents Has Never Been Easier](https://www.youtube.com/watch?v=-cdexJWN8YA) | 46,000 | 32:23 | – |
 | 117 | [I Tried 100+ Claude Code Skills. These 6 Are The Best](https://www.youtube.com/watch?v=eRS3CmvrOvA) | 457,000 | 13:39 | – |
-| 118 | [Build & Sell Claude Code Operating Systems (2+ Hour Course)](https://www.youtube.com/watch?v=bCljOfCH8Ms) | 484,000 | 2h33 | – |
+| 118 | [Build & Sell Claude Code Operating Systems (2+ Hour Course)](https://www.youtube.com/watch?v=bCljOfCH8Ms) | 484,000 | 2h33 | ✅ [transcript](build-sell-claude-code-operating-systems-2-hour-course--bCljOfCH8Ms-transcript.md) |
 | 119 | [Claude Design 2 HOUR COURSE (Beginner to Pro)](https://www.youtube.com/watch?v=ovabeVoWrA0) | 239,000 | 1h57 | – |
 | 120 | [32 Tricks to Level Up Claude Code in 16 Mins](https://www.youtube.com/watch?v=jqoFP9QapXI) | 476,000 | 16:16 | – |
 | 121 | [Claude Code + Playwright Automates Literally Anything](https://www.youtube.com/watch?v=J-6pnl5DQg8) | 155,000 | 18:51 | – |
@@ -155,7 +155,7 @@
 | 149 | [Gemini 3.1 Flash Live Just Changed Voice Agents Forever](https://www.youtube.com/watch?v=Qt3zMBH-FNg) | 72,000 | 18:42 | – |
 | 150 | [Claude Code + iMessage is Finally Here.](https://www.youtube.com/watch?v=hHlpVeooPrI) | 51,000 | 9:30 | – |
 | 151 | [STOP Using Bypass Permissions, Use This New Feature Instead](https://www.youtube.com/watch?v=pkSxISewcw8) | 114,000 | 5:41 | – |
-| 152 | [Claude Code Just Dropped Memory 2.0](https://www.youtube.com/watch?v=LrgfmZkl3nc) | 158,000 | 8:31 | – |
+| 152 | [Claude Code Just Dropped Memory 2.0](https://www.youtube.com/watch?v=LrgfmZkl3nc) | 158,000 | 8:31 | ✅ [transcript](claude-code-just-dropped-memory-2-0--LrgfmZkl3nc-transcript.md) |
 | 153 | [Claude Code Just Got Another Huge Upgrade](https://www.youtube.com/watch?v=X6EGzi9qm3E) | 135,000 | 8:11 | – |
 | 154 | [This $100M AI App Just Changed Software Forever](https://www.youtube.com/watch?v=T6_Ges4j1qY) | 45,000 | 9:09 | – |
 | 155 | [How to Build Claude Agent Teams Better Than 99% of People](https://www.youtube.com/watch?v=vDVSGVpB2vc) | 361,000 | 16:30 | – |
