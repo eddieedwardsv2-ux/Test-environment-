@@ -15,7 +15,9 @@ hand. A brain lives in `research/<creator>/brain/`:
 ## Steps
 1. **Work out what's new.** Read `brain/index.md` and `brain/log.md`. New
    sources are transcripts in `research/<creator>/` not listed as ingested,
-   or a link Charlie gives.
+   or a link Charlie gives. Charlie decides what goes in; ingest only what
+   will still be useful in a year (Nate, DTCyvo6cC54 27:23); fast-changing
+   data is fetched live instead.
 2. **Get the raw source** (parallel where possible):
    - YouTube link: `python3 research/get_transcript.py <creator> <id>`; if
      UNAVAILABLE, queue it (`research/transcript-queue.txt`) and trigger

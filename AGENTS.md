@@ -21,9 +21,10 @@ step at a time, and end working replies with **Now:** and **Done when:**.
   where, and the workaround. Never stop after one failed attempt.
 - When you miss something, backtrack: explain where you looked and why you
   missed it, then fix the routing below so it doesn't happen again.
-- **Foundation first.** Until `system/foundation-tests.md` records "Foundation
-  gate passed", the active work is the AI-OS routing + knowledge foundation
-  (Nate's two primary videos). Nick's production/build/ship lessons wait.
+- **Foundation first.** The active priority lives only in
+  `context/current-focus.md` (now: Standard AI-OS v1 from Nate; Nick parked).
+  Don't start parked work until that file says so. Before a session ends,
+  update its **Next step** (what was done, open decisions, what's next).
 - **Reuse before building.** Before making any new skill, script, agent,
   workflow or folder convention, check `system/capability-map.md`; extend or
   combine what exists. New only if nothing fits.
@@ -68,9 +69,11 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | How to teach him (roles, learning loop) | `context/how-i-learn.md`; to teach a topic use the `teach` skill |
 | Current priority and Parking Lot | `context/current-focus.md` |
 | How the OS is built (layers, context types, failure modes) | `system/architecture.md` |
+| Nate's standard: every requirement, quote and status | `system/standard-ai-os-v1.md`; blank copy for a new OS: `templates/standard-ai-os-v1/` |
 | What tools, skills, agents and scripts already exist | `system/capability-map.md` — check before building anything |
 | Tests the foundation must pass (A-D) | `system/foundation-tests.md` |
-| Audit the OS for clash, bloat, stale or missing routes | the `os-audit` skill (reasoning) after `python3 tools/audit.py` (structure) |
+| Audit the OS for clash, bloat, stale or missing routes | the `os-audit` skill (reasoning, weekly; reports saved in `audits/`) after `python3 tools/audit.py` (structure) |
+| Get knowledge out of Charlie's head (interview) | the `grill-me` skill; notes saved in `brainstorms/` |
 | What works/blocked in cloud sessions (YouTube, GitHub) | `context/environment.md` — read before any YouTube or GitHub task |
 | Past decisions and why | `decisions.md` (append new ones with a date) |
 | Projects (e.g. the YouTube channel) | `projects/<name>/` |

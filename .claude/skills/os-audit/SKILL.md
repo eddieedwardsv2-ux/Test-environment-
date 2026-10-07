@@ -1,6 +1,6 @@
 ---
 name: os-audit
-description: Reasoning audit of Charlie's AI OS (Layer 2, after tools/audit.py). Read-only; finds false facts, bloat, missing or misrouted context, clashing sources, stale knowledge and duplicate tools, then proposes the smallest fixes and waits for Charlie's OK. Use when Charlie says "audit the OS" or "check the OS", after big structural changes (new folders, skills, renames), monthly, or when an agent missed information that exists in the repo (run the backtrack section).
+description: Reasoning audit of Charlie's AI OS (Layer 2, after tools/audit.py). Read-only; finds false facts, bloat, missing or misrouted context, clashing sources, stale knowledge and duplicate tools, then proposes the smallest fixes and waits for Charlie's OK. Use when Charlie says "audit the OS" or "check the OS", after big structural changes (new folders, skills, renames), weekly (Fridays), or when an agent missed information that exists in the repo (run the backtrack section).
 ---
 
 # OS audit (Layer 2: reasoning)
@@ -23,6 +23,12 @@ skill: judgement about whether the OS would make an agent **give a wrong answer*
 - Every claim gets evidence (quote + `path:line`). Guesses are labelled **(inferring)**.
 - Other agents may be mid-edit: run `git status --short` and mark findings on
   modified files as "may be stale".
+
+## Step 0: read the last report
+Open the newest file in `audits/` (if any). Nate's audit looks "for earlier
+reports inside of the audit folder" first
+([10:14](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=614s)): note which old
+findings are fixed, still open, or came back.
 
 ## Step 1: run Layer 1 first
 Run `python3 tools/audit.py`. Report its errors/warnings as they are. Do **not**
@@ -77,7 +83,10 @@ From Nate ([1:34](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=94s) to
   wrong thing would an agent say or do?" No plausible wrong answer → low severity.
 
 ## Step 5: report
-In chat (no report file unless Charlie asks), one block per finding:
+Save it as `audits/YYYY-MM-DD.md` (create `audits/` if missing; this
+report file is the only write the audit makes) and show it in chat. Nate saves
+every audit "so that you can see how you're actually improving"
+([49:56](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=2996s)). One block per finding:
 
 | Field | What to write |
 |---|---|

@@ -8,8 +8,10 @@ Sources: Nate's "Steal My Exact AI OS Setup", "Every Level of a Claude Second
 Brain", "Learn These 6 AI Skills Now" and "I Built Another Andrej Karpathy",
 then every other saved Nate video (`research/nate-herk/`).
 
-**Next step:** finish the checklist of Nate's requirements and audit this
-repo against it (`system/standard-ai-os-v1.md` once written).
+**Next step:** checklist written and applied (`system/standard-ai-os-v1.md`).
+Open: Charlie decides R11 (move some always-on rules out of `AGENTS.md` to
+make it mostly a routing map?), runs the first weekly `os-audit` and the first
+`grill-me` session; then ingest the 8 new Nate transcripts into his brain.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work until Standard AI-OS v1 is done.

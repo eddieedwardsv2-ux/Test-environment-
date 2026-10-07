@@ -4,6 +4,16 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-07 — **Standard AI-OS v1 written and applied**: 66 requirements
+  from all 14 saved Nate videos, each quote checked against its timestamp, in
+  `system/standard-ai-os-v1.md`; blank copy in `templates/standard-ai-os-v1/`.
+  Gaps fixed: `os-audit` now saves dated reports to `audits/` and runs weekly
+  (Nate: Ek1 10:14, bCl 2:28:30); new `grill-me` skill saves to
+  `brainstorms/` (c0k); `.env` ignored by Git (bCl 41:50); `brain-ingest`
+  applies the one-year test (DTC 27:23); router asks for a session hand-off
+  in `current-focus.md` (0WD 22:24). Not adopted: levels 3-5, bypass
+  permissions, ingesting email/Slack, Auto Dream. The fourth core video is
+  assumed to be bvGptCLDhyo (Charlie gave three links).
 - 2026-10-07 — **Park Nick; build Standard AI-OS v1 from Nate** (supersedes
   "Foundation first" below as the current priority): a not-yet-personalised
   router + filing cabinet made only from Nate Herk's teaching, audited

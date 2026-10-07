@@ -1,8 +1,9 @@
-# Foundation tests (the gate before Nick's production lessons)
+# Foundation tests (part of Standard AI-OS v1)
 
 Charlie's four outcomes, written as tests. "Foundation gate passed" is
-written here only when A-D all pass with evidence, and then Nick's
-build/ship material becomes the active priority (`context/current-focus.md`).
+written here only when A-D all pass with evidence. Since 2026-10-07 these are
+one part of Standard AI-OS v1 (`system/standard-ai-os-v1.md`); what comes
+next, including the parked Nick work, is set in `context/current-focus.md`.
 
 **Status:** see Results at the bottom.
 
