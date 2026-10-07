@@ -2,6 +2,13 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Flashcards reviewed in a Claude artifact app (spaced repetition,
+  results in its database) — Charlie wanted interactive screens; Claude can
+  read results back to target weak spots. flashcards.md stays the question list.
+- 2026-10-07 — Connect the Anthropic community plugin marketplace in project
+  settings but install nothing yet — all 2,284 plugins one command away
+  without slowing every session down.
+- 2026-10-07 — X posts via FxTwitter's free API (research/get_x_posts.py).
 - 2026-10-07 — Keep this repo public until the Mac arrives — Charlie is happy with that; nothing private goes in (see AGENTS.md rule).
 - 2026-10-07 — Work in one long cloud session until the Mac arrives — the
   chat continues, but the workspace can still be wiped when idle, so every

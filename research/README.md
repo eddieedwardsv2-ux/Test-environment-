@@ -7,7 +7,7 @@ the `video-tutor` agent. Anything not from a transcript is marked as such.
 | Creator | Topic | Videos | Transcribed | Lessons |
 |---|---|---|---|---|
 | [Nate Herk](nate-herk/README.md) | AI OS, second brain, Claude Code | 2 | 2 | [AI OS + second brain](nate-herk/lesson-ai-os-and-second-brain.md) |
-
+| [Nick Saraev](nick-saraev/README.md) | How to think about and use AI; Claude Code, Codex courses | 316 listed | 2 | [How Nick thinks](nick-saraev/lesson-how-nick-thinks.md) |
 | [The Next New Thing](the-next-new-thing/README.md) | Free GitHub tools round-ups | 159 listed | 0 | – |
 
 **Queued (Parking Lot):** Dan Martell (second brain).

@@ -1,0 +1,163 @@
+<title>Charlie's Flashcards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one card at a time, like a paint chip pulled from a fan deck; topic = chip colour. */
+:root {
+  --bg: #f3f2ee; --surface: #ffffff; --fg: #1d2326; --muted: #5d676c; --line: #dcdcd4;
+  --accent: #2f6f62; --accent-fg: #ffffff; --good: #2f7a3d; --bad: #b0412e;
+  --chip-skills: #c7832f; --chip-git: #3d6fa3; --chip-ai-os: #2f6f62; --chip-environment: #8a5a9e; --chip-words: #8a7f2a;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+  --body: "Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15191b; --surface: #1f2528; --fg: #ecefef; --muted: #9aa5aa; --line: #333c40;
+  --accent: #5fb3a1; --accent-fg: #0f1a17; --good: #6cc27b; --bad: #ef8a75;
+  --chip-skills: #e0a259; --chip-git: #7aa7d8; --chip-ai-os: #5fb3a1; --chip-environment: #c099d3; --chip-words: #cbbd55;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #15191b; --surface: #1f2528; --fg: #ecefef; --muted: #9aa5aa; --line: #333c40;
+  --accent: #5fb3a1; --accent-fg: #0f1a17; --good: #6cc27b; --bad: #ef8a75;
+  --chip-skills: #e0a259; --chip-git: #7aa7d8; --chip-ai-os: #5fb3a1; --chip-environment: #c099d3; --chip-words: #cbbd55;
+  color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 17px/1.5 var(--body); padding-inline: 16px; padding-block: 20px 40px }
+main { max-width: 560px; margin: 0 auto; display: grid; gap: 20px }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap }
+h1 { font: 800 1.6rem/1.1 var(--display); margin: 0; text-wrap: balance }
+.count { font: 500 .8rem var(--mono); color: var(--muted); letter-spacing: .02em }
+.tabs { display: flex; gap: 8px }
+.tabs button { font: 700 .9rem var(--body); padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer }
+.tabs button[aria-selected="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg) }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: grid; min-height: 300px; grid-template-rows: auto 1fr auto }
+.chip { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 10px 16px; color: #fff; font: 500 .75rem var(--mono); letter-spacing: .06em; text-transform: uppercase }
+.face { padding: 22px 20px; display: grid; gap: 14px; align-content: center; min-width: 0 }
+.q { font: 600 1.35rem/1.3 var(--display); margin: 0; text-wrap: balance }
+.a { font-size: 1.05rem; border-top: 1px dashed var(--line); padding-top: 14px; margin: 0 }
+.hint { color: var(--muted); font-size: .9rem; margin: 0 }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 16px 16px }
+.actions button, .reveal { font: 700 1rem var(--body); padding: 14px; border-radius: 10px; border: 0; cursor: pointer }
+.reveal { grid-column: 1 / -1; background: var(--accent); color: var(--accent-fg) }
+.miss { background: transparent; color: var(--bad); border: 2px solid var(--bad) !important }
+.got { background: var(--good); color: var(--surface) }
+button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px }
+.done, .empty, .note { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 20px; display: grid; gap: 8px }
+.done h2, .empty h2 { font: 800 1.3rem var(--display); margin: 0 }
+.done p, .empty p, .note p { margin: 0; color: var(--muted) }
+.list { display: grid; gap: 8px }
+.row { display: grid; grid-template-columns: 10px 1fr auto; gap: 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px }
+.swatch { width: 10px; height: 100%; min-height: 28px; border-radius: 3px }
+.row p { margin: 0; min-width: 0 }
+.meta { font: 500 .72rem var(--mono); color: var(--muted); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums }
+.boxes { display: inline-flex; gap: 3px; vertical-align: middle }
+.boxes i { width: 7px; height: 7px; border-radius: 2px; background: var(--line) }
+.boxes i.on { background: currentColor }
+@media (prefers-reduced-motion: no-preference) { .card { animation: rise .25s ease-out } @keyframes rise { from { transform: translateY(6px) } to { transform: none } } }
+</style>
+
+<main>
+  <header>
+    <h1>Charlie's Flashcards</h1>
+    <span class="count" id="count">Loading…</span>
+  </header>
+  <nav class="tabs" role="tablist">
+    <button id="tab-review" role="tab" aria-selected="true">Review</button>
+    <button id="tab-all" role="tab" aria-selected="false">All cards</button>
+  </nav>
+  <section id="view"></section>
+  <div class="note"><p>Got it moves a card to a longer gap: 1 day, 3 days, 1 week, then 1 month. Missed it brings it back today. Claude reads your results to plan practice.</p></div>
+</main>
+
+<script>
+const GAPS = [0, 1, 3, 7, 30];               // days to wait after reaching box 1..4
+const TOPIC_LABEL = { skills: "Skills & plugins", git: "Git & GitHub", "ai-os": "AI OS", environment: "Cloud setup", words: "Words" };
+const today = () => new Date().toISOString().slice(0, 10);
+const addDays = (n) => { const d = new Date(); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10); };
+const chipColor = (t) => `var(--chip-${TOPIC_LABEL[t] ? t : "ai-os"})`;
+const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) k === "class" ? e.className = v : k === "style" ? e.style.cssText = v : e.setAttribute(k, v); for (const k of kids) e.append(k); return e; };
+
+let db = null, cards = [], tab = "review", revealed = false, sessionDone = 0, busy = false;
+const view = document.getElementById("view"), count = document.getElementById("count");
+
+function due() { return cards.filter(c => (c.due || "").slice(0, 10) <= today()).sort((a, b) => (a.due || "").localeCompare(b.due || "") || a.n - b.n); }
+
+function boxes(b) { const s = el("span", { class: "boxes" }); for (let i = 1; i <= 4; i++) s.append(el("i", { class: i <= b ? "on" : "" })); return s; }
+
+function render() {
+  const d = due();
+  count.textContent = cards.length ? `${d.length} due · ${cards.length} cards` : "";
+  view.replaceChildren();
+  if (!db) {
+    view.append(el("div", { class: "empty" }, el("h2", {}, "Open this inside Claude"), el("p", {}, "Your cards and progress are stored with this page on claude.ai. Sign in and open the link Claude gave you to start reviewing.")));
+    return;
+  }
+  if (!cards.length) {
+    view.append(el("div", { class: "empty" }, el("h2", {}, "No cards yet"), el("p", {}, "Claude adds cards here as you learn. Ask Claude to sync your flashcards.")));
+    return;
+  }
+  if (tab === "all") {
+    const list = el("div", { class: "list" });
+    for (const c of [...cards].sort((a, b) => a.n - b.n)) {
+      const b = c.box || 1;
+      list.append(el("div", { class: "row" },
+        el("span", { class: "swatch", style: `background:${chipColor(c.topic)}` }),
+        el("p", {}, c.q),
+        el("span", { class: "meta", style: `color:${chipColor(c.topic)}` }, boxes(b), el("br"), el("span", { style: "color:var(--muted)" }, `next ${c.due && c.due > today() ? c.due.slice(5) : "today"} · ✓${c.right || 0} ✗${c.wrong || 0}`))));
+    }
+    view.append(list);
+    return;
+  }
+  if (!d.length) {
+    const next = cards.map(c => c.due).filter(Boolean).sort()[0];
+    view.append(el("div", { class: "done" }, el("h2", {}, sessionDone ? `Done: ${sessionDone} reviewed` : "Nothing due"),
+      el("p", {}, next ? `Next cards are due on ${next}. Come back then, or browse All cards.` : "Browse All cards any time.")));
+    return;
+  }
+  const c = d[0];
+  const card = el("article", { class: "card", "aria-live": "polite" },
+    el("div", { class: "chip", style: `background:${chipColor(c.topic)}` }, el("span", {}, TOPIC_LABEL[c.topic] || c.topic || "Card"), el("span", {}, `#${c.n} · box ${c.box || 1}/4`)),
+    el("div", { class: "face" }, el("p", { class: "q" }, c.q),
+      revealed ? el("p", { class: "a" }, c.a) : el("p", { class: "hint" }, "Say the answer out loud first, then check.")),
+    el("div", { class: "actions" }));
+  const actions = card.querySelector(".actions");
+  if (!revealed) {
+    const r = el("button", { class: "reveal", id: "reveal" }, "Show answer");
+    r.onclick = () => { revealed = true; render(); };
+    actions.append(r);
+  } else {
+    const miss = el("button", { class: "miss", id: "miss" }, "Missed it");
+    const got = el("button", { class: "got", id: "got" }, "Got it");
+    miss.onclick = () => grade(c, false); got.onclick = () => grade(c, true);
+    actions.append(miss, got);
+  }
+  view.append(card);
+}
+
+async function grade(c, ok) {
+  if (busy) return; busy = true;
+  const box = ok ? Math.min((c.box || 1) + 1, 4) : 1;
+  const patch = { box, due: ok ? addDays(GAPS[box]) : today(), last: today(), right: (c.right || 0) + (ok ? 1 : 0), wrong: (c.wrong || 0) + (ok ? 0 : 1) };
+  // A missed card goes to the back of today's queue.
+  if (!ok) patch.due = today() + "~";
+  try { await db.doc("cards/" + c.id).update(patch); Object.assign(c, patch); sessionDone++; }
+  catch (e) { count.textContent = "Couldn't save that answer. Check you're signed in, then try again."; }
+  revealed = false; busy = false; render();
+}
+
+for (const [id, name] of [["tab-review", "review"], ["tab-all", "all"]]) {
+  document.getElementById(id).onclick = () => { tab = name; document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.id === id))); render(); };
+}
+
+render();
+(async () => {
+  db = await window.claude?.use?.("db") ?? null;
+  if (!db) { render(); return; }
+  db.collection("cards").onSnapshot(snap => {
+    cards = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    // "~" marks today's missed cards; treat them as due today but after the others.
+    for (const c of cards) if (c.due && c.due.endsWith("~") && c.due.slice(0, 10) < today()) c.due = c.due.slice(0, 10);
+    render();
+  }, () => { db = null; render(); });
+})();
+</script>
