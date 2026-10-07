@@ -17,3 +17,4 @@ Mark each review ✅ (knew it) or ❌ (didn't) with the date.
 | 10 | What does "anonymised" mean? | Names and identifying details removed, so you can't tell who said what. | 2026-10-07 | |
 | 11 | How do Claude Code and Codex share one instruction file? | Put it in AGENTS.md (Codex reads it); CLAUDE.md contains `@AGENTS.md` to import it. | 2026-10-07 | |
 | 12 | Why doesn't Claude's auto memory last in cloud sessions? | It's saved on the machine, and cloud workspaces are wiped; only files pushed to GitHub last. | 2026-10-07 | |
+| 13 | What is an AI "agent"? | An AI that can open files and take actions (like Claude Code or Codex), not just chat. | 2026-10-07 | |
