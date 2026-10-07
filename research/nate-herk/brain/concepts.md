@@ -5,6 +5,7 @@
 - **Karpathy** = "I Built Another Andrej Karpathy Using Claude", bvGptCLDhyo, 10:43 ([transcript][kb])
 
 **Supporting** sources (other Nate transcripts in `research/nate-herk/`) are cited only to back up or challenge a point, and are labelled *supporting*.
+**Wider course and newer videos (ingested 2026-10-07):** the other 14 saved transcripts (bCl, jdb, 3XI, c0k, Lrg, yys, 0WD, 9KO, RzL, e18, kB9, HIR, zKB, plus 9hetShMMp2s which added nothing). They feed section G and the "Also: [code m:ss]" lines. Codes are defined in the table in [standard-ai-os-v1.md](../../../system/standard-ai-os-v1.md); zKB (not in that table) is [Master 95% of Claude Code Skills in 28 Minutes](../master-95-of-claude-code-skills-in-28-minutes--zKBPwDpBfhs-transcript.md). When videos disagree, the newer one wins: upload order is in [videos.md](../videos.md) (smaller # = newer).
 **Date:** 2026-10-07. History of changes is in [log.md](log.md); current coverage is in [index.md](index.md).
 **Rules for this file:** text in quote marks is the exact caption wording (caption slips kept: "cloudmd" = CLAUDE.md, "wiks" = wikis, "crrons" = crons, "Herk 2" = Nate's own AI OS project). Everything else is paraphrase. Our own reading is marked **(inference)**.
 
@@ -26,6 +27,7 @@ Expertise context is what the agent needs on every run (who you are, goals, what
 > "expertise context is the rulebook" [5:38](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=338s)
 > "go use that live lookup, pull the data in because you need it" [6:08](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=368s)
 Source: AI OS ([transcript][os]).
+Also: [bCl 2:20:23](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=8423s) "I said don't read from the wiki unless you actually need it."; second brain = the first two C's, [yys 2:04](https://www.youtube.com/watch?v=yysILVsfLFM&t=124s).
 
 ## B. Organising the OS
 
