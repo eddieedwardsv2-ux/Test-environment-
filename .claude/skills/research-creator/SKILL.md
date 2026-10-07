@@ -74,7 +74,7 @@ When the lesson arrives:
    `id`/doc id `cNN` (next free), `n` (next free number), `q` (plain-English
    question), `choices` (**correct answer first**, 3–4 options), `a` (correct
    answer), `topic` (one of `skills`, `git`, `ai-os`, `environment`, `words`),
-   `box: 1`, `due: <tomorrow's date>`, `right: 0`, `wrong: 0`. Write them in one
+   nothing else (no scores: the app just shows right/wrong). Write them in one
    `batch`. Then regenerate the backup table in `learning/flashcards.md`.
 3. **Commit:** create a branch (e.g. `claude/research-<creator>`), commit the
    `research/` and `learning/` changes, push it, then fast-forward merge into

@@ -25,8 +25,20 @@ Shorts so I can share clips." Claude searches the catalogue (`find-skills`,
 or `.claude-plugin/marketplace.json` in anthropics/claude-plugins-community),
 reads the shortlist, and installs only what you approve.
 
-## Most relevant to Charlie now
-- Family 6 (`youtube-transcriber`, `watch-video`) — research agent, on the Mac.
-- Family 8 (`post-bridge`, `upload-post`) — posting clips, once the channel exists.
-- Family 2 (`superpowers`, `cost-guard`) — better habits and spend control.
-- Family 7 — only if the repo-based second brain starts to hurt (Nate: lowest level that fixes a pain).
+## Charlie's watchlist (checked against current work, 2026-10-07)
+Nothing installed yet; read each plugin before installing. Memory plugins save
+to the computer they run on, so they only pay off on the Mac (cloud sessions
+are wiped; this repo is the memory there).
+
+| When | Plugin | Family | Why it fits |
+|---|---|---|---|
+| Now | `build-loud` | 2 / 8 | Turns work sessions into a build-in-public journal: raw material for "learning in public" videos |
+| Now | `claude-patterns` | 2 | Scans sessions, journals and decisions for recurring patterns: could spot idea-switching and over-research early |
+| Mac | `youtube-transcriber`, `watch-video` | 6 | Transcripts without rate limits; Claude "watches" demos the transcript misses |
+| Mac | `claude-mem` or `bedrock` (Obsidian) | 7 | Lasting memory / Obsidian second brain, only if the repo approach starts to hurt (Nate: lowest level that fixes a pain) |
+| Channel live | `postiz` or `post-bridge` | 8 | Schedule and post clips to YouTube, TikTok, Instagram and X from one place |
+| Channel live | `vidIQ` (connector, not plugin) | 8 | YouTube keyword and channel research |
+
+Families 1 (coding), 3 (app connectors), 4 (industry packs), 5 (research), 9
+(safety) stay on the radar: e.g. if the decorating business returns, family 4
+and 3 (job/quote software connectors) come first.

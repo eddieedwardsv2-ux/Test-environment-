@@ -14,8 +14,11 @@
 - Turn mistakes into flashcards, one fact per card. Add new cards quietly to
   the app; don't quiz at the end of every reply.
 - **Flashcard prompts only at milestones:** finishing a lesson or a creator,
-  finishing and merging a build, or 5+ cards due (daily 18:59 check). Then
+  finishing and merging a build, or 5+ new cards waiting (daily 18:59 check). Then
   give the app link: https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144
+- **No scoring or penalties.** The app only shows right/wrong for each pick;
+  wrong answers never hold a card back or repeat lessons. Don't build any
+  points, streaks or difficulty system on top.
 - Every card is multiple choice: plain-English question, correct answer first
   in `choices` (the app shuffles), 3 believable wrong answers.
 - Progress = what he can explain or do on his own, plus finished work.

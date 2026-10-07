@@ -67,34 +67,41 @@ button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px }
     <span class="count" id="count">Loading…</span>
   </header>
   <nav class="tabs" role="tablist">
-    <button id="tab-review" role="tab" aria-selected="true">Review</button>
+    <button id="tab-review" role="tab" aria-selected="true">New</button>
+    <button id="tab-practice" role="tab" aria-selected="false">Practise all</button>
     <button id="tab-all" role="tab" aria-selected="false">All cards</button>
   </nav>
   <section id="view"></section>
-  <div class="note"><p>Pick an answer. Right moves a card to a longer gap: 1 day, 3 days, 1 week, then 1 month. Wrong brings it back today. Claude reads your results to plan practice.</p></div>
+  <div class="note"><p>Pick an answer and see straight away if it's right. Nothing is scored and no card is held back: New shows cards you haven't tried, Practise all goes through every card in a shuffled order.</p></div>
 </main>
 
 <script>
-const GAPS = [0, 1, 3, 7, 30];               // days to wait after reaching box 1..4
 const TOPIC_LABEL = { skills: "Skills & plugins", git: "Git & GitHub", "ai-os": "AI OS", environment: "Cloud setup", words: "Words" };
 const today = () => new Date().toISOString().slice(0, 10);
-const addDays = (n) => { const d = new Date(); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10); };
 const chipColor = (t) => `var(--chip-${TOPIC_LABEL[t] ? t : "ai-os"})`;
 const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) k === "class" ? e.className = v : k === "style" ? e.style.cssText = v : e.setAttribute(k, v); for (const k of kids) e.append(k); return e; };
 
 let db = null, cards = [], tab = "review", revealed = false, sessionDone = 0, busy = false;
 // Multiple-choice state: choices[0] is always the correct answer in the data.
 let order = [], shuffledFor = null, picked = null;
+let practiceOrder = [], practiceIdx = 0;
 const shuffle = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const view = document.getElementById("view"), count = document.getElementById("count");
 
-function due() { return cards.filter(c => (c.due || "").slice(0, 10) <= today()).sort((a, b) => (a.due || "").localeCompare(b.due || "") || a.n - b.n); }
-
-function boxes(b) { const s = el("span", { class: "boxes" }); for (let i = 1; i <= 4; i++) s.append(el("i", { class: i <= b ? "on" : "" })); return s; }
+// A card counts as tried once it has any recorded answer (older cards kept right/wrong counts).
+const tried = (c) => c.seen || (c.right || 0) + (c.wrong || 0) > 0;
+const lastResult = (c) => c.lastResult || ((c.wrong || 0) > 0 && !(c.right || 0) ? "wrong" : tried(c) ? "right" : null);
+function fresh() { return cards.filter(c => !tried(c)).sort((a, b) => a.n - b.n); }
+function queue() {
+  if (tab !== "practice") return fresh();
+  if (practiceOrder.length !== cards.length) { practiceOrder = shuffle(cards.map(c => c.id)); practiceIdx = 0; }
+  const c = cards.find(x => x.id === practiceOrder[practiceIdx]);
+  return c ? [c] : [];
+}
 
 function render() {
-  const d = due();
-  count.textContent = cards.length ? `${d.length} due · ${cards.length} cards` : "";
+  const d = queue();
+  count.textContent = cards.length ? `${fresh().length} new · ${cards.length} cards` : "";
   view.replaceChildren();
   if (!db) {
     view.append(el("div", { class: "empty" }, el("h2", {}, "Open this inside Claude"), el("p", {}, "Your cards and progress are stored with this page on claude.ai. Sign in and open the link Claude gave you to start reviewing.")));
@@ -107,24 +114,24 @@ function render() {
   if (tab === "all") {
     const list = el("div", { class: "list" });
     for (const c of [...cards].sort((a, b) => a.n - b.n)) {
-      const b = c.box || 1;
+      const r = lastResult(c);
       list.append(el("div", { class: "row" },
         el("span", { class: "swatch", style: `background:${chipColor(c.topic)}` }),
         el("p", {}, c.q),
-        el("span", { class: "meta", style: `color:${chipColor(c.topic)}` }, boxes(b), el("br"), el("span", { style: "color:var(--muted)" }, `next ${c.due && c.due > today() ? c.due.slice(5) : "today"} · ✓${c.right || 0} ✗${c.wrong || 0}`))));
+        el("span", { class: "meta", style: `color:${r === "right" ? "var(--good)" : r === "wrong" ? "var(--bad)" : "var(--muted)"}` }, r === "right" ? "✓ Right" : r === "wrong" ? "✗ Wrong" : "Not tried")));
     }
     view.append(list);
     return;
   }
   if (!d.length) {
-    const next = cards.map(c => c.due).filter(Boolean).sort()[0];
-    view.append(el("div", { class: "done" }, el("h2", {}, sessionDone ? `Done: ${sessionDone} reviewed` : "Nothing due"),
-      el("p", {}, next ? `Next cards are due on ${next}. Come back then, or browse All cards.` : "Browse All cards any time.")));
+    const msg = tab === "practice" ? "You've been through every card." : "No new cards.";
+    view.append(el("div", { class: "done" }, el("h2", {}, sessionDone ? `${msg} ${sessionDone} answered.` : msg),
+      el("p", {}, tab === "practice" ? "Tap Practise all again for a fresh shuffle." : "Tap Practise all to go through everything again, any time.")));
     return;
   }
   const c = d[0];
   const card = el("article", { class: "card", "aria-live": "polite" },
-    el("div", { class: "chip", style: `background:${chipColor(c.topic)}` }, el("span", {}, TOPIC_LABEL[c.topic] || c.topic || "Card"), el("span", {}, `#${c.n} · box ${c.box || 1}/4`)),
+    el("div", { class: "chip", style: `background:${chipColor(c.topic)}` }, el("span", {}, TOPIC_LABEL[c.topic] || c.topic || "Card"), el("span", {}, `#${c.n}`)),
     el("div", { class: "face" }, el("p", { class: "q" }, c.q),
       revealed ? el("p", { class: "a" }, c.a) : el("p", { class: "hint" }, "Say the answer out loud first, then check.")),
     el("div", { class: "actions" }));
@@ -161,19 +168,19 @@ function render() {
   view.append(card);
 }
 
+// No scoring or penalties (Charlie's choice): an answer only records whether
+// the last pick was right, so the All cards list can show it.
 async function grade(c, ok) {
   if (busy) return; busy = true;
-  const box = ok ? Math.min((c.box || 1) + 1, 4) : 1;
-  const patch = { box, due: ok ? addDays(GAPS[box]) : today(), last: today(), right: (c.right || 0) + (ok ? 1 : 0), wrong: (c.wrong || 0) + (ok ? 0 : 1) };
-  // A missed card goes to the back of today's queue.
-  if (!ok) patch.due = today() + "~";
+  const patch = { seen: true, lastResult: ok ? "right" : "wrong", last: today() };
+  if (tab === "practice") { practiceIdx++; }
   try { await db.doc("cards/" + c.id).update(patch); Object.assign(c, patch); sessionDone++; }
   catch (e) { count.textContent = "Couldn't save that answer. Check you're signed in, then try again."; }
   revealed = false; busy = false; render();
 }
 
-for (const [id, name] of [["tab-review", "review"], ["tab-all", "all"]]) {
-  document.getElementById(id).onclick = () => { tab = name; document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.id === id))); render(); };
+for (const [id, name] of [["tab-review", "review"], ["tab-practice", "practice"], ["tab-all", "all"]]) {
+  document.getElementById(id).onclick = () => { tab = name; if (name === "practice") practiceOrder = []; sessionDone = 0; picked = null; shuffledFor = null; revealed = false; document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.id === id))); render(); };
 }
 
 render();
@@ -182,8 +189,6 @@ render();
   if (!db) { render(); return; }
   db.collection("cards").onSnapshot(snap => {
     cards = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-    // "~" marks today's missed cards; treat them as due today but after the others.
-    for (const c of cards) if (c.due && c.due.endsWith("~") && c.due.slice(0, 10) < today()) c.due = c.due.slice(0, 10);
     render();
   }, () => { db = null; render(); });
 })();

@@ -2,6 +2,12 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Flashcards: no scoring, no rescheduling; app shows right/wrong
+  only, with New and Practise-all modes — Charlie doesn't want wrong answers
+  to hold him back or a judging system to maintain.
+- 2026-10-07 — Suggest plugins proactively from all 9 families (rule in
+  AGENTS.md, shortlist in research/plugin-map.md) — Charlie can't ask for
+  tools he doesn't know exist.
 - 2026-10-07 — Flashcards: multiple choice in plain English; prompts only at
   milestones (lesson or build finished, or 5+ due), not every reply; the app's
   database is the single source of truth (flashcards.md is a backup) — Charlie
