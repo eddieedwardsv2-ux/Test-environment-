@@ -2,6 +2,9 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Daily 18:59 UK flashcard check (Routine "Flashcard check",
+  trig_01MjF4jCRr9MHQbbmeuryFYS) messages Charlie in this session when cards
+  are due — flashcards should come to him, not wait to be remembered.
 - 2026-10-07 — Flashcards reviewed in a Claude artifact app (spaced repetition,
   results in its database) — Charlie wanted interactive screens; Claude can
   read results back to target weak spots. flashcards.md stays the question list.
