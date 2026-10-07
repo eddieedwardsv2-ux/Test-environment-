@@ -36,3 +36,4 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Fetch a YouTube transcript | `python3 research/get_transcript.py <creator> <url>` |
 | Fetch a creator's X posts | `python3 research/get_x_posts.py <creator> <handle>` |
 | Specialist agents and skills | `.claude/agents/`, `.claude/skills/` |
+| What kinds of plugins exist (9 families) | `research/plugin-map.md` — check before saying a tool doesn't exist |

@@ -18,3 +18,5 @@ Mark each review ✅ (knew it) or ❌ (didn't) with the date.
 | 11 | How do Claude Code and Codex share one instruction file? | Put it in AGENTS.md (Codex reads it); CLAUDE.md contains `@AGENTS.md` to import it. | 2026-10-07 | |
 | 12 | Why doesn't Claude's auto memory last in cloud sessions? | It's saved on the machine, and cloud workspaces are wiped; only files pushed to GitHub last. | 2026-10-07 | |
 | 13 | What is an AI "agent"? | An AI that can open files and take actions (like Claude Code or Codex), not just chat. | 2026-10-07 | |
+| 14 | What's the biggest plugin family, and roughly how big? | Coding helpers, about 1 in 3 of the 2,284. | 2026-10-07 | |
+| 15 | How do you ask for a plugin you don't know the name of? | Describe the job: "Is there a plugin that [does X] to [thing] so I can [goal]?" | 2026-10-07 | |
