@@ -11,7 +11,7 @@ Also queued: his Sequoia talk "From Vibe Coding to Agentic Engineering" (https:/
 
 | # | Video | Views | Length | Transcript |
 |---|---|---|---|---|
-| S | [From Vibe Coding to Agentic Engineering (Sequoia talk, not on his channel)](https://www.youtube.com/watch?v=96jN2OCOfLs) | – | ✅ [transcript](96jN2OCOfLs-transcript.md) | ✅ [transcript](96jN2OCOfLs-transcript.md) |
+| S | [From Vibe Coding to Agentic Engineering (Sequoia talk, not on his channel)](https://www.youtube.com/watch?v=96jN2OCOfLs) | ✅ [transcript](96jN2OCOfLs-transcript.md) | ✅ [transcript](96jN2OCOfLs-transcript.md) | ✅ [transcript](96jN2OCOfLs-transcript.md) |
 | 1 | ★ [How I use LLMs](https://www.youtube.com/watch?v=EWvNQjAaOHw) | 2,700,000 | 2h11 | ✅ [transcript](EWvNQjAaOHw-transcript.md) |
 | 2 | ★ [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) | 9,800,000 | 3h31 | ✅ [transcript](7xTGNNLPyMI-transcript.md) |
 | 3 | [Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU) | 1,100,000 | 4h01 | – |

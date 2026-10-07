@@ -3,7 +3,7 @@
 Channel: https://www.youtube.com/channel/UCbo-KbSjJDG6JWQ_MTZ_rNA
 Focus: Claude Code, Codex, AI agents and selling AI services; long full courses plus opinion pieces.
 
-Coverage: **316 videos listed** (2026-10-07, newest first), **9 transcribed**.
+Coverage: **316 videos listed** (2026-10-07, newest first), **10 transcribed**.
 Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 
 **Start with (★):** how he learns with AI, what 1,000 hours of Claude Code taught him, and what he'd learn now.
@@ -59,7 +59,7 @@ Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 | 47 | [CLAUDE SKILLS FULL COURSE: Automate Your Work (2026)](https://www.youtube.com/watch?v=sduaTkhIm_w) | 167,000 | 47:44 | – |
 | 48 | [VIBE CODING FULL COURSE: Gemini 3.1 + Antigravity (6 Hrs)](https://www.youtube.com/watch?v=gcuR_-rzlDw) | 371,000 | 6h23 | – |
 | 49 | [Gemini 3.1 Pro + Antigravity Destroys Every Site Designer](https://www.youtube.com/watch?v=czLrUyA_Bh4) | 258,000 | 9:51 | – |
-| 50 | [CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)](https://www.youtube.com/watch?v=QoQBzR1NIqI) | 2,600,000 | 4h10 | – |
+| 50 | [CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)](https://www.youtube.com/watch?v=QoQBzR1NIqI) | 2,600,000 | 4h10 | ✅ [transcript](QoQBzR1NIqI-transcript.md) |
 | 51 | [Opus-4.6 Just Did Something Crazy](https://www.youtube.com/watch?v=W6VockLeov4) | 33,000 | 11:22 | – |
 | 52 | [Advice for working in a post-AGI world](https://www.youtube.com/watch?v=Z6bKoFVZG7A) | 19,000 | 11:23 | – |
 | 53 | [US Lost 108K Jobs in Jan 2026, Most Gone Forever (AI)](https://www.youtube.com/watch?v=nTWe3P7hjxs) | 32,000 | 19:42 | – |

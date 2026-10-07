@@ -75,7 +75,7 @@
 | 69 | [GPT 5.6 Sol Made This Entire Video](https://www.youtube.com/watch?v=J_jswzXhYJA) | 106,000 | 5:24 | – |
 | 70 | [Fable 5 Just Built Me a Business With One Prompt](https://www.youtube.com/watch?v=R0qF17BVl9w) | 65,000 | 12:28 | – |
 | 71 | [How I Make Opus Think Like Fable (5 easy steps)](https://www.youtube.com/watch?v=XTBWVVcF3Pk) | 77,000 | 10:00 | – |
-| 72 | ★ [Fable 5 + Karpathy’s LLM Wiki is Basically Cheating](https://www.youtube.com/watch?v=hQvwMj7IJe4) | 96,000 | 14:35 | – |
+| 72 | ★ [Fable 5 + Karpathy’s LLM Wiki is Basically Cheating](https://www.youtube.com/watch?v=hQvwMj7IJe4) | 96,000 | 14:35 | ✅ [transcript](hQvwMj7IJe4-transcript.md) |
 | 73 | [How Claude is Creating a New Generation of Millionaires](https://www.youtube.com/watch?v=pbrln2TVeh4) | 132,000 | 9:36 | – |
 | 74 | [How Anthropic Engineers Actually Prompt Fable 5](https://www.youtube.com/watch?v=vcU85OrwuV0) | 70,000 | 10:45 | – |
 | 75 | [Stanford's Method Turns Claude Into a PHD Level Research Team](https://www.youtube.com/watch?v=Tj3018n5MVg) | 71,000 | 12:06 | – |
