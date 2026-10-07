@@ -39,7 +39,9 @@ step at a time, and end working replies with **Now:** and **Done when:**.
   or shared convention: one integration step merges results and edits the
   shared files (this router, focus, decisions). Parallel drafts are drafts
   until that step checks they agree. Rate-limited services go one at a time.
-  Check every agent's output before relying on it.
+  Check every agent's output before relying on it. Helper agents get the
+  router as it was at session start: if it changed since, tell them to
+  re-read `AGENTS.md` from disk.
 - **Check in proportion to risk.** Always verify anything you tell Charlie is
   done (file exists, pushed) and every agent's quotes/links. Git steps in
   skills (branch, push, merge) are the preferred path, not proof: if a push

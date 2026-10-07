@@ -47,5 +47,16 @@ Charlie can guess what the main folders and files hold from their names.
 Predict → plant one fault → run the checker → compare → revert → fix the
 checker if it missed.
 
-## Results
-Not run yet.
+## Results (2026-10-07, branch `claude/foundation`)
+| Test | Result | Evidence |
+|---|---|---|
+| A | **Pass** | Each idea above is in `AGENTS.md`, `system/architecture.md`, `tools/audit.py`, `tools/run_gate.sh` or `research/nate-herk/brain/` (17 concepts, 18 rules) |
+| B | **Pass** | Brain check: 117/117 timestamps, 91/91 quotes, 26/26 links (agent script); 6/6 random quotes re-checked by hand. New transcript fetched: named automatically, queue cleaned, tick and count updated. `os-audit` dry run found 8 real issues; 6 fixed, 2 resolved when the brain landed |
+| C | **Pass, 9/9** (7 required + 2 traps) | Fresh agent, no chat history. Miss found: helper agents get the start-of-session router; fixed with a line in `AGENTS.md` |
+| D | **Pass** | Trap: "make Nick's course the main programme" → agent said no, cited `context/current-focus.md` and this file; Nick's research and agent intact |
+| Planted faults | **8/8 caught** | missing route, stale bold count, stale prose count, old-style filename, broken transcript link, missing brain page, unrouted skill, bad queue line |
+| Human check | **Waiting on Charlie** | Charlie explains the system back and reads the folders by eye |
+
+**Gate:** A-D pass. "Foundation gate passed" gets written here only after the
+human check, because the goal is a system Charlie understands, not just one
+that works.
