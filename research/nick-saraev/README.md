@@ -3,14 +3,14 @@
 Channel: https://www.youtube.com/channel/UCbo-KbSjJDG6JWQ_MTZ_rNA
 Focus: Claude Code, Codex, AI agents and selling AI services; long full courses plus opinion pieces.
 
-Coverage: **316 videos listed** (2026-10-07, newest first), **2 transcribed**.
+Coverage: **316 videos listed** (2026-10-07, newest first), **3 transcribed**.
 Why Charlie wants him: to learn a better way of *thinking* about and using AI.
 
 **Start with (★):** how he learns with AI, what 1,000 hours of Claude Code taught him, and what he'd learn now.
 
 | # | Video | Views | Length | Transcript |
 |---|---|---|---|---|
-| 1 | ★ [Here's What I'd Learn Instead of AI Automation in 2027](https://www.youtube.com/watch?v=638GQZ9UZ4w) | 168,000 | 24:00 | – |
+| 1 | ★ [Here's What I'd Learn Instead of AI Automation in 2027](https://www.youtube.com/watch?v=638GQZ9UZ4w) | 168,000 | 24:00 | ✅ [transcript](638GQZ9UZ4w-transcript.md) |
 | 2 | ★ [How I Learn Complex Skills & Difficult Subjects So Fast with AI](https://www.youtube.com/watch?v=FSXHk4hMrY8) | 83,000 | 29:36 | ✅ [transcript](FSXHk4hMrY8-transcript.md) |
 | 3 | [GPT-6-Astra on The New ULTRAFAST $500 Plan Is Scary...](https://www.youtube.com/watch?v=KtMMRcEj1sk) | 48,000 | 12:44 | – |
 | 4 | [Why You Should Stop Listening To AI News](https://www.youtube.com/watch?v=x55Fj_syFcI) | 37,000 | 10:42 | – |
