@@ -75,6 +75,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | What tools, skills, agents and scripts already exist | `system/capability-map.md` — check before building anything |
 | Tests the foundation must pass (A-D) | `system/foundation-tests.md` |
 | Audit the OS for clash, bloat, stale or missing routes | the `os-audit` skill (reasoning, weekly; reports saved in `audits/`) after `python3 tools/audit.py` (structure; runs automatically on every push and before an agent finishes via the Stop-hook run gate `tools/run_gate.sh`) |
+| Check a page or visual output looks right | `python3 tools/screenshot.py <page>`, then look at the PNGs (needs `pip install playwright` each cloud session) |
 | Get knowledge out of Charlie's head (interview) | the `grill-me` skill; notes saved in `brainstorms/` |
 | What works/blocked in cloud sessions (YouTube, GitHub) | `context/environment.md` — read before any YouTube or GitHub task |
 | Past decisions and why | `decisions.md` (append new ones with a date) |

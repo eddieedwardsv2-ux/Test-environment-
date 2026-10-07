@@ -36,5 +36,7 @@ Tested 2026-10-07. Re-test anything older than a few months before relying on it
 - GitHub GraphQL is not available; use the REST API.
 
 ## Tools available
-- Chromium + Playwright are pre-installed (`/opt/pw-browsers`).
+- Chromium is pre-installed (`/opt/pw-browsers`); the Python `playwright`
+  library is NOT (tested 2026-10-07): `pip install playwright` (free) each
+  session before `tools/screenshot.py`. Never run `playwright install`.
 - Node 22, Python 3.13, ffmpeg.

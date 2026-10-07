@@ -99,6 +99,14 @@ for n, line in enumerate(queue.read_text().splitlines() if queue.exists() else [
     if line.strip() and not line.startswith("#") and not re.fullmatch(r"[a-z0-9-]+ [\w-]{11}", line.strip()):
         err(f"transcript-queue.txt line {n} is malformed: {line!r}")
 
+# 5. Poisoning: every quote in a requirements doc is verbatim at its timestamp.
+sys.path.insert(0, str(ROOT / "tools"))
+from check_quotes import check
+for doc in [ROOT / "system/standard-ai-os-v1.md"]:
+    if doc.exists():
+        for f in check(doc)[1]:
+            err(f)
+
 for w in warns:
     print("WARN ", w)
 for e in errors:

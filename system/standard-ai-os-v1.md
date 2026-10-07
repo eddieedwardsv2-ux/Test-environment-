@@ -98,7 +98,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 |---|---|---|---|---|
 | M1 | The audit is read-only and waits for approval | "Read only, never fix, or rename" | Ek1 9:43 | ✅ `os-audit` |
 | M2 | Audits are saved, and earlier reports are read first | "look for earlier reports inside of the audit folder" | Ek1 10:14 | 🔧 `audits/YYYY-MM-DD.md` |
-| M3 | Check routes, the reverse direction, indexes and freshness | "Do the indexes match the disk." | Ek1 11:15 | ✅ `tools/audit.py` plus `os-audit` |
+| M3 | Check routes, the reverse direction, indexes and freshness (and every quote here: `tools/check_quotes.py`, inside the audit) | "Do the indexes match the disk." | Ek1 11:15 | ✅ `tools/audit.py` plus `os-audit` |
 | M4 | Audit every week | "Maybe every single Friday, you run an audit" | bCl 2:28:30 | 🔧 weekly in `os-audit`; `audit.py` also runs on every push |
 | M5 | Diagnose with the four failure modes | "poisoning, bloat, confusion, and clash" | Ek1 1:34 | ✅ `system/architecture.md` |
 | M6 | Crons keep recurring data fresh | "set up some sort of crons to pull in the data that you want to always be living inside of your local project" | Ek1 19:51 | ✅ hourly transcript workflow |
@@ -119,6 +119,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | S8 | Sub-agents for context-heavy searches | "so that you don't blow your own context window" | bCl 1:23:32 | ✅ parallel rule |
 | S9 | Every skill has a verification step | "every single skill that I build works in some sort of verification loop" | 9KO 9:40 | ✅ each skill ends with a check |
 | S10 | Hand off before clearing: what was done, files, open decisions, next step | "here's what we did. Here's the files that were created. Here are open decisions. Here's what's next." | 0WD 22:24 | 🔧 router: update `current-focus.md` Next step before a session ends |
+| S12 | Check visual output by screenshotting it and looking | "we built a plan to add visual validation" | bCl 1:03:37 | 🔧 `tools/screenshot.py` (phone + desktop, script errors); flashcards app passed 2026-10-07 |
 | S11 | Re-test skills when a new model arrives | "run you this model through your skills. Make sure they all still work." | XNQ 1:34 | ➖ do it at the next model change |
 
 ## 6. Secrets and connections
