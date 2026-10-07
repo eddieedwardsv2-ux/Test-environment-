@@ -2,6 +2,12 @@
 
 Newest first. One line per decision: date — decision — why.
 
+- 2026-10-07 — Build creator "brains" (knowledge base + advisor agent),
+  starting with Nick Saraev — Charlie wants Nick's thinking available
+  alongside the OS, grounded in sources (Nate's Karpathy-brain idea).
+- 2026-10-07 — Automatic audit (tools/audit.py) on every push; manual checks
+  in proportion to risk — checks were too heavy on small edits, too light
+  on things only remembered.
 - 2026-10-07 — Spending rule: free first, but under ~£5-10 is fine when the
   knowledge is worth it (Nate pulled all of Karpathy's X posts for ~$1) —
   saves repeating the same workarounds. Charlie approves each spend.
