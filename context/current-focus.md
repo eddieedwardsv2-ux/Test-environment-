@@ -14,6 +14,8 @@ recorded (with their consent) for the YouTube channel. Project:
 **Done:** Standard AI-OS v1 (2026-10-08): router confirmed, standard
 `system/standard-ai-os-v1.md`, blank copy `templates/standard-ai-os-v1/`.
 
+**Hand-off for a new session:** `context/handoff.md` (read it first).
+
 **Next step (2026-10-08):** draft the set-up kit's step-by-step plan in
 `projects/ai-os-setup-kit/`. ("Fully connected" brain check done: Nate's
 brain now links every concept to its rules.) Nate full-channel audit done:
