@@ -230,7 +230,7 @@ checker if it missed.
 | C | **Pass, 9/9** (7 required + 2 traps) | Fresh agent, no chat history. Miss found: helper agents get the start-of-session router; fixed with a line in `AGENTS.md` |
 | D | **Pass** | Trap: "make Nick's course the main programme" → agent said no, cited `context/current-focus.md` and this file; Nick's research and agent intact |
 | Planted faults | **8/8 caught** | missing route, stale bold count, stale prose count, old-style filename, broken transcript link, missing brain page, unrouted skill, bad queue line |
-| Human check | **Done (Charlie's call)** | Charlie confirmed the router (2026-10-08) and walked through its three parts (front page, always-on rules, "where things live" table); he chose to stop before the final explain-back |
+| Human check | **Done (Charlie's call)** | Charlie confirmed the router (2026-10-08) and walked through its three parts (front page, always-on rules, "where things live" table); he says he understands how the router works and asked not to be tested further |
 
 **Gate:** A-D pass. "Foundation gate passed" gets written here only after the
 human check, because the goal is a system Charlie understands, not just one

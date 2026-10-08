@@ -4,6 +4,9 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Router confirmed; no forced tests** — Charlie understands
+  how the router works. Standing rule in `context/how-i-learn.md`: never force
+  an explain-back or quiz; offer once at most.
 - 2026-10-08 — **Router walkthrough skipped** — Charlie already knows what
   each file does; next step is personalising with `grill-me`.
 - 2026-10-08 — **Charlie's choices on the Nate comparison applied**

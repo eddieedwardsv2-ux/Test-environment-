@@ -25,3 +25,6 @@
 - Every card is multiple choice: plain-English question, correct answer first
   in `choices` (the app shuffles), 3 believable wrong answers.
 - Progress = what he can explain or do on his own, plus finished work.
+- **Never force an explain-back or quiz** (Charlie, 2026-10-08). Offer it once
+  at most; if he says he understands, take his word and move on. Don't make
+  finishing a task wait on his answers to test questions.
