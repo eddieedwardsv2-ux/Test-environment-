@@ -36,7 +36,8 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 - **Ask Charlie before** any sign-up, payment or plugin install. Suggest at
   most 2 helpful plugins per new task (`research/plugin-map.md`).
 - **This repo is public:** never write private, health, financial or client
-  information here.
+  information here. Other people's details, AI OSs and session recordings
+  go only in private repos; nothing goes on YouTube without their consent.
 
 ## Where things live
 | Need | Look in |

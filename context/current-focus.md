@@ -3,18 +3,21 @@
 **Refresh by:** 2027-01-08. Every 3 months, re-read this file with Charlie,
 update it, then move this date on 3 months (`tools/audit.py` warns once it passes).
 
-**Priority:** build **Standard AI-OS v1** (decision of 2026-10-07, later
-entry): a not-yet-personalised AI OS made only from what Nate Herk teaches,
-whose router (`AGENTS.md`, read by Claude via `CLAUDE.md`) files everything
-like a filing cabinet and works before any knowledge base is added.
-Sources: Nate's "Steal My Exact AI OS Setup", "Every Level of a Claude Second
-Brain", "Learn These 6 AI Skills Now" and "I Built Another Andrej Karpathy",
-then every other saved Nate video (`research/nate-herk/`).
+**Priority (90 days, set 2026-10-08 with `grill-me`):** become confident
+helping someone brand new to AI set up their own Standard AI-OS. Finish line:
+a repeatable set-up kit (prompts, skills, plugins and a step-by-step plan,
+built on `templates/standard-ai-os-v1/`) that someone can follow to get the
+same result every time. First 2-3 set-ups are free, for friends and family,
+recorded (with their consent) for the YouTube channel. Project:
+`projects/ai-os-setup-kit/`. Interview notes: `brainstorms/2026-10-08-who-i-am.md`.
 
-**Next step (2026-10-08):** Standard AI-OS v1 done and router confirmed by
-Charlie. Comparison choices applied (`system/comparison-vs-nate.md`). Router
-confirmed: Charlie understands how it works; no further tests. Next: personalise with `grill-me`, then back to the YouTube
-channel. Weekly `os-audit` on Fridays.
+**Done:** Standard AI-OS v1 (2026-10-08): router confirmed, standard
+`system/standard-ai-os-v1.md`, blank copy `templates/standard-ai-os-v1/`.
+
+**Next step (2026-10-08):** draft the set-up kit's step-by-step plan in
+`projects/ai-os-setup-kit/`. Open checks: what Nate means by a "fully
+connected" brain (video DTCyvo6cC54), then audit our brains against it.
+Weekly `os-audit` on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work until Standard AI-OS v1 is done.

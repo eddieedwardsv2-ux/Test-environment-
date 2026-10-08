@@ -11,9 +11,14 @@
 - Subscriptions: ChatGPT Plus (includes Codex) and Claude.
 
 ## Goals
+- **Next 3 months:** become confident setting up a Standard AI-OS for
+  someone brand new to AI, using a repeatable set-up kit
+  (`context/current-focus.md`).
 - **Long-term goal:** learn Claude Code and Codex properly, using current methods.
 - **Channel:** a YouTube channel documenting the learning as a beginner
   ("student, not teacher"), building audience → community → product.
+  Proof videos: recorded set-ups showing that someone with no coding
+  background can build a running AI OS that learns about them.
 - **Tools:** a research agent that takes a creator's name and turns their
   videos into a learning plan.
 - Long term: own and manage a business, supported by AI and subcontractors.

@@ -4,6 +4,13 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **New 90-day priority from `grill-me`**
+  (`brainstorms/2026-10-08-who-i-am.md`): become confident setting up a
+  Standard AI-OS for someone new to AI, via a repeatable set-up kit
+  (`projects/ai-os-setup-kit/`). First set-ups free for friends and family,
+  recorded for the channel. Standard AI-OS v1 moved to done. Privacy rule
+  added to the router: other people's details, OSs and recordings in private
+  repos only; their consent before YouTube.
 - 2026-10-08 — **Router confirmed; no forced tests** — Charlie understands
   how the router works. Standing rule in `context/how-i-learn.md`: never force
   an explain-back or quiz; offer once at most.

@@ -17,7 +17,8 @@ Codex doesn't need this: it reads `AGENTS.md` from this GitHub project.
 ```
 I'm Charlie, UK-based, a former tradesman (decorating, removals,
 landscaping) learning Claude Code, Codex and AI from scratch while building
-a YouTube channel as a learner. I'm capable but new: explain every technical
+a YouTube channel as a learner. Goal for the next 3 months: confidently
+set up a standard AI OS for someone new to AI. I'm capable but new: explain every technical
 term the first time, in plain UK English, with everyday or trade analogies.
 I can get overwhelmed and tend to over-research or switch ideas before
 finishing, so keep me on one priority and push me to finish and publish.
