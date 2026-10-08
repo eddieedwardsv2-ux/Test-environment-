@@ -9,6 +9,11 @@ three links; bvG is assumed to be the fourth because the brain was already
 built from it.) Supporting: the other 16 saved Nate transcripts (all 20 read; 9hetShMMp2s,
 Claude Code mods, added nothing new). Rows 2026-10-07b come from the 6 added
 last: jdb (6h course), RzL, e18, zKB, kB9, HIR.
+**Full-channel audit (2026-10-08):** all 359 of Nate's videos sorted by title;
+the 35 more that teach how to set up or run an AI OS were read in full and
+added rows R18, F15-F19, K15-K16, M13-M21, S20-S30, X6-X12 and H9-H20 (plus
+8 entries under "Deliberately not adopted"). Method and what was left out:
+`audits/2026-10-08-nate-channel.md`.
 When videos disagree, the newer one wins (upload order is in `research/nate-herk/videos.md`).
 
 | Code | Video (transcript) |
@@ -32,6 +37,37 @@ When videos disagree, the newer one wins (upload order is in `research/nate-herk
 | kB9 | [Claude Code Projects in Codex](../research/nate-herk/how-to-use-your-claude-code-projects-in-codex-in-5-mins--kB9iMD0EjT8-transcript.md) |
 | zKB | [Master 95% of Claude Code Skills](../research/nate-herk/master-95-of-claude-code-skills-in-28-minutes--zKBPwDpBfhs-transcript.md) |
 | HIR | [What to Build Instead of AI Agents](../research/nate-herk/anthropic-engineer-explains-what-to-build-instead-of-ai--HIRDzMtuWFk-transcript.md) |
+| mpA | [Build & Sell with Claude Code (10h course)](../research/nate-herk/build-sell-with-claude-code-10-hour-course--mpALXah_PBg-transcript.md) |
+| Xpb | [Build & Sell with Codex (5h course)](../research/nate-herk/build-sell-with-codex-5-hour-course--X-pbJWKmwi0-transcript.md) |
+| DFl | [Master 96% of Codex](../research/nate-herk/master-96-of-codex-in-under-35-minutes--DFlELTiSPk8-transcript.md) |
+| Ktn | [Claude Code is Starting To Get Dangerous](../research/nate-herk/no-seriously-claude-code-is-starting-to-get-dangerous--Ktnwygcnd8U-transcript.md) |
+| 6LN | [How to Actually Choose the Right AI Agent](../research/nate-herk/how-to-actually-choose-the-right-ai-agent--6LNlCpQPYFc-transcript.md) |
+| FBV | [How Anthropic Actually Prompts Fable 5.1](../research/nate-herk/how-anthropic-actually-prompts-fable-5-1--FBVNS1l5Vb8-transcript.md) |
+| 7WZ | [5000 Hours of Building AI](../research/nate-herk/5000-hours-of-building-ai-in-just-17-minutes--7WZ6XldxX0U-transcript.md) |
+| Euz | [Agent Loops Clearly Explained](../research/nate-herk/finally-agent-loops-clearly-explained--EuzYhzB0vbI-transcript.md) |
+| vfW | [12 Best Claude Code Features](../research/nate-herk/i-tested-every-claude-code-feature-these-12-are-the-best--vfWTyEreOEc-transcript.md) |
+| jZg | [Dynamic Workflows](../research/nate-herk/claude-code-dynamic-workflows-clearly-explained--jZgcWCzxh1I-transcript.md) |
+| 6cE | [Save Millions of Claude Tokens](../research/nate-herk/give-me-10-mins-and-ill-save-you-millions-of-claude-tokens--6cEQEba0i2A-transcript.md) |
+| brB | [What Karpathy Joining Anthropic Means](../research/nate-herk/what-karpathy-joining-anthropic-actually-means-for-claude--brB-hSiV2iU-transcript.md) |
+| ZRb | [Every Level of Claude in 21 Minutes](../research/nate-herk/every-level-of-claude-explained-in-21-minutes--ZRb7D6R64hM-transcript.md) |
+| 35W | [Copy My Tech Stack](../research/nate-herk/overwhelmed-by-ai-just-copy-my-tech-stack--35WuZxbAY68-transcript.md) |
+| eRS | [100+ Claude Code Skills, Best 6](../research/nate-herk/i-tried-100-claude-code-skills-these-6-are-the-best--eRS3CmvrOvA-transcript.md) |
+| jqo | [32 Tricks to Level Up Claude Code](../research/nate-herk/32-tricks-to-level-up-claude-code-in-16-mins--jqoFP9QapXI-transcript.md) |
+| _qZ | [Never Hit Your Session Limit](../research/nate-herk/how-to-never-hit-your-claude-session-limit-again--_qZvORxGqI0-transcript.md) |
+| ehg | [24/7 Claude Agents](../research/nate-herk/how-to-build-24-7-claude-agents-easy--ehg4fhydTgs-transcript.md) |
+| T4f | [Planning in Claude Code](../research/nate-herk/planning-in-claude-code-just-got-a-huge-upgrade--T4fXb3sbJIo-transcript.md) |
+| 49V | [18 Token Hacks](../research/nate-herk/18-claude-code-token-hacks-in-18-minutes--49V-5Ock8LU-transcript.md) |
+| tXt | [Source Code Leaked: 8 Things](../research/nate-herk/claude-code-source-code-just-leaked-8-things-you-must-do--tXtCK66fPj8-transcript.md) |
+| pkS | [Stop Using Bypass Permissions](../research/nate-herk/stop-using-bypass-permissions-use-this-new-feature-instead--pkSxISewcw8-transcript.md) |
+| vDV | [Claude Agent Teams](../research/nate-herk/how-to-build-claude-agent-teams-better-than-99-of-people--vDVSGVpB2vc-transcript.md) |
+| RAZ | [Skills Just Got Even Better](../research/nate-herk/claude-code-skills-just-got-even-better--RAZVk5NPNtE-transcript.md) |
+| mi4 | [Claude Code Executive Assistant](../research/nate-herk/turn-claude-code-into-your-executive-assistant-in-27-mins--mi4hcipESKQ-transcript.md) |
+| 3GA | [Teach a 10 Year Old Agentic Workflows](../research/nate-herk/how-i-d-teach-a-10-year-old-to-build-agentic-workflows--3GAxd90fEE4-transcript.md) |
+| AO5 | [Agentic Workflows Changed Automation](../research/nate-herk/agentic-workflows-just-changed-ai-automation-forever-claude--AO5aW01DKHo-transcript.md) |
+| sag | [Master 95% of Claude Code (beginner)](../research/nate-herk/master-95-of-claude-code-in-36-mins-as-a-beginner--saggDHHnmtQ-transcript.md) |
+| wq0 | [204 AI Automations](../research/nate-herk/i-built-204-ai-automations-here-s-what-actually-matters--wq001sxDTWw-transcript.md) |
+| Qhu | [6 Months of Building AI Agents](../research/nate-herk/6-months-of-building-ai-agents-in-43-minutes-without-the--QhujcQk8pyU-transcript.md) |
+| iTY | [Make Me as Much Money as Possible](../research/nate-herk/i-asked-claude-code-to-make-me-as-much-money-as-possible--iTY8Q449YNQ-transcript.md) |
 
 **Status:** ✅ met · 🔧 fixed 2026-10-07 · ⏳ open · ➖ deliberately not now (reason given).
 Quotes are verbatim auto-captions, so mishearings such as "cloudmd" and
@@ -72,6 +108,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | R15 | The router keeps decisions, not conversations | "Save decisions, not conversations." | jdb 5:44:05 | ✅ `decisions.md` |
 | R16 | Turn repeated failures into a one-line lesson | "When something fails repeatedly, when Nate has to reexplain, or when a workaround is found for a platform tool or limitation, add a oneline bullet here." | jdb 5:44:36 | ✅ done as a fix to the right file (backtrack rule) rather than a lessons list |
 | R17 | Router edits only apply in a new session | "the edit actually doesn't apply until you restart that session." | jdb 5:55:15 | ✅ helper agents told to re-read `AGENTS.md` from disk |
+| R18 | "Remember this" must mean a repo file: in cloud sessions auto-memory is wiped | "if you want your assistant to remember something permanently, just tell it remember that I always prefer X." | mpA 5:53:08 | ✅ `CLAUDE.md` note: anything worth keeping goes in this repo (his advice adapted for cloud) |
 
 ## 2. Filing cabinet
 | # | Requirement | Nate's words | Src | Here |
@@ -90,6 +127,11 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | F12 | Browse test: can you find a thing without searching? | "see if you could find it without searching, without asking Claude" | Ek1 18:20 | ✅ fresh-session routing test (below) |
 | F13 | Codex reads `AGENTS.md`, `.codex/` for config, `.agents/` for skills | "you'd have your agents at MD with the dot codex folder for your config and your agents. And then you'd have a separate folder for your skills called dot agents" | kB9 3:04 | 🔧 `.agents/skills` links to `.claude/skills` (one copy, both tools) |
 | F14 | Shared skills and agents live in the repo, not the global folder | "If you want to share them with your team, keep them in your projects, keep them in your repo." | e18 24:57 | ✅ cloud sessions wipe the global folder anyway |
+| F15 | Build in order: context, connections, capabilities, cadence | "So these four things really come one after the other, context, connections, capabilities, and cadence." | Xpb 45:42 | ✅ `context/` first; skills and schedules after |
+| F16 | Tell the AI where throwaway files go, apart from deliverables | "if we don't tell Claude how to organize its files, it's going to get messy quick to the point where I don't understand where things are" | 3GA 7:08 | ✅ scratch work goes in the session scratchpad, outside the repo (inferring: not yet written in the router) |
+| F17 | Every folder has a short README: why it exists, where to look | "so that your agent always understands why does this folder exist and where should it look for different things" | Xpb 1:32:56 | 🔧 2026-10-08 READMEs in every folder Charlie uses |
+| F18 | Everything starts in the project; promote to global only when earned | "Everything is project until deserves to be promoted to global so that I know at all times what is the running total of everything that's running globally." | 6LN 31:37 | ✅ everything lives in this repo (cloud sessions wipe the global folder) |
+| F19 | Start every task inside the project, not a plain chat | "cuz I see that you kicked off two regular chats and these wouldn't have had the same context" | Xpb 3:30:02 | ✅ cloud sessions open on this repo |
 
 ## 3. Knowledge base (level 2)
 | # | Requirement | Nate's words | Src | Here |
@@ -108,6 +150,8 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | K12 | After each ingest, check there are new index and log entries | "We should see a new record in the index as well as a new record in the log" | hQv 10:38 | ✅ `brain-ingest` steps 4–5 |
 | K13 | The router holds rules; memory holds learned facts | "cloudmd is the rules. Memory is, you know, learned facts." | jdb 2:04:50 | ✅ facts in `context/` and brains, not the router |
 | K14 | Save a working set-up so it's never researched again | "save the endpoint so you understand like we've done this before. I don't want you to research it every time" | jdb 1:07:47 | ✅ `context/environment.md`, `tools/` |
+| K15 | Keep examples of good work and the success criteria, not just rules | "But, if Claude has your files and your examples and your workflows and your style guides and the actual success criteria for what good looks like" | brB 5:34 | ⏳ later: add examples as the channel produces them |
+| K16 | Give the AI text: convert documents to markdown first | "Basically the idea of converting everything to markdown. Markdown is so much faster and so much cheaper for AI models." | _qZ 12:15 | ✅ transcripts and notes are markdown |
 
 ## 4. Maintenance
 | # | Requirement | Nate's words | Src | Here |
@@ -124,6 +168,15 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | M10 | Check skill and agent front matter is valid (an unclosed quote stops it firing) | "You have to close off the quotes if you open them up" | jdb 2:37:42 | 🔧 `tools/audit.py` checks name, description and closing `---` |
 | M11 | Trigger-test a skill: obvious, reworded and unrelated requests | "The first one is an obvious request that should trigger it." | HIR 4:33 | 🔧 `os-audit` step for new or changed skills |
 | M12 | Fix a failure in the smallest lasting place | "update the skill in the smallest durable place" | HIR 6:05 | ✅ `os-audit` backtrack step 6 |
+| M13 | Parts of the OS go stale at different speeds; review each at its own pace | "All of these different parts decay, become obsolete or rot at different rates." | 6LN 22:57 | ⏳ partly: weekly audit plus quarterly focus refresh; no per-layer table yet |
+| M14 | Score each audit and keep the scores to see the OS improve | "it will store your scores every time so that you can see how you're actually improving your system" | Xpb 53:15 | ⏳ open: `audits/` reports have no score |
+| M15 | When output is bad, first ask: model, tool or our own organisation? | "is this a model problem, is this a harness problem? Or is this an organization problem?" | 6LN 32:07 | ⏳ open: add to the `os-audit` backtrack steps |
+| M16 | Check what fills the context and delete unused tools, skills and servers | "this allows you to identify waste and delete things that you're not using." | mpA 7:45:31 | ⏳ open: a `/context` check in `os-audit` |
+| M17 | Retire a skill that no longer earns its place | "So you want to make sure that your skill is actually adding value and not holding" | 6LN 24:29 | ⏳ later: once there are about 10+ skills |
+| M18 | Unattended runs must never need to stop and ask | "You're not around. So, you probably want to make sure that it doesn't ever have to stop and ask you questions." | ehg 1:33 | ✅ transcript-queue workflow runs unattended |
+| M19 | Unattended runs only see the repo, APIs and environment secrets | "the rule of thumb here is if something's local or if Claude Code can't reach it in your GitHub repo or via an API, then it won't work." | ehg 13:13 | ✅ `context/environment.md`; everything kept is committed |
+| M20 | Test a scheduled job by hand, and prove one live run, before switching the schedule on | "now we have to deploy to trigger.dev and validate one run there before we turn on the schedule" | Xpb 3:01:26 | ⏳ rule for the next scheduled job (also ehg 15:45: alert on failure) |
+| M21 | Pin fixed details of a scheduled job in a script so the agent can't drift | "the agent was just interpreting the message different every time and it just acted differently" | Xpb 3:00:25 | ✅ `research/get_transcript.py` does the fixed work |
 
 ## 5. Skills, agents, tools
 | # | Requirement | Nate's words | Src | Here |
@@ -147,6 +200,17 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | S18 | Sub-agents are made read-only by their tools, not by a prompt | "you can put that so that these sub-agents are explicitly read-only" | e18 7:10 | ✅ `nate-brain`, `nick-brain`: Read, Glob, Grep only |
 | S19 | Keep scripts that worked in files, not in the chat | "don't leave that code trapped inside the chat" | HIR 2:02 | ✅ `tools/`, `research/*.py` |
 | S11 | Re-test skills when a new model arrives | "run you this model through your skills. Make sure they all still work." | XNQ 1:34 | ➖ do it at the next model change |
+| S20 | Plan before building anything non-trivial (Nate: plan mode) | "So what you always want to do when you're creating an idea is you want to go on plan mode." | mpA 2:01:40 | ➖ plan mode declined by Charlie 2026-10-08; R14 option B (ask 1-2 questions) covers it. Nate repeats this in at least 13 of the 35 audited videos: worth revisiting |
+| S21 | A different checker decides "done", not the worker | "Claude doesn't get to declare itself done. A different model has to look at it with a different persona" | iTY 22:25 | ✅ for structure (`tools/audit.py`, quote checker, `os-audit`); ⏳ for judgement work |
+| S22 | Make the AI challenge the plan before building | "You ask Claude to start challenging you and pushing back and playing devil's advocate before it builds anything or before it approves any plan" | iTY 2:36 | ⏳ open: one line in `context/working-rules.md` |
+| S23 | After "done", try to break it | "by the time it tells you it's done, you stress test it more. and you try to find those edge cases" | iTY 9:43 | ✅ used for the audit tools (planted fakes must fail) |
+| S24 | Build checks into the to-do list, not just at the end | "you can actually build verification steps right into that list" | jqo 4:02 | ✅ steps end with a check (audit, quote checker) |
+| S25 | One skill or agent, one job | "the whole idea is that you want a skill to do one very specific job" | Xpb 1:06:25 | ✅ each skill and agent has one job |
+| S26 | Build a skill from a real run done together, then turn it into a skill | "The way that I build my skills is I have Claude Code do something with me. I walk it through the steps" | mpA 6:21:32 | ⏳ use for the set-up kit's skills |
+| S27 | Start instructions small and add a line per real failure, including a don'ts list | "I'm constantly telling the AI what not to do. That list of don'ts is really just my experience written down" | 7WZ 4:05 | ✅ R16 lessons; working-rules grow from misses |
+| S28 | A helper starts with no memory: its brief carries everything; each owns its files | "when the agents wake up, they have no context. They basically only get the prompt that the main session feeds into them." | vDV 5:05 | ✅ AGENTS.md parallel rule; briefs written in full |
+| S29 | Unattended or long runs get a bounded scope and an objective finish line | "So, bound the scope, name the deliverable, and then all your sub agents can be put on Haiku." | jZg 11:11 | ✅ every task ends with **Done when:** (also Euz 9:13: hard cap on passes) |
+| S30 | Save big plans to a file and work phase by phase, one session each | "Have one for discovery where you can have Claude read through PDFs and read through the code base" | _qZ 21:25 | ✅ `brainstorms/`, `current-focus.md` Next step |
 
 ## 6. Secrets and connections
 | # | Requirement | Nate's words | Src | Here |
@@ -156,6 +220,13 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | X3 | API plus a reference .md rather than many MCPs | "having a bunch of MCP servers loaded into your project actually eats more tokens" | bCl 39:45 | ➖ apply when connecting |
 | X4 | Block risky actions in settings (a deny list), not by asking nicely | "Can you help me update the settings file so that you physically cannot do those things?" | jdb 1:14:28 | 🔧 `.claude/settings.json` denies force-push, hard reset, git clean and `rm -rf` (tested: blocked) |
 | X5 | Keys in `.env` beat app connectors, which are lost when you switch tools | "If you rely on these connections, that is not great" | jdb 1:37:24 | ✅ Git and scripts, not connectors, do the repo's work |
+| X6 | Allow-list safe commands as well as denying destructive ones | "go into your permissions and explicitly allow the commands that you know are safe" | jqo 14:07 | ⏳ needs Charlie's OK (settings change); deny list exists |
+| X7 | Security review before anything is published | "I basically told it to run a security review and make sure that my API keys aren't exposed and that there's no vulnerabilities" | sag 30:01 | ✅ secret scan in `tools/audit.py` on every push; `security-review` skill available |
+| X8 | A hook strips private data before a push, not just a rule | "that there's a hook that fires to remove any PII, any sensitive data of that client that I don't want living on my GitHub." | 6LN 23:59 | ⏳ open: extend the secret scan to private-info patterns |
+| X9 | Start read-only and draft-only; a human approves outward actions | "So, I would always start with like read-only access whenever you can, have the agent only do drafts" | Ktn 10:40 | ✅ router: ask before publishing, sign-ups or payments |
+| X10 | Untrusted content (web pages, transcripts) can trick an agent into sending data out | "if Claude reads malicious content during a run, then it theoretically could be tricked into sending data to an external server." | ehg 11:41 | ⏳ check the cloud environment's network setting (`context/environment.md`) |
+| X11 | Vet a plugin with a checklist before installing | "outbound network calls, data xfiltration, shell command injection, suspicious dependencies, credentials, secret handling, file system access, and remote script loading." | mpA 8:23:43 | ✅ router: ask Charlie before any plugin install |
+| X12 | Helpers inherit the main session's permissions | "they inherit the permissions from the main session. So, if you're on bypass permissions, then all of your agents are going to be on bypass permissions" | vDV 12:11 | ✅ deny list applies to helpers too |
 
 ## 7. Working habits
 | # | Requirement | Nate's words | Src | Here |
@@ -168,6 +239,18 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | H6 | `/clear` between unrelated tasks | "Use slashclear between unrelated tasks." | jdb 5:30:53 | ✅ one task per session; hand-off rule |
 | H7 | Hand off to a new session at about 250-300k tokens | "if we get past 250,000 300,000, I'm going to do a session handoff" | jdb 2:00:48 | ✅ `current-focus.md` Next step hand-off |
 | H8 | Watch agents while they work | "Watch your agents as they're working and they're building things." | jdb 4:38:33 | ✅ check every agent's output (`AGENTS.md`) |
+| H9 | Know why long chats cost more: every message re-reads the whole chat | "Claude rereads the entire conversation from the beginning, and all of those are tokens that it's charging you for" | 49V 1:04 | ✅ the reason behind H6/H7 |
+| H10 | Act on context early, around half the window, not when auto-compact fires | "somewhere around halfway through your context window, it starts to fall apart." | eRS 4:32 | ⏳ H7's 250-300k number assumes a 1M window; reword as "about half" |
+| H11 | Look at what's using the context before blaming the model | "go into a fresh session, do /context, and see what you're sitting at before you even send off anything" | _qZ 1:04 | ⏳ open: part of M16 |
+| H12 | Stop a wrong path early; rewind or restart instead of piling on corrections | "that failed attempt, that broken code, whatever it did wrong, the wrong approach, all of that is still sitting in your context" | _qZ 7:09 | ✅ habit (also mpA 3:28:50 "steer early") |
+| H13 | Match model and effort to the task; the cheapest that does the job | "do not automatically run everything at maximum effort or even just high." | FBV 4:39 | ✅ helpers on `model: sonnet` |
+| H14 | Check the usage allowance before choosing the job | "Just being able to actually peek at it every once in a while, it will change the way that you think about the prompt you might send off" | _qZ 11:44 | ✅ agents rerun after a limit reset |
+| H15 | Paste the whole error, not a description of it | "this is the error that I got. And then I paste in all that messy stuff and shoot it off" | sag 33:04 | ⏳ set-up kit teaching point |
+| H16 | When the AI lists chores for you, ask it to do them itself | "it has some action items, it actually just tells you to do some stuff that it could do itself" | sag 15:17 | ✅ router: never stop at "can't" |
+| H17 | Write rules as specific instructions, not vague ones | "Be very specific. So saying something like use two space annotation is much better than just saying format it nicely." | mpA 3:06:28 | ✅ rules are concrete |
+| H18 | At most 3-4 sessions at once, so you can keep track | "I would not recommend doing any more than three to four parallel sessions, keeping actual tabs on what's going on." | mpA 7:48:05 | ✅ capped at 7 helpers per job, one integrating session |
+| H19 | Adopt a new tool only for a real pain point, and trial it on real work | "Try to test it out in a real scenario, you know, like don't just test it out with mock data" | 35W 15:09 | ✅ Parking Lot; ask before installs |
+| H20 | Use the OS for everything for a week | "try to force yourself to do everything from here, from this interface" | Xpb 45:12 | ⏳ set-up kit habit; ChatGPT kept in step on purpose (`exports/`) |
 
 ## Deliberately not adopted (Nate's tensions)
 - **Levels 3–5** (semantic search, graph, always-on). "If there's not pain, then why create more?" (DTC 4:04)
@@ -175,6 +258,14 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 - **Bypass permissions.** He uses them (bCl 43:21) but flags "you do run that risk of full autonomy". This public repo keeps asking first.
 - **Ingesting emails or Slack into the brain.** "you don't want to ingest into a second brain because that's just noise" (DTC 27:23): fetch live instead.
 - **Auto Dream.** Nate says it isn't confirmed (Lrg 6:05). Our memory is this repo plus the weekly audit.
+- **Auto memory and auto-capture plugins.** Newer videos recommend turning auto memory on ("So, if that's not turned on for you and you want it, go turn it on." (vfW 11:45)) and plugins that "automatically captures what happened during your session." (eRS 10:06). Cloud sessions wipe machine memory and auto-capture risks noise and private data in a public repo, so the repo stays the memory.
+- **Copying CLAUDE.md to AGENTS.md.** "I made a copy of my claw.md and called it agents.mmd.d." (DFl 9:09). Two copies drift; our `CLAUDE.md` imports `AGENTS.md`.
+- **Connectors before API keys.** "But plugins are so much easier because you can just basically sign in once." (DFl 25:21). Kept X5: keys travel between tools; ask Charlie before any install.
+- **Credentials and personal data in the project folder.** "this project has rules about me. It has, you know, credentials." (DFl 1:02). This repo is public: secrets in environment secrets, other people's data in private repos.
+- **A GitHub token that never expires with every permission.** "I change the expiration to never." (mpA 3:46:06). Against X2: use short-lived, narrow access.
+- **Auto mode** (a checker approves safe commands). "Hit shift tab to cycle into auto mode and Claude routes safe commands through a classifier instead of asking you." (ZRb 12:37). Not adopted yet: Charlie's decision; the deny list would still apply.
+- **Batching several instructions into one prompt.** "send it all in one prompt." (49V 4:08). Kept "one next step at a time"; batch only independent, low-risk steps.
+- **Global skills.** "I would still have access to all the same skills" (sag 20:51) is from an older video; cloud sessions wipe the global folder, so skills live in the repo.
 
 ## Foundation tests (merged from the old `system/foundation-tests.md`, 2026-10-08)
 Charlie's four outcomes, written as tests. Detailed requirements above

@@ -36,5 +36,6 @@ The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.m
 
 ## Coverage and gaps (2026-10-07)
 - **In the brain:** all 20 saved transcripts (2 primary, 18 supporting). Every quote is checked automatically by `tools/audit.py`.
+- **In the standard only (not yet in these pages):** 35 more transcripts from the full-channel audit of 2026-10-08. Their teachings are rows in `system/standard-ai-os-v1.md` (R18, F15+, K15+, M13+, S20+, X6+, H9+), which `nate-brain` also reads. Folding them into concepts and rules is a `brain-ingest` job.
 - **Not ingested:** Nate's X posts (`../x-posts.md`; no X themes page, not yet verified) and his untranscribed videos (mostly model news, n8n and single-tool demos).
 - **Adding to the brain:** use the `brain-ingest` skill; it updates every page a source touches, then this index and the log.

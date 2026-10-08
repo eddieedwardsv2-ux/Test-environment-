@@ -4,6 +4,10 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Nate full-channel audit done** (`audits/2026-10-08-nate-channel.md`):
+  359 videos sorted by title; 35 more read in full; 47 new rows in the
+  standard (29 met, 1 fixed, 16 open, 1 declined: plan mode), 8 new "not adopted"
+  entries. 8 decisions for Charlie listed in the report.
 - 2026-10-08 — **New 90-day priority from `grill-me`**
   (`brainstorms/2026-10-08-who-i-am.md`): become confident setting up a
   Standard AI-OS for someone new to AI, via a repeatable set-up kit
