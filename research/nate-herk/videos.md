@@ -5,14 +5,14 @@
 | # | Video | Views | Length | Transcript |
 |---|---|---|---|---|
 | 1 | [I Built Another Andrej Karpathy Using Claude](https://www.youtube.com/watch?v=bvGptCLDhyo) | 58,000 | 10:45 | ✅ [transcript](i-built-another-andrej-karpathy-using-claude--bvGptCLDhyo-transcript.md) |
-| 2 | [Master 96% of Codex in under 35 minutes](https://www.youtube.com/watch?v=DFlELTiSPk8) | 56,000 | 34:34 | – |
+| 2 | [Master 96% of Codex in under 35 minutes](https://www.youtube.com/watch?v=DFlELTiSPk8) | 56,000 | 34:34 | ✅ [transcript](master-96-of-codex-in-under-35-minutes--DFlELTiSPk8-transcript.md) |
 | 3 | [Claude Code Mods Are Game Changers. Set Up These 5 NOW.](https://www.youtube.com/watch?v=9hetShMMp2s) | 188,000 | 11:19 | ✅ [transcript](claude-code-mods-are-game-changers-set-up-these-5-now--9hetShMMp2s-transcript.md) |
 | 4 | [How to Actually Build & Sell Software with AI as a Non-Techie](https://www.youtube.com/watch?v=l8ywUsEJ2XQ) | – | 1h09 | – |
 | 5 | [I Tested Codex's $500/mo Ultrafast. What You Need to Know.](https://www.youtube.com/watch?v=pY5_Ux_YJjo) | 40,000 | 9:03 | – |
 | 6 | [I Tested OpenAI's Dots vs. Meta's Muse. What You Need to Know.](https://www.youtube.com/watch?v=BvvfZKKz4Yo) | 402,000 | 16:30 | – |
 | 7 | [I Tested Sonnet 5.5 vs Opus 5.5. What You Need to Know.](https://www.youtube.com/watch?v=7eo-11K2e3c) | 147,000 | 25:49 | – |
 | 8 | [I Gave GPT 6 Astra $10,000 to Trade Stocks...And This Happened](https://www.youtube.com/watch?v=eg_1NXDcoPk) | 119,000 | 18:00 | – |
-| 9 | [No, Seriously. Claude Code is Starting To Get Dangerous](https://www.youtube.com/watch?v=Ktnwygcnd8U) | 69,000 | 13:42 | – |
+| 9 | [No, Seriously. Claude Code is Starting To Get Dangerous](https://www.youtube.com/watch?v=Ktnwygcnd8U) | 69,000 | 13:42 | ✅ [transcript](no-seriously-claude-code-is-starting-to-get-dangerous--Ktnwygcnd8U-transcript.md) |
 | 10 | [Opus 5.5 Just Changed Video Editing Forever (free skills)](https://www.youtube.com/watch?v=7jHXoPGnA4c) | 250,000 | 19:23 | – |
 | 11 | [I Had Opus 5.5 Build me the Same App at Every Effort Level](https://www.youtube.com/watch?v=QCkHIyEPIYo) | 344,000 | 26:38 | – |
 | 12 | [I Tested Opus 5.5 vs. GPT-6 Astra on 12 Real Use Cases](https://www.youtube.com/watch?v=GmLcJVzkxPA) | 139,000 | 42:55 | – |
@@ -26,7 +26,7 @@
 | 20 | [Grok Bot Manages My Inbox (and has its own)](https://www.youtube.com/watch?v=ff7om2bBLKM) | 46,000 | 14:29 | – |
 | 21 | [AI News in 10 mins: 10% chance AI kills all humans](https://www.youtube.com/watch?v=68HH9HVFJDM) | 40,000 | 10:26 | – |
 | 22 | [Anthropic Engineer Explains: What to Build Instead of AI Agents](https://www.youtube.com/watch?v=HIRDzMtuWFk) | 354,000 | 9:48 | ✅ [transcript](anthropic-engineer-explains-what-to-build-instead-of-ai--HIRDzMtuWFk-transcript.md) |
-| 23 | [How to Actually Choose the Right AI Agent](https://www.youtube.com/watch?v=6LNlCpQPYFc) | – | 34:09 | – |
+| 23 | [How to Actually Choose the Right AI Agent](https://www.youtube.com/watch?v=6LNlCpQPYFc) | – | 34:09 | ✅ [transcript](how-to-actually-choose-the-right-ai-agent--6LNlCpQPYFc-transcript.md) |
 | 24 | [Thank You for 1M Subscribers](https://www.youtube.com/watch?v=5QmOhvVssxY) | 37,000 | 6:40 | – |
 | 25 | [GPT-6 Astra Finally Solves AI Video Editing (full guide)](https://www.youtube.com/watch?v=o3IEkKXXXvo) | 336,000 | 29:58 | – |
 | 26 | [I Turned GPT-6 Astra Into a 24/7 Stock Trader (tutorial)](https://www.youtube.com/watch?v=TLQLfa7yH4I) | 532,000 | 17:05 | – |
@@ -37,7 +37,7 @@
 | 31 | [GPT-6 Astra Made This Entire Video](https://www.youtube.com/watch?v=dT5-x3u5nCg) | 458,000 | 4:39 | – |
 | 32 | [I Had Fable 5.1 and 5 Build Me the Same App](https://www.youtube.com/watch?v=5FukkI4fbiU) | 66,000 | 12:37 | – |
 | 33 | [AI News in 5 Mins: GPT-6 Astra](https://www.youtube.com/watch?v=NbUTIFEEXLY) | 236,000 | 5:42 | – |
-| 34 | [How Anthropic ACTUALLY Prompts Fable 5.1](https://www.youtube.com/watch?v=FBVNS1l5Vb8) | 79,000 | 11:32 | – |
+| 34 | [How Anthropic ACTUALLY Prompts Fable 5.1](https://www.youtube.com/watch?v=FBVNS1l5Vb8) | 79,000 | 11:32 | ✅ [transcript](how-anthropic-actually-prompts-fable-5-1--FBVNS1l5Vb8-transcript.md) |
 | 35 | [Fable 5.1 FINALLY Kills AI Website Slop](https://www.youtube.com/watch?v=FFWtxjvW2ts) | 219,000 | 16:13 | – |
 | 36 | [Fable 5.1 Just Dropped. It Looks Unreal.](https://www.youtube.com/watch?v=8IyORt-7rOQ) | 106,000 | 5:31 | – |
 | 37 | [Anthropic is Teaching Claude to be Evil (real results)](https://www.youtube.com/watch?v=Lbax7_pW2Nw) | 26,000 | 14:20 | – |
@@ -82,8 +82,8 @@
 | 76 | [I asked Claude Code to make me as much money as possible](https://www.youtube.com/watch?v=iTY8Q449YNQ) | 214,000 | 28:13 | ✅ [transcript](i-asked-claude-code-to-make-me-as-much-money-as-possible--iTY8Q449YNQ-transcript.md) |
 | 77 | [Why Watching AI Videos Isn't Enough](https://www.youtube.com/watch?v=S2ME69hra-k) | 9,400 | 2:36 | – |
 | 78 | [I Battle Tested Sakana Fugu's Fable Killer](https://www.youtube.com/watch?v=GpSqBjW6hR4) | 115,000 | 12:16 | – |
-| 79 | [So You Learned Claude, Now What?](https://www.youtube.com/watch?v=-zL_trhnQaI) | 56,000 | 16:54 | – |
-| 80 | [Finally. Agent Loops Clearly Explained.](https://www.youtube.com/watch?v=EuzYhzB0vbI) | 160,000 | 14:34 | – |
+| 79 | [So You Learned Claude, Now What?](https://www.youtube.com/watch?v=-zL_trhnQaI) | 56,000 | 16:54 | ✅ [transcript](so-you-learned-claude-now-what---zL_trhnQaI-transcript.md) |
+| 80 | [Finally. Agent Loops Clearly Explained.](https://www.youtube.com/watch?v=EuzYhzB0vbI) | 160,000 | 14:34 | ✅ [transcript](finally-agent-loops-clearly-explained--EuzYhzB0vbI-transcript.md) |
 | 81 | [GLM 5.2 in Claude Code is Blowing My Mind](https://www.youtube.com/watch?v=2OD14-0cot4) | 176,000 | 15:43 | – |
 | 82 | [How to Use Claude Code Better Than 98% of People](https://www.youtube.com/watch?v=RzLV8sfFdMM) | – | 1h08 | ✅ [transcript](how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) |
 | 83 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 280,000 | 31:00 | ✅ [transcript](every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md) |
@@ -97,15 +97,15 @@
 | 91 | [Is Claude Mythos Coming?](https://www.youtube.com/watch?v=lkR6mvqQQlk) | 37,000 | 12:25 | – |
 | 92 | [AGI is Here. Anthropic Just Proved It.](https://www.youtube.com/watch?v=NDeyhGnNECc) | 85,000 | 12:37 | – |
 | 93 | [The Skill That 10x’d My Claude Code Projects](https://www.youtube.com/watch?v=c0kaKxM2pHg) | 122,000 | 7:24 | ✅ [transcript](the-skill-that-10x-d-my-claude-code-projects--c0kaKxM2pHg-transcript.md) |
-| 94 | [I Tested Every Claude Code Feature, These 12 Are the Best](https://www.youtube.com/watch?v=vfWTyEreOEc) | 118,000 | 20:15 | – |
+| 94 | [I Tested Every Claude Code Feature, These 12 Are the Best](https://www.youtube.com/watch?v=vfWTyEreOEc) | 118,000 | 20:15 | ✅ [transcript](i-tested-every-claude-code-feature-these-12-are-the-best--vfWTyEreOEc-transcript.md) |
 | 95 | [100 Years of Artificial Intelligence Explained](https://www.youtube.com/watch?v=NHFbAg2b54U) | 16,000 | 17:22 | – |
-| 96 | [Claude Code Dynamic Workflows Clearly Explained](https://www.youtube.com/watch?v=jZgcWCzxh1I) | 120,000 | 16:32 | – |
+| 96 | [Claude Code Dynamic Workflows Clearly Explained](https://www.youtube.com/watch?v=jZgcWCzxh1I) | 120,000 | 16:32 | ✅ [transcript](claude-code-dynamic-workflows-clearly-explained--jZgcWCzxh1I-transcript.md) |
 | 97 | ★ [I Turned Claude Opus 4.8 Into My Entire AI Operating System](https://www.youtube.com/watch?v=0WDkwMxj13s) | 165,000 | 28:57 | ✅ [transcript](i-turned-claude-opus-4-8-into-my-entire-ai-operating-system--0WDkwMxj13s-transcript.md) |
 | 98 | [Opus 4.8 Just Dropped. Here's How To Actually Use It.](https://www.youtube.com/watch?v=q5lg3npxjAc) | 167,000 | 13:44 | – |
 | 99 | [100 Hours Testing Claude Code vs ChatGPT Codex (honest results)](https://www.youtube.com/watch?v=RLjaUES9P8A) | 150,000 | 26:34 | – |
 | 100 | [The Playbook for a $100M AI Agency](https://www.youtube.com/watch?v=8ktcSaSTvxk) | 45,000 | 1h44 | – |
 | 101 | [The AI Offer You Can Sell Tomorrow Morning](https://www.youtube.com/watch?v=Pi-m8R068r4) | 76,000 | 27:03 | – |
-| 102 | [Give Me 10 Mins and I'll Save You Millions of Claude Tokens](https://www.youtube.com/watch?v=6cEQEba0i2A) | 112,000 | 10:43 | – |
+| 102 | [Give Me 10 Mins and I'll Save You Millions of Claude Tokens](https://www.youtube.com/watch?v=6cEQEba0i2A) | 112,000 | 10:43 | ✅ [transcript](give-me-10-mins-and-ill-save-you-millions-of-claude-tokens--6cEQEba0i2A-transcript.md) |
 | 103 | [What Karpathy Joining Anthropic Actually Means For Claude](https://www.youtube.com/watch?v=brB-hSiV2iU) | 140,000 | 16:24 | ✅ [transcript](what-karpathy-joining-anthropic-actually-means-for-claude--brB-hSiV2iU-transcript.md) |
 | 104 | [How to Use Your Claude Code Projects in Codex in 5 Mins](https://www.youtube.com/watch?v=kB9iMD0EjT8) | 72,000 | 8:39 | ✅ [transcript](how-to-use-your-claude-code-projects-in-codex-in-5-mins--kB9iMD0EjT8-transcript.md) |
 | 105 | [The AI Career Opportunity Nobody is Talking About in 2026](https://www.youtube.com/watch?v=iIfOprq2kCM) | 91,000 | 19:13 | – |
@@ -120,10 +120,10 @@
 | 114 | [Master 97% of Codex in 1 Hour (full course)](https://www.youtube.com/watch?v=3TdD8Qv5Tk8) | 213,000 | 1h00 | – |
 | 115 | [Higgsfield Just Turned Claude Into a Creative Agency](https://www.youtube.com/watch?v=xn6Z5PYyAIE) | 128,000 | 35:28 | – |
 | 116 | [Building Realistic Voice Agents Has Never Been Easier](https://www.youtube.com/watch?v=-cdexJWN8YA) | 46,000 | 32:23 | – |
-| 117 | [I Tried 100+ Claude Code Skills. These 6 Are The Best](https://www.youtube.com/watch?v=eRS3CmvrOvA) | 457,000 | 13:39 | – |
+| 117 | [I Tried 100+ Claude Code Skills. These 6 Are The Best](https://www.youtube.com/watch?v=eRS3CmvrOvA) | 457,000 | 13:39 | ✅ [transcript](i-tried-100-claude-code-skills-these-6-are-the-best--eRS3CmvrOvA-transcript.md) |
 | 118 | [Build & Sell Claude Code Operating Systems (2+ Hour Course)](https://www.youtube.com/watch?v=bCljOfCH8Ms) | 484,000 | 2h33 | ✅ [transcript](build-sell-claude-code-operating-systems-2-hour-course--bCljOfCH8Ms-transcript.md) |
 | 119 | [Claude Design 2 HOUR COURSE (Beginner to Pro)](https://www.youtube.com/watch?v=ovabeVoWrA0) | 239,000 | 1h57 | – |
-| 120 | [32 Tricks to Level Up Claude Code in 16 Mins](https://www.youtube.com/watch?v=jqoFP9QapXI) | 476,000 | 16:16 | – |
+| 120 | [32 Tricks to Level Up Claude Code in 16 Mins](https://www.youtube.com/watch?v=jqoFP9QapXI) | 476,000 | 16:16 | ✅ [transcript](32-tricks-to-level-up-claude-code-in-16-mins--jqoFP9QapXI-transcript.md) |
 | 121 | [Claude Code + Playwright Automates Literally Anything](https://www.youtube.com/watch?v=J-6pnl5DQg8) | 155,000 | 18:51 | – |
 | 122 | [I Tested GPT 5.5 vs Opus 4.7: What You Need to Know](https://www.youtube.com/watch?v=WX4rp-vP3zo) | 163,000 | 19:33 | – |
 | 123 | [Claude Video Editing Just Became Unrecognizable](https://www.youtube.com/watch?v=Aw3BkmhYu4I) | 350,000 | 28:13 | – |
@@ -135,7 +135,7 @@
 | 129 | [I Turned Claude Into a 24/7 Trader](https://www.youtube.com/watch?v=6MC1XqZSltw) | 635,000 | 33:16 | – |
 | 130 | [Claude Opus 4.7 Just Dropped... Or Did It Really?](https://www.youtube.com/watch?v=NiMc2PoTiXo) | 88,000 | 17:13 | – |
 | 131 | [Claude + HeyGen Just Changed Content Creation Forever](https://www.youtube.com/watch?v=EbJu9T30nfI) | 87,000 | 20:18 | – |
-| 132 | [How to Build 24/7 Claude Agents. Easy.](https://www.youtube.com/watch?v=ehg4fhydTgs) | 71,000 | 16:28 | – |
+| 132 | [How to Build 24/7 Claude Agents. Easy.](https://www.youtube.com/watch?v=ehg4fhydTgs) | 71,000 | 16:28 | ✅ [transcript](how-to-build-24-7-claude-agents-easy--ehg4fhydTgs-transcript.md) |
 | 133 | [100 Hours Testing Claude Code vs Antigravity (honest results)](https://www.youtube.com/watch?v=99VHENEKA9o) | 240,000 | 23:32 | – |
 | 134 | [This One Plugin Just 10x’d Claude Code](https://www.youtube.com/watch?v=4XqVR6xI6Kw) | 171,000 | 15:14 | – |
 | 135 | [Seedance 2.0 + Claude Code Creates $10k Websites in Minutes](https://www.youtube.com/watch?v=NvxiSG34mPU) | 95,000 | 23:02 | – |
@@ -143,22 +143,22 @@
 | 137 | [I Gave OpenClaw $10,000 to Trade Stocks](https://www.youtube.com/watch?v=eu8UJtuIi-E) | – | 18:56 | – |
 | 138 | [I Tested Claude's New Managed Agents... What You Need To Know](https://www.youtube.com/watch?v=27Y44JYXZJ8) | 178,000 | 16:33 | – |
 | 139 | [Claude’s New AI Just Changed the Internet Forever](https://www.youtube.com/watch?v=DG1wRgEpdO4) | 208,000 | 7:50 | – |
-| 140 | [Planning In Claude Code Just Got a Huge Upgrade](https://www.youtube.com/watch?v=T4fXb3sbJIo) | 66,000 | 15:49 | – |
+| 140 | [Planning In Claude Code Just Got a Huge Upgrade](https://www.youtube.com/watch?v=T4fXb3sbJIo) | 66,000 | 15:49 | ✅ [transcript](planning-in-claude-code-just-got-a-huge-upgrade--T4fXb3sbJIo-transcript.md) |
 | 141 | [Andrej Karpathy Just 10x’d Everyone’s Claude Code](https://www.youtube.com/watch?v=sboNwYmH3AY) | 712,000 | 17:47 | ✅ [transcript](andrej-karpathy-just-10x-d-everyone-s-claude-code--sboNwYmH3AY-transcript.md) |
 | 142 | [Ollama + Claude Code = 99% CHEAPER](https://www.youtube.com/watch?v=O2k_qwZA8HU) | 655,000 | 25:23 | – |
-| 143 | [18 Claude Code Token Hacks in 18 Minutes](https://www.youtube.com/watch?v=49V-5Ock8LU) | 306,000 | 18:57 | – |
+| 143 | [18 Claude Code Token Hacks in 18 Minutes](https://www.youtube.com/watch?v=49V-5Ock8LU) | 306,000 | 18:57 | ✅ [transcript](18-claude-code-token-hacks-in-18-minutes--49V-5Ock8LU-transcript.md) |
 | 144 | [Claude Code Just Gave Everyone Virtual Pets (April Fools?)](https://www.youtube.com/watch?v=JoPmpwpRrBI) | 26,000 | 7:15 | – |
-| 145 | [Claude Code Source Code Just Leaked… 8 Things You Must Do](https://www.youtube.com/watch?v=tXtCK66fPj8) | 131,000 | 12:52 | – |
+| 145 | [Claude Code Source Code Just Leaked… 8 Things You Must Do](https://www.youtube.com/watch?v=tXtCK66fPj8) | 131,000 | 12:52 | ✅ [transcript](claude-code-source-code-just-leaked-8-things-you-must-do--tXtCK66fPj8-transcript.md) |
 | 146 | [Codex Just 10x’d Claude Code Projects](https://www.youtube.com/watch?v=B2Kh_ZoLVTM) | 126,000 | 13:11 | – |
 | 147 | [I’ve Built 500 AI Workflows, This is What Businesses Want in 2026](https://www.youtube.com/watch?v=Y3PcRp5RFzk) | 268,000 | 14:51 | – |
 | 148 | [Claude Code + Paperclip Just Destroyed OpenClaw](https://www.youtube.com/watch?v=HJ-dwefABss) | 250,000 | 20:33 | – |
 | 149 | [Gemini 3.1 Flash Live Just Changed Voice Agents Forever](https://www.youtube.com/watch?v=Qt3zMBH-FNg) | 72,000 | 18:42 | – |
 | 150 | [Claude Code + iMessage is Finally Here.](https://www.youtube.com/watch?v=hHlpVeooPrI) | 51,000 | 9:30 | – |
-| 151 | [STOP Using Bypass Permissions, Use This New Feature Instead](https://www.youtube.com/watch?v=pkSxISewcw8) | 114,000 | 5:41 | – |
+| 151 | [STOP Using Bypass Permissions, Use This New Feature Instead](https://www.youtube.com/watch?v=pkSxISewcw8) | 114,000 | 5:41 | ✅ [transcript](stop-using-bypass-permissions-use-this-new-feature-instead--pkSxISewcw8-transcript.md) |
 | 152 | [Claude Code Just Dropped Memory 2.0](https://www.youtube.com/watch?v=LrgfmZkl3nc) | 158,000 | 8:31 | ✅ [transcript](claude-code-just-dropped-memory-2-0--LrgfmZkl3nc-transcript.md) |
 | 153 | [Claude Code Just Got Another Huge Upgrade](https://www.youtube.com/watch?v=X6EGzi9qm3E) | 135,000 | 8:11 | – |
 | 154 | [This $100M AI App Just Changed Software Forever](https://www.youtube.com/watch?v=T6_Ges4j1qY) | 45,000 | 9:09 | – |
-| 155 | [How to Build Claude Agent Teams Better Than 99% of People](https://www.youtube.com/watch?v=vDVSGVpB2vc) | 361,000 | 16:30 | – |
+| 155 | [How to Build Claude Agent Teams Better Than 99% of People](https://www.youtube.com/watch?v=vDVSGVpB2vc) | 361,000 | 16:30 | ✅ [transcript](how-to-build-claude-agent-teams-better-than-99-of-people--vDVSGVpB2vc-transcript.md) |
 | 156 | [Stop Learning n8n in 2026...Learn THIS Instead](https://www.youtube.com/watch?v=ZeJXI2MAhj0) | 488,000 | 18:38 | – |
 | 157 | [Generate Content for 9 Socials on Autopilot with Claude Code](https://www.youtube.com/watch?v=4Zaoo0YbYaw) | 53,000 | 17:29 | – |
 | 158 | [Build & Sell with Claude Code (10+ Hour Course)](https://www.youtube.com/watch?v=mpALXah_PBg) | 1,100,000 | 10h00 | ✅ [transcript](build-sell-with-claude-code-10-hour-course--mpALXah_PBg-transcript.md) |
@@ -169,8 +169,8 @@
 | 163 | [This New Claude Code Feature is a Game Changer](https://www.youtube.com/watch?v=OUyfxhFtGCo) | 67,000 | 8:36 | – |
 | 164 | [Claude Code 2.0 Is Finally Here](https://www.youtube.com/watch?v=BlNJFa3Btm8) | 130,000 | 9:44 | – |
 | 165 | [Cursor Automations Clearly Explained (worth learning?)](https://www.youtube.com/watch?v=NDnv16PY2XQ) | 27,000 | 9:13 | – |
-| 166 | [Claude Code Skills Just Got Even Better](https://www.youtube.com/watch?v=RAZVk5NPNtE) | 228,000 | 16:15 | – |
-| 167 | [Turn Claude Code Into Your Executive Assistant in 27 Mins](https://www.youtube.com/watch?v=mi4hcipESKQ) | 208,000 | 27:14 | – |
+| 166 | [Claude Code Skills Just Got Even Better](https://www.youtube.com/watch?v=RAZVk5NPNtE) | 228,000 | 16:15 | ✅ [transcript](claude-code-skills-just-got-even-better--RAZVk5NPNtE-transcript.md) |
+| 167 | [Turn Claude Code Into Your Executive Assistant in 27 Mins](https://www.youtube.com/watch?v=mi4hcipESKQ) | 208,000 | 27:14 | ✅ [transcript](turn-claude-code-into-your-executive-assistant-in-27-mins--mi4hcipESKQ-transcript.md) |
 | 168 | [The NEW Nano Banana 2 + Claude Code = $10k Websites](https://www.youtube.com/watch?v=q0TgUtj6vIs) | 237,000 | 20:15 | – |
 | 169 | [The NEW Nano Banana 2 + Antigravity Destroys Every AI Image Tool](https://www.youtube.com/watch?v=iTKkoGd3YcM) | 106,000 | 14:33 | – |
 | 170 | [Master 95% of Claude Code Skills in 28 Minutes](https://www.youtube.com/watch?v=zKBPwDpBfhs) | 241,000 | 27:19 | ✅ [transcript](master-95-of-claude-code-skills-in-28-minutes--zKBPwDpBfhs-transcript.md) |
@@ -182,7 +182,7 @@
 | 176 | [How to Sign AI Workflow Clients (With 0 Followers)](https://www.youtube.com/watch?v=_rZAR-s4KIo) | 34,000 | 14:28 | – |
 | 177 | [How a College Student Made $500k with Cold Email (Exact Framework)](https://www.youtube.com/watch?v=XB2xmX3USUI) | 66,000 | 36:41 | – |
 | 178 | [Turn Any Website Into LLM Ready Data INSTANTLY](https://www.youtube.com/watch?v=4efAzBiTeVo) | 61,000 | 11:24 | – |
-| 179 | [How I’d Teach a 10 Year Old to Build Agentic Workflows (Claude Code)](https://www.youtube.com/watch?v=3GAxd90fEE4) | 162,000 | 28:24 | – |
+| 179 | [How I’d Teach a 10 Year Old to Build Agentic Workflows (Claude Code)](https://www.youtube.com/watch?v=3GAxd90fEE4) | 162,000 | 28:24 | ✅ [transcript](how-i-d-teach-a-10-year-old-to-build-agentic-workflows--3GAxd90fEE4-transcript.md) |
 | 180 | [How to Sign Your First AI Automation Client in 7 days (With Proof)](https://www.youtube.com/watch?v=c2C_SbZk6iI) | 47,000 | 20:55 | – |
 | 181 | [Is n8n Dead?](https://www.youtube.com/watch?v=wb4uDdsFh6o) | 63,000 | 4:45 | – |
 | 182 | [I Turned Clawdbot Into the Ultimate Personal Assistant](https://www.youtube.com/watch?v=rlJovzVhlIo) | 84,000 | 25:38 | – |
