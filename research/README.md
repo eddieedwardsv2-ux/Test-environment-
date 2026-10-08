@@ -15,5 +15,7 @@ advisor agent reads; raw evidence stays in the transcripts). Anything not from a
 
 **Queued (Parking Lot):** Dan Martell (second brain).
 
-**Add a creator:** `python3 research/get_transcript.py <creator-folder> <url>`
-(a few videos at a time — rate-limited), then ask the `video-tutor` agent.
+**Commands** (read `context/environment.md` first for any YouTube or GitHub task):
+- Transcript: `python3 research/get_transcript.py <creator-folder> <url>` (a few at a time; rate-limited). If UNAVAILABLE, add `<creator-folder> <video-id>` to `transcript-queue.txt` (GitHub fetches hourly).
+- X posts: `python3 research/get_x_posts.py <creator-folder> <handle>`.
+- Then the `video-tutor` agent for a lesson, or the `brain-ingest` skill for a brain.

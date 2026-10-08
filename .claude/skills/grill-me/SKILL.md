@@ -1,6 +1,6 @@
 ---
 name: grill-me
-description: Interview the user relentlessly about a plan, design, or topic, checkpointing every answer to a brainstorm file so nothing is lost. Use when the user wants to stress-test a plan, get grilled on a design, run a brainstorm or discovery session, extract what's in their head into a doc, build up their AI OS context over time, or says "grill me".
+description: Interviews Charlie about a plan or topic one question at a time, saving every answer to a brainstorm file. Use for "grill me", stress-testing a plan, or getting context out of his head.
 ---
 
 # Grill Me

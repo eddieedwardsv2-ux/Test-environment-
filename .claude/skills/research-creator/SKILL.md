@@ -1,6 +1,6 @@
 ---
 name: research-creator
-description: Researches a YouTube creator end to end for Charlie — finds the channel, lists every video, saves X posts, fetches 3 starter transcripts, gets the video-tutor agent to write a lesson, adds flashcards and commits it all. Use when Charlie says "research <creator>", "add a creator", "look into <name>'s channel", or just gives a creator's name to study.
+description: Researches a YouTube creator end to end: video list, X posts, 3 transcripts, a lesson, then commit. Use when Charlie says "research <creator>", "add a creator", or names a creator to study.
 ---
 
 # Research a creator

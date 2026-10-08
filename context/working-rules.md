@@ -52,7 +52,7 @@ Anything not backed by a source is labelled **(inferring)**.
   write is refused, say exactly where and never report it as done. Cheap
   structural checks run automatically (`tools/audit.py`, on push via GitHub
   Actions and via the Stop-hook structure gate `tools/run_gate.sh`); reasoning
-  checks use the `audit` skill (weekly, scored) and the `os-audit` skill (clash, bloat, stale facts). Don't
+  checks use the `audit` skill (weekly, scored) and its content check (clash, bloat, stale facts). Don't
   re-audit everything after small edits.
 - **Suggest tools proactively.** At the start of any new task or project,
   check `research/plugin-map.md` (all 9 families, Charlie's watchlist) and
@@ -71,3 +71,6 @@ Anything not backed by a source is labelled **(inferring)**.
   anything published or paid for); ask 1-2 questions, each with your
   recommended answer. For small, easy-to-undo work (a file edit, a draft,
   research) state the assumption and carry on; Git makes it a one-word undo.
+  Since 2026-10-08 (Charlie: "I am not being asked so many questions"): every
+  question goes on the Decision Desk via the `decide` skill, asked once, and
+  only for the cases listed there; never as a chat question.

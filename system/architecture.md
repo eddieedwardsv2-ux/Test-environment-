@@ -25,10 +25,10 @@ Default: load the smallest context that can answer the task correctly.
 ## Four ways context fails (and what catches each)
 | Failure | Meaning | Caught by |
 |---|---|---|
-| Poisoning | a false fact is in context | quote/timestamp checks; `os-audit` |
-| Bloat | too much loaded or searched | small router, segmented folders, smallest-context rule; `os-audit` |
+| Poisoning | a false fact is in context | quote/timestamp checks; the `audit` content check |
+| Bloat | too much loaded or searched | small router, segmented folders, smallest-context rule; the `audit` content check |
 | Confusion | missing or misrouted info, so the AI guesses | `tools/audit.py` (routes and links exist), reverse routing, backtracking |
-| Clash | two current sources disagree, often one stale | count checks in `tools/audit.py`; precedence rule in `AGENTS.md`; `os-audit` |
+| Clash | two current sources disagree, often one stale | count checks in `tools/audit.py`; precedence rule in `AGENTS.md`; the `audit` content check |
 
 ## How knowledge flows
 raw evidence (transcript) → coverage index (README ticks) → derived brain

@@ -1,6 +1,6 @@
 ---
 name: brain-ingest
-description: Adds new sources to a creator's "brain" (the knowledge base behind an advisor agent like nate-brain or nick-brain) and updates every page they touch. Use when Charlie says "ingest <link>", "add this to Nick's brain", "brain refresh", or new transcripts/X posts have landed for a creator who has a research/<creator>/brain/ folder.
+description: Adds a new source to a creator brain (research/<creator>/brain/) and updates every page it touches. Use for "ingest <link>", "add this to Nate's brain", "brain refresh".
 ---
 
 # Ingest into a creator brain

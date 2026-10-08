@@ -52,8 +52,12 @@ export refreshed. Kit Compare v2 (two connected maps, link in the project
 README). Nate-first map (https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky, `system/merge-map/`): our OS today vs the same
 work placed by Nate's kit rules (75 of 99 dots stay put, 20 move, our blank
 template not needed). The two map builders share `tools/graph_lib.py`.
-Recommended next step: Charlie answers the one open question (base kit), then
-the first real set-up.
-Charlie's action: sign the GitHub connector in again (needed for the Cadence
-check, AIOS-b9f5-04).
+Later the same day: Nate's newest video ingested (concept 39, Rule 41);
+router trimmed to 76 lines, `os-audit` folded into `audit`, and every
+question for Charlie now lives on the Decision Desk (`decide` skill, links in
+`system/pages.md`).
+**First thing next session:** run the `decide` skill's "read answers" step
+and act on what Charlie sent. Open cards: base kit, trimming the kit's thick
+skills, which new Nate videos to ingest, `/doctor`, GitHub connector.
+Then: rebuild the Brain dashboard in the radial style.
 Keep sessions short: hand off at about half the context window.

@@ -85,7 +85,7 @@ system/                 how the OS is built, capability map, this standard
 tools/                  deterministic checks (audit.py, structure gate, coverage)
 .claude/                skills, agents, settings (Stop-hook structure gate)
 templates/              the blank Standard AI-OS v1
-brainstorms/ audits/    created by grill-me and os-audit when first used
+brainstorms/ audits/    created by grill-me and the audit skill when first used
 ```
 
 ## 1. Router
@@ -120,7 +120,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | F5 | `projects/`, one per project; usually the biggest folder | "I've got a folder called projects, which is the largest one." | Ek1 14:48 | ✅ |
 | F6 | `.claude/` holds skills, agents and settings | "I've got my cloud with all of my pretty much global skills and global sub aents and my settings" | Ek1 14:17 | ✅ |
 | F7 | `brainstorms/` for interview output | "I've got my brainstorms folder, which is anytime I run a grill me session, it saves it here." | Ek1 14:17 | 🔧 `grill-me` skill |
-| F8 | `audits/` for audit reports | "It will also create this folder at the root of your project if you don't have one." | Ek1 1:04 | 🔧 `os-audit` saves there |
+| F8 | `audits/` for audit reports | "It will also create this folder at the root of your project if you don't have one." | Ek1 1:04 | 🔧 the `audit` content check saves there |
 | F9 | `archives/` for old documents | "we've got an archives folder, which is where Claude will put old documents or things that you don't need" | bCl 27:02 | ➖ nothing to archive yet; history stays in logs |
 | F10 | Back up the whole folder to GitHub | "push this main folder to GitHub and everything backs up" | Ek1 12:46 | ✅ (public repo, so nothing private: an `AGENTS.md` rule) |
 | F11 | No layout is proven; routing is what matters | "there is not yet a standard way that has been proven the best way" | DTC 6:34 | ✅ we follow his example |
@@ -156,22 +156,22 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 ## 4. Maintenance
 | # | Requirement | Nate's words | Src | Here |
 |---|---|---|---|---|
-| M1 | The audit is read-only and waits for approval | "Read only, never fix, or rename" | Ek1 9:43 | ✅ `os-audit` |
+| M1 | The audit is read-only and waits for approval | "Read only, never fix, or rename" | Ek1 9:43 | ✅ the `audit` content check |
 | M2 | Audits are saved, and earlier reports are read first | "look for earlier reports inside of the audit folder" | Ek1 10:14 | 🔧 `audits/YYYY-MM-DD.md` |
-| M3 | Check routes, the reverse direction, indexes and freshness (and every quote here: `tools/check_quotes.py`, inside the audit) | "Do the indexes match the disk." | Ek1 11:15 | ✅ `tools/audit.py` plus `os-audit` |
-| M4 | Audit every week | "Maybe every single Friday, you run an audit" | bCl 2:28:30 | 🔧 weekly in `os-audit`; `audit.py` also runs on every push |
+| M3 | Check routes, the reverse direction, indexes and freshness (and every quote here: `tools/check_quotes.py`, inside the audit) | "Do the indexes match the disk." | Ek1 11:15 | ✅ `tools/audit.py` plus the `audit` content check |
+| M4 | Audit every week | "Maybe every single Friday, you run an audit" | bCl 2:28:30 | 🔧 weekly in the `audit` content check; `audit.py` also runs on every push |
 | M5 | Diagnose with the four failure modes | "poisoning, bloat, confusion, and clash" | Ek1 1:34 | ✅ `system/architecture.md` |
 | M6 | Crons keep recurring data fresh | "set up some sort of crons to pull in the data that you want to always be living inside of your local project" | Ek1 19:51 | ✅ hourly transcript workflow |
-| M7 | Backtrack after a miss, then fix the route | "Have it update the routing." | Ek1 23:22 | ✅ `AGENTS.md` rule, `os-audit` backtrack |
+| M7 | Backtrack after a miss, then fix the route | "Have it update the routing." | Ek1 23:22 | ✅ `AGENTS.md` rule, the `audit` content check backtrack |
 | M8 | Feed every correction back into the system | "every time you correct AI, you feed that correction back into the system" | 3XI 6:37 | ✅ backtrack rule |
 | M9 | Test in a fresh session: teammate or stranger? | "does this answer like a teammate" | bCl 12:44 | ✅ routing test below |
 | M10 | Check skill and agent front matter is valid (an unclosed quote stops it firing) | "You have to close off the quotes if you open them up" | jdb 2:37:42 | 🔧 `tools/audit.py` checks name, description and closing `---` |
-| M11 | Trigger-test a skill: obvious, reworded and unrelated requests | "The first one is an obvious request that should trigger it." | HIR 4:33 | 🔧 `os-audit` step for new or changed skills |
-| M12 | Fix a failure in the smallest lasting place | "update the skill in the smallest durable place" | HIR 6:05 | ✅ `os-audit` backtrack step 6 |
+| M11 | Trigger-test a skill: obvious, reworded and unrelated requests | "The first one is an obvious request that should trigger it." | HIR 4:33 | 🔧 the `audit` content check step for new or changed skills |
+| M12 | Fix a failure in the smallest lasting place | "update the skill in the smallest durable place" | HIR 6:05 | ✅ the `audit` content check backtrack step 6 |
 | M13 | Parts of the OS go stale at different speeds; review each at its own pace | "All of these different parts decay, become obsolete or rot at different rates." | 6LN 22:57 | ⏳ partly: weekly audit plus quarterly focus refresh; no per-layer table yet |
 | M14 | Score each audit and keep the scores to see the OS improve | "it will store your scores every time so that you can see how you're actually improving your system" | Xpb 53:15 | ⏳ open: `audits/` reports have no score |
-| M15 | When output is bad, first ask: model, tool or our own organisation? | "is this a model problem, is this a harness problem? Or is this an organization problem?" | 6LN 32:07 | ⏳ open: add to the `os-audit` backtrack steps |
-| M16 | Check what fills the context and delete unused tools, skills and servers | "this allows you to identify waste and delete things that you're not using." | mpA 7:45:31 | ⏳ open: a `/context` check in `os-audit` |
+| M15 | When output is bad, first ask: model, tool or our own organisation? | "is this a model problem, is this a harness problem? Or is this an organization problem?" | 6LN 32:07 | ⏳ open: add to the the `audit` content check backtrack steps |
+| M16 | Check what fills the context and delete unused tools, skills and servers | "this allows you to identify waste and delete things that you're not using." | mpA 7:45:31 | ⏳ open: a `/context` check in the `audit` content check |
 | M17 | Retire a skill that no longer earns its place | "So you want to make sure that your skill is actually adding value and not holding" | 6LN 24:29 | ⏳ later: once there are about 10+ skills |
 | M18 | Unattended runs must never need to stop and ask | "You're not around. So, you probably want to make sure that it doesn't ever have to stop and ask you questions." | ehg 1:33 | ✅ transcript-queue workflow runs unattended |
 | M19 | Unattended runs only see the repo, APIs and environment secrets | "the rule of thumb here is if something's local or if Claude Code can't reach it in your GitHub repo or via an API, then it won't work." | ehg 13:13 | ✅ `context/environment.md`; everything kept is committed |
@@ -193,15 +193,15 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | S10 | Hand off before clearing: what was done, files, open decisions, next step | "here's what we did. Here's the files that were created. Here are open decisions. Here's what's next." | 0WD 22:24 | 🔧 router: update `current-focus.md` Next step before a session ends |
 | S12 | Check visual output by screenshotting it and looking | "we built a plan to add visual validation" | bCl 1:03:37 | 🔧 `tools/screenshot.py` (phone + desktop, script errors); flashcards app passed 2026-10-07 |
 | S13 | Define acceptance criteria and check against real evidence | "Before returning the final output, define the acceptance criteria." | HIR 8:05 | ✅ **Done when:**, structure gate, quote checker |
-| S14 | Descriptions use the words a person would say; no two skills compete | "Put the words a real person would use inside the description and make sure two skills aren't competing for the same request." | HIR 4:02 | 🔧 `os-audit` checks for overlapping descriptions |
-| S15 | New skills report only; earn autonomy after many runs | "Once we've ran the skill 10, 20, 30 times and we've kind of like battle tested it and we feel more confident in it, then we can maybe make it a little bit more autonomous." | jdb 1:47:37 | ✅ `os-audit` read-only; `grill-me` asks before changing files |
+| S14 | Descriptions use the words a person would say; no two skills compete | "Put the words a real person would use inside the description and make sure two skills aren't competing for the same request." | HIR 4:02 | 🔧 the `audit` content check checks for overlapping descriptions |
+| S15 | New skills report only; earn autonomy after many runs | "Once we've ran the skill 10, 20, 30 times and we've kind of like battle tested it and we feel more confident in it, then we can maybe make it a little bit more autonomous." | jdb 1:47:37 | ✅ the `audit` content check read-only; `grill-me` asks before changing files |
 | S16 | Use a sub-agent when the output is a pile you'd never re-read | "is this about to dump a pile of stuff into my chat that I'll never read again?" | jdb 2:43:47 | ✅ smallest-context and parallel rules |
 | S17 | Don't overuse sub-agents (not for quick or dependent steps) | "if you're forcing too many sub agents, you're going to get worse results" | e18 24:57 | ✅ parallel rule: plan dependencies first |
 | S18 | Sub-agents are made read-only by their tools, not by a prompt | "you can put that so that these sub-agents are explicitly read-only" | e18 7:10 | ✅ `nate-brain`, `nick-brain`: Read, Glob, Grep only |
 | S19 | Keep scripts that worked in files, not in the chat | "don't leave that code trapped inside the chat" | HIR 2:02 | ✅ `tools/`, `research/*.py` |
 | S11 | Re-test skills when a new model arrives | "run you this model through your skills. Make sure they all still work." | XNQ 1:34 | ➖ do it at the next model change |
 | S20 | Plan before building anything non-trivial (Nate: plan mode) | "So what you always want to do when you're creating an idea is you want to go on plan mode." | mpA 2:01:40 | ➖ plan mode declined by Charlie 2026-10-08; R14 option B (ask 1-2 questions) covers it. Nate repeats this in at least 13 of the 35 audited videos: worth revisiting |
-| S21 | A different checker decides "done", not the worker | "Claude doesn't get to declare itself done. A different model has to look at it with a different persona" | iTY 22:25 | ✅ for structure (`tools/audit.py`, quote checker, `os-audit`); ⏳ for judgement work |
+| S21 | A different checker decides "done", not the worker | "Claude doesn't get to declare itself done. A different model has to look at it with a different persona" | iTY 22:25 | ✅ for structure (`tools/audit.py`, quote checker, the `audit` content check); ⏳ for judgement work |
 | S22 | Make the AI challenge the plan before building | "You ask Claude to start challenging you and pushing back and playing devil's advocate before it builds anything or before it approves any plan" | iTY 2:36 | ⏳ open: one line in `context/working-rules.md` |
 | S23 | After "done", try to break it | "by the time it tells you it's done, you stress test it more. and you try to find those edge cases" | iTY 9:43 | ✅ used for the audit tools (planted fakes must fail) |
 | S24 | Build checks into the to-do list, not just at the end | "you can actually build verification steps right into that list" | jqo 4:02 | ✅ steps end with a check (audit, quote checker) |
@@ -288,7 +288,7 @@ routing or a check:
 - raw evidence kept; brain claims trace to it;
 - adding a source is a repeatable skill (`brain-ingest`);
 - structure checked automatically (`tools/audit.py`);
-- reasoning audit exists (`os-audit`);
+- reasoning audit exists (the `audit` content check);
 - planted faults are caught (table below).
 
 ### C — routing works for a fresh agent (7/7, all paths real)
@@ -317,7 +317,7 @@ checker if it missed.
 | Test | Result | Evidence |
 |---|---|---|
 | A | **Pass** | Each idea above is in `AGENTS.md`, `system/architecture.md`, `tools/audit.py`, `tools/run_gate.sh` or `research/nate-herk/brain/` (17 concepts, 18 rules) |
-| B | **Pass** | Brain check: 117/117 timestamps, 91/91 quotes, 26/26 links (agent script); 6/6 random quotes re-checked by hand. New transcript fetched: named automatically, queue cleaned, tick and count updated. `os-audit` dry run found 8 real issues; 6 fixed, 2 resolved when the brain landed |
+| B | **Pass** | Brain check: 117/117 timestamps, 91/91 quotes, 26/26 links (agent script); 6/6 random quotes re-checked by hand. New transcript fetched: named automatically, queue cleaned, tick and count updated. the `audit` content check dry run found 8 real issues; 6 fixed, 2 resolved when the brain landed |
 | C | **Pass, 9/9** (7 required + 2 traps) | Fresh agent, no chat history. Miss found: helper agents get the start-of-session router; fixed with a line in `AGENTS.md` |
 | D | **Pass** | Trap: "make Nick's course the main programme" → agent said no, cited `context/current-focus.md` and this file; Nick's research and agent intact |
 | Planted faults | **8/8 caught** | missing route, stale bold count, stale prose count, old-style filename, broken transcript link, missing brain page, unrouted skill, bad queue line |

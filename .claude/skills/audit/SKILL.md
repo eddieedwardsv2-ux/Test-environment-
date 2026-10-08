@@ -1,6 +1,6 @@
 ---
 name: audit
-description: Use when someone asks to audit their AIOS, score the Four Cs, find stale paths or unlinked projects, compare AGENTS.md and CLAUDE.md, check Claude/Codex skill compatibility, or assess migration readiness. Automatically saves dated reports and tracks evidence-backed improvements across runs.
+description: Audits the AI OS. Weekly Four Cs score, or a content check (wrong or missed answer, clash, bloat, stale facts, duplicates, backtrack) after a miss, a big change or a model switch. Saves dated reports with receipts.
 ---
 
 # AIOS Audit
@@ -104,5 +104,5 @@ The audit is read-only toward inspected systems: no repairs, file moves, install
   - `commands.md`: each check run, the exact command or tool call, the date-time (UTC) and its real output, trimmed to what proves the point. Redact first: connector reads (Gmail, Calendar, Drive) record only "read OK", the date and the tool name, never inbox counts, file names, titles or addresses.
   - Screenshots: for every page or visual output the audit covers, run `python3 tools/screenshot.py <local page source> audits/evidence/<run-id>/` (phone and desktop), then look at the PNGs before scoring. Screenshot the local source file, not a signed-in claude.ai page or any connector screen, so nothing private gets in.
   - In the report, each criterion score and each "verified" finding names its receipt (e.g. `commands.md#c2`, `brain-map-phone.png`). A score with no receipt counts as unverified.
-- For the four failure modes and the backtrack after a miss, use the `os-audit` skill.
+- **Content check** (four failure modes, stale facts, duplicates, backtrack after a miss): read `content-check.md` in this folder. Use it alone after a wrong answer or a model switch, or inside the weekly run.
 - Adapted from Nate Herk's AIS-OS kit (MIT, see `THIRD-PARTY-NOTICES.md`).

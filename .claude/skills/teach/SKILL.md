@@ -11,7 +11,7 @@ Rules and sources: `context/working-rules.md`. Charlie's style:
 ## The loop
 1. **Say what you assumed** (rule 6): one line on what you think he's asking
    and what he already knows (check `learning/flashcards.md` and recent work).
-   If the request is thin, ask 1-2 questions instead.
+   If the request is thin, pick the likeliest reading, say it, and go.
 2. **Define done:** one sentence on what he'll be able to do at the end.
 3. **Smallest version first** (rule 2): the one idea that matters, in 2-4
    sentences with an everyday or trade analogy.

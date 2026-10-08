@@ -7,6 +7,8 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | I need to… | Use | It produces | Checked by |
 |---|---|---|---|
 | Find where something lives | `AGENTS.md` | the right path | following it |
+| Ask Charlie a question; read his answers | `decide` skill, Decision Desk (`system/pages.md`) | a card he answers by tapping | `ArtifactData` list at session start |
+| Open any dashboard, rebuild it | `system/pages.md` | link, source, rebuild command | `tools/screenshot.py` |
 | Research a new creator | `research-creator` skill | video list, X posts, 3 transcripts, lesson | coverage + quote spot-check |
 | Fetch a transcript | `research/get_transcript.py` | `<title>--<id>-transcript.md` + raw | audit (name, partial check) |
 | Fetch when rate-limited | `research/transcript-queue.txt` → GitHub Actions hourly | committed transcripts | queue cleanup + audit |
@@ -21,7 +23,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Check a page looks right (visual validation) | `tools/screenshot.py <page>` then open the PNGs | phone + desktop screenshots, script errors | looking at them |
 | Structural audit (incl. every checklist quote, `tools/check_quotes.py`) | `tools/audit.py` (runs on push and as the Stop-hook structure gate `tools/run_gate.sh`; includes the secret scan) | errors/warnings | GitHub Actions |
 | Scored audit (weekly, Four Cs rubric v2) | `audit` skill (Nate's AIS-OS kit) | `audits/audit-<date>-<id>.md` with score, findings ledger, top 3 fixes | next run rechecks each finding |
-| Failure-mode check, backtrack after a miss | `os-audit` skill | smallest fixes | Charlie approves fixes |
+| Failure-mode check, backtrack after a miss | `audit` skill, `content-check.md` | smallest fixes | Charlie approves on the Decision Desk |
 | Set someone up (7-question intake) | `onboard` skill | `aios-intake.md` + Day-1 context files | the "what should I focus on this week?" test |
 | Make something findable | `link` skill | one route in `AGENTS.md` or a folder index | following the route |
 | Ship the next automation | `level-up` skill (`references/3ms-framework.md`) | one artifact + `decisions.md` entry | rerun `audit` |

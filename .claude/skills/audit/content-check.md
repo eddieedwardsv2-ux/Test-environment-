@@ -1,11 +1,8 @@
----
-name: os-audit
-description: Content-quality check of Charlie's AI OS against the four context failure modes (poisoning, bloat, confusion, clash), stale facts and duplicate tools, plus the backtrack routine when an agent missed information that exists in the repo. Read-only; proposes the smallest fixes and waits for Charlie's OK. Use after an agent gave a wrong or missed answer, after big structural changes, or when Charlie asks "is anything wrong, stale or clashing?". The weekly scored audit is the `audit` skill (Four Cs), not this one.
----
+# Content check (part of the `audit` skill; was `os-audit` until 2026-10-08)
 
-# OS audit (Layer 2: reasoning)
-
-**Since 2026-10-08:** the weekly scored audit is the `audit` skill (Nate's AIS-OS kit, Four Cs rubric v2). Use this skill for the failure-mode check and the backtrack; the `audit` report can call it for a deeper look.
+The failure-mode check and the backtrack after a miss. Run it after a wrong or
+missed answer, after big structural changes, when Charlie asks "is anything
+wrong, stale or clashing?", and after every switch to a new model (Rule 41).
 
 Based on Nate Herk, "Steal My Exact AI OS Setup"
 (`research/nate-herk/steal-my-exact-ai-os-setup-5-simple-tips--Ek1NBfnnTH0-transcript.md`).
@@ -21,7 +18,8 @@ skill: judgement about whether the OS would make an agent **give a wrong answer*
 
 ## Contract
 - **Read-only.** Diagnose everything before fixing anything.
-- Fixes need Charlie's OK. Only exceptions: obvious typos and broken links.
+- Fixes need Charlie's OK, asked once on the Decision Desk (the `decide` skill),
+  never as chat yes/no lists. Only exceptions: obvious typos and broken links.
 - Every claim gets evidence (quote + `path:line`). Guesses are labelled **(inferring)**.
 - Other agents may be mid-edit: run `git status --short` and mark findings on
   modified files as "may be stale".
@@ -105,8 +103,8 @@ every audit "so that you can see how you're actually improving"
 | Severity | high (likely wrong answer soon) / med / low |
 | Smallest fix | one edit, one file if possible |
 
-Then an ordered fix list (high first) and stop: "Want me to do these? Yes/no
-per item." If a finding is **deterministic and keeps recurring** (a pattern a
+Then an ordered fix list (high first) and stop: put it on the Decision Desk as
+one card, one option per fix, pick any (the `decide` skill). If a finding is **deterministic and keeps recurring** (a pattern a
 regex or file check could catch), add: "Recommend adding to `tools/audit.py`."
 
 ## Backtrack: when an agent missed information that exists
@@ -120,7 +118,8 @@ Nate's tip 5: have it "go look through what you did, where you searched, and
 5. **Defect type**: routing (no/wrong pointer), knowledge (info missing or
    wrong), capability (no skill/script for it), tooling (a tool failed), or
    audit (Layer 1/2 should have caught it).
-6. **Smallest durable fix**: usually one router line or one index line. Needs
-   Charlie's OK, then record it in `decisions.md` with the date.
+6. **Smallest durable fix**: usually one router line or one index line. A
+   one-line route fix is small and easy to undo: make it, say so, and record it
+   in `decisions.md` with the date. Anything bigger goes on the Decision Desk.
 7. **Retest**: rerun the original question (narrow test), then a related
    question that uses the same route (broader test). Prove both, don't claim.

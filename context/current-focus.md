@@ -16,13 +16,15 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Now (2026-10-08, Charlie paused the set-up kit for this):** a cleaner brain
-from Nate's newest video. Proposals in `research/nate-herk/lesson-smallest-context.md`;
-Charlie picks which to do. The set-up kit resumes after.
+**Now (2026-10-08):** cleaner brain mostly done (router trimmed, one audit
+skill, `decide` skill and Decision Desk; see the "Applied" section of
+`research/nate-herk/lesson-smallest-context.md`). Next: act on Charlie's
+Decision Desk answers (`decide` skill), then rebuild the Brain dashboard in
+the radial style (CLAUDE.md centre, skills ring, area hubs). The set-up kit resumes after.
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.3
 (one 90-minute session: three questions, one automation, the bike method).
-One open question left: the base kit (recommended: Nate's kit plus our three
+One open question left, on the Decision Desk: the base kit (recommended: Nate's kit plus our three
 additions; see Kit Compare and the Nate-first map). Once Charlie answers,
 close it in the plan, then test it on the first friend or family set-up.
 Weekly `audit` (scored, Four Cs, with receipts) on Fridays.
