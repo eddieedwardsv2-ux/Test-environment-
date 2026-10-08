@@ -16,6 +16,8 @@ then every other saved Nate video (`research/nate-herk/`).
   and side topics skipped) plus his Karpathy and Boris Cherny videos. 15 new
   transcripts saved (35 Nate total). Helper agents are extracting what's new
   against the checklist.
+- Done 2026-10-08: comparison written, `system/comparison-vs-nate.md`
+  (22 checked quotes). Waiting on Charlie's keep/trim/add choices.
 - Then: (1) add verified new requirements to the checklist; (2) a comparison
   table, our system vs Nate's own (what he has that we don't; what we added
   on top), keep/trim/add per line, for Charlie to decide; (3) a walkthrough
