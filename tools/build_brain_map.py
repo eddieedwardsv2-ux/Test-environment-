@@ -1,5 +1,8 @@
-"""Builds research/nate-herk/brain/map/brain-map.html from concepts.md and rules.md.
-Run after the brain changes: python3 tools/build_brain_map.py
+"""Builds the Brain dashboard: research/nate-herk/brain/map/brain-map.html.
+It maps every Markdown file in the repo (our OS + creator research) and Nate's
+38 concepts and 40 rules as one connected graph, plus a one-card-at-a-time
+review queue. Run after the repo or brain changes, then republish the page:
+    python3 tools/build_brain_map.py
 Review marks live in the published page's "flags" database, not in this file."""
 import re, json, html, sys
 B = "/home/user/test-environment-/research/nate-herk/brain/"
@@ -74,6 +77,108 @@ for c in concepts: c["rules"].sort()
 print(len(concepts),len(rules),file=sys.stderr)
 print("orphan rules",[r["n"] for r in rules if not r["concepts"]],file=sys.stderr)
 print("orphan concepts",[c["n"] for c in concepts if not c["rules"]],file=sys.stderr)
-T=B+"map/template.html"; out=B+"map/brain-map.html"
-open(out,"w").write(open(T).read().replace("__DATA__", json.dumps({"concepts":concepts,"rules":rules},ensure_ascii=False).replace("</","<\\/")))
-print("wrote",out,file=sys.stderr)
+
+# ---------- whole-repo graph ----------
+import os
+ROOT = "/home/user/test-environment-/"
+REPO = "https://github.com/eddieedwardsv2-ux/test-environment-/blob/main/"
+SKIP = {".git", "node_modules", "__pycache__"}
+files = []
+for d, ds, fs in os.walk(ROOT):
+    ds[:] = sorted(x for x in ds if x not in SKIP)
+    for f in sorted(fs):
+        if f.endswith(".md"):
+            files.append(os.path.relpath(os.path.join(d, f), ROOT))
+fileset = set(files)
+CREATORS = {"nate-herk": "Nate Herk", "nick-saraev": "Nick Saraev", "andrej-karpathy": "Andrej Karpathy", "the-next-new-thing": "The Next New Thing"}
+def group(p):
+    parts = p.split("/")
+    if p.endswith("-transcript.md"): return "transcripts"
+    if parts[0] == "research" and len(parts) > 2 and parts[1] in CREATORS: return "creators"
+    if parts[0] in (".claude", ".agents"): return "skills"
+    if parts[0] in ("audits",) or p == "decisions.md": return "audits"
+    if parts[0] == "projects": return "projects"
+    if parts[0] == "templates": return "templates"
+    if parts[0] in ("learning", "brainstorms", "exports"): return "learning"
+    if parts[0] == "research": return "research"
+    return "core"
+def title_of(p, text):
+    m = re.search(r"^#\s+(.+)$", text, re.M)
+    if p.endswith("SKILL.md"):
+        n = re.search(r"^name:\s*(.+)$", text, re.M)
+        if n: return n.group(1).strip() + " (skill)"
+    if p.startswith(".claude/agents/"):
+        return os.path.basename(p)[:-3] + " (agent)"
+    if m: return re.sub(r"[*`]", "", m.group(1)).replace("Transcript: ", "").strip()
+    return p
+def excerpt(text):
+    t = re.sub(r"^---\n.*?\n---\n", "", text, flags=re.S)
+    t = re.sub(r"^#.*$", "", t, flags=re.M)
+    t = re.sub(r"\*\*\[\d+:\d+(?::\d+)?\]\([^)]*\)\*\*", "", t)
+    t = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", t)
+    t = re.sub(r"[*_`>|]", "", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t[:420] + ("…" if len(t) > 420 else "")
+vid_to_file = {}
+nodes, edges = [], set()
+for p in files:
+    text = open(ROOT + p, encoding="utf-8", errors="ignore").read()
+    m = re.search(r"--([A-Za-z0-9_-]{11})-transcript\.md$", p)
+    if m: vid_to_file[m.group(1)] = p
+    creator = next((CREATORS[k] for k in CREATORS if p.startswith("research/" + k + "/")), "")
+    nodes.append({"id": p, "kind": "file", "g": group(p), "t": title_of(p, text), "ex": excerpt(text),
+                  "u": REPO + p, "cr": creator})
+def resolve(src, target):
+    target = target.split("#")[0].strip()
+    if not target or "://" in target or "*" in target or "<" in target: return None
+    for cand in (os.path.normpath(os.path.join(os.path.dirname(src), target)), os.path.normpath(target)):
+        cand = cand.lstrip("./") if cand.startswith("./") else cand
+        if cand in fileset: return cand
+        if os.path.isdir(ROOT + cand):
+            for idx in ("README.md", "index.md", "SKILL.md"):
+                if os.path.join(cand, idx) in fileset: return os.path.join(cand, idx)
+    return None
+for p in files:
+    if p.endswith("-transcript.md"): continue
+    text = open(ROOT + p, encoding="utf-8", errors="ignore").read()
+    targets = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r"`([^`\s]+)`", text)
+    targets += [REFS_PATH for REFS_PATH in re.findall(r"^\[\w+\]:\s*(\S+)", text, re.M)]
+    for t in targets:
+        r = resolve(p, t)
+        if r and r != p: edges.add((p, r, "link"))
+    # skills named in prose, e.g. "the `audit` skill"
+    for s in re.findall(r"`([a-z-]+)` (?:skill|agent)", text):
+        for cand in (f".claude/skills/{s}/SKILL.md", f".claude/agents/{s}.md"):
+            if cand in fileset and cand != p: edges.add((p, cand, "link"))
+    if not p.startswith("research/nate-herk/brain/"):
+        for vid in set(re.findall(r"watch\?v=([A-Za-z0-9_-]{11})", text)):
+            if vid in vid_to_file: edges.add((p, vid_to_file[vid], "cites"))
+CB = "research/nate-herk/brain/concepts.md"; RB = "research/nate-herk/brain/rules.md"
+def vids(o):
+    return set(re.findall(r"watch\?v=([A-Za-z0-9_-]{11})", " ".join(b["h"] for b in o["body"])))
+for c in concepts:
+    nid = f"c{c['n']}"
+    nodes.append({"id": nid, "kind": "concept", "g": "nate", "t": c["title"], "n": c["n"], "sec": c["sec"], "secTitle": c["secTitle"],
+                  "body": c["body"], "rules": c["rules"], "note": c.get("note", ""), "u": REPO + CB})
+    edges.add((CB, nid, "has"))
+    for v in vids(c):
+        if v in vid_to_file: edges.add((nid, vid_to_file[v], "cites"))
+    for rn in c["rules"]: edges.add((nid, f"r{rn}", "feeds"))
+for r in rules:
+    nid = f"r{r['n']}"
+    nodes.append({"id": nid, "kind": "rule", "g": "nate", "t": r["title"], "n": r["n"], "conf": r["conf"],
+                  "body": r["body"], "concepts": r["concepts"], "u": REPO + RB})
+    edges.add((RB, nid, "has"))
+    for v in vids(r):
+        if v in vid_to_file: edges.add((nid, vid_to_file[v], "cites"))
+ids = {n["id"] for n in nodes}
+edges = sorted(e for e in edges if e[0] in ids and e[1] in ids)
+deg = {}
+for a, b, _ in edges: deg[a] = deg.get(a, 0) + 1; deg[b] = deg.get(b, 0) + 1
+for n in nodes: n["d"] = deg.get(n["id"], 0)
+print(len(nodes), "nodes", len(edges), "connections", "unlinked:", sum(1 for n in nodes if not n["d"]), file=sys.stderr)
+T = B + "map/template.html"; out = B + "map/brain-map.html"
+if "--stats" in sys.argv: sys.exit(0)
+data = {"nodes": nodes, "edges": [list(e) for e in edges]}
+open(out, "w").write(open(T).read().replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
+print("wrote", out, file=sys.stderr)

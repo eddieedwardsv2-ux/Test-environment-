@@ -1,331 +1,421 @@
-<title>Nate's Brain Map</title>
+<title>Charlie's Brain</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one reading column; section strip shows the A→H flow; each concept card opens to show its rules underneath */
+/* Layout: full-screen star map (Map tab) with a stats corner, a sources legend and a slide-up note sheet;
+   Review tab is one card at a time with big thumb buttons. Deliberately dark-only, like a night-sky map. */
 :root{
-  --bg:#f3f5f8; --surface:#ffffff; --sunk:#e9edf2; --line:#d5dbe3;
-  --fg:#18202b; --muted:#5a6676; --accent:#2a4fd6; --accent-soft:#e3e9fd;
-  --confuse:#a86a00; --confuse-soft:#fdf1d8;
-  --del:#b4232c; --del-soft:#fbe3e4;
-  --keep:#1f7a4d; --keep-soft:#dff3e8;
-  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
-  --f-body:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --bg:#070a12; --panel:#0e1320; --panel2:#151b2b; --line:#232b3e; --fg:#e8ecf5; --muted:#8c97ad; --accent:#8fb3ff;
+  --core:#7aa2ff; --nate:#ff7ab6; --transcripts:#f5a524; --creators:#b18cff; --research:#c9b6ff;
+  --skills:#3ddc97; --audits:#ff7a7a; --projects:#5ce1e6; --learning:#ffd166; --templates:#7d879b;
+  --confuse:#f5b84a; --del:#ff6b74; --keep:#4fd99a;
+  --f-ui:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#10141b; --surface:#171c25; --sunk:#1e2530; --line:#2c3542;
-  --fg:#e6ebf2; --muted:#9aa6b7; --accent:#8aa6ff; --accent-soft:#1f2a4a;
-  --confuse:#f0b54a; --confuse-soft:#3a2c10; --del:#ff7d84; --del-soft:#3d1a1d;
-  --keep:#5fd39a; --keep-soft:#143325; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#10141b; --surface:#171c25; --sunk:#1e2530; --line:#2c3542;
-  --fg:#e6ebf2; --muted:#9aa6b7; --accent:#8aa6ff; --accent-soft:#1f2a4a;
-  --confuse:#f0b54a; --confuse-soft:#3a2c10; --del:#ff7d84; --del-soft:#3d1a1d;
-  --keep:#5fd39a; --keep-soft:#143325; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--f-body);margin:0}
-.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:28px 80px}
-h1{font:700 clamp(28px,5vw,40px)/1.1 var(--f-display);margin:0 0 6px;text-wrap:balance;letter-spacing:-.01em}
-.lede{color:var(--muted);max-width:62ch;margin:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--f-ui);margin:0;overflow:hidden}
 a{color:var(--accent)}
-code{font:13px var(--f-mono);background:var(--sunk);padding:1px 5px;border-radius:4px}
 button{font:inherit;color:inherit;cursor:pointer}
-button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+code{font:12.5px var(--f-mono);background:var(--panel2);padding:1px 5px;border-radius:4px}
 
-.stats{display:flex;flex-wrap:wrap;gap:8px 20px;margin:18px 0 10px;font:13px var(--f-mono);color:var(--muted)}
-.stats b{color:var(--fg);font-weight:500}
-.bar{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden;display:flex}
-.bar span{display:block;height:100%}
-.save{font-size:13px;color:var(--muted);margin-top:8px}
+.app{height:100%;display:flex;flex-direction:column}
+.top{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--bg);position:relative;z-index:4}
+.brand{font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.brand i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.tabs{display:inline-flex;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:3px}
+.tabs button{border:0;background:none;padding:5px 14px;border-radius:999px;font-size:13px;font-weight:600;color:var(--muted)}
+.tabs button[aria-selected="true"]{background:var(--fg);color:var(--bg)}
+#q{flex:1;min-width:0;background:var(--panel);border:1px solid var(--line);color:var(--fg);border-radius:10px;padding:7px 11px;font:inherit;font-size:14px}
+.main{flex:1;position:relative;min-height:0}
 
-.flow{display:flex;flex-wrap:wrap;gap:6px;margin:22px 0 4px;align-items:center}
-.flow .lbl{font:500 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:4px}
-.step{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px 4px 4px;font-size:13px}
-.step i{font:500 12px var(--f-mono);font-style:normal;background:var(--accent-soft);color:var(--accent);border-radius:999px;width:22px;height:22px;display:grid;place-items:center}
-.arrow{color:var(--muted);font-size:12px}
+/* map */
+#map{position:absolute;inset:0}
+#cv{width:100%;height:100%;display:block;touch-action:none}
+.hero{position:absolute;left:16px;top:14px;pointer-events:none;max-width:60%}
+.hero .eye{font:500 10.5px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.hero h1{font-size:clamp(22px,4.4vw,38px);line-height:1.02;margin:6px 0 8px;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.hero h1 span{color:var(--muted)}
+.nums{display:flex;gap:18px;font:500 18px var(--f-mono)}
+.nums small{display:block;font:10px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.legend{position:absolute;left:16px;bottom:16px;background:rgba(14,19,32,.86);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:200px;max-width:calc(100% - 32px)}
+.legend h3{margin:0 0 6px;font:500 10.5px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;gap:10px}
+.legend h3 button{border:0;background:none;color:var(--muted);font:inherit;padding:0}
+.src{display:flex;align-items:center;gap:8px;width:100%;border:0;background:none;padding:3px 0;font-size:13px;text-align:left}
+.src i{width:8px;height:8px;border-radius:50%;flex:none}
+.src b{margin-left:auto;font:400 12px var(--f-mono);color:var(--muted)}
+.src[aria-pressed="false"]{opacity:.35}
+.legend .row2{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.pill{border:1px solid var(--line);background:var(--panel2);border-radius:999px;padding:4px 10px;font-size:12px}
+.pill[aria-pressed="true"]{border-color:var(--confuse);color:var(--confuse)}
+.legend.min .list,.legend.min .row2{display:none}
 
-.tools{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;margin-top:14px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
-.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.seg button{border:0;background:var(--surface);padding:6px 12px;font-size:13px}
-.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
-.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:13px}
-.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
-.chip .n{font:12px var(--f-mono);color:var(--muted);margin-left:3px}
-#q{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:7px 10px;font:inherit;font-size:14px}
+/* note sheet */
+.sheet{position:absolute;right:16px;top:14px;bottom:16px;width:min(400px,calc(100% - 32px));background:var(--panel);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5);z-index:3}
+.sheet[hidden]{display:none}
+.sh-head{padding:14px 14px 10px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start}
+.sh-head .t{flex:1;min-width:0}
+.tag{display:inline-flex;align-items:center;gap:6px;font:500 11px var(--f-mono);letter-spacing:.05em;color:var(--muted);text-transform:uppercase}
+.tag i{width:8px;height:8px;border-radius:50%}
+.sh-head h2{margin:4px 0 0;font-size:18px;line-height:1.25;text-wrap:balance;overflow-wrap:anywhere}
+.x{border:1px solid var(--line);background:var(--panel2);border-radius:8px;width:32px;height:32px;flex:none}
+.sh-body{padding:12px 14px;overflow:auto;display:flex;flex-direction:column;gap:10px;min-height:0}
+.sh-body p{margin:0;overflow-wrap:anywhere}
+.sh-body blockquote{margin:0;padding:6px 10px;border-left:3px solid var(--nate);background:var(--panel2);border-radius:0 6px 6px 0;font-size:14px;overflow-wrap:anywhere}
+.check{background:var(--panel2);border-radius:8px;padding:8px 10px;font-size:14px}
+.check b{display:block;font:500 10.5px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted);font-size:13px}
+.conns h4{margin:4px 0 6px;font:500 10.5px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.conns ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.conns button{display:flex;gap:8px;align-items:center;width:100%;text-align:left;border:0;background:none;padding:5px 6px;border-radius:6px;font-size:13.5px}
+.conns button:hover{background:var(--panel2)}
+.conns button i{width:7px;height:7px;border-radius:50%;flex:none}
+.conns button span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.conns button em{margin-left:auto;font:normal 11px var(--f-mono);color:var(--muted)}
 
-h2{font:700 20px/1.2 var(--f-display);margin:34px 0 4px;display:flex;gap:10px;align-items:baseline}
-h2 .sl{font:500 13px var(--f-mono);color:var(--accent)}
-.secnote{color:var(--muted);font-size:13px;margin:0 0 12px}
+.mark{border-top:1px solid var(--line);padding:10px 14px 14px;display:flex;flex-direction:column;gap:8px;background:var(--panel)}
+.btns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.btns button{border:1px solid var(--line);background:var(--panel2);border-radius:10px;padding:9px 6px;font-weight:700;font-size:14px}
+.btns button[data-k="confusing"][aria-pressed="true"]{background:var(--confuse);border-color:var(--confuse);color:#1a1200}
+.btns button[data-k="delete"][aria-pressed="true"]{background:var(--del);border-color:var(--del);color:#1f0306}
+.btns button[data-k="keep"][aria-pressed="true"]{background:var(--keep);border-color:var(--keep);color:#02160c}
+.mark textarea{width:100%;min-height:52px;resize:vertical;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:inherit;font-size:14px}
+.st{font-size:12px;color:var(--muted);min-height:16px}
 
-.item{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin:8px 0;scroll-margin-top:150px}
-.item.rule{background:var(--surface)}
-.kids{margin:0 0 4px 22px;border-left:2px solid var(--line);padding-left:12px}
-.kids .item{margin:6px 0}
-.head{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start;width:100%;text-align:left;background:none;border:0;padding:12px 14px}
-.id{font:500 12px var(--f-mono);padding:2px 7px;border-radius:5px;background:var(--accent-soft);color:var(--accent);white-space:nowrap;margin-top:2px}
-.rule .id{background:var(--sunk);color:var(--fg)}
-.ttl{font-weight:600;min-width:0;text-wrap:pretty}
-.ttl small{display:block;font-weight:400;color:var(--muted);font-size:12.5px;margin-top:2px}
-.flag{font:500 11px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;white-space:nowrap;margin-top:2px}
-.flag.confusing{background:var(--confuse-soft);color:var(--confuse)}
-.flag.delete{background:var(--del-soft);color:var(--del)}
-.flag.keep{background:var(--keep-soft);color:var(--keep)}
-.flag.note{background:var(--sunk);color:var(--muted)}
-.item.f-confusing{border-left:4px solid var(--confuse)}
-.item.f-delete{border-left:4px solid var(--del)}
-.item.f-keep{border-left:4px solid var(--keep)}
+/* review */
+#review{position:absolute;inset:0;overflow:auto;display:flex;justify-content:center}
+#review[hidden]{display:none}
+.rv{width:100%;max-width:640px;padding:16px 16px 24px;display:flex;flex-direction:column;gap:12px;min-height:100%}
+.rv-top{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.rv-top .pill[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.prog{display:flex;align-items:center;gap:10px;font:500 13px var(--f-mono);color:var(--muted)}
+.prog .bar{flex:1;height:5px;background:var(--panel2);border-radius:3px;overflow:hidden;display:flex}
+.prog .bar span{height:100%}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;flex:1;min-height:340px;overflow:hidden}
+.card .sh-body{flex:1}
+.nav{display:flex;gap:8px}
+.nav button{flex:1;border:1px solid var(--line);background:var(--panel2);border-radius:10px;padding:9px;font-weight:600}
+.done{padding:40px 18px;text-align:center;color:var(--muted)}
+.done b{display:block;color:var(--fg);font-size:20px;margin-bottom:6px}
+.legend .list{max-height:40vh;overflow:auto}
 
-.body{padding:0 14px 14px;border-top:1px dashed var(--line);display:flex;flex-direction:column;gap:10px;padding-top:12px;min-width:0}
-.body p{margin:0;max-width:68ch;overflow-wrap:anywhere}
-.body blockquote{margin:0;padding:6px 12px;border-left:3px solid var(--accent);background:var(--sunk);border-radius:0 6px 6px 0;font-size:14px;overflow-wrap:anywhere}
-.check{background:var(--accent-soft);border-radius:8px;padding:8px 12px;font-size:14px}
-.check b{font:500 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:2px}
-.links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
-.links button{border:1px solid var(--line);background:var(--bg);border-radius:6px;padding:2px 8px;font:12px var(--f-mono);color:var(--fg)}
-.gap{color:var(--confuse);font-size:13px}
-.conf{font:11px var(--f-mono);color:var(--muted);letter-spacing:.03em}
-
-.review{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:8px}
-.review .row button{border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:6px 12px;font-size:13px}
-.review button[data-k="confusing"][aria-pressed="true"]{background:var(--confuse-soft);border-color:var(--confuse);color:var(--confuse)}
-.review button[data-k="delete"][aria-pressed="true"]{background:var(--del-soft);border-color:var(--del);color:var(--del)}
-.review button[data-k="keep"][aria-pressed="true"]{background:var(--keep-soft);border-color:var(--keep);color:var(--keep)}
-.review textarea{width:100%;min-height:60px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:8px;padding:8px 10px;font:inherit;font-size:14px;resize:vertical}
-.review .st{font-size:12px;color:var(--muted)}
-.empty{color:var(--muted);padding:30px 0;text-align:center}
-.flash{animation:fl 1.2s ease-out}
-@keyframes fl{0%{box-shadow:0 0 0 3px var(--accent)}100%{box-shadow:0 0 0 0 transparent}}
-@media (prefers-reduced-motion:reduce){.flash{animation:none}}
-@media (max-width:520px){.kids{margin-left:8px;padding-left:8px}.head{grid-template-columns:auto 1fr}.head .flag{grid-column:2;justify-self:start}}
+@media (max-width:700px){
+  .top{flex-wrap:wrap}
+  #q{order:3;flex-basis:100%}
+  .hero{max-width:calc(100% - 32px)}
+  .hero h1{font-size:24px}
+  .nums{font-size:15px;gap:14px}
+  .sheet{left:8px;right:8px;width:auto;top:auto;bottom:8px;max-height:72%}
+  .legend{bottom:12px;left:12px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
-<div class="wrap">
-  <h1>Nate's Brain Map</h1>
-  <p class="lede">The 38 concepts and 40 rules behind the <code>nate-brain</code> agent, laid out in the order the brain teaches them. Open a concept to read it and see the rules it feeds. Mark anything that's confusing or that you'd delete, and add a note saying why.</p>
-
-  <div class="stats" id="stats"></div>
-  <div class="bar" id="bar" aria-hidden="true"></div>
-  <div class="save" id="save">Connecting to your review board…</div>
-
-  <div class="flow" id="flow"><span class="lbl">Flow</span></div>
-
-  <div class="tools">
-    <div class="row">
-      <div class="seg" role="group" aria-label="View">
-        <button id="v-sec" aria-pressed="true">By section</button>
-        <button id="v-rules" aria-pressed="false">Rules 1–40</button>
-      </div>
-      <input id="q" type="search" placeholder="Search titles and text" aria-label="Search">
+<div class="app">
+  <header class="top">
+    <div class="brand"><i></i>Charlie's Brain</div>
+    <div class="tabs" role="tablist">
+      <button id="t-map" role="tab" aria-selected="true">Map</button>
+      <button id="t-rev" role="tab" aria-selected="false">Review</button>
     </div>
-    <div class="row" id="filters"></div>
+    <input id="q" type="search" placeholder="Search notes, skills, concepts, videos…" aria-label="Search">
+  </header>
+  <div class="main">
+    <section id="map">
+      <canvas id="cv" aria-label="Map of every note and how they connect"></canvas>
+      <div class="hero">
+        <div class="eye">● A living knowledge system</div>
+        <h1>Every idea.<br><span>Connected.</span></h1>
+        <div class="nums" id="nums"></div>
+      </div>
+      <div class="legend" id="legend"></div>
+      <aside class="sheet" id="sheet" hidden></aside>
+    </section>
+    <section id="review" hidden><div class="rv" id="rv"></div></section>
   </div>
-
-  <div id="list"></div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
 const DATA = __DATA__;
-const C = DATA.concepts, R = DATA.rules;
-const byC = Object.fromEntries(C.map(c=>[c.n,c])), byR = Object.fromEntries(R.map(r=>[r.n,r]));
-const SEC = []; C.forEach(c=>{ if(!SEC.find(s=>s.id===c.sec)) SEC.push({id:c.sec,title:c.secTitle}); });
-const ALL = [...C.map(c=>"c"+c.n), ...R.map(r=>"r"+r.n)];
+const N = DATA.nodes, byId = Object.fromEntries(N.map(n=>[n.id,n]));
+const L = DATA.edges.map(([s,t,k])=>({source:s,target:t,k}));
+const nbr = {}; N.forEach(n=>nbr[n.id]=[]);
+DATA.edges.forEach(([s,t,k])=>{ nbr[s].push([t,k,"out"]); nbr[t].push([s,k,"in"]); });
 
-let flags = {};            // id -> {kind, note}
-let db = null, view = "sec", filter = "all", query = "";
-const open = new Set();
-
-const FILTERS = [
-  ["all","All"],["confusing","Confusing"],["delete","Delete?"],["keep","Keep"],
-  ["todo","Not reviewed"],["unlinked","Not linked"]
+const GROUPS = [
+  ["core","Our OS: router & context"],["skills","Skills & agents"],["projects","Projects"],["audits","Audits & decisions"],
+  ["learning","Learning & brainstorms"],["templates","Blank template"],["nate","Nate's brain: concepts & rules"],
+  ["creators","Creator research"],["research","Research tools"],["transcripts","Video transcripts"]
 ];
-function isUnlinked(id){ return id[0]==="c" ? !byC[id.slice(1)].rules.length : !byR[id.slice(1)].concepts.length; }
-function matchesFilter(id){
-  const f = flags[id];
-  if(filter==="all") return true;
-  if(filter==="todo") return !f || !f.kind;
-  if(filter==="unlinked") return isUnlinked(id);
-  return f && f.kind===filter;
-}
-function textOf(id){
-  const o = id[0]==="c" ? byC[id.slice(1)] : byR[id.slice(1)];
-  return (o.title+" "+o.body.map(b=>b.h).join(" ")).replace(/<[^>]+>/g,"").toLowerCase();
-}
-const TXT = Object.fromEntries(ALL.map(id=>[id,textOf(id)]));
-function visible(id){ return matchesFilter(id) && (!query || TXT[id].includes(query)); }
+const css = getComputedStyle(document.documentElement);
+const COL = Object.fromEntries(GROUPS.map(([g])=>[g, css.getPropertyValue("--"+g).trim()]));
+const GNAME = Object.fromEntries(GROUPS);
+const shown = Object.fromEntries(GROUPS.map(([g])=>[g,true]));
 
-function esc(s){ const d=document.createElement("div"); d.textContent=s; return d.innerHTML; }
+let flags = {}, db = null, selected = null, query = "", looseOnly = false;
+const esc = s => { const d=document.createElement("div"); d.textContent=s; return d.innerHTML; };
+const docId = id => /^[cr]\d+$/.test(id) ? id : "f~" + id.replace(/\//g,"~").replace(/[^A-Za-z0-9_\-.~:@+]/g,"_");
+const label = n => n.kind==="concept" ? `C${n.n} · ${n.t}` : n.kind==="rule" ? `R${n.n} · ${n.t}` : n.t;
+const KLABEL = {link:"links", cites:"quotes video", has:"contains", feeds:"feeds rule"};
 
-function flagPill(id){
-  const f = flags[id];
-  if(!f) return "";
-  if(f.kind) return `<span class="flag ${f.kind}">${f.kind==="delete"?"Delete?":f.kind}</span>`;
-  if(f.note) return `<span class="flag note">Note</span>`;
-  return "";
+/* ---------------- stats + legend ---------------- */
+function renderNums(){
+  const marked = Object.values(flags).filter(f=>f.kind).length;
+  document.getElementById("nums").innerHTML =
+    `<div>${N.length}<small>notes</small></div><div>${GROUPS.length}<small>sources</small></div><div>${L.length.toLocaleString()}<small>connections</small></div><div>${marked}<small>marked</small></div>`;
 }
-function bodyHTML(o){
-  return o.body.map(b=>{
-    if(b.t==="q") return `<blockquote>${b.h}</blockquote>`;
-    if(b.t==="check") return `<div class="check"><b>Agent check</b>${b.h}</div>`;
-    return `<p>${b.h}</p>`;
-  }).join("");
+const loose = N.filter(n=>n.d<=1).length;
+function renderLegend(){
+  const cnt = g => N.filter(n=>n.g===g).length;
+  const el = document.getElementById("legend");
+  const min = el.classList.contains("min");
+  el.innerHTML = `<h3>Sources <button id="lg-t" aria-expanded="${!min}">${min?"Show":"Hide"}</button></h3>
+    <div class="list">${GROUPS.map(([g,name])=>`<button class="src" data-g="${g}" aria-pressed="${shown[g]}"><i style="background:${COL[g]}"></i>${esc(name)}<b>${cnt(g)}</b></button>`).join("")}</div>
+    <div class="row2"><button class="pill" id="loose" aria-pressed="${looseOnly}">Loose ends · ${loose}</button><button class="pill" id="reset">Reset view</button></div>`;
 }
-function itemHTML(id){
-  const isC = id[0]==="c", o = isC ? byC[id.slice(1)] : byR[id.slice(1)];
-  const f = flags[id] || {};
-  const k = f.kind ? " f-"+f.kind : "";
-  const sub = isC ? `<small>Section ${o.sec} · feeds ${o.rules.length?o.rules.length+" rule"+(o.rules.length>1?"s":""):"no rule yet"}</small>`
-                  : `<small>${o.conf?esc(o.conf)+" · ":""}${o.concepts.length?"from concept "+o.concepts.join(", "):"no concept linked"}</small>`;
-  let inner = "";
-  if(open.has(id)){
-    let links;
-    if(isC){
-      links = o.rules.length
-        ? `<div class="links">Feeds: ${o.rules.map(n=>`<button data-go="r${n}">Rule ${n}</button>`).join("")}</div>`
-        : `<div class="gap">Not linked to a rule. Brain says: ${o.note||"no rule yet"}</div>`;
-    } else {
-      links = o.concepts.length
-        ? `<div class="links">Comes from: ${o.concepts.map(n=>`<button data-go="c${n}">Concept ${n}</button>`).join("")}</div>`
-        : `<div class="gap">No concept points to this rule, so it sits outside the flow.</div>`;
-    }
-    inner = `<div class="body">${bodyHTML(o)}${links}
-      <div class="review">
-        <div class="row" role="group" aria-label="Mark ${id}">
-          <button data-k="confusing" aria-pressed="${f.kind==="confusing"}">Confusing</button>
-          <button data-k="delete" aria-pressed="${f.kind==="delete"}">Delete?</button>
-          <button data-k="keep" aria-pressed="${f.kind==="keep"}">Keep</button>
-        </div>
-        <textarea id="note-${id}" placeholder="What's unclear, or why delete it?">${esc(f.note||"")}</textarea>
-        <div class="st" data-st></div>
-      </div></div>`;
+
+/* ---------------- graph ---------------- */
+const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
+let W=0,H=0,DPR=1,transform=d3.zoomIdentity;
+const R = n => 2.2 + Math.sqrt(n.d)*1.15;
+function anchor(g){
+  const i = GROUPS.findIndex(x=>x[0]===g), a = (i/GROUPS.length)*Math.PI*2 - Math.PI/2;
+  const rad = g==="core" ? 0 : 230;
+  return [Math.cos(a)*rad, Math.sin(a)*rad];
+}
+N.forEach(n=>{ const [ax,ay]=anchor(n.g); n.x=ax+(Math.random()-.5)*80; n.y=ay+(Math.random()-.5)*80; });
+const sim = d3.forceSimulation(N)
+  .force("link", d3.forceLink(L).id(d=>d.id).distance(l=>l.k==="has"?26:l.k==="feeds"?22:46).strength(l=>l.k==="link"?0.08:0.3))
+  .force("charge", d3.forceManyBody().strength(n=>-14-n.d*1.4).distanceMax(320))
+  .force("x", d3.forceX(n=>anchor(n.g)[0]).strength(0.07))
+  .force("y", d3.forceY(n=>anchor(n.g)[1]).strength(0.07))
+  .force("collide", d3.forceCollide(n=>R(n)+1.5))
+  .alphaDecay(0.035)
+  .on("tick", draw);
+
+function size(){
+  const r = cv.getBoundingClientRect(); DPR = window.devicePixelRatio||1;
+  W = r.width; H = r.height; cv.width = W*DPR; cv.height = H*DPR; draw();
+}
+function fit(){
+  const xs=N.map(n=>n.x), ys=N.map(n=>n.y);
+  const x0=Math.min(...xs), x1=Math.max(...xs), y0=Math.min(...ys), y1=Math.max(...ys);
+  const narrow = W<700, padTop = narrow?150:40, padBot = narrow?80:40;
+  const k = Math.min((W-40)/(x1-x0||1), (H-padTop-padBot)/(y1-y0||1), 2.2)*0.95;
+  const cx = narrow ? W/2 : W*0.56;
+  const t = d3.zoomIdentity.translate(cx - k*(x0+x1)/2, padTop + (H-padTop-padBot)/2 - k*(y0+y1)/2).scale(k);
+  d3.select(cv).call(zoom.transform, t);
+}
+const zoom = d3.zoom().scaleExtent([0.2,8]).on("zoom", e=>{ transform=e.transform; draw(); });
+d3.select(cv).call(zoom).on("dblclick.zoom", null);
+
+function visible(n){
+  if(!shown[n.g]) return false;
+  if(looseOnly && n.d>1) return false;
+  return true;
+}
+N.forEach(n=>{ n.s = (n.t+" "+n.id+" "+(n.kind==="file"?n.ex:n.body.map(b=>b.h).join(" "))).replace(/<[^>]+>/g,"").toLowerCase(); });
+function hit(n){ return !query || n.s.includes(query); }
+
+function draw(){
+  if(!W) return;
+  ctx.setTransform(DPR,0,0,DPR,0,0); ctx.clearRect(0,0,W,H);
+  ctx.save(); ctx.translate(transform.x, transform.y); ctx.scale(transform.k, transform.k);
+  const sel = selected ? new Set([selected, ...nbr[selected].map(x=>x[0])]) : null;
+  // edges
+  ctx.lineWidth = 0.6/transform.k;
+  for(const l of L){
+    const a=l.source, b=l.target; if(!visible(a)||!visible(b)) continue;
+    const on = sel && (a.id===selected || b.id===selected);
+    ctx.strokeStyle = on ? COL[(a.id===selected?b:a).g] : "rgba(140,151,173," + (sel||query?0.05:0.13) + ")";
+    if(on) ctx.lineWidth = 1.4/transform.k; else ctx.lineWidth = 0.6/transform.k;
+    ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
   }
-  return `<div class="item ${isC?"concept":"rule"}${k}" id="${id}" data-id="${id}">
-    <button class="head" aria-expanded="${open.has(id)}" data-toggle>
-      <span class="id">${isC?"C":"R"}${o.n}</span>
-      <span class="ttl">${esc(o.title)}${sub}</span>${flagPill(id)}
-    </button>${inner}</div>`;
-}
-
-function render(){
-  const list = document.getElementById("list");
-  let h = "";
-  if(view==="sec"){
-    SEC.forEach(s=>{
-      const cs = C.filter(c=>c.sec===s.id);
-      const parts = cs.map(c=>{
-        const cid="c"+c.n;
-        const kids = c.rules.map(n=>"r"+n).filter(visible);
-        const show = visible(cid) || kids.length;
-        if(!show) return "";
-        const kidH = open.has(cid) && kids.length ? `<div class="kids">${kids.map(itemHTML).join("")}</div>` : "";
-        return itemHTML(cid) + kidH;
-      }).join("");
-      if(parts) h += `<h2 id="sec-${s.id}"><span class="sl">${s.id}</span>${esc(s.title)}</h2>${parts}`;
-    });
-    const loose = R.filter(r=>!r.concepts.length).map(r=>"r"+r.n).filter(visible);
-    if(loose.length) h += `<h2><span class="sl">?</span>Rules with no concept</h2><p class="secnote">These rules aren't linked from any concept, so they only show up here.</p>${loose.map(itemHTML).join("")}`;
-  } else {
-    h = R.map(r=>"r"+r.n).filter(visible).map(itemHTML).join("");
+  // nodes
+  for(const n of N){
+    if(!visible(n)) continue;
+    const dim = (sel && !sel.has(n.id)) || (query && !hit(n));
+    const f = flags[docId(n.id)];
+    ctx.globalAlpha = dim ? 0.14 : 1;
+    ctx.fillStyle = COL[n.g];
+    ctx.beginPath(); ctx.arc(n.x,n.y,R(n),0,Math.PI*2); ctx.fill();
+    if(f && f.kind){ ctx.strokeStyle = f.kind==="confusing"?css.getPropertyValue("--confuse"):f.kind==="delete"?css.getPropertyValue("--del"):css.getPropertyValue("--keep"); ctx.lineWidth=2/transform.k; ctx.beginPath(); ctx.arc(n.x,n.y,R(n)+2.5/transform.k,0,Math.PI*2); ctx.stroke(); }
+    if(n.id===selected){ ctx.strokeStyle="#fff"; ctx.lineWidth=2/transform.k; ctx.beginPath(); ctx.arc(n.x,n.y,R(n)+4/transform.k,0,Math.PI*2); ctx.stroke(); }
   }
-  list.innerHTML = h || `<p class="empty">Nothing matches this filter yet.</p>`;
-  renderStats();
+  ctx.globalAlpha = 1;
+  // labels: big hubs always, neighbours when selected, matches when searching
+  ctx.font = `500 ${11/transform.k}px JetBrains Mono, monospace`; ctx.textAlign="center";
+  for(const n of N){
+    if(!visible(n)) continue;
+    const want = (sel && sel.has(n.id)) || (query && hit(n) && N.filter(hit).length<40) || (!sel && !query && n.d >= 28 && transform.k>0.5) || (transform.k>2.4 && !sel);
+    if(!want) continue;
+    const s = n.kind==="file" ? n.t.slice(0,34) : (n.kind==="concept"?"C":"R")+n.n;
+    ctx.fillStyle = "rgba(7,10,18,.75)"; const w = ctx.measureText(s).width;
+    ctx.fillRect(n.x-w/2-3/transform.k, n.y-R(n)-16/transform.k, w+6/transform.k, 13/transform.k);
+    ctx.fillStyle = "#e8ecf5"; ctx.fillText(s, n.x, n.y-R(n)-6/transform.k);
+  }
+  ctx.restore();
+}
+cv.addEventListener("click", e=>{
+  const r = cv.getBoundingClientRect();
+  const [x,y] = transform.invert([e.clientX-r.left, e.clientY-r.top]);
+  let best=null, bd=Infinity;
+  for(const n of N){ if(!visible(n)) continue; const d=Math.hypot(n.x-x,n.y-y); if(d<bd){bd=d;best=n;} }
+  if(best && bd < R(best) + 14/transform.k) select(best.id); else { selected=null; document.getElementById("sheet").hidden=true; draw(); }
+});
+
+/* ---------------- note body (shared by map + review) ---------------- */
+function bodyHTML(n){
+  if(n.kind==="file"){
+    return `<p>${esc(n.ex||"(empty file)")}</p><p class="muted"><code>${esc(n.id)}</code> · <a href="${n.u}" target="_blank" rel="noopener">Open full file on GitHub</a></p>`;
+  }
+  let h = n.body.map(b=> b.t==="q" ? `<blockquote>${b.h}</blockquote>` : b.t==="check" ? `<div class="check"><b>Agent check</b>${b.h}</div>` : `<p>${b.h}</p>`).join("");
+  if(n.kind==="concept" && !n.rules.length) h += `<p class="muted" style="color:var(--confuse)">Not linked to any rule. Brain says: ${n.note||"no rule yet"}</p>`;
+  if(n.kind==="rule" && !n.concepts.length) h += `<p class="muted" style="color:var(--confuse)">No concept points to this rule.</p>`;
+  return h;
+}
+function connsHTML(n){
+  const list = nbr[n.id].slice().sort((a,b)=>byId[b[0]].d-byId[a[0]].d);
+  if(!list.length) return `<div class="conns"><h4>Connections</h4><p class="muted">Nothing links here yet. This is a loose end.</p></div>`;
+  const max = 40;
+  return `<div class="conns"><h4>${list.length} connection${list.length>1?"s":""}</h4><ul>${list.slice(0,max).map(([id,k,dir])=>{
+    const m=byId[id]; return `<li><button data-go="${esc(id)}"><i style="background:${COL[m.g]}"></i><span>${esc(label(m))}</span><em>${dir==="out"?KLABEL[k]:"from"}</em></button></li>`;}).join("")}</ul>${list.length>max?`<p class="muted">+ ${list.length-max} more</p>`:""}</div>`;
+}
+function markHTML(n){
+  const f = flags[docId(n.id)]||{};
+  return `<div class="mark" data-mark="${esc(n.id)}"><div class="btns">
+    <button data-k="keep" aria-pressed="${f.kind==="keep"}">Keep</button>
+    <button data-k="confusing" aria-pressed="${f.kind==="confusing"}">Confusing</button>
+    <button data-k="delete" aria-pressed="${f.kind==="delete"}">Delete?</button></div>
+    <textarea id="note-${esc(docId(n.id))}" placeholder="What's unclear, or why delete it?">${esc(f.note||"")}</textarea><div class="st"></div></div>`;
+}
+function headHTML(n, close){
+  const sub = n.kind==="concept" ? `Nate's concept ${n.n} · section ${n.sec}` : n.kind==="rule" ? `Nate's rule ${n.n}${n.conf?" · "+esc(n.conf):""}` : GNAME[n.g] + (n.cr?" · "+n.cr:"");
+  return `<div class="sh-head"><div class="t"><span class="tag"><i style="background:${COL[n.g]}"></i>${sub}</span><h2>${esc(n.kind==="file"?n.t:n.t)}</h2></div>${close?'<button class="x" id="close" aria-label="Close">✕</button>':""}</div>`;
+}
+function select(id){
+  selected = id; const n = byId[id], sh = document.getElementById("sheet");
+  sh.innerHTML = headHTML(n,true) + `<div class="sh-body">${bodyHTML(n)}${connsHTML(n)}</div>` + markHTML(n);
+  sh.hidden = false; draw();
 }
 
-function renderStats(){
-  const cnt = k => ALL.filter(id=>flags[id]&&flags[id].kind===k).length;
-  const c=cnt("confusing"), d=cnt("delete"), k=cnt("keep"), done=c+d+k, notes=ALL.filter(id=>flags[id]&&flags[id].note).length;
-  document.getElementById("stats").innerHTML =
-    `<span><b>${C.length}</b> concepts</span><span><b>${R.length}</b> rules</span><span><b>${done}</b> / ${ALL.length} reviewed</span><span><b>${c}</b> confusing</span><span><b>${d}</b> delete?</span><span><b>${notes}</b> notes</span>`;
-  const pct = n => (n/ALL.length*100)+"%";
-  document.getElementById("bar").innerHTML =
-    `<span style="width:${pct(k)};background:var(--keep)"></span><span style="width:${pct(c)};background:var(--confuse)"></span><span style="width:${pct(d)};background:var(--del)"></span>`;
-  const counts = {all:ALL.length,confusing:c,delete:d,keep:k,todo:ALL.length-done,unlinked:ALL.filter(isUnlinked).length};
-  document.getElementById("filters").innerHTML = FILTERS.map(([v,l])=>
-    `<button class="chip" data-f="${v}" aria-pressed="${filter===v}">${l}<span class="n">${counts[v]}</span></button>`).join("");
+/* ---------------- review ---------------- */
+let rvSet = "nate", rvTodo = true, rvIdx = 0;
+function queue(){
+  let q = rvSet==="nate" ? N.filter(n=>n.g==="nate") : rvSet==="loose" ? N.filter(n=>n.d<=1) : N.filter(n=>n.kind==="file" && n.g!=="transcripts" && n.g!=="templates");
+  q.sort((a,b)=> (a.kind===b.kind ? (a.n||0)-(b.n||0) : a.kind==="concept"?-1:1) || a.id.localeCompare(b.id));
+  if(rvSet==="nate"){ // concept, then the rules it feeds
+    const out=[], seen=new Set();
+    N.filter(n=>n.kind==="concept").sort((a,b)=>a.n-b.n).forEach(c=>{ out.push(c); seen.add(c.id); c.rules.forEach(r=>{ if(!seen.has("r"+r)){ out.push(byId["r"+r]); seen.add("r"+r);} }); });
+    N.filter(n=>n.kind==="rule"&&!seen.has(n.id)).forEach(r=>out.push(r));
+    q = out;
+  }
+  return q;
+}
+function renderReview(){
+  const all = queue(), todo = all.filter(n=>!(flags[docId(n.id)]||{}).kind);
+  const q = rvTodo ? todo : all;
+  if(rvIdx >= q.length) rvIdx = Math.max(0,q.length-1);
+  const cnt = k => all.filter(n=>(flags[docId(n.id)]||{}).kind===k).length;
+  const done = all.length - todo.length, pct = x => (x/all.length*100)+"%";
+  const n = q[rvIdx];
+  document.getElementById("rv").innerHTML = `
+    <div class="rv-top">
+      <button class="pill" data-set="nate" aria-pressed="${rvSet==="nate"}">Nate's brain · ${N.filter(n=>n.g==="nate").length}</button>
+      <button class="pill" data-set="ours" aria-pressed="${rvSet==="ours"}">Our OS files · ${N.filter(n=>n.kind==="file"&&n.g!=="transcripts"&&n.g!=="templates").length}</button>
+      <button class="pill" data-set="loose" aria-pressed="${rvSet==="loose"}">Loose ends · ${loose}</button>
+      <button class="pill" id="todo" aria-pressed="${rvTodo}">Unreviewed only</button>
+    </div>
+    <div class="prog"><span>${done} / ${all.length}</span><div class="bar"><span style="width:${pct(cnt("keep"))};background:var(--keep)"></span><span style="width:${pct(cnt("confusing"))};background:var(--confuse)"></span><span style="width:${pct(cnt("delete"))};background:var(--del)"></span></div><span>${cnt("confusing")} ? · ${cnt("delete")} ✕</span></div>
+    ${n ? `<article class="card">${headHTML(n,false)}<div class="sh-body">${bodyHTML(n)}${connsHTML(n)}</div>${markHTML(n)}</article>
+      <div class="nav"><button id="prev" ${rvIdx?"":"disabled"}>← Back</button><button id="onmap">Show on map</button><button id="next" ${rvIdx<q.length-1?"":"disabled"}>Skip →</button></div>`
+      : `<div class="done"><b>All reviewed.</b>Every card in this set has a mark. Tell Claude "read my marks".</div>`}`;
 }
 
-function renderFlow(){
-  const el = document.getElementById("flow");
-  el.insertAdjacentHTML("beforeend", SEC.map((s,i)=>
-    `${i?'<span class="arrow" aria-hidden="true">→</span>':""}<button class="step" data-sec="${s.id}"><i>${s.id}</i>${esc(s.title)}</button>`).join(""));
-}
-
-/* ---------- saving ---------- */
+/* ---------------- saving ---------------- */
 const timers = {};
-async function save(id, statusEl){
-  const f = flags[id] || {};
-  const o = id[0]==="c" ? byC[id.slice(1)] : byR[id.slice(1)];
-  if(!db){ try{ localStorage.setItem("brainmap-flags", JSON.stringify(flags)); }catch(e){} if(statusEl) statusEl.textContent="Saved in this browser only"; return; }
+async function save(id, st){
+  const did = docId(id), f = flags[did]||{}, n = byId[id];
+  if(!db){ try{ localStorage.setItem("brain-flags", JSON.stringify(flags)); }catch(e){} if(st) st.textContent="Saved in this browser only"; return; }
   try{
-    if(!f.kind && !f.note){ await db.collection("flags").doc(id).delete(); }
-    else await db.collection("flags").doc(id).set({ item:id, kind:f.kind||null, note:f.note||"", title:o.title, updatedAt:new Date().toISOString() });
-    if(statusEl) statusEl.textContent = "Saved";
-  }catch(e){
-    if(statusEl) statusEl.textContent = "Couldn't save: " + (e && e.code==="not_granted" ? "you don't have edit access to this page." : "try again in a moment.");
-  }
+    if(!f.kind && !f.note) await db.collection("flags").doc(did).delete();
+    else await db.collection("flags").doc(did).set({item:id, kind:f.kind||null, note:f.note||"", title:n.t, updatedAt:new Date().toISOString()});
+    if(st) st.textContent="Saved";
+  }catch(e){ if(st) st.textContent = e && e.code==="not_granted" ? "Couldn't save: you can only view this page." : "Couldn't save. Try again in a moment."; }
 }
 
+/* ---------------- events ---------------- */
+function showTab(t){
+  document.getElementById("t-map").setAttribute("aria-selected", t==="map");
+  document.getElementById("t-rev").setAttribute("aria-selected", t==="rev");
+  document.getElementById("map").hidden = t!=="map";
+  document.getElementById("review").hidden = t!=="rev";
+  if(t==="rev") renderReview(); else { size(); }
+}
 document.addEventListener("click", e=>{
-  const t = e.target.closest("button"); if(!t) return;
-  if(t.id==="v-sec"||t.id==="v-rules"){
-    view = t.id==="v-sec"?"sec":"rules";
-    document.getElementById("v-sec").setAttribute("aria-pressed", view==="sec");
-    document.getElementById("v-rules").setAttribute("aria-pressed", view==="rules");
-    render(); return;
+  const b = e.target.closest("button"); if(!b) return;
+  if(b.id==="t-map") return showTab("map");
+  if(b.id==="t-rev") return showTab("rev");
+  if(b.id==="close"){ selected=null; document.getElementById("sheet").hidden=true; draw(); return; }
+  if(b.id==="lg-t"){ document.getElementById("legend").classList.toggle("min"); renderLegend(); return; }
+  if(b.id==="loose"){ looseOnly=!looseOnly; renderLegend(); draw(); return; }
+  if(b.id==="reset"){ GROUPS.forEach(([g])=>shown[g]=true); looseOnly=false; selected=null; document.getElementById("sheet").hidden=true; renderLegend(); fit(); return; }
+  if(b.dataset.g){ shown[b.dataset.g]=!shown[b.dataset.g]; renderLegend(); draw(); return; }
+  if(b.dataset.go){
+    if(!document.getElementById("review").hidden){ showTab("map"); }
+    const n = byId[b.dataset.go]; shown[n.g]=true; looseOnly=false; renderLegend(); select(n.id);
+    const k = Math.max(transform.k,1.6); d3.select(cv).transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(W/2-k*n.x, H*0.35-k*n.y).scale(k));
+    return;
   }
-  if(t.dataset.f){ filter=t.dataset.f; render(); return; }
-  if(t.dataset.sec){
-    if(view!=="sec"){ view="sec"; document.getElementById("v-sec").setAttribute("aria-pressed",true); document.getElementById("v-rules").setAttribute("aria-pressed",false); }
-    filter="all"; query=""; document.getElementById("q").value=""; render();
-    document.getElementById("sec-"+t.dataset.sec)?.scrollIntoView({behavior:"smooth",block:"start"}); return;
-  }
-  if(t.dataset.go){ goTo(t.dataset.go); return; }
-  const item = t.closest(".item");
-  if(t.hasAttribute("data-toggle") && item){
-    const id=item.dataset.id; open.has(id)?open.delete(id):open.add(id); render();
-    document.getElementById(id)?.scrollIntoView({block:"nearest"}); return;
-  }
-  if(t.dataset.k && item){
-    const id=item.dataset.id; const f = flags[id] || (flags[id]={});
-    f.kind = f.kind===t.dataset.k ? null : t.dataset.k;
-    render();
-    save(id, document.querySelector(`#${id} [data-st]`));
+  if(b.dataset.set){ rvSet=b.dataset.set; rvIdx=0; renderReview(); return; }
+  if(b.id==="todo"){ rvTodo=!rvTodo; rvIdx=0; renderReview(); return; }
+  if(b.id==="prev"){ rvIdx--; renderReview(); return; }
+  if(b.id==="next"){ rvIdx++; renderReview(); return; }
+  if(b.id==="onmap"){ const id = document.querySelector("#rv [data-mark]")?.dataset.mark; if(id){ b.dataset.go=id; b.click(); } return; }
+  const m = b.closest("[data-mark]");
+  if(m && b.dataset.k){
+    const id = m.dataset.mark, did = docId(id), f = flags[did] || (flags[did]={});
+    f.kind = f.kind===b.dataset.k ? null : b.dataset.k;
+    const inReview = !document.getElementById("review").hidden;
+    if(inReview){ if(!rvTodo && f.kind) rvIdx++; renderReview(); } else { select(id); }
+    renderNums(); draw();
+    save(id, document.querySelector("#"+(inReview?"rv":"sheet")+" .st"));
   }
 });
 document.addEventListener("input", e=>{
-  if(e.target.id==="q"){ query=e.target.value.trim().toLowerCase(); render(); document.getElementById("q").focus(); return; }
+  if(e.target.id==="q"){ query=e.target.value.trim().toLowerCase(); draw(); return; }
   if(e.target.id && e.target.id.startsWith("note-")){
-    const id = e.target.id.slice(5); const f = flags[id] || (flags[id]={});
-    f.note = e.target.value;
-    const st = e.target.parentElement.querySelector("[data-st]"); st.textContent="Typing…";
-    clearTimeout(timers[id]); timers[id]=setTimeout(()=>{ save(id, document.querySelector(`#${id} [data-st]`)); renderStats(); },900);
+    const m = e.target.closest("[data-mark]"), id = m.dataset.mark, did = docId(id), f = flags[did] || (flags[did]={});
+    f.note = e.target.value; const st = m.querySelector(".st"); st.textContent="Typing…";
+    clearTimeout(timers[did]); timers[did] = setTimeout(()=>save(id, st), 900);
   }
 });
-function goTo(id){
-  if(view==="rules" && id[0]==="c"){ view="sec"; document.getElementById("v-sec").setAttribute("aria-pressed",true); document.getElementById("v-rules").setAttribute("aria-pressed",false); }
-  filter="all"; query=""; document.getElementById("q").value="";
-  if(id[0]==="r" && view==="sec"){ const r=byR[id.slice(1)]; if(r.concepts.length) open.add("c"+r.concepts[0]); }
-  open.add(id); render();
-  const el=document.getElementById(id); if(el){ el.scrollIntoView({behavior:"smooth",block:"start"}); el.classList.add("flash"); }
-}
+document.getElementById("q").addEventListener("keydown", e=>{
+  if(e.key==="Enter"){ const m = N.filter(n=>visible(n)&&hit(n)).sort((a,b)=>b.d-a.d)[0]; if(m){ const t=document.createElement("button"); t.dataset.go=m.id; document.body.appendChild(t); t.click(); t.remove(); } }
+});
+window.addEventListener("resize", size);
 
-renderFlow(); render();
-try{ const s=localStorage.getItem("brainmap-flags"); if(s){ flags=JSON.parse(s)||{}; render(); } }catch(e){}
-
+/* ---------------- start ---------------- */
+renderNums(); renderLegend(); size();
+for(let i=0;i<220;i++) sim.tick();
+fit(); sim.alpha(0.05).restart();
+try{ const s=localStorage.getItem("brain-flags"); if(s){ flags=JSON.parse(s)||{}; renderNums(); draw(); } }catch(e){}
 (async()=>{
-  const saveEl = document.getElementById("save");
   try{ db = await window.claude?.use?.("db"); }catch(e){ db=null; }
-  if(!db){ saveEl.textContent = "Saving to your board isn't available in this view, so marks stay in this browser only."; return; }
-  saveEl.textContent = "Marks and notes save to your review board, so Claude can read them.";
+  if(!db) return;
   db.collection("flags").onSnapshot(snap=>{
     const next = {};
-    snap.docs.forEach(d=>{ const v=d.data(); if(v) next[d.id]={kind:v.kind||null,note:v.note||""}; });
-    // keep any note the viewer is typing right now
-    const a=document.activeElement;
-    if(a && a.id && a.id.startsWith("note-")){ const id=a.id.slice(5); if(flags[id]) next[id]=flags[id]; }
-    flags = next;
-    if(a && a.id && a.id.startsWith("note-")) renderStats(); else render();
-  }, ()=>{ saveEl.textContent = "Lost the connection to your board. Reload the page to see the latest marks."; });
+    snap.docs.forEach(d=>{ const v=d.data(); if(v) next[d.id]={kind:v.kind||null, note:v.note||""}; });
+    const a = document.activeElement;
+    if(a && a.id && a.id.startsWith("note-")){ const did=a.id.slice(5); if(flags[did]) next[did]=flags[did]; }
+    flags = next; renderNums(); draw();
+    if(!(a && a.id && a.id.startsWith("note-"))){
+      if(!document.getElementById("review").hidden) renderReview();
+      else if(selected) select(selected);
+    }
+  });
 })();
 </script>
