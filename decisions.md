@@ -4,6 +4,7 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Audits keep receipts** (Charlie: "Go"): each `audit` run saves `audits/evidence/<run-id>/` (commands with real output, phone and desktop screenshots of pages checked), and every score names its receipt; no receipt = unverified. Why: the first audit's evidence existed only in chat. Connector checks record "read OK" only (public repo).
 - 2026-10-08 — **Adopted Nate's AIS-OS kit** (Charlie: "Approve ai os";
   github.com/nateherkai/AIS-OS, MIT, commit ce9cb93): skills `onboard`,
   `audit` (Four Cs rubric v2, now the weekly audit), `link`, `level-up`, newer
