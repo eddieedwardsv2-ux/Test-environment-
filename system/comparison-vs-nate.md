@@ -20,7 +20,7 @@ recommendation is in bold.
   labelled as second-hand; B7 foundation tests merged into
   `system/standard-ai-os-v1.md`.
 - **R14:** option B (95% before big or hard-to-undo work; assume-and-go for
-  small, easy-to-undo work). **Router:** confirmed by Charlie "for now".
+  small, easy-to-undo work). **Router:** confirmed by Charlie "for now", then confirmed as final later the same day (after the full-channel audit).
 - Everything else: as suggested (keep as is / not now).
 
 ## A. What Nate has that we don't

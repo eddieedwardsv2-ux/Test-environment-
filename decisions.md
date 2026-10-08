@@ -4,6 +4,10 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Router confirmed as final** by Charlie ("Router confirmed"),
+  after the full-channel Nate audit and the 8/8 router-to-brain retrieval
+  test. Standard AI-OS v1 is complete. The 8 audit decisions stay open in
+  `audits/2026-10-08-nate-channel.md` for Charlie to pick up when he likes.
 - 2026-10-08 — **Nate full-channel audit done** (`audits/2026-10-08-nate-channel.md`):
   359 videos sorted by title; 35 more read in full; 47 new rows in the
   standard (29 met, 1 fixed, 16 open, 1 declined: plan mode), 8 new "not adopted"
