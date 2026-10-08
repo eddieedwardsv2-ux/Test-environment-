@@ -85,7 +85,7 @@
 | 79 | [So You Learned Claude, Now What?](https://www.youtube.com/watch?v=-zL_trhnQaI) | 56,000 | 16:54 | – |
 | 80 | [Finally. Agent Loops Clearly Explained.](https://www.youtube.com/watch?v=EuzYhzB0vbI) | 160,000 | 14:34 | – |
 | 81 | [GLM 5.2 in Claude Code is Blowing My Mind](https://www.youtube.com/watch?v=2OD14-0cot4) | 176,000 | 15:43 | – |
-| 82 | [How to Use Claude Code Better Than 98% of People](https://www.youtube.com/watch?v=RzLV8sfFdMM) | ✅ [transcript](how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) | 1h08 | ✅ [transcript](how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) |
+| 82 | [How to Use Claude Code Better Than 98% of People](https://www.youtube.com/watch?v=RzLV8sfFdMM) | – | 1h08 | ✅ [transcript](how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) |
 | 83 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 280,000 | 31:00 | ✅ [transcript](every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md) |
 | 84 | [We Might Actually Need to Stop AI](https://www.youtube.com/watch?v=CvA8-aScqio) | 40,000 | 12:28 | – |
 | 85 | [Learn These 6 AI Skills Now (Before Everyone Else Does)](https://www.youtube.com/watch?v=3XIGcM7VICc) | 137,000 | 20:15 | ✅ [transcript](learn-these-6-ai-skills-now-before-everyone-else-does--3XIGcM7VICc-transcript.md) |

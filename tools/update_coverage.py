@@ -24,8 +24,10 @@ for folder in sorted(p for p in RESEARCH.iterdir() if p.is_dir() and not p.name.
             continue
         text = notes.read_text()
         for vid in ids:
-            text = re.sub(r"(\(https://www\.youtube\.com/watch\?v=" + re.escape(vid) + r"\)[^\n]*\| )– \|",
-                          r"\g<1>✅ [transcript](" + files[vid] + ") |", text)
+            # Tick only the LAST column ("| – |" at the end of the row): a "–"
+            # in an earlier column (e.g. unknown views) must not be touched.
+            text = re.sub(r"(\(https://www\.youtube\.com/watch\?v=" + re.escape(vid) + r"\)[^\n]*\| )– \|[ \t]*$",
+                          r"\g<1>✅ [transcript](" + files[vid] + ") |", text, flags=re.M)
             # Re-point ticks made before a file was renamed.
             text = re.sub(r"\]\((?:[\w-]*--)?" + re.escape(vid) + r"-transcript\.md\)", "](" + files[vid] + ")", text)
         text = re.sub(r"\*\*\d+ transcribed\*\*", f"**{len(ids)} transcribed**", text)
