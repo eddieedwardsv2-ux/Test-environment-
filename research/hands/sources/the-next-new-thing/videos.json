@@ -1,0 +1,2330 @@
+[
+ {
+  "id": "c5ZkPhzaLdA",
+  "title": "AI video maker, AI influencer, free claude code and more ai releases",
+  "duration": 1213,
+  "views": 2389,
+  "date": "2026-10-08",
+  "desc": "Link to Resource: https://thenextnewthing.ai/l/corey-ganim-shownotes-oct8\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Corey Ganim break down this week’s hottest AI releases, new agentic tools, and AI-powered businesses generating real revenue.\n\nThis week, Andrew and Corey cover Pexo for creating AI-generated launch videos, Spira AI for building AI influencers, ChatGPT Dots for managing Codex workflows, Hark for agentic web browsing and widgets, Claude for Startups, Instinct’s new group chat capabilities, VMPal for isolated virtual machines, and Boring Funnels for recreating complete marketing funnels. They also highlight AI businesses already making money, including Skillry, CreativeClaw, vibe-code.ing, and TinyPopups.\n\nLinks featured:\n\n- Pexo: https://pexo.ai/\n- Spira AI: https://spira.ai/\n- ChatGPT Dots X Post: https://x.com/OpenAIDevs/status/2105708732323909827\n- ChatGPT Dots: https://chatgpt.com/dots/01a11894-3ed2-72a3-8d38-aa079bac7032\n- Hark: https://hark.com/articles/introducing-hark-pro\n- Hark  X Post: https://x.com/AlexFinn/status/2107559256329482652\n- Claude for Startups: https://claude.com/programs/startups\n- Instinct  X Post: https://x.com/noahrshinn/status/2107161132192690558\n- VMPal: https://vmpal.com/\n- Boring Funnels: https://boringfunnels.com/\n- Boring Funnels  X Post: https://x.com/boringmarketer/status/2108196644369887592\n- Skillry: https://skillry.dev/skills/use-case/brand-identity\n- Skillry: https://trustmrr.com/startup/skillry\n- CreativeClaw: https://creativeclaw.co/#pricing\n- CreativeClaw: https://trustmrr.com/startup/creativeclaw\n- vibe-code.ing: https://vibe-code.ing/?category=intelligence\n- vibe-code.ing  X Post: https://x.com/tryjude/status/2105107695577833745\n- TinyPopups: https://tinypopups.com/\n- TinyPopups  X Post: https://x.com/im_usamakhalid/status/2096190757652803933\n\n00:00 - Pexo: Create AI-powered launch videos\n01:39 - Spira AI: Build AI influencers for brands\n03:18 - ChatGPT Dots: Manage Codex workflows with AI\n04:57 - Hark: Explore a new agentic browser\n06:18 - Claude for Startups: Get free AI credits\n07:12 - Instinct: Add agents to group chats\n09:09 - VMPal: Run isolated virtual machines\n11:24 - Boring Funnels: Rebuild complete marketing funnels\n13:39 - Skillry: Sell premium AI agent skills\n15:18 - CreativeClaw: Add creative tools to agents\n17:06 - vibe-code.ing: Build a simple AI directory\n18:36 - TinyPopups: Convert website visitors with widgets\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W41",
+  "links": [
+   {
+    "name": "Pexo",
+    "url": "https://pexo.ai/"
+   },
+   {
+    "name": "Spira AI",
+    "url": "https://spira.ai/"
+   },
+   {
+    "name": "ChatGPT Dots X Post",
+    "url": "https://x.com/OpenAIDevs/status/2105708732323909827"
+   },
+   {
+    "name": "ChatGPT Dots",
+    "url": "https://chatgpt.com/dots/01a11894-3ed2-72a3-8d38-aa079bac7032"
+   },
+   {
+    "name": "Hark",
+    "url": "https://hark.com/articles/introducing-hark-pro"
+   },
+   {
+    "name": "Hark  X Post",
+    "url": "https://x.com/AlexFinn/status/2107559256329482652"
+   },
+   {
+    "name": "Claude for Startups",
+    "url": "https://claude.com/programs/startups"
+   },
+   {
+    "name": "Instinct  X Post",
+    "url": "https://x.com/noahrshinn/status/2107161132192690558"
+   },
+   {
+    "name": "VMPal",
+    "url": "https://vmpal.com/"
+   },
+   {
+    "name": "Boring Funnels",
+    "url": "https://boringfunnels.com/"
+   },
+   {
+    "name": "Boring Funnels  X Post",
+    "url": "https://x.com/boringmarketer/status/2108196644369887592"
+   },
+   {
+    "name": "Skillry",
+    "url": "https://skillry.dev/skills/use-case/brand-identity"
+   },
+   {
+    "name": "Skillry",
+    "url": "https://trustmrr.com/startup/skillry"
+   },
+   {
+    "name": "CreativeClaw",
+    "url": "https://creativeclaw.co/#pricing"
+   },
+   {
+    "name": "CreativeClaw",
+    "url": "https://trustmrr.com/startup/creativeclaw"
+   },
+   {
+    "name": "vibe-code.ing",
+    "url": "https://vibe-code.ing/?category=intelligence"
+   },
+   {
+    "name": "vibe-code.ing  X Post",
+    "url": "https://x.com/tryjude/status/2105107695577833745"
+   },
+   {
+    "name": "TinyPopups",
+    "url": "https://tinypopups.com/"
+   },
+   {
+    "name": "TinyPopups  X Post",
+    "url": "https://x.com/im_usamakhalid/status/2096190757652803933"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Pexo: Create AI-powered launch videos"
+   },
+   {
+    "t": "01:39",
+    "title": "- Spira AI: Build AI influencers for brands"
+   },
+   {
+    "t": "03:18",
+    "title": "- ChatGPT Dots: Manage Codex workflows with AI"
+   },
+   {
+    "t": "04:57",
+    "title": "- Hark: Explore a new agentic browser"
+   },
+   {
+    "t": "06:18",
+    "title": "- Claude for Startups: Get free AI credits"
+   },
+   {
+    "t": "07:12",
+    "title": "- Instinct: Add agents to group chats"
+   },
+   {
+    "t": "09:09",
+    "title": "- VMPal: Run isolated virtual machines"
+   },
+   {
+    "t": "11:24",
+    "title": "- Boring Funnels: Rebuild complete marketing funnels"
+   },
+   {
+    "t": "13:39",
+    "title": "- Skillry: Sell premium AI agent skills"
+   },
+   {
+    "t": "15:18",
+    "title": "- CreativeClaw: Add creative tools to agents"
+   },
+   {
+    "t": "17:06",
+    "title": "- vibe-code.ing: Build a simple AI directory"
+   },
+   {
+    "t": "18:36",
+    "title": "- TinyPopups: Convert website visitors with widgets"
+   }
+  ],
+  "transcript": "research/the-next-new-thing/ai-video-maker-ai-influencer-free-claude-code-and-more-ai--c5ZkPhzaLdA-transcript.md"
+ },
+ {
+  "id": "uWnQLASl95U",
+  "title": "New: Agent can do your marketing & close sales",
+  "duration": 1179,
+  "views": 11438,
+  "date": "2026-10-07",
+  "desc": "Get 30% off for the first 3 months by using this link. https://www.omnisend.com/thenextnewthing/\nLink to Resources: https://thenextnewthing.ai/my-resources\nOmnisend is bringing AI agents directly into email, SMS, and marketing automation, helping businesses create campaigns, analyze performance, build customer segments, study competitors, and grow their subscriber lists.\n\nIn this episode, Andrew Warner and Bernard demonstrate how Omnisend works with AI agents like Claude through its MCP integration. They create an email campaign by analyzing past-performing campaigns, build customer segments using natural-language prompts, analyze competitor emails to create marketing style guides, generate new campaigns based on competitive insights, and create AI-powered signup forms and popups. They also explore Omnisend's analytics, upcoming AI-powered actions, migration assistant, and how merchants can use agents to interact with their marketing data while leaving reliable automations inside Omnisend.\n\nLinks featured:\n\n- Omnisend: https://www.omnisend.com/\n- Omnisend MCP page: https://www.omnisend.com/ai/mcp/\n\n00:00 - Omnisend: Let AI agents run your marketing\n00:36 - Email Campaigns: Launch new products faster\n01:48 - Omnisend MCP: Create campaigns from performance data\n02:24 - Claude: Build campaigns from winning templates\n03:18 - Email Design: Match your existing brand assets\n03:45 - AI Marketing: Learn from past customer behavior\n04:30 - Customer Segments: Target subscribers more effectively\n06:00 - Claude: Create segments with natural language\n07:03 - AI Strategy: Turn campaign data into actions\n07:48 - Omnisend AI: Build segments without Claude\n09:09 - Segments: Save targeted customer groups\n09:36 - Competitive Analysis: Study competitor emails\n10:12 - Claude: Analyze competitor marketing patterns\n10:57 - Style Guide: Turn insights into campaigns\n11:24 - Email Campaigns: Apply competitor insights\n12:18 - Claude: Create campaigns from research\n13:03 - Signup Forms: Grow your email list\n13:39 - AI Forms: Generate popups with prompts\n14:42 - Omnisend: Help merchants move faster\n15:36 - AI Agents: Recreate marketing designs\n16:03 - Analytics: Understand store performance\n16:48 - Omnisend AI: Turn insights into actions\n17:24 - AI Agents: Analyze landing pages daily\n17:42 - Migration Assistant: Move marketing data easily\n18:54 - Automations: Keep reliable workflows inside Omnisend\n19:12 - AI Agents: Create automations through natural language\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W41",
+  "links": [
+   {
+    "name": "Omnisend",
+    "url": "https://www.omnisend.com/"
+   },
+   {
+    "name": "Omnisend MCP page",
+    "url": "https://www.omnisend.com/ai/mcp/"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Omnisend: Let AI agents run your marketing"
+   },
+   {
+    "t": "00:36",
+    "title": "- Email Campaigns: Launch new products faster"
+   },
+   {
+    "t": "01:48",
+    "title": "- Omnisend MCP: Create campaigns from performance data"
+   },
+   {
+    "t": "02:24",
+    "title": "- Claude: Build campaigns from winning templates"
+   },
+   {
+    "t": "03:18",
+    "title": "- Email Design: Match your existing brand assets"
+   },
+   {
+    "t": "03:45",
+    "title": "- AI Marketing: Learn from past customer behavior"
+   },
+   {
+    "t": "04:30",
+    "title": "- Customer Segments: Target subscribers more effectively"
+   },
+   {
+    "t": "06:00",
+    "title": "- Claude: Create segments with natural language"
+   },
+   {
+    "t": "07:03",
+    "title": "- AI Strategy: Turn campaign data into actions"
+   },
+   {
+    "t": "07:48",
+    "title": "- Omnisend AI: Build segments without Claude"
+   },
+   {
+    "t": "09:09",
+    "title": "- Segments: Save targeted customer groups"
+   },
+   {
+    "t": "09:36",
+    "title": "- Competitive Analysis: Study competitor emails"
+   },
+   {
+    "t": "10:12",
+    "title": "- Claude: Analyze competitor marketing patterns"
+   },
+   {
+    "t": "10:57",
+    "title": "- Style Guide: Turn insights into campaigns"
+   },
+   {
+    "t": "11:24",
+    "title": "- Email Campaigns: Apply competitor insights"
+   },
+   {
+    "t": "12:18",
+    "title": "- Claude: Create campaigns from research"
+   },
+   {
+    "t": "13:03",
+    "title": "- Signup Forms: Grow your email list"
+   },
+   {
+    "t": "13:39",
+    "title": "- AI Forms: Generate popups with prompts"
+   },
+   {
+    "t": "14:42",
+    "title": "- Omnisend: Help merchants move faster"
+   },
+   {
+    "t": "15:36",
+    "title": "- AI Agents: Recreate marketing designs"
+   },
+   {
+    "t": "16:03",
+    "title": "- Analytics: Understand store performance"
+   },
+   {
+    "t": "16:48",
+    "title": "- Omnisend AI: Turn insights into actions"
+   },
+   {
+    "t": "17:24",
+    "title": "- AI Agents: Analyze landing pages daily"
+   },
+   {
+    "t": "17:42",
+    "title": "- Migration Assistant: Move marketing data easily"
+   },
+   {
+    "t": "18:54",
+    "title": "- Automations: Keep reliable workflows inside Omnisend"
+   },
+   {
+    "t": "19:12",
+    "title": "- AI Agents: Create automations through natural language"
+   }
+  ],
+  "transcript": "research/the-next-new-thing/new-agent-can-do-your-marketing-close-sales--uWnQLASl95U-transcript.md"
+ },
+ {
+  "id": "GZtLsvklYBI",
+  "title": "Replace: Suno AI, ChatGPT, Perplexity, Lovable, Manus, Opus Clip & more",
+  "duration": 1950,
+  "views": 82971,
+  "date": "2026-10-06",
+  "desc": "Resources: https://thenextnewthing.ai/l/github-repos-oct6\nPresented by Zapier: https://zapier.com/\nAndrew Warner breaks down 10 open-source tools that can replace expensive AI and creator subscriptions.\n\nAndrew Warner walks through 10 GitHub repos that can replace paid tools for voice generation, AI chat, coding, research, image creation, music, short-form video, vibe coding, general-purpose agents, and image upscaling. The bigger idea is not just saving money — these tools also give you more privacy, local control, and the ability to customize the software with your own agent.\n\nLinks featured:\n\nVoiceStudio — https://github.com/debpalash/VoiceStudio\nOdysseus — https://github.com/odysseus-dev/odysseus\nFreeLLMAPI — https://github.com/tashfeenahmed/freellmapi\nVane — https://github.com/ItzCrazyKns/Vane\nInvokeAI — https://github.com/invoke-ai/InvokeAI\nACE-Step — https://github.com/ace-step/ACE-Step-1.5\nOpenShorts — https://github.com/mutonby/openshorts\nDyad — https://github.com/dyad-sh/dyad\nOpenManus — https://github.com/FoundationAgents/OpenManus\nUpscayl — https://github.com/upscayl/upscayl\n\n00:00 - Open-Source Alternatives: Replace 10 paid subscriptions with free tools you can run and customize yourself.\n00:27 - VoiceStudio: Replace ElevenLabs with local voice cloning, dubbing, and text-to-speech.\n02:42 - Odysseus: Run a private ChatGPT-style assistant with local models, memory, research, and agents.\n05:51 - FreeLLMAPI: Route across free model providers to keep coding without burning through paid usage.\n09:27 - Vane: Replace Perplexity with a self-hosted research assistant that searches the web and cites sources.\n11:51 - InvokeAI: Create and edit images locally with an open-source alternative to Midjourney.\n13:57 - ACE-Step: Generate full songs with vocals on your own computer instead of relying on Suno.\n19:30 - OpenShorts: Turn long videos into captioned vertical clips with a self-hosted Opus Clip alternative.\n23:51 - Dyad: Build apps from plain English with an open-source alternative to Lovable.\n26:15 - OpenManus: Run agentic tasks like browsing, research, coding, and file creation with your own models.\n29:06 - Upscayl: Upscale photos locally in bulk without paying for Topaz Gigapixel.\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W41",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Open-Source Alternatives: Replace 10 paid subscriptions with free tools you can run and customize yourself."
+   },
+   {
+    "t": "00:27",
+    "title": "- VoiceStudio: Replace ElevenLabs with local voice cloning, dubbing, and text-to-speech."
+   },
+   {
+    "t": "02:42",
+    "title": "- Odysseus: Run a private ChatGPT-style assistant with local models, memory, research, and agents."
+   },
+   {
+    "t": "05:51",
+    "title": "- FreeLLMAPI: Route across free model providers to keep coding without burning through paid usage."
+   },
+   {
+    "t": "09:27",
+    "title": "- Vane: Replace Perplexity with a self-hosted research assistant that searches the web and cites sources."
+   },
+   {
+    "t": "11:51",
+    "title": "- InvokeAI: Create and edit images locally with an open-source alternative to Midjourney."
+   },
+   {
+    "t": "13:57",
+    "title": "- ACE-Step: Generate full songs with vocals on your own computer instead of relying on Suno."
+   },
+   {
+    "t": "19:30",
+    "title": "- OpenShorts: Turn long videos into captioned vertical clips with a self-hosted Opus Clip alternative."
+   },
+   {
+    "t": "23:51",
+    "title": "- Dyad: Build apps from plain English with an open-source alternative to Lovable."
+   },
+   {
+    "t": "26:15",
+    "title": "- OpenManus: Run agentic tasks like browsing, research, coding, and file creation with your own models."
+   },
+   {
+    "t": "29:06",
+    "title": "- Upscayl: Upscale photos locally in bulk without paying for Topaz Gigapixel."
+   }
+  ],
+  "transcript": "research/the-next-new-thing/replace-suno-ai-chatgpt-perplexity-lovable-manus-opus-clip--GZtLsvklYBI-transcript.md"
+ },
+ {
+  "id": "BcNAQynKUk4",
+  "title": "Top repo explained: builds product + lands customers",
+  "duration": 1184,
+  "views": 25567,
+  "date": "2026-10-05",
+  "desc": "Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nAndrew Warner sits down with Affaan Mustafa to explore ECC, an open-source toolkit that helps turn ideas into products using structured AI coding workflows, research, testing, marketing, and user feedback.\n\nAffaan demonstrates how ECC can take an idea, plan and build a prototype, run tests, create marketing videos, identify potential customers, and send highly targeted outreach. He explains how ECC combines deterministic engineering workflows with AI agents, including planning, test-driven development, specialized skills, orchestration, and deep research. The conversation also covers how ECC evolved beyond Claude Code, why Affaan built it around repeatable engineering practices, how users can chain skills together, and how the open-source community has contributed hundreds of specialized skills.\n\nLinks featured:\n\n- ECC: https://github.com/affaan-m/ECC\n- ECC Tools: https://ecc.tools/\n\n00:00 - ECC: Build products with AI workflows\n00:39 - Orchestrator: Build products using ECC skills\n01:29 - Roast Your Idea: Analyze startup pitches\n02:47 - 1Password: Securely manage environment credentials\n03:21 - Tmux: Run multiple agent panes\n03:57 - Orchestrator: Monitor parallel agents efficiently\n04:31 - Claude Code: Fix failing tests automatically\n06:29 - ECC: Reduce startup time significantly\n07:30 - ECC Skills: Apply engineering workflows consistently\n08:14 - ECC: Chain skills into complete workflows\n09:03 - Roast Your Idea: Get real user feedback\n10:05 - User Feedback: Iterate before scaling products\n12:14 - X Network: Find targeted potential customers\n13:29 - ECC: Personalize outreach using private context\n14:17 - Marketing Video: Create targeted product promotion\n15:28 - ECC: Expand beyond Claude Code\n16:01 - Planning: Research and refine ideas\n16:48 - Sub-Agents: Build detailed product specifications\n17:31 - X Outreach: Send targeted customer messages\n18:03 - ECC: Send personalized product outreach\n18:51 - Open Source: Share and improve workflows\n19:25 - ECC: Grow through community contributions\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W41",
+  "links": [
+   {
+    "name": "ECC",
+    "url": "https://github.com/affaan-m/ECC"
+   },
+   {
+    "name": "ECC Tools",
+    "url": "https://ecc.tools/"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- ECC: Build products with AI workflows"
+   },
+   {
+    "t": "00:39",
+    "title": "- Orchestrator: Build products using ECC skills"
+   },
+   {
+    "t": "01:29",
+    "title": "- Roast Your Idea: Analyze startup pitches"
+   },
+   {
+    "t": "02:47",
+    "title": "- 1Password: Securely manage environment credentials"
+   },
+   {
+    "t": "03:21",
+    "title": "- Tmux: Run multiple agent panes"
+   },
+   {
+    "t": "03:57",
+    "title": "- Orchestrator: Monitor parallel agents efficiently"
+   },
+   {
+    "t": "04:31",
+    "title": "- Claude Code: Fix failing tests automatically"
+   },
+   {
+    "t": "06:29",
+    "title": "- ECC: Reduce startup time significantly"
+   },
+   {
+    "t": "07:30",
+    "title": "- ECC Skills: Apply engineering workflows consistently"
+   },
+   {
+    "t": "08:14",
+    "title": "- ECC: Chain skills into complete workflows"
+   },
+   {
+    "t": "09:03",
+    "title": "- Roast Your Idea: Get real user feedback"
+   },
+   {
+    "t": "10:05",
+    "title": "- User Feedback: Iterate before scaling products"
+   },
+   {
+    "t": "12:14",
+    "title": "- X Network: Find targeted potential customers"
+   },
+   {
+    "t": "13:29",
+    "title": "- ECC: Personalize outreach using private context"
+   },
+   {
+    "t": "14:17",
+    "title": "- Marketing Video: Create targeted product promotion"
+   },
+   {
+    "t": "15:28",
+    "title": "- ECC: Expand beyond Claude Code"
+   },
+   {
+    "t": "16:01",
+    "title": "- Planning: Research and refine ideas"
+   },
+   {
+    "t": "16:48",
+    "title": "- Sub-Agents: Build detailed product specifications"
+   },
+   {
+    "t": "17:31",
+    "title": "- X Outreach: Send targeted customer messages"
+   },
+   {
+    "t": "18:03",
+    "title": "- ECC: Send personalized product outreach"
+   },
+   {
+    "t": "18:51",
+    "title": "- Open Source: Share and improve workflows"
+   },
+   {
+    "t": "19:25",
+    "title": "- ECC: Grow through community contributions"
+   }
+  ],
+  "transcript": "research/the-next-new-thing/top-repo-explained-builds-product-lands-customers--BcNAQynKUk4-transcript.md"
+ },
+ {
+  "id": "o7Rm5FvA7hU",
+  "title": "Grok Bot: Make money, Grow businesses, Save Cash",
+  "duration": 2424,
+  "views": 21119,
+  "date": "2026-10-03",
+  "desc": "Resources: https://thenextnewthing.ai/l/grokbot-reaction-oct3\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Andrew Kordampalos break down practical GrokBot workflows for work, automation, and everyday tasks.\n\nAndrew Warner and Andrew Kordampalos review some of the most useful GrokBot workflows they found from creators using it in the real world. They cover turning meeting notes into delegated tasks, controlling files on your computer, checking how AI recommends your business, auditing subscriptions, delegating work to sub-agents, triggering bots with webhooks, handling customer support with approval, selling on Facebook Marketplace, managing email, upgrading agents from posts on X, and automatically booking recurring appointments. Along the way, they point out where these setups can waste tokens, introduce unnecessary delays, or benefit from better triggers and human approval.\n\nLinks featured:\n\nBrock Mesarich — One meeting note, five agents -  http://youtube.com/watch?v=IsUpatC9obI&t=2384s\nNate Herk — Rename a file on the desktop - http://youtube.com/watch?v=NyfYxpXiw_0&t=444s\nAI LABS — Check if AI recommends you - http://youtube.com/watch?v=90pwPVrydHg&t=596s\nHow I AI — Audit subscription receipts - https://www.youtube.com/watch?v=QBmgF1kJSK4&t=1618s\nSharbel A. — Delegate to a sub-agent - https://www.youtube.com/watch?v=d9c5gloGPMU&t=800s\nNate Herk — Reply to a form submission - http://youtube.com/watch?v=NyfYxpXiw_0&t=753s\nHow I AI — Refund with permission - https://www.youtube.com/watch?v=QBmgF1kJSK4&t=1440s\nPeter Yang — Sell on Marketplace - http://youtube.com/watch?v=xZ5TEaleUdg&t=139s\nSharbel A. — Triage the inbox - https://www.youtube.com/watch?v=d9c5gloGPMU&t=700s\nLeveling Up with Eric — Upgrade a bot from X - http://youtube.com/watch?v=A967WCbL_sA&t=458s\nPaul J Lipsky — Book recurring appointments - http://youtube.com/watch?v=kXfHQbyMjkc&t=429s\n\n00:00 - GrokBot Use Cases: Andrew Warner and Andrew Kordampalos review what works, what doesn’t, and where GrokBot is most useful.\n00:18 - Meeting Notes to Five Agents: Turn one Granola meeting into tasks automatically delegated across specialized agents.\n02:42 - Better Meeting Automation: Replace three-hour polling routines with event-triggered workflows that act immediately.\n04:12 - Local Computer Access: Analyze, rename, move, and manage files directly on your desktop through GrokBot.\n06:00 - AI Recommendation Tracking: Check whether ChatGPT, Claude, and Perplexity recommend your business for relevant searches.\n08:51 - Zapier + GrokBot: Offload repetitive routines to Zapier and wake GrokBot only when an event actually happens.\n11:24 - Subscription Audit: Search receipts and financial data for subscriptions to cancel, pause, or renegotiate.\n14:06 - Sub-Agents: Delegate long projects to another agent so your main GrokBot stays available for conversation.\n17:06 - Webhooks: Wake GrokBot instantly when a form, email, Slack message, CRM record, or other event comes in.\n21:18 - Refunds With Approval: Let a support bot handle issues while requiring human approval before issuing refunds.\n25:30 - Facebook Marketplace: Research pricing, write listings, post products, follow up with buyers, and lower prices automatically.\n28:03 - Email & Calendar: Use GrokBot to summarize inbox action items, manage messages, and create or update calendar events.\n30:18 - Inbox Triage: Archive low-value emails, summarize important messages, and draft replies that wait for approval.\n33:27 - Upgrade a Bot From X: Give your agent useful posts and let it decide whether to improve an existing bot or build something new.\n35:33 - Recurring Appointments: Automatically find openings, confirm the time with you, and book recurring services online.\n38:42 - Teach a Task: Demonstrate a complicated browser workflow once and turn it into a reusable GrokBot skill.\n40:03 - GrokBot for Teams: Andrew previews using agents with other people through shared team workflows.\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W40",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- GrokBot Use Cases: Andrew Warner and Andrew Kordampalos review what works, what doesn’t, and where GrokBot is most useful."
+   },
+   {
+    "t": "00:18",
+    "title": "- Meeting Notes to Five Agents: Turn one Granola meeting into tasks automatically delegated across specialized agents."
+   },
+   {
+    "t": "02:42",
+    "title": "- Better Meeting Automation: Replace three-hour polling routines with event-triggered workflows that act immediately."
+   },
+   {
+    "t": "04:12",
+    "title": "- Local Computer Access: Analyze, rename, move, and manage files directly on your desktop through GrokBot."
+   },
+   {
+    "t": "06:00",
+    "title": "- AI Recommendation Tracking: Check whether ChatGPT, Claude, and Perplexity recommend your business for relevant searches."
+   },
+   {
+    "t": "08:51",
+    "title": "- Zapier + GrokBot: Offload repetitive routines to Zapier and wake GrokBot only when an event actually happens."
+   },
+   {
+    "t": "11:24",
+    "title": "- Subscription Audit: Search receipts and financial data for subscriptions to cancel, pause, or renegotiate."
+   },
+   {
+    "t": "14:06",
+    "title": "- Sub-Agents: Delegate long projects to another agent so your main GrokBot stays available for conversation."
+   },
+   {
+    "t": "17:06",
+    "title": "- Webhooks: Wake GrokBot instantly when a form, email, Slack message, CRM record, or other event comes in."
+   },
+   {
+    "t": "21:18",
+    "title": "- Refunds With Approval: Let a support bot handle issues while requiring human approval before issuing refunds."
+   },
+   {
+    "t": "25:30",
+    "title": "- Facebook Marketplace: Research pricing, write listings, post products, follow up with buyers, and lower prices automatically."
+   },
+   {
+    "t": "28:03",
+    "title": "- Email & Calendar: Use GrokBot to summarize inbox action items, manage messages, and create or update calendar events."
+   },
+   {
+    "t": "30:18",
+    "title": "- Inbox Triage: Archive low-value emails, summarize important messages, and draft replies that wait for approval."
+   },
+   {
+    "t": "33:27",
+    "title": "- Upgrade a Bot From X: Give your agent useful posts and let it decide whether to improve an existing bot or build something new."
+   },
+   {
+    "t": "35:33",
+    "title": "- Recurring Appointments: Automatically find openings, confirm the time with you, and book recurring services online."
+   },
+   {
+    "t": "38:42",
+    "title": "- Teach a Task: Demonstrate a complicated browser workflow once and turn it into a reusable GrokBot skill."
+   },
+   {
+    "t": "40:03",
+    "title": "- GrokBot for Teams: Andrew previews using agents with other people through shared team workflows."
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "CQhWqUOouYM",
+  "title": "Free on GitHub: manage agents, 11Labs alternative, incredible design & more",
+  "duration": 1461,
+  "views": 55822,
+  "date": "2026-10-02",
+  "desc": "Resources: https://thenextnewthing.ai/l/github-repos-oct2\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Adam highlight 10 trending GitHub repos covering AI agents, memory, voice cloning, AI engineering, financial workflows, web development, design, command-line tools, Claude skills, and coding workflows.\n\nThis week’s roundup features Paperclip, an agent organization platform that gives AI agents an org chart, task management, and permissions for collaborative agent work. Hindsight provides persistent AI memory, while VoiceStudio offers local voice cloning as an alternative to hosted voice services. The list also includes a free AI engineering course, Anthropic’s Financial Services skills, Next.js security updates, Impeccable for giving coding agents a stronger design sense, CLI-Anything for turning applications into command-line interfaces, Claude Skills with job-specific playbooks and personas, and Claude Code Templates for quickly adding skills, commands, and settings.\n\nRepos Featured:\n\n- paperclipai/paperclip — https://github.com/paperclipai/paperclip\n- vectorize-io/hindsight — https://github.com/vectorize-io/hindsight\n- debpalash/VoiceStudio — https://github.com/debpalash/VoiceStudio\n- rohitg00/ai-engineering-from-scratch — https://github.com/rohitg00/ai-engineering-from-scratch\n- anthropics/financial-services — https://github.com/anthropics/financial-services\n- vercel/next.js — https://github.com/vercel/next.js\n- pbakaus/impeccable — https://github.com/pbakaus/impeccable\n- HKUDS/CLI-Anything — https://github.com/HKUDS/CLI-Anything\n- alirezarezvani/claude-skills — https://github.com/alirezarezvani/claude-skills\n- davila7/claude-code-templates — https://github.com/davila7/claude-code-templates\n\n00:00 - Paperclip: Organize agents with tasks and permissions\n03:59 - Hindsight: Give agents persistent memory\n05:41 - VoiceStudio: Clone voices locally for free\n08:23 - AI Engineering From Scratch: Learn AI engineering step-by-step\n09:37 - Financial Services: Build financial workflows with Claude\n11:42 - Next.js: Understand recent security fixes\n14:28 - Impeccable: Give coding agents better design\n16:36 - CLI-Anything: Turn apps into agent-friendly CLIs\n18:51 - Claude Skills: Add job-specific AI playbooks\n20:05 - Claude Code Templates: Quickly add coding tools\n21:36 - AI Safety: Be careful with downloaded plugins\n22:00 - Codex: Automate food and ride bookings\n22:20 - Grok Bot: Bring AI agents into team Slack\n22:57 - AI Agents: Turn office photos into interactive maps\n\n👉 Send us your AI builds: hi@thenextnewthing.ai\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W40",
+  "links": [
+   {
+    "name": "paperclipai/paperclip",
+    "url": "https://github.com/paperclipai/paperclip"
+   },
+   {
+    "name": "vectorize-io/hindsight",
+    "url": "https://github.com/vectorize-io/hindsight"
+   },
+   {
+    "name": "debpalash/VoiceStudio",
+    "url": "https://github.com/debpalash/VoiceStudio"
+   },
+   {
+    "name": "rohitg00/ai-engineering-from-scratch",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+   },
+   {
+    "name": "anthropics/financial-services",
+    "url": "https://github.com/anthropics/financial-services"
+   },
+   {
+    "name": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js"
+   },
+   {
+    "name": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable"
+   },
+   {
+    "name": "HKUDS/CLI-Anything",
+    "url": "https://github.com/HKUDS/CLI-Anything"
+   },
+   {
+    "name": "alirezarezvani/claude-skills",
+    "url": "https://github.com/alirezarezvani/claude-skills"
+   },
+   {
+    "name": "davila7/claude-code-templates",
+    "url": "https://github.com/davila7/claude-code-templates"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Paperclip: Organize agents with tasks and permissions"
+   },
+   {
+    "t": "03:59",
+    "title": "- Hindsight: Give agents persistent memory"
+   },
+   {
+    "t": "05:41",
+    "title": "- VoiceStudio: Clone voices locally for free"
+   },
+   {
+    "t": "08:23",
+    "title": "- AI Engineering From Scratch: Learn AI engineering step-by-step"
+   },
+   {
+    "t": "09:37",
+    "title": "- Financial Services: Build financial workflows with Claude"
+   },
+   {
+    "t": "11:42",
+    "title": "- Next.js: Understand recent security fixes"
+   },
+   {
+    "t": "14:28",
+    "title": "- Impeccable: Give coding agents better design"
+   },
+   {
+    "t": "16:36",
+    "title": "- CLI-Anything: Turn apps into agent-friendly CLIs"
+   },
+   {
+    "t": "18:51",
+    "title": "- Claude Skills: Add job-specific AI playbooks"
+   },
+   {
+    "t": "20:05",
+    "title": "- Claude Code Templates: Quickly add coding tools"
+   },
+   {
+    "t": "21:36",
+    "title": "- AI Safety: Be careful with downloaded plugins"
+   },
+   {
+    "t": "22:00",
+    "title": "- Codex: Automate food and ride bookings"
+   },
+   {
+    "t": "22:20",
+    "title": "- Grok Bot: Bring AI agents into team Slack"
+   },
+   {
+    "t": "22:57",
+    "title": "- AI Agents: Turn office photos into interactive maps"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "bTbyRKO0hxs",
+  "title": "Agents and humans can work together!",
+  "duration": 1240,
+  "views": 8368,
+  "date": "2026-10-01",
+  "desc": "Get $100 in bonus credits on any paid plan if you use the link from my interview with Hyperagent - https://www.hyperagent.com/tnnt100\n\nResources: https://thenextnewthing.ai/my-resources\nAndrew Warner and Alex McDonnell explore how AI agents can finally work alongside human teams, with shared conversations, multiple managers, and access to different AI models.\n\nAndrew Warner sits down with Alex McDonnell to compare the latest ways teams can collaborate with AI agents across Grok Bot, Hyperagent, Slack, and OpenAI's Dot. They demonstrate how Grok Bot lets teams use shared agents through Slack, while Hyperagent's new Rooms are designed specifically for humans and multiple AI agents to work together in the same workspace. Alex shows how teams can create agents, assign different roles and skills, co-manage agents, control permissions, connect integrations, and coordinate multiple specialized agents in a single conversation. They also discuss Hyperagent's new ability to connect a ChatGPT subscription, giving users access to GPT models without requiring a separate Hyperagent payment method, as well as access to Claude, Gemini, and open-weight models when using Hyperagent's broader model routing.\n\nLinks featured:\n\nHyperagent: https://www.hyperagent.com/tnnt100\nGrok Bot: https://dog.com/\nChatGPT / OpenAI Dot: https://chatgpt.com/\nSlack: https://slack.com/ \nClaude: https://claude.ai/\n\n00:00 - Grok Bot: Create shared team AI agents\n03:09 - Slack: Bring agents into team conversations\n04:39 - Hyperagent Rooms: Collaborative human-agent workspace\n06:45 - Funnel: Specialized agents manage paid advertising\n07:39 - Agent Threads: Collaborate directly with specialized agents\n08:42 - Hyperagent: Watch multiple agents coordinate together\n09:27 - Agent Settings: Manage access and integrations\n10:30 - Workspaces: Create agents for shared teams\n11:33 - Permissions: Control workspace access and management\n12:54 - ChatGPT: Connect existing subscription to Hyperagent\n14:24 - OpenAI Dot: Connect personal AI with Slack\n16:21 - Specialized Dots: Separate personal and team agents\n17:24 - Hyperagent: Manage multiple connections and managers\n17:51 - Claude: Compare strengths across different models\n18:18 - Hyperagent: Connect tools, models, and managers\n19:21 - ChatGPT: Access GPT models through subscriptions\n19:39 - Hyperagent: Use other models with payments\n20:15 - Hyperagent: Explore additional access options\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W40",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Grok Bot: Create shared team AI agents"
+   },
+   {
+    "t": "03:09",
+    "title": "- Slack: Bring agents into team conversations"
+   },
+   {
+    "t": "04:39",
+    "title": "- Hyperagent Rooms: Collaborative human-agent workspace"
+   },
+   {
+    "t": "06:45",
+    "title": "- Funnel: Specialized agents manage paid advertising"
+   },
+   {
+    "t": "07:39",
+    "title": "- Agent Threads: Collaborate directly with specialized agents"
+   },
+   {
+    "t": "08:42",
+    "title": "- Hyperagent: Watch multiple agents coordinate together"
+   },
+   {
+    "t": "09:27",
+    "title": "- Agent Settings: Manage access and integrations"
+   },
+   {
+    "t": "10:30",
+    "title": "- Workspaces: Create agents for shared teams"
+   },
+   {
+    "t": "11:33",
+    "title": "- Permissions: Control workspace access and management"
+   },
+   {
+    "t": "12:54",
+    "title": "- ChatGPT: Connect existing subscription to Hyperagent"
+   },
+   {
+    "t": "14:24",
+    "title": "- OpenAI Dot: Connect personal AI with Slack"
+   },
+   {
+    "t": "16:21",
+    "title": "- Specialized Dots: Separate personal and team agents"
+   },
+   {
+    "t": "17:24",
+    "title": "- Hyperagent: Manage multiple connections and managers"
+   },
+   {
+    "t": "17:51",
+    "title": "- Claude: Compare strengths across different models"
+   },
+   {
+    "t": "18:18",
+    "title": "- Hyperagent: Connect tools, models, and managers"
+   },
+   {
+    "t": "19:21",
+    "title": "- ChatGPT: Access GPT models through subscriptions"
+   },
+   {
+    "t": "19:39",
+    "title": "- Hyperagent: Use other models with payments"
+   },
+   {
+    "t": "20:15",
+    "title": "- Hyperagent: Explore additional access options"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "kMPyFWFqX5I",
+  "title": "9 shocking repos that make money",
+  "duration": 1669,
+  "views": 55703,
+  "date": "2026-09-29",
+  "desc": "Link to Resources: https://thenextnewthing.ai/l/github-repos-sep29\nPresented by Zapier: https://zapier.com/\nAndrew Warner breaks down nine open-source business tools you can customize, self-host, and use to grow revenue.\n\nAndrew Warner walks through nine GitHub repos that can replace expensive business software while giving you more control over your data, workflows, and customization. He covers analytics, SEO, invoicing, scheduling, billing, forms, CRM, marketing automation, and customer support, while also showing how each tool can be used directly inside a business or turned into a consulting offer.\n\nLinks featured:\n\nPostHog — https://github.com/PostHog/posthog\nOpenSEO — https://github.com/every-app/open-seo\nInvoice Ninja — https://github.com/invoiceninja/invoiceninja\nCal.diy — https://github.com/calcom/cal.diy\nAutumn — https://github.com/useautumn/autumn\nTypebot — https://github.com/baptisteArno/typebot.io\nFrappe CRM — https://github.com/frappe/crm\nMautic — https://github.com/mautic/mautic\nChatwoot — https://github.com/chatwoot/chatwoot\n\n00:00 - Open-Source Business Tools: Nine GitHub repos you can customize, self-host, and use to make or save money.\n00:18 - PostHog: Track funnels, retention, session replays, and experiments with self-hosted product analytics.\n02:51 - OpenSEO: Run keyword research, rank tracking, and customizable SEO workflows without expensive software.\n06:09 - Invoice Ninja: Send quotes, invoices, subscriptions, and automated billing without paying per seat.\n09:45 - Zapier Next-Gen Zaps: Use code for repetitive automations and save AI for the tasks that actually need reasoning.\n11:15 - Cal.diy: Self-host your booking page, avoid double-bookings, and charge people before they schedule.\n14:15 - Autumn: Add subscriptions, usage-based billing, token pricing, free trials, and metered plans to your software.\n16:57 - Typebot: Build self-hosted conversational forms, branching flows, lead qualification, and WhatsApp experiences.\n20:15 - Frappe CRM: Manage leads and deals with a customizable open-source CRM you can extend however you want.\n22:21 - Mautic: Run email marketing, landing pages, lead scoring, SMS, and automated campaigns on your own stack.\n24:45 - Chatwoot: Give your team a self-hosted support inbox with AI, automation, and no per-seat pricing.\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W40",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Open-Source Business Tools: Nine GitHub repos you can customize, self-host, and use to make or save money."
+   },
+   {
+    "t": "00:18",
+    "title": "- PostHog: Track funnels, retention, session replays, and experiments with self-hosted product analytics."
+   },
+   {
+    "t": "02:51",
+    "title": "- OpenSEO: Run keyword research, rank tracking, and customizable SEO workflows without expensive software."
+   },
+   {
+    "t": "06:09",
+    "title": "- Invoice Ninja: Send quotes, invoices, subscriptions, and automated billing without paying per seat."
+   },
+   {
+    "t": "09:45",
+    "title": "- Zapier Next-Gen Zaps: Use code for repetitive automations and save AI for the tasks that actually need reasoning."
+   },
+   {
+    "t": "11:15",
+    "title": "- Cal.diy: Self-host your booking page, avoid double-bookings, and charge people before they schedule."
+   },
+   {
+    "t": "14:15",
+    "title": "- Autumn: Add subscriptions, usage-based billing, token pricing, free trials, and metered plans to your software."
+   },
+   {
+    "t": "16:57",
+    "title": "- Typebot: Build self-hosted conversational forms, branching flows, lead qualification, and WhatsApp experiences."
+   },
+   {
+    "t": "20:15",
+    "title": "- Frappe CRM: Manage leads and deals with a customizable open-source CRM you can extend however you want."
+   },
+   {
+    "t": "22:21",
+    "title": "- Mautic: Run email marketing, landing pages, lead scoring, SMS, and automated campaigns on your own stack."
+   },
+   {
+    "t": "24:45",
+    "title": "- Chatwoot: Give your team a self-hosted support inbox with AI, automation, and no per-seat pricing."
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "dfFKE7EetoA",
+  "title": "Make money, cut costs & run your life with Meta's Muse",
+  "duration": 1580,
+  "views": 41080,
+  "date": "2026-09-28",
+  "desc": "Link to Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nAndrew Warner breaks down the most useful Meta Muse demos to see where the AI agent saves time, where it falls short, and which features are worth trying.\n\nAndrew reviews real-world use cases from creators across YouTube: negotiating bills by phone, tracking prices, shopping with virtual cards, buying and selling on Facebook Marketplace, remembering school information, working with local files, and creating a daily family briefing. He also explores Muse’s goals feature, browser research, and messaging integrations, sharing what has worked in his own experience and where constant approval requests get in the way. The bigger question: how much work can you actually hand off to Muse?\n\nLinks featured:\n\nMeta — Meta Connect Keynote 2026  \nhttps://www.youtube.com/watch?v=SdKFDIAGF24\n\nPeter Yang — Meta's Muse AI Agent Saved Me $800+ a Year on My Bills (10 Real Use Cases)  \nhttps://www.youtube.com/watch?v=eU1ICyI9bCs\n\nPaul J Lipsky — Meta Muse Is Incredible - 5 Features You Need To Try  \nhttps://www.youtube.com/watch?v=lC_-9TD3TfA\n\nThe Tech Girl — Meta Muse Tips & Tricks: 6 Features You Should Be Using  \nhttps://www.youtube.com/watch?v=jbGYcOWvCZI\n\nThe Tech Girl — Meta Muse: Will It Replace ChatGPT  \nhttps://www.youtube.com/watch?v=7BeAeTo2evo\n\nAlex Finn — Meta Muse is an INCREDIBLE AI agent  \nhttps://www.youtube.com/watch?v=Wod_A8xIy4E\n\nHow I AI — Muse gets AI agent UX right  \nhttps://www.youtube.com/watch?v=2UwemqPkJSQ\n\nEdwin Chen — Master 80% of Meta's NEW Muse AI for Mac in 10 Minutes  \nhttps://www.youtube.com/watch?v=XiIJij3pU9M\n\n0:00 - Meet Meta Muse  \n0:29 - Negotiating Bills  \n3:13 - AI Phone Calls  \n5:26 - Price Tracking  \n7:10 - Shopping and Payments  \n9:01 - Zapier MCP  \n9:53 - Facebook Marketplace  \n11:56 - School PDFs  \n13:20 - Goals  \n14:47 - Local Files  \n17:41 - Family Morning Brief  \n19:59 - Browser Research  \n22:24 - Messaging Integrations  \n24:51 - Andrew’s Verdict\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W40",
+  "links": [],
+  "chapters": [
+   {
+    "t": "0:00",
+    "title": "- Meet Meta Muse"
+   },
+   {
+    "t": "0:29",
+    "title": "- Negotiating Bills"
+   },
+   {
+    "t": "3:13",
+    "title": "- AI Phone Calls"
+   },
+   {
+    "t": "5:26",
+    "title": "- Price Tracking"
+   },
+   {
+    "t": "7:10",
+    "title": "- Shopping and Payments"
+   },
+   {
+    "t": "9:01",
+    "title": "- Zapier MCP"
+   },
+   {
+    "t": "9:53",
+    "title": "- Facebook Marketplace"
+   },
+   {
+    "t": "11:56",
+    "title": "- School PDFs"
+   },
+   {
+    "t": "13:20",
+    "title": "- Goals"
+   },
+   {
+    "t": "14:47",
+    "title": "- Local Files"
+   },
+   {
+    "t": "17:41",
+    "title": "- Family Morning Brief"
+   },
+   {
+    "t": "19:59",
+    "title": "- Browser Research"
+   },
+   {
+    "t": "22:24",
+    "title": "- Messaging Integrations"
+   },
+   {
+    "t": "24:51",
+    "title": "- Andrew’s Verdict"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "pxaMzr7al3I",
+  "title": "9 things you’ll actually do with Jev",
+  "duration": 1478,
+  "views": 36693,
+  "date": "2026-09-26",
+  "desc": "Resources: https://thenextnewthing.ai/l/jev-reaction-sept26\nPresented by Zapier: https://zapier.com/apps/typesafe-jev/integrations\nZapier: https://zapier.com/\nAndrew Warner breaks down the most useful real-world ways people are using Jev for fast, cheap decision-making.\n\nAndrew Warner reviews the best Jev demos and use cases he found across YouTube, focusing on where the model is actually useful: classifying email, routing tasks between models, triaging support tickets, qualifying leads, searching agent memory, scoring video clips, controlling smart-home actions, and filtering content ideas. The bigger idea is that Jev is not a general-purpose writing model — it works best as a fast decision engine that returns probabilities and makes constrained choices cheaply enough to sit inside larger agent workflows.\n\nLinks featured:\n\nNate Herk — https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=515s\nLukas Margerie —  https://www.youtube.com/watch?v=ZZcI9Bfe8AM&t=156s\nNate Herk —  https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=328s\nMayank Aggarwal —  https://www.youtube.com/watch?v=d9lCIVc5AyU&t=634s\nDavid Ondrej —  https://www.youtube.com/watch?v=f6We53TnkbU&t=772s\nJay E —  https://www.youtube.com/watch?v=tTnUcSj-QPA&t=305s\nMoritz —  https://www.youtube.com/watch?v=Nq_lu5QT-fI&t=693s\nGreg Isenberg —  https://www.youtube.com/watch?v=4mTLpuQpB80&t=1443s\nMatthew Berman —  https://www.youtube.com/watch?v=2z-7pIj57f8&t=391s\nNate Herk —  https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=597s\nMoritz —  https://www.youtube.com/watch?v=Nq_lu5QT-fI&t=359s\nSyntax —  https://www.youtube.com/watch?v=QbYBRjOaGOo&t=940s\nEric Siu —  https://www.youtube.com/watch?v=fdsJT0BCkvA&t=183s\nEric Siu —  https://www.youtube.com/watch?v=B9QCiV9MN6A&t=196s\nGreg Isenberg —  https://www.youtube.com/watch?v=4mTLpuQpB80&t=1371s\n\n00:00 - Jev: See why the model is built for fast, cheap decisions instead of writing.\n00:36 - Email Categorization: Sort 500 emails and identify which ones need a response.\n01:30 - Setup: Connect Jev to Codex, Claude Code, GrokBot, or another agent using TypeSafe AI.\n02:42 - Voice-Controlled Browser: Build a browser that reacts to spoken commands in real time.\n04:39 - How Jev Works: Turn decisions into multiple-choice and yes-or-no questions with probability scores.\n07:12 - Zapier + Jev: Use Jev inside Zapier workflows for inexpensive, high-speed decisions.\n08:15 - Model Routing: Automatically decide which tasks need an expensive model and which can use a cheaper one.\n09:27 - Customer Support Triage: Route support tickets to automation or a human based on urgency.\n11:15 - Lead Qualification: Score form submissions instantly and decide who should get a Calendly link.\n14:06 - Agent Memory: Search large folders of Markdown memory with fewer tokens and lower cost.\n18:09 - Video Clip Scoring: Analyze a transcript and rank the strongest moments for short-form clips.\n19:30 - Smart Home Control: Use Jev for near-instant decisions behind Home Assistant actions.\n21:00 - GrokBot + Jev: Filter content ideas inside a long-running agent without burning through expensive model usage.\n23:33 - Where Jev Fails: See why it should not be trusted blindly for trading or other high-stakes predictions.\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W39",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Jev: See why the model is built for fast, cheap decisions instead of writing."
+   },
+   {
+    "t": "00:36",
+    "title": "- Email Categorization: Sort 500 emails and identify which ones need a response."
+   },
+   {
+    "t": "01:30",
+    "title": "- Setup: Connect Jev to Codex, Claude Code, GrokBot, or another agent using TypeSafe AI."
+   },
+   {
+    "t": "02:42",
+    "title": "- Voice-Controlled Browser: Build a browser that reacts to spoken commands in real time."
+   },
+   {
+    "t": "04:39",
+    "title": "- How Jev Works: Turn decisions into multiple-choice and yes-or-no questions with probability scores."
+   },
+   {
+    "t": "07:12",
+    "title": "- Zapier + Jev: Use Jev inside Zapier workflows for inexpensive, high-speed decisions."
+   },
+   {
+    "t": "08:15",
+    "title": "- Model Routing: Automatically decide which tasks need an expensive model and which can use a cheaper one."
+   },
+   {
+    "t": "09:27",
+    "title": "- Customer Support Triage: Route support tickets to automation or a human based on urgency."
+   },
+   {
+    "t": "11:15",
+    "title": "- Lead Qualification: Score form submissions instantly and decide who should get a Calendly link."
+   },
+   {
+    "t": "14:06",
+    "title": "- Agent Memory: Search large folders of Markdown memory with fewer tokens and lower cost."
+   },
+   {
+    "t": "18:09",
+    "title": "- Video Clip Scoring: Analyze a transcript and rank the strongest moments for short-form clips."
+   },
+   {
+    "t": "19:30",
+    "title": "- Smart Home Control: Use Jev for near-instant decisions behind Home Assistant actions."
+   },
+   {
+    "t": "21:00",
+    "title": "- GrokBot + Jev: Filter content ideas inside a long-running agent without burning through expensive model usage."
+   },
+   {
+    "t": "23:33",
+    "title": "- Where Jev Fails: See why it should not be trusted blindly for trading or other high-stakes predictions."
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "hlOk-EFUITQ",
+  "title": "Top Repos + Fame, Traffic & Agents",
+  "duration": 2097,
+  "views": 72577,
+  "date": "2026-09-25",
+  "desc": "Resources: https://thenextnewthing.ai/l/github-repos-sep25\nPresented by Zapier: https://zapier.com/\nMonid AI — https://monid.ai/?utm_source=creator&utm_content=newthinkg\nAndrew Warner and Adam break down the top GitHub repos of the week, including AI-powered PR teams, open-source alternatives to expensive SaaS, multi-agent orchestration, financial AI skills, code review, Claude Code workflows, agent skill packs, and tools for running multiple coding agents side by side.\n\nThey start with three repos getting extra attention this week: NewsJack, OpenSEO, and Paperclip. NewsJack turns an LLM into a PR manager that can research stories and reporters, while Jev makes the decision-making process dramatically faster and cheaper. OpenSEO is an open-source Semrush alternative that gives users access to SEO data without the traditional SaaS pricing model. Paperclip takes a different approach by organizing multiple AI agents into a company-like structure, giving teams a central place to manage agents and assign work.\n\nThe top 10 then cover Anthropic’s Financial Services skills, Alibaba’s Open Code Review, Claude Code’s support for `agents.md`, ECC’s extensive engineering skill pack, Tencent’s WeKnora knowledge system, Addy Osmani’s Agent Skills, Anthropic’s Knowledge Work Plugins, Orca for running multiple coding agents, Tencent Cloud’s Octop, and Claude Code Templates. Andrew and Adam also discuss Zapier MCP and the Zapier SDK, how shared agent instructions can simplify working across different coding agents, and why specialized skills can give agents years of accumulated expertise.\n\nThey wrap up with a look at how AI is being used in their own workflows, including Andrew’s system for identifying moments of passion from calls and Slack, and Adam’s project to build a custom call recorder combining the best parts of Granola and Fireflies.\n\nRepos Featured:\n\n- anthropics/financial-services — https://github.com/anthropics/financial-services\n- alibaba/open-code-review — https://github.com/alibaba/open-code-review\n- anthropics/claude-code — https://github.com/anthropics/claude-code\n- affaan-m/ECC — https://github.com/affaan-m/ECC\n- Tencent/WeKnora — https://github.com/Tencent/WeKnora\n- addyosmani/agent-skills — https://github.com/addyosmani/agent-skills\n- anthropics/knowledge-work-plugins — https://github.com/anthropics/knowledge-work-plugins\n- stablyai/orca — https://github.com/stablyai/orca\n- TencentCloud/Octop — https://github.com/TencentCloud/Octop\n- davila7/claude-code-templates — https://github.com/davila7/claude-code-templates\n\nAdditional Repos:\n\n- elvisun/newsjack — https://github.com/elvisun/newsjack\n- every-app/open-seo — https://github.com/every-app/open-seo\n- paperclipai/paperclip — https://github.com/paperclipai/paperclip\n\n00:00 Top 10 GitHub Repos This Week\n00:15 NewsJack + Jev\n01:33 Jev for Fast, Cheap Decisions\n02:50 OpenSEO: Open-Source Semrush Alternative\n04:04 Why OpenSEO Is Getting Attention\n05:32 Paperclip: Manage Multiple AI Agents\n07:26 Anthropic Financial Services\n09:52 Alibaba Open Code Review\n12:14 Claude Code + agents.md\n14:10 Agent Skills & MCPs\n15:06 Zapier MCP + Zapier SDK\n16:26 ECC Engineering Skills\n18:37 WeKnora: AI Knowledge Management\n20:10 Agent Skills vs. ECC\n22:32 Monid AI\n23:37 Anthropic Knowledge Work Plugins\n24:52 Using Skills Across the Team\n25:03 Orca: Run Multiple Coding Agents\n27:02 The New Era of AI Coding Interfaces\n28:08 Tencent Cloud Octop\n29:45 Claude Code Templates\n32:20 Andrew’s AI-Powered Content Workflow\n33:20 Building a Custom Call Recorder\n34:49 More GitHub Repos\n\n👉 Send us your AI builds: hi@thenextnewthing.ai\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W39",
+  "links": [
+   {
+    "name": "anthropics/financial-services",
+    "url": "https://github.com/anthropics/financial-services"
+   },
+   {
+    "name": "alibaba/open-code-review",
+    "url": "https://github.com/alibaba/open-code-review"
+   },
+   {
+    "name": "anthropics/claude-code",
+    "url": "https://github.com/anthropics/claude-code"
+   },
+   {
+    "name": "affaan-m/ECC",
+    "url": "https://github.com/affaan-m/ECC"
+   },
+   {
+    "name": "Tencent/WeKnora",
+    "url": "https://github.com/Tencent/WeKnora"
+   },
+   {
+    "name": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills"
+   },
+   {
+    "name": "anthropics/knowledge-work-plugins",
+    "url": "https://github.com/anthropics/knowledge-work-plugins"
+   },
+   {
+    "name": "stablyai/orca",
+    "url": "https://github.com/stablyai/orca"
+   },
+   {
+    "name": "TencentCloud/Octop",
+    "url": "https://github.com/TencentCloud/Octop"
+   },
+   {
+    "name": "davila7/claude-code-templates",
+    "url": "https://github.com/davila7/claude-code-templates"
+   },
+   {
+    "name": "elvisun/newsjack",
+    "url": "https://github.com/elvisun/newsjack"
+   },
+   {
+    "name": "every-app/open-seo",
+    "url": "https://github.com/every-app/open-seo"
+   },
+   {
+    "name": "paperclipai/paperclip",
+    "url": "https://github.com/paperclipai/paperclip"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "Top 10 GitHub Repos This Week"
+   },
+   {
+    "t": "00:15",
+    "title": "NewsJack + Jev"
+   },
+   {
+    "t": "01:33",
+    "title": "Jev for Fast, Cheap Decisions"
+   },
+   {
+    "t": "02:50",
+    "title": "OpenSEO: Open-Source Semrush Alternative"
+   },
+   {
+    "t": "04:04",
+    "title": "Why OpenSEO Is Getting Attention"
+   },
+   {
+    "t": "05:32",
+    "title": "Paperclip: Manage Multiple AI Agents"
+   },
+   {
+    "t": "07:26",
+    "title": "Anthropic Financial Services"
+   },
+   {
+    "t": "09:52",
+    "title": "Alibaba Open Code Review"
+   },
+   {
+    "t": "12:14",
+    "title": "Claude Code + agents.md"
+   },
+   {
+    "t": "14:10",
+    "title": "Agent Skills & MCPs"
+   },
+   {
+    "t": "15:06",
+    "title": "Zapier MCP + Zapier SDK"
+   },
+   {
+    "t": "16:26",
+    "title": "ECC Engineering Skills"
+   },
+   {
+    "t": "18:37",
+    "title": "WeKnora: AI Knowledge Management"
+   },
+   {
+    "t": "20:10",
+    "title": "Agent Skills vs. ECC"
+   },
+   {
+    "t": "22:32",
+    "title": "Monid AI"
+   },
+   {
+    "t": "23:37",
+    "title": "Anthropic Knowledge Work Plugins"
+   },
+   {
+    "t": "24:52",
+    "title": "Using Skills Across the Team"
+   },
+   {
+    "t": "25:03",
+    "title": "Orca: Run Multiple Coding Agents"
+   },
+   {
+    "t": "27:02",
+    "title": "The New Era of AI Coding Interfaces"
+   },
+   {
+    "t": "28:08",
+    "title": "Tencent Cloud Octop"
+   },
+   {
+    "t": "29:45",
+    "title": "Claude Code Templates"
+   },
+   {
+    "t": "32:20",
+    "title": "Andrew’s AI-Powered Content Workflow"
+   },
+   {
+    "t": "33:20",
+    "title": "Building a Custom Call Recorder"
+   },
+   {
+    "t": "34:49",
+    "title": "More GitHub Repos"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "ZodAaTH-6_E",
+  "title": "Meta’s Muse makes you money. And more",
+  "duration": 901,
+  "views": 20792,
+  "date": "2026-09-24",
+  "desc": "Link to Resources: https://thenextnewthing.ai/l/corey-ganim-shownotes-sep24\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Corey Ganim break down the latest AI releases, from Muse finding people ways to save money and Jev controlling a computer with voice, to AI-powered PR, polished product demos, ChatGPT Voice, vibe-coded games, webcam AI, digital commerce, and Claude Opus 5.5.\n\nMuse, the free AI agent from Meta, and the growing number of real-world examples of people using it to find cheaper insurance, cancel forgotten subscriptions, find money owed to them, and more. They also look at Muse’s new voice capability and what could make it a gateway for everyday people to start using AI agents.\n\nNext, explore Jev, a Mac app that lets you talk to your computer and have it take actions for you, and Cluso, which turns rough screen recordings into polished product demos, training videos, and SOPs. They also cover NewsJack, an open-source collection of agent skills that can turn an AI agent into a PR team by researching journalists, finding relevant stories, and generating pitches.\n\nThe episode also covers the latest ChatGPT Voice update, including access to email, calendars, Slack, and other connectors; a multiplayer tennis game built in just a few days with AI; Sider’s AI sidebar experience; Camera Bench, which lets AI interpret webcam input in real time; and a new digital mall built with Claude Opus 5.5. Finally, Andrew and Corey discuss why Opus 5.5 is standing out for writing, visual design, animation, and creative work.\n\nLinks featured:\n\nChatGPT Voice\n\n- OpenAI announcement — https://x.com/OpenAI/status/2102808325742322002\n- ChatGPT Voice Help — https://help.openai.com/en/articles/20001274-chatgpt-voice\n\nMuse\n\n- Meta Muse — https://ai.meta.com/muse/\n- Singularity Research — https://x.com/SingularityRes/status/2099966114105278603\n- Muse — https://muse.ai/\n\nJev / TypeSafe AI\n\n- TypeSafe AI — https://typesafe.ai/\n- Jev demo — https://x.com/instantricecook/status/2100814590300889426\n\nClaude Opus 5.5\n\n- Claude Opus 5.5 — https://www.anthropic.com/claude-opus-5-5\n- Corey Ganim — https://x.com/coreyganim/status/2102793624601932114\n- Other Reality — https://x.com/other__reality/status/2102542305433711037\n- PDoomVideo — https://github.com/JohnHeibel/PDoomVideo\n\nSysto Commerce\n\n- Systo Commerce — https://systo-commerce.vercel.app/\n- Systo AI — https://x.com/systoai/status/2103116401766752334\n\nGlance Speedlab\n\n- GitHub — https://github.com/yoheinakajima/glance-speedlab\n- Yohai Benkler — https://x.com/yoheinakajima/status/2102869481475477875\n\nTop Tennis\n\n- Top Tennis — https://toptennisgame.com/\n- Demo — https://x.com/teovito/status/2102686586723033440\n\nSider Omni\n\n- Sider Omni — https://sider.ai/lab/sider-omni\n\nClueso\n\n- Clueso — https://www.clueso.io/\n\nNewsjack\n\n- GitHub — https://github.com/elvisun/newsjack\n- Elvis Sun — https://x.com/elvissun/status/2100951347080421409\n\n00:00 This Week’s AI Releases\n00:19 Muse Is Saving People Money\n01:09 AI Agents for Everyday People\n01:56 Muse Gets Voice\n02:11 Jev: Talk to Your Computer\n03:09 CluesoTurns Rough Recordings Into Polished Demos\n05:05 NewsJack: AI as Your PR Team\n06:38 ChatGPT Voice Gets Connectors\n08:34 Building a Game With AI\n09:28 Sider Omni AI Sidebar\n10:53 Camera Bench: AI Watching Your Webcam\n12:35 A Walkable Digital Store\n13:33 Claude Opus 5.5\n14:17 Opus 5.5 for Animation & Creative Work\n14:55 More AI Releases\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W39",
+  "links": [
+   {
+    "name": "OpenAI announcement",
+    "url": "https://x.com/OpenAI/status/2102808325742322002"
+   },
+   {
+    "name": "ChatGPT Voice Help",
+    "url": "https://help.openai.com/en/articles/20001274-chatgpt-voice"
+   },
+   {
+    "name": "Meta Muse",
+    "url": "https://ai.meta.com/muse/"
+   },
+   {
+    "name": "Singularity Research",
+    "url": "https://x.com/SingularityRes/status/2099966114105278603"
+   },
+   {
+    "name": "Muse",
+    "url": "https://muse.ai/"
+   },
+   {
+    "name": "TypeSafe AI",
+    "url": "https://typesafe.ai/"
+   },
+   {
+    "name": "Jev demo",
+    "url": "https://x.com/instantricecook/status/2100814590300889426"
+   },
+   {
+    "name": "Claude Opus 5.5",
+    "url": "https://www.anthropic.com/claude-opus-5-5"
+   },
+   {
+    "name": "Corey Ganim",
+    "url": "https://x.com/coreyganim/status/2102793624601932114"
+   },
+   {
+    "name": "Other Reality",
+    "url": "https://x.com/other__reality/status/2102542305433711037"
+   },
+   {
+    "name": "PDoomVideo",
+    "url": "https://github.com/JohnHeibel/PDoomVideo"
+   },
+   {
+    "name": "Systo Commerce",
+    "url": "https://systo-commerce.vercel.app/"
+   },
+   {
+    "name": "Systo AI",
+    "url": "https://x.com/systoai/status/2103116401766752334"
+   },
+   {
+    "name": "GitHub",
+    "url": "https://github.com/yoheinakajima/glance-speedlab"
+   },
+   {
+    "name": "Yohai Benkler",
+    "url": "https://x.com/yoheinakajima/status/2102869481475477875"
+   },
+   {
+    "name": "Top Tennis",
+    "url": "https://toptennisgame.com/"
+   },
+   {
+    "name": "Demo",
+    "url": "https://x.com/teovito/status/2102686586723033440"
+   },
+   {
+    "name": "Sider Omni",
+    "url": "https://sider.ai/lab/sider-omni"
+   },
+   {
+    "name": "Clueso",
+    "url": "https://www.clueso.io/"
+   },
+   {
+    "name": "GitHub",
+    "url": "https://github.com/elvisun/newsjack"
+   },
+   {
+    "name": "Elvis Sun",
+    "url": "https://x.com/elvissun/status/2100951347080421409"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "This Week’s AI Releases"
+   },
+   {
+    "t": "00:19",
+    "title": "Muse Is Saving People Money"
+   },
+   {
+    "t": "01:09",
+    "title": "AI Agents for Everyday People"
+   },
+   {
+    "t": "01:56",
+    "title": "Muse Gets Voice"
+   },
+   {
+    "t": "02:11",
+    "title": "Jev: Talk to Your Computer"
+   },
+   {
+    "t": "03:09",
+    "title": "CluesoTurns Rough Recordings Into Polished Demos"
+   },
+   {
+    "t": "05:05",
+    "title": "NewsJack: AI as Your PR Team"
+   },
+   {
+    "t": "06:38",
+    "title": "ChatGPT Voice Gets Connectors"
+   },
+   {
+    "t": "08:34",
+    "title": "Building a Game With AI"
+   },
+   {
+    "t": "09:28",
+    "title": "Sider Omni AI Sidebar"
+   },
+   {
+    "t": "10:53",
+    "title": "Camera Bench: AI Watching Your Webcam"
+   },
+   {
+    "t": "12:35",
+    "title": "A Walkable Digital Store"
+   },
+   {
+    "t": "13:33",
+    "title": "Claude Opus 5.5"
+   },
+   {
+    "t": "14:17",
+    "title": "Opus 5.5 for Animation & Creative Work"
+   },
+   {
+    "t": "14:55",
+    "title": "More AI Releases"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "U6ptUFMyaJg",
+  "title": "New release: fewer tokens & reliable AI",
+  "duration": 1023,
+  "views": 7287,
+  "date": "2026-09-23",
+  "desc": "Link to Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nZapier X Post: https://x.com/zapier/status/2102829768332767453?s=20\nAndrew Warner sits down with Zapier co-founder and CEO Wade Foster to show how Next Gen Zaps can make AI agents more reliable, reduce unnecessary token costs, and prevent agents from making expensive or unexpected mistakes.\n\nAndrew shares two real-world examples of the problem: spending $264 in just two days because an AI agent repeatedly checked websites, and an agent that replaced his own video thumbnails in sponsor emails with thumbnails from other creators because it decided they would perform better. Wade explains how Next Gen Zaps solve this by combining deterministic automation with agentic decision-making, so agents can handle the parts that require judgment while predictable actions are “hardened” to run the same way every time.\n\nWade demonstrates the approach using a Granola-to-Google Drive workflow. The system checks for new meeting transcripts, uses AI to determine whether a transcript contains sensitive topics that should not be automatically shared, and then deterministically saves approved transcripts to Google Drive. He also walks through a fantasy football workflow that researches rosters, waiver wires, injuries, and trade opportunities, uses AI for the managerial decisions, and then sends Wade a consistent weekly report.\n\nThe episode breaks down exactly where AI should be probabilistic and creative—and where it should be deterministic, predictable, and locked down. Wade also explains how agentically managed workflows can recover from errors automatically, giving you the flexibility of AI without making every step dependent on an agent.\n\nLinks featured:\n\n- Zapier — https://zapier.com/\n- Zapier Next Gen Zaps / Early Access — http://zapier.com/workflow/early-access\n- Zapier X Post: https://x.com/zapier/status/2102829768332767453?s=20\n\nTimestamps:\n\n00:00 Why AI Agents Make Expensive Mistakes\n01:30 Introducing Zapier Next Gen Zaps\n01:39 Granola + Google Drive Demo\n02:24 Adding AI to a Deterministic Workflow\n03:09 Deciding What Should Stay Private\n03:54 How Next Gen Zaps Work Under the Hood\n04:57 Why Deterministic Workflows Matter\n05:42 Agentically Managed Workflows\n06:45 Why Hardened Automation Is Useful\n08:15 Fantasy Football AI Workflow\n09:27 Using AI to Analyze a Fantasy League\n10:48 Turning the Analysis Into a Weekly Workflow\n12:00 The Weekly Waiver & Trade Report\n13:30 What Is Agentic vs. Deterministic?\n14:15 Where AI Makes the Decisions\n15:18 What Goes Wrong Without Deterministic Rules?\n16:30 Why Hardened Workflows Matter\n16:48 How to Get Early Access\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W39",
+  "links": [
+   {
+    "name": "Zapier X Post",
+    "url": "https://x.com/zapier/status/2102829768332767453?s=20"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "Why AI Agents Make Expensive Mistakes"
+   },
+   {
+    "t": "01:30",
+    "title": "Introducing Zapier Next Gen Zaps"
+   },
+   {
+    "t": "01:39",
+    "title": "Granola + Google Drive Demo"
+   },
+   {
+    "t": "02:24",
+    "title": "Adding AI to a Deterministic Workflow"
+   },
+   {
+    "t": "03:09",
+    "title": "Deciding What Should Stay Private"
+   },
+   {
+    "t": "03:54",
+    "title": "How Next Gen Zaps Work Under the Hood"
+   },
+   {
+    "t": "04:57",
+    "title": "Why Deterministic Workflows Matter"
+   },
+   {
+    "t": "05:42",
+    "title": "Agentically Managed Workflows"
+   },
+   {
+    "t": "06:45",
+    "title": "Why Hardened Automation Is Useful"
+   },
+   {
+    "t": "08:15",
+    "title": "Fantasy Football AI Workflow"
+   },
+   {
+    "t": "09:27",
+    "title": "Using AI to Analyze a Fantasy League"
+   },
+   {
+    "t": "10:48",
+    "title": "Turning the Analysis Into a Weekly Workflow"
+   },
+   {
+    "t": "12:00",
+    "title": "The Weekly Waiver & Trade Report"
+   },
+   {
+    "t": "13:30",
+    "title": "What Is Agentic vs. Deterministic?"
+   },
+   {
+    "t": "14:15",
+    "title": "Where AI Makes the Decisions"
+   },
+   {
+    "t": "15:18",
+    "title": "What Goes Wrong Without Deterministic Rules?"
+   },
+   {
+    "t": "16:30",
+    "title": "Why Hardened Workflows Matter"
+   },
+   {
+    "t": "16:48",
+    "title": "How to Get Early Access"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "tsWOiibaaxA",
+  "title": "Better than Jev - because you can build with it",
+  "duration": 870,
+  "views": 46894,
+  "date": "2026-09-22",
+  "desc": "Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Henry Ndubuaku show how Needle brings small, private AI models directly into software and devices.\n\nAndrew Warner talks with Henry Ndubuaku about Needle, Cactus Compute’s tiny on-device LLM built for reliable automation without requiring an internet connection or external API calls. Henry demonstrates how Needle turns natural-language requests into structured tool calls, powers software features and hardware like robot vacuums, and uses tightly scoped actions and confidence scores to reduce mistakes. They also compare Needle with Jev and explain why running an 8–29 MB model locally can matter for privacy, cost, and bringing AI into smaller devices.\n\nLinks featured:\n\nNeedle: https://github.com/cactus-compute/needle\n\n00:00 - Needle: Run a small, free LLM locally for private and reliable automation.\n00:18 - Smart Home Demo: Turn lights on and off by translating natural-language requests into structured tool calls.\n01:39 - Search & Matching: Use Needle inside software for reminders, search, extraction, and other defined actions.\n03:18 - Local App Integration: Add Needle to software without relying on Anthropic or another external LLM API.\n04:12 - LLM.txt: Give Claude the context it needs to incorporate Needle directly into an app.\n04:48 - On-Device AI: Put Needle into hardware instead of limiting it to desktop software.\n05:06 - Robot Vacuum: Control a vacuum with natural-language commands while keeping the model on the device.\n06:09 - Zapier SDK: Add integrations with thousands of apps alongside Needle-powered local automation.\n07:12 - Reliability: Restrict Needle to carefully defined tools and actions to reduce unexpected behavior.\n08:51 - Confidence Scores: Use Needle’s confidence output to decide whether an automated action should execute.\n10:12 - Phones & Laptops: Organize photos, start timers, copy screen content, and automate device actions locally.\n11:42 - Needle vs Jev: Compare their shared focus on constrained outputs and safer automation.\n13:21 - 8–29 MB Models: Run Needle on small devices like smartwatches, remotes, AirPods, and other privacy-sensitive hardware.\n14:15 - GitHub Origins: Andrew explains how Needle first caught his attention after trending among the week’s top GitHub repos.\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W39",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Needle: Run a small, free LLM locally for private and reliable automation."
+   },
+   {
+    "t": "00:18",
+    "title": "- Smart Home Demo: Turn lights on and off by translating natural-language requests into structured tool calls."
+   },
+   {
+    "t": "01:39",
+    "title": "- Search & Matching: Use Needle inside software for reminders, search, extraction, and other defined actions."
+   },
+   {
+    "t": "03:18",
+    "title": "- Local App Integration: Add Needle to software without relying on Anthropic or another external LLM API."
+   },
+   {
+    "t": "04:12",
+    "title": "- LLM.txt: Give Claude the context it needs to incorporate Needle directly into an app."
+   },
+   {
+    "t": "04:48",
+    "title": "- On-Device AI: Put Needle into hardware instead of limiting it to desktop software."
+   },
+   {
+    "t": "05:06",
+    "title": "- Robot Vacuum: Control a vacuum with natural-language commands while keeping the model on the device."
+   },
+   {
+    "t": "06:09",
+    "title": "- Zapier SDK: Add integrations with thousands of apps alongside Needle-powered local automation."
+   },
+   {
+    "t": "07:12",
+    "title": "- Reliability: Restrict Needle to carefully defined tools and actions to reduce unexpected behavior."
+   },
+   {
+    "t": "08:51",
+    "title": "- Confidence Scores: Use Needle’s confidence output to decide whether an automated action should execute."
+   },
+   {
+    "t": "10:12",
+    "title": "- Phones & Laptops: Organize photos, start timers, copy screen content, and automate device actions locally."
+   },
+   {
+    "t": "11:42",
+    "title": "- Needle vs Jev: Compare their shared focus on constrained outputs and safer automation."
+   },
+   {
+    "t": "13:21",
+    "title": "- 8–29 MB Models: Run Needle on small devices like smartwatches, remotes, AirPods, and other privacy-sensitive hardware."
+   },
+   {
+    "t": "14:15",
+    "title": "- GitHub Origins: Andrew explains how Needle first caught his attention after trending among the week’s top GitHub repos."
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "WPUAZm5rnGc",
+  "title": "Easy step-by-step setup",
+  "duration": 698,
+  "views": 13509,
+  "date": "2026-09-21",
+  "desc": "Link to Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Achint Singh show how an AI voice agent can call leads, qualify prospects, book sales calls, and automatically pass conversation context into a CRM.\n\nAchint walks Andrew through the system he built for Belong, a service helping founders and technical engineers move to the US on legal work visas. When a potential customer completes a form but doesn’t book a call, GrokBot triggers an outbound voice agent that calls the lead, asks qualification questions, handles the conversation, and can text them a calendar link. Achint says the bot had already helped book $16,000 in revenue after roughly two weeks of being live.\n\nThey then build the system from scratch, starting with a simple voice-note “ramble” that GrokBot turns into a technical plan. The setup uses GrokBot as the orchestrator, ElevenLabs for the voice agent, Twilio for the phone number, Netlify for the website forms, and Attio as the CRM. They also explain how conversation data is captured and passed into the CRM so a human sales agent has the full context before speaking with the customer.\n\nThe episode also covers cloning a founder’s voice, connecting agents together, testing the system, avoiding bad customer experiences, and why clearly defining the customer journey matters when AI can build and deploy systems so quickly.\n\nLinks featured:\n\n- GrokBot — https://grok.com/\n- ElevenLabs — https://elevenlabs.io/\n- Twilio — https://www.twilio.com/\n- Netlify — https://www.netlify.com/\n- Attio — https://attio.com/\n- Belong — https://belonglaw.com/\n\nTimestamps:\n\n00:00 AI Agent Calls Customers\n00:18 Live GrokBot Sales Call Demo\n02:51 $16K in Revenue\n03:00 How the System Works\n04:21 Building the Agent From a Voice Note\n05:15 Turning a Ramble Into a Build Plan\n06:00 ElevenLabs + Twilio Setup\n06:45 Why Use a Cloned Voice?\n07:21 Getting a Phone Number\n08:15 Testing the Voice Agent\n08:33 How the Agents Work Together\n09:36 Saving Conversations to the CRM\n10:03 Full Tech Stack\n10:12 Does the AI Sound Robotic?\n10:30 Advice for Building AI Sales Agents\n11:06 More GrokBot Use Cases\n11:15 GrokBot vs Other Coding Agents\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W39",
+  "links": [
+   {
+    "name": "GrokBot",
+    "url": "https://grok.com/"
+   },
+   {
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io/"
+   },
+   {
+    "name": "Twilio",
+    "url": "https://www.twilio.com/"
+   },
+   {
+    "name": "Netlify",
+    "url": "https://www.netlify.com/"
+   },
+   {
+    "name": "Attio",
+    "url": "https://attio.com/"
+   },
+   {
+    "name": "Belong",
+    "url": "https://belonglaw.com/"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "AI Agent Calls Customers"
+   },
+   {
+    "t": "00:18",
+    "title": "Live GrokBot Sales Call Demo"
+   },
+   {
+    "t": "02:51",
+    "title": "$16K in Revenue"
+   },
+   {
+    "t": "03:00",
+    "title": "How the System Works"
+   },
+   {
+    "t": "04:21",
+    "title": "Building the Agent From a Voice Note"
+   },
+   {
+    "t": "05:15",
+    "title": "Turning a Ramble Into a Build Plan"
+   },
+   {
+    "t": "06:00",
+    "title": "ElevenLabs + Twilio Setup"
+   },
+   {
+    "t": "06:45",
+    "title": "Why Use a Cloned Voice?"
+   },
+   {
+    "t": "07:21",
+    "title": "Getting a Phone Number"
+   },
+   {
+    "t": "08:15",
+    "title": "Testing the Voice Agent"
+   },
+   {
+    "t": "08:33",
+    "title": "How the Agents Work Together"
+   },
+   {
+    "t": "09:36",
+    "title": "Saving Conversations to the CRM"
+   },
+   {
+    "t": "10:03",
+    "title": "Full Tech Stack"
+   },
+   {
+    "t": "10:12",
+    "title": "Does the AI Sound Robotic?"
+   },
+   {
+    "t": "10:30",
+    "title": "Advice for Building AI Sales Agents"
+   },
+   {
+    "t": "11:06",
+    "title": "More GrokBot Use Cases"
+   },
+   {
+    "t": "11:15",
+    "title": "GrokBot vs Other Coding Agents"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "6IxiArssGvg",
+  "title": "We tested the same request on all 3",
+  "duration": 1165,
+  "views": 25463,
+  "date": "2026-09-19",
+  "desc": "Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Michael Galpert compare Instinct, GrokBot, and Muse using the same real-world task.\n\nAndrew Warner and Michael Galpert test Instinct, GrokBot, and Muse head-to-head using the same Airbnb search to see how each agent handles research, follow-ups, browser control, purchasing, speed, and usability. They also compare pricing, connectors, reusable agent personas, multiplayer coordination, and where each tool fits best for personal and business workflows.\n\nLinks featured:\n\nMuse — https://www.muse.ai/\nGrok Bot — https://x.ai/bot\nInstinct — https://instinct.com/\nZapier MCP — https://zapier.com/mcp\nHyperagent — https://www.hyperagent.com/\nInstinct invitation (thanks Rick Segal!) - https://app.instinct.com/invite?t=4wclizn6blahks5w4vnfbxe4ou\n\n00:00 - Instinct vs GrokBot vs Muse: Test the same prompt across three new AI agents and compare how they respond.\n00:18 - Instinct: Search for an Airbnb through iMessage and get recommendations without opening another app.\n03:00 - GrokBot: Run the same Airbnb search with browser access, screenshots, maps, and clickable results.\n05:24 - Muse: Compare listings in a cleaner interface with ratings, cancellation dates, and fast follow-up questions.\n07:48 - Agent Speed: See how response time changes the way you interact with Muse, Instinct, and GrokBot.\n09:09 - Live Muse Test: Search for an Airbnb in Mexico City and watch Muse browse listings in real time.\n11:06 - Zapier MCP: Connect agents to 8,000+ apps while restricting what they can access and change.\n11:51 - Pricing: Compare Muse’s free tier, Instinct’s free access, and GrokBot’s paid usage.\n12:18 - Connectors & Personas: Build custom connections in Muse and reusable skills, processes, and agent personas in GrokBot.\n13:39 - Instinct Privacy & Trust: See the tradeoff between its simple iMessage interface and less visibility into what the agent is doing.\n14:42 - Multiplayer Agents: Let separate Instinct agents coordinate schedules, trips, and shared preferences between people.\n17:42 - Where Each Agent Fits: Compare GrokBot for complex agent workflows, Instinct for ease of use, and Muse for the Meta ecosystem.\n19:03 - Hyperagent: Andrew explains why he prefers Hyperagent for company and team use.\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W38",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Instinct vs GrokBot vs Muse: Test the same prompt across three new AI agents and compare how they respond."
+   },
+   {
+    "t": "00:18",
+    "title": "- Instinct: Search for an Airbnb through iMessage and get recommendations without opening another app."
+   },
+   {
+    "t": "03:00",
+    "title": "- GrokBot: Run the same Airbnb search with browser access, screenshots, maps, and clickable results."
+   },
+   {
+    "t": "05:24",
+    "title": "- Muse: Compare listings in a cleaner interface with ratings, cancellation dates, and fast follow-up questions."
+   },
+   {
+    "t": "07:48",
+    "title": "- Agent Speed: See how response time changes the way you interact with Muse, Instinct, and GrokBot."
+   },
+   {
+    "t": "09:09",
+    "title": "- Live Muse Test: Search for an Airbnb in Mexico City and watch Muse browse listings in real time."
+   },
+   {
+    "t": "11:06",
+    "title": "- Zapier MCP: Connect agents to 8,000+ apps while restricting what they can access and change."
+   },
+   {
+    "t": "11:51",
+    "title": "- Pricing: Compare Muse’s free tier, Instinct’s free access, and GrokBot’s paid usage."
+   },
+   {
+    "t": "12:18",
+    "title": "- Connectors & Personas: Build custom connections in Muse and reusable skills, processes, and agent personas in GrokBot."
+   },
+   {
+    "t": "13:39",
+    "title": "- Instinct Privacy & Trust: See the tradeoff between its simple iMessage interface and less visibility into what the agent is doing."
+   },
+   {
+    "t": "14:42",
+    "title": "- Multiplayer Agents: Let separate Instinct agents coordinate schedules, trips, and shared preferences between people."
+   },
+   {
+    "t": "17:42",
+    "title": "- Where Each Agent Fits: Compare GrokBot for complex agent workflows, Instinct for ease of use, and Muse for the Meta ecosystem."
+   },
+   {
+    "t": "19:03",
+    "title": "- Hyperagent: Andrew explains why he prefers Hyperagent for company and team use."
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "1fHsIveXRa8",
+  "title": "Top Repos Explained: Code Review, World Camera, Better AI Builds, etc.",
+  "duration": 1605,
+  "views": 52979,
+  "date": "2026-09-18",
+  "desc": "Resources: https://thenextnewthing.ai/l/github-repos-sep18\nPresented by Zapier: https://zapier.com/\nThis week, Andrew Warner and Adam break down 10 trending GitHub repos, from AI code security and context management to multi-agent workflows, knowledge graphs, and tools for running entire projects with AI.\n\nThey start with Alibaba’s Open Code Review, a tool that automatically checks code for security and other issues and can generate detailed HTML reports. Then they revisit I Have ADHD, which makes AI coding responses shorter and easier to scan, and God’s Eye View, which turns public data like traffic, cameras, and flight information into an interactive map.\n\nThe conversation also covers ECC’s engineering workflows and test-driven development, Context Mode’s approach to reducing context overhead, Tencent’s WeKnora for turning files into a searchable AI-powered knowledge graph, and OpenAI Plugins for extending coding agents with specialized tools and skills. They also explain Git worktrees and how Worktrunk lets multiple AI agents work on separate copies of the same project, plus Addy Osmani’s Agent Skills for a structured plan → build → test → review → ship workflow. Finally, they look at the Claude Code GitHub repo and why it exists even though Claude Code itself isn’t open source.\n\nRepos featured:\n\n- Alibaba Open Code Review — https://github.com/alibaba/open-code-review\n- I Have ADHD — https://github.com/ayghri/i-have-adhd\n- God’s Eye View — https://github.com/bilawalsidhu/gods-eye-view\n- ECC — https://github.com/affaan-m/ECC\n- Context Mode — https://github.com/mksglu/context-mode\n- Tencent WeKnora — https://github.com/Tencent/WeKnora\n- OpenAI Plugins — https://github.com/openai/plugins\n- Worktrunk — https://github.com/max-sixty/worktrunk\n- Agent Skills — https://github.com/addyosmani/agent-skills\n- Claude Code — https://github.com/anthropics/claude-code\n\nAudience submissions:\n\n- Logic Loop — https://github.com/SuperLogicAI/Logic-Loop\n- Claude Dashboard — https://github.com/JonImmsWordpressDev/claude-dashboard\n- Deck Gauge — https://github.com/Codpal-Limited/deckgauge\n- Campus AIOS — https://github.com/trainingsites/campus-ai-os\n- Reckoner — https://github.com/CaptainASIC/reckoner\n\n\n\nLink Featured:\n\n- Monid AI — https://monid.ai/?utm_source=creator&utm_content=newthinkg\n\n\nTimestamps:\n\n00:00 This Week’s GitHub Repos\n00:28 Open Code Review by Alibaba\n02:07 I Have ADHD\n03:27 God’s Eye View\n05:05 Monid AI\n06:26 ECC\n08:59 Should We Keep AI Skills?\n10:17 Why Skills Matter for Less Capable Models\n11:00 Context Mode\n13:08 Tencent WeKnora\n14:48 Zapier SDK & MCP\n15:08 OpenAI Plugins\n16:15 Plugin Security\n17:00 Worktrunk & Git Worktrees\n19:03 Agent Skills\n21:04 Claude Code on GitHub\n22:25 Audience Submissions\n22:49 Logic Loop\n23:32 Claude Dashboard\n24:05 Deck Gauge\n24:43 Campus AIOS\n25:31 Reckoner\n26:07 Wrap Up\n\n👉 Send us your AI builds: hi@thenextnewthing.ai\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W38",
+  "links": [
+   {
+    "name": "Alibaba Open Code Review",
+    "url": "https://github.com/alibaba/open-code-review"
+   },
+   {
+    "name": "I Have ADHD",
+    "url": "https://github.com/ayghri/i-have-adhd"
+   },
+   {
+    "name": "God’s Eye View",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view"
+   },
+   {
+    "name": "ECC",
+    "url": "https://github.com/affaan-m/ECC"
+   },
+   {
+    "name": "Context Mode",
+    "url": "https://github.com/mksglu/context-mode"
+   },
+   {
+    "name": "Tencent WeKnora",
+    "url": "https://github.com/Tencent/WeKnora"
+   },
+   {
+    "name": "OpenAI Plugins",
+    "url": "https://github.com/openai/plugins"
+   },
+   {
+    "name": "Worktrunk",
+    "url": "https://github.com/max-sixty/worktrunk"
+   },
+   {
+    "name": "Agent Skills",
+    "url": "https://github.com/addyosmani/agent-skills"
+   },
+   {
+    "name": "Claude Code",
+    "url": "https://github.com/anthropics/claude-code"
+   },
+   {
+    "name": "Logic Loop",
+    "url": "https://github.com/SuperLogicAI/Logic-Loop"
+   },
+   {
+    "name": "Claude Dashboard",
+    "url": "https://github.com/JonImmsWordpressDev/claude-dashboard"
+   },
+   {
+    "name": "Deck Gauge",
+    "url": "https://github.com/Codpal-Limited/deckgauge"
+   },
+   {
+    "name": "Campus AIOS",
+    "url": "https://github.com/trainingsites/campus-ai-os"
+   },
+   {
+    "name": "Reckoner",
+    "url": "https://github.com/CaptainASIC/reckoner"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "This Week’s GitHub Repos"
+   },
+   {
+    "t": "00:28",
+    "title": "Open Code Review by Alibaba"
+   },
+   {
+    "t": "02:07",
+    "title": "I Have ADHD"
+   },
+   {
+    "t": "03:27",
+    "title": "God’s Eye View"
+   },
+   {
+    "t": "05:05",
+    "title": "Monid AI"
+   },
+   {
+    "t": "06:26",
+    "title": "ECC"
+   },
+   {
+    "t": "08:59",
+    "title": "Should We Keep AI Skills?"
+   },
+   {
+    "t": "10:17",
+    "title": "Why Skills Matter for Less Capable Models"
+   },
+   {
+    "t": "11:00",
+    "title": "Context Mode"
+   },
+   {
+    "t": "13:08",
+    "title": "Tencent WeKnora"
+   },
+   {
+    "t": "14:48",
+    "title": "Zapier SDK & MCP"
+   },
+   {
+    "t": "15:08",
+    "title": "OpenAI Plugins"
+   },
+   {
+    "t": "16:15",
+    "title": "Plugin Security"
+   },
+   {
+    "t": "17:00",
+    "title": "Worktrunk & Git Worktrees"
+   },
+   {
+    "t": "19:03",
+    "title": "Agent Skills"
+   },
+   {
+    "t": "21:04",
+    "title": "Claude Code on GitHub"
+   },
+   {
+    "t": "22:25",
+    "title": "Audience Submissions"
+   },
+   {
+    "t": "22:49",
+    "title": "Logic Loop"
+   },
+   {
+    "t": "23:32",
+    "title": "Claude Dashboard"
+   },
+   {
+    "t": "24:05",
+    "title": "Deck Gauge"
+   },
+   {
+    "t": "24:43",
+    "title": "Campus AIOS"
+   },
+   {
+    "t": "25:31",
+    "title": "Reckoner"
+   },
+   {
+    "t": "26:07",
+    "title": "Wrap Up"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "6xi2KL_NujU",
+  "title": "New: AI mobile app builder, AI slides, AI receptionist, and more",
+  "duration": 1431,
+  "views": 14396,
+  "date": "2026-09-17",
+  "desc": "Link to Resources: https://thenextnewthing.ai/l/matt-shownotes-sep17\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Matt Van Horn break down the latest AI releases, including one-prompt native app building, Claude’s new Slides and Docs capabilities, AI wearables, WordPress agents, Notion skills, agent-friendly websites, and an AI receptionist that can answer and route business calls.\n\nAndrew and Matt explore Modaal, which lets you build native iOS and Android apps from prompts, including Swift and Kotlin apps with native features like Live Activities and widgets. They then look at Claude’s new Slides and Docs capabilities and Andrew’s experiment turning a week of AI research into a presentation. Next up is YourPersona, an AI-powered wristband designed to learn your habits, answer questions, and proactively help with everyday tasks. They discuss whether a dedicated AI wearable can compete with devices people already wear, and why an agent-agnostic form factor could ultimately be more useful.\n\nThe episode also covers WPVibe, which brings AI-powered control to WordPress sites; Notion’s new skills library and what it could mean for sharing repeatable AI workflows with teams; Aside, which gives AI tools browser access; Aesty’s AI stylist; and Is Agentic, a Vercel tool that evaluates whether websites are accessible and usable by AI agents. Finally, Andrew and Matt explore ElevenLabs Reception, an AI receptionist that can answer calls, help customers, transfer conversations, and book appointments. Along the way, they discuss the shift toward agents that can interact with the real world, use personal context, and take action across the tools and services people already rely on.\n\nLinks featured:\n\n- Modaal — https://modaal.dev/\n- Claude Docs + Slides — https://claude.com/blog/cowork-is-now-claude/\n- Persona Band — https://yourpersona.com/band\n- WPVibe — https://wpvibe.ai/\n- Notion Skills Library — https://www.notion.com/blog/a-skills-library-for-every-agent\n- Aside — https://aside.com/\n- Aesty — https://www.aesty.ai/\n- Is Agentic — https://is-agentic.com/\n- ElevenLabs Reception — https://elevenlabs.io/reception\n\n00:00 - Modaal: Build Native Apps With One Prompt\n01:30 - Native iOS & Android Apps\n02:33 - Claude Slides & Docs\n04:21 - YourPersona AI Wristband\n05:15 - What Makes AI Wearables Interesting?\n07:03 - The Case for Agent-Agnostic Wearables\n07:30 - WPVibe: AI for WordPress\n10:03 - Notion's Skills Library\n11:24 - Why Skills Matter for Teams\n14:15 - Aside: Give AI a Browser\n15:36 - Aesty: AI Personal Stylist\n16:48 - Is Agentic: Is Your Website AI-Friendly?\n18:27 - Vercel Domains\n20:42 - ElevenLabs Reception\n22:39 - Muse Gets Phone Calls\n23:42 - More AI Releases\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W38",
+  "links": [
+   {
+    "name": "Modaal",
+    "url": "https://modaal.dev/"
+   },
+   {
+    "name": "Claude Docs + Slides",
+    "url": "https://claude.com/blog/cowork-is-now-claude/"
+   },
+   {
+    "name": "Persona Band",
+    "url": "https://yourpersona.com/band"
+   },
+   {
+    "name": "WPVibe",
+    "url": "https://wpvibe.ai/"
+   },
+   {
+    "name": "Notion Skills Library",
+    "url": "https://www.notion.com/blog/a-skills-library-for-every-agent"
+   },
+   {
+    "name": "Aside",
+    "url": "https://aside.com/"
+   },
+   {
+    "name": "Aesty",
+    "url": "https://www.aesty.ai/"
+   },
+   {
+    "name": "Is Agentic",
+    "url": "https://is-agentic.com/"
+   },
+   {
+    "name": "ElevenLabs Reception",
+    "url": "https://elevenlabs.io/reception"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Modaal: Build Native Apps With One Prompt"
+   },
+   {
+    "t": "01:30",
+    "title": "- Native iOS & Android Apps"
+   },
+   {
+    "t": "02:33",
+    "title": "- Claude Slides & Docs"
+   },
+   {
+    "t": "04:21",
+    "title": "- YourPersona AI Wristband"
+   },
+   {
+    "t": "05:15",
+    "title": "- What Makes AI Wearables Interesting?"
+   },
+   {
+    "t": "07:03",
+    "title": "- The Case for Agent-Agnostic Wearables"
+   },
+   {
+    "t": "07:30",
+    "title": "- WPVibe: AI for WordPress"
+   },
+   {
+    "t": "10:03",
+    "title": "- Notion's Skills Library"
+   },
+   {
+    "t": "11:24",
+    "title": "- Why Skills Matter for Teams"
+   },
+   {
+    "t": "14:15",
+    "title": "- Aside: Give AI a Browser"
+   },
+   {
+    "t": "15:36",
+    "title": "- Aesty: AI Personal Stylist"
+   },
+   {
+    "t": "16:48",
+    "title": "- Is Agentic: Is Your Website AI-Friendly?"
+   },
+   {
+    "t": "18:27",
+    "title": "- Vercel Domains"
+   },
+   {
+    "t": "20:42",
+    "title": "- ElevenLabs Reception"
+   },
+   {
+    "t": "22:39",
+    "title": "- Muse Gets Phone Calls"
+   },
+   {
+    "t": "23:42",
+    "title": "- More AI Releases"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "ehab5PtgRo8",
+  "title": "Why is everyone using these?",
+  "duration": 751,
+  "views": 30262,
+  "date": "2026-09-16",
+  "desc": "Resources: https://thenextnewthing.ai/l/top-skills-sep16\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Robbie Abed break down the 10 most-installed AI skills from GitHub, including skills that help agents find other skills, improve software design, browse the web, follow engineering best practices, and become better tutors.\n\nAndrew and Robbie start with Find Skills, a Vercel skill that works like an app store for AI skills, helping agents discover and install the right capabilities for a task. They then explore Matt Pocock’s Grill Me and Grilling skills, which push AI to ask better questions and stress-test ideas before work begins. Anthropic’s Frontend Design skill is next, helping agents create more distinctive interfaces instead of falling into the familiar “AI-generated” design patterns. They also look at Vercel’s Agent Browser, which gives agents headless control of a web browser, and Matt Pocock’s setup skill for bringing engineering workflows and best practices into a repository.\n\nThe list also includes Vercel’s React Best Practices skill, which helps agents follow performance recommendations for React and Next.js, Lark Doc for interacting with ByteDance’s workplace platform, and Matt Pocock’s Teach skill, which turns an AI agent into a persistent tutor that builds lessons over time and remembers what you've already learned. Finally, they explore Vercel’s Web Design Guidelines, covering accessibility, forms, typography, animation, and other practical web standards. Throughout the episode, Andrew and Robbie show what these skills actually do, how they work together, and why packaging repeatable workflows into skills can make AI agents more capable.\n\nLinks featured:\n\n- **find-skills** — vercel-labs/skills — (https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md)\n- **grill-me** —  mattpocock/skills — (https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md)\n- **frontend-design** —  anthropics/skills — (https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md)\n- **agent-browser** — vercel-labs/agent-browser — (https://github.com/vercel-labs/agent-browser/blob/main/skills/agent-browser/SKILL.md)\n- **setup-matt-pocock-skills** — mattpocock/skills — (https://github.com/mattpocock/skills/blob/main/skills/engineering/setup-matt-pocock-skills/SKILL.md)\n- **vercel-react-best-practices** — vercel-labs/agent-skills — (https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md)\n- **grilling** — mattpocock/skills — (https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md)\n- **lark-doc** — (https://github.com/larksuite/cli/blob/main/skills/lark-doc/SKILL.md)\n- **teach** — mattpocock/skills — (https://github.com/mattpocock/skills/blob/main/skills/productivity/teach/SKILL.md)\n- **web-design-guidelines** —  vercel-labs/agent-skills — (https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md)\n\n00:00 - Top 10 AI Skills\n00:27 - Find Skills\n01:03 - Grill Me\n02:15 - Frontend Design\n03:02 - Robbie Abed & NoMiddle\n03:54 - Agent Browser\n05:33 - Setup Matt Pocock Skills\n06:27 - Vercel React Best Practices\n07:39 - Grilling\n08:42 - Lark Doc\n09:36 - Teach\n10:48 - Web Design Guidelines\n11:24 - Why AI Skills Are Easy to Use\n12:18 - Deep Dive With Matt Pocock\n\n👉 Send us your AI builds: hi@thenextnewthing.ai\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W38",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Top 10 AI Skills"
+   },
+   {
+    "t": "00:27",
+    "title": "- Find Skills"
+   },
+   {
+    "t": "01:03",
+    "title": "- Grill Me"
+   },
+   {
+    "t": "02:15",
+    "title": "- Frontend Design"
+   },
+   {
+    "t": "03:02",
+    "title": "- Robbie Abed & NoMiddle"
+   },
+   {
+    "t": "03:54",
+    "title": "- Agent Browser"
+   },
+   {
+    "t": "05:33",
+    "title": "- Setup Matt Pocock Skills"
+   },
+   {
+    "t": "06:27",
+    "title": "- Vercel React Best Practices"
+   },
+   {
+    "t": "07:39",
+    "title": "- Grilling"
+   },
+   {
+    "t": "08:42",
+    "title": "- Lark Doc"
+   },
+   {
+    "t": "09:36",
+    "title": "- Teach"
+   },
+   {
+    "t": "10:48",
+    "title": "- Web Design Guidelines"
+   },
+   {
+    "t": "11:24",
+    "title": "- Why AI Skills Are Easy to Use"
+   },
+   {
+    "t": "12:18",
+    "title": "- Deep Dive With Matt Pocock"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "pkwnJcETgfE",
+  "title": "Why Everyone Is Talking About Meta’s New Muse Agent",
+  "duration": 1162,
+  "views": 13820,
+  "date": "2026-09-15",
+  "desc": "Check out Muse, your personal AI agent. Redeem my code in Settings within 48 hours of joining and we'll both get 1 billion Muse tokens.\n\nCode: IF17B3\nLink: https://muse.ai/join\n\nLink to Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nGet your private invite or say hi to Michael: https://x.com/msg\nAndrew Warner and Michael Galpert take an inside look at Muse, Meta’s new AI agent with its own computer, and explore what it can actually do across Instagram, Facebook, WhatsApp, web browsing, and everyday workflows.\n\nAndrew sits down with Michael Galpert, an early OpenClaw user, to test Muse and see how far its agent capabilities go. Michael demonstrates how Muse can access Instagram data, export information into an Excel file, visualize relationships between followers, manage messages, and work with Meta’s ecosystem in ways that other AI agents often cannot. They explore Muse’s human-in-the-loop approval system, persistent memory, identity and personality settings, side chats, connectors, and its ability to communicate through channels like WhatsApp. Muse can also operate a cloud computer, open a browser, research products, and let users take control when needed.\n\nThe conversation also explores where Muse shines—and where it still falls short. Michael explains why the agent is particularly useful for people working with Facebook Marketplace, Facebook Ads, and Instagram, while Andrew and Michael test its ability to connect tools that don't have a built-in integration. They discuss Tailscale access to other computers, security and anti-spam protections, limitations with websites like Costco, and the difference between having one persistent agent versus multiple specialized agents. They also explore Muse’s personalized feeds and Ideas tab, which can suggest useful automations based on what the agent knows about you. After using Muse for several days, Michael shares why he sees it as a serious contender for how people may interact with AI agents in the future.\n\nLinks featured:\n\nMuse — https://www.muse.ai/\nOpenClaw — https://openclaw.ai/\nTailscale — https://tailscale.com/\nZapier SDK — https://zapier.com/sdk\n\n00:00 - Introducing Muse\n00:19 - Exporting Instagram Followers\n01:38 - What Makes Muse Different\n02:00 - Messaging on Facebook & Instagram\n02:46 - Inbox, Memory & Agent Identity\n03:25 - Human Approval for Messages\n04:05 - Bulk Messaging\n04:29 - Muse's Personality & Memory\n05:11 - One Persistent Agent + Side Chats\n06:12 - Muse's Connectors\n07:34 - A Free Computer in the Cloud\n07:53 - Using Muse Through WhatsApp\n08:57 - Muse Controls a Web Browser\n10:29 - Connecting Tools Without Built-In Integrations\n11:20 - Creating Connectors on the Fly\n12:51 - How Fast Is Muse?\n13:18 - What Muse Is Good For\n13:33 - Muse for Facebook & Instagram\n14:27 - Security & Privacy\n15:10 - Where Muse Still Falls Short\n15:47 - One Agent vs. Multiple Personalities\n16:17 - Trying Agents for Free\n16:42 - Muse's Personalized Feeds\n18:02 - Muse's Ideas Tab\n18:47 - Michael's Muse Hot Take\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W38",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Introducing Muse"
+   },
+   {
+    "t": "00:19",
+    "title": "- Exporting Instagram Followers"
+   },
+   {
+    "t": "01:38",
+    "title": "- What Makes Muse Different"
+   },
+   {
+    "t": "02:00",
+    "title": "- Messaging on Facebook & Instagram"
+   },
+   {
+    "t": "02:46",
+    "title": "- Inbox, Memory & Agent Identity"
+   },
+   {
+    "t": "03:25",
+    "title": "- Human Approval for Messages"
+   },
+   {
+    "t": "04:05",
+    "title": "- Bulk Messaging"
+   },
+   {
+    "t": "04:29",
+    "title": "- Muse's Personality & Memory"
+   },
+   {
+    "t": "05:11",
+    "title": "- One Persistent Agent + Side Chats"
+   },
+   {
+    "t": "06:12",
+    "title": "- Muse's Connectors"
+   },
+   {
+    "t": "07:34",
+    "title": "- A Free Computer in the Cloud"
+   },
+   {
+    "t": "07:53",
+    "title": "- Using Muse Through WhatsApp"
+   },
+   {
+    "t": "08:57",
+    "title": "- Muse Controls a Web Browser"
+   },
+   {
+    "t": "10:29",
+    "title": "- Connecting Tools Without Built-In Integrations"
+   },
+   {
+    "t": "11:20",
+    "title": "- Creating Connectors on the Fly"
+   },
+   {
+    "t": "12:51",
+    "title": "- How Fast Is Muse?"
+   },
+   {
+    "t": "13:18",
+    "title": "- What Muse Is Good For"
+   },
+   {
+    "t": "13:33",
+    "title": "- Muse for Facebook & Instagram"
+   },
+   {
+    "t": "14:27",
+    "title": "- Security & Privacy"
+   },
+   {
+    "t": "15:10",
+    "title": "- Where Muse Still Falls Short"
+   },
+   {
+    "t": "15:47",
+    "title": "- One Agent vs. Multiple Personalities"
+   },
+   {
+    "t": "16:17",
+    "title": "- Trying Agents for Free"
+   },
+   {
+    "t": "16:42",
+    "title": "- Muse's Personalized Feeds"
+   },
+   {
+    "t": "18:02",
+    "title": "- Muse's Ideas Tab"
+   },
+   {
+    "t": "18:47",
+    "title": "- Michael's Muse Hot Take"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "ANJTdT0Ggrw",
+  "title": "Free LLM - for building, agents, images, etc.",
+  "duration": 535,
+  "views": 29039,
+  "date": "2026-09-14",
+  "desc": "Link to Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Tashfeen Ahmed reveal how to get free LLM access for AI coding, agents, image generation, video, audio, and more using Free LLM API.\n\nAndrew sits down with Tashfeen Ahmed, creator of Free LLM API, to show how developers can access free token quotas from multiple AI providers through a single unified API. Tashfeen demonstrates how the platform automatically routes requests across providers, supports automatic failover, and lets users prioritize reliability, speed, or intelligence when choosing models. They walk through the setup process on Mac, Windows, Docker, iOS, and Android, showing how to connect the unified API key to coding agents like Claude Code and OpenCode and start experimenting without paying for tokens.\n\nThey also explain why free LLM access is particularly useful for prototyping and experimentation, while cautioning against relying on provider free quotas in production applications when the provider doesn't permit it. Tashfeen shows how Free LLM API uses Thompson Sampling to continuously evaluate models and route requests, and how the platform supports more than just text models, including embeddings, image, video, audio, and multi-model Fusion. The episode is a practical look at stretching free AI access further while experimenting with different models and providers.\n\nLinks featured:\n\n- Free LLM API — https://github.com/tashfeenahmed/freellmapi\n- Zapier SDK — https://zapier.com/sdk\n\n00:00 - Free LLM API\n00:27 - $500+ in Free AI Tokens\n01:03 - Models, Providers & Automatic Failover\n02:06 - Keeping the Same Model Across Providers\n02:42 - How to Get Started\n03:36 - 45 AI Providers With One API\n03:54 - Using Free LLM API With AI Coding Agents\n04:30 - Can Free LLM Access Get You in Trouble?\n05:24 - Why AI Providers Offer Free Quotas\n05:42 - Free Models in Production Apps\n06:18 - Zapier SDK\n06:36 - Smart Model Routing\n07:12 - Thompson Sampling & Model Rankings\n07:48 - Embeddings, Images, Video & Audio\n08:15 - Free LLM API Desktop App\n08:42 - More Ways to Minimize Token Usage\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W38",
+  "links": [
+   {
+    "name": "Free LLM API",
+    "url": "https://github.com/tashfeenahmed/freellmapi"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Free LLM API"
+   },
+   {
+    "t": "00:27",
+    "title": "- $500+ in Free AI Tokens"
+   },
+   {
+    "t": "01:03",
+    "title": "- Models, Providers & Automatic Failover"
+   },
+   {
+    "t": "02:06",
+    "title": "- Keeping the Same Model Across Providers"
+   },
+   {
+    "t": "02:42",
+    "title": "- How to Get Started"
+   },
+   {
+    "t": "03:36",
+    "title": "- 45 AI Providers With One API"
+   },
+   {
+    "t": "03:54",
+    "title": "- Using Free LLM API With AI Coding Agents"
+   },
+   {
+    "t": "04:30",
+    "title": "- Can Free LLM Access Get You in Trouble?"
+   },
+   {
+    "t": "05:24",
+    "title": "- Why AI Providers Offer Free Quotas"
+   },
+   {
+    "t": "05:42",
+    "title": "- Free Models in Production Apps"
+   },
+   {
+    "t": "06:18",
+    "title": "- Zapier SDK"
+   },
+   {
+    "t": "06:36",
+    "title": "- Smart Model Routing"
+   },
+   {
+    "t": "07:12",
+    "title": "- Thompson Sampling & Model Rankings"
+   },
+   {
+    "t": "07:48",
+    "title": "- Embeddings, Images, Video & Audio"
+   },
+   {
+    "t": "08:15",
+    "title": "- Free LLM API Desktop App"
+   },
+   {
+    "t": "08:42",
+    "title": "- More Ways to Minimize Token Usage"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "NdeOsuoIGuc",
+  "title": "Have Astra do this right now",
+  "duration": 1684,
+  "views": 22894,
+  "date": "2026-09-12",
+  "desc": "Resources: https://thenextnewthing.ai/l/astra-reaction-sep12\nPresented by Zapier: https://zapier.com/\nAndrew Warner breaks down the best real-world GPT-6 Astra use cases and how it compares with Fable 5.1.\n\nAndrew Warner tests where GPT-6 Astra actually stands out by reviewing real-world demos from Riley Brown, Jason Lee, Claire Vo, Matthew Berman, Mark Kashef, Creator Magic, Nate Herk, and Dan Shipper. The episode covers app building, browser and computer control, iPhone automation, DaVinci Resolve editing through MCP, meeting analysis, writing, and presentation creation, while comparing Astra with Fable 5.1 on quality, speed, cost, and practical usefulness.\n\nLinks featured:\n\nRiley Brown — https://www.youtube.com/watch?v=Ju41cQSe7hY&t=489s\nJason Lee — https://www.youtube.com/watch?v=hjAugywVkOw&t=1180s\nClaire Vo (How I AI) — https://www.youtube.com/watch?v=AniiF8rOu9c&t=350s\nMatthew Berman — https://www.youtube.com/watch?v=xdXLzFzxA9Q&t=706s\nMark Kashef — https://www.youtube.com/watch?v=tU-fO6cADvQ&t=836s\nCreator Magic — https://www.youtube.com/watch?v=V7CtHz8JFWA&t=510s\nNate Herk — https://www.youtube.com/watch?v=WfJPBVXPt8k&t=865s\nDan Shipper (Every) — https://www.youtube.com/watch?v=1EEw36H2zLo&t=73s\n\n00:00 - GPT-6 Astra: Andrew breaks down the best real-world use cases he found after testing Astra and watching hours of demos.\n00:27 - Raycast-Style App: Build a custom desktop utility from a simple prompt in under 20 minutes.\n01:39 - $60K/Month App Clone: Replicate a receipt-scanning bookkeeping app using GPT-6 Astra and Fable 5.1.\n02:51 - GPT-6 Astra App Build: Scan receipts, extract data with Claude, and generate a polished working app from one prompt.\n04:12 - Fable 5.1 App Build: Compare Fable’s version of the same receipt-scanning app against Astra.\n06:18 - Computer Use: Let GPT-6 Astra take over Chrome and modify a complex browser-based workflow hands-free.\n07:39 - Zapier MCP: Connect AI agents to thousands of apps while controlling what they can access and change.\n08:42 - Browser Control: Use GPT-6 Astra to draw in Excalidraw, research products, and plan routes in Google Maps.\n10:12 - iPhone Control: Control an iPhone through Mac’s iPhone Mirroring using GPT-6 Astra.\n12:00 - DaVinci Resolve MCP: Connect GPT-6 Astra directly to DaVinci Resolve for faster AI-powered video editing.\n15:18 - AI Video Editing: Turn more than 150GB of event footage into a finished recap with GPT-6 Astra and Fable 5.1.\n19:12 - Meeting Analysis: Analyze dozens of meetings to uncover business problems and automation opportunities.\n22:12 - AI Writing: See why Dan Shipper considers GPT-6 Astra a strong writing model.\n24:09 - Consulting Decks: Compare GPT-6 Astra and Fable 5.1 creating a McKinsey-style presentation from the same prompt.\n27:27 - GPT-6 Astra vs Fable 5.1: Andrew gives his overall verdict on computer use, writing, design, speed, and cost.\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W37",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- GPT-6 Astra: Andrew breaks down the best real-world use cases he found after testing Astra and watching hours of demos."
+   },
+   {
+    "t": "00:27",
+    "title": "- Raycast-Style App: Build a custom desktop utility from a simple prompt in under 20 minutes."
+   },
+   {
+    "t": "01:39",
+    "title": "- $60K/Month App Clone: Replicate a receipt-scanning bookkeeping app using GPT-6 Astra and Fable 5.1."
+   },
+   {
+    "t": "02:51",
+    "title": "- GPT-6 Astra App Build: Scan receipts, extract data with Claude, and generate a polished working app from one prompt."
+   },
+   {
+    "t": "04:12",
+    "title": "- Fable 5.1 App Build: Compare Fable’s version of the same receipt-scanning app against Astra."
+   },
+   {
+    "t": "06:18",
+    "title": "- Computer Use: Let GPT-6 Astra take over Chrome and modify a complex browser-based workflow hands-free."
+   },
+   {
+    "t": "07:39",
+    "title": "- Zapier MCP: Connect AI agents to thousands of apps while controlling what they can access and change."
+   },
+   {
+    "t": "08:42",
+    "title": "- Browser Control: Use GPT-6 Astra to draw in Excalidraw, research products, and plan routes in Google Maps."
+   },
+   {
+    "t": "10:12",
+    "title": "- iPhone Control: Control an iPhone through Mac’s iPhone Mirroring using GPT-6 Astra."
+   },
+   {
+    "t": "12:00",
+    "title": "- DaVinci Resolve MCP: Connect GPT-6 Astra directly to DaVinci Resolve for faster AI-powered video editing."
+   },
+   {
+    "t": "15:18",
+    "title": "- AI Video Editing: Turn more than 150GB of event footage into a finished recap with GPT-6 Astra and Fable 5.1."
+   },
+   {
+    "t": "19:12",
+    "title": "- Meeting Analysis: Analyze dozens of meetings to uncover business problems and automation opportunities."
+   },
+   {
+    "t": "22:12",
+    "title": "- AI Writing: See why Dan Shipper considers GPT-6 Astra a strong writing model."
+   },
+   {
+    "t": "24:09",
+    "title": "- Consulting Decks: Compare GPT-6 Astra and Fable 5.1 creating a McKinsey-style presentation from the same prompt."
+   },
+   {
+    "t": "27:27",
+    "title": "- GPT-6 Astra vs Fable 5.1: Andrew gives his overall verdict on computer use, writing, design, speed, and cost."
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "aX8Y183qDpY",
+  "title": "Top 10 Repos explained: ADHD, Ponytail, and more",
+  "duration": 1377,
+  "views": 57813,
+  "date": "2026-09-11",
+  "desc": "Link to Resources: https://thenextnewthing.ai/l/github-repos-sep11\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Adam dive into 10 GitHub repos that can make AI coding smarter, simpler, and more useful—from an “I Have ADHD” skill that cuts through AI’s walls of text to tools that improve engineering workflows, reduce code bloat, manage context, and turn Codex into a more capable development environment.\n\nAndrew and Adam break down the most interesting repos of the week, starting with I Have ADHD, which automatically pushes AI to be more concise and easier to understand. They explore ECC, a skill pack that gives AI coders a structured engineering process; Ponytail, which teaches AI to take the simplest possible approach instead of overengineering; and HumanLayer’s skills for packaging repeatable workflows. They also look at Zapier MCP for connecting agents to more than 8,000 tools, OpenAI’s Plugins repository for Codex, Archify for turning code and processes into visual diagrams, and Context Mode for reducing unnecessary context in AI conversations. Along the way, Adam explains why “strategic laziness” can make AI-generated software easier to maintain, why skills can be useful but aren't always necessary, and why OpenAI’s plugin approach may be the next evolution beyond standalone skills.\n\nThe episode also features audience submissions, including Reckoner, a dashboard for monitoring AI billing across multiple providers; Tim Harris’s collection of skills designed for people who don't want to read code; Clodex, which lets users swap GPT models into the Claude Code terminal; and AI Marketing Panel, which uses simulated customer personas to pressure-test marketing copy before it reaches real customers. Andrew and Adam also discuss whether future GitHub roundups should skip skills entirely—and invite viewers to share the skills and repos they actually use.\n\nRepos featured:\n\n- I Have ADHD — https://github.com/ayghri/i-have-adhd\n- ECC — https://github.com/affaan-m/ECC\n- Ponytail — https://github.com/DietrichGebert/ponytail\n- HumanLayer Skills — https://github.com/humanlayer/skills\n- OpenAI Plugins — https://github.com/openai/plugins\n- Archify — https://github.com/tt-a1i/archify\n- Context Mode — https://github.com/mksglu/context-mode\n- Matt Pocock Skills — https://github.com/mattpocock/skills\n- Humanizer — https://github.com/blader/humanizer\n- OpenAI Skills — https://github.com/openai/skills\n\nAudience submissions:\n\n- Reckoner — https://github.com/CaptainASIC/reckoner\n- Tim Harris Skills — https://github.com/timharris707/skills\n- Clodex — https://github.com/Aotricx/Clodex\n- AI Marketing Panel — https://github.com/rodaddy/ai-marketing-panel\n\n00:00 - I Have ADHD\n01:40 - ECC: Give Your AI Coder an Engineering Process\n03:02 - Ponytail: Strategic Laziness for Developers\n05:20 - Zapier MCP\n05:55 - HumanLayer Skills\n08:22 - Should We Skip Skills?\n08:53 - OpenAI Plugins\n10:17 - Archify\n11:36 - Context Mode\n13:23 - Matt Pocock Skills\n15:29 - Why Skills Can Teach You New AI Workflows\n16:07 - Humanizer\n17:59 - OpenAI Skills Are Deprecated\n18:54 - Audience Repo Submissions\n19:28 - Reckoner\n20:05 - Tim Harris Skills\n20:36 - Clodex\n21:34 - AI Marketing Panel\n22:41 - Wrap Up\n\n👉 Say Hi to Adam on LinkedIn: https://www.linkedin.com/in/adam-brakhane/\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W37",
+  "links": [
+   {
+    "name": "I Have ADHD",
+    "url": "https://github.com/ayghri/i-have-adhd"
+   },
+   {
+    "name": "ECC",
+    "url": "https://github.com/affaan-m/ECC"
+   },
+   {
+    "name": "Ponytail",
+    "url": "https://github.com/DietrichGebert/ponytail"
+   },
+   {
+    "name": "HumanLayer Skills",
+    "url": "https://github.com/humanlayer/skills"
+   },
+   {
+    "name": "OpenAI Plugins",
+    "url": "https://github.com/openai/plugins"
+   },
+   {
+    "name": "Archify",
+    "url": "https://github.com/tt-a1i/archify"
+   },
+   {
+    "name": "Context Mode",
+    "url": "https://github.com/mksglu/context-mode"
+   },
+   {
+    "name": "Matt Pocock Skills",
+    "url": "https://github.com/mattpocock/skills"
+   },
+   {
+    "name": "Humanizer",
+    "url": "https://github.com/blader/humanizer"
+   },
+   {
+    "name": "OpenAI Skills",
+    "url": "https://github.com/openai/skills"
+   },
+   {
+    "name": "Reckoner",
+    "url": "https://github.com/CaptainASIC/reckoner"
+   },
+   {
+    "name": "Tim Harris Skills",
+    "url": "https://github.com/timharris707/skills"
+   },
+   {
+    "name": "Clodex",
+    "url": "https://github.com/Aotricx/Clodex"
+   },
+   {
+    "name": "AI Marketing Panel",
+    "url": "https://github.com/rodaddy/ai-marketing-panel"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- I Have ADHD"
+   },
+   {
+    "t": "01:40",
+    "title": "- ECC: Give Your AI Coder an Engineering Process"
+   },
+   {
+    "t": "03:02",
+    "title": "- Ponytail: Strategic Laziness for Developers"
+   },
+   {
+    "t": "05:20",
+    "title": "- Zapier MCP"
+   },
+   {
+    "t": "05:55",
+    "title": "- HumanLayer Skills"
+   },
+   {
+    "t": "08:22",
+    "title": "- Should We Skip Skills?"
+   },
+   {
+    "t": "08:53",
+    "title": "- OpenAI Plugins"
+   },
+   {
+    "t": "10:17",
+    "title": "- Archify"
+   },
+   {
+    "t": "11:36",
+    "title": "- Context Mode"
+   },
+   {
+    "t": "13:23",
+    "title": "- Matt Pocock Skills"
+   },
+   {
+    "t": "15:29",
+    "title": "- Why Skills Can Teach You New AI Workflows"
+   },
+   {
+    "t": "16:07",
+    "title": "- Humanizer"
+   },
+   {
+    "t": "17:59",
+    "title": "- OpenAI Skills Are Deprecated"
+   },
+   {
+    "t": "18:54",
+    "title": "- Audience Repo Submissions"
+   },
+   {
+    "t": "19:28",
+    "title": "- Reckoner"
+   },
+   {
+    "t": "20:05",
+    "title": "- Tim Harris Skills"
+   },
+   {
+    "t": "20:36",
+    "title": "- Clodex"
+   },
+   {
+    "t": "21:34",
+    "title": "- AI Marketing Panel"
+   },
+   {
+    "t": "22:41",
+    "title": "- Wrap Up"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "1JTyPNeD9dk",
+  "title": "Free AI agent & all of this week’s AI launches",
+  "duration": 969,
+  "views": null,
+  "date": "2026-09-11",
+  "desc": "",
+  "date_approx": true,
+  "week": "2026-W37",
+  "links": [],
+  "chapters": [],
+  "transcript": null
+ }
+]

@@ -63,12 +63,16 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
 - `audit`: weekly Four Cs score (reports in `audits/`), and its content
   check after a wrong answer, a big change or **a switch to a new model**.
 - `teach` (teach a topic), `grill-me` (interview Charlie, notes in
-  `brainstorms/`), `onboard` (set someone up, `aios-intake.md`), `level-up`
+  `brainstorms/`), `level-up`
   (next automation, weekly), `link` (make a new file findable),
   `find-skills` (find and install skills, with his OK; plugin families in
-  `research/plugin-map.md`).
+  `research/plugin-map.md`). Parked skills (e.g. `onboard`, set someone
+  up): `references/parked-skills/`.
 - `research-creator` (new creator end to end), `brain-ingest` (new sources
   into a creator brain), `video-tutor` agent (transcripts into a lesson).
+- `hands-ingest`: the **Hands Brain** (`research/hands/`), every tool, skill,
+  plugin and repo from The Next New Thing, week by week, ranked. Ask it with
+  the `hands-brain` agent.
 - `nate-brain` agent (Nate's view on organising the OS; knowledge in
   `research/nate-herk/brain/`), `nick-brain` agent (Nick Saraev's view; parked).
 

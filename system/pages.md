@@ -6,6 +6,7 @@ by publishing the same source file again (keeps the link).
 | Page | Link | Source | Rebuild, then republish |
 |---|---|---|---|
 | **Decision Desk**: every question waiting for Charlie (the `decide` skill) | https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx | `system/decision-desk/decision-desk.html` | none; questions live in its `decisions` database (ArtifactData) |
+| **Hands Brain**: best tools to use now, ranked per category, week by week | https://claude.ai/artifact/QVni63FtP7cG1z9UrajfCL | `research/hands/site/hands.html` | `python3 research/hands/pipeline.py`, week files (the `hands-ingest` skill), then `python3 tools/build_hands.py` |
 | **Brain dashboard**: our OS and Nate's brain as one map; review cards (keep / confusing / delete) | https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf | `research/nate-herk/brain/map/brain-map.html` | `python3 tools/build_brain_map.py`; marks are in its `flags` database |
 | **Nate-first map**: our OS today vs the same work started from Nate's kit | https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky | `system/merge-map/merge-map.html` | `python3 tools/build_merge_map.py` (rules and reasons in its MOVES table) |
 | **Kit Compare**: our blank template vs Nate's kit | https://claude.ai/artifact/62wSZBDKYTLCAq6yfcF1qR | `projects/ai-os-setup-kit/compare/kit-compare.html` | `python3 tools/build_kit_compare.py` |

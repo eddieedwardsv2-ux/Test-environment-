@@ -1,0 +1,766 @@
+[
+ {
+  "id": "gh:affaan-m/ecc",
+  "name": "ECC",
+  "url": "https://github.com/affaan-m/ECC",
+  "kind": "repo",
+  "category": "Claude Code skills & plugins",
+  "what": "Open-source toolkit of skills that plans, builds with tests, makes a promo video and sends outreach.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "BcNAQynKUk4",
+    "t": "0:33",
+    "shown": "Live 20-minute run: orchestrator drove tmux panes, built a pitch-roasting app, made a video, drafted and sent X DMs.",
+    "quote": "we're going to give it a task and build a product. So, it's going to use ECC skills"
+   }
+  ],
+  "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 15,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "gh:tashfeenahmed/freellmapi",
+  "name": "FreeLLMAPI",
+  "url": "https://github.com/tashfeenahmed/freellmapi",
+  "kind": "repo",
+  "category": "Cost & tokens",
+  "what": "Routes a coding agent across many free model providers so you can keep coding when one hits its limit.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [
+   "Claude Code usage limits"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "5:51",
+    "shown": "Explained the idea and said the install is easy; no coding demo.",
+    "quote": "string together all these freebies"
+   }
+  ],
+  "check": "Does not include Claude or frontier models; optional $19 a year add-on. Host frames it as replacing Claude Code for some people.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 15,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "gh:mutonby/openshorts",
+  "name": "OpenShorts",
+  "url": "https://github.com/mutonby/openshorts",
+  "kind": "repo",
+  "category": "Video, clips & images",
+  "what": "Self-hosted tool that turns long videos into captioned vertical clips and can schedule posts.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [
+   "Opus Clip"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "19:30",
+    "shown": "Ran it on a YouTube video on the free hosted site; framing needed fixing.",
+    "quote": "This is a free clip maker that you can host yourself or you can go to their website and use for free."
+   }
+  ],
+  "check": "Hosted free tier is 20 minutes a month with watermark; self-hosting slow without GPU.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 15,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "gh:itzcrazykns/vane",
+  "name": "Vane",
+  "url": "https://github.com/ItzCrazyKns/Vane",
+  "kind": "repo",
+  "category": "Research & search",
+  "what": "Self-hosted research assistant that searches the web and gives numbered sources; formerly Perplexica.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [
+   "Perplexity"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "9:27",
+    "shown": "Described features; no demo.",
+    "quote": "You type a question. It searches the web. It writes the answer. It gives you numbered sources."
+   }
+  ],
+  "check": "Host says it is not as strong as Perplexity; needs a model (Ollama or free Gemini key).",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 12,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "gh:debpalash/voicestudio",
+  "name": "VoiceStudio",
+  "url": "https://github.com/debpalash/VoiceStudio",
+  "kind": "repo",
+  "category": "Voice & audio",
+  "what": "Free desktop app for voice cloning, text-to-speech and video dubbing, run locally.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [
+   "ElevenLabs"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "0:27",
+    "shown": "Played sample voices and the install page.",
+    "quote": "There is no credit counter, so you can redo a line 50 times and it's going to cost you nothing."
+   }
+  ],
+  "check": "Default model is non-commercial only; Pro is $99 a month.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 12,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "n:chatgptdots",
+  "name": "ChatGPT Dots",
+  "url": "https://chatgpt.com/dots/01a11894-3ed2-72a3-8d38-aa079bac7032",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "OpenAI agent that can manage Codex threads and ChatGPT chats from one place.",
+  "price": "unknown",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "3:18",
+    "shown": "Corey described using it as a chief of staff to spin up and track Codex threads; Andrew found it nagging.",
+    "quote": "I use Dot as almost the manager of codec."
+   }
+  ],
+  "check": "Availability and price not stated.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "n:creativeclaw",
+  "name": "CreativeClaw",
+  "url": "https://creativeclaw.co/#pricing",
+  "kind": "mcp",
+  "category": "MCP & connectors",
+  "what": "One MCP that adds image, video and voiceover generation to Claude, Codex and other agents, pay per use.",
+  "price": "paid",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "15:18",
+    "shown": "Showed example outputs and revenue page.",
+    "quote": "with one MCP, you get to make it into much more of an artist."
+   }
+  ],
+  "check": "Revenue figures ($10k MRR, $125k lifetime) are the founder's; verify.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "gh:ace-step/ace-step-1.5",
+  "name": "ACE-Step",
+  "url": "https://github.com/ace-step/ACE-Step-1.5",
+  "kind": "repo",
+  "category": "Voice & audio",
+  "what": "Open-source song generator with vocals that runs on your own computer.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [
+   "Suno"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "13:57",
+    "shown": "Made a short hip-hop song on the hosted web version; host said it was not as good as Suno.",
+    "quote": "unlimited songs hosted by you for free."
+   }
+  ],
+  "check": "Quality below Suno per host.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 2
+ },
+ {
+  "id": "n:claudeforstartups",
+  "name": "Claude for Startups",
+  "url": "https://claude.com/programs/startups",
+  "kind": "service",
+  "category": "Cost & tokens",
+  "what": "Anthropic programme giving eligible startups a year of Claude for Teams and API credits.",
+  "price": "free",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "6:18",
+    "shown": "Read out the offer; hosts said they are applying.",
+    "quote": "free access. One year of Claude for Teams, $1,000 in Claude API credits"
+   }
+  ],
+  "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 2
+ },
+ {
+  "id": "gh:dyad-sh/dyad",
+  "name": "Dyad",
+  "url": "https://github.com/dyad-sh/dyad",
+  "kind": "repo",
+  "category": "Design & websites",
+  "what": "Open-source local app builder that turns plain English into apps using your chosen AI model.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [
+   "Lovable"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "23:51",
+    "shown": "Described features; no demo.",
+    "quote": "You just describe what you want in plain English and you get it."
+   }
+  ],
+  "check": "Model cost depends on what you plug in; free Gemini key possible.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "gh:invoke-ai/invokeai",
+  "name": "InvokeAI",
+  "url": "https://github.com/invoke-ai/InvokeAI",
+  "kind": "repo",
+  "category": "Video, clips & images",
+  "what": "Open-source local image studio with layered canvas and editing.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [
+   "Midjourney"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "11:51",
+    "shown": "Described features; no demo.",
+    "quote": "It's the AI image studio that you can run yourself."
+   }
+  ],
+  "check": "Needs a strong GPU or recent Mac.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 2
+ },
+ {
+  "id": "gh:odysseus-dev/odysseus",
+  "name": "Odysseus",
+  "url": "https://github.com/odysseus-dev/odysseus",
+  "kind": "repo",
+  "category": "Models & LLMs",
+  "what": "Private ChatGPT-style assistant on your computer with local models, memory, research and agents, made by PewDiePie.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [
+   "ChatGPT"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "2:42",
+    "shown": "Described features and the GitHub repo; no demo.",
+    "quote": "you're going to get chat, you're going to get deep research, you're going to get memory"
+   }
+  ],
+  "check": "Host says it is not as good as ChatGPT.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "gh:foundationagents/openmanus",
+  "name": "OpenManus",
+  "url": "https://github.com/FoundationAgents/OpenManus",
+  "kind": "repo",
+  "category": "Agent orchestration & teams",
+  "what": "Open-source general agent that plans, browses, codes and saves files using your own model.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [
+   "Manus"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "26:15",
+    "shown": "Described features; no demo.",
+    "quote": "You type what you want, the goal in English, and it plans the steps itself."
+   }
+  ],
+  "check": "Needs a paid API key or limited free tier.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 2
+ },
+ {
+  "id": "gh:upscayl/upscayl",
+  "name": "Upscayl",
+  "url": "https://github.com/upscayl/upscayl",
+  "kind": "repo",
+  "category": "Video, clips & images",
+  "what": "Free desktop app that upscales photos four times locally, singly or in bulk.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [
+   "Topaz Gigapixel"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "29:06",
+    "shown": "Showed the repo and described the models.",
+    "quote": "It runs on your computer so your photos never leave"
+   }
+  ],
+  "check": "Needs a Vulkan-capable GPU.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 3
+ },
+ {
+  "id": "n:omnisendmcp",
+  "name": "Omnisend MCP",
+  "url": "https://www.omnisend.com/ai/mcp/",
+  "kind": "mcp",
+  "category": "MCP & connectors",
+  "what": "MCP that lets Claude or another agent build email campaigns and customer segments in Omnisend.",
+  "price": "freemium",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "uWnQLASl95U",
+    "t": "1:48",
+    "shown": "Live demo in Claude: campaign draft from top campaigns, new-subscriber segment, competitor style guide from Gmail, then a campaign.",
+    "quote": "Based on the best performing email campaigns, I want you to use Omnisend MCP to create an email campaign"
+   }
+  ],
+  "check": "Sponsor link with 30% off; pricing and free tier not stated. Image upload through Claude failed in demo.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8.5,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 2
+ },
+ {
+  "id": "n:boringfunnels",
+  "name": "Boring Funnels",
+  "url": "https://boringfunnels.com/",
+  "kind": "service",
+  "category": "Marketing, sales & SEO",
+  "what": "Weekly full-funnel breakdowns plus a copy-able prompt for Claude Code or Codex to rebuild the funnel.",
+  "price": "paid",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "11:24",
+    "shown": "Described the product; no live use.",
+    "quote": "one-click prompt that you can one-click copy, hand to Claude Code, or hand to Codex"
+   }
+  ],
+  "check": "Price said as '$2.99 a year' in captions; verify.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "n:pexo",
+  "name": "Pexo",
+  "url": "https://pexo.ai/",
+  "kind": "service",
+  "category": "Video, clips & images",
+  "what": "AI video agent that turns an idea into a product launch video.",
+  "price": "unknown",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "0:00",
+    "shown": "Hosts discussed it and showed the site; no live build.",
+    "quote": "It's an AI video agent that turns your ideas into videos."
+   }
+  ],
+  "check": "Pricing not stated.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 4
+ },
+ {
+  "id": "n:skillry",
+  "name": "Skillry",
+  "url": "https://skillry.dev/skills/use-case/brand-identity",
+  "kind": "service",
+  "category": "Claude Code skills & plugins",
+  "what": "Paid directory of premium agent skills with a visible demo of each output.",
+  "price": "paid",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "13:39",
+    "shown": "Showed the site, a pixel promo video skill demo and its verified revenue.",
+    "quote": "This is where you pay a smaller price for premium skills and you can see exactly what the output's going to look like before you buy it."
+   }
+  ],
+  "check": "$5,000 a month revenue claim via TrustMRR; skill price $4.99 as stated.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 2
+ },
+ {
+  "id": "n:hark",
+  "name": "Hark",
+  "url": "https://hark.com/articles/introducing-hark-pro",
+  "kind": "app",
+  "category": "Coding agents & IDEs",
+  "what": "New agent app with better web browser access and widgets that track your accounts.",
+  "price": "unknown",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "4:57",
+    "shown": "Showed Alex Finn's screenshot of widgets; hosts were lukewarm and had not used it.",
+    "quote": "I don't see it being that unique enough for me to go and test it out"
+   }
+  ],
+  "check": "Early access; price unknown.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "n:instinct",
+  "name": "Instinct",
+  "url": "https://x.com/noahrshinn/status/2107161132192690558",
+  "kind": "app",
+  "category": "Automation & workflows",
+  "what": "Personal AI agent that lives in iMessage and just added group chats.",
+  "price": "unknown",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "7:12",
+    "shown": "Corey described finding accountant documents in his email within about 60 seconds by text.",
+    "quote": "So, it has access to my email."
+   }
+  ],
+  "check": "Needs email and card access; check privacy. Price not stated.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "n:spiraai",
+  "name": "Spira AI",
+  "url": "https://spira.ai/",
+  "kind": "service",
+  "category": "Marketing, sales & SEO",
+  "what": "Platform that creates and runs a fake AI influencer account promoting your product.",
+  "price": "paid",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "1:39",
+    "shown": "Showed an example AI influencer promoting a brand; hosts did not try it.",
+    "quote": "you can now get your own fake influencer that's basically just promoting your stuff."
+   }
+  ],
+  "check": "50% off offer claimed; Product Hunt number one claim not verified.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 2
+ },
+ {
+  "id": "n:tinypopups",
+  "name": "TinyPopups",
+  "url": "https://tinypopups.com/",
+  "kind": "service",
+  "category": "Marketing, sales & SEO",
+  "what": "Embeddable website popup widget with triggers, installed in about five minutes.",
+  "price": "unknown",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "18:36",
+    "shown": "Described the features and claimed reply rates; no demo.",
+    "quote": "intelligent website popups that take five it takes 5 minutes to install this on your website."
+   }
+  ],
+  "check": "30% reply rate is the maker's claim.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 3
+ },
+ {
+  "id": "n:vibecodeing",
+  "name": "vibe-code.ing",
+  "url": "https://vibe-code.ing/?category=intelligence",
+  "kind": "service",
+  "category": "Other",
+  "what": "Clean single-page directory of AI tools, monetised by sponsored spots.",
+  "price": "unknown",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "17:06",
+    "shown": "Showed the site as an example of a simple profitable idea.",
+    "quote": "this is just a really good example of a AI tool directory done right."
+   }
+  ],
+  "check": "Sponsored slot price stated as about $350.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 1
+ },
+ {
+  "id": "n:vmpal",
+  "name": "VMPal",
+  "url": "https://vmpal.com/",
+  "kind": "app",
+  "category": "Coding agents & IDEs",
+  "what": "Mac app that runs isolated virtual machines so an agent gets its own computer.",
+  "price": "paid",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "9:09",
+    "shown": "Andrew explained plans to run a fresh Mac OS VM for agents; no demo.",
+    "quote": "if you're going to give your agent a computer, you might as well put it on your own computer and then isolate it to that one computer."
+   }
+  ],
+  "check": "One-off fee of about $34-35 claimed; Mac only as described.",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "new",
+  "rank": 2
+ }
+]

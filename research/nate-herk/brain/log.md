@@ -2,6 +2,13 @@
 
 **This is history.** It records what was added and when; it may be out of date about what the brain holds now. The current state is in [index.md](index.md). Newest first.
 
+## 2026-10-08: +13 newest transcripts (all of them, Charlie's choice)
+**Ingested:** l8ywUsEJ2XQ (guest Dave of Glido, 1h09), pY5_Ux_YJjo, 7eo-11K2e3c, BvvfZKKz4Yo, eg_1NXDcoPk, 7jHXoPGnA4c, QCkHIyEPIYo, GmLcJVzkxPA, eF3yeJuifoQ, ymgH8jS6Wb8, QDsenEcAJIk, oWCcN6hSFjA, FqnNL8fnUWo, each read in full. Brain now covers all 69 saved transcripts.
+**Pages changed:** `concepts.md` +4 concepts (40 test a model on your own work, 41 evals and AI judges, 42 fixed flows in code vs agent loop, 43 stakes ladder), "Also" lines on concepts 15, 16, 25, 31, 32, 33, 35, 37, 39, a planning clash and a model-results note under limits, concept 20's "Used by"; `rules.md` +2 rules (42, 43) and "Also" lines on Rules 17, 26, 33, 35, 37, 39, 41; `index.md` counts (43 concepts, 43 rules), sources, question table, coverage; `../README.md` coverage line.
+**Rules promoted:** none changed label (no rule carries a provisional label). Rule 41 gained a second, independent source (l8y) and is noted as no longer resting on one video. New: Rule 42 (lowest rung; Fqn, with l8y and DTC) and Rule 43 (measure before you switch; 7eo, GmL, ymg, QDs).
+**Left out on purpose:** who won each model test (Sonnet 5.5 vs Opus 5.5, Opus vs GPT-6 Astra/Sol, effort levels, Dots vs Muse, Jev, Higgsfield, Ultrafast prices and the 7-day discount), the trading-challenge results, and sponsor, Skool and event plugs. Planning: l8y says go straight to building, Nate (Fqn) still does a short planning chat, iTY wants the plan attacked; recorded under "Videos that disagree" (newer wins).
+**Checked:** every new quote was matched to its transcript chunk by script before saving; `tools/audit.py` run.
+
 ## 2026-10-08: +35 transcripts (full-channel audit; now all 55 saved)
 **Ingested:** the 35 videos read for `audits/2026-10-08-nate-channel.md` (codes in the standard's code table).
 **Pages changed:** `concepts.md` +10 concepts (29-38, section H) and "Also" lines on concepts 16 and 19; `rules.md` +10 rules (31-40, all "stated"); `index.md`.
@@ -38,4 +45,4 @@
 **Changed:** `concepts.md` new section I and concept 39 (smallest context that works); concept 14's skills note now says the newest video confirms "keep skills short". `rules.md` Rule 41 (stated). `index.md` counts (39 concepts, 41 rules), question table and coverage.
 **Promoted:** none (Rule 41 is new and stated). Supports Rule 18's audit cadence.
 **Left out:** the Hyper Agent sponsor slot (3:04–4:05) and the community plug (9:08–9:39). The 2025 paper's percentages: he says himself they don't predict what trimming your own file will do.
-**Saved, not ingested:** 13 other newest transcripts (model tests and demos); Charlie decides which go in.
+**Saved, not ingested (at the time):** 13 other newest transcripts (model tests and demos); Charlie decided to ingest all of them later the same day (see the entry above).

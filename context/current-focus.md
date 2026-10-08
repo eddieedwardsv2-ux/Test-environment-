@@ -6,7 +6,7 @@ update it, then move this date on 3 months (`tools/audit.py` warns once it passe
 **Priority (90 days, set 2026-10-08 with `grill-me`):** become confident
 helping someone brand new to AI set up their own Standard AI-OS. Finish line:
 a repeatable set-up kit (prompts, skills, plugins and a step-by-step plan,
-built on `templates/standard-ai-os-v1/`) that someone can follow to get the
+built on Nate's AIS-OS kit plus our three additions, Charlie's choice 2026-10-08) that someone can follow to get the
 same result every time. First 2-3 set-ups are free, for friends and family,
 recorded (with their consent) for the YouTube channel. Project:
 `projects/ai-os-setup-kit/`. Interview notes: `brainstorms/2026-10-08-who-i-am.md`.
@@ -16,17 +16,15 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Now (2026-10-08):** cleaner brain mostly done (router trimmed, one audit
-skill, `decide` skill and Decision Desk; see the "Applied" section of
-`research/nate-herk/lesson-smallest-context.md`). Next: act on Charlie's
-Decision Desk answers (`decide` skill), then rebuild the Brain dashboard in
-the radial style (CLAUDE.md centre, skills ring, area hubs). The set-up kit resumes after.
+**Now (2026-10-08, Charlie):** the **Hands Brain** (`research/hands/`): every
+tool, skill and plugin from The Next New Thing, newest week first, ranked
+(the `hands-ingest` skill; site link in `system/pages.md`). Weeks 2026-W38 to
+W41 first, then further back a week at a time. After that: the radial Brain
+dashboard. Cleaner brain done (router trimmed, one audit skill, Decision Desk).
 
-**Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.3
-(one 90-minute session: three questions, one automation, the bike method).
-One open question left, on the Decision Desk: the base kit (recommended: Nate's kit plus our three
-additions; see Kit Compare and the Nate-first map). Once Charlie answers,
-close it in the plan, then test it on the first friend or family set-up.
+**Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
+the base is decided (Nate's kit plus our three additions). Next: test it on the
+first friend or family set-up.
 Weekly `audit` (scored, Four Cs, with receipts) on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
@@ -50,5 +48,4 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 - Unlisted test video for the channel
 - **Mac items** (Obsidian, `3d-brain`, plugins, Codex check): all in `context/mac-day.md`, started when Charlie says "I'm on Mac"
 - vidIQ (after 5 videos), Canva thumbnails (after 3 videos)
-- The Next New Thing channel research (159 videos listed)
 - Decorating business (parked, not deleted)

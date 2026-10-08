@@ -2,7 +2,7 @@
 
 These files come from Nate Herk's AIS-OS starter kit, https://github.com/nateherkai/AIS-OS (commit ce9cb93, 2026-09-06), under the MIT licence below. The Three Ms of AI™ and The Four Cs of an AI OS™ are trademarks of Nate Herk; attribution is kept in each file.
 
-- `.claude/skills/onboard/`, `.claude/skills/audit/`, `.claude/skills/link/`, `.claude/skills/level-up/`, `.claude/skills/grill-me/` (adapted)
+- `references/parked-skills/onboard/` (parked 2026-10-08), `.claude/skills/audit/`, `.claude/skills/link/`, `.claude/skills/level-up/`, `.claude/skills/grill-me/` (adapted)
 - `references/3ms-framework.md`, `EXPANSIONS.md`, `connections.md`, `aios-intake.md` (adapted)
 
 ```

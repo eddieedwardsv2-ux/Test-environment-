@@ -6,7 +6,7 @@
 
 **Supporting** sources (other Nate transcripts in `research/nate-herk/`) are cited only to back up or challenge a point, and are labelled *supporting*.
 **Wider course and newer videos (ingested 2026-10-07):** the other 14 saved transcripts (bCl, jdb, 3XI, c0k, Lrg, yys, 0WD, 9KO, RzL, e18, kB9, HIR, zKB, plus 9hetShMMp2s which added nothing). They feed section G and the "Also: [code m:ss]" lines. Codes are defined in the table in [standard-ai-os-v1.md](../../../system/standard-ai-os-v1.md); zKB (not in that table) is [Master 95% of Claude Code Skills in 28 Minutes](../master-95-of-claude-code-skills-in-28-minutes--zKBPwDpBfhs-transcript.md). When videos disagree, the newer one wins: upload order is in [videos.md](../videos.md) (smaller # = newer). 35 more transcripts from the 2026-10-08 full-channel audit feed section H (codes in the standard's code table).
-**Date:** 2026-10-07. History of changes is in [log.md](log.md); current coverage is in [index.md](index.md).
+**Date:** 2026-10-07 (updated 2026-10-08). History of changes is in [log.md](log.md); current coverage is in [index.md](index.md).
 **Rules for this file:** text in quote marks is the exact caption wording (caption slips kept: "cloudmd" = CLAUDE.md, "wiks" = wikis, "crrons" = crons, "Herk 2" = Nate's own AI OS project). Everything else is paraphrase. Our own reading is marked **(inference)**.
 
 ---
@@ -151,6 +151,7 @@ A hook runs when the agent tries to finish its turn. If it wrote code it never r
 Source: Karpathy ([transcript][kb]).
 Also: "every single skill that I build works in some sort of verification loop" [9KO 9:40](https://www.youtube.com/watch?v=9KOtMsZ9I28&t=580s).
 *Supporting:* "You verify yourself so that I don't have to verify." [9:15](https://www.youtube.com/watch?v=XNQBCRcwXV4&t=555s) ([transcript](../i-deleted-all-my-claude-skills-and-claude-got-smarter--XNQBCRcwXV4-transcript.md)).
+Also: "It delivered output one and then it watched it. It realized there was some mistakes and then it came back and it delivered output two." [7jH 18:33](https://www.youtube.com/watch?v=7jHXoPGnA4c&t=1113s).
 **Used by:** Rule 16 ([rules.md](rules.md)).
 
 **16. Real-world testing**
@@ -161,6 +162,7 @@ The last step is testing on real things. Teaching test: it writes down what done
 Also: the emoji crash [8:37](https://www.youtube.com/watch?v=bvGptCLDhyo&t=517s). Source: Karpathy ([transcript][kb]).
 Also: a slides skill that couldn't see its own output got Chrome so it could "open the page screenshot it look at it" [bCl 1:03:37](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=3817s); "Before returning the final output, define the acceptance criteria." [HIR 8:05](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=485s).
 Also: "But, if Claude has your files and your examples and your workflows and your style guides and the actual success criteria for what good looks like" [brB 5:34](https://www.youtube.com/watch?v=brB-hSiV2iU&t=334s)
+Also: "I don't think that just giving Astra seven trading days was enough to really know if this is a viable strategy." [eg_ 17:22](https://www.youtube.com/watch?v=eg_1NXDcoPk&t=1042s); a model refusing to act only shows up in the real setting, "it actually has a restriction in there and it stopped trading for me." [eg_ 4:09](https://www.youtube.com/watch?v=eg_1NXDcoPk&t=249s).
 **Used by:** Rule 17, Rule 27 ([rules.md](rules.md)).
 
 ## F. The point of it all
@@ -200,7 +202,7 @@ Level 1 is a router plus folders. Move to a compiled wiki (level 2) when notes p
 Also: "If there's not pain, then why create more?" [DTC 4:04](https://www.youtube.com/watch?v=DTCyvo6cC54&t=244s); "in a year, will it be good for me to have this memory in here?" [DTC 27:23](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1643s).
 > "My wiki has links, isn't that a knowledge graph? Not exactly." — [12:41](https://www.youtube.com/watch?v=DTCyvo6cC54&t=761s)
 Added 2026-10-08: links between wiki pages are level 2, "it's like a a see also. It's like backlinks"; level 4 knowledge graphs record *how* things relate, and he plays with them but doesn't use them day to day. So "fully connected" at our level means every page links to related pages, not a graph tool.
-**Used by:** no rule yet; level 1 is concept 3's router (inference).
+**Used by:** Rule 42 ([rules.md](rules.md)); level 1 is concept 3's router (inference).
 
 **21. Skills: progressive loading, and the description is the trigger**
 Claude reads only each skill's name and description (front matter, about 100 tokens) to pick one, then the full SKILL.md, then extra files only if needed. So the description must use the words a person would actually say, two skills mustn't compete, and broken front matter (an unclosed quote) stops it firing. Test with an obvious request, a reworded one and an unrelated one. Keep SKILL.md under 500 lines.
@@ -235,6 +237,7 @@ Keys live in a `.env` file kept out of Git and out of chat. Prefer an API key pl
 > "If you rely on these connections, that is not great" [jdb 1:37:24](https://www.youtube.com/watch?v=jdbOVepEtUE&t=5844s)
 > "if you switch off to a different desktop app or a different harness, you lose everything." [jdb 1:37:24](https://www.youtube.com/watch?v=jdbOVepEtUE&t=5844s)
 Also: "gets excluded from anytime we do a public push" [bCl 41:50](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=2510s); MCP token cost [bCl 39:45](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=2385s).
+Also: "You don't want to paste it right in here into the chat thread, you want to paste it into the .env file." [oWC 2:35](https://www.youtube.com/watch?v=oWCcN6hSFjA&t=155s); keys in one file move with you, "I like to put all my API keys in there so that if I ever need to move them over to cloud code or if I need to move them over to trigger.dev, I already have them in one spot" [Fqn 8:38](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=518s).
 **Used by:** Rule 26 ([rules.md](rules.md)).
 
 **26. Grill me: interview the knowledge out of your head**
@@ -279,6 +282,7 @@ The worker should not mark its own homework: a different model or persona checks
 > "is this a model problem, is this a harness problem? Or is this an organization problem?" [6LN 32:07](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1927s)
 > "Claude doesn't get to declare itself done. A different model has to look at it with a different persona" [iTY 22:25](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=1345s)
 > "by the time it tells you it's done, you stress test it more. and you try to find those edge cases" [iTY 9:43](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=583s)
+Also: stress test an automation with many helpers before a customer finds the bugs, "spin up 50 different sub aents and have all of them test this thing, try to break it" [Fqn 22:20](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=1340s); an AI judge checked against a human is concept 41.
 **Used by:** Rule 33 ([rules.md](rules.md)).
 
 **32. Skills do one job, are built from a real run, and retire when they stop earning**
@@ -286,6 +290,7 @@ Each skill or agent does one specific job. Build it by doing the task together o
 > "the whole idea is that you want a skill to do one very specific job" [Xpb 1:06:25](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=3985s)
 > "So you want to make sure that your skill is actually adding value and not holding" [6LN 24:29](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1469s)
 > "The way that I build my skills is I have Claude Code do something with me. I walk it through the steps" [mpA 6:21:32](https://www.youtube.com/watch?v=mpALXah_PBg&t=22892s)
+Also: reverse-engineer a good example into a skill, "Analyze this video, which was created by Opus 5.5, and figure out why this is so good." [7jH 5:07](https://www.youtube.com/watch?v=7jHXoPGnA4c&t=307s); and keep feeding each run back, "If you ever find yourself repeating something, just throw it in the skill." [7jH 18:03](https://www.youtube.com/watch?v=7jHXoPGnA4c&t=1083s).
 **Used by:** Rule 34 ([rules.md](rules.md)).
 
 **33. Unattended runs: one-shot, stateless, bounded, tested by hand first, fixed parts in scripts**
@@ -293,6 +298,7 @@ A scheduled or background run must never need to stop and ask, can only see the 
 > "the agent was just interpreting the message different every time and it just acted differently" [Xpb 3:00:25](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=10825s)
 > "So, bound the scope, name the deliverable, and then all your sub agents can be put on Haiku." [jZg 11:11](https://www.youtube.com/watch?v=jZgcWCzxh1I&t=671s)
 > "You're not around. So, you probably want to make sure that it doesn't ever have to stop and ask you questions." [ehg 1:33](https://www.youtube.com/watch?v=ehg4fhydTgs&t=93s)
+Also: "we want to have Codex do as much verification on it as possible." [Fqn 9:38](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=578s); wake-ups pass notes, "every time an agent wakes up, it's going to leave some sort of handoff message" [eg_ 1:31](https://www.youtube.com/watch?v=eg_1NXDcoPk&t=91s). Deterministic versus agent loop is concept 42.
 **Used by:** Rule 35 ([rules.md](rules.md)).
 
 **34. Permissions in layers: deny plus allow, start strict, helpers inherit, read-only and drafts first**
@@ -307,6 +313,7 @@ Before publishing, run a security review and use a hook to strip private data, n
 > "that there's a hook that fires to remove any PII, any sensitive data of that client that I don't want living on my GitHub." [6LN 23:59](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1439s)
 > "if Claude reads malicious content during a run, then it theoretically could be tricked into sending data to an external server." [ehg 11:41](https://www.youtube.com/watch?v=ehg4fhydTgs&t=701s)
 > "I basically told it to run a security review and make sure that my API keys aren't exposed and that there's no vulnerabilities" [sag 30:01](https://www.youtube.com/watch?v=saggDHHnmtQ&t=1801s)
+Also (a guest): "if you protect your secrets and your credentials you have rowle security on" [l8y 1:01:05](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=3665s). The stakes ladder is concept 43.
 **Used by:** Rule 37 ([rules.md](rules.md)).
 
 **36. File hygiene: scratch apart from deliverables, folder READMEs, project first, start every task in the project**
@@ -321,6 +328,7 @@ Small habits that add up: paste the whole error, ask the AI to do the chores it 
 > "try to force yourself to do everything from here, from this interface" [Xpb 45:12](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=2712s)
 > "do not automatically run everything at maximum effort or even just high." [FBV 4:39](https://www.youtube.com/watch?v=FBVNS1l5Vb8&t=279s)
 > "it has some action items, it actually just tells you to do some stuff that it could do itself" [sag 15:17](https://www.youtube.com/watch?v=saggDHHnmtQ&t=917s)
+Also: use the cheap model for the cheap decision, "you're not using a slower and more expensive model to actually categorize all of those comments in the first place." [ymg 4:04](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=244s); a big model can direct small ones, "using Opus 5.5 as the orchestrator that spins up and sends off very specific instructions to a bunch of little GBD6 soul workers." [eF3 33:35](https://www.youtube.com/watch?v=eF3yeJuifoQ&t=2015s); start pay-per-use until your pattern is clear, "starting with pay-per-usage is a lot safer than just committing to a monthly subscription." [oWC 10:11](https://www.youtube.com/watch?v=oWCcN6hSFjA&t=611s); adopt by fit, "I think it's really about understanding what are the things that matter most to you." [Bvv 15:44](https://www.youtube.com/watch?v=BvvfZKKz4Yo&t=944s); and if a tool cannot explain itself you lose trust, "I start to lose trust over what kind of knowledge it actually has." [Bvv 12:41](https://www.youtube.com/watch?v=BvvfZKKz4Yo&t=761s). How he tests a model is concept 40.
 **Used by:** Rule 39 ([rules.md](rules.md)).
 
 **38. Parts rot at different speeds; score each audit**
@@ -340,7 +348,54 @@ Newer models need far less instruction. Anthropic cut over 80% of Claude Code's 
 > "every time a new model drops and you switch into it, you should probably just run this sort of audit anyways" [oz2 10:40](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=640s)
 Also: what to keep, "I mean my voice, I mean my goals, I mean my audience and the way that my business works." [oz2 6:06](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=366s); hidden extra context, "there can be instructions coming from somewhere else that you don't even know you're technically paying for." [oz2 8:37](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=517s); his audit prompt, "Audit this repo and show me the smallest change that would make the path from a raw YouTube idea to a filming ready script faster." [oz2 9:39](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=579s).
 *Source behind it:* Anthropic, "The new rules of context engineering for Claude 5 generation models" (Thariq Shihipar, 2026-07-24), summarised in [../anthropic-context-engineering-claude-5-source.md](../anthropic-context-engineering-claude-5-source.md). Supports concepts 2 (expertise vs situational) and 14 (keep skills short), and Rule 18's audit cadence.
+Also (a guest): models improving makes planning, specs and checks lighter, "the better models and harnesses get, the easier all the things that we have to do as developers get." [l8y 32:27](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=1947s) This is a second source for pruning rules written for older models (Rule 41).
 **Used by:** Rule 41 ([rules.md](rules.md)).
+
+
+*Added later the same day:* the other 13 newest transcripts (8 model or tool tests, 1 trading experiment, 1 Codex automations tutorial, 1 guest interview, 1 business-idea video, 1 video-editing demo). Model tests date within weeks, so who won which task is not kept here; only how Nate tests, what carries over when you switch model, and four ideas that are new (40-43). Other lessons from them sit in "Also" lines on concepts 15, 16, 25, 31, 32, 33, 35, 37 and 39.
+
+**40. Test a model on your own work: same prompt, isolated, cost counted, then pick by the job**
+This is how Nate tests a new model, and what to check when you switch. Give every model the exact same prompt at the same effort level, run them side by side in separate work trees so they cannot touch each other's files, record runtime and cost (at API prices even on a subscription), judge the outputs without knowing which is which, and ask which model gives more for the same money. One run is not proof, and a short trial can mislead. What carried over across his tests: a task with a clear spec and a way to check it goes to the cheaper model first; a vague, open-ended goal is where the bigger model's taste pays for itself; start effort at medium and scale up only for work that needs the reasoning; and fast modes cost many times the usage. Then re-run it on your own skills and prompts whenever the model changes (Rule 41).
+> "you got to get in there and you got to test it on your own skills and your own prompts and your own processes." [7eo 25:17](https://www.youtube.com/watch?v=7eo-11K2e3c&t=1517s)
+> "I put them in different work trees so they literally can't touch." [GmL 1:02](https://www.youtube.com/watch?v=GmLcJVzkxPA&t=62s)
+> "if I had a hundred bucks and I gave a hundred bucks to Opus and I gave a 100 bucks to Soul, which one would give me a better output or better quality for that 100 bucks?" [eF3 0:32](https://www.youtube.com/watch?v=eF3yeJuifoQ&t=32s)
+> "if you have a task with an objective definition of done, then try that out with Sonnet 5.5 first." [7eo 1:33](https://www.youtube.com/watch?v=7eo-11K2e3c&t=93s)
+> "opus and sonnet would have given me a similar result but sonnets would have been cheaper." [7eo 13:32](https://www.youtube.com/watch?v=7eo-11K2e3c&t=812s)
+> "they said to just start on medium and scale it up or down if you need." [QCk 7:10](https://www.youtube.com/watch?v=QCkHIyEPIYo&t=430s)
+Also: the lesson of the trial itself, "obviously one test like this isn't definitive" [eF3 27:30](https://www.youtube.com/watch?v=eF3yeJuifoQ&t=1650s); vague goals suit Claude models and exact specs suit GPT models, "GBT models just feel like they are a really good obedient worker." [GmL 41:22](https://www.youtube.com/watch?v=GmLcJVzkxPA&t=2482s); the point of testing, "the whole point of testing models is testing them on your use cases, your knowledge work, the way that you use AI." [GmL 35:48](https://www.youtube.com/watch?v=GmLcJVzkxPA&t=2148s); effort levels, "Max, I think was just way too much for not enough good." [QCk 25:26](https://www.youtube.com/watch?v=QCkHIyEPIYo&t=1526s); fast modes, "I would never really care about the speed if it was going to eat that much more of my weekly usage." [pY5 4:42](https://www.youtube.com/watch?v=pY5_Ux_YJjo&t=282s); a short experiment is thin evidence, "I don't think that just giving Astra seven trading days was enough to really know if this is a viable strategy." [eg_ 17:22](https://www.youtube.com/watch?v=eg_1NXDcoPk&t=1042s).
+**Used by:** Rule 43 ([rules.md](rules.md)); also Rule 39 (concept 37).
+
+**41. Evals before trust: a golden set, repeat runs, and an AI judge checked against a human**
+Before you rely on a cheap model, a changed prompt or an AI agent, test it against examples where you already know the right answer (a golden set), and expect results to vary run to run, so one fixed failure proves little. When quality is a matter of taste, an AI judge can check outputs at scale, but only after you have a person mark about 100 examples and measure how often the judge agrees, then tune the judge's instructions until it does. If you switch the judge's model, check the agreement again. The judge idea is the guest Dave's (Glido); Nate's own examples are the golden data set and the repeat runs.
+> "What you're really going to want to do is run evals, meaning you're going to have a golden data set of 100 use cases and 100 correct answers" [ymg 12:43](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=763s)
+> "this is essentially our golden data set that we're testing the agent against because we know what the correct answers should be" [QDs 4:35](https://www.youtube.com/watch?v=QDsenEcAJIk&t=275s)
+> "fixing just one example doesn't prove the whole agent is reliable" [QDs 5:06](https://www.youtube.com/watch?v=QDsenEcAJIk&t=306s)
+> "creating alignment between the human reviewer and the LLM." [l8y 38:04](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=2284s)
+> "this is where you can essentially capture the taste." [l8y 38:34](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=2314s)
+> "if you switch the model it might not be as good anymore because the model might interpret it differently." [l8y 41:08](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=2468s)
+Also: why the decision model is not trusted blind, "don't just plug in Jev and trust what it says automatically." [ymg 12:43](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=763s); why agents vary, "they are non-deterministic." [QDs 5:06](https://www.youtube.com/watch?v=QDsenEcAJIk&t=306s).
+**Used by:** Rules 17, 33 and 43 ([rules.md](rules.md)). Builds on concept 31 (a separate checker).
+
+**42. Fixed flows belong in code; use an agent loop only when it must loop**
+Ask whether an automation is deterministic (the same steps in the same order every time, with AI only inside one or two steps, such as drafting) or whether it must decide how many times to look. A deterministic flow should be written as code and run by a scheduler or a trigger outside the agent: it costs far less (agent routines on a subscription eat the weekly limit) and cannot drift. Plan with the AI, have it build and test locally, then prove one live run on the host before switching the schedule on. Keep the agent loop (the Codex SDK) for work that truly needs the AI to go back and look again, and build the simplest version first.
+> "the more deterministic your automation gets, the more of a waste it would be to use codeex to host that." [Fqn 6:07](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=367s)
+> "build the simplest solution possible and only move up the sort of AI systems pyramid as I call it when you truly need that functionality." [Fqn 29:24](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=1764s)
+> "this eats at your actual weekly usage limit." [Fqn 0:01](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=1s)
+> "we want to have Codex do as much verification on it as possible." [Fqn 9:38](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=578s)
+> "I actually did this before where I had a routine that was very simple like this and after about a month, it started to just go rogue." [Fqn 10:08](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=608s)
+Also: a stateless loop leaves notes for itself, "every time an agent wakes up, it's going to leave some sort of handoff message" [eg_ 1:31](https://www.youtube.com/watch?v=eg_1NXDcoPk&t=91s); pay per use against a subscription has a break-even, "there's a break-even point." [oWC 9:41](https://www.youtube.com/watch?v=oWCcN6hSFjA&t=581s); the ladder in concept 20 is the same advice.
+**Used by:** Rules 35 and 42 ([rules.md](rules.md)). Extends concept 33.
+
+**43. Match your care to who will use it: the stakes ladder (a guest's view)**
+Guest Dave (Glido) puts building on a ladder: a tool just for you (stakes very low, just build), then your team, then a client's company (contracts and data-privacy duties), then a product the public uses. Each rung is more complex and riskier, and you earn your way up rather than skipping rungs. Bad architecture shows up as a slow or broken app you will notice; a security breach cannot be taken back. Beginners are not expected to know security, only to know the topics to ask the AI about: a standard database with row-level security, strong passwords and two-step sign-in, secrets kept out of code, and firewalls that only let the front end through. He also says he now goes straight to building rather than writing big specs first (see "Videos that disagree" below).
+> "it gets more complex and the stakes are bigger." [l8y 14:29](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=869s)
+> "if you just build something for you, you use it. Stakes are very low." [l8y 14:29](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=869s)
+> "security breach that's one thing that you like cannot take back" [l8y 20:07](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=1207s)
+> "you really do have to earn your way up to the next rung." [l8y 20:07](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=1207s)
+> "if you protect your secrets and your credentials you have rowle security on and you put proper firewalls on your database your back end and whitelist it for your like front end application that is security in a nutshell" [l8y 1:01:05](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=3665s)
+> "It's just the awareness being able to like ask the right questions" [l8y 1:02:06](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=3726s)
+Also: why planning matters less now, "the better models and harnesses get, the easier all the things that we have to do as developers get." [l8y 32:27](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=1947s) Most of this video is the guest talking, so it is his view, not Nate's; Nate's questions only steer it.
+**Used by:** Rules 37 and 42 ([rules.md](rules.md)). Supports concept 35 (check before going public).
 
 ---
 
@@ -353,7 +408,9 @@ Also: what to keep, "I mean my voice, I mean my goals, I mean my audience and th
   - *Auto Dream* (automatic memory clean-up, Lrg #152): "Now, this isn't confirmed with official documentation." [Lrg 6:05](https://www.youtube.com/watch?v=LrgfmZkl3nc&t=365s). Treat as unconfirmed.
   - *Agent teams:* "they're very very expensive. So try to use them very sparingly." [jdb 5:42:35](https://www.youtube.com/watch?v=jdbOVepEtUE&t=20555s). Sub-agents (concept 23) are the default.
   - *Skills:* bCl (#118) and zKB (#170) teach detailed skills; XNQ (#54) warns over-specific ones hold newer models back (concept 14). Newer wins: keep skills short. Confirmed by the newest video (oz2, #1) and Anthropic's own article (concept 39).
-- **Not Nate:** most of [RzL](../how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) is guest Cole Medin talking; don't cite it as Nate's view unless the line is clearly Nate's.
+  - *Planning first.* iTY (#77, Nate) says have the AI attack the plan before it builds (concept 30). Newer: l8y (#5, guest Dave) now goes straight to building and iterates, "I go straight into building and like I let the model figure out what it like how it should structure things." [l8y 23:12](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=1392s); Nate himself in Fqn (#20) still opens an automation with a short planning chat, "So, the first step of planning out the automation is the planning." [Fqn 2:03](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=123s) Current view: a short plan or interview step, not a big spec. Charlie already declined plan mode (Rule 32).
+- **Not Nate:** most of [RzL](../how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) is guest Cole Medin talking; don't cite it as Nate's view unless the line is clearly Nate's; the same goes for [l8y](../how-to-actually-build-sell-software-with-ai-as-a-non-techie--l8ywUsEJ2XQ-transcript.md), where the guest is Dave of Glido (concepts 41 and 43).
+- **Model-test results are not kept:** who won which task in 7eo, QCk, GmL, eF3, pY5, Bvv, eg_, ymg and oWC was true for those model versions in Sept-Oct 2026 and will not hold; only the testing method (concept 40) is. Product details (Dots, Muse, Jev, Higgsfield prices, the 7-day discount) are likewise dated.
 - **Token-budget numbers** (250-300k hand-off point, peak hours, the 200-line limit's exact figure) are tied to today's models and plans; the habits matter more than the numbers.
 - **Promotion to ignore:** the Hyper Agent sponsor slot ([6:38](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=398s)–[7:41](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=461s)); free Skool and AI OS kit links ([1:04](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=64s), [2:02](https://www.youtube.com/watch?v=bvGptCLDhyo&t=122s)).
 

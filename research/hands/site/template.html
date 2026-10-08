@@ -1,0 +1,190 @@
+<title>Hands Brain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: Nate Herk's 3D-brain look (dark glass panels, Archivo / DM Sans / JetBrains Mono).
+   Three calm layers: use-now picks, best per category (one line each), week by week. Detail opens in a sheet. */
+:root{
+  --bg:#05070d; --panel:rgba(12,17,28,.86); --panel-solid:#0b1020; --text:#e8ecf4; --muted:#8b94a8;
+  --line:rgba(255,255,255,.08); --line-strong:rgba(255,255,255,.16); --accent:#38bdf8;
+  --good:#34d399; --warn:#fbbf24; --bad:#fb7185;
+  --display:'Archivo','DM Sans',system-ui,sans-serif; --font:'DM Sans',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace; --radius:14px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 var(--font);
+  background-image:radial-gradient(1200px 600px at 70% -10%,rgba(56,189,248,.10),transparent 60%),radial-gradient(900px 500px at -10% 30%,rgba(167,139,250,.07),transparent 60%);
+  background-attachment:fixed}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:28px 72px}
+header{display:grid;gap:6px;margin-bottom:22px}
+.eyebrow{font:600 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font:800 clamp(30px,6vw,46px)/1.02 var(--display);margin:0;letter-spacing:-.01em}
+.sub{color:var(--muted);max-width:64ch;margin:0}
+.stats{display:flex;gap:18px;flex-wrap:wrap;font:12px var(--mono);color:var(--muted);margin-top:6px}
+.stats b{color:var(--text);font-weight:600}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  padding:10px 12px;margin:0 0 22px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);backdrop-filter:blur(10px)}
+.bar input{flex:1 1 200px;min-width:0;background:transparent;border:1px solid var(--line-strong);border-radius:10px;color:var(--text);font:14px var(--font);padding:8px 10px}
+.chip{font:600 12px var(--mono);border:1px solid var(--line-strong);background:transparent;color:var(--muted);border-radius:999px;padding:6px 11px;cursor:pointer}
+.chip[aria-pressed="true"]{color:var(--bg);background:var(--accent);border-color:var(--accent)}
+section{margin-bottom:34px}
+h2{font:800 20px var(--display);margin:0 0 4px}
+.hint{color:var(--muted);margin:0 0 14px;font-size:14px}
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 15px;cursor:pointer;display:grid;gap:6px;text-align:left;color:inherit;font:inherit;min-width:0}
+.card:hover,.row:hover{border-color:var(--line-strong)}
+.card .name{font:600 16px var(--display)}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.cat{font:600 11px var(--mono);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 45%,transparent);border-radius:6px;padding:1px 6px}
+.st{font:600 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:2px 7px}
+.st.new{background:rgba(56,189,248,.16);color:var(--accent)} .st.rising{background:rgba(52,211,153,.16);color:var(--good)}
+.st.steady{background:rgba(255,255,255,.07);color:var(--muted)} .st.replaced{background:rgba(251,113,133,.14);color:var(--bad)}
+.price{font:11px var(--mono);color:var(--muted)}
+.cats{display:grid;gap:8px}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.row summary{list-style:none;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,2fr) auto;gap:12px;align-items:center;padding:12px 14px;cursor:pointer}
+.row summary::-webkit-details-marker{display:none}
+.row .cname{font:600 13px var(--mono);color:var(--c)}
+.row .best{min-width:0}
+.row .best b{font:600 15px var(--display)}
+.row .best span{color:var(--muted);font-size:13px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .more{font:12px var(--mono);color:var(--muted);white-space:nowrap}
+.rank{list-style:none;margin:0;padding:0 14px 12px;display:grid;gap:4px}
+.rank li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:6px 0;border-top:1px solid var(--line);cursor:pointer}
+.rank .n{font:12px var(--mono);color:var(--muted)}
+.rank .gone{color:var(--muted);text-decoration:line-through}
+.weeks{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.wk{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.wk h3{font:600 15px var(--display);margin:0 0 4px}
+.wk .vids{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:4px;font-size:14px}
+.wk .vids a{color:var(--text)} .wk .vids small{color:var(--muted);font-family:var(--mono)}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.twocol h4{font:600 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin:0 0 6px}
+.mini{display:flex;flex-wrap:wrap;gap:6px}
+.mini button{font:13px var(--font);background:transparent;color:var(--text);border:1px solid var(--line-strong);border-radius:8px;padding:4px 8px;cursor:pointer}
+.empty{color:var(--muted);border:1px dashed var(--line-strong);border-radius:12px;padding:18px}
+dialog{max-width:640px;width:calc(100% - 32px);background:var(--panel-solid);color:var(--text);border:1px solid var(--line-strong);border-radius:var(--radius);padding:0}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.sheet{padding:18px 18px 20px;display:grid;gap:10px}
+.sheet h3{font:800 22px var(--display);margin:0}
+.sheet p{margin:0}
+.sheet .k{font:600 11px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.sheet blockquote{margin:4px 0 0;padding:8px 12px;border-left:2px solid var(--accent);color:#c9d2e3;font-style:italic}
+.sheet a{color:var(--accent)}
+.close{justify-self:end;font:600 13px var(--mono);background:transparent;color:var(--muted);border:1px solid var(--line-strong);border-radius:8px;padding:6px 10px;cursor:pointer}
+button:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:640px){.row summary{grid-template-columns:minmax(0,1fr) auto}.row .cname{grid-column:1/-1}.twocol{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Charlie's AI OS · Hands Brain</div>
+    <h1>The best tools to use now</h1>
+    <p class="sub">Every tool, skill, plugin and repo from The Next New Thing, read week by week from newest to oldest. Each category is ranked; when a newer tool replaces an older one, the old one drops down and is crossed out.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="bar" role="search">
+    <input id="q" type="search" placeholder="Search a tool or what it does" aria-label="Search tools">
+    <span id="kinds"></span>
+  </div>
+
+  <section>
+    <h2>Use these now</h2>
+    <p class="hint">The highest-ranked tools for you: free where possible, useful for Claude Code, your AI OS or the channel.</p>
+    <div class="picks" id="picks"></div>
+  </section>
+
+  <section>
+    <h2>Best in each category</h2>
+    <p class="hint">One line per category: the current number one. Tap a line to see the full ranking.</p>
+    <div class="cats" id="cats"></div>
+  </section>
+
+  <section>
+    <h2>Week by week</h2>
+    <p class="hint">What each week brought: what's new, and what came back again.</p>
+    <div class="weeks" id="weektabs" role="group" aria-label="Week"></div>
+    <div id="week"></div>
+  </section>
+
+  <footer>Source: The Next New Thing (YouTube), descriptions and transcripts. Titles are often clickbait, so tools are judged on what the videos show. Scores: your relevance × 3, mentions × 2, recency and price. Rebuild: <code>python3 tools/build_hands.py</code>.</footer>
+</div>
+
+<dialog id="sheet"><div class="sheet" id="sheetbody"></div></dialog>
+
+<script>
+const D = __DATA__;
+const PAL = ["#38bdf8","#a78bfa","#34d399","#f472b6","#fbbf24","#fb923c","#67e8f9","#fda4af","#6ee7b7","#c4b5fd","#fcd34d","#93c5fd","#f9a8d4","#86efac","#8b94a8"];
+const color = c => PAL[Math.max(0, D.categories.indexOf(c)) % PAL.length];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const KINDS = [["all","All"],["skill","Skills"],["plugin","Plugins"],["mcp","MCP"],["repo","Repos"],["app","Apps"],["model","Models"]];
+let kind = "all", q = "", wk = D.weeks[0]?.week;
+const byId = Object.fromEntries(D.tools.map(t => [t.id, t]));
+const secs = t => (t || "").split(":").reduce((a, b) => a * 60 + (+b || 0), 0);
+
+function match(t){
+  if (kind !== "all" && t.kind !== kind) return false;
+  if (!q) return true;
+  return (t.name + " " + t.what + " " + t.category).toLowerCase().includes(q);
+}
+const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span><span class="price">${esc(t.price)}</span></div>`;
+
+function render(){
+  const live = D.tools.filter(match);
+  document.getElementById("stats").innerHTML =
+    `<span><b>${D.tools.length}</b> tools</span><span><b>${D.weeks.length}</b> week${D.weeks.length === 1 ? "" : "s"}</span><span><b>${D.weeks.reduce((n, w) => n + w.videos.length, 0)}</b> videos</span><span>newest week <b>${esc(D.weeks[0]?.week || "–")}</b></span>`;
+  const picks = live.filter(t => t.status !== "replaced" && t.for_charlie >= 2).slice(0, 6);
+  document.getElementById("picks").innerHTML = picks.length ? picks.map(t =>
+    `<button class="card" data-id="${esc(t.id)}"><span class="name">${esc(t.name)}</span><p>${esc(t.what)}</p>${tags(t)}</button>`).join("")
+    : `<div class="empty">No tools match. Clear the search to see them all.</div>`;
+  document.getElementById("cats").innerHTML = D.categories.map(c => {
+    const list = live.filter(t => t.category === c);
+    if (!list.length) return "";
+    const top = list[0];
+    return `<details class="row" style="--c:${color(c)}"><summary><span class="cname">${esc(c)}</span>
+      <span class="best"><b>${esc(top.name)}</b><span>${esc(top.what)}</span></span><span class="more">${list.length > 1 ? "+" + (list.length - 1) + " more" : "only one"}</span></summary>
+      <ol class="rank">${list.map((t, i) => `<li data-id="${esc(t.id)}"><span class="n">${i + 1}</span><span class="${t.status === "replaced" ? "gone" : ""}">${esc(t.name)}${t.replaced_by ? ` <small>replaced by ${esc(t.replaced_by)}</small>` : ""}</span><span class="st ${t.status}">${t.status}</span></li>`).join("")}</ol></details>`;
+  }).join("") || `<div class="empty">No tools match.</div>`;
+  document.getElementById("weektabs").innerHTML = D.weeks.map(w =>
+    `<button class="chip" data-wk="${esc(w.week)}" aria-pressed="${w.week === wk}">${esc(w.week)}</button>`).join("");
+  const w = D.weeks.find(x => x.week === wk);
+  if (!w){ document.getElementById("week").innerHTML = `<div class="empty">No weeks ingested yet.</div>`; return; }
+  const inWeek = live.filter(t => t.weeks.includes(w.week));
+  const fresh = inWeek.filter(t => t.first === w.week), back = inWeek.filter(t => t.first !== w.week);
+  const btns = l => l.length ? `<div class="mini">${l.map(t => `<button data-id="${esc(t.id)}">${esc(t.name)}</button>`).join("")}</div>` : `<p class="hint">None.</p>`;
+  document.getElementById("week").innerHTML = `<div class="wk"><h3>${esc(w.week)}</h3><p class="hint" style="margin:0">${esc(w.summary)}</p>
+    <ul class="vids">${w.videos.map(id => D.videos[id]).filter(Boolean).map(v => `<li><a href="https://www.youtube.com/watch?v=${esc(v.id)}">${esc(v.title)}</a> <small>${esc(v.date || "")}</small></li>`).join("")}</ul>
+    <div class="twocol"><div><h4>New this week (${fresh.length})</h4>${btns(fresh)}</div><div><h4>Back again (${back.length})</h4>${btns(back)}</div></div></div>`;
+}
+function open(id){
+  const t = byId[id]; if (!t) return;
+  const sight = t.sightings.map(s => {
+    const v = D.videos[s.video] || {};
+    const link = s.video ? `https://www.youtube.com/watch?v=${esc(s.video)}${s.t ? "&t=" + secs(s.t) + "s" : ""}` : "";
+    return `<div><p class="k">${esc(s.week)}${s.t ? " · " + esc(s.t) : ""}</p><p>${esc(s.shown || "Mentioned.")} ${link ? `<a href="${link}">Watch${s.t ? " at " + esc(s.t) : ""}</a>` : ""}</p>${s.quote ? `<blockquote>“${esc(s.quote)}”</blockquote>` : ""}<p class="price">${esc(v.title || "")}</p></div>`;
+  }).join("");
+  document.getElementById("sheetbody").innerHTML = `<button class="close" id="x">Close</button><h3>${esc(t.name)}</h3>${tags(t)}
+    <p>${esc(t.what)}</p>
+    <p class="k">Rank ${t.rank} in ${esc(t.category)} · score ${t.score} · seen in ${t.mentions} video${t.mentions > 1 ? "s" : ""}</p>
+    ${t.replaced_by ? `<p><b>Replaced by ${esc(t.replaced_by)}.</b></p>` : ""}
+    ${t.replaces.length ? `<p><span class="k">Replaces</span><br>${esc(t.replaces.join(", "))}</p>` : ""}
+    ${t.check ? `<p><span class="k">Check before trusting</span><br>${esc(t.check)}</p>` : ""}
+    ${t.url ? `<p><a href="${esc(t.url)}">Open ${esc(t.name)}</a></p>` : ""}
+    <p class="k">Where it came up</p>${sight}`;
+  document.getElementById("x").onclick = () => sheet.close();
+  sheet.showModal();
+}
+const sheet = document.getElementById("sheet");
+sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
+document.addEventListener("click", e => {
+  const id = e.target.closest("[data-id]")?.dataset.id; if (id){ open(id); return; }
+  const w = e.target.closest("[data-wk]")?.dataset.wk; if (w){ wk = w; render(); return; }
+  const k = e.target.closest("[data-kind]")?.dataset.kind; if (k){ kind = k; drawKinds(); render(); }
+});
+document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
+function drawKinds(){ document.getElementById("kinds").innerHTML = KINDS.map(([k, l]) => `<button class="chip" data-kind="${k}" aria-pressed="${k === kind}">${l}</button>`).join(" "); }
+drawKinds(); render();
+</script>

@@ -33,6 +33,13 @@ Tested 2026-10-07. Re-test anything older than a few months before relying on it
 
 ## GitHub
 - `gh` / GitHub API works only for this repo; other repos need `add_repo`.
+- Reading Actions runs works with `gh api` (tested 2026-10-08:
+  `gh api "repos/eddieedwardsv2-ux/Test-environment-/actions/runs?per_page=3"`),
+  so the claude.ai GitHub connector is not needed to check Cadence. If it is
+  ever needed (PR reviews in chat), the sign-in link is https://claude.ai/connect-github.
+- `claude doctor` runs here (tested 2026-10-08) but only checks the cloud
+  container's install; its 3 warnings there are about the container, not this
+  repo. For context, use `python3 tools/context_check.py` (our /doctor).
 - GitHub GraphQL is not available; use the REST API.
 
 ## Tools available

@@ -1,0 +1,190 @@
+<title>Hands Brain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: Nate Herk's 3D-brain look (dark glass panels, Archivo / DM Sans / JetBrains Mono).
+   Three calm layers: use-now picks, best per category (one line each), week by week. Detail opens in a sheet. */
+:root{
+  --bg:#05070d; --panel:rgba(12,17,28,.86); --panel-solid:#0b1020; --text:#e8ecf4; --muted:#8b94a8;
+  --line:rgba(255,255,255,.08); --line-strong:rgba(255,255,255,.16); --accent:#38bdf8;
+  --good:#34d399; --warn:#fbbf24; --bad:#fb7185;
+  --display:'Archivo','DM Sans',system-ui,sans-serif; --font:'DM Sans',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace; --radius:14px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 var(--font);
+  background-image:radial-gradient(1200px 600px at 70% -10%,rgba(56,189,248,.10),transparent 60%),radial-gradient(900px 500px at -10% 30%,rgba(167,139,250,.07),transparent 60%);
+  background-attachment:fixed}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:28px 72px}
+header{display:grid;gap:6px;margin-bottom:22px}
+.eyebrow{font:600 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font:800 clamp(30px,6vw,46px)/1.02 var(--display);margin:0;letter-spacing:-.01em}
+.sub{color:var(--muted);max-width:64ch;margin:0}
+.stats{display:flex;gap:18px;flex-wrap:wrap;font:12px var(--mono);color:var(--muted);margin-top:6px}
+.stats b{color:var(--text);font-weight:600}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  padding:10px 12px;margin:0 0 22px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);backdrop-filter:blur(10px)}
+.bar input{flex:1 1 200px;min-width:0;background:transparent;border:1px solid var(--line-strong);border-radius:10px;color:var(--text);font:14px var(--font);padding:8px 10px}
+.chip{font:600 12px var(--mono);border:1px solid var(--line-strong);background:transparent;color:var(--muted);border-radius:999px;padding:6px 11px;cursor:pointer}
+.chip[aria-pressed="true"]{color:var(--bg);background:var(--accent);border-color:var(--accent)}
+section{margin-bottom:34px}
+h2{font:800 20px var(--display);margin:0 0 4px}
+.hint{color:var(--muted);margin:0 0 14px;font-size:14px}
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 15px;cursor:pointer;display:grid;gap:6px;text-align:left;color:inherit;font:inherit;min-width:0}
+.card:hover,.row:hover{border-color:var(--line-strong)}
+.card .name{font:600 16px var(--display)}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.cat{font:600 11px var(--mono);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 45%,transparent);border-radius:6px;padding:1px 6px}
+.st{font:600 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:2px 7px}
+.st.new{background:rgba(56,189,248,.16);color:var(--accent)} .st.rising{background:rgba(52,211,153,.16);color:var(--good)}
+.st.steady{background:rgba(255,255,255,.07);color:var(--muted)} .st.replaced{background:rgba(251,113,133,.14);color:var(--bad)}
+.price{font:11px var(--mono);color:var(--muted)}
+.cats{display:grid;gap:8px}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.row summary{list-style:none;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,2fr) auto;gap:12px;align-items:center;padding:12px 14px;cursor:pointer}
+.row summary::-webkit-details-marker{display:none}
+.row .cname{font:600 13px var(--mono);color:var(--c)}
+.row .best{min-width:0}
+.row .best b{font:600 15px var(--display)}
+.row .best span{color:var(--muted);font-size:13px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .more{font:12px var(--mono);color:var(--muted);white-space:nowrap}
+.rank{list-style:none;margin:0;padding:0 14px 12px;display:grid;gap:4px}
+.rank li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:6px 0;border-top:1px solid var(--line);cursor:pointer}
+.rank .n{font:12px var(--mono);color:var(--muted)}
+.rank .gone{color:var(--muted);text-decoration:line-through}
+.weeks{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.wk{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.wk h3{font:600 15px var(--display);margin:0 0 4px}
+.wk .vids{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:4px;font-size:14px}
+.wk .vids a{color:var(--text)} .wk .vids small{color:var(--muted);font-family:var(--mono)}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.twocol h4{font:600 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin:0 0 6px}
+.mini{display:flex;flex-wrap:wrap;gap:6px}
+.mini button{font:13px var(--font);background:transparent;color:var(--text);border:1px solid var(--line-strong);border-radius:8px;padding:4px 8px;cursor:pointer}
+.empty{color:var(--muted);border:1px dashed var(--line-strong);border-radius:12px;padding:18px}
+dialog{max-width:640px;width:calc(100% - 32px);background:var(--panel-solid);color:var(--text);border:1px solid var(--line-strong);border-radius:var(--radius);padding:0}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.sheet{padding:18px 18px 20px;display:grid;gap:10px}
+.sheet h3{font:800 22px var(--display);margin:0}
+.sheet p{margin:0}
+.sheet .k{font:600 11px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.sheet blockquote{margin:4px 0 0;padding:8px 12px;border-left:2px solid var(--accent);color:#c9d2e3;font-style:italic}
+.sheet a{color:var(--accent)}
+.close{justify-self:end;font:600 13px var(--mono);background:transparent;color:var(--muted);border:1px solid var(--line-strong);border-radius:8px;padding:6px 10px;cursor:pointer}
+button:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:640px){.row summary{grid-template-columns:minmax(0,1fr) auto}.row .cname{grid-column:1/-1}.twocol{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Charlie's AI OS · Hands Brain</div>
+    <h1>The best tools to use now</h1>
+    <p class="sub">Every tool, skill, plugin and repo from The Next New Thing, read week by week from newest to oldest. Each category is ranked; when a newer tool replaces an older one, the old one drops down and is crossed out.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="bar" role="search">
+    <input id="q" type="search" placeholder="Search a tool or what it does" aria-label="Search tools">
+    <span id="kinds"></span>
+  </div>
+
+  <section>
+    <h2>Use these now</h2>
+    <p class="hint">The highest-ranked tools for you: free where possible, useful for Claude Code, your AI OS or the channel.</p>
+    <div class="picks" id="picks"></div>
+  </section>
+
+  <section>
+    <h2>Best in each category</h2>
+    <p class="hint">One line per category: the current number one. Tap a line to see the full ranking.</p>
+    <div class="cats" id="cats"></div>
+  </section>
+
+  <section>
+    <h2>Week by week</h2>
+    <p class="hint">What each week brought: what's new, and what came back again.</p>
+    <div class="weeks" id="weektabs" role="group" aria-label="Week"></div>
+    <div id="week"></div>
+  </section>
+
+  <footer>Source: The Next New Thing (YouTube), descriptions and transcripts. Titles are often clickbait, so tools are judged on what the videos show. Scores: your relevance × 3, mentions × 2, recency and price. Rebuild: <code>python3 tools/build_hands.py</code>.</footer>
+</div>
+
+<dialog id="sheet"><div class="sheet" id="sheetbody"></div></dialog>
+
+<script>
+const D = {"tools": [{"id": "gh:affaan-m/ecc", "name": "ECC", "url": "https://github.com/affaan-m/ECC", "kind": "repo", "category": "Claude Code skills & plugins", "what": "Open-source toolkit of skills that plans, builds with tests, makes a promo video and sends outreach.", "price": "open-source", "for_charlie": 3, "replaces": [], "sightings": [{"week": "2026-W41", "video": "BcNAQynKUk4", "t": "0:33", "shown": "Live 20-minute run: orchestrator drove tmux panes, built a pitch-roasting app, made a video, drafted and sent X DMs.", "quote": "we're going to give it a task and build a product. So, it's going to use ECC skills"}], "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 15, "replaced_by": null, "status": "new", "rank": 1}, {"id": "gh:tashfeenahmed/freellmapi", "name": "FreeLLMAPI", "url": "https://github.com/tashfeenahmed/freellmapi", "kind": "repo", "category": "Cost & tokens", "what": "Routes a coding agent across many free model providers so you can keep coding when one hits its limit.", "price": "open-source", "for_charlie": 3, "replaces": ["Claude Code usage limits"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "5:51", "shown": "Explained the idea and said the install is easy; no coding demo.", "quote": "string together all these freebies"}], "check": "Does not include Claude or frontier models; optional $19 a year add-on. Host frames it as replacing Claude Code for some people.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 15, "replaced_by": null, "status": "new", "rank": 1}, {"id": "gh:mutonby/openshorts", "name": "OpenShorts", "url": "https://github.com/mutonby/openshorts", "kind": "repo", "category": "Video, clips & images", "what": "Self-hosted tool that turns long videos into captioned vertical clips and can schedule posts.", "price": "open-source", "for_charlie": 3, "replaces": ["Opus Clip"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "19:30", "shown": "Ran it on a YouTube video on the free hosted site; framing needed fixing.", "quote": "This is a free clip maker that you can host yourself or you can go to their website and use for free."}], "check": "Hosted free tier is 20 minutes a month with watermark; self-hosting slow without GPU.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 15, "replaced_by": null, "status": "new", "rank": 1}, {"id": "gh:itzcrazykns/vane", "name": "Vane", "url": "https://github.com/ItzCrazyKns/Vane", "kind": "repo", "category": "Research & search", "what": "Self-hosted research assistant that searches the web and gives numbered sources; formerly Perplexica.", "price": "open-source", "for_charlie": 2, "replaces": ["Perplexity"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "9:27", "shown": "Described features; no demo.", "quote": "You type a question. It searches the web. It writes the answer. It gives you numbered sources."}], "check": "Host says it is not as strong as Perplexity; needs a model (Ollama or free Gemini key).", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 12, "replaced_by": null, "status": "new", "rank": 1}, {"id": "gh:debpalash/voicestudio", "name": "VoiceStudio", "url": "https://github.com/debpalash/VoiceStudio", "kind": "repo", "category": "Voice & audio", "what": "Free desktop app for voice cloning, text-to-speech and video dubbing, run locally.", "price": "open-source", "for_charlie": 2, "replaces": ["ElevenLabs"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "0:27", "shown": "Played sample voices and the install page.", "quote": "There is no credit counter, so you can redo a line 50 times and it's going to cost you nothing."}], "check": "Default model is non-commercial only; Pro is $99 a month.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 12, "replaced_by": null, "status": "new", "rank": 1}, {"id": "n:chatgptdots", "name": "ChatGPT Dots", "url": "https://chatgpt.com/dots/01a11894-3ed2-72a3-8d38-aa079bac7032", "kind": "app", "category": "Agent orchestration & teams", "what": "OpenAI agent that can manage Codex threads and ChatGPT chats from one place.", "price": "unknown", "for_charlie": 2, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "3:18", "shown": "Corey described using it as a chief of staff to spin up and track Codex threads; Andrew found it nagging.", "quote": "I use Dot as almost the manager of codec."}], "check": "Availability and price not stated.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 11, "replaced_by": null, "status": "new", "rank": 1}, {"id": "n:creativeclaw", "name": "CreativeClaw", "url": "https://creativeclaw.co/#pricing", "kind": "mcp", "category": "MCP & connectors", "what": "One MCP that adds image, video and voiceover generation to Claude, Codex and other agents, pay per use.", "price": "paid", "for_charlie": 2, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "15:18", "shown": "Showed example outputs and revenue page.", "quote": "with one MCP, you get to make it into much more of an artist."}], "check": "Revenue figures ($10k MRR, $125k lifetime) are the founder's; verify.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 11, "replaced_by": null, "status": "new", "rank": 1}, {"id": "gh:ace-step/ace-step-1.5", "name": "ACE-Step", "url": "https://github.com/ace-step/ACE-Step-1.5", "kind": "repo", "category": "Voice & audio", "what": "Open-source song generator with vocals that runs on your own computer.", "price": "open-source", "for_charlie": 1, "replaces": ["Suno"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "13:57", "shown": "Made a short hip-hop song on the hosted web version; host said it was not as good as Suno.", "quote": "unlimited songs hosted by you for free."}], "check": "Quality below Suno per host.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 9, "replaced_by": null, "status": "new", "rank": 2}, {"id": "n:claudeforstartups", "name": "Claude for Startups", "url": "https://claude.com/programs/startups", "kind": "service", "category": "Cost & tokens", "what": "Anthropic programme giving eligible startups a year of Claude for Teams and API credits.", "price": "free", "for_charlie": 1, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "6:18", "shown": "Read out the offer; hosts said they are applying.", "quote": "free access. One year of Claude for Teams, $1,000 in Claude API credits"}], "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 9, "replaced_by": null, "status": "new", "rank": 2}, {"id": "gh:dyad-sh/dyad", "name": "Dyad", "url": "https://github.com/dyad-sh/dyad", "kind": "repo", "category": "Design & websites", "what": "Open-source local app builder that turns plain English into apps using your chosen AI model.", "price": "open-source", "for_charlie": 1, "replaces": ["Lovable"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "23:51", "shown": "Described features; no demo.", "quote": "You just describe what you want in plain English and you get it."}], "check": "Model cost depends on what you plug in; free Gemini key possible.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 9, "replaced_by": null, "status": "new", "rank": 1}, {"id": "gh:invoke-ai/invokeai", "name": "InvokeAI", "url": "https://github.com/invoke-ai/InvokeAI", "kind": "repo", "category": "Video, clips & images", "what": "Open-source local image studio with layered canvas and editing.", "price": "open-source", "for_charlie": 1, "replaces": ["Midjourney"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "11:51", "shown": "Described features; no demo.", "quote": "It's the AI image studio that you can run yourself."}], "check": "Needs a strong GPU or recent Mac.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 9, "replaced_by": null, "status": "new", "rank": 2}, {"id": "gh:odysseus-dev/odysseus", "name": "Odysseus", "url": "https://github.com/odysseus-dev/odysseus", "kind": "repo", "category": "Models & LLMs", "what": "Private ChatGPT-style assistant on your computer with local models, memory, research and agents, made by PewDiePie.", "price": "open-source", "for_charlie": 1, "replaces": ["ChatGPT"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "2:42", "shown": "Described features and the GitHub repo; no demo.", "quote": "you're going to get chat, you're going to get deep research, you're going to get memory"}], "check": "Host says it is not as good as ChatGPT.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 9, "replaced_by": null, "status": "new", "rank": 1}, {"id": "gh:foundationagents/openmanus", "name": "OpenManus", "url": "https://github.com/FoundationAgents/OpenManus", "kind": "repo", "category": "Agent orchestration & teams", "what": "Open-source general agent that plans, browses, codes and saves files using your own model.", "price": "open-source", "for_charlie": 1, "replaces": ["Manus"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "26:15", "shown": "Described features; no demo.", "quote": "You type what you want, the goal in English, and it plans the steps itself."}], "check": "Needs a paid API key or limited free tier.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 9, "replaced_by": null, "status": "new", "rank": 2}, {"id": "gh:upscayl/upscayl", "name": "Upscayl", "url": "https://github.com/upscayl/upscayl", "kind": "repo", "category": "Video, clips & images", "what": "Free desktop app that upscales photos four times locally, singly or in bulk.", "price": "open-source", "for_charlie": 1, "replaces": ["Topaz Gigapixel"], "sightings": [{"week": "2026-W41", "video": "GZtLsvklYBI", "t": "29:06", "shown": "Showed the repo and described the models.", "quote": "It runs on your computer so your photos never leave"}], "check": "Needs a Vulkan-capable GPU.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 9, "replaced_by": null, "status": "new", "rank": 3}, {"id": "n:omnisendmcp", "name": "Omnisend MCP", "url": "https://www.omnisend.com/ai/mcp/", "kind": "mcp", "category": "MCP & connectors", "what": "MCP that lets Claude or another agent build email campaigns and customer segments in Omnisend.", "price": "freemium", "for_charlie": 1, "replaces": [], "sightings": [{"week": "2026-W41", "video": "uWnQLASl95U", "t": "1:48", "shown": "Live demo in Claude: campaign draft from top campaigns, new-subscriber segment, competitor style guide from Gmail, then a campaign.", "quote": "Based on the best performing email campaigns, I want you to use Omnisend MCP to create an email campaign"}], "check": "Sponsor link with 30% off; pricing and free tier not stated. Image upload through Claude failed in demo.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 8.5, "replaced_by": null, "status": "new", "rank": 2}, {"id": "n:boringfunnels", "name": "Boring Funnels", "url": "https://boringfunnels.com/", "kind": "service", "category": "Marketing, sales & SEO", "what": "Weekly full-funnel breakdowns plus a copy-able prompt for Claude Code or Codex to rebuild the funnel.", "price": "paid", "for_charlie": 1, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "11:24", "shown": "Described the product; no live use.", "quote": "one-click prompt that you can one-click copy, hand to Claude Code, or hand to Codex"}], "check": "Price said as '$2.99 a year' in captions; verify.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 8, "replaced_by": null, "status": "new", "rank": 1}, {"id": "n:pexo", "name": "Pexo", "url": "https://pexo.ai/", "kind": "service", "category": "Video, clips & images", "what": "AI video agent that turns an idea into a product launch video.", "price": "unknown", "for_charlie": 1, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "0:00", "shown": "Hosts discussed it and showed the site; no live build.", "quote": "It's an AI video agent that turns your ideas into videos."}], "check": "Pricing not stated.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 8, "replaced_by": null, "status": "new", "rank": 4}, {"id": "n:skillry", "name": "Skillry", "url": "https://skillry.dev/skills/use-case/brand-identity", "kind": "service", "category": "Claude Code skills & plugins", "what": "Paid directory of premium agent skills with a visible demo of each output.", "price": "paid", "for_charlie": 1, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "13:39", "shown": "Showed the site, a pixel promo video skill demo and its verified revenue.", "quote": "This is where you pay a smaller price for premium skills and you can see exactly what the output's going to look like before you buy it."}], "check": "$5,000 a month revenue claim via TrustMRR; skill price $4.99 as stated.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 8, "replaced_by": null, "status": "new", "rank": 2}, {"id": "n:hark", "name": "Hark", "url": "https://hark.com/articles/introducing-hark-pro", "kind": "app", "category": "Coding agents & IDEs", "what": "New agent app with better web browser access and widgets that track your accounts.", "price": "unknown", "for_charlie": 0, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "4:57", "shown": "Showed Alex Finn's screenshot of widgets; hosts were lukewarm and had not used it.", "quote": "I don't see it being that unique enough for me to go and test it out"}], "check": "Early access; price unknown.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 5, "replaced_by": null, "status": "new", "rank": 1}, {"id": "n:instinct", "name": "Instinct", "url": "https://x.com/noahrshinn/status/2107161132192690558", "kind": "app", "category": "Automation & workflows", "what": "Personal AI agent that lives in iMessage and just added group chats.", "price": "unknown", "for_charlie": 0, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "7:12", "shown": "Corey described finding accountant documents in his email within about 60 seconds by text.", "quote": "So, it has access to my email."}], "check": "Needs email and card access; check privacy. Price not stated.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 5, "replaced_by": null, "status": "new", "rank": 1}, {"id": "n:spiraai", "name": "Spira AI", "url": "https://spira.ai/", "kind": "service", "category": "Marketing, sales & SEO", "what": "Platform that creates and runs a fake AI influencer account promoting your product.", "price": "paid", "for_charlie": 0, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "1:39", "shown": "Showed an example AI influencer promoting a brand; hosts did not try it.", "quote": "you can now get your own fake influencer that's basically just promoting your stuff."}], "check": "50% off offer claimed; Product Hunt number one claim not verified.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 5, "replaced_by": null, "status": "new", "rank": 2}, {"id": "n:tinypopups", "name": "TinyPopups", "url": "https://tinypopups.com/", "kind": "service", "category": "Marketing, sales & SEO", "what": "Embeddable website popup widget with triggers, installed in about five minutes.", "price": "unknown", "for_charlie": 0, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "18:36", "shown": "Described the features and claimed reply rates; no demo.", "quote": "intelligent website popups that take five it takes 5 minutes to install this on your website."}], "check": "30% reply rate is the maker's claim.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 5, "replaced_by": null, "status": "new", "rank": 3}, {"id": "n:vibecodeing", "name": "vibe-code.ing", "url": "https://vibe-code.ing/?category=intelligence", "kind": "service", "category": "Other", "what": "Clean single-page directory of AI tools, monetised by sponsored spots.", "price": "unknown", "for_charlie": 0, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "17:06", "shown": "Showed the site as an example of a simple profitable idea.", "quote": "this is just a really good example of a AI tool directory done right."}], "check": "Sponsored slot price stated as about $350.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 5, "replaced_by": null, "status": "new", "rank": 1}, {"id": "n:vmpal", "name": "VMPal", "url": "https://vmpal.com/", "kind": "app", "category": "Coding agents & IDEs", "what": "Mac app that runs isolated virtual machines so an agent gets its own computer.", "price": "paid", "for_charlie": 0, "replaces": [], "sightings": [{"week": "2026-W41", "video": "c5ZkPhzaLdA", "t": "9:09", "shown": "Andrew explained plans to run a fresh Mac OS VM for agents; no demo.", "quote": "if you're going to give your agent a computer, you might as well put it on your own computer and then isolate it to that one computer."}], "check": "One-off fee of about $34-35 claimed; Mac only as described.", "weeks": ["2026-W41"], "first": "2026-W41", "last": "2026-W41", "mentions": 1, "score": 5, "replaced_by": null, "status": "new", "rank": 2}], "weeks": [{"week": "2026-W41", "summary": "Launch-week mix. Mostly open-source swaps for paid tools (voice, chat, search, images, clips), plus Omnisend's MCP, the ECC skills toolkit and small AI-product launches. Free coding routing (FreeLLMAPI) and ECC are the most useful for Claude Code.", "videos": ["c5ZkPhzaLdA", "uWnQLASl95U", "GZtLsvklYBI", "BcNAQynKUk4"]}], "videos": {"c5ZkPhzaLdA": {"id": "c5ZkPhzaLdA", "title": "AI video maker, AI influencer, free claude code and more ai releases", "date": "2026-10-08", "week": "2026-W41", "duration": 1213, "creator": "the-next-new-thing"}, "uWnQLASl95U": {"id": "uWnQLASl95U", "title": "New: Agent can do your marketing & close sales", "date": "2026-10-07", "week": "2026-W41", "duration": 1179, "creator": "the-next-new-thing"}, "GZtLsvklYBI": {"id": "GZtLsvklYBI", "title": "Replace: Suno AI, ChatGPT, Perplexity, Lovable, Manus, Opus Clip & more", "date": "2026-10-06", "week": "2026-W41", "duration": 1950, "creator": "the-next-new-thing"}, "BcNAQynKUk4": {"id": "BcNAQynKUk4", "title": "Top repo explained: builds product + lands customers", "date": "2026-10-05", "week": "2026-W41", "duration": 1184, "creator": "the-next-new-thing"}, "o7Rm5FvA7hU": {"id": "o7Rm5FvA7hU", "title": "Grok Bot: Make money, Grow businesses, Save Cash", "date": "2026-10-03", "week": "2026-W40", "duration": 2424, "creator": "the-next-new-thing"}, "CQhWqUOouYM": {"id": "CQhWqUOouYM", "title": "Free on GitHub: manage agents, 11Labs alternative, incredible design & more", "date": "2026-10-02", "week": "2026-W40", "duration": 1461, "creator": "the-next-new-thing"}, "bTbyRKO0hxs": {"id": "bTbyRKO0hxs", "title": "Agents and humans can work together!", "date": "2026-10-01", "week": "2026-W40", "duration": 1240, "creator": "the-next-new-thing"}, "kMPyFWFqX5I": {"id": "kMPyFWFqX5I", "title": "9 shocking repos that make money", "date": "2026-09-29", "week": "2026-W40", "duration": 1669, "creator": "the-next-new-thing"}, "dfFKE7EetoA": {"id": "dfFKE7EetoA", "title": "Make money, cut costs & run your life with Meta's Muse", "date": "2026-09-28", "week": "2026-W40", "duration": 1580, "creator": "the-next-new-thing"}, "pxaMzr7al3I": {"id": "pxaMzr7al3I", "title": "9 things you’ll actually do with Jev", "date": "2026-09-26", "week": "2026-W39", "duration": 1478, "creator": "the-next-new-thing"}, "hlOk-EFUITQ": {"id": "hlOk-EFUITQ", "title": "Top Repos + Fame, Traffic & Agents", "date": "2026-09-25", "week": "2026-W39", "duration": 2097, "creator": "the-next-new-thing"}, "ZodAaTH-6_E": {"id": "ZodAaTH-6_E", "title": "Meta’s Muse makes you money. And more", "date": "2026-09-24", "week": "2026-W39", "duration": 901, "creator": "the-next-new-thing"}, "U6ptUFMyaJg": {"id": "U6ptUFMyaJg", "title": "New release: fewer tokens & reliable AI", "date": "2026-09-23", "week": "2026-W39", "duration": 1023, "creator": "the-next-new-thing"}, "tsWOiibaaxA": {"id": "tsWOiibaaxA", "title": "Better than Jev - because you can build with it", "date": "2026-09-22", "week": "2026-W39", "duration": 870, "creator": "the-next-new-thing"}, "WPUAZm5rnGc": {"id": "WPUAZm5rnGc", "title": "Easy step-by-step setup", "date": "2026-09-21", "week": "2026-W39", "duration": 698, "creator": "the-next-new-thing"}, "6IxiArssGvg": {"id": "6IxiArssGvg", "title": "We tested the same request on all 3", "date": "2026-09-19", "week": "2026-W38", "duration": 1165, "creator": "the-next-new-thing"}, "1fHsIveXRa8": {"id": "1fHsIveXRa8", "title": "Top Repos Explained: Code Review, World Camera, Better AI Builds, etc.", "date": "2026-09-18", "week": "2026-W38", "duration": 1605, "creator": "the-next-new-thing"}, "6xi2KL_NujU": {"id": "6xi2KL_NujU", "title": "New: AI mobile app builder, AI slides, AI receptionist, and more", "date": "2026-09-17", "week": "2026-W38", "duration": 1431, "creator": "the-next-new-thing"}, "ehab5PtgRo8": {"id": "ehab5PtgRo8", "title": "Why is everyone using these?", "date": "2026-09-16", "week": "2026-W38", "duration": 751, "creator": "the-next-new-thing"}, "pkwnJcETgfE": {"id": "pkwnJcETgfE", "title": "Why Everyone Is Talking About Meta’s New Muse Agent", "date": "2026-09-15", "week": "2026-W38", "duration": 1162, "creator": "the-next-new-thing"}, "ANJTdT0Ggrw": {"id": "ANJTdT0Ggrw", "title": "Free LLM - for building, agents, images, etc.", "date": "2026-09-14", "week": "2026-W38", "duration": 535, "creator": "the-next-new-thing"}, "NdeOsuoIGuc": {"id": "NdeOsuoIGuc", "title": "Have Astra do this right now", "date": "2026-09-12", "week": "2026-W37", "duration": 1684, "creator": "the-next-new-thing"}, "aX8Y183qDpY": {"id": "aX8Y183qDpY", "title": "Top 10 Repos explained: ADHD, Ponytail, and more", "date": "2026-09-11", "week": "2026-W37", "duration": 1377, "creator": "the-next-new-thing"}, "1JTyPNeD9dk": {"id": "1JTyPNeD9dk", "title": "Free AI agent & all of this week’s AI launches", "date": "2026-09-11", "week": "2026-W37", "duration": 969, "creator": "the-next-new-thing"}}, "categories": ["Coding agents & IDEs", "Claude Code skills & plugins", "Agent orchestration & teams", "MCP & connectors", "Knowledge & second brain", "Video, clips & images", "Voice & audio", "Marketing, sales & SEO", "Design & websites", "Research & search", "Cost & tokens", "Automation & workflows", "Models & LLMs", "Business & finance", "Other"]};
+const PAL = ["#38bdf8","#a78bfa","#34d399","#f472b6","#fbbf24","#fb923c","#67e8f9","#fda4af","#6ee7b7","#c4b5fd","#fcd34d","#93c5fd","#f9a8d4","#86efac","#8b94a8"];
+const color = c => PAL[Math.max(0, D.categories.indexOf(c)) % PAL.length];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const KINDS = [["all","All"],["skill","Skills"],["plugin","Plugins"],["mcp","MCP"],["repo","Repos"],["app","Apps"],["model","Models"]];
+let kind = "all", q = "", wk = D.weeks[0]?.week;
+const byId = Object.fromEntries(D.tools.map(t => [t.id, t]));
+const secs = t => (t || "").split(":").reduce((a, b) => a * 60 + (+b || 0), 0);
+
+function match(t){
+  if (kind !== "all" && t.kind !== kind) return false;
+  if (!q) return true;
+  return (t.name + " " + t.what + " " + t.category).toLowerCase().includes(q);
+}
+const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span><span class="price">${esc(t.price)}</span></div>`;
+
+function render(){
+  const live = D.tools.filter(match);
+  document.getElementById("stats").innerHTML =
+    `<span><b>${D.tools.length}</b> tools</span><span><b>${D.weeks.length}</b> week${D.weeks.length === 1 ? "" : "s"}</span><span><b>${D.weeks.reduce((n, w) => n + w.videos.length, 0)}</b> videos</span><span>newest week <b>${esc(D.weeks[0]?.week || "–")}</b></span>`;
+  const picks = live.filter(t => t.status !== "replaced" && t.for_charlie >= 2).slice(0, 6);
+  document.getElementById("picks").innerHTML = picks.length ? picks.map(t =>
+    `<button class="card" data-id="${esc(t.id)}"><span class="name">${esc(t.name)}</span><p>${esc(t.what)}</p>${tags(t)}</button>`).join("")
+    : `<div class="empty">No tools match. Clear the search to see them all.</div>`;
+  document.getElementById("cats").innerHTML = D.categories.map(c => {
+    const list = live.filter(t => t.category === c);
+    if (!list.length) return "";
+    const top = list[0];
+    return `<details class="row" style="--c:${color(c)}"><summary><span class="cname">${esc(c)}</span>
+      <span class="best"><b>${esc(top.name)}</b><span>${esc(top.what)}</span></span><span class="more">${list.length > 1 ? "+" + (list.length - 1) + " more" : "only one"}</span></summary>
+      <ol class="rank">${list.map((t, i) => `<li data-id="${esc(t.id)}"><span class="n">${i + 1}</span><span class="${t.status === "replaced" ? "gone" : ""}">${esc(t.name)}${t.replaced_by ? ` <small>replaced by ${esc(t.replaced_by)}</small>` : ""}</span><span class="st ${t.status}">${t.status}</span></li>`).join("")}</ol></details>`;
+  }).join("") || `<div class="empty">No tools match.</div>`;
+  document.getElementById("weektabs").innerHTML = D.weeks.map(w =>
+    `<button class="chip" data-wk="${esc(w.week)}" aria-pressed="${w.week === wk}">${esc(w.week)}</button>`).join("");
+  const w = D.weeks.find(x => x.week === wk);
+  if (!w){ document.getElementById("week").innerHTML = `<div class="empty">No weeks ingested yet.</div>`; return; }
+  const inWeek = live.filter(t => t.weeks.includes(w.week));
+  const fresh = inWeek.filter(t => t.first === w.week), back = inWeek.filter(t => t.first !== w.week);
+  const btns = l => l.length ? `<div class="mini">${l.map(t => `<button data-id="${esc(t.id)}">${esc(t.name)}</button>`).join("")}</div>` : `<p class="hint">None.</p>`;
+  document.getElementById("week").innerHTML = `<div class="wk"><h3>${esc(w.week)}</h3><p class="hint" style="margin:0">${esc(w.summary)}</p>
+    <ul class="vids">${w.videos.map(id => D.videos[id]).filter(Boolean).map(v => `<li><a href="https://www.youtube.com/watch?v=${esc(v.id)}">${esc(v.title)}</a> <small>${esc(v.date || "")}</small></li>`).join("")}</ul>
+    <div class="twocol"><div><h4>New this week (${fresh.length})</h4>${btns(fresh)}</div><div><h4>Back again (${back.length})</h4>${btns(back)}</div></div></div>`;
+}
+function open(id){
+  const t = byId[id]; if (!t) return;
+  const sight = t.sightings.map(s => {
+    const v = D.videos[s.video] || {};
+    const link = s.video ? `https://www.youtube.com/watch?v=${esc(s.video)}${s.t ? "&t=" + secs(s.t) + "s" : ""}` : "";
+    return `<div><p class="k">${esc(s.week)}${s.t ? " · " + esc(s.t) : ""}</p><p>${esc(s.shown || "Mentioned.")} ${link ? `<a href="${link}">Watch${s.t ? " at " + esc(s.t) : ""}</a>` : ""}</p>${s.quote ? `<blockquote>“${esc(s.quote)}”</blockquote>` : ""}<p class="price">${esc(v.title || "")}</p></div>`;
+  }).join("");
+  document.getElementById("sheetbody").innerHTML = `<button class="close" id="x">Close</button><h3>${esc(t.name)}</h3>${tags(t)}
+    <p>${esc(t.what)}</p>
+    <p class="k">Rank ${t.rank} in ${esc(t.category)} · score ${t.score} · seen in ${t.mentions} video${t.mentions > 1 ? "s" : ""}</p>
+    ${t.replaced_by ? `<p><b>Replaced by ${esc(t.replaced_by)}.</b></p>` : ""}
+    ${t.replaces.length ? `<p><span class="k">Replaces</span><br>${esc(t.replaces.join(", "))}</p>` : ""}
+    ${t.check ? `<p><span class="k">Check before trusting</span><br>${esc(t.check)}</p>` : ""}
+    ${t.url ? `<p><a href="${esc(t.url)}">Open ${esc(t.name)}</a></p>` : ""}
+    <p class="k">Where it came up</p>${sight}`;
+  document.getElementById("x").onclick = () => sheet.close();
+  sheet.showModal();
+}
+const sheet = document.getElementById("sheet");
+sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
+document.addEventListener("click", e => {
+  const id = e.target.closest("[data-id]")?.dataset.id; if (id){ open(id); return; }
+  const w = e.target.closest("[data-wk]")?.dataset.wk; if (w){ wk = w; render(); return; }
+  const k = e.target.closest("[data-kind]")?.dataset.kind; if (k){ kind = k; drawKinds(); render(); }
+});
+document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
+function drawKinds(){ document.getElementById("kinds").innerHTML = KINDS.map(([k, l]) => `<button class="chip" data-kind="${k}" aria-pressed="${k === kind}">${l}</button>`).join(" "); }
+drawKinds(); render();
+</script>

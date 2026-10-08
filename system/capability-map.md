@@ -22,9 +22,10 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Find or install a new skill | `find-skills` skill | install command | Charlie's OK |
 | Check a page looks right (visual validation) | `tools/screenshot.py <page>` then open the PNGs | phone + desktop screenshots, script errors | looking at them |
 | Structural audit (incl. every checklist quote, `tools/check_quotes.py`) | `tools/audit.py` (runs on push and as the Stop-hook structure gate `tools/run_gate.sh`; includes the secret scan) | errors/warnings | GitHub Actions |
+| What loads into every message, hidden instructions (our /doctor) | `tools/context_check.py` | sizes + warnings | run after big changes and model switches |
 | Scored audit (weekly, Four Cs rubric v2) | `audit` skill (Nate's AIS-OS kit) | `audits/audit-<date>-<id>.md` with score, findings ledger, top 3 fixes | next run rechecks each finding |
 | Failure-mode check, backtrack after a miss | `audit` skill, `content-check.md` | smallest fixes | Charlie approves on the Decision Desk |
-| Set someone up (7-question intake) | `onboard` skill | `aios-intake.md` + Day-1 context files | the "what should I focus on this week?" test |
+| Set someone up (7-question intake) | `onboard` skill, parked in `references/parked-skills/onboard/` (each person runs the one in Nate's kit) | `aios-intake.md` + Day-1 context files | the "what should I focus on this week?" test |
 | Make something findable | `link` skill | one route in `AGENTS.md` or a folder index | following the route |
 | Ship the next automation | `level-up` skill (`references/3ms-framework.md`) | one artifact + `decisions.md` entry | rerun `audit` |
 | What the OS can reach | `connections.md` | domain, mechanism, last checked | `audit` freshness check |

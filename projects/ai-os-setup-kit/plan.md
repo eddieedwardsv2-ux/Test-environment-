@@ -1,4 +1,4 @@
-# Set-up plan: a beginner's first AI OS (draft v0.3, 2026-10-08)
+# Set-up plan: a beginner's first AI OS (draft v0.4, 2026-10-08)
 
 The step-by-step plan for setting someone up from nothing. Follow it in order,
 the same way every time; after each set-up, fix this file (see "After each
@@ -143,9 +143,14 @@ before the first person reaches them.
   what do you wish it could do, and one thing to automate today (with the
   bike method). The 14-day follow-up gets designed later.
 
-## Open question (Charlie's call)
-1. **Which base?** This draft uses Nate's AIS-OS kit, as the project README
-   says. `context/current-focus.md` still says "built on
-   `templates/standard-ai-os-v1/`" (our blank copy). Compare them in the
-   Kit Compare page (link in the project README). Recommended: Nate's kit,
-   plus three things from ours (see that page).
+## Decided (Charlie, Decision Desk, 2026-10-08)
+1. **Base: Nate's AIS-OS kit plus our three additions** (one rulebook for
+   Claude and Codex, the day-1 fresh-session test, the research guide).
+2. **Audit every set-up until the returns stop.** After each one, run the
+   `audit` skill and fix, and repeat until a round finds nothing worth
+   changing. Keep only what is best and relevant for a beginner.
+3. **Then a wiki brain around their interests and passions.** Found by
+   reviewing their past chats (once they're on a paid plan) plus an
+   interview.
+4. **Their voice, early:** ask for 3 emails, 3 articles, or just 3 spoken
+   stories, saved as their voice samples, because the OS uses them all the time.

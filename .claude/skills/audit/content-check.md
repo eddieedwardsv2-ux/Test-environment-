@@ -2,7 +2,9 @@
 
 The failure-mode check and the backtrack after a miss. Run it after a wrong or
 missed answer, after big structural changes, when Charlie asks "is anything
-wrong, stale or clashing?", and after every switch to a new model (Rule 41).
+wrong, stale or clashing?", and after every switch to a new model (Rule 41). Start with
+`python3 tools/context_check.py`: what loads into every message, its size,
+and anything hidden (parent-folder or user-wide instructions, competing skills).
 
 Based on Nate Herk, "Steal My Exact AI OS Setup"
 (`research/nate-herk/steal-my-exact-ai-os-setup-5-simple-tips--Ek1NBfnnTH0-transcript.md`).
