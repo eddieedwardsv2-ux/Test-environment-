@@ -16,19 +16,66 @@
     "t": "0:33",
     "shown": "Live 20-minute run: orchestrator drove tmux panes, built a pitch-roasting app, made a video, drafted and sent X DMs.",
     "quote": "we're going to give it a task and build a product. So, it's going to use ECC skills"
+   },
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "17:26",
+    "shown": "Showed the repo and the remember/improve features; compared it to Agent Skills.",
+    "quote": "You get all that experience baked into your cloud for free."
    }
   ],
   "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials.",
   "weeks": [
-   "2026-W41"
+   "2026-W41",
+   "2026-W39"
   ],
-  "first": "2026-W41",
+  "first": "2026-W39",
   "last": "2026-W41",
-  "mentions": 1,
-  "score": 15,
+  "mentions": 2,
+  "score": 17,
   "replaced_by": null,
-  "status": "new",
+  "status": "rising",
   "rank": 1
+ },
+ {
+  "id": "gh:davila7/claude-code-templates",
+  "name": "Claude Code Templates",
+  "url": "https://github.com/davila7/claude-code-templates",
+  "kind": "repo",
+  "category": "Claude Code skills & plugins",
+  "what": "One-command install of skills, commands and settings for Claude Code.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "20:21",
+    "shown": "Browsed the website listing skills, commands and settings.",
+    "quote": "You kit out Claude code with one install command"
+   },
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "29:46",
+    "shown": "Showed the marketplace-style site; about 900 skills and 34 plugins.",
+    "quote": "This is a collection of Claude Code add-ons."
+   }
+  ],
+  "check": "Review anything before installing.",
+  "weeks": [
+   "2026-W40",
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W40",
+  "mentions": 2,
+  "score": 16,
+  "replaced_by": null,
+  "status": "rising",
+  "rank": 2
  },
  {
   "id": "gh:tashfeenahmed/freellmapi",
@@ -97,6 +144,261 @@
   "rank": 1
  },
  {
+  "id": "gh:pbakaus/impeccable",
+  "name": "Impeccable",
+  "url": "https://github.com/pbakaus/impeccable",
+  "kind": "repo",
+  "category": "Design & websites",
+  "what": "Skill pack that gives a coding agent a designer's eye so apps stop looking generic.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "14:15",
+    "shown": "Demoed picking an aesthetic and pasting the prompt into an agent.",
+    "quote": "give your coding agent a designer's eye"
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 14,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 1
+ },
+ {
+  "id": "gh:debpalash/voicestudio",
+  "name": "VoiceStudio",
+  "url": "https://github.com/debpalash/VoiceStudio",
+  "kind": "repo",
+  "category": "Voice & audio",
+  "what": "Free desktop app for voice cloning, text-to-speech and video dubbing, run locally.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [
+   "ElevenLabs"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "GZtLsvklYBI",
+    "t": "0:27",
+    "shown": "Played sample voices and the install page.",
+    "quote": "There is no credit counter, so you can redo a line 50 times and it's going to cost you nothing."
+   },
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "5:35",
+    "shown": "Showed the repo and the easy-install apps; no clone demo.",
+    "quote": "This is for people who want to clone their voices, but not pay a service like 11 Labs to host it."
+   }
+  ],
+  "check": "Default model is non-commercial only; Pro is $99 a month.",
+  "weeks": [
+   "2026-W41",
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W41",
+  "mentions": 2,
+  "score": 14,
+  "replaced_by": null,
+  "status": "rising",
+  "rank": 1
+ },
+ {
+  "id": "gh:addyosmani/agent-skills",
+  "name": "Agent Skills",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Addy Osmani's pack of workflow skills that stops agents taking shortcuts; easier to install than ECC.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [
+   "ECC (for beginners)"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "22:03",
+    "shown": "Compared side by side with ECC using a Claude comparison.",
+    "quote": "So maybe agent skills is easier if you're just getting into this"
+   }
+  ],
+  "check": "Hosts frame it as easier, not better; ECC has far more skills.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 13,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 3
+ },
+ {
+  "id": "n:chatgptdots",
+  "name": "ChatGPT Dots",
+  "url": "https://chatgpt.com/dots/01a11894-3ed2-72a3-8d38-aa079bac7032",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "OpenAI agent that can manage Codex threads and ChatGPT chats from one place.",
+  "price": "unknown",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "video": "c5ZkPhzaLdA",
+    "t": "3:18",
+    "shown": "Corey described using it as a chief of staff to spin up and track Codex threads; Andrew found it nagging.",
+    "quote": "I use Dot as almost the manager of codec."
+   },
+   {
+    "week": "2026-W40",
+    "video": "bTbyRKO0hxs",
+    "t": "14:20",
+    "shown": "Created a Dot and connected Slack on screen.",
+    "quote": "what it looks like if I were to use dot directly from them"
+   }
+  ],
+  "check": "Availability and price not stated.",
+  "weeks": [
+   "2026-W41",
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W41",
+  "mentions": 2,
+  "score": 13,
+  "replaced_by": null,
+  "status": "rising",
+  "rank": 1
+ },
+ {
+  "id": "gh:anthropics/claude-code",
+  "name": "Claude Code agents.md support",
+  "url": "https://github.com/anthropics/claude-code",
+  "kind": "app",
+  "category": "Coding agents & IDEs",
+  "what": "Claude Code now reads the shared agents.md instruction file, so one file serves Claude and Codex.",
+  "price": "free",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "12:19",
+    "shown": "Explained why one shared instruction file ends the claude.md versus agents.md mismatch; no demo.",
+    "quote": "typically they're looking at an agents.md file that's in your project folder"
+   }
+  ],
+  "check": "Skills are still not shared between Claude and Codex, per the hosts; check Claude Code docs for the exact behaviour.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 13,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 1
+ },
+ {
+  "id": "gh:every-app/open-seo",
+  "name": "OpenSEO",
+  "url": "https://github.com/every-app/open-seo",
+  "kind": "repo",
+  "category": "Marketing, sales & SEO",
+  "what": "Open-source SEO tool for keyword research and rank tracking that you run yourself.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [
+   "Semrush"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "2:31",
+    "shown": "Walked through it; founder was on the show before.",
+    "quote": "open-source SEO that you can run yourself"
+   },
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "2:33",
+    "shown": "Showed the repo and debate about its Y Combinator funding; Adam is a paying customer.",
+    "quote": "Semrush rival that you basically pay peanuts for"
+   }
+  ],
+  "check": "Semrush price claim is the host's.",
+  "weeks": [
+   "2026-W40",
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W40",
+  "mentions": 2,
+  "score": 13,
+  "replaced_by": null,
+  "status": "rising",
+  "rank": 1
+ },
+ {
+  "id": "gh:paperclipai/paperclip",
+  "name": "Paperclip",
+  "url": "https://github.com/paperclipai/paperclip",
+  "kind": "repo",
+  "category": "Agent orchestration & teams",
+  "what": "Open-source platform that gives AI agents an org chart, tasks and permissions so they work together.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "0:01",
+    "shown": "Hosts walked through the repo and its permissions; no full build.",
+    "quote": "your agents get an org chart to work together"
+   },
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "5:37",
+    "shown": "Showed the repo and a popular video about it; not run live.",
+    "quote": "allows you to manage your agents like their employees"
+   }
+  ],
+  "check": "95,000+ stars claimed; not tested.",
+  "weeks": [
+   "2026-W40",
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W40",
+  "mentions": 2,
+  "score": 13,
+  "replaced_by": null,
+  "status": "rising",
+  "rank": 2
+ },
+ {
   "id": "gh:itzcrazykns/vane",
   "name": "Vane",
   "url": "https://github.com/ItzCrazyKns/Vane",
@@ -130,68 +432,35 @@
   "rank": 1
  },
  {
-  "id": "gh:debpalash/voicestudio",
-  "name": "VoiceStudio",
-  "url": "https://github.com/debpalash/VoiceStudio",
+  "id": "gh:alirezarezvani/claude-skills",
+  "name": "Claude Skills",
+  "url": "https://github.com/alirezarezvani/claude-skills",
   "kind": "repo",
-  "category": "Voice & audio",
-  "what": "Free desktop app for voice cloning, text-to-speech and video dubbing, run locally.",
+  "category": "Claude Code skills & plugins",
+  "what": "Repo of 388 job-specific skill playbooks and personas.",
   "price": "open-source",
-  "for_charlie": 2,
-  "replaces": [
-   "ElevenLabs"
-  ],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "video": "GZtLsvklYBI",
-    "t": "0:27",
-    "shown": "Played sample voices and the install page.",
-    "quote": "There is no credit counter, so you can redo a line 50 times and it's going to cost you nothing."
-   }
-  ],
-  "check": "Default model is non-commercial only; Pro is $99 a month.",
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 12,
-  "replaced_by": null,
-  "status": "new",
-  "rank": 1
- },
- {
-  "id": "n:chatgptdots",
-  "name": "ChatGPT Dots",
-  "url": "https://chatgpt.com/dots/01a11894-3ed2-72a3-8d38-aa079bac7032",
-  "kind": "app",
-  "category": "Agent orchestration & teams",
-  "what": "OpenAI agent that can manage Codex threads and ChatGPT chats from one place.",
-  "price": "unknown",
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
    {
-    "week": "2026-W41",
-    "video": "c5ZkPhzaLdA",
-    "t": "3:18",
-    "shown": "Corey described using it as a chief of staff to spin up and track Codex threads; Andrew found it nagging.",
-    "quote": "I use Dot as almost the manager of codec."
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "18:48",
+    "shown": "Showed the repo; hosts joked about too many skills.",
+    "quote": "Your AI assistant is going to get 388 job-specific playbooks"
    }
   ],
-  "check": "Availability and price not stated.",
+  "check": "Downloaded skills need checking before install (the show warns about plugins).",
   "weeks": [
-   "2026-W41"
+   "2026-W40"
   ],
-  "first": "2026-W41",
-  "last": "2026-W41",
+  "first": "2026-W40",
+  "last": "2026-W40",
   "mentions": 1,
   "score": 11,
   "replaced_by": null,
-  "status": "new",
-  "rank": 1
+  "status": "steady",
+  "rank": 4
  },
  {
   "id": "n:creativeclaw",
@@ -223,6 +492,244 @@
   "replaced_by": null,
   "status": "new",
   "rank": 1
+ },
+ {
+  "id": "gh:vectorize-io/hindsight",
+  "name": "Hindsight",
+  "url": "https://github.com/vectorize-io/hindsight",
+  "kind": "repo",
+  "category": "Knowledge & second brain",
+  "what": "Persistent AI memory so an agent remembers you across sessions; built by a real company.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "4:03",
+    "shown": "Discussed on the repo page; hosts unsure why it took off.",
+    "quote": "remembers you across your sessions"
+   }
+  ],
+  "check": "Star count may be inflated; unverified.",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 11,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 1
+ },
+ {
+  "id": "n:jev",
+  "name": "Jev",
+  "url": "https://typesafe.ai/",
+  "kind": "model",
+  "category": "Models & LLMs",
+  "what": "Tiny, very fast decision model (not a chatbot) that answers multiple-choice and yes/no questions with probabilities, cheaply.",
+  "price": "unknown",
+  "for_charlie": 2,
+  "replaces": [
+   "flash models"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "pxaMzr7al3I",
+    "t": "0:01",
+    "shown": "Sorted 500 emails live, built a voice-controlled browser, model routing, support triage, lead scoring, agent memory search, clip scoring and smart-home control.",
+    "quote": "It's not a chatbot. It can't even write a sentence."
+   },
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "2:05",
+    "shown": "Clip of someone speaking to the computer to open Notes and create a note; hosts did not try it.",
+    "quote": "Here's the thing about uh Jev, it now no longer has a waitlist."
+   }
+  ],
+  "check": "Pricing not stated; waitlist said to be gone and also available via OpenRouter; not for high-stakes predictions (trading) per the video.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 2,
+  "score": 11,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 1
+ },
+ {
+  "id": "gh:elvisun/newsjack",
+  "name": "NewsJack",
+  "url": "https://github.com/elvisun/newsjack",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Free open-source agent skills that research journalists and stories and write pitches, like a PR team.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "5:13",
+    "shown": "Showed Elvis's demo plugging Jev into it to scrape and pitch quickly and cheaply.",
+    "quote": "It's a free GitHub repo and these skills basically turn your agent into a PR team."
+   }
+  ],
+  "check": "Claimed 8-15k a month PR cost comparison not verified.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 10,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 2
+ },
+ {
+  "id": "gh:alibaba/open-code-review",
+  "name": "Open Code Review",
+  "url": "https://github.com/alibaba/open-code-review",
+  "kind": "repo",
+  "category": "Coding agents & IDEs",
+  "what": "Alibaba's open-source code reviewer for vibe coders, now with a VS Code extension, using your existing AI subscription.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [
+   "paid code-review tools"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "9:43",
+    "shown": "Hosts showed the repo and discussed running it on commit; not installed live.",
+    "quote": "Alibaba's code reviewer now leaves the terminal."
+   }
+  ],
+  "check": "Hosts say open-source versions let you use existing subscriptions instead of paid tools.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 10,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 2
+ },
+ {
+  "id": "gh:stablyai/orca",
+  "name": "Orca",
+  "url": "https://github.com/stablyai/orca",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "Interface for running several coding agents side by side, designed around agents rather than code.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [
+   "VS Code for agent work"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "25:07",
+    "shown": "Showed the readme screenshot with Claude Code and Codex in one window plus mobile link.",
+    "quote": "Run five coding agents at once. Keep the best."
+   }
+  ],
+  "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 10,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 3
+ },
+ {
+  "id": "gh:tencent/weknora",
+  "name": "WeKnora",
+  "url": "https://github.com/Tencent/WeKnora",
+  "kind": "repo",
+  "category": "Knowledge & second brain",
+  "what": "Tencent's open-source knowledge system that links files into a searchable graph wiki for your agents.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "18:58",
+    "shown": "Described and showed the repo; not installed live.",
+    "quote": "Obsidian plus rag plus a graph database plus some extra integrations"
+   }
+  ],
+  "check": "Auto-caption mishears the name as Nora.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 10,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 2
+ },
+ {
+  "id": "n:metamuse",
+  "name": "Meta Muse",
+  "url": "https://www.youtube.com/watch?v=SdKFDIAGF24",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "Meta's AI agent for bills, price tracking, local files and daily briefs.",
+  "price": "freemium",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "dfFKE7EetoA",
+    "t": "0:02",
+    "shown": "Played creator demos and gave verdict.",
+    "quote": "making Muse free for a huge number of tokens"
+   },
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "0:02",
+    "shown": "Walked through other people's examples and showed a simple chat screen; hosts did not run it themselves.",
+    "quote": "People are banking money with Muse, the free AI agent from Facebook."
+   }
+  ],
+  "check": "Free-token offer is Meta's claim.",
+  "weeks": [
+   "2026-W40",
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W40",
+  "mentions": 2,
+  "score": 9.5,
+  "replaced_by": null,
+  "status": "rising",
+  "rank": 4
  },
  {
   "id": "gh:ace-step/ace-step-1.5",
@@ -289,6 +796,37 @@
   "rank": 2
  },
  {
+  "id": "n:claudeopus55",
+  "name": "Claude Opus 5.5",
+  "url": "https://www.anthropic.com/claude-opus-5-5",
+  "kind": "model",
+  "category": "Models & LLMs",
+  "what": "New Claude model praised for writing, visual design and animation.",
+  "price": "unknown",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "13:55",
+    "shown": "Showed community examples including a music video animation and a walkable shop built with it.",
+    "quote": "it just is the best feeling model we've we've had in a long time."
+   }
+  ],
+  "check": "Opinion only; no benchmarks or pricing given.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 2
+ },
+ {
   "id": "gh:dyad-sh/dyad",
   "name": "Dyad",
   "url": "https://github.com/dyad-sh/dyad",
@@ -319,7 +857,46 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
-  "rank": 1
+  "rank": 2
+ },
+ {
+  "id": "n:grokbot",
+  "name": "GrokBot",
+  "url": "https://thenextnewthing.ai/l/grokbot-reaction-oct3",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "Personal agent with local file access, sub-agents, webhooks and email, run from creators' real workflows.",
+  "price": "unknown",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "o7Rm5FvA7hU",
+    "t": "4:05",
+    "shown": "Played 11 creator clips (meeting notes to agents, file renaming, inbox triage) with commentary.",
+    "quote": "they can access local files"
+   },
+   {
+    "week": "2026-W39",
+    "video": "WPUAZm5rnGc",
+    "t": "8:41",
+    "shown": "Guest built an outbound sales-call system live from a voice-note plan, using it as the orchestrator.",
+    "quote": "I would think of Grok Bot as the as the orchestrator agent."
+   }
+  ],
+  "check": "Price and availability not stated.",
+  "weeks": [
+   "2026-W40",
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W40",
+  "mentions": 2,
+  "score": 9,
+  "replaced_by": null,
+  "status": "rising",
+  "rank": 5
  },
  {
   "id": "gh:invoke-ai/invokeai",
@@ -355,6 +932,37 @@
   "rank": 2
  },
  {
+  "id": "gh:anthropics/knowledge-work-plugins",
+  "name": "Knowledge Work Plugins",
+  "url": "https://github.com/anthropics/knowledge-work-plugins",
+  "kind": "plugin",
+  "category": "Claude Code skills & plugins",
+  "what": "Anthropic's plugins for finance, HR, legal, marketing and operations work.",
+  "price": "unknown",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "23:35",
+    "shown": "Discussed browsing the marketing plugin to learn its structure; no live run.",
+    "quote": "This is for uh knowledge workers. It's a collection of skills like how to do finance, human resources, legal, marketing, operations."
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 5
+ },
+ {
   "id": "gh:odysseus-dev/odysseus",
   "name": "Odysseus",
   "url": "https://github.com/odysseus-dev/odysseus",
@@ -385,7 +993,7 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
-  "rank": 1
+  "rank": 3
  },
  {
   "id": "gh:foundationagents/openmanus",
@@ -418,7 +1026,7 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
-  "rank": 2
+  "rank": 6
  },
  {
   "id": "gh:upscayl/upscayl",
@@ -485,6 +1093,37 @@
   "rank": 2
  },
  {
+  "id": "gh:rohitg00/ai-engineering-from-scratch",
+  "name": "AI Engineering From Scratch",
+  "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+  "kind": "repo",
+  "category": "Other",
+  "what": "Free step-by-step AI engineering course.",
+  "price": "free",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "8:08",
+    "shown": "Looked at the repo; hosts doubted its quality (AI-written, verbose).",
+    "quote": "This is a free course"
+   }
+  ],
+  "check": "Hacker News reaction was negative.",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 1
+ },
+ {
   "id": "n:boringfunnels",
   "name": "Boring Funnels",
   "url": "https://boringfunnels.com/",
@@ -513,7 +1152,71 @@
   "score": 8,
   "replaced_by": null,
   "status": "new",
+  "rank": 3
+ },
+ {
+  "id": "gh:calcom/cal.diy",
+  "name": "Cal.diy",
+  "url": "https://github.com/calcom/cal.diy",
+  "kind": "repo",
+  "category": "Automation & workflows",
+  "what": "Self-hosted booking page that avoids double-bookings and can take payment first.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [
+   "Calendly"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "11:34",
+    "shown": "Explained the free alternative.",
+    "quote": "they also put it on GitHub for free for you to use"
+   }
+  ],
+  "check": "Calendly $12 a seat claimed by host.",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
   "rank": 1
+ },
+ {
+  "id": "gh:hkuds/cli-anything",
+  "name": "CLI-Anything",
+  "url": "https://github.com/HKUDS/CLI-Anything",
+  "kind": "repo",
+  "category": "MCP & connectors",
+  "what": "Turns desktop apps into command-line interfaces that agents can drive; small marketplace of ready-made ones.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "16:16",
+    "shown": "Explained with a booking example; noted it does not cover Uber.",
+    "quote": "turn any app into a command line, your agent can drive"
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 3
  },
  {
   "id": "n:pexo",
@@ -575,6 +1278,268 @@
   "score": 8,
   "replaced_by": null,
   "status": "new",
+  "rank": 6
+ },
+ {
+  "id": "n:hyperagent",
+  "name": "Hyperagent",
+  "url": "https://www.hyperagent.com/tnnt100",
+  "kind": "service",
+  "category": "Agent orchestration & teams",
+  "what": "Workspace where humans and several AI agents share Rooms, with permissions and model routing.",
+  "price": "freemium",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "bTbyRKO0hxs",
+    "t": "13:16",
+    "shown": "Alex demoed Rooms, a paid-ads agent team and permissions.",
+    "quote": "sign in with Chat GPT and use the subscription you already pay for"
+   }
+  ],
+  "check": "$100 bonus credits claimed.",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 7.5,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 7
+ },
+ {
+  "id": "gh:anthropics/financial-services",
+  "name": "Anthropic Financial Services",
+  "url": "https://github.com/anthropics/financial-services",
+  "kind": "repo",
+  "category": "Claude Code skills & plugins",
+  "what": "Anthropic plugin of about 10 skill files that make an agent act like a finance professional.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "9:38",
+    "shown": "Hosts discussed it; said it is for financial professionals.",
+    "quote": "I think it's just 10 skill files"
+   },
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "7:26",
+    "shown": "Discussed a user who analysed a stock with it; not run live.",
+    "quote": "financial company sitting there and analyzing stocks for you."
+   }
+  ],
+  "check": "Finance output should not be trusted blindly.",
+  "weeks": [
+   "2026-W40",
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W40",
+  "mentions": 2,
+  "score": 7,
+  "replaced_by": null,
+  "status": "rising",
+  "rank": 7
+ },
+ {
+  "id": "gh:cactus-compute/needle",
+  "name": "Needle",
+  "url": "https://github.com/cactus-compute/needle",
+  "kind": "model",
+  "category": "Models & LLMs",
+  "what": "Tiny free on-device LLM (8-29 MB) that turns plain requests into safe structured tool calls with confidence scores, offline.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "tsWOiibaaxA",
+    "t": "0:02",
+    "shown": "Live demos: smart-home lights, reminders and note search, a robot vacuum, phone and laptop actions.",
+    "quote": "There's a free LLM that works like Jev, so it will make no mistakes."
+   }
+  ],
+  "check": "'No mistakes' is a marketing line; the guest says reliability depends on tightly scoped tools and confidence scores. Title says better than Jev, not shown.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 7,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 4
+ },
+ {
+  "id": "n:chatgptvoice",
+  "name": "ChatGPT Voice",
+  "url": "https://help.openai.com/en/articles/20001274-chatgpt-voice",
+  "kind": "app",
+  "category": "Voice & audio",
+  "what": "ChatGPT voice mode now reaches email, calendar and Slack through connectors.",
+  "price": "unknown",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "7:46",
+    "shown": "Played OpenAI's launch video; Andrew said the email part did not work until he updated the app.",
+    "quote": "connector access, it's going to make it a hundred times more useful."
+   }
+  ],
+  "check": "Which plan gets connectors not stated.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 6,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 3
+ },
+ {
+  "id": "n:clueso",
+  "name": "Clueso",
+  "url": "https://www.clueso.io/",
+  "kind": "service",
+  "category": "Video, clips & images",
+  "what": "Turns a rough screen recording into a polished demo, training video or SOP with zooms and voiceover.",
+  "price": "unknown",
+  "for_charlie": 1,
+  "replaces": [
+   "Screen Studio"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "4:11",
+    "shown": "Played a launch demo video made with it.",
+    "quote": "this in my mind is like Screen Studio, but easier to use"
+   }
+  ],
+  "check": "Pricing not stated; auto-caption spells it Cluso.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 6,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 5
+ },
+ {
+  "id": "gh:useautumn/autumn",
+  "name": "Autumn",
+  "url": "https://github.com/useautumn/autumn",
+  "kind": "repo",
+  "category": "Business & finance",
+  "what": "Subscriptions and usage or token-based billing for software you build.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "14:08",
+    "shown": "Explained pricing options.",
+    "quote": "This is going to allow you to charge your users."
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 1
+ },
+ {
+  "id": "gh:chatwoot/chatwoot",
+  "name": "Chatwoot",
+  "url": "https://github.com/chatwoot/chatwoot",
+  "kind": "repo",
+  "category": "Marketing, sales & SEO",
+  "what": "Self-hosted support inbox with AI replies and no per-seat pricing.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [
+   "Intercom"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "25:22",
+    "shown": "Described it.",
+    "quote": "you don't have to pay per seat, you can bring your own OpenAI key"
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 4
+ },
+ {
+  "id": "gh:frappe/crm",
+  "name": "Frappe CRM",
+  "url": "https://github.com/frappe/crm",
+  "kind": "repo",
+  "category": "Business & finance",
+  "what": "Customisable open-source CRM for leads and deals.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [
+   "Pipedrive"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "20:46",
+    "shown": "Compared with Pipedrive; brief.",
+    "quote": "It's more like a Pipedrive."
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
   "rank": 2
  },
  {
@@ -606,7 +1571,7 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 1
+  "rank": 3
  },
  {
   "id": "n:instinct",
@@ -637,7 +1602,135 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 1
+  "rank": 2
+ },
+ {
+  "id": "gh:invoiceninja/invoiceninja",
+  "name": "Invoice Ninja",
+  "url": "https://github.com/invoiceninja/invoiceninja",
+  "kind": "repo",
+  "category": "Business & finance",
+  "what": "Self-hosted quotes, invoices and billing with no per-seat fee.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [
+   "QuickBooks"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "6:02",
+    "shown": "Explained the quote-to-invoice flow.",
+    "quote": "why go for a very expensive paid plan from someone else when you could just host this yourself"
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 3
+ },
+ {
+  "id": "gh:mautic/mautic",
+  "name": "Mautic",
+  "url": "https://github.com/mautic/mautic",
+  "kind": "repo",
+  "category": "Marketing, sales & SEO",
+  "what": "Self-hosted email marketing, landing pages and automation.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [
+   "GoHighLevel"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "22:19",
+    "shown": "Described it; said Claude Code can set up follow-up emails.",
+    "quote": "This is the competitor to GoHighLevel."
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 5
+ },
+ {
+  "id": "gh:vercel/next.js",
+  "name": "Next.js",
+  "url": "https://github.com/vercel/next.js",
+  "kind": "repo",
+  "category": "Design & websites",
+  "what": "Popular JavaScript web framework; trending after a run of security fixes.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "CQhWqUOouYM",
+    "t": "11:42",
+    "shown": "Explained what it is and why the fixes matter.",
+    "quote": "They had eight security fixes in eight days"
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 3
+ },
+ {
+  "id": "gh:posthog/posthog",
+  "name": "PostHog",
+  "url": "https://github.com/PostHog/posthog",
+  "kind": "repo",
+  "category": "Marketing, sales & SEO",
+  "what": "Self-hosted product analytics: funnels, retention, session replays, experiments.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "1:01",
+    "shown": "Explained uses for a business; no live demo.",
+    "quote": "PostHog is free, but it's really, really good"
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 6
  },
  {
   "id": "n:spiraai",
@@ -668,7 +1761,7 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 2
+  "rank": 7
  },
  {
   "id": "n:tinypopups",
@@ -699,7 +1792,40 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 3
+  "rank": 8
+ },
+ {
+  "id": "gh:baptistearno/typebot.io",
+  "name": "Typebot",
+  "url": "https://github.com/baptisteArno/typebot.io",
+  "kind": "repo",
+  "category": "Marketing, sales & SEO",
+  "what": "Self-hosted chat-style forms with branching and lead qualification.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [
+   "Typeform"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "kMPyFWFqX5I",
+    "t": "16:39",
+    "shown": "Described what it is.",
+    "quote": "I don't love how closely their name is to the name Typeform"
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 9
  },
  {
   "id": "n:vibecodeing",
@@ -730,7 +1856,7 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 1
+  "rank": 2
  },
  {
   "id": "n:vmpal",
@@ -761,6 +1887,223 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 2
+  "rank": 4
+ },
+ {
+  "id": "gh:yoheinakajima/glance-speedlab",
+  "name": "Camera Bench",
+  "url": "https://github.com/yoheinakajima/glance-speedlab",
+  "kind": "repo",
+  "category": "Other",
+  "what": "Free repo that has AI watch your webcam in real time and describe faces, gestures or custom yes/no checks.",
+  "price": "free",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "10:50",
+    "shown": "Showed it reading expressions and finger counts live.",
+    "quote": "it's a free GitHub repo for AI to essentially watch your camera, right?"
+   }
+  ],
+  "check": "Link list names the repo Glance Speedlab; URL taken from there.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 4,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 3
+ },
+ {
+  "id": "n:granola",
+  "name": "Granola",
+  "url": "https://www.granola.ai/",
+  "kind": "app",
+  "category": "Automation & workflows",
+  "what": "Meeting note-taker whose notes feed GrokBot tasks.",
+  "price": "unknown",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "video": "o7Rm5FvA7hU",
+    "t": "0:32",
+    "shown": "Shown as the source of meeting notes in a creator clip.",
+    "quote": "he's using Granola as a meeting notetaker"
+   }
+  ],
+  "check": "",
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "score": 4,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 3
+ },
+ {
+  "id": "gh:tencentcloud/octop",
+  "name": "Octop",
+  "url": "https://github.com/TencentCloud/Octop",
+  "kind": "repo",
+  "category": "Agent orchestration & teams",
+  "what": "Tencent Cloud's open-source team/family agent assistant, aimed at Asian chat apps.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "hlOk-EFUITQ",
+    "t": "28:15",
+    "shown": "Browsed the repo and its supported apps.",
+    "quote": "This is their opensource version of Grockbot"
+   }
+  ],
+  "check": "Integrations target apps popular in Asia, not the UK.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 4,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 8
+ },
+ {
+  "id": "n:sideromni",
+  "name": "Sider Omni",
+  "url": "https://sider.ai/lab/sider-omni",
+  "kind": "app",
+  "category": "Other",
+  "what": "AI sidebar that sits on top of almost any app so you can ask about what is on screen.",
+  "price": "unknown",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "9:50",
+    "shown": "Showed a demo with Apple Mail; Andrew said he would not use it.",
+    "quote": "It adds it to just about any app you have."
+   }
+  ],
+  "check": "Pricing not stated.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 3,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 4
+ },
+ {
+  "id": "n:systocommerce",
+  "name": "Systo Commerce",
+  "url": "https://systo-commerce.vercel.app/",
+  "kind": "app",
+  "category": "Other",
+  "what": "Vibe-coded walkable online mall where you shop as an avatar and stores sell real goods and ad space.",
+  "price": "unknown",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "ZodAaTH-6_E",
+    "t": "12:52",
+    "shown": "Showed a demo clip of an avatar trying on a jacket.",
+    "quote": "you can walk into different stores"
+   }
+  ],
+  "check": "Built with Claude Opus 5.5; demo only.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 3,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 5
+ },
+ {
+  "id": "n:twilio",
+  "name": "Twilio",
+  "url": "https://www.twilio.com/",
+  "kind": "service",
+  "category": "Voice & audio",
+  "what": "Provides the phone number the voice agent calls from.",
+  "price": "paid",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "WPUAZm5rnGc",
+    "t": "7:09",
+    "shown": "Bought and registered a number live.",
+    "quote": "The telephone number from Twilio."
+   }
+  ],
+  "check": "Pricing not stated.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 3,
+  "replaced_by": null,
+  "status": "steady",
+  "rank": 4
+ },
+ {
+  "id": "n:elevenlabs",
+  "name": "ElevenLabs",
+  "url": "https://elevenlabs.io/",
+  "kind": "service",
+  "category": "Voice & audio",
+  "what": "Voice agent platform; here it runs the phone conversations, with the founder's cloned voice.",
+  "price": "freemium",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "video": "WPUAZm5rnGc",
+    "t": "6:08",
+    "shown": "Set up the voice agent and cloned voice in the build.",
+    "quote": "you go ahead and add 11 Labs"
+   }
+  ],
+  "check": "Pricing not stated.",
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 6.5,
+  "replaced_by": "VoiceStudio",
+  "status": "replaced",
+  "rank": 5
  }
 ]
