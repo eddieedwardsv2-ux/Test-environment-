@@ -1,6 +1,6 @@
 # Nate Herk | AI Automation — research notes
 
-Coverage: **23 transcribed** (with timestamps) via `research/get_transcript.py`.
+Coverage: **35 transcribed** (with timestamps) via `research/get_transcript.py`.
 **Primary (the foundation curriculum):** "Steal My Exact AI OS Setup" and "I
 Built Another Andrej Karpathy Using Claude". The rest are supporting evidence.
 Brain: [index](brain/index.md). Lesson: [AI OS + second brain](lesson-ai-os-and-second-brain.md).
