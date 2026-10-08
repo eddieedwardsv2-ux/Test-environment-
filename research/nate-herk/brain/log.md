@@ -2,6 +2,11 @@
 
 **This is history.** It records what was added and when; it may be out of date about what the brain holds now. The current state is in [index.md](index.md). Newest first.
 
+## 2026-10-08: concepts linked to rules ("fully connected", level 2)
+**Why:** Charlie wants each brain to be a connected map, as in DTCyvo6cC54. Nate's level 2 is pages linked "like backlinks" (12:41), not a knowledge graph.
+**Pages changed:** `concepts.md`: every concept ends with a "Used by" line listing the rules that cite it (built from the concept numbers in `rules.md`; concepts 19, 20, 28 have no rule yet and point to related concepts instead); concept 20 gained the level 2 vs level 4 point with a checked quote.
+**Checked:** `tools/audit.py` 0 errors; the new quote passes and a planted fake one fails.
+
 ## 2026-10-07: +14 transcripts (now all 20 saved)
 **Ingested:** 3XIGcM7VICc, bCljOfCH8Ms, jdbOVepEtUE, yysILVsfLFM, 0WDkwMxj13s, 9KOtMsZ9I28, c0kaKxM2pHg, LrgfmZkl3nc, RzLV8sfFdMM, e18sdZLwP7o, zKBPwDpBfhs, kB9iMD0EjT8, HIRDzMtuWFk, 9hetShMMp2s (nothing new). Built from the quote-checked requirements in `system/standard-ai-os-v1.md`.
 **Pages changed:** `concepts.md` +11 concepts (18-28, section G), "Also" lines on concepts 2, 3, 6, 7, 9, 11, 14, 15, 16, 17, and a "videos that disagree" block; `rules.md` +12 rules (19-30), "Also" lines on rules 2, 4, 5, 7, 11, 15, 16, 17, and a newer-wins note on rule 15; `index.md`.

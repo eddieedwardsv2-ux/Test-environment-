@@ -20,6 +20,7 @@ When an agent is wrong because of its context, it is one of four things. *Poison
 > "In March your policy was always refund. In June your policy is now to never refund." [4:07](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=247s)
 Also: verification fix [2:36](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=156s); bloat [3:06](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=186s); confusion [3:36](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=216s). Source: AI OS ([transcript][os]).
 Nate gives no specific fix for clash or confusion in this video. **(inference)** Clash is fixed by keeping one current source per fact and marking or retiring old ones; confusion by making sure the missing thing has a route.
+**Used by:** Rule 1 ([rules.md](rules.md)).
 
 **2. Expertise context vs situational context**
 Expertise context is what the agent needs on every run (who you are, goals, what the business does, policies): the rulebook, like a system prompt. Situational context is pulled in just in time for one task (a support ticket from yesterday). His analogy: the principal knows how classrooms run; the teacher knows each student. Keeping situational data always loaded adds bloat, confusion and even clash. In his "four C's" framework he maps *context* to expertise and *connections* to situational.
@@ -28,6 +29,7 @@ Expertise context is what the agent needs on every run (who you are, goals, what
 > "go use that live lookup, pull the data in because you need it" [6:08](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=368s)
 Source: AI OS ([transcript][os]).
 Also: [bCl 2:20:23](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=8423s) "I said don't read from the wiki unless you actually need it."; second brain = the first two C's, [yys 2:04](https://www.youtube.com/watch?v=yysILVsfLFM&t=124s).
+**Used by:** Rule 4 ([rules.md](rules.md)).
 
 ## B. Organising the OS
 
@@ -39,6 +41,7 @@ His main CLAUDE.md says who the agent is in a line or two and is otherwise a rou
 Also: he shows the routing table at [13:17](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=797s). Source: AI OS ([transcript][os]).
 *Supporting:* the same idea in [Every Level of a Claude Second Brain](../every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md), "the claw.md is kind of treated as a router" [4:34](https://www.youtube.com/watch?v=DTCyvo6cC54&t=274s), and in [I Turned Claude Into the Ultimate Second Brain](../i-turned-claude-into-the-ultimate-second-brain--8QQ_INxAhRs-transcript.md), "I think of my Claude and MD file as my router" [5:09](https://www.youtube.com/watch?v=8QQ_INxAhRs&t=309s).
 Also: "I go into a routing map and that's the majority of my agents.mmd" [yys 6:07](https://www.youtube.com/watch?v=yysILVsfLFM&t=367s); new skills get registered in it [bCl 1:30:08](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=5408s); "cloudmd is the rules. Memory is, you know, learned facts." [jdb 2:04:50](https://www.youtube.com/watch?v=jdbOVepEtUE&t=7490s). Length limit: concept 18.
+**Used by:** Rule 5, Rule 20 ([rules.md](rules.md)).
 
 **4. No single right layout; the test is whether you (and the agent) can find things**
 Flat or deeply nested doesn't matter. What matters is routing rules good enough that you and the agent can find things. His check: think of something you made and find it in the file explorer without searching or asking Claude. If you can, an agent with routing rules probably can too. The only wrong setup is one that keeps giving wrong answers while you do nothing.
@@ -47,6 +50,7 @@ Flat or deeply nested doesn't matter. What matters is routing rules good enough 
 > "the only way that you're doing this wrong is if you're constantly getting wrong answers and you're not doing anything about it." [18:20](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1100s)
 Source: AI OS ([transcript][os]).
 *Supporting:* "can your agent find it again, and could you find it again" [2:02](https://www.youtube.com/watch?v=DTCyvo6cC54&t=122s) ([transcript](../every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md)).
+**Used by:** Rule 6 ([rules.md](rules.md)).
 
 **5. Segment knowledge that is distinct and growing**
 When separate bodies of knowledge keep growing (his YouTube transcripts and his meeting transcripts), split them into their own wikis so the agent knows where to look and searches far fewer files: faster, more accurate and cheaper on tokens. Claude Code itself suggested his split. Clients: keep internal knowledge (dates, price, scope, calls) in the OS, segmented by client; keep client-facing deliverables in a separate repo, while the OS still knows the engagement exists.
@@ -54,6 +58,7 @@ When separate bodies of knowledge keep growing (his YouTube transcripts and his 
 > "how can you narrow the actual context that your agent is going to be looking through?" [20:51](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1251s)
 > "it still needs to know about this engagement." [22:21](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1341s)
 Also: the split Claude suggested [17:19](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1039s)–[17:50](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1070s). Source: AI OS ([transcript][os]).
+**Used by:** Rule 9 ([rules.md](rules.md)).
 
 **6. Cadence: automate data that arrives on a schedule**
 If you keep asking the agent to pull the same data, it isn't really just-in-time situational context. Data that lands on a fixed rhythm (his Monday Q&A, Tuesday leadership meeting) should be pulled in by a cron or routine, so it is there even if you forget. Natural language plus an API key is usually enough to set it up.
@@ -61,6 +66,7 @@ If you keep asking the agent to pull the same data, it isn't really just-in-time
 > "this isn't sort of like a just in time sort of situational context thing" [19:21](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1161s)
 Also: the audit's "durability" suggestion of weekly crons [9:13](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=553s). Source: AI OS ([transcript][os]).
 Also: of much-used skills, "If they're getting used so often, why not just automate them?" [bCl 2:28:30](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=8910s). Cadence is the fourth C and comes last: concept 19.
+**Used by:** Rule 10 ([rules.md](rules.md)).
 
 ## C. Keeping it true
 
@@ -71,6 +77,7 @@ His `OS audit` skill reads the whole project and reports what is weak. It is rea
 > "Index says 55 folders, but disk has 79." [8:12](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=492s)
 Also: fix list marked await approval [8:43](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=523s); checks [10:14](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=614s)–[11:46](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=706s). Before the skill, he did the same thing by asking weekly or monthly in plain chat: "have AI audit itself." [16:49](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1009s). Source: AI OS ([transcript][os]).
 Also: reports are saved and the skill should "look for earlier reports inside of the audit folder" [10:14](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=614s); run it weekly, "Maybe every single Friday, you run an audit" [bCl 2:28:30](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=8910s).
+**Used by:** Rule 7, Rule 8, Rule 28 ([rules.md](rules.md)).
 
 **8. Freshness is a separate check from accuracy**
 Data can be correct but stale. The audit grades each data feed as fresh, drifting, frozen, retired or on demand. His demo's knowledge was current only to 29 June, so any later business question would get a confident but wrong answer.
@@ -78,6 +85,7 @@ Data can be correct but stale. The audit grades each data feed as fresh, driftin
 > "fresh, drifting, frozen, retired, or if they're on demand." [11:15](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=675s)
 > "would give me a confident June state answer, which would be wrong." [8:43](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=523s)
 Source: AI OS ([transcript][os]).
+**Used by:** Rule 8 ([rules.md](rules.md)).
 
 **9. Backtrack retrieval misses, then fix the route**
 When the agent searches for ages, or says it has no access to something you know is there, don't just tell it not to let that happen again. Make it retrace what it did and where it looked, explain why it missed, and then update the routing or reorganise files based on what it found.
@@ -86,6 +94,7 @@ When the agent searches for ages, or says it has no access to something you know
 Also: "number five is to backtrack" [22:51](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1371s). Source: AI OS ([transcript][os]).
 *Supporting:* a 5-minute search for a file he knows the location of means the architecture needs updating, [5:39](https://www.youtube.com/watch?v=8QQ_INxAhRs&t=339s) ([transcript](../i-turned-claude-into-the-ultimate-second-brain--8QQ_INxAhRs-transcript.md)).
 Also: "every time you correct AI, you feed that correction back into the system" [3XI 6:37](https://www.youtube.com/watch?v=3XIGcM7VICc&t=397s); fix it where it lasts, "update the skill in the smallest durable place" [HIR 6:05](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=365s).
+**Used by:** Rule 11 ([rules.md](rules.md)).
 
 ## D. Building an expert brain
 
@@ -96,6 +105,7 @@ Step one gathers everything the expert has said into one raw folder, one sub-fol
 > "The raw files don't get touched" [4:04](https://www.youtube.com/watch?v=bvGptCLDhyo&t=244s)
 Also: crawl set-up [3:03](https://www.youtube.com/watch?v=bvGptCLDhyo&t=183s); Obsidian as the visual layer [4:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=274s). Source: Karpathy ([transcript][kb]).
 *Supporting:* raw → wiki → index and log, shown step by step in [Karpathy's LLM Wiki Is Basically Cheating](../fable-5-karpathy-s-llm-wiki-is-basically-cheating--hQvwMj7IJe4-transcript.md), [8:38](https://www.youtube.com/watch?v=hQvwMj7IJe4&t=518s).
+**Used by:** Rule 12 ([rules.md](rules.md)).
 
 **11. The brain's pages: index, log, source pages, concepts and rules**
 The wiki keeps an index and a log, has one page per thing the expert wrote or said, and topic pages (principles, rules, methods, how he explains, how he debugs). He also mentions a "hot page". **(inference)** In this repo that maps to `index.md` (current state, what's covered), `log.md` (history), `concepts.md` (ideas) and `rules.md` (operating rules), with the transcripts as the source pages.
@@ -103,6 +113,7 @@ The wiki keeps an index and a log, has one page per thing the expert wrote or sa
 Also: page types [4:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=274s)–[5:04](https://www.youtube.com/watch?v=bvGptCLDhyo&t=304s); index, hot page and log updated on ingest [9:38](https://www.youtube.com/watch?v=bvGptCLDhyo&t=578s). Source: Karpathy ([transcript][kb]).
 *Supporting:* the index and log let the AI "incrementally build and maintain this wiki" [9:38](https://www.youtube.com/watch?v=hQvwMj7IJe4&t=578s) ([transcript](../fable-5-karpathy-s-llm-wiki-is-basically-cheating--hQvwMj7IJe4-transcript.md)).
 Also: on memory files, "it's an index, not a dump" [Lrg 5:34](https://www.youtube.com/watch?v=LrgfmZkl3nc&t=334s).
+**Used by:** Rule 14 ([rules.md](rules.md)).
 
 **12. Provenance and inference labels**
 Rules are what make the agent think like the expert, not just recall him. Each rule must link to an exact quote and where it came from, so you can click through and check it. If there is no source, the agent must say it is inferring.
@@ -110,6 +121,7 @@ Rules are what make the agent think like the expert, not just recall him. Each r
 > "every rule has to connect with an exact quote from him and where it came from. Because we don't want Claude to just make things up." [5:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=334s)
 > "if there is no source, the agent has to say explicitly that it's inferring" [6:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=394s)
 Source: Karpathy ([transcript][kb]).
+**Used by:** Rule 13 ([rules.md](rules.md)).
 
 **13. Relational ingestion**
 The wiki links pages to each other: every rule links to its sources and every source to the rules it supports, so you query a relationship map, not a pile of notes. Adding one new link via an ingest command writes a source page, updates every page that source touches, and updates the index, hot page and log. In his demo a rule that had one source got a second and was promoted to a real rule. He never edited the wiki by hand.
@@ -117,6 +129,7 @@ The wiki links pages to each other: every rule links to its sources and every so
 > "it will update every page that post touches." [9:38](https://www.youtube.com/watch?v=bvGptCLDhyo&t=578s)
 > "a rule that was sitting on the bench with one source behind it got its second source and became a real rule." [9:38](https://www.youtube.com/watch?v=bvGptCLDhyo&t=578s)
 Also: relationships make querying work [4:04](https://www.youtube.com/watch?v=bvGptCLDhyo&t=244s). Source: Karpathy ([transcript][kb]).
+**Used by:** Rule 14 ([rules.md](rules.md)).
 
 ## E. Turning knowledge into behaviour
 
@@ -128,6 +141,7 @@ The rules become two files. A sub-agent holds the rules, how it talks and the lo
 Source: Karpathy ([transcript][kb]).
 *Supporting, a challenge:* in [I Deleted All My Claude Skills](../i-deleted-all-my-claude-skills-and-claude-got-smarter--XNQBCRcwXV4-transcript.md) he warns over-specific skills can hold newer models back and suggests "making versions of them that aren't as specific" [5:41](https://www.youtube.com/watch?v=XNQBCRcwXV4&t=341s). **(inference)** Make skills for repeatable procedures, but keep them short.
 Also: skill anatomy and triggering, concept 21; sub-agents in depth, concept 23.
+**Used by:** Rule 15 ([rules.md](rules.md)).
 
 **15. Run gates: enforce verification, don't just ask for it**
 A hook runs when the agent tries to finish its turn. If it wrote code it never ran, the hook blocks the answer and sends it back. Verification becomes a step the agent can't skip.
@@ -137,6 +151,7 @@ A hook runs when the agent tries to finish its turn. If it wrote code it never r
 Source: Karpathy ([transcript][kb]).
 Also: "every single skill that I build works in some sort of verification loop" [9KO 9:40](https://www.youtube.com/watch?v=9KOtMsZ9I28&t=580s).
 *Supporting:* "You verify yourself so that I don't have to verify." [9:15](https://www.youtube.com/watch?v=XNQBCRcwXV4&t=555s) ([transcript](../i-deleted-all-my-claude-skills-and-claude-got-smarter--XNQBCRcwXV4-transcript.md)).
+**Used by:** Rule 16 ([rules.md](rules.md)).
 
 **16. Real-world testing**
 The last step is testing on real things. Teaching test: it writes down what done means first, builds the smallest version, predicts, runs, shows a broken version, then lists what it ran and which rule drove each move. Review test: "would the client accept this?" on a script that had passed Claude's own test; the agent predicted a crash on an emoji in a normal Windows terminal, ran it that way, and it crashed. It then trimmed what wasn't earning its place and proved the trimmed version behaved the same by running both side by side.
@@ -145,6 +160,7 @@ The last step is testing on real things. Teaching test: it writes down what done
 > "we make it test on things that are real." [10:08](https://www.youtube.com/watch?v=bvGptCLDhyo&t=608s)
 Also: the emoji crash [8:37](https://www.youtube.com/watch?v=bvGptCLDhyo&t=517s). Source: Karpathy ([transcript][kb]).
 Also: a slides skill that couldn't see its own output got Chrome so it could "open the page screenshot it look at it" [bCl 1:03:37](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=3817s); "Before returning the final output, define the acceptance criteria." [HIR 8:05](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=485s).
+**Used by:** Rule 17, Rule 27 ([rules.md](rules.md)).
 
 ## F. The point of it all
 
@@ -157,6 +173,7 @@ The brain is not a voice clone or impression; it condenses how an expert thinks 
 Also: not an impression [0:31](https://www.youtube.com/watch?v=bvGptCLDhyo&t=31s); master your own systems first [24:23](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1463s). Sources: Karpathy ([transcript][kb]), AI OS ([transcript][os]).
 Also: "Never accept AI output without asking why" [bCl 6:37](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=397s); "You can't scale a system if you haven't lived in it yourself." [bCl 2:31:32](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=9092s).
 *Supporting:* for rolling an OS out to a team, "you have to learn it first" [33:13](https://www.youtube.com/watch?v=8QQ_INxAhRs&t=1993s) ([transcript](../i-turned-claude-into-the-ultimate-second-brain--8QQ_INxAhRs-transcript.md)).
+**Used by:** Rule 18 ([rules.md](rules.md)).
 
 ## G. From the wider course and newer videos
 
@@ -165,66 +182,79 @@ CLAUDE.md is loaded as system context at the start of every chat, so every extra
 > "Claude auto reads it at the start of every single chat as system context. So keep it under 200 lines." [jdb 5:36:27](https://www.youtube.com/watch?v=jdbOVepEtUE&t=20187s)
 > "the edit actually doesn't apply until you restart that session." [jdb 5:55:15](https://www.youtube.com/watch?v=jdbOVepEtUE&t=21315s)
 Also: keep decisions, not chat history, in it: "Save decisions, not conversations." [jdb 5:44:05](https://www.youtube.com/watch?v=jdbOVepEtUE&t=20645s).
+**Used by:** Rule 19 ([rules.md](rules.md)).
 
 **19. The four C's, built in order: context, connections, capabilities, cadence**
 Context is what the AI knows about you; connections are the live data it can reach; capabilities are the skills that make it useful; cadence is when it acts on its own. The first two are the second brain. Each layer needs the one before it.
 > "You can't have cadence without connections. You can't have capability without context. And you have to go in this order." [bCl 12:14](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=734s)
 > "each of these layers can't happen without the previous one." [0WD 8:09](https://www.youtube.com/watch?v=0WDkwMxj13s&t=489s)
 Also: [yys 2:04](https://www.youtube.com/watch?v=yysILVsfLFM&t=124s), [jdb 4:19:40](https://www.youtube.com/watch?v=jdbOVepEtUE&t=15580s). Links concept 2 (context/connections) and concept 6 (cadence).
+**Used by:** no rule yet; links concepts 2 and 6 (above).
 
 **20. Levels of a second brain: start at level 1, move up only when it hurts**
 Level 1 is a router plus folders. Move to a compiled wiki (level 2) when notes pile up and you forget what's in them; a markdown wiki with good indexes is enough until hundreds of pages. Only keep knowledge that will still matter in a year.
 > "If you have 30 plus notes and you keep forgetting what's in them, look at level two." [DTC 28:53](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1733s)
 > "if you have hundreds of pages with good indexes, you're fine with wiki graph" [bCl 2:23:27](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=8607s)
 Also: "If there's not pain, then why create more?" [DTC 4:04](https://www.youtube.com/watch?v=DTCyvo6cC54&t=244s); "in a year, will it be good for me to have this memory in here?" [DTC 27:23](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1643s).
+> "My wiki has links, isn't that a knowledge graph? Not exactly." — [12:41](https://www.youtube.com/watch?v=DTCyvo6cC54&t=761s)
+Added 2026-10-08: links between wiki pages are level 2, "it's like a a see also. It's like backlinks"; level 4 knowledge graphs record *how* things relate, and he plays with them but doesn't use them day to day. So "fully connected" at our level means every page links to related pages, not a graph tool.
+**Used by:** no rule yet; level 1 is concept 3's router (inference).
 
 **21. Skills: progressive loading, and the description is the trigger**
 Claude reads only each skill's name and description (front matter, about 100 tokens) to pick one, then the full SKILL.md, then extra files only if needed. So the description must use the words a person would actually say, two skills mustn't compete, and broken front matter (an unclosed quote) stops it firing. Test with an obvious request, a reworded one and an unrelated one. Keep SKILL.md under 500 lines.
 > "it would only read the YAML front matter." [zKB 12:10](https://www.youtube.com/watch?v=zKBPwDpBfhs&t=730s)
 > "a skill that Claude can't find is basically a skill that you don't have." [HIR 4:33](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=273s)
 Also: [zKB 11:40](https://www.youtube.com/watch?v=zKBPwDpBfhs&t=700s)–[12:41](https://www.youtube.com/watch?v=zKBPwDpBfhs&t=761s); [HIR 4:02](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=242s); "You have to close off the quotes if you open them up" [jdb 2:37:42](https://www.youtube.com/watch?v=jdbOVepEtUE&t=9462s); "keep the skill.md under 500 lines" [bCl 1:21:28](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=4888s).
+**Used by:** Rule 21, Rule 22 ([rules.md](rules.md)).
 
 **22. Skills start small, keep working code, and earn autonomy**
 A skill can be a short prompt you were tired of retyping. When a script works, save it as a file the skill points to rather than letting Claude rewrite it each run. New skills report and ask; give them more freedom only after many runs.
 > "A skill can just be a prompt that you don't want to have to say every single time." [c0k 2:02](https://www.youtube.com/watch?v=c0kaKxM2pHg&t=122s)
 > "don't leave that code trapped inside the chat" [HIR 2:02](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=122s)
 Also: "battle tested" first [jdb 1:47:37](https://www.youtube.com/watch?v=jdbOVepEtUE&t=6457s); "They could literally just be a 50line markdown file." [bCl 1:25:34](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=5134s); vet third-party skills [bCl 1:18:55](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=4735s).
+**Used by:** Rule 23 ([rules.md](rules.md)).
 
 **23. Sub-agents: for piles of output, read-only by their tools, never forced**
 Use a sub-agent when a job would flood your chat with output you won't re-read (many files, big searches). Make one read-only through its tool list, not by asking. Don't use them for one quick step: too many gives worse results. Shared agents live in the repo.
 > "is this about to dump a pile of stuff into my chat that I'll never read again? If that's ever yes, delegate it to a sub agent." [jdb 2:43:47](https://www.youtube.com/watch?v=jdbOVepEtUE&t=9827s)
 > "if you're forcing too many sub agents, you're going to get worse results" [e18 24:57](https://www.youtube.com/watch?v=e18sdZLwP7o&t=1497s)
 Also: "explicitly read-only" via disallowed tools [e18 7:10](https://www.youtube.com/watch?v=e18sdZLwP7o&t=430s); "so that you don't blow your own context window" [bCl 1:23:32](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=5012s).
+**Used by:** Rule 24 ([rules.md](rules.md)).
 
 **24. Permissions are keys and deny lists, not prompts**
 Assume the agent will do anything it is able to. Safety comes from what it physically can't do: scoped API keys that only allow the needed actions, and a settings deny list for risky commands. His 150,000-email accident came from too many tools, not the permission mode.
 > "A prompt is never a permission layer. You basically have to have the assumption that if it can, it will." [8QQ 24:31](https://www.youtube.com/watch?v=8QQ_INxAhRs&t=1471s)
 > "Can you help me update the settings file so that you physically cannot do those things?" [jdb 1:14:28](https://www.youtube.com/watch?v=jdbOVepEtUE&t=4468s)
 Also: "there's no point in giving the agent that actual tool to be able to do so." [jdb 1:10:54](https://www.youtube.com/watch?v=jdbOVepEtUE&t=4254s); per-key permissions [bCl 38:44](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=2324s).
+**Used by:** Rule 25 ([rules.md](rules.md)).
 
 **25. Secrets in .env; your own keys travel, app connectors don't**
 Keys live in a `.env` file kept out of Git and out of chat. Prefer an API key plus a reference .md over app connectors or piles of MCP servers: connectors are lost when you change tool, and loaded MCPs eat tokens.
 > "If you rely on these connections, that is not great" [jdb 1:37:24](https://www.youtube.com/watch?v=jdbOVepEtUE&t=5844s)
 > "if you switch off to a different desktop app or a different harness, you lose everything." [jdb 1:37:24](https://www.youtube.com/watch?v=jdbOVepEtUE&t=5844s)
 Also: "gets excluded from anytime we do a public push" [bCl 41:50](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=2510s); MCP token cost [bCl 39:45](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=2385s).
+**Used by:** Rule 26 ([rules.md](rules.md)).
 
 **26. Grill me: interview the knowledge out of your head**
 The bottleneck is getting what you know into the system; a quick brain dump is never enough. The grill-me skill asks one question at a time, checkpoints every answer to a doc in `brainstorms/`, flags gaps to chase with others, and can be re-run when things change. Up-front time gets a skill close to right on the first try.
 > "It's not ever good enough." [c0k 1:02](https://www.youtube.com/watch?v=c0kaKxM2pHg&t=62s)
 > "the bigger problem is getting everything out of your brain into the system" [DTC 22:18](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1338s)
 Also: checkpointing to brainstorms [c0k 2:33](https://www.youtube.com/watch?v=c0kaKxM2pHg&t=153s); open flags [c0k 6:07](https://www.youtube.com/watch?v=c0kaKxM2pHg&t=367s); ask until 95% sure [jdb 5:32:54](https://www.youtube.com/watch?v=jdbOVepEtUE&t=19974s).
+**Used by:** Rule 30 ([rules.md](rules.md)).
 
 **27. Session hygiene: clear between tasks, hand off before it degrades**
 Each message in a long chat costs more than in a fresh one, so start fresh for unrelated tasks. Before clearing (he says around 250-300k tokens, as autocompact comes too late), have the agent write a hand-off: what was done, files made, open decisions, next step.
 > "Use slashclear between unrelated tasks." [jdb 5:30:53](https://www.youtube.com/watch?v=jdbOVepEtUE&t=19853s)
 > "Here are open decisions. Here's what's next." [0WD 22:24](https://www.youtube.com/watch?v=0WDkwMxj13s&t=1344s)
 Also: "But the autocompact kicks in way too late." [jdb 2:00:48](https://www.youtube.com/watch?v=jdbOVepEtUE&t=7248s).
+**Used by:** Rule 29 ([rules.md](rules.md)).
 
 **28. One set of files for every tool (Claude Code and Codex)**
 Build tool-agnostic. Codex reads AGENTS.md, keeps config and agents in `.codex/` and skills in `.agents/`; skill files are identical between the two, only agent files differ (TOML vs markdown). A CLAUDE.md can simply reference AGENTS.md.
 > "you're building things to be tool agnostic" [bCl 2:04](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=124s)
 > "the skill files, which are the markdown files with the YAML front matter, are the exact same." [kB9 3:04](https://www.youtube.com/watch?v=kB9iMD0EjT8&t=184s)
 Also: [DTC 22:49](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1369s); shared skills and agents go in the repo [e18 24:57](https://www.youtube.com/watch?v=e18sdZLwP7o&t=1497s).
+**Used by:** no rule yet; concept 3 says the same files serve Codex.
 
 ---
 
