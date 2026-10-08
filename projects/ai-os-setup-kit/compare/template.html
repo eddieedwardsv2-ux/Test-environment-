@@ -1,0 +1,131 @@
+<title>Kit Compare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: plain-English intro, then two "filing cabinet" columns (ours vs Nate's) that stack on a phone,
+   then a feature table and the recommendation. Drawers open to show each file's real text. */
+:root{
+  --bg:#f4f5f7; --surface:#ffffff; --sunk:#eceef2; --line:#d8dce3; --fg:#1b2230; --muted:#5d6779;
+  --ours:#0f7f86; --ours-soft:#dff3f3; --nate:#c2387a; --nate-soft:#fbe4ef;
+  --yes:#1f7a4d; --no:#b4232c; --part:#9a6a00;
+  --f-display:"Archivo",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f131a; --surface:#161b24; --sunk:#1d2430; --line:#2b3442; --fg:#e7ebf2; --muted:#9aa5b6;
+  --ours:#4fd1d9; --ours-soft:#123236; --nate:#ff7ab6; --nate-soft:#3a1628;
+  --yes:#5fd39a; --no:#ff7d84; --part:#f0b54a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f131a; --surface:#161b24; --sunk:#1d2430; --line:#2b3442; --fg:#e7ebf2; --muted:#9aa5b6;
+  --ours:#4fd1d9; --ours-soft:#123236; --nate:#ff7ab6; --nate-soft:#3a1628;
+  --yes:#5fd39a; --no:#ff7d84; --part:#f0b54a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--f-body);margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:28px 64px}
+h1,h2,h3{font-family:var(--f-display);letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.05;margin:0 0 10px;font-weight:800}
+h2{font-size:22px;margin:40px 0 10px}
+.lede{max-width:66ch;margin:0;color:var(--fg)}
+.lede + .lede{margin-top:10px;color:var(--muted)}
+code{font:13.5px var(--f-mono);background:var(--sunk);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+a{color:var(--ours)}
+
+.house{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 0}
+.house div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.house b{display:block;font:700 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+
+.cabs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px;align-items:start}
+.cab{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}
+.cab header{padding:14px 16px;border-bottom:1px solid var(--line)}
+.cab.ours header{background:var(--ours-soft)} .cab.nate header{background:var(--nate-soft)}
+.cab header h3{margin:0;font-size:19px}
+.cab.ours header h3{color:var(--ours)} .cab.nate header h3{color:var(--nate)}
+.cab header p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.drawer{border-top:1px solid var(--line)}
+.drawer:first-of-type{border-top:0}
+.drawer > button{display:grid;grid-template-columns:1fr auto;gap:4px 10px;width:100%;text-align:left;background:none;border:0;padding:11px 16px;font:inherit;color:inherit;cursor:pointer}
+.drawer > button:hover{background:var(--sunk)}
+.drawer > button:focus-visible{outline:2px solid var(--ours);outline-offset:-2px}
+.fname{font:500 13.5px var(--f-mono);overflow-wrap:anywhere}
+.why{grid-column:1/-1;font-size:14.5px;color:var(--fg)}
+.fill{grid-column:1/-1;font-size:12.5px;color:var(--muted)}
+.chev{font:500 13px var(--f-mono);color:var(--muted);align-self:start}
+.text{margin:0 16px 14px;max-height:340px;overflow:auto;background:var(--sunk);border-radius:8px;padding:10px 12px;font:12.5px/1.55 var(--f-mono);white-space:pre-wrap;overflow-wrap:anywhere}
+.nate .note{margin:0 16px 14px;font-size:13.5px;color:var(--muted)}
+
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px}
+th,td{text-align:left;padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
+thead th{border-top:0;font:700 12px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+thead th.o{color:var(--ours)} thead th.n{color:var(--nate)}
+.v{display:flex;gap:7px;align-items:baseline}
+.v i{font-style:normal;font:700 11px var(--f-mono);padding:1px 6px;border-radius:999px;white-space:nowrap}
+.v i.yes{color:var(--yes);border:1px solid var(--yes)} .v i.no{color:var(--no);border:1px solid var(--no)} .v i.part{color:var(--part);border:1px solid var(--part)}
+
+.rec{margin-top:16px;background:var(--surface);border:2px solid var(--fg);border-radius:14px;padding:18px 20px}
+.rec h3{margin:0 0 6px;font-size:20px}
+.rec ol{margin:10px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+.rec p{margin:0;max-width:68ch}
+
+@media (max-width:760px){.cabs{grid-template-columns:1fr}.house{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <h1>Kit Compare</h1>
+  <p class="lede">A <strong>blank template</strong> is an AI OS with all the folders, rules and skills in place but nothing personal in it yet. It's like a new house: the rooms are built and labelled, but the furniture (who you are, your goals, your projects) arrives when you move in. Each person gets their own private copy, and an interview fills it in.</p>
+  <p class="lede">We have two of these. <strong>Ours</strong> (<code>templates/standard-ai-os-v1/</code>) is the small one we built from Nate's videos. <strong>Nate's AIS-OS kit</strong> is his free official starter kit, which we adopted parts of. Tap any file to see what it's for. In ours, you can read the actual text.</p>
+
+  <div class="house">
+    <div><b>Built in</b>The rulebook (<code>AGENTS.md</code>), the folders, and skills like the interview and the audit.</div>
+    <div><b>Filled in on day 1</b>Who they are, what matters now, where their work lives, via the interview.</div>
+    <div><b>Grows after</b>Projects, decisions, connected tools, automations, weekly audits.</div>
+  </div>
+
+  <h2>The two filing cabinets</h2>
+  <div class="cabs">
+    <section class="cab ours"><header><h3>Ours: Standard AI-OS v1</h3><p>12 files, about 200 lines. Read every word in 10 minutes.</p></header><div id="ours"></div></section>
+    <section class="cab nate"><header><h3>Nate's AIS-OS kit</h3><p>Free, MIT licence. <a href="https://github.com/nateherkai/AIS-OS" target="_blank" rel="noopener">github.com/nateherkai/AIS-OS</a></p></header><div id="nate"></div></section>
+  </div>
+
+  <h2>Side by side</h2>
+  <div class="tblwrap"><table><thead><tr><th>What it gives a beginner</th><th class="o">Ours</th><th class="n">Nate's kit</th></tr></thead><tbody id="cmp"></tbody></table></div>
+
+  <div class="rec">
+    <h3>Recommendation: Nate's kit, plus three things from ours</h3>
+    <p>Nate's kit does the hard part for a beginner. One <code>/onboard</code> interview personalises everything, and it comes with the scored audit and the weekly level-up. Ours is smaller and easier to understand, and it does three things better than his. Add these when setting someone up:</p>
+    <ol>
+      <li><strong>One rulebook:</strong> make <code>CLAUDE.md</code> just the line <code>@AGENTS.md</code>, so the two copies can't drift apart.</li>
+      <li><strong>The fresh-session test:</strong> open a new session and ask "who am I, what's my priority, where do things go?" This is already step 6 of the plan.</li>
+      <li><strong>The research guide</strong> (<code>research/README.md</code>), for later, when they have 30+ notes.</li>
+    </ol>
+  </div>
+</div>
+
+<script>
+const D = __DATA__;
+const esc = s => { const d=document.createElement("div"); d.textContent=s; return d.innerHTML; };
+function drawer(f, i, side){
+  const id = side+"-"+i;
+  return `<div class="drawer"><button aria-expanded="false" aria-controls="${id}">
+      <span class="fname">${esc(f.p)}</span><span class="chev" aria-hidden="true">+</span>
+      <span class="why">${esc(f.why)}</span><span class="fill">${esc(f.fill)}</span></button>
+    <div id="${id}" hidden>${side==="ours"
+      ? `<pre class="text">${esc(f.text||"(empty)")}</pre>`
+      : `<p class="note">Read the full file in Nate's repo on GitHub (link above).</p>`}</div></div>`;
+}
+document.getElementById("ours").innerHTML = D.ours.map((f,i)=>drawer(f,i,"ours")).join("");
+document.getElementById("nate").innerHTML = D.nate.map((f,i)=>drawer(f,i,"nate")).join("");
+function cell(v){
+  const k = v.startsWith("yes") ? "yes" : v.startsWith("no") ? "no" : "part";
+  const label = k==="part" ? "partly" : k;
+  const rest = v.replace(/^(yes|no|partly)(: )?/,"");
+  return `<div class="v"><i class="${k}">${label}</i><span>${esc(rest)}</span></div>`;
+}
+document.getElementById("cmp").innerHTML = D.compare.map(([f,o,n])=>`<tr><td>${esc(f)}</td><td>${o.match(/^(yes|no|partly)/)?cell(o):esc(o)}</td><td>${n.match(/^(yes|no|partly)/)?cell(n):esc(n)}</td></tr>`).join("");
+document.addEventListener("click", e=>{
+  const b = e.target.closest(".drawer > button"); if(!b) return;
+  const p = document.getElementById(b.getAttribute("aria-controls")), open = p.hidden;
+  p.hidden = !open; b.setAttribute("aria-expanded", open); b.querySelector(".chev").textContent = open ? "−" : "+";
+});
+</script>

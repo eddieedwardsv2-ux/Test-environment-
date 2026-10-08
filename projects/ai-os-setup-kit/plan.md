@@ -1,4 +1,4 @@
-# Set-up plan: a beginner's first AI OS (draft v0.1, 2026-10-08)
+# Set-up plan: a beginner's first AI OS (draft v0.2, 2026-10-08)
 
 The step-by-step plan for setting someone up from nothing. Follow it in order,
 the same way every time; after each set-up, fix this file (see "After each
@@ -8,6 +8,11 @@ set-up"). Plain words only: the person may never have opened a terminal.
 **What they end with:** a private AI OS that knows who they are, what matters
 to them now and where things live, checked by a fresh-session test, plus a
 weekly habit that keeps it true.
+**Why the test set-ups are free:** they pay for their own Claude plan;
+Charlie's time is free in exchange for honest opinions, above all: did
+working the new way (an AI OS that knows them) feel different from the "old"
+AI they've used (a blank chat that forgets them)?
+**Format:** one 90-minute session (steps 1-7), then two light weeks.
 **Base:** Nate Herk's free AIS-OS kit (github.com/nateherkai/AIS-OS, MIT) and
 its `onboard` interview. We don't rebuild the kit; this plan is the beginner's
 path around it.
@@ -22,7 +27,9 @@ path around it.
 3. **Their device decides the route:** phone or tablet only → Claude Code on
    the web (claude.ai/code), which is how this OS was built. Computer → same
    web route first; desktop apps can come later.
-4. Start the recording.
+4. Start the recording, then ask the **before question** (keep their exact
+   words): "How do you use AI now (ChatGPT, Gemini or other), what's good
+   about it, and what annoys you?" If they've never used it, note that.
 
 ## Session 1: set-up (60-90 minutes)
 Each step has **Done when** so you both know it worked before moving on.
@@ -67,9 +74,11 @@ Each step has **Done when** so you both know it worked before moving on.
 - **Done when:** every answer names a real file in their repo. If one doesn't,
   ask Claude to fix that route, then re-test.
 
-**Step 7: save.**
+**Step 7: save, then the after question.**
 - They type: **"save everything to GitHub"**.
 - **Done when:** the GitHub page shows the new files with today's date.
+- Before you stop recording, ask the **after question**: "Compared with how
+  you used AI before, what feels different, if anything?" Keep their words.
 
 ## Week 1: use it (10 minutes a day)
 - **Day 2-3:** start each day with "what should I focus on today?". When
@@ -96,6 +105,9 @@ Each step has **Done when** so you both know it worked before moving on.
 - [ ] Two saved audit reports, and the second one isn't lower.
 - [ ] One connection reads successfully.
 - [ ] They can say in one sentence what the AI OS does for them.
+- [ ] **Day-14 opinion** (a short message is fine): "Old AI vs your AI OS:
+  better, worse or the same, and why? Would you keep paying for it?" Their
+  answer, anonymised, goes in `lessons.md`; it's the proof the channel needs.
 
 ## After each set-up (Charlie)
 1. Write anonymised lessons (no names) in `lessons.md` in this folder: where
@@ -104,12 +116,14 @@ Each step has **Done when** so you both know it worked before moving on.
    version at the top.
 3. The recording and their details stay in the private sessions repo.
 
-## Open questions (Charlie's call)
+## Decided (2026-10-08, Charlie)
+- They pay for their own Claude plan from day 1; the set-up is free in
+  return for honest opinions on old AI vs the new way.
+- One 90-minute session.
+
+## Open question (Charlie's call)
 1. **Which base?** This draft uses Nate's AIS-OS kit, as the project README
    says. `context/current-focus.md` still says "built on
-   `templates/standard-ai-os-v1/`" (our blank copy). Recommended: Nate's kit,
-   with our template kept as a reference for what "good" looks like.
-2. **Paid plan:** who pays during the free test set-ups? Recommended: they
-   use their own plan from day 1, so the test is realistic.
-3. **Session length:** one 90-minute session, or two 45-minute ones?
-   Recommended: one session for steps 1-7, so they leave with a working OS.
+   `templates/standard-ai-os-v1/`" (our blank copy). Compare them in the
+   Kit Compare page (link in the project README). Recommended: Nate's kit,
+   plus three things from ours (see that page).

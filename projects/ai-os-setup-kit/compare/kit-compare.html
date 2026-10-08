@@ -1,0 +1,131 @@
+<title>Kit Compare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: plain-English intro, then two "filing cabinet" columns (ours vs Nate's) that stack on a phone,
+   then a feature table and the recommendation. Drawers open to show each file's real text. */
+:root{
+  --bg:#f4f5f7; --surface:#ffffff; --sunk:#eceef2; --line:#d8dce3; --fg:#1b2230; --muted:#5d6779;
+  --ours:#0f7f86; --ours-soft:#dff3f3; --nate:#c2387a; --nate-soft:#fbe4ef;
+  --yes:#1f7a4d; --no:#b4232c; --part:#9a6a00;
+  --f-display:"Archivo",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f131a; --surface:#161b24; --sunk:#1d2430; --line:#2b3442; --fg:#e7ebf2; --muted:#9aa5b6;
+  --ours:#4fd1d9; --ours-soft:#123236; --nate:#ff7ab6; --nate-soft:#3a1628;
+  --yes:#5fd39a; --no:#ff7d84; --part:#f0b54a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f131a; --surface:#161b24; --sunk:#1d2430; --line:#2b3442; --fg:#e7ebf2; --muted:#9aa5b6;
+  --ours:#4fd1d9; --ours-soft:#123236; --nate:#ff7ab6; --nate-soft:#3a1628;
+  --yes:#5fd39a; --no:#ff7d84; --part:#f0b54a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--f-body);margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:28px 64px}
+h1,h2,h3{font-family:var(--f-display);letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.05;margin:0 0 10px;font-weight:800}
+h2{font-size:22px;margin:40px 0 10px}
+.lede{max-width:66ch;margin:0;color:var(--fg)}
+.lede + .lede{margin-top:10px;color:var(--muted)}
+code{font:13.5px var(--f-mono);background:var(--sunk);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+a{color:var(--ours)}
+
+.house{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 0}
+.house div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.house b{display:block;font:700 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+
+.cabs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px;align-items:start}
+.cab{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}
+.cab header{padding:14px 16px;border-bottom:1px solid var(--line)}
+.cab.ours header{background:var(--ours-soft)} .cab.nate header{background:var(--nate-soft)}
+.cab header h3{margin:0;font-size:19px}
+.cab.ours header h3{color:var(--ours)} .cab.nate header h3{color:var(--nate)}
+.cab header p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.drawer{border-top:1px solid var(--line)}
+.drawer:first-of-type{border-top:0}
+.drawer > button{display:grid;grid-template-columns:1fr auto;gap:4px 10px;width:100%;text-align:left;background:none;border:0;padding:11px 16px;font:inherit;color:inherit;cursor:pointer}
+.drawer > button:hover{background:var(--sunk)}
+.drawer > button:focus-visible{outline:2px solid var(--ours);outline-offset:-2px}
+.fname{font:500 13.5px var(--f-mono);overflow-wrap:anywhere}
+.why{grid-column:1/-1;font-size:14.5px;color:var(--fg)}
+.fill{grid-column:1/-1;font-size:12.5px;color:var(--muted)}
+.chev{font:500 13px var(--f-mono);color:var(--muted);align-self:start}
+.text{margin:0 16px 14px;max-height:340px;overflow:auto;background:var(--sunk);border-radius:8px;padding:10px 12px;font:12.5px/1.55 var(--f-mono);white-space:pre-wrap;overflow-wrap:anywhere}
+.nate .note{margin:0 16px 14px;font-size:13.5px;color:var(--muted)}
+
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px}
+th,td{text-align:left;padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
+thead th{border-top:0;font:700 12px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+thead th.o{color:var(--ours)} thead th.n{color:var(--nate)}
+.v{display:flex;gap:7px;align-items:baseline}
+.v i{font-style:normal;font:700 11px var(--f-mono);padding:1px 6px;border-radius:999px;white-space:nowrap}
+.v i.yes{color:var(--yes);border:1px solid var(--yes)} .v i.no{color:var(--no);border:1px solid var(--no)} .v i.part{color:var(--part);border:1px solid var(--part)}
+
+.rec{margin-top:16px;background:var(--surface);border:2px solid var(--fg);border-radius:14px;padding:18px 20px}
+.rec h3{margin:0 0 6px;font-size:20px}
+.rec ol{margin:10px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+.rec p{margin:0;max-width:68ch}
+
+@media (max-width:760px){.cabs{grid-template-columns:1fr}.house{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <h1>Kit Compare</h1>
+  <p class="lede">A <strong>blank template</strong> is an AI OS with all the folders, rules and skills in place but nothing personal in it yet. It's like a new house: the rooms are built and labelled, but the furniture (who you are, your goals, your projects) arrives when you move in. Each person gets their own private copy, and an interview fills it in.</p>
+  <p class="lede">We have two of these. <strong>Ours</strong> (<code>templates/standard-ai-os-v1/</code>) is the small one we built from Nate's videos. <strong>Nate's AIS-OS kit</strong> is his free official starter kit, which we adopted parts of. Tap any file to see what it's for. In ours, you can read the actual text.</p>
+
+  <div class="house">
+    <div><b>Built in</b>The rulebook (<code>AGENTS.md</code>), the folders, and skills like the interview and the audit.</div>
+    <div><b>Filled in on day 1</b>Who they are, what matters now, where their work lives, via the interview.</div>
+    <div><b>Grows after</b>Projects, decisions, connected tools, automations, weekly audits.</div>
+  </div>
+
+  <h2>The two filing cabinets</h2>
+  <div class="cabs">
+    <section class="cab ours"><header><h3>Ours: Standard AI-OS v1</h3><p>12 files, about 200 lines. Read every word in 10 minutes.</p></header><div id="ours"></div></section>
+    <section class="cab nate"><header><h3>Nate's AIS-OS kit</h3><p>Free, MIT licence. <a href="https://github.com/nateherkai/AIS-OS" target="_blank" rel="noopener">github.com/nateherkai/AIS-OS</a></p></header><div id="nate"></div></section>
+  </div>
+
+  <h2>Side by side</h2>
+  <div class="tblwrap"><table><thead><tr><th>What it gives a beginner</th><th class="o">Ours</th><th class="n">Nate's kit</th></tr></thead><tbody id="cmp"></tbody></table></div>
+
+  <div class="rec">
+    <h3>Recommendation: Nate's kit, plus three things from ours</h3>
+    <p>Nate's kit does the hard part for a beginner. One <code>/onboard</code> interview personalises everything, and it comes with the scored audit and the weekly level-up. Ours is smaller and easier to understand, and it does three things better than his. Add these when setting someone up:</p>
+    <ol>
+      <li><strong>One rulebook:</strong> make <code>CLAUDE.md</code> just the line <code>@AGENTS.md</code>, so the two copies can't drift apart.</li>
+      <li><strong>The fresh-session test:</strong> open a new session and ask "who am I, what's my priority, where do things go?" This is already step 6 of the plan.</li>
+      <li><strong>The research guide</strong> (<code>research/README.md</code>), for later, when they have 30+ notes.</li>
+    </ol>
+  </div>
+</div>
+
+<script>
+const D = {"ours": [{"p": "AGENTS.md", "why": "The rulebook and map. Loads with every message: who you're helping, how to work, and where every file lives. It points to things instead of storing them.", "fill": "Ready to use; the interview adds your details", "text": "# AI OS — router\n\nLoads at the start of every session, for any AI tool (Claude Code reads it via\n`CLAUDE.md`; Codex and others read `AGENTS.md` directly). It says who you're\nhelping, how to work and **where things live**. It points; it doesn't store.\nKeep it under 200 lines (it's re-read with every message): details belong in\nthe files below. Edits take effect in a new session.\n\nYou're helping the person described in `context/about-me.md`. Their current\npriority is in `context/current-focus.md`.\n\n## Rules that always apply\n- **Follow the routes.** Load the smallest context that answers the task:\n  this table first, then the one file or folder it points to. Never read a\n  whole folder because it's there. Look local first, live sources last.\n- **Current beats history.** This file and `context/current-focus.md` say\n  what's true now; `decisions.md` and `log.md` files are history.\n- **Before big or hard-to-undo work, be 95% sure what's wanted** (ask if\n  not); small, easy-to-undo work: say what you assumed and carry on. **Define done before starting**; build the simplest version first. Prefer a\n  script or a fixed workflow over an AI agent when either would do.\n- **Prove it, don't claim it.** Run or check something before saying it works.\n  Quote sources exactly; label anything unsourced as inference.\n- **Feed corrections back.** When corrected, update the file or skill that\n  caused it so it doesn't happen again.\n- **Backtrack every miss.** If you didn't find something that exists, say\n  where you looked and why you missed it, then fix the route in this file.\n- **Keep this file current.** Add a row when you add a folder, skill or tool;\n  log the change in `decisions.md`.\n- **Secrets** live in `.env` (ignored by Git); never paste keys into chat or files.\n\n## Where things live\n| Need | Look in |\n|---|---|\n| Who I am, my goals, stack, preferences | `context/about-me.md` |\n| What matters now, what's parked | `context/current-focus.md` |\n| Past decisions and why (add a dated entry at the top) | `decisions.md` |\n| Ongoing work and deliverables | `projects/<name>/` (how to start one: `projects/README.md`) |\n| Secrets and API keys | `.env` (ignored by Git) |\n| Knowledge base: raw sources (transcripts, articles) + derived brain (level 2, add when needed) | `research/README.md` |\n| Skills: `grill-me` (interview me), `os-audit` (weekly check) | `.claude/skills/` (Codex reads the same files via `.agents/skills`) |\n| Specialist agents (create when first needed) | `.claude/agents/` |\n| How to set this OS up | `README.md` |\n| Interview notes from grill-me sessions | `brainstorms/` (created by the skill) |\n| Audit reports (read the latest before a new audit) | `audits/` (created by the audit) |\n| Old material that's no longer current | `archives/` (create when first needed) |\n\n## Keep this router current\nWhen a file moves, a folder is added or a project starts, update this router\n(and that folder's README) in the same turn. A stale pointer is worse than no\npointer.\n"}, {"p": "CLAUDE.md", "why": "One line that pulls in AGENTS.md, so Claude Code and Codex read the same rulebook and the two can never drift apart.", "fill": "Ready to use", "text": "@AGENTS.md\n\n## Claude Code only\n- Anything worth keeping between sessions goes in these files, not only in\n  Claude's auto memory.\n"}, {"p": "context/about-me.md", "why": "Who you are: role, goals, tools, how you like answers.", "fill": "Empty; filled by the grill-me interview", "text": "# About me\n\nAlways-true background. Grows over time (fill it with the `grill-me` skill\nrather than a quick brain dump). Keep it to lasting facts; nothing private if\nthe repo is public.\n\n- **Who I am / my role:** _not yet personalised_\n- **What I'm working towards (this year):** _not yet personalised_\n- **Tools and devices I use (my stack):** _not yet personalised_\n- **How I like answers (tone, length, level):** _not yet personalised_\n"}, {"p": "context/current-focus.md", "why": "The one place that says what matters now: 90-day priority, next step, parked ideas, and a refresh-by date.", "fill": "Empty; filled by the grill-me interview", "text": "# Current focus\n\nThe one place that says what matters **now**. Refresh it whenever priorities\nchange (at least every quarter).\n\n- **Refresh by:** _a date 3 months from today; move it on each time you refresh_\n- **Priority (next 90 days):** _not yet personalised_\n- **Next step:** _not yet personalised_\n- **Parked (not now):** _nothing yet_\n"}, {"p": "context/README.md", "why": "Explains the context folder.", "fill": "Ready to use", "text": "# context/\n\nAlways-true background: who you are (`about-me.md`) and what matters now\n(`current-focus.md`). Small, lasting facts only. Fill them with the\n`grill-me` skill.\n"}, {"p": "decisions.md", "why": "A dated log of big decisions and why. Never deleted, only added to.", "fill": "Empty; grows as you decide things", "text": "# Decisions\n\nAdd-only log (newest at the top). Add a dated entry whenever you make a big change (a new\nfolder, skill, rule or priority) and say why. Never delete\nold entries: a later entry supersedes an earlier one.\n\n<!-- Example:\n## YYYY-MM-DD — <decision>\nWhy: … Supersedes: … (if any)\n-->\n"}, {"p": "projects/README.md", "why": "One folder per project or client. Usually the biggest part of the OS.", "fill": "Empty; a folder per project", "text": "# Projects\n\nOne folder per project (or client): `projects/<name>/`. This is usually the\nbiggest folder; deliverables land here. Each project folder starts with a\n`README.md` saying the goal, what \"done\" looks like and where its files are.\nA project with its own rules can have its own `AGENTS.md`/`CLAUDE.md`.\n"}, {"p": "research/README.md", "why": "Instructions for a level-2 knowledge base (raw sources plus a derived brain), for later, once you have 30+ notes.", "fill": "Empty until needed", "text": "# Research (knowledge base, level 2)\n\nAdd this only when you have about 30+ notes and keep forgetting what's in them.\n\n- **Raw evidence:** `research/<source>/` holds the original material\n  (transcripts, posts, articles). Raw files are never edited.\n- **Derived brain:** `research/<source>/brain/` holds what was learned, built\n  from the raw files: `index.md` (what's here now, the entry point),\n  `log.md` (what was added when), `concepts.md` and `rules.md` (every claim\n  with an exact quote and its source; anything unsourced is labelled\n  \"inference\").\n- **Ingest** (ask the AI to \"ingest this source\") updates every page a new\n  source touches, then the index and log. Make it a skill once you do it often.\n- Only store what will still be useful in a year; you decide what goes in.\n"}, {"p": ".claude/skills/grill-me/SKILL.md", "why": "Skill: interviews you one question at a time and writes the answers down.", "fill": "Ready to use", "text": "---\nname: grill-me\ndescription: Interviews the user one question at a time until what they know about a process, plan or decision is fully written down, saving every answer to brainstorms/ as it goes. Use when the user says \"grill me\" or \"interview me about…\", when filling context/about-me.md or context/current-focus.md, or when building a skill that needs knowledge only the user has.\n---\n\n# Grill me (get knowledge out of the user's head)\n\nA quick brain dump is never enough; this asks until nothing is missing.\n\n## Steps\n1. **Open the capture file first:** `brainstorms/YYYY-MM-DD-<topic>.md`\n   (create `brainstorms/` if missing; continue an existing file on the same\n   topic). Sections: Summary · Key decisions · Q&A log · Open flags.\n2. **Ask one question at a time.** Settle the decisions others depend on\n   first, and give your recommended answer with each question. If the files\n   already answer it, look instead of asking.\n3. **Checkpoint after every answer:** add the Q and A to the log and update\n   Summary and Key decisions. Nothing lives only in chat.\n4. **Flag what the user can't answer** (someone else knows, or it needs\n   checking) under Open flags. Don't guess.\n5. **Stop** when you both understand it the same way, or the user says stop.\n6. **Follow through:** name the files or skills this changes (e.g.\n   `context/about-me.md`) and ask before updating them. Log big decisions in\n   `decisions.md` with the date.\n\n## Check\nRead the Summary back and ask: \"Is anything wrong or missing?\" Keep private\ndetails out of the files if the repo is public.\n"}, {"p": ".claude/skills/os-audit/SKILL.md", "why": "Skill: checks the OS for broken routes and stale or clashing facts, and changes nothing until you say yes.", "fill": "Ready to use", "text": "---\nname: os-audit\ndescription: Audit of this AI OS that changes nothing until you approve. Finds broken or missing routes, stale or clashing facts, bloat and duplicates, saves a dated report to audits/, proposes the smallest fixes and waits for approval. Use weekly (e.g. Fridays), after big changes, or when the AI missed something that exists.\n---\n\n# OS audit\n\n**Report first:** the only file it writes is the report; it never fixes,\nrenames or deletes until you say yes to each fix.\n\n## Steps\n1. **Read the last report** (`audits/YYYY-MM-DD.md`, if any): which findings are fixed,\n   still open, or back again?\n2. **Routes:** every path in `AGENTS.md` exists. **Reverse:** every folder,\n   skill and agent has a route pointing to it.\n3. **Index truth:** any index or README list matches the files on disk.\n4. **Freshness:** `context/current-focus.md` and other \"now\" facts are still\n   true; anything time-sensitive has a date.\n5. **Skills:** no two skill descriptions would answer the same request; any\n   new or changed skill passes a trigger test (an obvious request, a reworded\n   one, and an unrelated one that must not fire it).\n6. **The four failure modes:** poisoning (a false fact), bloat (too much\n   loaded, `AGENTS.md` growing), confusion (missing or wrong route), clash\n   (two \"current\" files disagree).\n7. **Save** the report as `audits/YYYY-MM-DD.md` (the only file this skill\n   writes): one line per finding with evidence (`path:line`), what wrong\n   answer it could cause, severity, and the smallest fix.\n8. **Ask:** \"Want me to do these? Yes/no per item.\" After fixing, log big\n   changes in `decisions.md`.\n\n## Backtrack (when the AI missed something that exists)\nWrite down what was asked, where it looked, which route sent it there, and\nwhy it missed. Fix the route in `AGENTS.md`, then ask the question again to\nprove the fix.\n"}, {"p": ".gitignore", "why": "Keeps secret keys (.env) out of GitHub.", "fill": "Ready to use", "text": ".env\n"}, {"p": "README.md", "why": "How to start: copy it into a private repo, run grill-me, audit on Fridays, and do the fresh-session test.", "fill": "Ready to use", "text": "# Standard AI-OS v1 (not yet personalised)\n\nA blank AI operating system built from Nate Herk's teaching (the full\nrequirement list, with quotes, lives in the repo this was copied from:\n`system/standard-ai-os-v1.md`). Everything here is self-contained. The\nperson's details are left as _not yet personalised_ placeholders.\n\n## The filing cabinet (level 1: where everyone starts)\n```\nAGENTS.md            router: who, how to work, where things live (points, doesn't store)\nCLAUDE.md            imports AGENTS.md (one router, every tool)\ncontext/             always-true background: about-me, current-focus\ndecisions.md         dated, append-only decision log\nprojects/<name>/     one folder per project or client; usually the biggest\n.claude/skills/      grill-me (interview) and os-audit (weekly check), ready to use\n.claude/agents/      specialists (create when first needed)\n.gitignore           keeps .env (secrets) out of Git\n```\nCreated when first needed: `brainstorms/` (grill-me notes), `audits/` (saved\naudit reports), `archives/` (old material). `research/` holds only a guide\nuntil you need a level 2 knowledge base.\n\n## Use it\n1. Copy this folder into a new private GitHub repo (the repo is the backup).\n   Not sure how? Open it in Claude Code or Codex and ask: \"make this folder a\n   private GitHub repo\".\n2. Say \"grill me about who I am and what I'm working on\" to fill\n   `context/about-me.md` and `context/current-focus.md`.\n3. Every Friday, say \"audit the OS\" (or schedule it). Reports go in `audits/`.\n4. **Test it:** open a fresh session and ask \"who am I, what's my priority,\n   where would a new project go, where are past decisions?\" Every answer\n   should name a real path. If one doesn't, backtrack and fix the route.\n\n## Move up a level only when it hurts\nLevel 2 (`research/` wiki with index and log) when you have about 30+ notes and\nkeep forgetting what's in them. Semantic search, knowledge graphs and\nalways-on agents only for a measured problem the level below can't fix.\n"}], "nate": [{"p": "AGENTS.md + CLAUDE.md", "why": "Two copies of the same rulebook (identity, skills, where things live). You update both together.", "fill": "Placeholders; filled by /onboard"}, {"p": "aios-intake.md", "why": "Your answers to the 7 onboarding questions. Edit it and re-run /onboard any time.", "fill": "Filled by /onboard"}, {"p": "context/", "why": "About you, your business and your priorities.", "fill": "Filled by /onboard"}, {"p": "connections.md", "why": "A register of every tool the OS can reach (email, calendar, files...), with the date each one last worked.", "fill": "Grows as you connect tools"}, {"p": "decisions/log.md", "why": "Dated decisions with why and alternatives.", "fill": "Grows as you decide"}, {"p": "references/3ms-framework.md", "why": "Nate's Mindset, Method, Machine way of thinking about automations.", "fill": "Ready to use"}, {"p": "EXPANSIONS.md", "why": "What to add as you grow, and what not to bother with.", "fill": "Ready to use"}, {"p": "archives/", "why": "Old files get moved here, never deleted.", "fill": "Empty"}, {"p": "skill: /onboard", "why": "The 7-question interview that personalises the whole kit in one go (who you are, a pasted writing sample, priorities, where your work lives).", "fill": "Run on day 1"}, {"p": "skill: /audit", "why": "The scored Four Cs audit (out of 100), saved with history.", "fill": "Weekly"}, {"p": "skill: /grill-me", "why": "The interview skill, for going deeper later.", "fill": "Any time"}, {"p": "skill: /level-up", "why": "Weekly: finds one job to automate and builds it.", "fill": "Weekly"}, {"p": "skill: /link", "why": "Makes a new file or folder findable from the rulebook.", "fill": "When you add things"}, {"p": "skill: /3d-brain", "why": "A 3D globe of your knowledge, like Nate's Herk Brain (runs on a computer).", "fill": "Optional"}, {"p": "scripts/sync-codex-skills.sh", "why": "Copies skills across so Codex sees them too.", "fill": "When skills change"}], "compare": [["A rulebook that routes to files", "yes", "yes"], ["One rulebook for Claude and Codex, no copying", "yes", "no: two copies kept in step by hand"], ["Personalises itself with an interview", "partly: grill-me, open-ended", "yes: /onboard, 7 set questions"], ["Scored audit, out of 100", "no: os-audit lists problems, no score", "yes: /audit (Four Cs)"], ["Finds the next thing to automate", "no", "yes: /level-up"], ["Register of connected tools", "no", "yes: connections.md"], ["Fresh-session test (proves it knows you)", "yes: a day-1 step in the README", "partly: checked inside /audit, not a day-1 step"], ["Guide for a bigger knowledge base later", "yes: research/README.md", "partly: EXPANSIONS.md"], ["3D brain view", "no", "yes: /3d-brain (computer only)"], ["Size for a beginner to read", "12 files, about 200 lines", "about 15 files plus 6 skills, larger"]]};
+const esc = s => { const d=document.createElement("div"); d.textContent=s; return d.innerHTML; };
+function drawer(f, i, side){
+  const id = side+"-"+i;
+  return `<div class="drawer"><button aria-expanded="false" aria-controls="${id}">
+      <span class="fname">${esc(f.p)}</span><span class="chev" aria-hidden="true">+</span>
+      <span class="why">${esc(f.why)}</span><span class="fill">${esc(f.fill)}</span></button>
+    <div id="${id}" hidden>${side==="ours"
+      ? `<pre class="text">${esc(f.text||"(empty)")}</pre>`
+      : `<p class="note">Read the full file in Nate's repo on GitHub (link above).</p>`}</div></div>`;
+}
+document.getElementById("ours").innerHTML = D.ours.map((f,i)=>drawer(f,i,"ours")).join("");
+document.getElementById("nate").innerHTML = D.nate.map((f,i)=>drawer(f,i,"nate")).join("");
+function cell(v){
+  const k = v.startsWith("yes") ? "yes" : v.startsWith("no") ? "no" : "part";
+  const label = k==="part" ? "partly" : k;
+  const rest = v.replace(/^(yes|no|partly)(: )?/,"");
+  return `<div class="v"><i class="${k}">${label}</i><span>${esc(rest)}</span></div>`;
+}
+document.getElementById("cmp").innerHTML = D.compare.map(([f,o,n])=>`<tr><td>${esc(f)}</td><td>${o.match(/^(yes|no|partly)/)?cell(o):esc(o)}</td><td>${n.match(/^(yes|no|partly)/)?cell(n):esc(n)}</td></tr>`).join("");
+document.addEventListener("click", e=>{
+  const b = e.target.closest(".drawer > button"); if(!b) return;
+  const p = document.getElementById(b.getAttribute("aria-controls")), open = p.hidden;
+  p.hidden = !open; b.setAttribute("aria-expanded", open); b.querySelector(".chev").textContent = open ? "−" : "+";
+});
+</script>

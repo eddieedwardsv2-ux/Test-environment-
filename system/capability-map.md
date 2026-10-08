@@ -29,5 +29,6 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Interview Charlie to capture what he knows | `grill-me` skill | `brainstorms/YYYY-MM-DD-<topic>.md` | Charlie confirms the summary |
 | Start a new, blank AI OS | `templates/standard-ai-os-v1/` | router + filing cabinet | fresh-session routing test |
 | Flashcards | app + `cards` database (see `AGENTS.md`) | cards | backup in `learning/flashcards.md` |
+| Compare our blank template with Nate's kit | Kit Compare app (see `projects/ai-os-setup-kit/README.md`); built by `tools/build_kit_compare.py` | `templates/standard-ai-os-v1/` | page source in `projects/ai-os-setup-kit/compare/` |
 | See and review both brains (graph + review cards) | Brain dashboard app + `flags` database (see `AGENTS.md`); built by `tools/build_brain_map.py` | every .md in the repo + concepts.md, rules.md | marks read back with ArtifactData |
 | A deliverable (e.g. a video plan) | `projects/<name>/` | project files | the project's own done-when |
