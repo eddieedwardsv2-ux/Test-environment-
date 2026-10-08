@@ -52,7 +52,7 @@ Anything not backed by a source is labelled **(inferring)**.
   write is refused, say exactly where and never report it as done. Cheap
   structural checks run automatically (`tools/audit.py`, on push via GitHub
   Actions and via the Stop-hook structure gate `tools/run_gate.sh`); reasoning
-  checks (clash, bloat, stale facts) use the `os-audit` skill. Don't
+  checks use the `audit` skill (weekly, scored) and the `os-audit` skill (clash, bloat, stale facts). Don't
   re-audit everything after small edits.
 - **Suggest tools proactively.** At the start of any new task or project,
   check `research/plugin-map.md` (all 9 families, Charlie's watchlist) and

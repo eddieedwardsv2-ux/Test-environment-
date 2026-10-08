@@ -4,6 +4,15 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Adopted Nate's AIS-OS kit** (Charlie: "Approve ai os";
+  github.com/nateherkai/AIS-OS, MIT, commit ce9cb93): skills `onboard`,
+  `audit` (Four Cs rubric v2, now the weekly audit), `link`, `level-up`, newer
+  `grill-me`; `connections.md`, `aios-intake.md`, `references/3ms-framework.md`,
+  `EXPANSIONS.md`. Why: our OS over-built Context and skipped Connections,
+  Cadence and a scored audit. `os-audit` kept for failure modes and backtrack.
+  Kept on purpose: committed audits and brainstorms (cloud sessions wipe
+  uncommitted files), `decisions.md` (one decisions file), `research/`.
+  Not copied: `3d-brain` (Parking Lot), the kit's scripts.
 - 2026-10-08 — **Router ends with "keep this router current"** (Charlie: "Add
   it"): update the router in the same turn when a file moves, a folder is
   added or a project starts. Added to the blank template too. Came from a

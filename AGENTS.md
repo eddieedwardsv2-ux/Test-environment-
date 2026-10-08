@@ -10,6 +10,14 @@ You're helping Charlie, a UK beginner learning Claude Code and Codex while
 building a YouTube channel about it. Explain in plain UK English, one next
 step at a time, and end working replies with **Now:** and **Done when:**.
 
+## How this OS is built (Nate Herk's AIS-OS kit)
+- **Four Cs, in order:** Context (knows Charlie) → Connections (reaches his
+  tools, `connections.md`) → Capabilities (skills) → Cadence (runs on its own).
+- **Three Ms** for any new automation: Mindset, Method, Machine
+  (`references/3ms-framework.md`; the `level-up` skill walks it).
+- **Litmus test:** while Charlie is away, the OS handles one real event
+  faster and better than he would. What to add as it grows: `EXPANSIONS.md`.
+
 ## Rules that always apply (longer detail, where needed, in `context/working-rules.md`)
 - **Karpathy's 7 rules** (`context/working-rules.md`): smallest version first,
   predict-run-compare, prove it don't claim it, say what you assumed, simpler wins.
@@ -51,9 +59,15 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | What agents are blocked from running (force-push, hard reset, `rm -rf`) | deny list in `.claude/settings.json` |
 | API keys and secrets | `.env` locally (Git ignores it); in cloud sessions and GitHub, environment secrets (`context/environment.md`). Never in files or chat |
 | What tools, skills, agents and scripts already exist | `system/capability-map.md` — check before building anything |
-| Audit the OS for clash, bloat, stale or missing routes | the `os-audit` skill (reasoning, weekly; reports saved in `audits/`) after `python3 tools/audit.py` (structure; runs automatically on every push and before an agent finishes via the Stop-hook structure gate `tools/run_gate.sh`) |
+| Audit the OS (weekly, scored on the Four Cs) | the `audit` skill (reports in `audits/`), after `python3 tools/audit.py` (structure gate: runs on every push and before an agent finishes, `tools/run_gate.sh`) |
+| Wrong or missed answer; clash, bloat or stale facts | the `os-audit` skill (four failure modes, backtrack) |
 | Check a page or visual output looks right | `python3 tools/screenshot.py <page>`, then look at the PNGs (needs `pip install playwright` each cloud session) |
 | Get knowledge out of Charlie's head (interview) | the `grill-me` skill; notes saved in `brainstorms/` |
+| Set someone up from scratch (7-question intake) | the `onboard` skill, reading `aios-intake.md` |
+| Make a new file, folder or source findable | the `link` skill (adds the smallest route here or in a folder index) |
+| Find and ship the next automation (weekly) | the `level-up` skill (one run = one artifact, logged in `decisions.md`) |
+| What tools the OS can reach, and their status | `connections.md` (API guides in `references/`) |
+| Where Nate's kit files came from (MIT licence) | `THIRD-PARTY-NOTICES.md` |
 | What works/blocked in cloud sessions (YouTube, GitHub) | `context/environment.md` — read before any YouTube or GitHub task |
 | Past decisions and why | `decisions.md` (add new ones at the top, with a date) |
 | Projects (e.g. the YouTube channel) | `projects/<name>/` |

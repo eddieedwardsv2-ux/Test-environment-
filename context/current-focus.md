@@ -17,7 +17,7 @@ recorded (with their consent) for the YouTube channel. Project:
 **Next step (2026-10-08):** draft the set-up kit's step-by-step plan in
 `projects/ai-os-setup-kit/`. ("Fully connected" brain check done: Nate's
 brain now links every concept to its rules.) Nate full-channel audit done:
-8 decisions waiting in `audits/2026-10-08-nate-channel.md`. Weekly `os-audit` on Fridays.
+8 decisions waiting in `audits/2026-10-08-nate-channel.md`. Weekly `audit` (scored, Four Cs) on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work while the set-up kit is the priority (v1 done; kept parked 2026-10-08).
@@ -36,7 +36,7 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 - Karpathy brain, then a "council" that asks Nick, Nate and Karpathy side by
   side (after the foundation gate; Karpathy's X posts and 4 transcripts saved)
 - Dan Martell second-brain content (one creator at a time)
-- Nate's free "OS audit" skill and free "AIOS kit" (both in his free Skool group; Charlie pastes them in) — compare with our `os-audit` skill
+- `3d-brain` skill from Nate's AIS-OS kit (local 3D view of the knowledge; needs the Mac, not the phone)
 - Post the AI question in the decorators' Facebook group (see projects/youtube-channel)
 - Unlisted test video for the channel
 - On the Mac: install context7 and superpowers plugins; test watch-video plugin

@@ -20,7 +20,12 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Find or install a new skill | `find-skills` skill | install command | Charlie's OK |
 | Check a page looks right (visual validation) | `tools/screenshot.py <page>` then open the PNGs | phone + desktop screenshots, script errors | looking at them |
 | Structural audit (incl. every checklist quote, `tools/check_quotes.py`) | `tools/audit.py` (runs on push and as the Stop-hook structure gate `tools/run_gate.sh`; includes the secret scan) | errors/warnings | GitHub Actions |
-| Reasoning audit (weekly) | `os-audit` skill | `audits/YYYY-MM-DD.md` + smallest fixes | Charlie approves fixes |
+| Scored audit (weekly, Four Cs rubric v2) | `audit` skill (Nate's AIS-OS kit) | `audits/audit-<date>-<id>.md` with score, findings ledger, top 3 fixes | next run rechecks each finding |
+| Failure-mode check, backtrack after a miss | `os-audit` skill | smallest fixes | Charlie approves fixes |
+| Set someone up (7-question intake) | `onboard` skill | `aios-intake.md` + Day-1 context files | the "what should I focus on this week?" test |
+| Make something findable | `link` skill | one route in `AGENTS.md` or a folder index | following the route |
+| Ship the next automation | `level-up` skill (`references/3ms-framework.md`) | one artifact + `decisions.md` entry | rerun `audit` |
+| What the OS can reach | `connections.md` | domain, mechanism, last checked | `audit` freshness check |
 | Interview Charlie to capture what he knows | `grill-me` skill | `brainstorms/YYYY-MM-DD-<topic>.md` | Charlie confirms the summary |
 | Start a new, blank AI OS | `templates/standard-ai-os-v1/` | router + filing cabinet | fresh-session routing test |
 | Flashcards | app + `cards` database (see `AGENTS.md`) | cards | backup in `learning/flashcards.md` |

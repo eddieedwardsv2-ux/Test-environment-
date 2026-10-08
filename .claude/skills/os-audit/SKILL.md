@@ -1,9 +1,11 @@
 ---
 name: os-audit
-description: Reasoning audit of Charlie's AI OS (Layer 2, after tools/audit.py). Read-only; finds false facts, bloat, missing or misrouted context, clashing sources, stale knowledge and duplicate tools, then proposes the smallest fixes and waits for Charlie's OK. Use when Charlie says "audit the OS" or "check the OS", after big structural changes (new folders, skills, renames), weekly (Fridays), or when an agent missed information that exists in the repo (run the backtrack section).
+description: Content-quality check of Charlie's AI OS against the four context failure modes (poisoning, bloat, confusion, clash), stale facts and duplicate tools, plus the backtrack routine when an agent missed information that exists in the repo. Read-only; proposes the smallest fixes and waits for Charlie's OK. Use after an agent gave a wrong or missed answer, after big structural changes, or when Charlie asks "is anything wrong, stale or clashing?". The weekly scored audit is the `audit` skill (Four Cs), not this one.
 ---
 
 # OS audit (Layer 2: reasoning)
+
+**Since 2026-10-08:** the weekly scored audit is the `audit` skill (Nate's AIS-OS kit, Four Cs rubric v2). Use this skill for the failure-mode check and the backtrack; the `audit` report can call it for a deeper look.
 
 Based on Nate Herk, "Steal My Exact AI OS Setup"
 (`research/nate-herk/steal-my-exact-ai-os-setup-5-simple-tips--Ek1NBfnnTH0-transcript.md`).
