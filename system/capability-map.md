@@ -31,4 +31,6 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Flashcards | app + `cards` database (see `AGENTS.md`) | cards | backup in `learning/flashcards.md` |
 | Compare our blank template with Nate's kit | Kit Compare app (see `projects/ai-os-setup-kit/README.md`); built by `tools/build_kit_compare.py` | `templates/standard-ai-os-v1/` | page source in `projects/ai-os-setup-kit/compare/` |
 | See and review both brains (graph + review cards) | Brain dashboard app + `flags` database (see `AGENTS.md`); built by `tools/build_brain_map.py` | every .md in the repo + concepts.md, rules.md | marks read back with ArtifactData |
+| Compare our OS with a Nate-first version of it | Nate-first map (see `AGENTS.md`); built by `tools/build_merge_map.py` | whole repo + Nate's kit | page source in `system/merge-map/` |
+| Draw any set of files as a connected map | `tools/graph_lib.py` (files, links, degrees), plus a `template.html` with `__DATA__` filled in by a small builder | nodes + links JSON | screenshot both screen sizes |
 | A deliverable (e.g. a video plan) | `projects/<name>/` | project files | the project's own done-when |

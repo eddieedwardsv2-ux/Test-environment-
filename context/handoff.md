@@ -46,9 +46,14 @@ Done since the hand-off (2026-10-08): first scored audit, 49/100 Foundation
 Brain dashboard (whole repo + Nate's brain as one map, review cards); "I'm on
 Mac" checklist (`context/mac-day.md`). Brain review: everything accepted for
 now; only Concept 2 marked confusing (explained in chat, wording unchanged).
-Set-up kit plan drafted (`projects/ai-os-setup-kit/plan.md` v0.1) and the
-ChatGPT export refreshed. Recommended next step: Charlie answers the plan's 3
-open questions, then the first real set-up.
+Set-up kit plan now v0.3 (`projects/ai-os-setup-kit/plan.md`: three
+questions, one automation, the bike method; 14 days designed later); ChatGPT
+export refreshed. Kit Compare v2 (two connected maps, link in the project
+README). Nate-first map (https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky, `system/merge-map/`): our OS today vs the same
+work placed by Nate's kit rules (75 of 99 dots stay put, 20 move, our blank
+template not needed). The two map builders share `tools/graph_lib.py`.
+Recommended next step: Charlie answers the one open question (base kit), then
+the first real set-up.
 Charlie's action: sign the GitHub connector in again (needed for the Cadence
 check, AIOS-b9f5-04).
 Keep sessions short: hand off at about half the context window.

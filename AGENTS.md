@@ -76,6 +76,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md`. Transcripts are `<title>--<video-id>-transcript.md` |
 | Turn chosen transcripts into a lesson | the `video-tutor` agent (give it only the transcripts the lesson needs) |
 | See our OS and Nate's brain as one connected map; review cards (keep / confusing / delete) | Brain dashboard: https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf; marks are in its `flags` database (ArtifactData). Rebuild after the repo or brain changes: `python3 tools/build_brain_map.py`, then republish `research/nate-herk/brain/map/brain-map.html` |
+| Compare our OS today with the same work started from Nate's kit | Nate-first map: https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky. Rebuild: `python3 tools/build_merge_map.py`, then republish `system/merge-map/merge-map.html` (rules and reasons in its MOVES table) |
 | Ask Nate's view: how to organise the OS, context, routing, brains, audits, levels | the `nate-brain` agent; its knowledge is in `research/nate-herk/brain/` and `system/standard-ai-os-v1.md` |
 | Nick Saraev's view on a plan or question | the `nick-brain` agent; its knowledge is in `research/nick-saraev/brain/` |
 | Add new videos or posts to any creator brain (Nate, Nick) | the `brain-ingest` skill |

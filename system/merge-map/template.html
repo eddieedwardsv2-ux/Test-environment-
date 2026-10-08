@@ -1,0 +1,299 @@
+<title>Nate-First Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Two star maps in the Charlie's Brain style: our OS today, and the same work placed Nate-first.
+   Phone: today on top, scroll down for Nate-first. Desktop (900px+): side by side.
+   Dots are coloured by what happens to them. Deliberately dark-only, matching Charlie's Brain. */
+:root{
+  --bg:#070a12; --panel:#0e1320; --panel2:#151b2b; --line:#232b3e; --fg:#e8ecf5; --muted:#8c97ad;
+  --now:#4fd1d9; --nate:#ff7ab6;
+  --kit:#7aa2ff; --same:#3ddc97; --moved:#ffd166; --merged:#b18cff; --dropped:#ff6b74; --new:#ff7ab6;
+  --f-ui:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--f-ui);margin:0}
+.wrap{max-width:1400px;margin:0 auto;padding-inline:16px;padding-block:22px 60px}
+a{color:var(--now)}
+code{font:12.5px var(--f-mono);background:var(--panel2);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+
+.eye{font:500 10.5px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(26px,5vw,44px);line-height:1.03;margin:8px 0 10px;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+h1 span{color:var(--muted)}
+.lede{max-width:72ch;margin:0;color:var(--muted)}
+.lede b{color:var(--fg)}
+.key{display:flex;flex-wrap:wrap;gap:8px 16px;margin:14px 0 0;font-size:13px;color:var(--muted)}
+.key button{display:flex;align-items:center;gap:6px;background:none;border:1px solid transparent;border-radius:999px;padding:2px 8px 2px 4px;color:var(--muted)}
+.key button[aria-pressed="true"]{border-color:var(--fg);color:var(--fg)}
+.key i{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+.verdict{margin-top:18px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:700px){.verdict{grid-template-columns:repeat(5,1fr)}}
+.verdict div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.verdict b{display:block;font:600 24px var(--f-mono)}
+.verdict span{font-size:12.5px;color:var(--muted)}
+
+.split{display:grid;grid-template-columns:1fr;gap:18px;margin-top:20px}
+@media (min-width:900px){.split{grid-template-columns:1fr 1fr}}
+.kit{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;min-width:0;display:flex;flex-direction:column}
+.kit header{padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+.kit.now header{box-shadow:inset 0 3px 0 var(--now)} .kit.nate header{box-shadow:inset 0 3px 0 var(--nate)}
+.kit h2{margin:0;font-size:20px;font-weight:800;letter-spacing:-.01em}
+.kit.now h2{color:var(--now)} .kit.nate h2{color:var(--nate)}
+.kit .sub{margin:3px 0 0;font-size:13px;color:var(--muted)}
+.nums{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font:500 18px var(--f-mono)}
+.nums small{display:block;font:10px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cvwrap{position:relative;height:max(380px,min(70vh,600px,110vw));background:radial-gradient(ellipse at center, #0f1628 0%, var(--bg) 70%)}
+canvas{width:100%;height:100%;display:block;touch-action:pan-y}
+canvas.zoomed{touch-action:none}
+.hint{position:absolute;left:12px;bottom:10px;font:11px var(--f-mono);color:var(--muted);pointer-events:none}
+.zoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
+.zoom button{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);font:600 18px var(--f-mono)}
+
+.detail{border-top:1px solid var(--line);padding:14px 16px;min-height:120px;display:flex;flex-direction:column;gap:10px}
+.detail .tag{display:inline-flex;align-items:center;gap:6px;font:600 12px var(--f-mono);padding:2px 9px;border-radius:999px;border:1px solid currentColor;align-self:flex-start}
+.detail h3{margin:0;font-size:17px;overflow-wrap:anywhere}
+.detail .why{margin:0;font-size:14px}
+.detail .path{font:13px var(--f-mono);color:var(--muted);overflow-wrap:anywhere}
+.detail .path b{color:var(--fg);font-weight:500}
+.detail pre{margin:0;max-height:240px;overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font:12px/1.55 var(--f-mono);white-space:pre-wrap;overflow-wrap:anywhere;color:#cdd5e3}
+.jump{align-self:flex-start;border:1px solid var(--line);background:var(--panel2);border-radius:10px;padding:6px 12px;font:600 13px var(--f-ui)}
+.conns{display:flex;flex-wrap:wrap;gap:6px}
+.conns button{border:1px solid var(--line);background:var(--panel2);border-radius:999px;padding:3px 10px;font:12px var(--f-mono);display:flex;align-items:center;gap:6px}
+.conns button i{width:7px;height:7px;border-radius:50%}
+.empty{color:var(--muted);font-size:14px;margin:0}
+
+h2.sec{font-size:20px;margin:34px 0 10px;font-weight:800}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:14px}
+th,td{text-align:left;padding:9px 14px;border-top:1px solid var(--line);vertical-align:top}
+thead th{border-top:0;font:500 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+td code{font-size:12px}
+td button{background:none;border:0;padding:0;text-align:left}
+.st{font:600 11px var(--f-mono);padding:1px 7px;border-radius:999px;white-space:nowrap;border:1px solid currentColor}
+@media (max-width:699px){
+  .tblwrap{overflow:visible;border:0;background:none}
+  table,tbody,tr,td{display:block;min-width:0;width:100%}
+  thead{display:none}
+  tr{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:8px 0}
+  td{border:0;padding:4px 14px}
+  td:nth-child(2)::before{content:"Today: ";color:var(--muted);font-size:12px}
+  td:nth-child(3)::before{content:"Nate-first: ";color:var(--muted);font-size:12px}
+  td:nth-child(4){color:var(--muted)}
+}
+.cards{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:900px){.cards{grid-template-columns:1fr 1fr 1fr}}
+.cards section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.cards h3{margin:0 0 8px;font-size:16px}
+.cards ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;color:var(--muted)}
+.cards li b{color:var(--fg)}
+.rec{margin-top:16px;background:var(--panel);border:1px solid var(--fg);border-radius:14px;padding:16px 18px}
+.rec h3{margin:0 0 6px;font-size:18px}
+.rec p{margin:0 0 8px;max-width:74ch;color:var(--muted)}
+.rec p:last-child{margin:0}
+.credit{margin-top:22px;font-size:12.5px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <div class="eye">● Our OS, two ways</div>
+  <h1>What if we'd started<br><span>with Nate's kit?</span></h1>
+  <p class="lede">Two maps of the same work. <b>Today</b> is this repo as it is now. <b>Nate-first</b> is the same files as if we'd started from Nate's AIS-OS kit and put everything where his own rules say (his router and <code>EXPANSIONS.md</code>). Each dot is a file, and its colour says what happens to it. Tap a dot to see where it goes and why. Tap a colour below to show only that kind. On a phone, <b>scroll down for Nate-first</b>.</p>
+  <div class="key" id="key"></div>
+  <div class="verdict" id="verdict"></div>
+
+  <div class="split">
+    <section class="kit now" id="k-now"></section>
+    <section class="kit nate" id="k-nate"></section>
+  </div>
+
+  <h2 class="sec">Every change, and why</h2>
+  <div class="tblwrap"><table><thead><tr><th>What</th><th>Today</th><th>Nate-first</th><th>Why (his rule)</th></tr></thead><tbody id="moves"></tbody></table></div>
+
+  <h2 class="sec">What it adds up to</h2>
+  <div class="cards">
+    <section><h3 style="color:var(--same)">Stays the same</h3><ul>
+      <li><b>All the real work.</b> Your context, decisions, brains, research, projects, audits and skills survive either way. Nothing gets lost.</li>
+      <li><b>His skills and files we already copied</b> (<code>/onboard</code>, <code>/audit</code>, <code>/level-up</code>, <code>connections.md</code>) are in the same places already.</li>
+      <li><b>The router idea.</b> One rulebook at the top that points to everything.</li>
+    </ul></section>
+    <section><h3 style="color:var(--moved)">Would be different</h3><ul>
+      <li><b>Fewer top-level folders.</b> <code>system/</code>, <code>tools/</code>, <code>learning/</code> and <code>exports/</code> fold into his <code>references/</code>, <code>scripts/</code>, <code>projects/</code> and <code>templates/</code>.</li>
+      <li><b>One decisions log</b> at <code>decisions/log.md</code>, his name for it.</li>
+      <li><b>One audit skill.</b> Our <code>os-audit</code> checks would live inside <code>/audit</code>. Its "backtrack a miss" routine would need adding there.</li>
+      <li><b>Research as its own mini-OS</b>, with a short <code>research/CLAUDE.md</code> of its own.</li>
+    </ul></section>
+    <section><h3 style="color:var(--dropped)">Not needed</h3><ul>
+      <li><b>Our blank template</b> (<code>templates/standard-ai-os-v1/</code>). Started from Nate's kit, the kit is the blank copy.</li>
+      <li>What we'd gain instead: his <code>/3d-brain</code> skill, an <code>archives/</code> habit (old files are moved there, never deleted) and his Codex sync script.</li>
+    </ul></section>
+  </div>
+
+  <div class="rec">
+    <h3>What it tells us</h3>
+    <p><b>Same house, different room names.</b> Building our own way didn't cost us anything real. The ideas match Nate's, because we learnt them from his videos. Mostly the names and folders differ.</p>
+    <p><b>For the set-up kit:</b> this backs the recommendation to start beginners on Nate's kit. Everything we've added since then fits into his folders, so they'd grow into it without a redesign.</p>
+    <p><b>For this repo:</b> no need to move anything now. Moving those files would break routes the audit checks, all for a tidier look. If you ever want it to match, the cheapest step is renaming <code>tools/</code> to <code>scripts/</code> (offered before), done in one go.</p>
+  </div>
+  <p class="credit" id="credit"></p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const D = __DATA__;
+const css = getComputedStyle(document.documentElement);
+const ST = [["kit","From Nate's kit, same place"],["same","Ours, same place"],["moved","Ours, moved to his place"],["merged","Folded into a kit file"],["dropped","Not needed"],["new","New from the kit"]];
+const COL = Object.fromEntries(ST.map(([s])=>[s, css.getPropertyValue("--"+s).trim()]));
+const NAME = Object.fromEntries(ST);
+const esc = s => { const d=document.createElement("div"); d.textContent=s; return d.innerHTML; };
+let only = null;
+const keyEl = document.getElementById("key");
+keyEl.innerHTML = ST.map(([s,n])=>`<button data-st="${s}" aria-pressed="false"><i style="background:${COL[s]}"></i>${n}</button>`).join("");
+keyEl.addEventListener("click", e=>{
+  const b = e.target.closest("button[data-st]"); if(!b) return;
+  only = only===b.dataset.st ? null : b.dataset.st;
+  keyEl.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed", String(x.dataset.st===only)));
+  Object.values(maps).forEach(m=>m.draw());
+});
+const C = D.counts.now, total = D.now.nodes.length;
+document.getElementById("verdict").innerHTML = [
+  [C.kit + C.same, "of "+total+" stay where they are"], [C.moved, "move to his folders"], [C.merged, "folds into his /audit"],
+  [C.dropped, "not needed (our blank template and 2 folder guides)"], [D.counts.nate.new, "new from his kit"]
+].map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join("");
+document.getElementById("credit").innerHTML = `Nate's kit: <a href="https://github.com/nateherkai/AIS-OS" target="_blank" rel="noopener">github.com/nateherkai/AIS-OS</a> (MIT licence, © Nate Herk), version ${esc(D.rev)}. The transcripts show as one dot per creator, and our blank template as one dot. Built by <code>tools/build_merge_map.py</code>; the rules and reasons live in its MOVES table.`;
+
+const short = n => {
+  if(n.t.startsWith("/")) return n.t;
+  if(n.id.endsWith("/transcripts")) return n.id.split("/")[1]+" transcripts";
+  if(n.id.endsWith("/")) return n.id.split("/").slice(-2,-1)[0]+"/";
+  const parts = n.id.split("/"), base = parts.pop();
+  if((base==="README.md" || base==="CLAUDE.md") && parts.length) return parts[parts.length-1]+"/"+base.replace(".md","");
+  return base;
+};
+const maps = {};
+
+function makeMap(key, title, sub){
+  const K = D[key], el = document.getElementById("k-"+key), other = key==="now" ? "nate" : "now";
+  const nodes = K.nodes.map(n=>({...n})), byId = Object.fromEntries(nodes.map(n=>[n.id,n]));
+  const links = K.edges.map(([s,t])=>({source:s,target:t}));
+  const nbr = {}; nodes.forEach(n=>nbr[n.id]=new Set());
+  K.edges.forEach(([s,t])=>{ nbr[s].add(t); nbr[t].add(s); });
+  const folders = new Set(nodes.map(n=>n.id.includes("/") ? n.id.split("/")[0] : "(top level)")).size;
+  el.innerHTML = `<header><h2>${title}</h2><p class="sub">${sub}</p>
+    <div class="nums"><div>${nodes.length}<small>dots</small></div><div>${links.length}<small>links</small></div><div>${folders}<small>top-level places</small></div></div></header>
+    <div class="cvwrap"><canvas aria-label="${esc(title)} map"></canvas><span class="hint">tap a dot</span>
+      <div class="zoom"><button data-z="in" aria-label="Zoom in">+</button><button data-z="out" aria-label="Zoom out">−</button><button data-z="fit" aria-label="Fit to screen">⤢</button></div></div>
+    <div class="detail"><p class="empty">Tap a dot to see what it is, where it goes and why.</p></div>`;
+  const cv = el.querySelector("canvas"), ctx = cv.getContext("2d"), det = el.querySelector(".detail");
+  const R = n => 3.5 + Math.sqrt(n.d)*1.25;
+  const top = new Set([...nodes].sort((a,b)=>b.d-a.d).slice(0,14).map(n=>n.id));
+  const sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d=>d.id).distance(60).strength(0.05))
+    .force("charge", d3.forceManyBody().strength(-220))
+    .force("x", d3.forceX(0).strength(0.09)).force("y", d3.forceY(0).strength(0.09))
+    .force("collide", d3.forceCollide(n=>R(n)+5)).stop();
+  for(let i=0;i<500;i++) sim.tick();
+  let W=0,H=0,DPR=1,k=1,ox=0,oy=0,base=1,sel=null;
+  function fit(){
+    const xs=nodes.map(n=>n.x), ys=nodes.map(n=>n.y), x0=Math.min(...xs), x1=Math.max(...xs), y0=Math.min(...ys), y1=Math.max(...ys);
+    k = base = Math.min((W-60)/(x1-x0||1), (H-50)/(y1-y0||1), 2.4); ox = W/2 - k*(x0+x1)/2; oy = H/2 - k*(y0+y1)/2;
+  }
+  function size(){
+    const r = cv.getBoundingClientRect(); DPR = window.devicePixelRatio||1; W=r.width; H=r.height;
+    cv.width=W*DPR; cv.height=H*DPR; fit(); draw();
+  }
+  const P = n => [ox + k*n.x, oy + k*n.y];
+  function draw(){
+    if(!W) return;
+    cv.classList.toggle("zoomed", k > base*1.05);
+    ctx.setTransform(DPR,0,0,DPR,0,0); ctx.clearRect(0,0,W,H);
+    const near = sel ? new Set([sel, ...nbr[sel]]) : null;
+    const lit = n => (!only || n.st===only) && (!near || near.has(n.id));
+    for(const l of links){
+      const [ax,ay]=P(l.source), [bx,by]=P(l.target), on = sel && (l.source.id===sel || l.target.id===sel);
+      if(only && !on && l.source.st!==only && l.target.st!==only) continue;
+      ctx.strokeStyle = on ? COL[(l.source.id===sel?l.target:l.source).st] : `rgba(140,151,173,${sel?0.04:0.11})`;
+      ctx.lineWidth = on ? 1.5 : 0.7; ctx.beginPath(); ctx.moveTo(ax,ay); ctx.lineTo(bx,by); ctx.stroke();
+    }
+    const boxes = [], labels = [];
+    for(const n of nodes){
+      const [x,y]=P(n), on = lit(n);
+      ctx.globalAlpha = on ? 1 : 0.13;
+      ctx.fillStyle = COL[n.st]; ctx.beginPath(); ctx.arc(x,y,R(n)*Math.sqrt(k/base),0,Math.PI*2); ctx.fill();
+      if(n.id===sel){ ctx.strokeStyle="#fff"; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(x,y,R(n)*Math.sqrt(k/base)+5,0,Math.PI*2); ctx.stroke(); }
+      const label = n.id===sel || (near ? near.has(n.id) : (only ? n.st===only : top.has(n.id) || k > base*1.8));
+      if(label && on) labels.push([n, x, y - R(n)*Math.sqrt(k/base) - 5]);
+    }
+    ctx.globalAlpha = 1;
+    // labels last, biggest first, skipping any that would overlap one already drawn
+    labels.sort((a,b)=>(b[0].id===sel)-(a[0].id===sel) || b[0].d-a[0].d);
+    for(const [n,x,y] of labels){
+      ctx.font = `500 ${n.id===sel?12:10}px JetBrains Mono, monospace`; ctx.textAlign="center";
+      const t = short(n), w = ctx.measureText(t).width + 6, b = [x-w/2, y-11, x+w/2, y+3];
+      if(boxes.some(o=>b[0]<o[2] && b[2]>o[0] && b[1]<o[3] && b[3]>o[1])) continue;
+      boxes.push(b);
+      ctx.fillStyle = "rgba(7,10,18,.7)"; ctx.fillRect(b[0], b[1], w, 14);
+      ctx.fillStyle = "rgba(232,236,245,.92)"; ctx.fillText(t, x, y);
+    }
+  }
+  function zoomBy(f, cx=W/2, cy=H/2){
+    const nk = Math.max(base*0.8, Math.min(base*6, k*f)); ox = cx - (cx-ox)*nk/k; oy = cy - (cy-oy)*nk/k; k = nk; draw();
+  }
+  el.querySelector(".zoom").addEventListener("click", e=>{
+    const b = e.target.closest("button"); if(!b) return;
+    if(b.dataset.z==="in") zoomBy(1.6); else if(b.dataset.z==="out") zoomBy(1/1.6); else { fit(); draw(); }
+  });
+  let drag=null, moved=false;
+  cv.addEventListener("pointerdown", e=>{ if(k > base*1.05){ drag=[e.clientX,e.clientY,ox,oy]; moved=false; cv.setPointerCapture(e.pointerId); } });
+  cv.addEventListener("pointermove", e=>{ if(!drag) return; const dx=e.clientX-drag[0], dy=e.clientY-drag[1];
+    if(Math.hypot(dx,dy)>4) moved=true; ox=drag[2]+dx; oy=drag[3]+dy; draw(); });
+  cv.addEventListener("pointerup", ()=>{ drag=null; });
+  function select(id){
+    sel = id; const n = byId[id]; draw();
+    const conns = [...nbr[id]].map(i=>byId[i]).sort((a,b)=>b.d-a.d);
+    const c = COL[n.st];
+    let path = "";
+    if(key==="now" && n.st!=="kit" && n.st!=="same") path = n.to ? `<div class="path">${esc(n.id)} → <b>${esc(n.to)}</b></div>` : `<div class="path">${esc(n.id)} → <b>not needed</b></div>`;
+    if(key==="nate" && n.from && (n.from.length>1 || (n.from[0] && n.from[0]!==n.id))) path = `<div class="path">from <b>${n.from.map(esc).join(" + ")}</b></div>`;
+    const twin = key==="now" ? n.to : (n.from && n.from[0]);
+    det.innerHTML = `<span class="tag" style="color:${c}">${esc(NAME[n.st])}</span>
+      <h3>${esc(n.t)}</h3>${n.t!==n.id?`<code>${esc(n.id)}</code>`:""}${path}
+      ${n.why?`<p class="why">${esc(n.why)}</p>`:""}
+      ${twin?`<button class="jump" data-twin="${esc(twin)}" data-to="${other}">Find it in the ${other==="nate"?"Nate-first":"today"} map →</button>`:""}
+      <pre>${esc((n.text||"").trim()||"(empty)")}</pre>
+      ${conns.length?`<div class="conns">${conns.map(c=>`<button data-k="${key}" data-id="${esc(c.id)}"><i style="background:${COL[c.st]}"></i>${esc(short(c))}</button>`).join("")}</div>`:`<p class="empty">Nothing links here.</p>`}`;
+  }
+  cv.addEventListener("click", e=>{
+    if(moved){ moved=false; return; }
+    const r = cv.getBoundingClientRect(), mx=e.clientX-r.left, my=e.clientY-r.top;
+    let best=null, bd=1e9; for(const n of nodes){ const [x,y]=P(n), d=Math.hypot(x-mx,y-my); if(d<bd){bd=d;best=n;} }
+    if(best && bd < R(best)*Math.sqrt(k/base)+14) select(best.id); else { sel=null; draw(); }
+  });
+  window.addEventListener("resize", size);
+  maps[key] = { select, size, draw, el, has: id => id in byId };
+  size();
+}
+makeMap("now","Today","This repo as it is now.");
+makeMap("nate","Nate-first","The same work, placed by Nate's rules.");
+
+document.addEventListener("click", e=>{
+  const t = e.target.closest("button[data-twin]");
+  if(t){ const m = maps[t.dataset.to]; if(m.has(t.dataset.twin)){ m.select(t.dataset.twin); m.el.scrollIntoView({behavior:"smooth", block:"start"}); } return; }
+  const b = e.target.closest("button[data-k]"); if(!b) return;
+  const m = maps[b.dataset.k]; m.select(b.dataset.id);
+  if(b.dataset.jump) m.el.scrollIntoView({behavior:"smooth", block:"start"});
+});
+// moves table: one row per folder rule (files grouped), so it stays short
+const rows = {};
+for(const [from,to,st,why] of D.moves){
+  const k = st+"|"+why; (rows[k] = rows[k] || {st, why, items:[]}).items.push([from,to]);
+}
+document.getElementById("moves").innerHTML = Object.values(rows).map(r=>{
+  const f = r.items.map(([a])=>`<button data-k="now" data-id="${esc(a)}" data-jump="1"><code>${esc(a)}</code></button>`).join(" ");
+  const t = r.st==="dropped" ? "—" : [...new Set(r.items.map(([,b])=>b))].map(b=>`<button data-k="nate" data-id="${esc(b)}" data-jump="1"><code>${esc(b)}</code></button>`).join(" ");
+  return `<tr><td><span class="st" style="color:${COL[r.st]}">${esc(NAME[r.st])}</span></td><td>${f}</td><td>${t}</td><td>${esc(r.why)}</td></tr>`;
+}).join("");
+</script>

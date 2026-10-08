@@ -6,6 +6,8 @@ routes between them; rings mark what only one kit has.
 Run: python3 tools/build_kit_compare.py [path-to-AIS-OS-clone]   then republish.
 Without a path it clones Nate's kit (shallow) into a temp folder."""
 import json, os, re, subprocess, sys, tempfile
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from graph_lib import files_of, skill_title, links_of, parent_skill, degrees
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/"
 OURS_DIR = ROOT + "templates/standard-ai-os-v1/"
 if len(sys.argv) > 1: NATE_DIR = sys.argv[1].rstrip("/") + "/"
@@ -13,17 +15,6 @@ else:
     NATE_DIR = tempfile.mkdtemp() + "/kit/"
     subprocess.run(["git", "clone", "-q", "--depth", "1", "https://github.com/nateherkai/AIS-OS", NATE_DIR], check=True)
 NATE_REV = subprocess.run(["git", "-C", NATE_DIR, "log", "-1", "--format=%h %cs"], capture_output=True, text=True).stdout.strip()
-
-def files_of(base, skip_dirs):
-    out = []
-    for d, ds, fs in os.walk(base):
-        rel = os.path.relpath(d, base)
-        ds[:] = sorted(x for x in ds if x != ".git" and os.path.normpath(os.path.join(rel, x)) not in skip_dirs)
-        for f in sorted(fs):
-            p = os.path.normpath(os.path.join(rel, f))
-            if f.endswith((".md", ".sh", ".gitignore", ".gitkeep")) or f in ("LICENSE",):
-                out.append(p)
-    return out
 
 def role(p):
     m = re.match(r"\.claude/skills/([^/]+)/", p)
@@ -41,22 +32,9 @@ def group(p):
     return "guides"
 
 def title(p, text):
-    if p.endswith("SKILL.md"):
-        n = re.search(r"^name:\s*(.+)$", text, re.M)
-        return "/" + (n.group(1).strip() if n else p.split("/")[2])
+    if p.endswith("SKILL.md"): return skill_title(p, text)
     if p.endswith(".gitkeep"): return p.split("/")[0] + "/ (empty folder)"
     return p
-
-def resolve(src, t, fileset, skills):
-    t = t.split("#")[0].strip().rstrip(".,;:")
-    if not t or "://" in t or "*" in t or "{" in t or "<" in t: return None
-    m = re.fullmatch(r"/?([a-z0-9-]+)", t)
-    if m and m.group(1) in skills: return f".claude/skills/{m.group(1)}/SKILL.md"
-    for cand in (os.path.normpath(os.path.join(os.path.dirname(src), t)), os.path.normpath(t.lstrip("/"))):
-        if cand in fileset: return cand
-        for idx in ("README.md", ".gitkeep", "log.md", "SKILL.md"):
-            if os.path.join(cand, idx) in fileset: return os.path.join(cand, idx)
-    return None
 
 def build(base, skip_dirs):
     fs = files_of(base, skip_dirs); fileset = set(fs)
@@ -66,17 +44,10 @@ def build(base, skip_dirs):
         text = open(base + p, encoding="utf-8", errors="ignore").read()
         nodes.append({"id": p, "t": title(p, text), "g": group(p), "r": role(p), "text": text[:6000]})
         if p.endswith((".gitkeep", "LICENSE")): continue
-        targets = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r"`([^`\s]+)`", text)
-        targets += re.findall(r"(?<![\w/])/([a-z][a-z0-9-]+)\b", text)
-        for t in targets:
-            r = resolve(p, t, fileset, skills)
-            if r and r != p: edges.add((p, r))
-        if p.startswith(".claude/skills/") and not p.endswith("SKILL.md"):
-            sk = "/".join(p.split("/")[:3]) + "/SKILL.md"
-            if sk in fileset: edges.add((sk, p))
-    deg = {}
-    for a, b in edges: deg[a] = deg.get(a, 0) + 1; deg[b] = deg.get(b, 0) + 1
-    for n in nodes: n["d"] = deg.get(n["id"], 0)
+        edges |= {(p, r) for r in links_of(p, text, fileset, skills)}
+        sk = parent_skill(p, fileset)
+        if sk: edges.add((sk, p))
+    degrees(nodes, edges)
     return nodes, sorted(edges)
 
 ours_n, ours_e = build(OURS_DIR, set())

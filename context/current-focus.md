@@ -16,10 +16,12 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (2026-10-08):** Charlie reads `projects/ai-os-setup-kit/plan.md`
-(draft v0.1) and answers its 3 open questions (base kit, who pays, session
-length); then test it on the first friend or family set-up. Weekly `audit`
-(scored, Four Cs, with receipts) on Fridays.
+**Next step (2026-10-08):** `projects/ai-os-setup-kit/plan.md` is at v0.3
+(one 90-minute session: three questions, one automation, the bike method).
+One open question left: the base kit (recommended: Nate's kit plus our three
+additions; see Kit Compare and the Nate-first map). Once Charlie answers,
+close it in the plan, then test it on the first friend or family set-up.
+Weekly `audit` (scored, Four Cs, with receipts) on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work while the set-up kit is the priority (v1 done; kept parked 2026-10-08).
