@@ -8,9 +8,19 @@ Sources: Nate's "Steal My Exact AI OS Setup", "Every Level of a Claude Second
 Brain", "Learn These 6 AI Skills Now" and "I Built Another Andrej Karpathy",
 then every other saved Nate video (`research/nate-herk/`).
 
-**Next step:** checklist written and applied (`system/standard-ai-os-v1.md`).
-Done: v1 standard, template, R11/R14/X4 applied (undo any on request). Next:
-Nate's brain now covers all 20 saved videos (2026-10-08). Next: Charlie's R14 choice, then the first `grill-me` session; weekly `os-audit` on Fridays.
+**Next step (hand-off, 2026-10-08):**
+- Done: v1 standard (92 checked requirements), blank template, R11 and X4
+  (approved), Nate's brain covers 20 videos, first audit saved.
+- In progress: Charlie's new scope (2026-10-08): Nate's "AI Masterclasses"
+  playlist (the Claude Code / AI-use subset, 13 videos; n8n, model comparisons
+  and side topics skipped) plus his Karpathy and Boris Cherny videos. 15 new
+  transcripts saved (35 Nate total). Helper agents are extracting what's new
+  against the checklist.
+- Then: (1) add verified new requirements to the checklist; (2) a comparison
+  table, our system vs Nate's own (what he has that we don't; what we added
+  on top), keep/trim/add per line, for Charlie to decide; (3) a walkthrough
+  where Charlie explains the router back; (4) personalise with `grill-me`.
+- Open decision: R14 wording (Charlie asked for an explanation; given).
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work until Standard AI-OS v1 is done.
