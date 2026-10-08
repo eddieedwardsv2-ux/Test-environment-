@@ -2,6 +2,12 @@
 
 **This is history.** It records what was added and when; it may be out of date about what the brain holds now. The current state is in [index.md](index.md). Newest first.
 
+## 2026-10-08: +35 transcripts (full-channel audit; now all 55 saved)
+**Ingested:** the 35 videos read for `audits/2026-10-08-nate-channel.md` (codes in the standard's code table).
+**Pages changed:** `concepts.md` +10 concepts (29-38, section H) and "Also" lines on concepts 16 and 19; `rules.md` +10 rules (31-40, all "stated"); `index.md`.
+**Rules promoted:** none. Plan mode recorded as declined by Charlie (concept 30, Rule 32).
+**Checked:** every concept's "Used by" matches the rules' concept numbers; `tools/audit.py` 0 errors (all linked quotes pass); 3 quotes spot-read in the transcripts.
+
 ## 2026-10-08: concepts linked to rules ("fully connected", level 2)
 **Why:** Charlie wants each brain to be a connected map, as in DTCyvo6cC54. Nate's level 2 is pages linked "like backlinks" (12:41), not a knowledge graph.
 **Pages changed:** `concepts.md`: every concept ends with a "Used by" line listing the rules that cite it (built from the concept numbers in `rules.md`; concepts 19, 20, 28 have no rule yet and point to related concepts instead); concept 20 gained the level 2 vs level 4 point with a checked quote.

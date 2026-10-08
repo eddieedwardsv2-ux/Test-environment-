@@ -57,6 +57,6 @@ connectors before keys, credentials in the project folder, never-expiring
 all-permission tokens, auto mode, batching instructions, global skills.
 
 ## Still to do
-- Fold the 35 videos into Nate's brain pages (`brain-ingest`). Their
+- Done 2026-10-08: the 35 videos are in Nate's brain (concepts 29-38, Rules 31-40). Their
   teachings are already in the standard, which `nate-brain` reads.
 - One transcript is cut short: 6LNlCpQPYFc stops at 33:38.

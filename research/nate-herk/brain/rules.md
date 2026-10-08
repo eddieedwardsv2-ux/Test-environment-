@@ -1,9 +1,10 @@
 # Nate's rules: AI OS architecture
 
 **What this is:** operating rules for building and running an AI OS or expert brain, distilled from 20 Nate Herk transcripts (two primary, the rest supporting) so the `nate-brain` advisor can check a plan against them. They are rules about *systems*, not an imitation of Nate.
-**Sources:** primary **AI OS** = Ek1NBfnnTH0 ([transcript][os]); **Karpathy** = bvGptCLDhyo ([transcript][kb]). Supporting: DTCyvo6cC54, 8QQ_INxAhRs, hQvwMj7IJe4, XNQBCRcwXV4, and from 2026-10-07 3XIGcM7VICc, bCljOfCH8Ms (2h course), c0kaKxM2pHg (grill me), LrgfmZkl3nc, yysILVsfLFM, 0WDkwMxj13s, 9KOtMsZ9I28, jdbOVepEtUE (6h course), RzLV8sfFdMM, e18sdZLwP7o, kB9iMD0EjT8, HIRDzMtuWFk, 9hetShMMp2s, zKBPwDpBfhs. Each quote links to its video; transcripts are `../<title>--<id>-transcript.md`. When videos disagree the newer wins (order: `../videos.md`, smaller # = newer).
+**Sources:** primary **AI OS** = Ek1NBfnnTH0 ([transcript][os]); **Karpathy** = bvGptCLDhyo ([transcript][kb]). Supporting: DTCyvo6cC54, 8QQ_INxAhRs, hQvwMj7IJe4, XNQBCRcwXV4, and from 2026-10-07 3XIGcM7VICc, bCljOfCH8Ms (2h course), c0kaKxM2pHg (grill me), LrgfmZkl3nc, yysILVsfLFM, 0WDkwMxj13s, 9KOtMsZ9I28, jdbOVepEtUE (6h course), RzLV8sfFdMM, e18sdZLwP7o, kB9iMD0EjT8, HIRDzMtuWFk, 9hetShMMp2s, zKBPwDpBfhs. Rules 31-40 come from 35 more transcripts (2026-10-08 full-channel audit; codes in `system/standard-ai-os-v1.md`). Each quote links to its video; transcripts are `../<title>--<id>-transcript.md`. When videos disagree the newer wins (order: `../videos.md`, smaller # = newer).
 **Confidence:** **stated** = Nate says it · **demonstrated** = he shows it working on screen · **inference** = our reading, not said or shown.
 **Built:** 2026-10-07. Concept numbers refer to [concepts.md](concepts.md); new rules name concepts in brackets until numbered.
+Updated 2026-10-08: +35 transcripts (Rules 31-40 added).
 Updated 2026-10-07: +14 transcripts (Rules 19-30 added; Rules 2, 4, 5, 7, 11, 15, 16, 17 gained support).
 
 ---
@@ -178,6 +179,66 @@ Have the agent ask one question at a time until it understands, and save the ans
 > "Interview me relentlessly about every aspect of this plan until we reach a shared understanding" [1:32](https://www.youtube.com/watch?v=c0kaKxM2pHg&t=92s)
 > Also: "the bigger problem is getting everything out of your brain into the system" [22:18](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1338s)
 **Agent check:** *Did this knowledge come from Charlie answering questions, and is it saved?* (Concept 26)
+
+**Rule 31: Context costs money and rots: act at about half the window** (stated)
+Every message re-reads the whole chat, so long chats cost more and get worse; check what fills the window and act at about half, not when auto-compact fires.
+> "Claude rereads the entire conversation from the beginning, and all of those are tokens that it's charging you for" [1:04](https://www.youtube.com/watch?v=49V-5Ock8LU&t=64s)
+> Also: "somewhere around halfway through your context window, it starts to fall apart." [4:32](https://www.youtube.com/watch?v=eRS3CmvrOvA&t=272s)
+**Agent check:** *Is this chat past about half the window, and do we know what is filling it?* (Concept 29)
+
+**Rule 32: Plan, let the AI attack the plan, then build** (stated)
+Nate says plan first and have the AI play devil's advocate on the plan before building; save big plans to a file and work phase by phase. Charlie declined plan mode on 2026-10-08, so the 1-2 questions from the router stand in for it.
+> "You ask Claude to start challenging you and pushing back and playing devil's advocate before it builds anything or before it approves any plan" [2:36](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=156s)
+> Also: "Have one for discovery where you can have Claude read through PDFs and read through the code base" [21:25](https://www.youtube.com/watch?v=_qZvORxGqI0&t=1285s)
+**Agent check:** *Did we ask 1-2 questions or have the AI attack the plan before a big build?* (Concept 30)
+
+**Rule 33: A separate checker decides "done"; then try to break it** (stated)
+The worker doesn't mark its own homework: a different checker looks at it, then you stress test it for edge cases. When output is bad, ask whether it is the model, the tool or our own organisation.
+> "Claude doesn't get to declare itself done. A different model has to look at it with a different persona" [22:25](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=1345s)
+> Also: "by the time it tells you it's done, you stress test it more. and you try to find those edge cases" [9:43](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=583s)
+**Agent check:** *Who other than the builder checked this, and what did we try to break?* (Concept 31)
+
+**Rule 34: Skills do one job, are built from a real run, and retire when they stop earning** (stated)
+One skill, one job; build it by walking the AI through a real task first, then turn that into the skill. Retire any skill that no longer adds value.
+> "the whole idea is that you want a skill to do one very specific job" [1:06:25](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=3985s)
+> Also: "The way that I build my skills is I have Claude Code do something with me. I walk it through the steps" [6:21:32](https://www.youtube.com/watch?v=mpALXah_PBg&t=22892s)
+**Agent check:** *Does this skill do one job, come from a real run, and still earn its place?* (Concept 32)
+
+**Rule 35: Unattended runs: one-shot, stateless, bounded, tested by hand first, fixed parts in scripts** (stated)
+A scheduled job can't stop and ask, only sees the repo, APIs and secrets, and needs a bounded scope. Test it by hand and prove one live run before switching on the schedule; put fixed steps in a script so the agent can't drift.
+> "You're not around. So, you probably want to make sure that it doesn't ever have to stop and ask you questions." [1:33](https://www.youtube.com/watch?v=ehg4fhydTgs&t=93s)
+> Also: "the agent was just interpreting the message different every time and it just acted differently" [3:00:25](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=10825s)
+**Agent check:** *Could this run finish with nobody there, and was it tested by hand first?* (Concept 33)
+
+**Rule 36: Permissions in layers: deny plus allow, start strict, helpers inherit, read-only and drafts first** (stated)
+Deny the destructive commands and allow the safe ones; helpers inherit the main session's permissions; start read-only and draft-only with a human approving outward actions. Auto mode and bypass permissions are not adopted here.
+> "go into your permissions and explicitly allow the commands that you know are safe" [14:07](https://www.youtube.com/watch?v=jqoFP9QapXI&t=847s)
+> Also: "they inherit the permissions from the main session. So, if you're on bypass permissions, then all of your agents are going to be on bypass permissions" [12:11](https://www.youtube.com/watch?v=vDVSGVpB2vc&t=731s)
+**Agent check:** *Which commands are denied, which allowed, and does the helper inherit the same limits?* (Concept 34)
+
+**Rule 37: Check before anything goes public: security review, private-data hook, untrusted content, plugin vetting** (stated)
+Run a security review before publishing, strip private data with a hook rather than a rule, treat web pages and transcripts as possibly hostile, and vet any plugin first.
+> "I basically told it to run a security review and make sure that my API keys aren't exposed and that there's no vulnerabilities" [30:01](https://www.youtube.com/watch?v=saggDHHnmtQ&t=1801s)
+> Also: "that there's a hook that fires to remove any PII, any sensitive data of that client that I don't want living on my GitHub." [23:59](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1439s)
+**Agent check:** *Has a security and private-data check run before this goes public?* (Concept 35)
+
+**Rule 38: File hygiene: scratch apart from deliverables, folder READMEs, project first, start every task in the project** (stated)
+Tell the AI where throwaway files go, give each folder a short README, keep everything in the project until it earns going global, and start tasks inside the project.
+> "if we don't tell Claude how to organize its files, it's going to get messy quick to the point where I don't understand where things are" [7:08](https://www.youtube.com/watch?v=3GAxd90fEE4&t=428s)
+> Also: "so that your agent always understands why does this folder exist and where should it look for different things" [1:32:56](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=5576s)
+**Agent check:** *Is scratch work kept apart from deliverables, and does the folder explain itself?* (Concept 36)
+
+**Rule 39: Operator habits: paste the whole error, make it do its own chores, match model and effort, adopt tools only for real pain, cap parallel sessions, use the OS for everything** (stated)
+Small habits: paste the full error, ask the AI to do chores it lists for you, use the cheapest model and effort that does the job, adopt a tool only for a real pain point, and keep to three or four parallel sessions.
+> "this is the error that I got. And then I paste in all that messy stuff and shoot it off" [33:04](https://www.youtube.com/watch?v=saggDHHnmtQ&t=1984s)
+> Also: "do not automatically run everything at maximum effort or even just high." [4:39](https://www.youtube.com/watch?v=FBVNS1l5Vb8&t=279s)
+**Agent check:** *Is the model and effort matched to the task, and is this tool solving a real pain?* (Concept 37)
+
+**Rule 40: Parts rot at different speeds; score each audit** (stated)
+Different parts of the OS go stale at different rates, so review each at its own pace and keep a score from every audit to see whether the OS is improving.
+> "All of these different parts decay, become obsolete or rot at different rates." [22:57](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1377s)
+> Also: "it will store your scores every time so that you can see how you're actually improving your system" [53:15](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=3195s)
+**Agent check:** *Which part of the OS is stalest, and what did the last audit score?* (Concept 38)
 
 ---
 

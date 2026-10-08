@@ -5,7 +5,7 @@
 - **Karpathy** = "I Built Another Andrej Karpathy Using Claude", bvGptCLDhyo, 10:43 ([transcript][kb])
 
 **Supporting** sources (other Nate transcripts in `research/nate-herk/`) are cited only to back up or challenge a point, and are labelled *supporting*.
-**Wider course and newer videos (ingested 2026-10-07):** the other 14 saved transcripts (bCl, jdb, 3XI, c0k, Lrg, yys, 0WD, 9KO, RzL, e18, kB9, HIR, zKB, plus 9hetShMMp2s which added nothing). They feed section G and the "Also: [code m:ss]" lines. Codes are defined in the table in [standard-ai-os-v1.md](../../../system/standard-ai-os-v1.md); zKB (not in that table) is [Master 95% of Claude Code Skills in 28 Minutes](../master-95-of-claude-code-skills-in-28-minutes--zKBPwDpBfhs-transcript.md). When videos disagree, the newer one wins: upload order is in [videos.md](../videos.md) (smaller # = newer).
+**Wider course and newer videos (ingested 2026-10-07):** the other 14 saved transcripts (bCl, jdb, 3XI, c0k, Lrg, yys, 0WD, 9KO, RzL, e18, kB9, HIR, zKB, plus 9hetShMMp2s which added nothing). They feed section G and the "Also: [code m:ss]" lines. Codes are defined in the table in [standard-ai-os-v1.md](../../../system/standard-ai-os-v1.md); zKB (not in that table) is [Master 95% of Claude Code Skills in 28 Minutes](../master-95-of-claude-code-skills-in-28-minutes--zKBPwDpBfhs-transcript.md). When videos disagree, the newer one wins: upload order is in [videos.md](../videos.md) (smaller # = newer). 35 more transcripts from the 2026-10-08 full-channel audit feed section H (codes in the standard's code table).
 **Date:** 2026-10-07. History of changes is in [log.md](log.md); current coverage is in [index.md](index.md).
 **Rules for this file:** text in quote marks is the exact caption wording (caption slips kept: "cloudmd" = CLAUDE.md, "wiks" = wikis, "crrons" = crons, "Herk 2" = Nate's own AI OS project). Everything else is paraphrase. Our own reading is marked **(inference)**.
 
@@ -160,6 +160,7 @@ The last step is testing on real things. Teaching test: it writes down what done
 > "we make it test on things that are real." [10:08](https://www.youtube.com/watch?v=bvGptCLDhyo&t=608s)
 Also: the emoji crash [8:37](https://www.youtube.com/watch?v=bvGptCLDhyo&t=517s). Source: Karpathy ([transcript][kb]).
 Also: a slides skill that couldn't see its own output got Chrome so it could "open the page screenshot it look at it" [bCl 1:03:37](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=3817s); "Before returning the final output, define the acceptance criteria." [HIR 8:05](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=485s).
+Also: "But, if Claude has your files and your examples and your workflows and your style guides and the actual success criteria for what good looks like" [brB 5:34](https://www.youtube.com/watch?v=brB-hSiV2iU&t=334s)
 **Used by:** Rule 17, Rule 27 ([rules.md](rules.md)).
 
 ## F. The point of it all
@@ -189,6 +190,7 @@ Context is what the AI knows about you; connections are the live data it can rea
 > "You can't have cadence without connections. You can't have capability without context. And you have to go in this order." [bCl 12:14](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=734s)
 > "each of these layers can't happen without the previous one." [0WD 8:09](https://www.youtube.com/watch?v=0WDkwMxj13s&t=489s)
 Also: [yys 2:04](https://www.youtube.com/watch?v=yysILVsfLFM&t=124s), [jdb 4:19:40](https://www.youtube.com/watch?v=jdbOVepEtUE&t=15580s). Links concept 2 (context/connections) and concept 6 (cadence).
+Also: "So these four things really come one after the other, context, connections, capabilities, and cadence." [Xpb 45:42](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=2742s)
 **Used by:** no rule yet; links concepts 2 and 6 (above).
 
 **20. Levels of a second brain: start at level 1, move up only when it hurts**
@@ -255,6 +257,77 @@ Build tool-agnostic. Codex reads AGENTS.md, keeps config and agents in `.codex/`
 > "the skill files, which are the markdown files with the YAML front matter, are the exact same." [kB9 3:04](https://www.youtube.com/watch?v=kB9iMD0EjT8&t=184s)
 Also: [DTC 22:49](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1369s); shared skills and agents go in the repo [e18 24:57](https://www.youtube.com/watch?v=e18sdZLwP7o&t=1497s).
 **Used by:** no rule yet; concept 3 says the same files serve Codex.
+
+## H. From the full-channel audit (2026-10-08)
+
+**29. Context costs money and rots: act at about half the window**
+Every new message makes Claude re-read the whole chat from the start, so long chats cost more and, past roughly half the window, the answers get worse. Look at what is filling the context (run /context in a fresh session, delete unused tools, skills and servers) before blaming the model, convert documents to markdown because it is cheaper for AI, and check your usage allowance. When a path has gone wrong, rewind or restart rather than piling corrections on top of the failed attempt.
+> "somewhere around halfway through your context window, it starts to fall apart." [eRS 4:32](https://www.youtube.com/watch?v=eRS3CmvrOvA&t=272s)
+> "go into a fresh session, do /context, and see what you're sitting at before you even send off anything" [_qZ 1:04](https://www.youtube.com/watch?v=_qZvORxGqI0&t=64s)
+> "Claude rereads the entire conversation from the beginning, and all of those are tokens that it's charging you for" [49V 1:04](https://www.youtube.com/watch?v=49V-5Ock8LU&t=64s)
+**Used by:** Rule 31 ([rules.md](rules.md)).
+
+**30. Plan, let the AI attack the plan, then build**
+Before anything non-trivial, plan first, then ask Claude to push back and play devil's advocate on the plan before it builds. Big plans are saved to a file and worked phase by phase, one session each. Nate teaches plan mode for this; Charlie declined plan mode itself on 2026-10-08, and this repo's 95%-or-ask rule (R14: be 95% sure or ask 1-2 questions) does the same job.
+> "You ask Claude to start challenging you and pushing back and playing devil's advocate before it builds anything or before it approves any plan" [iTY 2:36](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=156s)
+> "Have one for discovery where you can have Claude read through PDFs and read through the code base" [_qZ 21:25](https://www.youtube.com/watch?v=_qZvORxGqI0&t=1285s)
+> "So what you always want to do when you're creating an idea is you want to go on plan mode." [mpA 2:01:40](https://www.youtube.com/watch?v=mpALXah_PBg&t=7300s)
+**Used by:** Rule 32 ([rules.md](rules.md)).
+
+**31. A separate checker decides "done"; then try to break it**
+The worker should not mark its own homework: a different model or persona checks the result, and after "done" you stress test it for edge cases. When output is bad, first ask whether it is a model, harness or organisation problem. Verification steps also go into the to-do list, not just the end.
+> "is this a model problem, is this a harness problem? Or is this an organization problem?" [6LN 32:07](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1927s)
+> "Claude doesn't get to declare itself done. A different model has to look at it with a different persona" [iTY 22:25](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=1345s)
+> "by the time it tells you it's done, you stress test it more. and you try to find those edge cases" [iTY 9:43](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=583s)
+**Used by:** Rule 33 ([rules.md](rules.md)).
+
+**32. Skills do one job, are built from a real run, and retire when they stop earning**
+Each skill or agent does one specific job. Build it by doing the task together once, then turning that run into a skill, and keep adding a line to a "don'ts" list for each real failure. Write instructions specifically, not vaguely. Retire a skill that no longer adds value, which matters once you have around ten.
+> "the whole idea is that you want a skill to do one very specific job" [Xpb 1:06:25](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=3985s)
+> "So you want to make sure that your skill is actually adding value and not holding" [6LN 24:29](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1469s)
+> "The way that I build my skills is I have Claude Code do something with me. I walk it through the steps" [mpA 6:21:32](https://www.youtube.com/watch?v=mpALXah_PBg&t=22892s)
+**Used by:** Rule 34 ([rules.md](rules.md)).
+
+**33. Unattended runs: one-shot, stateless, bounded, tested by hand first, fixed parts in scripts**
+A scheduled or background run must never need to stop and ask, can only see the repo, APIs and environment secrets, and needs a bounded scope with a named deliverable. Test it by hand and prove one live run before switching the schedule on. Put the fixed details in a script, because an agent left to interpret the same message will drift.
+> "the agent was just interpreting the message different every time and it just acted differently" [Xpb 3:00:25](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=10825s)
+> "So, bound the scope, name the deliverable, and then all your sub agents can be put on Haiku." [jZg 11:11](https://www.youtube.com/watch?v=jZgcWCzxh1I&t=671s)
+> "You're not around. So, you probably want to make sure that it doesn't ever have to stop and ask you questions." [ehg 1:33](https://www.youtube.com/watch?v=ehg4fhydTgs&t=93s)
+**Used by:** Rule 35 ([rules.md](rules.md)).
+
+**34. Permissions in layers: deny plus allow, start strict, helpers inherit, read-only and drafts first**
+Deny the destructive commands and also explicitly allow the safe ones. Start with read-only access and drafts, with a human approving anything outward, and remember that helper agents inherit the main session's permissions. Nate also describes auto mode (a classifier approves safe commands); auto mode is not adopted here, so the deny list stays the safety layer.
+> "So, I would always start with like read-only access whenever you can, have the agent only do drafts" [Ktn 10:40](https://www.youtube.com/watch?v=Ktnwygcnd8U&t=640s)
+> "go into your permissions and explicitly allow the commands that you know are safe" [jqo 14:07](https://www.youtube.com/watch?v=jqoFP9QapXI&t=847s)
+> "they inherit the permissions from the main session. So, if you're on bypass permissions, then all of your agents are going to be on bypass permissions" [vDV 12:11](https://www.youtube.com/watch?v=vDVSGVpB2vc&t=731s)
+**Used by:** Rule 36 ([rules.md](rules.md)).
+
+**35. Check before anything goes public: security review, private-data hook, untrusted content, plugin vetting**
+Before publishing, run a security review and use a hook to strip private data, not just a rule. Web pages and transcripts are untrusted content that could trick an agent into sending data out. Vet a plugin against a checklist (network calls, exfiltration, shell injection, secrets) before installing it.
+> "that there's a hook that fires to remove any PII, any sensitive data of that client that I don't want living on my GitHub." [6LN 23:59](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1439s)
+> "if Claude reads malicious content during a run, then it theoretically could be tricked into sending data to an external server." [ehg 11:41](https://www.youtube.com/watch?v=ehg4fhydTgs&t=701s)
+> "I basically told it to run a security review and make sure that my API keys aren't exposed and that there's no vulnerabilities" [sag 30:01](https://www.youtube.com/watch?v=saggDHHnmtQ&t=1801s)
+**Used by:** Rule 37 ([rules.md](rules.md)).
+
+**36. File hygiene: scratch apart from deliverables, folder READMEs, project first, start every task in the project**
+Tell the AI where throwaway files go so they stay apart from deliverables, and give every folder a short README saying why it exists. Everything starts in the project and is promoted to global only when earned, and every task starts inside the project, not a plain chat. "Remember this" has to end up in a file in the repo, since cloud auto-memory is wiped.
+> "so that your agent always understands why does this folder exist and where should it look for different things" [Xpb 1:32:56](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=5576s)
+> "Everything is project until deserves to be promoted to global so that I know at all times what is the running total of everything that's running globally." [6LN 31:37](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1897s)
+> "if you want your assistant to remember something permanently, just tell it remember that I always prefer X." [mpA 5:53:08](https://www.youtube.com/watch?v=mpALXah_PBg&t=21188s)
+**Used by:** Rule 38 ([rules.md](rules.md)).
+
+**37. Operator habits: paste the whole error, make it do its own chores, match model and effort, adopt tools only for real pain, cap parallel sessions, use the OS for everything**
+Small habits that add up: paste the whole error, ask the AI to do the chores it lists for you, and use the cheapest model and effort that does the job. Adopt a new tool only for a real pain point and trial it on real work, run no more than three or four parallel sessions, and use your OS for everything for a week.
+> "try to force yourself to do everything from here, from this interface" [Xpb 45:12](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=2712s)
+> "do not automatically run everything at maximum effort or even just high." [FBV 4:39](https://www.youtube.com/watch?v=FBVNS1l5Vb8&t=279s)
+> "it has some action items, it actually just tells you to do some stuff that it could do itself" [sag 15:17](https://www.youtube.com/watch?v=saggDHHnmtQ&t=917s)
+**Used by:** Rule 39 ([rules.md](rules.md)).
+
+**38. Parts rot at different speeds; score each audit**
+Different parts of an OS go stale at different rates, so review each at its own pace. Score every audit and keep the scores, so you can see the system improving over time.
+> "it will store your scores every time so that you can see how you're actually improving your system" [Xpb 53:15](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=3195s)
+> "All of these different parts decay, become obsolete or rot at different rates." [6LN 22:57](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1377s)
+**Used by:** Rule 40 ([rules.md](rules.md)).
 
 ---
 

@@ -35,7 +35,7 @@ The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.m
 | everything, as a checklist with status in this repo | `system/standard-ai-os-v1.md` |
 
 ## Coverage and gaps (2026-10-07)
-- **In the brain:** all 20 saved transcripts (2 primary, 18 supporting). Every quote is checked automatically by `tools/audit.py`.
-- **In the standard only (not yet in these pages):** 35 more transcripts from the full-channel audit of 2026-10-08. Their teachings are rows in `system/standard-ai-os-v1.md` (R18, F15+, K15+, M13+, S20+, X6+, H9+), which `nate-brain` also reads. Folding them into concepts and rules is a `brain-ingest` job.
+- **In the brain:** all 55 saved transcripts (20 from 2026-10-07, 35 from the full-channel audit) (2 primary, the rest supporting). Every quote is checked automatically by `tools/audit.py`.
+- **Full-channel audit (2026-10-08):** 35 more transcripts ingested into concepts 29-38 (section H) and Rules 31-40; the same teachings are rows R18, F15+, K15+, M13+, S20+, X6+, H9+ in `system/standard-ai-os-v1.md`. Brain now covers all 55 saved transcripts.
 - **Not ingested:** Nate's X posts (`../x-posts.md`; no X themes page, not yet verified) and his untranscribed videos (mostly model news, n8n and single-tool demos).
 - **Adding to the brain:** use the `brain-ingest` skill; it updates every page a source touches, then this index and the log.
