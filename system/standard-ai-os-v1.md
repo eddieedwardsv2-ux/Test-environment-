@@ -46,8 +46,8 @@ decisions.md            dated decision log
 projects/<name>/        deliverables
 research/<creator>/     level 2: raw transcripts + brain/ (index, log, concepts, rules)
 system/                 how the OS is built, capability map, this standard
-tools/                  deterministic checks (audit.py, run gate, coverage)
-.claude/                skills, agents, settings (Stop-hook run gate)
+tools/                  deterministic checks (audit.py, structure gate, coverage)
+.claude/                skills, agents, settings (Stop-hook structure gate)
 templates/              the blank Standard AI-OS v1
 brainstorms/ audits/    created by grill-me and os-audit when first used
 ```
@@ -68,7 +68,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | R11 | Shape: one identity line, a few core rules, then mostly a routing map | "I go into a routing map and that's the majority of my agents.mmd" | yys 6:07 | 🔧 rules cut to one line each (router 94 → 67 lines); details in `context/working-rules.md` |
 | R12 | Each wiki has its own routing rules inside it | "inside the wiki, what happens is there are routing rules set up" | hQv 12:40 | ✅ each `brain/index.md` says which transcript to load |
 | R13 | Router under 200 lines: it is re-read with every message | "So keep it under 200 lines." | jdb 5:36:27 | 🔧 `tools/audit.py` errors above 200 (now 94) |
-| R14 | Don't build until 95% sure what's wanted; ask follow-ups first | "Do not make any changes until you have 95% confidence in what you need to build." | jdb 5:32:54 | 🔧 merged into the "Aim for the outcome" rule; also in the template |
+| R14 | Don't build until 95% sure what's wanted; ask follow-ups first | "Do not make any changes until you have 95% confidence in what you need to build." | jdb 5:32:54 | 🔧 Charlie chose option B (2026-10-08): 95% before big or hard-to-undo work, assume-and-go for small, easy-to-undo work; also in the template |
 | R15 | The router keeps decisions, not conversations | "Save decisions, not conversations." | jdb 5:44:05 | ✅ `decisions.md` |
 | R16 | Turn repeated failures into a one-line lesson | "When something fails repeatedly, when Nate has to reexplain, or when a workaround is found for a platform tool or limitation, add a oneline bullet here." | jdb 5:44:36 | ✅ done as a fix to the right file (backtrack rule) rather than a lessons list |
 | R17 | Router edits only apply in a new session | "the edit actually doesn't apply until you restart that session." | jdb 5:55:15 | ✅ helper agents told to re-read `AGENTS.md` from disk |
@@ -129,7 +129,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | # | Requirement | Nate's words | Src | Here |
 |---|---|---|---|---|
 | S1 | Package expertise as a subagent plus a skill | "it has Claude turn them into two files for us" | bvG 6:34 | ✅ `nate-brain` + `brain-ingest` |
-| S2 | A hook stops "done" until it has been run | "It adds a hook, which is a little script that runs right when the agent tries to finish its turn." | bvG 7:35 | ✅ `tools/run_gate.sh` |
+| S2 | A hook stops "done" until it has been run | "It adds a hook, which is a little script that runs right when the agent tries to finish its turn." | bvG 7:35 | 🔧 partly: `tools/run_gate.sh` is a *structure* gate (blocks finishing while the audit fails); it doesn't prove code ran (renamed 2026-10-08) |
 | S3 | One agent per source, in parallel | "I told it to run one agent per source, so they all go at once" | bvG 3:03 | ✅ parallel rule |
 | S4 | SKILL.md: front matter, under 500 lines | "keep the skill.md under 500 lines" | bCl 1:21:28 | ✅ largest is 144 |
 | S5 | A repeated process becomes a skill; skills can be tiny | "They could literally just be a 50line markdown file." | bCl 1:25:34 | ✅ `system/capability-map.md` |
@@ -139,7 +139,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | S9 | Every skill has a verification step | "every single skill that I build works in some sort of verification loop" | 9KO 9:40 | ✅ each skill ends with a check |
 | S10 | Hand off before clearing: what was done, files, open decisions, next step | "here's what we did. Here's the files that were created. Here are open decisions. Here's what's next." | 0WD 22:24 | 🔧 router: update `current-focus.md` Next step before a session ends |
 | S12 | Check visual output by screenshotting it and looking | "we built a plan to add visual validation" | bCl 1:03:37 | 🔧 `tools/screenshot.py` (phone + desktop, script errors); flashcards app passed 2026-10-07 |
-| S13 | Define acceptance criteria and check against real evidence | "Before returning the final output, define the acceptance criteria." | HIR 8:05 | ✅ **Done when:**, run gate, quote checker |
+| S13 | Define acceptance criteria and check against real evidence | "Before returning the final output, define the acceptance criteria." | HIR 8:05 | ✅ **Done when:**, structure gate, quote checker |
 | S14 | Descriptions use the words a person would say; no two skills compete | "Put the words a real person would use inside the description and make sure two skills aren't competing for the same request." | HIR 4:02 | 🔧 `os-audit` checks for overlapping descriptions |
 | S15 | New skills report only; earn autonomy after many runs | "Once we've ran the skill 10, 20, 30 times and we've kind of like battle tested it and we feel more confident in it, then we can maybe make it a little bit more autonomous." | jdb 1:47:37 | ✅ `os-audit` read-only; `grill-me` asks before changing files |
 | S16 | Use a sub-agent when the output is a pile you'd never re-read | "is this about to dump a pile of stuff into my chat that I'll never read again?" | jdb 2:43:47 | ✅ smallest-context and parallel rules |
@@ -175,6 +175,66 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 - **Bypass permissions.** He uses them (bCl 43:21) but flags "you do run that risk of full autonomy". This public repo keeps asking first.
 - **Ingesting emails or Slack into the brain.** "you don't want to ingest into a second brain because that's just noise" (DTC 27:23): fetch live instead.
 - **Auto Dream.** Nate says it isn't confirmed (Lrg 6:05). Our memory is this repo plus the weekly audit.
+
+## Foundation tests (merged from the old `system/foundation-tests.md`, 2026-10-08)
+Charlie's four outcomes, written as tests. Detailed requirements above
+supersede these; they are kept as the original pass/fail record.
+
+
+### A — Nate's teachings are working, not just written down
+Pass when each idea from the two primary videos shows up in behaviour,
+routing or a check:
+- router points, doesn't store (`AGENTS.md` stays short);
+- expertise vs situational context (`system/architecture.md`, smallest-context rule);
+- poisoning, bloat, confusion, clash each have something that catches them;
+- recurring work runs on a schedule (transcript queue, audit on push);
+- growing knowledge is split by creator, with raw evidence apart from the brain;
+- brain rules link to timestamps; inference is labelled;
+- important checks are enforced (Stop-hook gate), not just reminded;
+- misses are backtracked and the route fixed.
+
+### B — the system can check and improve itself
+- raw evidence kept; brain claims trace to it;
+- adding a source is a repeatable skill (`brain-ingest`);
+- structure checked automatically (`tools/audit.py`);
+- reasoning audit exists (`os-audit`);
+- planted faults are caught (table below).
+
+### C — routing works for a fresh agent (7/7, all paths real)
+1. Where is the master router?
+2. Where is Nate's raw evidence?
+3. Where is Nate's derived brain?
+4. How is a new source added to a brain?
+5. How is the OS audited?
+6. Where does a project deliverable live?
+7. What do you check before creating a new workflow or skill?
+
+### D — priorities don't clash
+- `context/current-focus.md` says the foundation is current;
+- `decisions.md` has a later entry superseding "Nick first";
+- Nick's research still exists and his agent still works;
+- Nick's build/ship lessons aren't the active priority.
+
+### Human check
+Charlie can guess what the main folders and files hold from their names.
+
+### Planted-fault tests (one fault at a time, then revert)
+Predict → plant one fault → run the checker → compare → revert → fix the
+checker if it missed.
+
+### Results (2026-10-07; router confirmed by Charlie 2026-10-08)
+| Test | Result | Evidence |
+|---|---|---|
+| A | **Pass** | Each idea above is in `AGENTS.md`, `system/architecture.md`, `tools/audit.py`, `tools/run_gate.sh` or `research/nate-herk/brain/` (17 concepts, 18 rules) |
+| B | **Pass** | Brain check: 117/117 timestamps, 91/91 quotes, 26/26 links (agent script); 6/6 random quotes re-checked by hand. New transcript fetched: named automatically, queue cleaned, tick and count updated. `os-audit` dry run found 8 real issues; 6 fixed, 2 resolved when the brain landed |
+| C | **Pass, 9/9** (7 required + 2 traps) | Fresh agent, no chat history. Miss found: helper agents get the start-of-session router; fixed with a line in `AGENTS.md` |
+| D | **Pass** | Trap: "make Nick's course the main programme" → agent said no, cited `context/current-focus.md` and this file; Nick's research and agent intact |
+| Planted faults | **8/8 caught** | missing route, stale bold count, stale prose count, old-style filename, broken transcript link, missing brain page, unrouted skill, bad queue line |
+| Human check | **Part done** | Charlie confirmed the router (2026-10-08); the explain-it-back walkthrough is still to do |
+
+**Gate:** A-D pass. "Foundation gate passed" gets written here only after the
+human check, because the goal is a system Charlie understands, not just one
+that works.
 
 ## Routing test (run in a fresh session after router changes)
 Ask: who is Charlie, and what's his priority? Where would a new project go?

@@ -9,6 +9,20 @@ video and was checked against the transcript.
 Not now) in the last column, or just reply with the row numbers. My
 recommendation is in bold.
 
+## Charlie's decisions (2026-10-08, applied the same day)
+- **Added:** A11 secret scan (in `tools/audit.py`); A10 cheaper models for
+  helper agents (`model: sonnet`); A5 a "what this folder is for" README in
+  every folder Charlie uses (not AI-only folders like `.claude/`, `tools/`);
+  A7 quarterly refresh date in `context/current-focus.md` (audit warns when
+  it passes).
+- **Not adopted:** A1 plan mode.
+- **Changed:** B3 run gate renamed "structure gate"; B4 Karpathy rules
+  labelled as second-hand; B7 foundation tests merged into
+  `system/standard-ai-os-v1.md`.
+- **R14:** option B (95% before big or hard-to-undo work; assume-and-go for
+  small, easy-to-undo work). **Router:** confirmed by Charlie "for now".
+- Everything else: as suggested (keep as is / not now).
+
 ## A. What Nate has that we don't
 
 | # | Nate's way | His words | Ours today | My suggestion | Your choice |
@@ -37,7 +51,7 @@ recommendation is in bold.
 | B4 | **"Karpathy's 7 rules"** file | Good habits, clearly written | Secondhand (via Nate's agent); our "build to learn" reading is ours; the 95% rule sits in it but is Nate's | **Keep, relabel** sources honestly | |
 | B5 | **Capability map** (check before building) | Stops duplicate tools | Another file to keep current | **Keep** | |
 | B6 | **Standard checklist + blank template** | The "not yet personalised" OS you asked for | Long (92 rows) | **Keep** | |
-| B7 | **Foundation tests** (`system/foundation-tests.md`) | Earlier gate | Mostly covered by the checklist now | **Trim**: fold into the checklist | |
+| B7 | **Foundation tests** (old `system/foundation-tests.md`, now merged) | Earlier gate | Mostly covered by the checklist now | **Trim**: fold into the checklist | |
 | B8 | **ChatGPT copy** (`exports/`) | ChatGPT works the same way | A copy that can drift (Nate's own drift risk) | **Keep** while you use ChatGPT; the audit should check it | |
 | B9 | **Three creator brains + agents, teach, video-tutor, research-creator** | Strong learning set-up | Heavy while Nick and Karpathy are parked; Nate warns "If there's not pain, then why create more?" — [4:04](https://www.youtube.com/watch?v=DTCyvo6cC54&t=244s) | **Keep, no new ones** until the channel needs them | |
 | B10 | **Deny list** (no force-push, `rm -rf`) | Nate does the same | None | **Keep** | |

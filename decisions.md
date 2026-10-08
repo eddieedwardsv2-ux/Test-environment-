@@ -4,6 +4,13 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Charlie's choices on the Nate comparison applied**
+  (`system/comparison-vs-nate.md`): R14 option B; secret scan in the audit;
+  helper agents on `model: sonnet`; READMEs in every folder Charlie uses;
+  quarterly priority refresh with an audit warning; run gate renamed
+  "structure gate"; Karpathy rules labelled second-hand; foundation tests
+  merged into the standard. Plan mode not adopted. Charlie confirmed the
+  router works "for now".
 - 2026-10-08 — **Nate's brain covers all 20 saved videos** (ingested the 14
   newer ones: concepts 17 → 28, rules 18 → 30). `tools/audit.py` now checks
   every brain quote that has a timestamp link against its transcript

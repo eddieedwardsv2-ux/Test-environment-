@@ -15,8 +15,8 @@ priority is in `context/current-focus.md`.
   whole folder because it's there. Look local first, live sources last.
 - **Current beats history.** This file and `context/current-focus.md` say
   what's true now; `decisions.md` and `log.md` files are history.
-- **Ask until you're 95% sure what's wanted**, then don't change anything you
-  weren't asked to. **Define done before starting**; build the simplest version first. Prefer a
+- **Before big or hard-to-undo work, be 95% sure what's wanted** (ask if
+  not); small, easy-to-undo work: say what you assumed and carry on. **Define done before starting**; build the simplest version first. Prefer a
   script or a fixed workflow over an AI agent when either would do.
 - **Prove it, don't claim it.** Run or check something before saying it works.
   Quote sources exactly; label anything unsourced as inference.

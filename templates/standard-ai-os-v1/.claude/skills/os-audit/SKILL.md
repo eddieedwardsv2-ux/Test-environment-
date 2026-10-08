@@ -9,7 +9,7 @@ description: Audit of this AI OS that changes nothing until you approve. Finds b
 renames or deletes until you say yes to each fix.
 
 ## Steps
-1. **Read the last report** in `audits/` (if any): which findings are fixed,
+1. **Read the last report** (`audits/YYYY-MM-DD.md`, if any): which findings are fixed,
    still open, or back again?
 2. **Routes:** every path in `AGENTS.md` exists. **Reverse:** every folder,
    skill and agent has a route pointing to it.

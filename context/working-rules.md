@@ -8,22 +8,27 @@ Another Andrej Karpathy Using Claude", rules at
 run it, show the broken version, and never hand over code that you haven't run
 yourself" ([0:31](https://www.youtube.com/watch?v=bvGptCLDhyo&t=31s)).
 
+**Where these come from:** second-hand. Nate's agent distilled them from
+Karpathy's material; Karpathy isn't quoted directly for rules 1, 2, 4 or 7 in
+our saved videos. The "What it means here" column is our own reading.
+
 | # | Rule | What it means here |
 |---|---|---|
 | 1 | **Build it or you don't understand it** | Charlie learns by building or explaining, not reading. Every lesson ends in something he makes or says. |
 | 2 | **First-order term first** | Smallest working version first, then add one thing at a time. Applies to builds, lessons and second-brain levels. |
 | 3 | **Predict, run, compare** | Before running a test or command, say what you expect; then run it and compare out loud. Mismatches are the learning. |
 | 4 | **Show the wrong version first** | When teaching, show a broken or naive version and why it fails before the right one. |
-| 5 | **Prove it, don't claim it** | Never say "done", "works" or "saved" without evidence (output, file, push). The run gate below enforces the cheap part. |
-| 6 | **Say what you assumed** | State assumptions before acting on them (e.g. "I'm reading 'X-ray' as Saraev"). If the outcome is unclear (under 95% sure), ask one or two questions instead of guessing. |
+| 5 | **Prove it, don't claim it** | Never say "done", "works" or "saved" without evidence (output, file, push). The structure gate below catches broken structure; real proof is showing the output. |
+| 6 | **Say what you assumed** | State assumptions before acting on them (e.g. "I'm reading 'X-ray' as Saraev"). For big or hard-to-undo work, if you're under 95% sure, ask one or two questions instead of guessing. |
 | 7 | **Simpler wins** | Prefer the simplest thing that works; cut what isn't earning its place. |
 
 Anything not backed by a source is labelled **(inferring)**.
 
 ## How they're enforced
-- **Run gate (rule 5):** a Stop hook in `.claude/settings.json` runs
-  `tools/audit.py` when an agent tries to finish; if the audit finds errors,
-  the turn is sent back to fix them.
+- **Structure gate (supports rule 5):** a Stop hook in `.claude/settings.json`
+  runs `tools/audit.py` when an agent tries to finish; if the audit finds
+  errors, the turn is sent back to fix them. It checks the repo's structure,
+  not that code was run, so rule 5 still relies on showing real output.
 - **Teaching (rules 1-4):** `context/how-i-learn.md`, the `video-tutor` agent
   and the `teach` skill (`.claude/skills/teach/`), which checks its own answer
   against all 7 rules before showing it. It never grades Charlie.
@@ -38,12 +43,15 @@ Anything not backed by a source is labelled **(inferring)**.
   agents get the router as it was at session start: if it changed since, tell
   them to re-read `AGENTS.md` from disk. Nate: don't overuse sub-agents, and
   agent teams are expensive (`system/standard-ai-os-v1.md` S16-S17).
+  Helper agents run on a cheaper model: `model: sonnet` for reading and
+  advising (the brain agents, `video-tutor`), Haiku for simple lookups; the
+  main session keeps the main model (Charlie's choice, 2026-10-08).
 - **Check in proportion to risk.** Always verify anything you tell Charlie is
   done (file exists, pushed) and every agent's quotes and links. Git steps in
   skills (branch, push, merge) are the preferred path, not proof: if a push or
   write is refused, say exactly where and never report it as done. Cheap
   structural checks run automatically (`tools/audit.py`, on push via GitHub
-  Actions and via the Stop-hook run gate `tools/run_gate.sh`); reasoning
+  Actions and via the Stop-hook structure gate `tools/run_gate.sh`); reasoning
   checks (clash, bloat, stale facts) use the `os-audit` skill. Don't
   re-audit everything after small edits.
 - **Suggest tools proactively.** At the start of any new task or project,
@@ -56,6 +64,10 @@ Anything not backed by a source is labelled **(inferring)**.
   is worth it (e.g. TwitterAPI.io: ~$0.15 per 1,000 posts). Always ask
   Charlie before any sign-up or payment; he does the sign-up, keys go in
   secrets (`.env` locally, environment secrets in the cloud).
-- **95% confidence** (Nate, `jdbOVepEtUE` 5:32:54): "Do not make any changes
-  until you have 95% confidence in what you need to build." Merged with
-  Charlie's rule: aim for the outcome; ask only when the outcome is unclear.
+- **95% confidence, scaled to risk** (Nate, `jdbOVepEtUE` 5:32:54: "Do not
+  make any changes until you have 95% confidence in what you need to
+  build."). Charlie chose option B on 2026-10-08: the 95% bar applies to big
+  or hard-to-undo work (new skills or tools, folder changes, settings,
+  anything published or paid for); ask 1-2 questions, each with your
+  recommended answer. For small, easy-to-undo work (a file edit, a draft,
+  research) state the assumption and carry on; Git makes it a one-word undo.

@@ -120,6 +120,31 @@ for cap in list(ROOT.glob(".claude/skills/*/SKILL.md")) + list(ROOT.glob(".claud
         elif m.group(1).count('"') % 2 or (m.group(1).startswith("'") and not m.group(1).rstrip().endswith("'")):
             err(f"{cap.relative_to(ROOT)}: {key} has an unclosed quote")
 
+# 4c. Quarterly refresh: context/current-focus.md carries "Refresh by: YYYY-MM-DD".
+m = re.search(r"Refresh by:\*?\*?\s*(\d{4}-\d{2}-\d{2})", (ROOT / "context/current-focus.md").read_text())
+if m and date.today() > datetime.strptime(m.group(1), "%Y-%m-%d").date():
+    warn(f"context/current-focus.md refresh date {m.group(1)} has passed: review priorities with Charlie, then move the date on 3 months")
+
+# 4d. Secrets: this repo is public, so no keys, tokens or private keys in any
+#     file Git would publish, and .env must never be tracked.
+import subprocess
+SECRET = re.compile(r"(sk-ant-[A-Za-z0-9_-]{20,}|sk-[A-Za-z0-9]{32,}|gh[pousr]_[A-Za-z0-9]{36}|github_pat_[A-Za-z0-9_]{40,}"
+                    r"|AKIA[0-9A-Z]{16}|xox[baprs]-[A-Za-z0-9-]{10,}|AIza[0-9A-Za-z_-]{35}|-----BEGIN [A-Z ]*PRIVATE KEY-----)")
+files = subprocess.run(["git", "ls-files", "--cached", "--others", "--exclude-standard"], cwd=ROOT,
+                       capture_output=True, text=True).stdout.splitlines()
+for rel in files:
+    if rel == ".env" or rel.endswith("/.env"):
+        err(f"{rel} would be published: secrets belong in an untracked .env")
+    f = ROOT / rel
+    if not f.is_file() or f.is_symlink() or f.suffix in {".png", ".jpg", ".pdf"}:
+        continue
+    try:
+        hit = SECRET.search(f.read_text(errors="ignore"))
+    except OSError:
+        continue
+    if hit:
+        err(f"{rel}: looks like a secret ({hit.group(0)[:8]}…); remove it and rotate the key")
+
 # 5. Poisoning: every quote in a requirements doc is verbatim at its timestamp.
 sys.path.insert(0, str(ROOT / "tools"))
 from check_quotes import check, check_linked

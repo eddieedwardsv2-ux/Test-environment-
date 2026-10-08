@@ -14,8 +14,10 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 - **Karpathy's 7 rules** (`context/working-rules.md`): smallest version first,
   predict-run-compare, prove it don't claim it, say what you assumed, simpler wins.
 - **Aim for the outcome.** Read "can you…" as "the perfect outcome would
-  be…" and work towards it. Don't change anything until you're 95% sure
-  what's wanted; if the outcome is unclear, ask.
+  be…" and work towards it. Before big or hard-to-undo work (new tools,
+  settings, publishing, spending) be 95% sure what's wanted, or ask 1-2
+  questions with your recommended answer. Small, easy-to-undo work: say
+  what you assumed and get on with it.
 - **Never stop at "can't".** Try at least 3 different methods first, then say
   exactly what's blocked, where, and the workaround.
 - **Backtrack every miss:** say where you looked and why you missed it, then
@@ -27,7 +29,8 @@ step at a time, and end working replies with **Now:** and **Done when:**.
   you need. This router, current-focus and brain index.md files are "now";
   `decisions.md` and log.md files are history (keep both).
 - **Parallel only where safe:** one integration step edits shared files;
-  check every agent's output (details in `context/working-rules.md`).
+  check every agent's output; helpers run on `model: sonnet` (details in
+  `context/working-rules.md`).
 - **Prove what you report** (done, saved, pushed). `tools/audit.py` runs on
   every push and before an agent finishes; the `os-audit` skill weekly.
 - **Ask Charlie before** any sign-up, payment or plugin install. Suggest at
@@ -42,13 +45,12 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | How to teach him (roles, learning loop) | `context/how-i-learn.md`; to teach a topic use the `teach` skill |
 | Current priority and Parking Lot | `context/current-focus.md` |
 | How the OS is built (layers, context types, failure modes) | `system/architecture.md` |
-| Nate's standard: every requirement, quote and status | `system/standard-ai-os-v1.md` |
+| Nate's standard: every requirement, quote and status, plus the foundation tests | `system/standard-ai-os-v1.md` |
 | Blank, not-yet-personalised copy of this OS | `templates/standard-ai-os-v1/` |
 | What agents are blocked from running (force-push, hard reset, `rm -rf`) | deny list in `.claude/settings.json` |
 | API keys and secrets | `.env` locally (Git ignores it); in cloud sessions and GitHub, environment secrets (`context/environment.md`). Never in files or chat |
 | What tools, skills, agents and scripts already exist | `system/capability-map.md` — check before building anything |
-| Tests the foundation must pass (A-D) | `system/foundation-tests.md` |
-| Audit the OS for clash, bloat, stale or missing routes | the `os-audit` skill (reasoning, weekly; reports saved in `audits/`) after `python3 tools/audit.py` (structure; runs automatically on every push and before an agent finishes via the Stop-hook run gate `tools/run_gate.sh`) |
+| Audit the OS for clash, bloat, stale or missing routes | the `os-audit` skill (reasoning, weekly; reports saved in `audits/`) after `python3 tools/audit.py` (structure; runs automatically on every push and before an agent finishes via the Stop-hook structure gate `tools/run_gate.sh`) |
 | Check a page or visual output looks right | `python3 tools/screenshot.py <page>`, then look at the PNGs (needs `pip install playwright` each cloud session) |
 | Get knowledge out of Charlie's head (interview) | the `grill-me` skill; notes saved in `brainstorms/` |
 | What works/blocked in cloud sessions (YouTube, GitHub) | `context/environment.md` — read before any YouTube or GitHub task |

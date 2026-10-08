@@ -25,7 +25,7 @@ skill: judgement about whether the OS would make an agent **give a wrong answer*
   modified files as "may be stale".
 
 ## Step 0: read the last report
-Open the newest file in `audits/` (if any). Nate's audit looks "for earlier
+Open the newest dated report, `audits/YYYY-MM-DD.md` (if any). Nate's audit looks "for earlier
 reports inside of the audit folder" first
 ([10:14](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=614s)): note which old
 findings are fixed, still open, or came back.
