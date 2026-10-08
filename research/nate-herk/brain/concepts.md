@@ -329,6 +329,19 @@ Different parts of an OS go stale at different rates, so review each at its own 
 > "All of these different parts decay, become obsolete or rot at different rates." [6LN 22:57](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1377s)
 **Used by:** Rule 40 ([rules.md](rules.md)).
 
+## I. Newest videos (2026-10-08)
+
+**39. The smallest context that works: keep what's yours, cut what it can find, load procedures when needed, prune after every new model**
+Newer models need far less instruction. Anthropic cut over 80% of Claude Code's own system prompt with no measured loss. Keep the details only you can supply: your voice, goals, audience, how your business works, why you want something, and the gotchas. Cut what the model can look up (long folder listings), what's written in more than one place, and old rules added for older models. Move a procedure that applies to one job into a skill that loads when that job comes up. Give the outcome, the reason and the limits, then get out of its way: heavy guard rails made his "pretty" output worse than a fresh, bare session's. Audit the set-up (Claude Code's `/doctor`, then a read-only "smallest change" prompt) monthly, quarterly or **whenever you switch to a new model**, and schedule it once you trust it.
+> "the best context is the smallest amount of context that gets you the highest quality result at the cheapest cost." [oz2 2:03](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=123s)
+> "minimal doesn't necessarily mean short." [oz2 2:03](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=123s)
+> "I want to keep the details that help Claude understand the job and what makes it specific to me and then test it whether it still needs the procedure that I've written around it." [oz2 5:35](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=335s)
+> "if a detailed procedure only applies to when I'm editing a video, I'd rather load it in when I'm actually editing a video." [oz2 6:36](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=396s)
+> "every time a new model drops and you switch into it, you should probably just run this sort of audit anyways" [oz2 10:40](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=640s)
+Also: what to keep, "I mean my voice, I mean my goals, I mean my audience and the way that my business works." [oz2 6:06](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=366s); hidden extra context, "there can be instructions coming from somewhere else that you don't even know you're technically paying for." [oz2 8:37](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=517s); his audit prompt, "Audit this repo and show me the smallest change that would make the path from a raw YouTube idea to a filming ready script faster." [oz2 9:39](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=579s).
+*Source behind it:* Anthropic, "The new rules of context engineering for Claude 5 generation models" (Thariq Shihipar, 2026-07-24), summarised in [../anthropic-context-engineering-claude-5-source.md](../anthropic-context-engineering-claude-5-source.md). Supports concepts 2 (expertise vs situational) and 14 (keep skills short), and Rule 18's audit cadence.
+**Used by:** Rule 41 ([rules.md](rules.md)).
+
 ---
 
 ## Limits and things to treat carefully
@@ -339,7 +352,7 @@ Different parts of an OS go stale at different rates, so review each at its own 
   - *Bypass permissions.* In bCl (#118) he warns "you do run that risk of full autonomy" [bCl 43:21](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=2601s); in jdb (#67) he runs bypass but only with a settings deny list, and says auto mode is "really solid" for most people [jdb 1:14:28](https://www.youtube.com/watch?v=jdbOVepEtUE&t=4468s)–[1:14:59](https://www.youtube.com/watch?v=jdbOVepEtUE&t=4499s). Current view: deny list first (concept 24).
   - *Auto Dream* (automatic memory clean-up, Lrg #152): "Now, this isn't confirmed with official documentation." [Lrg 6:05](https://www.youtube.com/watch?v=LrgfmZkl3nc&t=365s). Treat as unconfirmed.
   - *Agent teams:* "they're very very expensive. So try to use them very sparingly." [jdb 5:42:35](https://www.youtube.com/watch?v=jdbOVepEtUE&t=20555s). Sub-agents (concept 23) are the default.
-  - *Skills:* bCl (#118) and zKB (#170) teach detailed skills; XNQ (#54) warns over-specific ones hold newer models back (concept 14). Newer wins: keep skills short.
+  - *Skills:* bCl (#118) and zKB (#170) teach detailed skills; XNQ (#54) warns over-specific ones hold newer models back (concept 14). Newer wins: keep skills short. Confirmed by the newest video (oz2, #1) and Anthropic's own article (concept 39).
 - **Not Nate:** most of [RzL](../how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) is guest Cole Medin talking; don't cite it as Nate's view unless the line is clearly Nate's.
 - **Token-budget numbers** (250-300k hand-off point, peak hours, the 200-line limit's exact figure) are tied to today's models and plans; the habits matter more than the numbers.
 - **Promotion to ignore:** the Hyper Agent sponsor slot ([6:38](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=398s)–[7:41](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=461s)); free Skool and AI OS kit links ([1:04](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=64s), [2:02](https://www.youtube.com/watch?v=bvGptCLDhyo&t=122s)).

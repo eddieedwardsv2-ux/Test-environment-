@@ -1,7 +1,7 @@
 # Nate's rules: AI OS architecture
 
 **What this is:** operating rules for building and running an AI OS or expert brain, distilled from 20 Nate Herk transcripts (two primary, the rest supporting) so the `nate-brain` advisor can check a plan against them. They are rules about *systems*, not an imitation of Nate.
-**Sources:** primary **AI OS** = Ek1NBfnnTH0 ([transcript][os]); **Karpathy** = bvGptCLDhyo ([transcript][kb]). Supporting: DTCyvo6cC54, 8QQ_INxAhRs, hQvwMj7IJe4, XNQBCRcwXV4, and from 2026-10-07 3XIGcM7VICc, bCljOfCH8Ms (2h course), c0kaKxM2pHg (grill me), LrgfmZkl3nc, yysILVsfLFM, 0WDkwMxj13s, 9KOtMsZ9I28, jdbOVepEtUE (6h course), RzLV8sfFdMM, e18sdZLwP7o, kB9iMD0EjT8, HIRDzMtuWFk, 9hetShMMp2s, zKBPwDpBfhs. Rules 31-40 come from 35 more transcripts (2026-10-08 full-channel audit; codes in `system/standard-ai-os-v1.md`). Each quote links to its video; transcripts are `../<title>--<id>-transcript.md`. When videos disagree the newer wins (order: `../videos.md`, smaller # = newer).
+**Sources:** primary **AI OS** = Ek1NBfnnTH0 ([transcript][os]); **Karpathy** = bvGptCLDhyo ([transcript][kb]). Supporting: DTCyvo6cC54, 8QQ_INxAhRs, hQvwMj7IJe4, XNQBCRcwXV4, and from 2026-10-07 3XIGcM7VICc, bCljOfCH8Ms (2h course), c0kaKxM2pHg (grill me), LrgfmZkl3nc, yysILVsfLFM, 0WDkwMxj13s, 9KOtMsZ9I28, jdbOVepEtUE (6h course), RzLV8sfFdMM, e18sdZLwP7o, kB9iMD0EjT8, HIRDzMtuWFk, 9hetShMMp2s, zKBPwDpBfhs. Rules 31-40 come from 35 more transcripts (2026-10-08 full-channel audit; codes in `system/standard-ai-os-v1.md`). Rule 41 comes from oz2CwrPV2Rg (2026-10-08). Each quote links to its video; transcripts are `../<title>--<id>-transcript.md`. When videos disagree the newer wins (order: `../videos.md`, smaller # = newer).
 **Confidence:** **stated** = Nate says it · **demonstrated** = he shows it working on screen · **inference** = our reading, not said or shown.
 **Built:** 2026-10-07. Concept numbers refer to [concepts.md](concepts.md); new rules name concepts in brackets until numbered.
 Updated 2026-10-08: +35 transcripts (Rules 31-40 added).
@@ -239,6 +239,12 @@ Different parts of the OS go stale at different rates, so review each at its own
 > "All of these different parts decay, become obsolete or rot at different rates." [22:57](https://www.youtube.com/watch?v=6LNlCpQPYFc&t=1377s)
 > Also: "it will store your scores every time so that you can see how you're actually improving your system" [53:15](https://www.youtube.com/watch?v=X-pbJWKmwi0&t=3195s)
 **Agent check:** *Which part of the OS is stalest, and what did the last audit score?* (Concept 38)
+
+**Rule 41: Smallest context that works; prune after every new model** (stated)
+Keep what only you can supply (voice, goals, audience, how the work runs, the reason, the gotchas). Cut what the model can look up, anything said twice, and rules written for older models. Load one-job procedures only for that job, and re-audit the set-up whenever the model changes.
+> "the best context is the smallest amount of context that gets you the highest quality result at the cheapest cost." [2:03](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=123s)
+> Also: "every time a new model drops and you switch into it, you should probably just run this sort of audit anyways" [10:40](https://www.youtube.com/watch?v=oz2CwrPV2Rg&t=640s)
+**Agent check:** *Is this line something only Charlie can tell it, or something it could find or no longer needs? Is it written anywhere else?* (Concept 39)
 
 ---
 

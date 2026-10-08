@@ -32,3 +32,10 @@
 
 **Reused from earlier drafts, after checking:** structure and several quotes from an interrupted Claude draft (branch `claude/nate-brain-wip`) and a ChatGPT draft.
 **Left out:** the earlier draft's equal weighting of 7 transcripts (scope is now 2 primary), its X-themes page (not verified), its rules resting mainly on supporting videos or X posts, and ChatGPT draft claims that were unsourced or pointed to files that weren't part of this build.
+
+## 2026-10-08: newest video (1 source)
+**Ingested:** oz2CwrPV2Rg, "Anthropic Engineers Just 10x'd Everyone's Claude Code" (12:23), read in full; checked against the Anthropic article it is based on (`../anthropic-context-engineering-claude-5-source.md`).
+**Changed:** `concepts.md` new section I and concept 39 (smallest context that works); concept 14's skills note now says the newest video confirms "keep skills short". `rules.md` Rule 41 (stated). `index.md` counts (39 concepts, 41 rules), question table and coverage.
+**Promoted:** none (Rule 41 is new and stated). Supports Rule 18's audit cadence.
+**Left out:** the Hyper Agent sponsor slot (3:04–4:05) and the community plug (9:08–9:39). The 2025 paper's percentages: he says himself they don't predict what trimming your own file will do.
+**Saved, not ingested:** 13 other newest transcripts (model tests and demos); Charlie decides which go in.

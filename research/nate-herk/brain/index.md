@@ -6,8 +6,8 @@ The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.m
 
 | File | What's in it |
 |---|---|
-| [rules.md](rules.md) | **40 operating rules**, each with a confidence (stated / demonstrated / inference) and a check the agent asks. 1 is inference only (rule 3, clash: no video gives a fix). |
-| [concepts.md](concepts.md) | **38 concepts** in eight groups: why an OS gives wrong answers, organising it, keeping it true, building an expert brain, turning knowledge into behaviour, human understanding, (G) the wider course and newer videos, and (H) the full-channel audit. Each with exact quotes and timestamp links. Plus limits, videos that disagree (newer wins) and promotion to ignore. |
+| [rules.md](rules.md) | **41 operating rules**, each with a confidence (stated / demonstrated / inference) and a check the agent asks. 1 is inference only (rule 3, clash: no video gives a fix). |
+| [concepts.md](concepts.md) | **39 concepts** in nine groups: why an OS gives wrong answers, organising it, keeping it true, building an expert brain, turning knowledge into behaviour, human understanding, (G) the wider course and newer videos, (H) the full-channel audit, and (I) the newest videos. Each with exact quotes and timestamp links. Plus limits, videos that disagree (newer wins) and promotion to ignore. |
 | [log.md](log.md) | History of what was added. |
 | [../README.md](../README.md) | Nate's video list and which are transcribed. |
 
@@ -32,10 +32,12 @@ The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.m
 | using the same project in Codex | kB9iMD0EjT8; concept 28 |
 | getting knowledge out of your head | c0kaKxM2pHg (grill me); concept 26 |
 | memory, Auto Dream | LrgfmZkl3nc (unconfirmed feature) |
+| trimming CLAUDE.md, skills and instructions; what to keep; auditing after a new model | oz2CwrPV2Rg; concept 39, Rule 41 |
 | everything, as a checklist with status in this repo | `system/standard-ai-os-v1.md` |
 
 ## Coverage and gaps (2026-10-07)
 - **In the brain:** all 55 saved transcripts (20 from 2026-10-07, 35 from the full-channel audit) (2 primary, the rest supporting). Every quote is checked automatically by `tools/audit.py`.
 - **Full-channel audit (2026-10-08):** 35 more transcripts ingested into concepts 29-38 (section H) and Rules 31-40; the same teachings are rows R18, F15+, K15+, M13+, S20+, X6+, H9+ in `system/standard-ai-os-v1.md`. Brain now covers all 55 saved transcripts.
+- **2026-10-08, newest:** oz2CwrPV2Rg (Anthropic Engineers Just 10x'd Everyone's Claude Code) → concept 39, Rule 41. 13 other new transcripts are saved but not yet ingested (mostly model tests).
 - **Not ingested:** Nate's X posts (`../x-posts.md`; no X themes page, not yet verified) and his untranscribed videos (mostly model news, n8n and single-tool demos).
 - **Adding to the brain:** use the `brain-ingest` skill; it updates every page a source touches, then this index and the log.

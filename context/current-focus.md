@@ -16,7 +16,11 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (2026-10-08):** `projects/ai-os-setup-kit/plan.md` is at v0.3
+**Now (2026-10-08, Charlie paused the set-up kit for this):** a cleaner brain
+from Nate's newest video. Proposals in `research/nate-herk/lesson-smallest-context.md`;
+Charlie picks which to do. The set-up kit resumes after.
+
+**Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.3
 (one 90-minute session: three questions, one automation, the bike method).
 One open question left: the base kit (recommended: Nate's kit plus our three
 additions; see Kit Compare and the Nate-first map). Once Charlie answers,
