@@ -3,7 +3,7 @@
 Channel: https://www.youtube.com/channel/UCNZEktrsM5oJZ-MK4jKPMOQ
 Format: weekly round-ups of popular free GitHub tools and AI apps.
 
-Coverage: **161 videos listed** (2026-10-08, newest first), **9 transcribed**.
+Coverage: **161 videos listed** (2026-10-08, newest first), **20 transcribed**.
 Status: feeds the Hands Brain (`research/hands/`, from 2026-10-08). Many titles are money-themed clickbait ("make money"); judge tools on evidence, not titles.
 
 Most relevant to Charlie: *Hermes: your video clipping machine* (clipper idea).
@@ -17,17 +17,17 @@ Most relevant to Charlie: *Hermes: your video clipping machine* (clipper idea).
 | 5 | [Grok Bot: Make money, Grow businesses, Save Cash](https://www.youtube.com/watch?v=o7Rm5FvA7hU) | – | 40:24 | ✅ [transcript](grok-bot-make-money-grow-businesses-save-cash--o7Rm5FvA7hU-transcript.md) |
 | 6 | [Free on GitHub: manage agents, 11Labs alternative, incredible design & more](https://www.youtube.com/watch?v=CQhWqUOouYM) | 53,000 | 24:21 | ✅ [transcript](free-on-github-manage-agents-11labs-alternative-incredible--CQhWqUOouYM-transcript.md) |
 | 7 | [Agents and humans can work together!](https://www.youtube.com/watch?v=bTbyRKO0hxs) | – | 20:40 | ✅ [transcript](agents-and-humans-can-work-together--bTbyRKO0hxs-transcript.md) |
-| 8 | [9 shocking repos that make money](https://www.youtube.com/watch?v=kMPyFWFqX5I) | 53,000 | 27:49 | – |
-| 9 | [Make money, cut costs & run your life with Meta's Muse](https://www.youtube.com/watch?v=dfFKE7EetoA) | 36,000 | 26:20 | – |
-| 10 | [9 things you’ll actually do with Jev](https://www.youtube.com/watch?v=pxaMzr7al3I) | 36,000 | 24:38 | – |
-| 11 | [Top Repos + Fame, Traffic & Agents](https://www.youtube.com/watch?v=hlOk-EFUITQ) | 71,000 | 34:57 | – |
-| 12 | [Meta’s Muse makes you money. And more](https://www.youtube.com/watch?v=ZodAaTH-6_E) | – | 15:01 | – |
-| 13 | [New release: fewer tokens & reliable AI](https://www.youtube.com/watch?v=U6ptUFMyaJg) | 7,200 | 17:03 | – |
-| 14 | [Better than Jev - because you can build with it](https://www.youtube.com/watch?v=tsWOiibaaxA) | 46,000 | 14:30 | – |
-| 15 | [Easy step-by-step setup](https://www.youtube.com/watch?v=WPUAZm5rnGc) | 13,000 | 11:38 | – |
-| 16 | [We tested the same request on all 3](https://www.youtube.com/watch?v=6IxiArssGvg) | – | 19:25 | – |
-| 17 | [Top Repos Explained: Code Review, World Camera, Better AI Builds, etc.](https://www.youtube.com/watch?v=1fHsIveXRa8) | 52,000 | 26:45 | – |
-| 18 | [New: AI mobile app builder, AI slides, AI receptionist, and more](https://www.youtube.com/watch?v=6xi2KL_NujU) | 14,000 | 23:51 | – |
+| 8 | [9 shocking repos that make money](https://www.youtube.com/watch?v=kMPyFWFqX5I) | 53,000 | 27:49 | ✅ [transcript](9-shocking-repos-that-make-money--kMPyFWFqX5I-transcript.md) |
+| 9 | [Make money, cut costs & run your life with Meta's Muse](https://www.youtube.com/watch?v=dfFKE7EetoA) | 36,000 | 26:20 | ✅ [transcript](make-money-cut-costs-run-your-life-with-metas-muse--dfFKE7EetoA-transcript.md) |
+| 10 | [9 things you’ll actually do with Jev](https://www.youtube.com/watch?v=pxaMzr7al3I) | 36,000 | 24:38 | ✅ [transcript](9-things-you-ll-actually-do-with-jev--pxaMzr7al3I-transcript.md) |
+| 11 | [Top Repos + Fame, Traffic & Agents](https://www.youtube.com/watch?v=hlOk-EFUITQ) | 71,000 | 34:57 | ✅ [transcript](top-repos-fame-traffic-agents--hlOk-EFUITQ-transcript.md) |
+| 12 | [Meta’s Muse makes you money. And more](https://www.youtube.com/watch?v=ZodAaTH-6_E) | – | 15:01 | ✅ [transcript](meta-s-muse-makes-you-money-and-more--ZodAaTH-6_E-transcript.md) |
+| 13 | [New release: fewer tokens & reliable AI](https://www.youtube.com/watch?v=U6ptUFMyaJg) | 7,200 | 17:03 | ✅ [transcript](new-release-fewer-tokens-reliable-ai--U6ptUFMyaJg-transcript.md) |
+| 14 | [Better than Jev - because you can build with it](https://www.youtube.com/watch?v=tsWOiibaaxA) | 46,000 | 14:30 | ✅ [transcript](better-than-jev-because-you-can-build-with-it--tsWOiibaaxA-transcript.md) |
+| 15 | [Easy step-by-step setup](https://www.youtube.com/watch?v=WPUAZm5rnGc) | 13,000 | 11:38 | ✅ [transcript](easy-step-by-step-setup--WPUAZm5rnGc-transcript.md) |
+| 16 | [We tested the same request on all 3](https://www.youtube.com/watch?v=6IxiArssGvg) | – | 19:25 | ✅ [transcript](we-tested-the-same-request-on-all-3--6IxiArssGvg-transcript.md) |
+| 17 | [Top Repos Explained: Code Review, World Camera, Better AI Builds, etc.](https://www.youtube.com/watch?v=1fHsIveXRa8) | 52,000 | 26:45 | ✅ [transcript](top-repos-explained-code-review-world-camera-better-ai--1fHsIveXRa8-transcript.md) |
+| 18 | [New: AI mobile app builder, AI slides, AI receptionist, and more](https://www.youtube.com/watch?v=6xi2KL_NujU) | 14,000 | 23:51 | ✅ [transcript](new-ai-mobile-app-builder-ai-slides-ai-receptionist-and-more--6xi2KL_NujU-transcript.md) |
 | 19 | [Why is everyone using these?](https://www.youtube.com/watch?v=ehab5PtgRo8) | 30,000 | 12:31 | – |
 | 20 | [Why Everyone Is Talking About Meta’s New Muse Agent](https://www.youtube.com/watch?v=pkwnJcETgfE) | – | 19:22 | – |
 | 21 | [Free LLM - for building, agents, images, etc.](https://www.youtube.com/watch?v=ANJTdT0Ggrw) | 28,000 | 8:55 | – |
