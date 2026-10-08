@@ -4,6 +4,8 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Router walkthrough skipped** — Charlie already knows what
+  each file does; next step is personalising with `grill-me`.
 - 2026-10-08 — **Charlie's choices on the Nate comparison applied**
   (`system/comparison-vs-nate.md`): R14 option B; secret scan in the audit;
   helper agents on `model: sonnet`; READMEs in every folder Charlie uses;

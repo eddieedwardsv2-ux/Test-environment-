@@ -13,9 +13,9 @@ then every other saved Nate video (`research/nate-herk/`).
 
 **Next step (2026-10-08):** Standard AI-OS v1 done and router confirmed by
 Charlie. Comparison choices applied (`system/comparison-vs-nate.md`). Router
-walkthrough done (Charlie stopped before the final explain-back, his call).
-Next: personalise with `grill-me`, then back to the YouTube channel. Weekly
-`os-audit` on Fridays.
+walkthrough: Charlie covered its three parts, then stopped (he knows what
+each file does). Next: personalise with `grill-me`, then back to the YouTube
+channel. Weekly `os-audit` on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work until Standard AI-OS v1 is done.
