@@ -40,7 +40,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
   check every agent's output; helpers run on `model: sonnet` (details in
   `context/working-rules.md`).
 - **Prove what you report** (done, saved, pushed). `tools/audit.py` runs on
-  every push and before an agent finishes; the `os-audit` skill weekly.
+  every push and before an agent finishes; the `audit` skill weekly.
 - **Ask Charlie before** any sign-up, payment or plugin install. Suggest at
   most 2 helpful plugins per new task (`research/plugin-map.md`).
 - **This repo is public:** never write private, health, financial or client
