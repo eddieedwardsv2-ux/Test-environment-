@@ -12,9 +12,9 @@ Brain", "Learn These 6 AI Skills Now" and "I Built Another Andrej Karpathy",
 then every other saved Nate video (`research/nate-herk/`).
 
 **Next step (2026-10-08):** Standard AI-OS v1 done and router confirmed by
-Charlie. Comparison choices applied (`system/comparison-vs-nate.md`). Next:
-a 10-minute walkthrough where Charlie explains the router back, then
-personalise with `grill-me`, then back to the YouTube channel. Weekly
+Charlie. Comparison choices applied (`system/comparison-vs-nate.md`). Router
+walkthrough done (Charlie stopped before the final explain-back, his call).
+Next: personalise with `grill-me`, then back to the YouTube channel. Weekly
 `os-audit` on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
