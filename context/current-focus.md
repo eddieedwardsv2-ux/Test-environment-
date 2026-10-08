@@ -19,7 +19,7 @@ recorded (with their consent) for the YouTube channel. Project:
 brain now links every concept to its rules.) Weekly `os-audit` on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
-they are, but no Nick work until Standard AI-OS v1 is done.
+they are, but no Nick work while the set-up kit is the priority (v1 done; kept parked 2026-10-08).
 
 ## Open quiz
 - Name the failure type: (1) old and new price lists both saved, AI quotes the
@@ -29,9 +29,9 @@ they are, but no Nick work until Standard AI-OS v1 is done.
 
 ## Parking Lot
 - Nick Saraev: build/ship lessons, brain-ingest of his 4 courses, his advice
-  as a teaching programme (parked 2026-10-07 for Standard AI-OS v1)
+  as a teaching programme (parked 2026-10-07; still parked for the set-up kit)
 - Flashcards (app, new cards, review): came from Nick's teaching; parked
-  2026-10-07 for Standard AI-OS v1. The app and its cards stay as they are.
+  2026-10-07; still parked for the set-up kit. The app and its cards stay as they are.
 - Karpathy brain, then a "council" that asks Nick, Nate and Karpathy side by
   side (after the foundation gate; Karpathy's X posts and 4 transcripts saved)
 - Dan Martell second-brain content (one creator at a time)
