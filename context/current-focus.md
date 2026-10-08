@@ -10,7 +10,7 @@ then every other saved Nate video (`research/nate-herk/`).
 
 **Next step:** checklist written and applied (`system/standard-ai-os-v1.md`).
 Done: v1 standard, template, R11/R14/X4 applied (undo any on request). Next:
-the first weekly `os-audit`, the first `grill-me` session, and ingest the 14 Nate transcripts not yet in his brain (20 saved, 6 ingested).
+Nate's brain now covers all 20 saved videos (2026-10-08). Next: Charlie's R14 choice, then the first `grill-me` session; weekly `os-audit` on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work until Standard AI-OS v1 is done.

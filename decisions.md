@@ -4,6 +4,11 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Nate's brain covers all 20 saved videos** (ingested the 14
+  newer ones: concepts 17 → 28, rules 18 → 30). `tools/audit.py` now checks
+  every brain quote cited as "quote" — [m:ss](link) against its transcript
+  (110 in Nate's brain, all pass). The knowledge base the router pulls from is
+  now complete for the saved videos.
 - 2026-10-07 — **First weekly audit saved** (`audits/2026-10-07.md`): fixed
   stale Nate counts (brain index, nate-brain agent), parked-flashcard steps in
   4 capabilities, about-me "Now" → "Long-term goal". Router test 10/10.

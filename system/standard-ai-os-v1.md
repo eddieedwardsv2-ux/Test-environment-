@@ -30,6 +30,7 @@ When videos disagree, the newer one wins (upload order is in `research/nate-herk
 | RzL | [Claude Code Better Than 98% (mostly guest Cole Medin)](../research/nate-herk/how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) |
 | e18 | [Claude Subagents Better Than 99%](../research/nate-herk/how-to-build-claude-subagents-better-than-99-of-people--e18sdZLwP7o-transcript.md) |
 | kB9 | [Claude Code Projects in Codex](../research/nate-herk/how-to-use-your-claude-code-projects-in-codex-in-5-mins--kB9iMD0EjT8-transcript.md) |
+| zKB | [Master 95% of Claude Code Skills](../research/nate-herk/master-95-of-claude-code-skills-in-28-minutes--zKBPwDpBfhs-transcript.md) |
 | HIR | [What to Build Instead of AI Agents](../research/nate-herk/anthropic-engineer-explains-what-to-build-instead-of-ai--HIRDzMtuWFk-transcript.md) |
 
 **Status:** ✅ met · 🔧 fixed 2026-10-07 · ⏳ open · ➖ deliberately not now (reason given).
@@ -119,8 +120,8 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | M6 | Crons keep recurring data fresh | "set up some sort of crons to pull in the data that you want to always be living inside of your local project" | Ek1 19:51 | ✅ hourly transcript workflow |
 | M7 | Backtrack after a miss, then fix the route | "Have it update the routing." | Ek1 23:22 | ✅ `AGENTS.md` rule, `os-audit` backtrack |
 | M8 | Feed every correction back into the system | "every time you correct AI, you feed that correction back into the system" | 3XI 6:37 | ✅ backtrack rule |
-| M9 | Test in a fresh session: teammate or stranger? | "does this answer like a teammate" | bCl 12:44; 0WD 7:09 | ✅ routing test below |
-| M10 | Check skill and agent front matter is valid (an unclosed quote stops it firing) | "You have to close off the quotes if you open them up" | jdb 2:37:42; e18 16:21 | 🔧 `tools/audit.py` checks name, description and closing `---` |
+| M9 | Test in a fresh session: teammate or stranger? | "does this answer like a teammate" | bCl 12:44 | ✅ routing test below |
+| M10 | Check skill and agent front matter is valid (an unclosed quote stops it firing) | "You have to close off the quotes if you open them up" | jdb 2:37:42 | 🔧 `tools/audit.py` checks name, description and closing `---` |
 | M11 | Trigger-test a skill: obvious, reworded and unrelated requests | "The first one is an obvious request that should trigger it." | HIR 4:33 | 🔧 `os-audit` step for new or changed skills |
 | M12 | Fix a failure in the smallest lasting place | "update the skill in the smallest durable place" | HIR 6:05 | ✅ `os-audit` backtrack step 6 |
 

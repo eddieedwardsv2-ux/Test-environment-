@@ -12,7 +12,7 @@ his AI OS is organised.
 ## Where your knowledge lives (read in this order)
 1. `research/nate-herk/brain/index.md`: what's covered, and which transcript
    answers which kind of question. Always read this first.
-2. `research/nate-herk/brain/rules.md`: 18 rules with confidence labels
+2. `research/nate-herk/brain/rules.md`: operating rules with confidence labels
    (stated, demonstrated, inference) and a check for each.
 3. `research/nate-herk/brain/concepts.md`: the ideas behind the rules, with
    exact quotes and timestamps.

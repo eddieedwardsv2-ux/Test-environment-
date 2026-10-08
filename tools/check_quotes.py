@@ -37,7 +37,8 @@ def check(doc_path):
     for rid, quote, src in items:
         n += 1
         refs = re.findall(r"(\w{3}) (\d+:\d+(?::\d+)?)", src)
-        if not any(quote in chunks(c).get(t, "") for c, t in refs):
+        # The quote must be at the FIRST source; later sources are extra support.
+        if not refs or quote not in chunks(refs[0][0]).get(refs[0][1], ""):
             failures.append(f"{doc_path.relative_to(ROOT)} {rid}: quote not found at {src.strip()}: \"{quote[:60]}\"")
     return n, failures
 

@@ -116,68 +116,68 @@ The system should leave Charlie understanding what he built and how his OS is la
 It is re-read with every message, so every line costs on every turn; past the limit it gets ignored.
 > "So keep it under 200 lines." [5:36:27](https://www.youtube.com/watch?v=jdbOVepEtUE&t=20187s)
 > Also: "if it grows too big, it can start to get messy and feel ignored" [5:04](https://www.youtube.com/watch?v=DTCyvo6cC54&t=304s)
-**Agent check:** *How long is the router now? Does this addition need to live there?* (Concept: router)
+**Agent check:** *How long is the router now? Does this addition need to live there?* (Concept 18)
 
 **Rule 20: Register every new skill or folder in the router, and log it** (stated)
 A skill or folder the router doesn't mention is one the agent won't find; the decision to add it goes in the log.
 > "It's going to register the skill in claw.md and it's going to log its decisions." [1:30:08](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=5408s)
 > Also: "you're going to just want to make sure that your claused file is getting updated as well" [28:34](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=1714s)
-**Agent check:** *Is the new skill routed and logged with a date?* (Concept: router)
+**Agent check:** *Is the new skill routed and logged with a date?* (Concept 3)
 
 **Rule 21: Skill descriptions are triggers: user's words, no overlap, trigger-tested** (stated)
 Write the description in the words Charlie would say, make sure no two skills compete, then test obvious, reworded and unrelated requests.
 > "Put the words a real person would use inside the description and make sure two skills aren't competing for the same request." [4:02](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=242s)
 > Also: "The first one is an obvious request that should trigger it." [4:33](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=273s)
-**Agent check:** *Which other skill could fire on this request? Did a reworded request trigger it?* (Concept: skills)
+**Agent check:** *Which other skill could fire on this request? Did a reworded request trigger it?* (Concept 21)
 
 **Rule 22: Validate skill and agent front matter** (stated)
 A small syntax slip such as an unclosed quote stops a skill or agent firing, silently; check it with a script.
 > "You have to close off the quotes if you open them up" [2:37:42](https://www.youtube.com/watch?v=jdbOVepEtUE&t=9462s)
-**Agent check:** *Does the front matter have a name, a description and a closing `---`?* (Concept: skills)
+**Agent check:** *Does the front matter have a name, a description and a closing `---`?* (Concept 21)
 
 **Rule 23: New skills report only until battle-tested** (stated)
 A new skill proposes and asks; it earns permission to act on its own after many good runs.
 > "Once we've ran the skill 10, 20, 30 times and we've kind of like battle tested it and we feel more confident in it, then we can maybe make it a little bit more autonomous." [1:47:37](https://www.youtube.com/watch?v=jdbOVepEtUE&t=6457s)
-**Agent check:** *How many times has this skill run? Should it still wait for a yes?* (Concept: skills)
+**Agent check:** *How many times has this skill run? Should it still wait for a yes?* (Concept 22)
 
 **Rule 24: Sub-agents for bulky output, read-only by their tools, and not overused** (stated)
 Send context-heavy searches to a sub-agent; limit its tools rather than asking nicely; skip it for quick or dependent steps.
 > "is this about to dump a pile of stuff into my chat that I'll never read again?" [2:43:47](https://www.youtube.com/watch?v=jdbOVepEtUE&t=9827s)
 > Also: "you can put that so that these sub-agents are explicitly read-only" [7:10](https://www.youtube.com/watch?v=e18sdZLwP7o&t=430s); "if you're forcing too many sub agents, you're going to get worse results" [24:57](https://www.youtube.com/watch?v=e18sdZLwP7o&t=1497s)
-**Agent check:** *Would this output flood the main chat? Is the sub-agent's tool list read-only?* (Concept: sub-agents)
+**Agent check:** *Would this output flood the main chat? Is the sub-agent's tool list read-only?* (Concept 23)
 
 **Rule 25: Block risky actions with settings and keys, not prompts** (stated)
 A deny list in settings or a least-privilege key physically stops the action; an instruction in a prompt only asks.
 > "A prompt is never a permission layer." [24:31](https://www.youtube.com/watch?v=8QQ_INxAhRs&t=1471s)
 > Also: "Can you help me update the settings file so that you physically cannot do those things?" [1:14:28](https://www.youtube.com/watch?v=jdbOVepEtUE&t=4468s)
-**Agent check:** *What actually stops this action if the agent ignores the instruction?* (Concept: permissions)
+**Agent check:** *What actually stops this action if the agent ignores the instruction?* (Concept 24)
 
 **Rule 26: Secrets live in `.env`, never in chat or Git** (stated)
 Put keys in an `.env` file excluded from pushes, not in the conversation history.
 > "It's it's much more secure for you to paste in your API key into the ENV rather than you know giving it in the chat history" [41:50](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=2510s)
-**Agent check:** *Is any key in the chat, a committed file or this public repo?* (Concept: secrets)
+**Agent check:** *Is any key in the chat, a committed file or this public repo?* (Concept 25)
 
 **Rule 27: Look at visual output before calling it done** (demonstrated)
 For pages and apps, take a screenshot and check it; code that runs can still look broken.
 > "we built a plan to add visual validation" [1:03:37](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=3817s)
-**Agent check:** *Has anyone looked at a screenshot of this on phone and desktop?* (Concept: verification)
+**Agent check:** *Has anyone looked at a screenshot of this on phone and desktop?* (Concept 16)
 
 **Rule 28: Save every audit and read the last one first** (stated)
 Dated reports in an audits folder let the next audit see what was found and whether it was fixed.
 > "look for earlier reports inside of the audit folder" [10:14](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=614s)
-**Agent check:** *Where is the last audit, and were its fixes done?* (Concept: audits)
+**Agent check:** *Where is the last audit, and were its fixes done?* (Concept 7)
 
 **Rule 29: Hand off and clear before context rots** (stated)
 Clear between unrelated tasks; in long sessions write a hand-off (done, files, open decisions, next) and start fresh.
 > "here's what we did. Here's the files that were created. Here are open decisions. Here's what's next." [22:24](https://www.youtube.com/watch?v=0WDkwMxj13s&t=1344s)
 > Also: "Use slashclear between unrelated tasks." [5:30:53](https://www.youtube.com/watch?v=jdbOVepEtUE&t=19853s); "if we get past 250,000 300,000, I'm going to do a session handoff" [2:00:48](https://www.youtube.com/watch?v=jdbOVepEtUE&t=7248s)
-**Agent check:** *Is this session still on one task? Is the next step written down for a fresh one?* (Concept: context)
+**Agent check:** *Is this session still on one task? Is the next step written down for a fresh one?* (Concept 27)
 
 **Rule 30: Extract knowledge by interview, not brain dump** (stated, demonstrated)
 Have the agent ask one question at a time until it understands, and save the answers; a quick dump leaves gaps.
 > "Interview me relentlessly about every aspect of this plan until we reach a shared understanding" [1:32](https://www.youtube.com/watch?v=c0kaKxM2pHg&t=92s)
 > Also: "the bigger problem is getting everything out of your brain into the system" [22:18](https://www.youtube.com/watch?v=DTCyvo6cC54&t=1338s)
-**Agent check:** *Did this knowledge come from Charlie answering questions, and is it saved?* (Concept: knowledge capture)
+**Agent check:** *Did this knowledge come from Charlie answering questions, and is it saved?* (Concept 26)
 
 ---
 
