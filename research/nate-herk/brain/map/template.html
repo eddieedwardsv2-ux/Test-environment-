@@ -1,0 +1,331 @@
+<title>Nate's Brain Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; section strip shows the A→H flow; each concept card opens to show its rules underneath */
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --sunk:#e9edf2; --line:#d5dbe3;
+  --fg:#18202b; --muted:#5a6676; --accent:#2a4fd6; --accent-soft:#e3e9fd;
+  --confuse:#a86a00; --confuse-soft:#fdf1d8;
+  --del:#b4232c; --del-soft:#fbe3e4;
+  --keep:#1f7a4d; --keep-soft:#dff3e8;
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#10141b; --surface:#171c25; --sunk:#1e2530; --line:#2c3542;
+  --fg:#e6ebf2; --muted:#9aa6b7; --accent:#8aa6ff; --accent-soft:#1f2a4a;
+  --confuse:#f0b54a; --confuse-soft:#3a2c10; --del:#ff7d84; --del-soft:#3d1a1d;
+  --keep:#5fd39a; --keep-soft:#143325; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10141b; --surface:#171c25; --sunk:#1e2530; --line:#2c3542;
+  --fg:#e6ebf2; --muted:#9aa6b7; --accent:#8aa6ff; --accent-soft:#1f2a4a;
+  --confuse:#f0b54a; --confuse-soft:#3a2c10; --del:#ff7d84; --del-soft:#3d1a1d;
+  --keep:#5fd39a; --keep-soft:#143325; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--f-body);margin:0}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:28px 80px}
+h1{font:700 clamp(28px,5vw,40px)/1.1 var(--f-display);margin:0 0 6px;text-wrap:balance;letter-spacing:-.01em}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+a{color:var(--accent)}
+code{font:13px var(--f-mono);background:var(--sunk);padding:1px 5px;border-radius:4px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.stats{display:flex;flex-wrap:wrap;gap:8px 20px;margin:18px 0 10px;font:13px var(--f-mono);color:var(--muted)}
+.stats b{color:var(--fg);font-weight:500}
+.bar{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden;display:flex}
+.bar span{display:block;height:100%}
+.save{font-size:13px;color:var(--muted);margin-top:8px}
+
+.flow{display:flex;flex-wrap:wrap;gap:6px;margin:22px 0 4px;align-items:center}
+.flow .lbl{font:500 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.step{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px 4px 4px;font-size:13px}
+.step i{font:500 12px var(--f-mono);font-style:normal;background:var(--accent-soft);color:var(--accent);border-radius:999px;width:22px;height:22px;display:grid;place-items:center}
+.arrow{color:var(--muted);font-size:12px}
+
+.tools{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;margin-top:14px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--surface);padding:6px 12px;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:13px}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.chip .n{font:12px var(--f-mono);color:var(--muted);margin-left:3px}
+#q{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:7px 10px;font:inherit;font-size:14px}
+
+h2{font:700 20px/1.2 var(--f-display);margin:34px 0 4px;display:flex;gap:10px;align-items:baseline}
+h2 .sl{font:500 13px var(--f-mono);color:var(--accent)}
+.secnote{color:var(--muted);font-size:13px;margin:0 0 12px}
+
+.item{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin:8px 0;scroll-margin-top:150px}
+.item.rule{background:var(--surface)}
+.kids{margin:0 0 4px 22px;border-left:2px solid var(--line);padding-left:12px}
+.kids .item{margin:6px 0}
+.head{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start;width:100%;text-align:left;background:none;border:0;padding:12px 14px}
+.id{font:500 12px var(--f-mono);padding:2px 7px;border-radius:5px;background:var(--accent-soft);color:var(--accent);white-space:nowrap;margin-top:2px}
+.rule .id{background:var(--sunk);color:var(--fg)}
+.ttl{font-weight:600;min-width:0;text-wrap:pretty}
+.ttl small{display:block;font-weight:400;color:var(--muted);font-size:12.5px;margin-top:2px}
+.flag{font:500 11px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;white-space:nowrap;margin-top:2px}
+.flag.confusing{background:var(--confuse-soft);color:var(--confuse)}
+.flag.delete{background:var(--del-soft);color:var(--del)}
+.flag.keep{background:var(--keep-soft);color:var(--keep)}
+.flag.note{background:var(--sunk);color:var(--muted)}
+.item.f-confusing{border-left:4px solid var(--confuse)}
+.item.f-delete{border-left:4px solid var(--del)}
+.item.f-keep{border-left:4px solid var(--keep)}
+
+.body{padding:0 14px 14px;border-top:1px dashed var(--line);display:flex;flex-direction:column;gap:10px;padding-top:12px;min-width:0}
+.body p{margin:0;max-width:68ch;overflow-wrap:anywhere}
+.body blockquote{margin:0;padding:6px 12px;border-left:3px solid var(--accent);background:var(--sunk);border-radius:0 6px 6px 0;font-size:14px;overflow-wrap:anywhere}
+.check{background:var(--accent-soft);border-radius:8px;padding:8px 12px;font-size:14px}
+.check b{font:500 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:2px}
+.links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+.links button{border:1px solid var(--line);background:var(--bg);border-radius:6px;padding:2px 8px;font:12px var(--f-mono);color:var(--fg)}
+.gap{color:var(--confuse);font-size:13px}
+.conf{font:11px var(--f-mono);color:var(--muted);letter-spacing:.03em}
+
+.review{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:8px}
+.review .row button{border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:6px 12px;font-size:13px}
+.review button[data-k="confusing"][aria-pressed="true"]{background:var(--confuse-soft);border-color:var(--confuse);color:var(--confuse)}
+.review button[data-k="delete"][aria-pressed="true"]{background:var(--del-soft);border-color:var(--del);color:var(--del)}
+.review button[data-k="keep"][aria-pressed="true"]{background:var(--keep-soft);border-color:var(--keep);color:var(--keep)}
+.review textarea{width:100%;min-height:60px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:8px;padding:8px 10px;font:inherit;font-size:14px;resize:vertical}
+.review .st{font-size:12px;color:var(--muted)}
+.empty{color:var(--muted);padding:30px 0;text-align:center}
+.flash{animation:fl 1.2s ease-out}
+@keyframes fl{0%{box-shadow:0 0 0 3px var(--accent)}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none}}
+@media (max-width:520px){.kids{margin-left:8px;padding-left:8px}.head{grid-template-columns:auto 1fr}.head .flag{grid-column:2;justify-self:start}}
+</style>
+
+<div class="wrap">
+  <h1>Nate's Brain Map</h1>
+  <p class="lede">The 38 concepts and 40 rules behind the <code>nate-brain</code> agent, laid out in the order the brain teaches them. Open a concept to read it and see the rules it feeds. Mark anything that's confusing or that you'd delete, and add a note saying why.</p>
+
+  <div class="stats" id="stats"></div>
+  <div class="bar" id="bar" aria-hidden="true"></div>
+  <div class="save" id="save">Connecting to your review board…</div>
+
+  <div class="flow" id="flow"><span class="lbl">Flow</span></div>
+
+  <div class="tools">
+    <div class="row">
+      <div class="seg" role="group" aria-label="View">
+        <button id="v-sec" aria-pressed="true">By section</button>
+        <button id="v-rules" aria-pressed="false">Rules 1–40</button>
+      </div>
+      <input id="q" type="search" placeholder="Search titles and text" aria-label="Search">
+    </div>
+    <div class="row" id="filters"></div>
+  </div>
+
+  <div id="list"></div>
+</div>
+
+<script>
+const DATA = __DATA__;
+const C = DATA.concepts, R = DATA.rules;
+const byC = Object.fromEntries(C.map(c=>[c.n,c])), byR = Object.fromEntries(R.map(r=>[r.n,r]));
+const SEC = []; C.forEach(c=>{ if(!SEC.find(s=>s.id===c.sec)) SEC.push({id:c.sec,title:c.secTitle}); });
+const ALL = [...C.map(c=>"c"+c.n), ...R.map(r=>"r"+r.n)];
+
+let flags = {};            // id -> {kind, note}
+let db = null, view = "sec", filter = "all", query = "";
+const open = new Set();
+
+const FILTERS = [
+  ["all","All"],["confusing","Confusing"],["delete","Delete?"],["keep","Keep"],
+  ["todo","Not reviewed"],["unlinked","Not linked"]
+];
+function isUnlinked(id){ return id[0]==="c" ? !byC[id.slice(1)].rules.length : !byR[id.slice(1)].concepts.length; }
+function matchesFilter(id){
+  const f = flags[id];
+  if(filter==="all") return true;
+  if(filter==="todo") return !f || !f.kind;
+  if(filter==="unlinked") return isUnlinked(id);
+  return f && f.kind===filter;
+}
+function textOf(id){
+  const o = id[0]==="c" ? byC[id.slice(1)] : byR[id.slice(1)];
+  return (o.title+" "+o.body.map(b=>b.h).join(" ")).replace(/<[^>]+>/g,"").toLowerCase();
+}
+const TXT = Object.fromEntries(ALL.map(id=>[id,textOf(id)]));
+function visible(id){ return matchesFilter(id) && (!query || TXT[id].includes(query)); }
+
+function esc(s){ const d=document.createElement("div"); d.textContent=s; return d.innerHTML; }
+
+function flagPill(id){
+  const f = flags[id];
+  if(!f) return "";
+  if(f.kind) return `<span class="flag ${f.kind}">${f.kind==="delete"?"Delete?":f.kind}</span>`;
+  if(f.note) return `<span class="flag note">Note</span>`;
+  return "";
+}
+function bodyHTML(o){
+  return o.body.map(b=>{
+    if(b.t==="q") return `<blockquote>${b.h}</blockquote>`;
+    if(b.t==="check") return `<div class="check"><b>Agent check</b>${b.h}</div>`;
+    return `<p>${b.h}</p>`;
+  }).join("");
+}
+function itemHTML(id){
+  const isC = id[0]==="c", o = isC ? byC[id.slice(1)] : byR[id.slice(1)];
+  const f = flags[id] || {};
+  const k = f.kind ? " f-"+f.kind : "";
+  const sub = isC ? `<small>Section ${o.sec} · feeds ${o.rules.length?o.rules.length+" rule"+(o.rules.length>1?"s":""):"no rule yet"}</small>`
+                  : `<small>${o.conf?esc(o.conf)+" · ":""}${o.concepts.length?"from concept "+o.concepts.join(", "):"no concept linked"}</small>`;
+  let inner = "";
+  if(open.has(id)){
+    let links;
+    if(isC){
+      links = o.rules.length
+        ? `<div class="links">Feeds: ${o.rules.map(n=>`<button data-go="r${n}">Rule ${n}</button>`).join("")}</div>`
+        : `<div class="gap">Not linked to a rule. Brain says: ${o.note||"no rule yet"}</div>`;
+    } else {
+      links = o.concepts.length
+        ? `<div class="links">Comes from: ${o.concepts.map(n=>`<button data-go="c${n}">Concept ${n}</button>`).join("")}</div>`
+        : `<div class="gap">No concept points to this rule, so it sits outside the flow.</div>`;
+    }
+    inner = `<div class="body">${bodyHTML(o)}${links}
+      <div class="review">
+        <div class="row" role="group" aria-label="Mark ${id}">
+          <button data-k="confusing" aria-pressed="${f.kind==="confusing"}">Confusing</button>
+          <button data-k="delete" aria-pressed="${f.kind==="delete"}">Delete?</button>
+          <button data-k="keep" aria-pressed="${f.kind==="keep"}">Keep</button>
+        </div>
+        <textarea id="note-${id}" placeholder="What's unclear, or why delete it?">${esc(f.note||"")}</textarea>
+        <div class="st" data-st></div>
+      </div></div>`;
+  }
+  return `<div class="item ${isC?"concept":"rule"}${k}" id="${id}" data-id="${id}">
+    <button class="head" aria-expanded="${open.has(id)}" data-toggle>
+      <span class="id">${isC?"C":"R"}${o.n}</span>
+      <span class="ttl">${esc(o.title)}${sub}</span>${flagPill(id)}
+    </button>${inner}</div>`;
+}
+
+function render(){
+  const list = document.getElementById("list");
+  let h = "";
+  if(view==="sec"){
+    SEC.forEach(s=>{
+      const cs = C.filter(c=>c.sec===s.id);
+      const parts = cs.map(c=>{
+        const cid="c"+c.n;
+        const kids = c.rules.map(n=>"r"+n).filter(visible);
+        const show = visible(cid) || kids.length;
+        if(!show) return "";
+        const kidH = open.has(cid) && kids.length ? `<div class="kids">${kids.map(itemHTML).join("")}</div>` : "";
+        return itemHTML(cid) + kidH;
+      }).join("");
+      if(parts) h += `<h2 id="sec-${s.id}"><span class="sl">${s.id}</span>${esc(s.title)}</h2>${parts}`;
+    });
+    const loose = R.filter(r=>!r.concepts.length).map(r=>"r"+r.n).filter(visible);
+    if(loose.length) h += `<h2><span class="sl">?</span>Rules with no concept</h2><p class="secnote">These rules aren't linked from any concept, so they only show up here.</p>${loose.map(itemHTML).join("")}`;
+  } else {
+    h = R.map(r=>"r"+r.n).filter(visible).map(itemHTML).join("");
+  }
+  list.innerHTML = h || `<p class="empty">Nothing matches this filter yet.</p>`;
+  renderStats();
+}
+
+function renderStats(){
+  const cnt = k => ALL.filter(id=>flags[id]&&flags[id].kind===k).length;
+  const c=cnt("confusing"), d=cnt("delete"), k=cnt("keep"), done=c+d+k, notes=ALL.filter(id=>flags[id]&&flags[id].note).length;
+  document.getElementById("stats").innerHTML =
+    `<span><b>${C.length}</b> concepts</span><span><b>${R.length}</b> rules</span><span><b>${done}</b> / ${ALL.length} reviewed</span><span><b>${c}</b> confusing</span><span><b>${d}</b> delete?</span><span><b>${notes}</b> notes</span>`;
+  const pct = n => (n/ALL.length*100)+"%";
+  document.getElementById("bar").innerHTML =
+    `<span style="width:${pct(k)};background:var(--keep)"></span><span style="width:${pct(c)};background:var(--confuse)"></span><span style="width:${pct(d)};background:var(--del)"></span>`;
+  const counts = {all:ALL.length,confusing:c,delete:d,keep:k,todo:ALL.length-done,unlinked:ALL.filter(isUnlinked).length};
+  document.getElementById("filters").innerHTML = FILTERS.map(([v,l])=>
+    `<button class="chip" data-f="${v}" aria-pressed="${filter===v}">${l}<span class="n">${counts[v]}</span></button>`).join("");
+}
+
+function renderFlow(){
+  const el = document.getElementById("flow");
+  el.insertAdjacentHTML("beforeend", SEC.map((s,i)=>
+    `${i?'<span class="arrow" aria-hidden="true">→</span>':""}<button class="step" data-sec="${s.id}"><i>${s.id}</i>${esc(s.title)}</button>`).join(""));
+}
+
+/* ---------- saving ---------- */
+const timers = {};
+async function save(id, statusEl){
+  const f = flags[id] || {};
+  const o = id[0]==="c" ? byC[id.slice(1)] : byR[id.slice(1)];
+  if(!db){ try{ localStorage.setItem("brainmap-flags", JSON.stringify(flags)); }catch(e){} if(statusEl) statusEl.textContent="Saved in this browser only"; return; }
+  try{
+    if(!f.kind && !f.note){ await db.collection("flags").doc(id).delete(); }
+    else await db.collection("flags").doc(id).set({ item:id, kind:f.kind||null, note:f.note||"", title:o.title, updatedAt:new Date().toISOString() });
+    if(statusEl) statusEl.textContent = "Saved";
+  }catch(e){
+    if(statusEl) statusEl.textContent = "Couldn't save: " + (e && e.code==="not_granted" ? "you don't have edit access to this page." : "try again in a moment.");
+  }
+}
+
+document.addEventListener("click", e=>{
+  const t = e.target.closest("button"); if(!t) return;
+  if(t.id==="v-sec"||t.id==="v-rules"){
+    view = t.id==="v-sec"?"sec":"rules";
+    document.getElementById("v-sec").setAttribute("aria-pressed", view==="sec");
+    document.getElementById("v-rules").setAttribute("aria-pressed", view==="rules");
+    render(); return;
+  }
+  if(t.dataset.f){ filter=t.dataset.f; render(); return; }
+  if(t.dataset.sec){
+    if(view!=="sec"){ view="sec"; document.getElementById("v-sec").setAttribute("aria-pressed",true); document.getElementById("v-rules").setAttribute("aria-pressed",false); }
+    filter="all"; query=""; document.getElementById("q").value=""; render();
+    document.getElementById("sec-"+t.dataset.sec)?.scrollIntoView({behavior:"smooth",block:"start"}); return;
+  }
+  if(t.dataset.go){ goTo(t.dataset.go); return; }
+  const item = t.closest(".item");
+  if(t.hasAttribute("data-toggle") && item){
+    const id=item.dataset.id; open.has(id)?open.delete(id):open.add(id); render();
+    document.getElementById(id)?.scrollIntoView({block:"nearest"}); return;
+  }
+  if(t.dataset.k && item){
+    const id=item.dataset.id; const f = flags[id] || (flags[id]={});
+    f.kind = f.kind===t.dataset.k ? null : t.dataset.k;
+    render();
+    save(id, document.querySelector(`#${id} [data-st]`));
+  }
+});
+document.addEventListener("input", e=>{
+  if(e.target.id==="q"){ query=e.target.value.trim().toLowerCase(); render(); document.getElementById("q").focus(); return; }
+  if(e.target.id && e.target.id.startsWith("note-")){
+    const id = e.target.id.slice(5); const f = flags[id] || (flags[id]={});
+    f.note = e.target.value;
+    const st = e.target.parentElement.querySelector("[data-st]"); st.textContent="Typing…";
+    clearTimeout(timers[id]); timers[id]=setTimeout(()=>{ save(id, document.querySelector(`#${id} [data-st]`)); renderStats(); },900);
+  }
+});
+function goTo(id){
+  if(view==="rules" && id[0]==="c"){ view="sec"; document.getElementById("v-sec").setAttribute("aria-pressed",true); document.getElementById("v-rules").setAttribute("aria-pressed",false); }
+  filter="all"; query=""; document.getElementById("q").value="";
+  if(id[0]==="r" && view==="sec"){ const r=byR[id.slice(1)]; if(r.concepts.length) open.add("c"+r.concepts[0]); }
+  open.add(id); render();
+  const el=document.getElementById(id); if(el){ el.scrollIntoView({behavior:"smooth",block:"start"}); el.classList.add("flash"); }
+}
+
+renderFlow(); render();
+try{ const s=localStorage.getItem("brainmap-flags"); if(s){ flags=JSON.parse(s)||{}; render(); } }catch(e){}
+
+(async()=>{
+  const saveEl = document.getElementById("save");
+  try{ db = await window.claude?.use?.("db"); }catch(e){ db=null; }
+  if(!db){ saveEl.textContent = "Saving to your board isn't available in this view, so marks stay in this browser only."; return; }
+  saveEl.textContent = "Marks and notes save to your review board, so Claude can read them.";
+  db.collection("flags").onSnapshot(snap=>{
+    const next = {};
+    snap.docs.forEach(d=>{ const v=d.data(); if(v) next[d.id]={kind:v.kind||null,note:v.note||""}; });
+    // keep any note the viewer is typing right now
+    const a=document.activeElement;
+    if(a && a.id && a.id.startsWith("note-")){ const id=a.id.slice(5); if(flags[id]) next[id]=flags[id]; }
+    flags = next;
+    if(a && a.id && a.id.startsWith("note-")) renderStats(); else render();
+  }, ()=>{ saveEl.textContent = "Lost the connection to your board. Reload the page to see the latest marks."; });
+})();
+</script>

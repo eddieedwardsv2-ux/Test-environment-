@@ -29,4 +29,5 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Interview Charlie to capture what he knows | `grill-me` skill | `brainstorms/YYYY-MM-DD-<topic>.md` | Charlie confirms the summary |
 | Start a new, blank AI OS | `templates/standard-ai-os-v1/` | router + filing cabinet | fresh-session routing test |
 | Flashcards | app + `cards` database (see `AGENTS.md`) | cards | backup in `learning/flashcards.md` |
+| Review Nate's brain (concepts → rules) | Brain Map app + `flags` database (see `AGENTS.md`); built by `tools/build_brain_map.py` | concepts.md, rules.md | marks read back with ArtifactData |
 | A deliverable (e.g. a video plan) | `projects/<name>/` | project files | the project's own done-when |

@@ -74,6 +74,7 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Flashcards | App: https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 — its `cards` database is the single source of truth (ArtifactData). `learning/flashcards.md` is a backup copy: regenerate it after adding cards. Page source: `learning/flashcards-app.html` |
 | Creator research (transcripts, lessons) | `research/` — start at `research/README.md`. Transcripts are `<title>--<video-id>-transcript.md` |
 | Turn chosen transcripts into a lesson | the `video-tutor` agent (give it only the transcripts the lesson needs) |
+| See or review Nate's 38 concepts and 40 rules (mark confusing / delete) | App: https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf; marks are in its `flags` database (ArtifactData). Rebuild after brain changes: `python3 tools/build_brain_map.py`, then republish `research/nate-herk/brain/map/brain-map.html` |
 | Ask Nate's view: how to organise the OS, context, routing, brains, audits, levels | the `nate-brain` agent; its knowledge is in `research/nate-herk/brain/` and `system/standard-ai-os-v1.md` |
 | Nick Saraev's view on a plan or question | the `nick-brain` agent; its knowledge is in `research/nick-saraev/brain/` |
 | Add new videos or posts to any creator brain (Nate, Nick) | the `brain-ingest` skill |
