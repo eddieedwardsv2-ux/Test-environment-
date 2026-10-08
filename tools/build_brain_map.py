@@ -1,6 +1,6 @@
 """Builds the Brain dashboard: research/nate-herk/brain/map/brain-map.html.
 It maps every Markdown file in the repo (our OS + creator research) and Nate's
-38 concepts and 40 rules as one connected graph, plus a one-card-at-a-time
+concepts and rules as one connected graph (the Hands Brain is left out: it has its own site), plus a one-card-at-a-time
 review queue. Run after the repo or brain changes, then republish the page:
     python3 tools/build_brain_map.py
 Review marks live in the published page's "flags" database, not in this file."""
@@ -36,7 +36,7 @@ cl = open(B+"concepts.md").read().split("\n")
 concepts=[]; section=None; cur=None
 for l in cl:
     if l.startswith("## Limits"): break
-    m=re.match(r'^## ([A-H])\. (.*)',l)
+    m=re.match(r'^## ([A-Z])\. (.*)',l)
     if m: section={"id":m.group(1),"title":m.group(2)}; continue
     m=re.match(r'^\*\*(\d+)\. (.*)\*\*$',l)
     if m:
@@ -83,12 +83,15 @@ import os
 ROOT = "/home/user/test-environment-/"
 REPO = "https://github.com/eddieedwardsv2-ux/test-environment-/blob/main/"
 SKIP = {".git", "node_modules", "__pycache__"}
+# The Hands Brain has its own site (system/pages.md), so it stays off this map.
+HANDS = ("research/hands/", ".claude/skills/hands-ingest/", ".claude/agents/hands-brain.md", "research/the-next-new-thing/")
 files = []
 for d, ds, fs in os.walk(ROOT):
     ds[:] = sorted(x for x in ds if x not in SKIP)
     for f in sorted(fs):
-        if f.endswith(".md"):
-            files.append(os.path.relpath(os.path.join(d, f), ROOT))
+        rel = os.path.relpath(os.path.join(d, f), ROOT)
+        if f.endswith(".md") and not rel.startswith(HANDS):
+            files.append(rel)
 fileset = set(files)
 CREATORS = {"nate-herk": "Nate Herk", "nick-saraev": "Nick Saraev", "andrej-karpathy": "Andrej Karpathy", "the-next-new-thing": "The Next New Thing"}
 def group(p):

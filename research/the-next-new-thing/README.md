@@ -3,7 +3,7 @@
 Channel: https://www.youtube.com/channel/UCNZEktrsM5oJZ-MK4jKPMOQ
 Format: weekly round-ups of popular free GitHub tools and AI apps.
 
-Coverage: **161 videos listed** (2026-10-08, newest first), **8 transcribed**.
+Coverage: **161 videos listed** (2026-10-08, newest first), **9 transcribed**.
 Status: feeds the Hands Brain (`research/hands/`, from 2026-10-08). Many titles are money-themed clickbait ("make money"); judge tools on evidence, not titles.
 
 Most relevant to Charlie: *Hermes: your video clipping machine* (clipper idea).
@@ -16,7 +16,7 @@ Most relevant to Charlie: *Hermes: your video clipping machine* (clipper idea).
 | 4 | [Top repo explained: builds product + lands customers](https://www.youtube.com/watch?v=BcNAQynKUk4) | – | 19:44 | ✅ [transcript](top-repo-explained-builds-product-lands-customers--BcNAQynKUk4-transcript.md) |
 | 5 | [Grok Bot: Make money, Grow businesses, Save Cash](https://www.youtube.com/watch?v=o7Rm5FvA7hU) | – | 40:24 | ✅ [transcript](grok-bot-make-money-grow-businesses-save-cash--o7Rm5FvA7hU-transcript.md) |
 | 6 | [Free on GitHub: manage agents, 11Labs alternative, incredible design & more](https://www.youtube.com/watch?v=CQhWqUOouYM) | 53,000 | 24:21 | ✅ [transcript](free-on-github-manage-agents-11labs-alternative-incredible--CQhWqUOouYM-transcript.md) |
-| 7 | [Agents and humans can work together!](https://www.youtube.com/watch?v=bTbyRKO0hxs) | – | 20:40 | – |
+| 7 | [Agents and humans can work together!](https://www.youtube.com/watch?v=bTbyRKO0hxs) | – | 20:40 | ✅ [transcript](agents-and-humans-can-work-together--bTbyRKO0hxs-transcript.md) |
 | 8 | [9 shocking repos that make money](https://www.youtube.com/watch?v=kMPyFWFqX5I) | 53,000 | 27:49 | – |
 | 9 | [Make money, cut costs & run your life with Meta's Muse](https://www.youtube.com/watch?v=dfFKE7EetoA) | 36,000 | 26:20 | – |
 | 10 | [9 things you’ll actually do with Jev](https://www.youtube.com/watch?v=pxaMzr7al3I) | 36,000 | 24:38 | – |
