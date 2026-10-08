@@ -85,7 +85,7 @@
 | 79 | [So You Learned Claude, Now What?](https://www.youtube.com/watch?v=-zL_trhnQaI) | 56,000 | 16:54 | – |
 | 80 | [Finally. Agent Loops Clearly Explained.](https://www.youtube.com/watch?v=EuzYhzB0vbI) | 160,000 | 14:34 | – |
 | 81 | [GLM 5.2 in Claude Code is Blowing My Mind](https://www.youtube.com/watch?v=2OD14-0cot4) | 176,000 | 15:43 | – |
-| 82 | [How to Use Claude Code Better Than 98% of People](https://www.youtube.com/watch?v=RzLV8sfFdMM) | – | 1h08 | ✅ [transcript](how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) |
+| 82 | [How to Use Claude Code Better Than 98% of People](https://www.youtube.com/watch?v=RzLV8sfFdMM) | ✅ [transcript](how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) | 1h08 | ✅ [transcript](how-to-use-claude-code-better-than-98-of-people--RzLV8sfFdMM-transcript.md) |
 | 83 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 280,000 | 31:00 | ✅ [transcript](every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md) |
 | 84 | [We Might Actually Need to Stop AI](https://www.youtube.com/watch?v=CvA8-aScqio) | 40,000 | 12:28 | – |
 | 85 | [Learn These 6 AI Skills Now (Before Everyone Else Does)](https://www.youtube.com/watch?v=3XIGcM7VICc) | 137,000 | 20:15 | ✅ [transcript](learn-these-6-ai-skills-now-before-everyone-else-does--3XIGcM7VICc-transcript.md) |
@@ -144,7 +144,7 @@
 | 138 | [I Tested Claude's New Managed Agents... What You Need To Know](https://www.youtube.com/watch?v=27Y44JYXZJ8) | 178,000 | 16:33 | – |
 | 139 | [Claude’s New AI Just Changed the Internet Forever](https://www.youtube.com/watch?v=DG1wRgEpdO4) | 208,000 | 7:50 | – |
 | 140 | [Planning In Claude Code Just Got a Huge Upgrade](https://www.youtube.com/watch?v=T4fXb3sbJIo) | 66,000 | 15:49 | – |
-| 141 | [Andrej Karpathy Just 10x’d Everyone’s Claude Code](https://www.youtube.com/watch?v=sboNwYmH3AY) | 712,000 | 17:47 | – |
+| 141 | [Andrej Karpathy Just 10x’d Everyone’s Claude Code](https://www.youtube.com/watch?v=sboNwYmH3AY) | 712,000 | 17:47 | ✅ [transcript](andrej-karpathy-just-10x-d-everyone-s-claude-code--sboNwYmH3AY-transcript.md) |
 | 142 | [Ollama + Claude Code = 99% CHEAPER](https://www.youtube.com/watch?v=O2k_qwZA8HU) | 655,000 | 25:23 | – |
 | 143 | [18 Claude Code Token Hacks in 18 Minutes](https://www.youtube.com/watch?v=49V-5Ock8LU) | 306,000 | 18:57 | – |
 | 144 | [Claude Code Just Gave Everyone Virtual Pets (April Fools?)](https://www.youtube.com/watch?v=JoPmpwpRrBI) | 26,000 | 7:15 | – |
