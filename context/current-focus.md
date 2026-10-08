@@ -16,10 +16,10 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (2026-10-08):** draft the set-up kit's step-by-step plan in
-`projects/ai-os-setup-kit/`. ("Fully connected" brain check done: Nate's
-brain now links every concept to its rules.) Nate full-channel audit done:
-8 decisions waiting in `audits/2026-10-08-nate-channel.md`. Weekly `audit` (scored, Four Cs) on Fridays.
+**Next step (2026-10-08):** Charlie reads `projects/ai-os-setup-kit/plan.md`
+(draft v0.1) and answers its 3 open questions (base kit, who pays, session
+length); then test it on the first friend or family set-up. Weekly `audit`
+(scored, Four Cs, with receipts) on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work while the set-up kit is the priority (v1 done; kept parked 2026-10-08).

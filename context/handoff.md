@@ -46,9 +46,9 @@ Done since the hand-off (2026-10-08): first scored audit, 49/100 Foundation
 Brain dashboard (whole repo + Nate's brain as one map, review cards); "I'm on
 Mac" checklist (`context/mac-day.md`). Brain review: everything accepted for
 now; only Concept 2 marked confusing (explained in chat, wording unchanged).
-Recommended next step: draft the set-up kit's step-by-step plan
-(`projects/ai-os-setup-kit/`, audit finding AIOS-b9f5-03). Small repair to
-carry with it: regenerate `exports/chatgpt-instructions.md` (AIOS-b9f5-02).
+Set-up kit plan drafted (`projects/ai-os-setup-kit/plan.md` v0.1) and the
+ChatGPT export refreshed. Recommended next step: Charlie answers the plan's 3
+open questions, then the first real set-up.
 Charlie's action: sign the GitHub connector in again (needed for the Cadence
 check, AIOS-b9f5-04).
 Keep sessions short: hand off at about half the context window.
