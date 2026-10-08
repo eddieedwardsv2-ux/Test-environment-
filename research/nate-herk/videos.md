@@ -106,7 +106,7 @@
 | 100 | [The Playbook for a $100M AI Agency](https://www.youtube.com/watch?v=8ktcSaSTvxk) | 45,000 | 1h44 | – |
 | 101 | [The AI Offer You Can Sell Tomorrow Morning](https://www.youtube.com/watch?v=Pi-m8R068r4) | 76,000 | 27:03 | – |
 | 102 | [Give Me 10 Mins and I'll Save You Millions of Claude Tokens](https://www.youtube.com/watch?v=6cEQEba0i2A) | 112,000 | 10:43 | – |
-| 103 | [What Karpathy Joining Anthropic Actually Means For Claude](https://www.youtube.com/watch?v=brB-hSiV2iU) | 140,000 | 16:24 | – |
+| 103 | [What Karpathy Joining Anthropic Actually Means For Claude](https://www.youtube.com/watch?v=brB-hSiV2iU) | 140,000 | 16:24 | ✅ [transcript](what-karpathy-joining-anthropic-actually-means-for-claude--brB-hSiV2iU-transcript.md) |
 | 104 | [How to Use Your Claude Code Projects in Codex in 5 Mins](https://www.youtube.com/watch?v=kB9iMD0EjT8) | 72,000 | 8:39 | ✅ [transcript](how-to-use-your-claude-code-projects-in-codex-in-5-mins--kB9iMD0EjT8-transcript.md) |
 | 105 | [The AI Career Opportunity Nobody is Talking About in 2026](https://www.youtube.com/watch?v=iIfOprq2kCM) | 91,000 | 19:13 | – |
 | 106 | [How to Deploy Your Claude Automations (3 Methods)](https://www.youtube.com/watch?v=xJ5oz63mIec) | 50,000 | 21:48 | – |
@@ -190,7 +190,7 @@
 | 184 | [Set Up Clawdbot on a VPS in Minutes (no mac mini)](https://www.youtube.com/watch?v=BhjK2Gr0Ryc) | 132,000 | 13:12 | – |
 | 185 | [Agentic Workflows Just Changed AI Automation Forever! (Claude Code)](https://www.youtube.com/watch?v=AO5aW01DKHo) | 239,000 | 21:40 | – |
 | 186 | [I Will Never Fix Another n8n Workflow (Claude Code)](https://www.youtube.com/watch?v=uUEa6K-FLB8) | 43,000 | 13:20 | – |
-| 187 | [Master 95% of Claude Code in 36 Mins (as a beginner)](https://www.youtube.com/watch?v=saggDHHnmtQ) | 443,000 | 36:58 | – |
+| 187 | [Master 95% of Claude Code in 36 Mins (as a beginner)](https://www.youtube.com/watch?v=saggDHHnmtQ) | 443,000 | 36:58 | ✅ [transcript](master-95-of-claude-code-in-36-mins-as-a-beginner--saggDHHnmtQ-transcript.md) |
 | 188 | [I Built an AI System That Automates My Proposals (n8n + Gamma)](https://www.youtube.com/watch?v=KGXFkUlBHxw) | 71,000 | 20:46 | – |
 | 189 | [Build ANYTHING with Claude Code & n8n (Beginner's Guide)](https://www.youtube.com/watch?v=OCO3aq3G0mk) | 100,000 | 39:58 | – |
 | 190 | [Claude Code is Better at n8n than I am (Beginner's Guide)](https://www.youtube.com/watch?v=B6k_vAjndMo) | 242,000 | 28:07 | – |
