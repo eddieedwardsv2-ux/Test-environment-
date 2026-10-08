@@ -6,8 +6,8 @@ The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.m
 
 | File | What's in it |
 |---|---|
-| [rules.md](rules.md) | **30 operating rules**, each with a confidence (stated / demonstrated / inference) and a check the agent asks. 1 is inference only (rule 3, clash: no video gives a fix). |
-| [concepts.md](concepts.md) | **28 concepts** in seven groups: why an OS gives wrong answers, organising it, keeping it true, building an expert brain, turning knowledge into behaviour, human understanding, and (G) the wider course and newer videos. Each with exact quotes and timestamp links. Plus limits, videos that disagree (newer wins) and promotion to ignore. |
+| [rules.md](rules.md) | **40 operating rules**, each with a confidence (stated / demonstrated / inference) and a check the agent asks. 1 is inference only (rule 3, clash: no video gives a fix). |
+| [concepts.md](concepts.md) | **38 concepts** in eight groups: why an OS gives wrong answers, organising it, keeping it true, building an expert brain, turning knowledge into behaviour, human understanding, (G) the wider course and newer videos, and (H) the full-channel audit. Each with exact quotes and timestamp links. Plus limits, videos that disagree (newer wins) and promotion to ignore. |
 | [log.md](log.md) | History of what was added. |
 | [../README.md](../README.md) | Nate's video list and which are transcribed. |
 

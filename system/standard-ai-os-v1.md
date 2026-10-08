@@ -94,7 +94,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | R1 | The root file is a router: it points rather than stores | "I treat this almost purely as a router" | Ek1 12:46 | ✅ `AGENTS.md` |
 | R2 | A short role line, then a "where things live" table | "But here is where you actually go to find data." | Ek1 13:17 | ✅ |
 | R3 | One route per topic. Without a route the AI won't look there | "you probably just didn't give Claude the knowledge to go look there" | DTC 4:34 | ✅ `tools/audit.py` checks every route exists |
-| R4 | Keep it lean | "if it grows too big, it can start to get messy and feel ignored" | DTC 5:04 | ✅ 67 lines; R13 gives the limit. The template is about 45 |
+| R4 | Keep it lean | "if it grows too big, it can start to get messy and feel ignored" | DTC 5:04 | ✅ about 70 lines (`tools/audit.py` prints the count); R13 gives the limit. The template is about 45 |
 | R5 | One router for every tool (import rather than copy) | "you can literally just reference inside of your claude.md at agents.md" | DTC 22:49 | ✅ `CLAUDE.md` = `@AGENTS.md` |
 | R6 | Tool-agnostic: just files and folders | "you're building things to be tool agnostic" | bCl 2:04 | ✅ plus `exports/chatgpt-instructions.md` |
 | R7 | Routes to decisions, projects and the knowledge base | "Here's where decisions live. Here's templates. Here's references. Here's projects." | Ek1 13:47 | ✅ |
@@ -103,7 +103,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | R10 | Read the wiki only when needed | "I said don't read from the wiki unless you actually need it." | bCl 2:20:23 | ✅ smallest-context rule |
 | R11 | Shape: one identity line, a few core rules, then mostly a routing map | "I go into a routing map and that's the majority of my agents.mmd" | yys 6:07 | 🔧 rules cut to one line each (router 94 → 67 lines); details in `context/working-rules.md` |
 | R12 | Each wiki has its own routing rules inside it | "inside the wiki, what happens is there are routing rules set up" | hQv 12:40 | ✅ each `brain/index.md` says which transcript to load |
-| R13 | Router under 200 lines: it is re-read with every message | "So keep it under 200 lines." | jdb 5:36:27 | 🔧 `tools/audit.py` errors above 200 (now 94) |
+| R13 | Router under 200 lines: it is re-read with every message | "So keep it under 200 lines." | jdb 5:36:27 | 🔧 `tools/audit.py` errors above 200 |
 | R14 | Don't build until 95% sure what's wanted; ask follow-ups first | "Do not make any changes until you have 95% confidence in what you need to build." | jdb 5:32:54 | 🔧 Charlie chose option B (2026-10-08): 95% before big or hard-to-undo work, assume-and-go for small, easy-to-undo work; also in the template |
 | R15 | The router keeps decisions, not conversations | "Save decisions, not conversations." | jdb 5:44:05 | ✅ `decisions.md` |
 | R16 | Turn repeated failures into a one-line lesson | "When something fails repeatedly, when Nate has to reexplain, or when a workaround is found for a platform tool or limitation, add a oneline bullet here." | jdb 5:44:36 | ✅ done as a fix to the right file (backtrack rule) rather than a lessons list |
