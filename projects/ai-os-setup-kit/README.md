@@ -23,4 +23,4 @@ and family.
 **Files:** the step-by-step plan is [`plan.md`](plan.md) (draft v0.1); anonymised lessons from each set-up go in `lessons.md` (created after the first one).
 Background: `brainstorms/2026-10-08-who-i-am.md`.
 
-**Kit Compare** (our blank template vs Nate's kit, every file explained): https://claude.ai/artifact/62wSZBDKYTLCAq6yfcF1qR. Page source `compare/`; rebuild with `python3 tools/build_kit_compare.py`, then republish.
+**Kit Compare** (our blank template and Nate's kit as two connected maps): https://claude.ai/artifact/62wSZBDKYTLCAq6yfcF1qR. Page source `compare/`; rebuild with `python3 tools/build_kit_compare.py` (it fetches Nate's kit), then republish.

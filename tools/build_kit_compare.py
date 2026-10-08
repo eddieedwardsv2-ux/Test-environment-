@@ -1,62 +1,105 @@
-"""Builds projects/ai-os-setup-kit/compare/kit-compare.html: our blank template
-(templates/standard-ai-os-v1/, full text) side by side with Nate's AIS-OS kit
-(github.com/nateherkai/AIS-OS, MIT; file purposes only).
-Run: python3 tools/build_kit_compare.py   then republish the page."""
-import json, os, html
+"""Builds projects/ai-os-setup-kit/compare/kit-compare.html: two connected maps,
+our blank template (templates/standard-ai-os-v1/) and Nate's AIS-OS kit
+(github.com/nateherkai/AIS-OS, MIT, shown with credit), stacked on a phone and
+side by side on a computer. Nodes are files and skills; lines are the links and
+routes between them; rings mark what only one kit has.
+Run: python3 tools/build_kit_compare.py [path-to-AIS-OS-clone]   then republish.
+Without a path it clones Nate's kit (shallow) into a temp folder."""
+import json, os, re, subprocess, sys, tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/"
-T = ROOT + "templates/standard-ai-os-v1/"
-OURS = [  # path, plain purpose, filled by
- ("AGENTS.md", "The rulebook and map. Loads with every message: who you're helping, how to work, and where every file lives. It points to things instead of storing them.", "Ready to use; the interview adds your details"),
- ("CLAUDE.md", "One line that pulls in AGENTS.md, so Claude Code and Codex read the same rulebook and the two can never drift apart.", "Ready to use"),
- ("context/about-me.md", "Who you are: role, goals, tools, how you like answers.", "Empty; filled by the grill-me interview"),
- ("context/current-focus.md", "The one place that says what matters now: 90-day priority, next step, parked ideas, and a refresh-by date.", "Empty; filled by the grill-me interview"),
- ("context/README.md", "Explains the context folder.", "Ready to use"),
- ("decisions.md", "A dated log of big decisions and why. Never deleted, only added to.", "Empty; grows as you decide things"),
- ("projects/README.md", "One folder per project or client. Usually the biggest part of the OS.", "Empty; a folder per project"),
- ("research/README.md", "Instructions for a level-2 knowledge base (raw sources plus a derived brain), for later, once you have 30+ notes.", "Empty until needed"),
- (".claude/skills/grill-me/SKILL.md", "Skill: interviews you one question at a time and writes the answers down.", "Ready to use"),
- (".claude/skills/os-audit/SKILL.md", "Skill: checks the OS for broken routes and stale or clashing facts, and changes nothing until you say yes.", "Ready to use"),
- (".gitignore", "Keeps secret keys (.env) out of GitHub.", "Ready to use"),
- ("README.md", "How to start: copy it into a private repo, run grill-me, audit on Fridays, and do the fresh-session test.", "Ready to use"),
-]
-NATE = [
- ("AGENTS.md + CLAUDE.md", "Two copies of the same rulebook (identity, skills, where things live). You update both together.", "Placeholders; filled by /onboard"),
- ("aios-intake.md", "Your answers to the 7 onboarding questions. Edit it and re-run /onboard any time.", "Filled by /onboard"),
- ("context/", "About you, your business and your priorities.", "Filled by /onboard"),
- ("connections.md", "A register of every tool the OS can reach (email, calendar, files...), with the date each one last worked.", "Grows as you connect tools"),
- ("decisions/log.md", "Dated decisions with why and alternatives.", "Grows as you decide"),
- ("references/3ms-framework.md", "Nate's Mindset, Method, Machine way of thinking about automations.", "Ready to use"),
- ("EXPANSIONS.md", "What to add as you grow, and what not to bother with.", "Ready to use"),
- ("archives/", "Old files get moved here, never deleted.", "Empty"),
- ("skill: /onboard", "The 7-question interview that personalises the whole kit in one go (who you are, a pasted writing sample, priorities, where your work lives).", "Run on day 1"),
- ("skill: /audit", "The scored Four Cs audit (out of 100), saved with history.", "Weekly"),
- ("skill: /grill-me", "The interview skill, for going deeper later.", "Any time"),
- ("skill: /level-up", "Weekly: finds one job to automate and builds it.", "Weekly"),
- ("skill: /link", "Makes a new file or folder findable from the rulebook.", "When you add things"),
- ("skill: /3d-brain", "A 3D globe of your knowledge, like Nate's Herk Brain (runs on a computer).", "Optional"),
- ("scripts/sync-codex-skills.sh", "Copies skills across so Codex sees them too.", "When skills change"),
-]
-COMPARE = [  # feature, ours, nate
+OURS_DIR = ROOT + "templates/standard-ai-os-v1/"
+if len(sys.argv) > 1: NATE_DIR = sys.argv[1].rstrip("/") + "/"
+else:
+    NATE_DIR = tempfile.mkdtemp() + "/kit/"
+    subprocess.run(["git", "clone", "-q", "--depth", "1", "https://github.com/nateherkai/AIS-OS", NATE_DIR], check=True)
+NATE_REV = subprocess.run(["git", "-C", NATE_DIR, "log", "-1", "--format=%h %cs"], capture_output=True, text=True).stdout.strip()
+
+def files_of(base, skip_dirs):
+    out = []
+    for d, ds, fs in os.walk(base):
+        rel = os.path.relpath(d, base)
+        ds[:] = sorted(x for x in ds if x != ".git" and os.path.normpath(os.path.join(rel, x)) not in skip_dirs)
+        for f in sorted(fs):
+            p = os.path.normpath(os.path.join(rel, f))
+            if f.endswith((".md", ".sh", ".gitignore", ".gitkeep")) or f in ("LICENSE",):
+                out.append(p)
+    return out
+
+def role(p):
+    m = re.match(r"\.claude/skills/([^/]+)/", p)
+    if m: return "skill:" + m.group(1) + ("" if p.endswith("SKILL.md") else ":" + os.path.basename(p))
+    if p.startswith("context/"): return "context"
+    if p in ("decisions.md", "decisions/log.md"): return "decisions"
+    return p
+
+def group(p):
+    if p.startswith(".claude/skills/"): return "skills"
+    if p in ("AGENTS.md", "CLAUDE.md"): return "rulebook"
+    if p.startswith("context/") or p in ("aios-intake.md",): return "context"
+    if p in ("decisions.md", "decisions/log.md") or p.startswith("projects/") or p.startswith("archives/"): return "work"
+    if p in ("connections.md",) or p.startswith("references/") or p.startswith("research/"): return "knowledge"
+    return "guides"
+
+def title(p, text):
+    if p.endswith("SKILL.md"):
+        n = re.search(r"^name:\s*(.+)$", text, re.M)
+        return "/" + (n.group(1).strip() if n else p.split("/")[2])
+    if p.endswith(".gitkeep"): return p.split("/")[0] + "/ (empty folder)"
+    return p
+
+def resolve(src, t, fileset, skills):
+    t = t.split("#")[0].strip().rstrip(".,;:")
+    if not t or "://" in t or "*" in t or "{" in t or "<" in t: return None
+    m = re.fullmatch(r"/?([a-z0-9-]+)", t)
+    if m and m.group(1) in skills: return f".claude/skills/{m.group(1)}/SKILL.md"
+    for cand in (os.path.normpath(os.path.join(os.path.dirname(src), t)), os.path.normpath(t.lstrip("/"))):
+        if cand in fileset: return cand
+        for idx in ("README.md", ".gitkeep", "log.md", "SKILL.md"):
+            if os.path.join(cand, idx) in fileset: return os.path.join(cand, idx)
+    return None
+
+def build(base, skip_dirs):
+    fs = files_of(base, skip_dirs); fileset = set(fs)
+    skills = {p.split("/")[2] for p in fs if p.startswith(".claude/skills/")}
+    nodes, edges = [], set()
+    for p in fs:
+        text = open(base + p, encoding="utf-8", errors="ignore").read()
+        nodes.append({"id": p, "t": title(p, text), "g": group(p), "r": role(p), "text": text[:6000]})
+        if p.endswith((".gitkeep", "LICENSE")): continue
+        targets = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r"`([^`\s]+)`", text)
+        targets += re.findall(r"(?<![\w/])/([a-z][a-z0-9-]+)\b", text)
+        for t in targets:
+            r = resolve(p, t, fileset, skills)
+            if r and r != p: edges.add((p, r))
+        if p.startswith(".claude/skills/") and not p.endswith("SKILL.md"):
+            sk = "/".join(p.split("/")[:3]) + "/SKILL.md"
+            if sk in fileset: edges.add((sk, p))
+    deg = {}
+    for a, b in edges: deg[a] = deg.get(a, 0) + 1; deg[b] = deg.get(b, 0) + 1
+    for n in nodes: n["d"] = deg.get(n["id"], 0)
+    return nodes, sorted(edges)
+
+ours_n, ours_e = build(OURS_DIR, set())
+nate_n, nate_e = build(NATE_DIR, {".agents", "docs", ".claude/skills/3d-brain/assets"})
+ours_roles = {n["r"] for n in ours_n}; nate_roles = {n["r"] for n in nate_n}
+for n in ours_n: n["only"] = n["r"] not in nate_roles
+for n in nate_n: n["only"] = n["r"] not in ours_roles
+
+COMPARE = [
  ("A rulebook that routes to files", "yes", "yes"),
  ("One rulebook for Claude and Codex, no copying", "yes", "no: two copies kept in step by hand"),
  ("Personalises itself with an interview", "partly: grill-me, open-ended", "yes: /onboard, 7 set questions"),
  ("Scored audit, out of 100", "no: os-audit lists problems, no score", "yes: /audit (Four Cs)"),
- ("Finds the next thing to automate", "no", "yes: /level-up"),
+ ("Finds the next thing to automate", "no", "yes: /level-up (with the bike method)"),
  ("Register of connected tools", "no", "yes: connections.md"),
  ("Fresh-session test (proves it knows you)", "yes: a day-1 step in the README", "partly: checked inside /audit, not a day-1 step"),
  ("Guide for a bigger knowledge base later", "yes: research/README.md", "partly: EXPANSIONS.md"),
  ("3D brain view", "no", "yes: /3d-brain (computer only)"),
- ("Size for a beginner to read", "12 files, about 200 lines", "about 15 files plus 6 skills, larger"),
 ]
-def read(p):
-    try: return open(T + p, encoding="utf-8").read()
-    except FileNotFoundError: return ""
-data = {
- "ours": [{"p": p, "why": w, "fill": f, "text": read(p)} for p, w, f in OURS],
- "nate": [{"p": p, "why": w, "fill": f} for p, w, f in NATE],
- "compare": COMPARE,
-}
+data = {"ours": {"nodes": ours_n, "edges": ours_e}, "nate": {"nodes": nate_n, "edges": nate_e, "rev": NATE_REV}, "compare": COMPARE}
 src = ROOT + "projects/ai-os-setup-kit/compare/template.html"
 out = ROOT + "projects/ai-os-setup-kit/compare/kit-compare.html"
 open(out, "w").write(open(src).read().replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
-print("wrote", out)
+print(f"ours {len(ours_n)} files {len(ours_e)} links | nate {len(nate_n)} files {len(nate_e)} links ({NATE_REV})", file=sys.stderr)
+print("only ours:", [n["id"] for n in ours_n if n["only"]], file=sys.stderr)
+print("only nate:", [n["id"] for n in nate_n if n["only"]], file=sys.stderr)

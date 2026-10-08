@@ -1,4 +1,4 @@
-# Set-up plan: a beginner's first AI OS (draft v0.2, 2026-10-08)
+# Set-up plan: a beginner's first AI OS (draft v0.3, 2026-10-08)
 
 The step-by-step plan for setting someone up from nothing. Follow it in order,
 the same way every time; after each set-up, fix this file (see "After each
@@ -6,13 +6,21 @@ set-up"). Plain words only: the person may never have opened a terminal.
 
 **Who it's for:** someone brand new to AI, no coding background.
 **What they end with:** a private AI OS that knows who they are, what matters
-to them now and where things live, checked by a fresh-session test, plus a
-weekly habit that keeps it true.
+to them now and where things live, checked by a fresh-session test, plus one
+small automation they understand how to grow.
 **Why the test set-ups are free:** they pay for their own Claude plan;
 Charlie's time is free in exchange for honest opinions, above all: did
 working the new way (an AI OS that knows them) feel different from the "old"
 AI they've used (a blank chat that forgets them)?
-**Format:** one 90-minute session (steps 1-7), then two light weeks.
+**Format:** one 90-minute session. Its heart is three questions:
+1. **What annoys you about AI?** (the before question)
+2. **What do you wish it could do for you?**
+3. **What's one thing in your life we can automate today?** It must be a
+   job they repeat, with steps they can explain start to finish in about a
+   minute.
+
+They leave with a working AI OS, one small automation running in "training
+wheels" mode, and an understanding of the bike method for growing it.
 **Base:** Nate Herk's free AIS-OS kit (github.com/nateherkai/AIS-OS, MIT) and
 its `onboard` interview. We don't rebuild the kit; this plan is the beginner's
 path around it.
@@ -27,12 +35,16 @@ path around it.
 3. **Their device decides the route:** phone or tablet only → Claude Code on
    the web (claude.ai/code), which is how this OS was built. Computer → same
    web route first; desktop apps can come later.
-4. Start the recording, then ask the **before question** (keep their exact
-   words): "How do you use AI now (ChatGPT, Gemini or other), what's good
-   about it, and what annoys you?" If they've never used it, note that.
+4. Start the recording, then ask questions 1 and 2 (keep their exact words):
+   - "How do you use AI now (ChatGPT, Gemini or other)? **What annoys you
+     about it?**" If they've never used it, note that.
+   - "**What do you wish it could do for you?**" Write down every answer:
+     the automation in step 8 comes from this list.
 
-## Session 1: set-up (60-90 minutes)
+## Session 1 (90 minutes)
 Each step has **Done when** so you both know it worked before moving on.
+Rough timings: steps 1-3 about 15 min, 4-6 about 35 min, 7 about 5 min,
+8-9 about 30 min, 10 about 5 min.
 
 **Step 1: accounts.**
 - A free GitHub account (github.com). This holds their OS and is the backup.
@@ -74,40 +86,48 @@ Each step has **Done when** so you both know it worked before moving on.
 - **Done when:** every answer names a real file in their repo. If one doesn't,
   ask Claude to fix that route, then re-test.
 
-**Step 7: save, then the after question.**
+**Step 7: save.**
 - They type: **"save everything to GitHub"**.
 - **Done when:** the GitHub page shows the new files with today's date.
-- Before you stop recording, ask the **after question**: "Compared with how
-  you used AI before, what feels different, if anything?" Keep their words.
 
-## Week 1: use it (10 minutes a day)
-- **Day 2-3:** start each day with "what should I focus on today?". When
-  something changes (new goal, new project), tell it and ask it to update
-  the right file.
-- **Once in week 1:** "grill me about <one thing in my head>" to get more of
-  their knowledge written down.
-- **Friday:** "audit my AI OS". Keep the saved report: it's the first score
-  to compare against.
-- **Charlie checks in once** (a message, not a session): did they use it at
-  least 3 days? What confused them?
+**Step 8: pick one thing to automate (question 3).**
+- Go back to their "I wish it could…" list. Choose **one** job that:
+  happens again and again (weekly or more); they can explain start to
+  finish in about a minute ("first I…, then I…, finally I…"); and does no
+  harm if it goes wrong once (nothing gets sent, paid or deleted).
+- Good first picks: a weekly meal plan and shopping list; turning rough
+  notes into a tidy email draft; a Monday "what's on this week" summary.
+- They explain the steps out loud; Claude writes them down as a numbered
+  process in their OS.
+- **Done when:** the process is written as numbered steps, and they agree
+  "yes, that's how I do it".
 
-## Week 2: make it reach their tools
-- **One connection:** link the tool they use most (often Gmail or Google
-  Calendar) as a claude.ai connector, read-only first. Add it to
-  `connections.md` with the date it first worked.
-- **One automation:** "level up my AI OS". It picks one small job to take
-  off their plate and builds it.
-- **Friday:** audit again and compare with week 1.
+**Step 9: build it with training wheels (the bike method).**
+- They say: **"turn this process into a skill"**. Then run it once on a real
+  example, together.
+- Explain the **bike method** (Nate's 3Ms framework,
+  `references/3ms-framework.md`; his Codex course, video X-pbJWKmwi0 at
+  1:15:06): an automation is never finished, you grow it the way you teach
+  a child to ride a bike.
+  1. **Training wheels:** you run it yourself and watch everything. (Today.)
+  2. **Guided:** it runs, but it only drafts; you check every result.
+  3. **Watched:** it runs on its own; you spot-check.
+  4. **Hands-off:** helmet on, go ride.
+  After **every** run, say what you liked and didn't like, and ask it to
+  **update the skill**, so you never fix the same mistake twice. Move up a
+  phase only when it's been right several times in a row.
+- **Done when:** one real run worked, they gave one piece of feedback, and
+  the skill was updated.
 
-## It worked when (day 14)
-- [ ] The fresh-session test still passes without Charlie's help.
-- [ ] They used it on at least 5 of the 14 days.
-- [ ] Two saved audit reports, and the second one isn't lower.
-- [ ] One connection reads successfully.
-- [ ] They can say in one sentence what the AI OS does for them.
-- [ ] **Day-14 opinion** (a short message is fine): "Old AI vs your AI OS:
-  better, worse or the same, and why? Would you keep paying for it?" Their
-  answer, anonymised, goes in `lessons.md`; it's the proof the channel needs.
+**Step 10: the after question, then stop recording.**
+- "Compared with how you used AI before, what feels different, if
+  anything?" Keep their words.
+
+## Later (designed when we need it)
+The days after session 1 (daily use, Friday audits, connecting their tools,
+moving the automation up the bike phases) and the day-14 check, including
+the "old AI vs your AI OS, would you keep paying?" opinion, get written
+before the first person reaches them.
 
 ## After each set-up (Charlie)
 1. Write anonymised lessons (no names) in `lessons.md` in this folder: where
@@ -119,7 +139,9 @@ Each step has **Done when** so you both know it worked before moving on.
 ## Decided (2026-10-08, Charlie)
 - They pay for their own Claude plan from day 1; the set-up is free in
   return for honest opinions on old AI vs the new way.
-- One 90-minute session.
+- One 90-minute session built on three questions: what annoys you about AI,
+  what do you wish it could do, and one thing to automate today (with the
+  bike method). The 14-day follow-up gets designed later.
 
 ## Open question (Charlie's call)
 1. **Which base?** This draft uses Nate's AIS-OS kit, as the project README
