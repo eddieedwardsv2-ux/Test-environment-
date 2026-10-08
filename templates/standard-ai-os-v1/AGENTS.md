@@ -43,3 +43,8 @@ priority is in `context/current-focus.md`.
 | Interview notes from grill-me sessions | `brainstorms/` (created by the skill) |
 | Audit reports (read the latest before a new audit) | `audits/` (created by the audit) |
 | Old material that's no longer current | `archives/` (create when first needed) |
+
+## Keep this router current
+When a file moves, a folder is added or a project starts, update this router
+(and that folder's README) in the same turn. A stale pointer is worse than no
+pointer.

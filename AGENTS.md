@@ -69,3 +69,8 @@ step at a time, and end working replies with **Now:** and **Done when:**.
 | Fetch a creator's X posts | `python3 research/get_x_posts.py <creator> <handle>` |
 | Specialist agents and skills | `.claude/agents/`, `.claude/skills/` (Codex reads the same skills via `.agents/skills`); find and install new skills with the `find-skills` skill |
 | What kinds of plugins exist (9 families) | `research/plugin-map.md` — check before saying a tool doesn't exist |
+
+## Keep this router current
+When a file moves, a folder is added or a project starts, update this router
+(and that folder's README) in the same turn. A stale pointer is worse than no
+pointer.

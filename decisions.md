@@ -4,6 +4,11 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Router ends with "keep this router current"** (Charlie: "Add
+  it"): update the router in the same turn when a file moves, a folder is
+  added or a project starts. Added to the blank template too. Came from a
+  "Memory · Level 2: build router files" prompt Charlie shared; the rest of
+  that prompt we already had.
 - 2026-10-08 — **Router confirmed as final** by Charlie ("Router confirmed"),
   after the full-channel Nate audit and the 8/8 router-to-brain retrieval
   test. Standard AI-OS v1 is complete. The 8 audit decisions stay open in

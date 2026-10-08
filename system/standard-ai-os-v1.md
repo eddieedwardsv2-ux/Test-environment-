@@ -99,7 +99,7 @@ brainstorms/ audits/    created by grill-me and os-audit when first used
 | R6 | Tool-agnostic: just files and folders | "you're building things to be tool agnostic" | bCl 2:04 | ✅ plus `exports/chatgpt-instructions.md` |
 | R7 | Routes to decisions, projects and the knowledge base | "Here's where decisions live. Here's templates. Here's references. Here's projects." | Ek1 13:47 | ✅ |
 | R8 | Lists skills and when to use them; a new skill gets registered and logged | "It's going to register the skill in claw.md and it's going to log its decisions." | bCl 1:30:08 | ✅ audit errors if a skill isn't routed |
-| R9 | Update the router whenever you add folders or files | "you're going to just want to make sure that your claused file is getting updated as well" | bCl 28:34 | ✅ capability-map rule plus audit |
+| R9 | Update the router whenever you add folders or files | "you're going to just want to make sure that your claused file is getting updated as well" | bCl 28:34 | ✅ stated at the end of the router (2026-10-08) plus the audit |
 | R10 | Read the wiki only when needed | "I said don't read from the wiki unless you actually need it." | bCl 2:20:23 | ✅ smallest-context rule |
 | R11 | Shape: one identity line, a few core rules, then mostly a routing map | "I go into a routing map and that's the majority of my agents.mmd" | yys 6:07 | 🔧 rules cut to one line each (router 94 → 67 lines); details in `context/working-rules.md` |
 | R12 | Each wiki has its own routing rules inside it | "inside the wiki, what happens is there are routing rules set up" | hQv 12:40 | ✅ each `brain/index.md` says which transcript to load |
