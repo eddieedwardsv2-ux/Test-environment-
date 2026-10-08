@@ -15,9 +15,8 @@ recorded (with their consent) for the YouTube channel. Project:
 `system/standard-ai-os-v1.md`, blank copy `templates/standard-ai-os-v1/`.
 
 **Next step (2026-10-08):** draft the set-up kit's step-by-step plan in
-`projects/ai-os-setup-kit/`. Open checks: what Nate means by a "fully
-connected" brain (video DTCyvo6cC54), then audit our brains against it.
-Weekly `os-audit` on Fridays.
+`projects/ai-os-setup-kit/`. ("Fully connected" brain check done: Nate's
+brain now links every concept to its rules.) Weekly `os-audit` on Fridays.
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work until Standard AI-OS v1 is done.
