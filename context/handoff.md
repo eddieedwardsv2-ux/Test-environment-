@@ -41,6 +41,14 @@ knowledge base is added.
    `save` script.
 
 ## Pick up here
-Recommended next step: run the `audit` skill once to get the first Four Cs
-score (baseline in `audits/`). Then the set-up kit's step-by-step plan.
+Done since the hand-off (2026-10-08): first scored audit, 49/100 Foundation
+(`audits/audit-2026-10-08-184245-b9f5.md`); audits now keep receipts;
+Brain dashboard (whole repo + Nate's brain as one map, review cards); "I'm on
+Mac" checklist (`context/mac-day.md`). Brain review: everything accepted for
+now; only Concept 2 marked confusing (explained in chat, wording unchanged).
+Recommended next step: draft the set-up kit's step-by-step plan
+(`projects/ai-os-setup-kit/`, audit finding AIOS-b9f5-03). Small repair to
+carry with it: regenerate `exports/chatgpt-instructions.md` (AIOS-b9f5-02).
+Charlie's action: sign the GitHub connector in again (needed for the Cadence
+check, AIOS-b9f5-04).
 Keep sessions short: hand off at about half the context window.

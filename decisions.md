@@ -4,6 +4,7 @@ Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.
 
+- 2026-10-08 — **Brain review: all cards accepted for now** (Charlie: "all the view cards, accepted for now"). Only Concept 2 (expertise vs situational context) was marked confusing; explained in chat, brain wording left as is. Re-review later from the dashboard if anything changes.
 - 2026-10-08 — **Brain dashboard replaces the Brain Map** (Charlie: "plan sounds good", after showing Nate's Herk Brain): one page maps every .md in the repo plus Nate's 38 concepts and 40 rules as a connected graph (links, backtick routes, video citations), with a one-card review tab. Same link and `flags` database. Obsidian waits for the Mac (`context/mac-day.md`, triggered by "I'm on Mac") because it ignores our backtick routes and needs paid Sync for the iPhone.
 - 2026-10-08 — **Audits keep receipts** (Charlie: "Go"): each `audit` run saves `audits/evidence/<run-id>/` (commands with real output, phone and desktop screenshots of pages checked), and every score names its receipt; no receipt = unverified. Why: the first audit's evidence existed only in chat. Connector checks record "read OK" only (public repo).
 - 2026-10-08 — **Adopted Nate's AIS-OS kit** (Charlie: "Approve ai os";
