@@ -145,7 +145,7 @@ const L = DATA.edges.map(([s,t,k])=>({source:s,target:t,k}));
 const nbr = {}; N.forEach(n=>nbr[n.id]=[]);
 DATA.edges.forEach(([s,t,k])=>{ nbr[s].push([t,k,"out"]); nbr[t].push([s,k,"in"]); });
 
-const GROUPS = [
+const GROUPS = DATA.groups || [
   ["core","Our OS: router & context"],["skills","Skills & agents"],["projects","Projects"],["audits","Audits & decisions"],
   ["learning","Learning & brainstorms"],["templates","Blank template"],["nate","Nate's brain: concepts & rules"],
   ["creators","Creator research"],["research","Research tools"],["transcripts","Video transcripts"]

@@ -68,3 +68,8 @@ the Watch Path and the two oldest lessons; mark Kit Compare as decided; a
 weekly Hands Brain routine; the round Brain map.
 
 Keep sessions short: hand off at about half the context window.
+
+## Charlie's thought for next session (discuss first, change nothing yet)
+Written 2026-10-09, about 3am. After looking at the maps, Charlie asked: is the
+routing clear, and where is our brains' "middle"? Bring it up at the start of
+the next session and talk it through with him before acting on it.

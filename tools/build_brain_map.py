@@ -184,6 +184,29 @@ for n in nodes: n["d"] = deg.get(n["id"], 0)
 print(len(nodes), "nodes", len(edges), "connections", "unlinked:", sum(1 for n in nodes if not n["d"]), file=sys.stderr)
 T = B + "map/template.html"; out = B + "map/brain-map.html"
 if "--stats" in sys.argv: sys.exit(0)
-data = {"nodes": nodes, "edges": [list(e) for e in edges]}
-open(out, "w").write(open(T).read().replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
-print("wrote", out, file=sys.stderr)
+def write(path, nodes, edges, groups=None, swaps=()):
+    for n in nodes: n["d"] = 0
+    for a, b, _ in edges:
+        for n in nodes:
+            if n["id"] in (a, b): n["d"] += 1
+    data = {"nodes": nodes, "edges": [list(e) for e in edges]}
+    if groups: data["groups"] = groups
+    page = open(T).read()
+    for a, b in swaps: page = page.replace(a, b)
+    open(path, "w").write(page.replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
+    print("wrote", path, len(nodes), "nodes", len(edges), "connections", file=sys.stderr)
+write(out, nodes, edges)
+# ENATE page: Nate's brain on its own (concepts, rules, his videos, the brain's pages).
+import copy
+NATE = "research/nate-herk/"
+en = [copy.deepcopy(n) for n in nodes if n.get("g") == "nate" or n["id"].startswith(NATE)]
+for n in en:
+    if n["kind"] == "file" and n["g"] != "transcripts": n["g"] = "creators"
+eid = {n["id"] for n in en}
+ee = [e for e in edges if e[0] in eid and e[1] in eid]
+write(B + "map/enate.html", en, ee,
+      groups=[["nate", "ENATE: concepts (C) and rules (R)"], ["transcripts", "Nate's videos"], ["creators", "Brain pages and lessons"]],
+      swaps=[("<title>Charlie's Brain</title>", "<title>ENATE</title>"),
+             ('<i></i>Charlie\'s Brain</div>', '<i></i>ENATE</div>'),
+             ("<h1>Every idea.<br><span>Connected.</span></h1>", "<h1>Nate's method.<br><span>Every source.</span></h1>"),
+             ('aria-label="Map of every note and how they connect"', 'aria-label="Map of Nate\'s ideas, rules and the videos they come from"')])

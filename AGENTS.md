@@ -34,6 +34,8 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   files are "now"; `decisions.md` and log.md files are history.
 - **Parallel only where safe:** one integration step edits shared files;
   helpers run on `model: sonnet`.
+- **Main pages stay current:** after every run, rebuild and republish Charlie's
+  Brain, ENATE and the Hands Brain (`system/pages.md`).
 - **Prove what you report** (done, saved, pushed). `tools/audit.py` runs on
   every push and before an agent finishes.
 - **This repo is public:** never write private, health, financial or client
