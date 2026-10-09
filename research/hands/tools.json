@@ -1,115 +1,5 @@
 [
  {
-  "id": "gh:affaan-m/ecc",
-  "name": "ECC",
-  "url": "https://github.com/affaan-m/ECC",
-  "kind": "repo",
-  "category": "Claude Code skills & plugins",
-  "what": "Open-source toolkit of skills that plans, builds with tests, makes a promo video and sends outreach.",
-  "open_source": "yes",
-  "repo": "https://github.com/affaan-m/ecc",
-  "cost": null,
-  "for_charlie": 3,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "The Next New Thing",
-    "video": "BcNAQynKUk4",
-    "t": "0:33",
-    "shown": "Live 20-minute run: orchestrator drove tmux panes, built a pitch-roasting app, made a video, drafted and sent X DMs.",
-    "quote": "we're going to give it a task and build a product. So, it's going to use ECC skills",
-    "opinion": {
-     "stance": "would use",
-     "who": "Affan (guest, ECC's creator)",
-     "why": "Runs it himself and now mostly lets it run unwatched.",
-     "quote": "most of the time I am very hands-off now um with the way I code",
-     "t": "5:38"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Borrow its plan and test-first skills for the OS, not the outreach",
-     "agree": "disagree",
-     "why": "He is hands-off and had it DM real people from his accounts; Rule 36 says drafts first with a human approving outward actions, Rule 33 a separate checker, Rule 37 check before anything goes public."
-    }
-   },
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "hlOk-EFUITQ",
-    "t": "17:26",
-    "shown": "Showed the repo and the remember/improve features; compared it to Agent Skills.",
-    "quote": "You get all that experience baked into your cloud for free.",
-    "opinion": {
-     "stance": "mixed",
-     "who": "Adam",
-     "why": "Great for power users, overwhelming for a new user.",
-     "quote": "If you're if you're a new user, it's a little overwhelming.",
-     "t": "21:33"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Borrow the remember-and-improve idea; install none of its 292 skills",
-     "agree": "agree",
-     "why": "Matches Rule 41 (smallest context) and Rule 34 (skills built from a real run). Rule 37: vet any plugin before installing, and ask on the Decision Desk."
-    }
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "8:15",
-    "shown": "A clip of the creator running plan mode then the TDD workflow before building.",
-    "quote": "It's a way to get decades of of experience from other software engineers and inject that into your uh coding sessions.",
-    "opinion": {
-     "stance": "mixed",
-     "who": "Adam",
-     "why": "Great for weaker models; a strong model already knows test-driven development.",
-     "quote": "You don't need a skill, but a lot of these other ones, you need to encourage it",
-     "t": "9:47"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "agree",
-     "why": "261,000 stars is not a reason. Rule 34: skills do one job and are built from a real run; a huge pack adds context (Rule 41)."
-    }
-   }
-  ],
-  "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials.",
-  "vs": {
-   "tool": "find-skills",
-   "verdict": "different job",
-   "gap": "Unknown how heavy it is to install and whether a beginner needs a pack this big next to Agent Skills."
-  },
-  "weeks": [
-   "2026-W41",
-   "2026-W39",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 3,
-  "score": 19,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": {
-   "name": "ECC",
-   "date": "2026-10-09",
-   "task": "Research only: read its plan, eval, TDD and verification-loop files in a scratch copy (nothing run)",
-   "result": "A 293-skill coding kit with hooks on 7 events; three of its ideas fit us and were written into our rules",
-   "time": "about 20 minutes",
-   "cost": "free (MIT)",
-   "adds": "would add about 1,000 SKILL.md files and 7 hooks; adopted instead: 3 short rules",
-   "verdict": "pending",
-   "why": "Recommend principles only (review: research/hands/reviews/ecc-2026-10-09.md); Charlie's verdict on the Decision Desk"
-  },
-  "rank": 1
- },
- {
   "id": "n:hyperframes",
   "name": "hyperframes",
   "url": "https://skills.sh/heygen-com/hyperframes/hyperframes",
@@ -399,7 +289,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 2
+  "rank": 1
  },
  {
   "id": "n:frontenddesign",
@@ -531,7 +421,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 3
+  "rank": 2
  },
  {
   "id": "gh:addyosmani/agent-skills",
@@ -611,7 +501,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 4
+  "rank": 3
  },
  {
   "id": "gh:mutonby/openshorts",
@@ -711,7 +601,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 5
+  "rank": 4
  },
  {
   "id": "gh:pbakaus/impeccable",
@@ -927,7 +817,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 6
+  "rank": 5
  },
  {
   "id": "n:metamuse",
@@ -1095,7 +985,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 7
+  "rank": 6
  },
  {
   "id": "n:writeaskill",
@@ -1137,7 +1027,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 8
+  "rank": 7
  },
  {
   "id": "n:chatgptdots",
@@ -1486,7 +1376,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 9
+  "rank": 8
  },
  {
   "id": "n:higgsfieldyoutubethumbnail",
@@ -1792,7 +1682,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 10
+  "rank": 9
  },
  {
   "id": "n:creativeclaw",
@@ -1891,7 +1781,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 11
+  "rank": 10
  },
  {
   "id": "n:grokbot",
@@ -3239,7 +3129,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 12
+  "rank": 11
  },
  {
   "id": "gh:odysseus-dev/odysseus",
@@ -3832,7 +3722,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 13
+  "rank": 12
  },
  {
   "id": "n:pexo",
@@ -3941,7 +3831,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 14
+  "rank": 13
  },
  {
   "id": "n:tdd",
@@ -4141,7 +4031,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 15
+  "rank": 14
  },
  {
   "id": "gh:cactus-compute/needle",
@@ -4467,7 +4357,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 16
+  "rank": 15
  },
  {
   "id": "gh:captainasic/reckoner",
@@ -6280,6 +6170,116 @@
   "shown": true,
   "tried": null,
   "rank": 8
+ },
+ {
+  "id": "gh:affaan-m/ecc",
+  "name": "ECC",
+  "url": "https://github.com/affaan-m/ECC",
+  "kind": "repo",
+  "category": "Claude Code skills & plugins",
+  "what": "Open-source toolkit of skills that plans, builds with tests, makes a promo video and sends outreach.",
+  "open_source": "yes",
+  "repo": "https://github.com/affaan-m/ecc",
+  "cost": null,
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "The Next New Thing",
+    "video": "BcNAQynKUk4",
+    "t": "0:33",
+    "shown": "Live 20-minute run: orchestrator drove tmux panes, built a pitch-roasting app, made a video, drafted and sent X DMs.",
+    "quote": "we're going to give it a task and build a product. So, it's going to use ECC skills",
+    "opinion": {
+     "stance": "would use",
+     "who": "Affan (guest, ECC's creator)",
+     "why": "Runs it himself and now mostly lets it run unwatched.",
+     "quote": "most of the time I am very hands-off now um with the way I code",
+     "t": "5:38"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Borrow its plan and test-first skills for the OS, not the outreach",
+     "agree": "disagree",
+     "why": "He is hands-off and had it DM real people from his accounts; Rule 36 says drafts first with a human approving outward actions, Rule 33 a separate checker, Rule 37 check before anything goes public."
+    }
+   },
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "hlOk-EFUITQ",
+    "t": "17:26",
+    "shown": "Showed the repo and the remember/improve features; compared it to Agent Skills.",
+    "quote": "You get all that experience baked into your cloud for free.",
+    "opinion": {
+     "stance": "mixed",
+     "who": "Adam",
+     "why": "Great for power users, overwhelming for a new user.",
+     "quote": "If you're if you're a new user, it's a little overwhelming.",
+     "t": "21:33"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Borrow the remember-and-improve idea; install none of its 292 skills",
+     "agree": "agree",
+     "why": "Matches Rule 41 (smallest context) and Rule 34 (skills built from a real run). Rule 37: vet any plugin before installing, and ask on the Decision Desk."
+    }
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "8:15",
+    "shown": "A clip of the creator running plan mode then the TDD workflow before building.",
+    "quote": "It's a way to get decades of of experience from other software engineers and inject that into your uh coding sessions.",
+    "opinion": {
+     "stance": "mixed",
+     "who": "Adam",
+     "why": "Great for weaker models; a strong model already knows test-driven development.",
+     "quote": "You don't need a skill, but a lot of these other ones, you need to encourage it",
+     "t": "9:47"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "261,000 stars is not a reason. Rule 34: skills do one job and are built from a real run; a huge pack adds context (Rule 41)."
+    }
+   }
+  ],
+  "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials.",
+  "vs": {
+   "tool": "find-skills",
+   "verdict": "different job",
+   "gap": "Unknown how heavy it is to install and whether a beginner needs a pack this big next to Agent Skills."
+  },
+  "weeks": [
+   "2026-W41",
+   "2026-W39",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 3,
+  "score": 19,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": {
+   "name": "ECC",
+   "date": "2026-10-09",
+   "task": "Research only: read its plan, eval, TDD and verification-loop files in a scratch copy (nothing run)",
+   "result": "A 293-skill coding kit with hooks on 7 events; three of its ideas fit us and were written into our rules",
+   "time": "about 20 minutes",
+   "cost": "free (MIT)",
+   "adds": "would add about 1,000 SKILL.md files and 7 hooks; adopted instead: 3 short rules",
+   "verdict": "drop",
+   "why": "Charlie agreed 2026-10-09: ideas only. A 293-skill coding kit with hooks on 7 events breaks smallest context; its done-when check, READY/NOT READY report and scored lessons are now in our rules (review: research/hands/reviews/ecc-2026-10-09.md)."
+  },
+  "rank": 16
  },
  {
   "id": "n:findskills",

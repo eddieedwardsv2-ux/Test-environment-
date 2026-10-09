@@ -18,7 +18,7 @@
   "time": "about 20 minutes",
   "cost": "free (MIT)",
   "adds": "would add about 1,000 SKILL.md files and 7 hooks; adopted instead: 3 short rules",
-  "verdict": "pending",
-  "why": "Recommend principles only (review: research/hands/reviews/ecc-2026-10-09.md); Charlie's verdict on the Decision Desk"
+  "verdict": "drop",
+  "why": "Charlie agreed 2026-10-09: ideas only. A 293-skill coding kit with hooks on 7 events breaks smallest context; its done-when check, READY/NOT READY report and scored lessons are now in our rules (review: research/hands/reviews/ecc-2026-10-09.md)."
  }
 ]
