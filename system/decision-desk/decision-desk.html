@@ -74,25 +74,29 @@ button:focus-visible,.tab:focus-visible,.opt:focus-within,textarea:focus-visible
 .maphead h2{font:700 15px var(--body);margin:0;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
 .maphead span{font-size:13px;color:var(--muted)}
 @media (max-width:360px){.tile.big{grid-column:auto}}
+.told{background:var(--accent-soft);color:var(--fg);border-radius:10px;padding:10px 14px;margin:0 0 14px;font-size:15px}
+.told button.link{margin-left:6px}
 .foot{margin-top:28px;font-size:14px;color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){.card{transition:border-color .2s}}
 </style>
 
 <div class="wrap">
   <h1>Chief's Desk</h1>
-  <p class="lede">Every question Claude needs you to answer. Tap any question on the map to answer it, in any order. Bigger tiles decide other questions; the amber ones are Claude's suggested 1st and 2nd. Claude reads your answers next message, so nothing needs typing in chat.</p>
+  <p class="lede">Every question Claude needs you to answer. Tap any question on the map to answer it, in any order. Bigger tiles decide other questions; the amber ones are Claude's suggested 1st and 2nd. Press Send and, while a Claude session is open, Claude is told straight away: no need to come back and say "done". If it can't be told, a <b>Tell Claude now</b> button appears.</p>
   <div class="tabs" role="group" aria-label="Show">
     <button class="tab" id="t-open" data-f="open" aria-pressed="true">Waiting for you<span class="n" id="n-open"></span></button>
     <button class="tab" id="t-answered" data-f="answered" aria-pressed="false">Answered<span class="n" id="n-answered"></span></button>
     <button class="tab" id="t-closed" data-f="closed" aria-pressed="false">Done<span class="n" id="n-closed"></span></button>
   </div>
+  <div id="told" class="told" role="status" aria-live="polite" hidden></div>
   <div id="map"></div>
   <div class="list" id="list"><div class="empty">Loading your questions…</div></div>
   <p class="foot">"Answered" means Claude hasn't acted on it yet. "Done" means Claude has acted and logged it in <code>decisions.md</code>.</p>
 </div>
 
 <script>
-let filter = "open", docs = [], db = null, drafts = {}, editing = {}, focus = null;
+let filter = "open", docs = [], db = null, mcp = null, mcpWhy = "", drafts = {}, editing = {}, focus = null;
+const told = document.getElementById("told");
 const mapEl = document.getElementById("map");
 const list = document.getElementById("list");
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -149,9 +153,37 @@ function card(d){
     const names = opts.filter(o => (d.choice||[]).includes(o.id)).map(o => o.label);
     h += `<div class="answer"><p><b>You chose:</b> ${esc(names.join(", ") || "no option (see note)")}</p>`
       + (d.note ? `<p><b>Note:</b> ${esc(d.note)}</p>` : "") + (d.outcome ? `<p><b>What Claude did:</b> ${esc(d.outcome)}</p>` : "") + `</div>`
-      + (st === "answered" ? `<div class="row"><button class="link" data-edit="${esc(d.id)}">Change my answer</button></div>` : "");
+      + (st === "answered" ? `<div class="row"><button class="send" data-tell="${esc(d.id)}">Tell Claude now</button><button class="link" data-edit="${esc(d.id)}">Change my answer</button></div>` : "");
   }
   return h + `</article>`;
+}
+// Tell the Claude session that asked (its id is in config/session, written by Claude at
+// session start) through the Claude Code Remote connector, so Charlie never types "done".
+function say(text, id){
+  told.hidden = false;
+  told.innerHTML = esc(text) + (id ? ` <button class="link" data-tell="${esc(id)}">Tell Claude now</button>` : "");
+  told.scrollIntoView({behavior: "auto", block: "nearest"});
+}
+async function tellClaude(id){
+  const d = docs.find(x => x.id === id) || {};
+  let session = null;
+  try { const snap = await db.doc("config/session").get(); session = snap.exists ? snap.data().id : null; }
+  catch { say("Sent and saved, but Claude wasn't told: the Desk couldn't look up which session to tell.", id); return; }
+  if (!session){ say("Sent and saved. No Claude session has registered with the Desk, so the next session reads it."); return; }
+  if (!mcp){ say("Sent and saved, but Claude wasn't told: " + (mcpWhy || "the Claude Code Remote connector isn't ready on this page yet."), id); return; }
+  say("Sent. Telling Claude…");
+  try {
+    await mcp.callTool("Claude Code Remote", "send_message", {session_id: session,
+      message: `Chief's Desk: Charlie just answered "${d.short || d.q || id}" (card ${id}). Read it from the Desk with the decide skill and act on it.`});
+    say("Sent. Claude has been told.");
+  } catch(err){
+    const c = err?.code;
+    say("Sent and saved, but Claude wasn't told: " + (
+      c === "not_in_manifest" || c === "approval_required" ? "this page isn't allowed to message Claude yet. Press Tell Claude now and choose Allow."
+      : c === "server_not_connected" || c === "needs_reauth" ? "Claude Code Remote isn't connected (claude.ai Settings, Connectors)."
+      : c === "tool_error" ? "Claude Code Remote said no (" + (err.message || "no reason given") + "). If that session has finished, the next one reads it."
+      : "Claude couldn't be reached just now."), id);
+  }
 }
 function draftFrom(id){
   const el = list.querySelector(`[data-id="${CSS.escape(id)}"]`);
@@ -165,25 +197,32 @@ list.addEventListener("input", e => { const c = e.target.closest(".card"); if (c
 list.addEventListener("click", async e => {
   const ed = e.target.closest("[data-edit]");
   if (ed){ editing[ed.dataset.edit] = true; filter = "answered"; render(); return; }
+  const tb = e.target.closest("[data-tell]");
+  if (tb && db){ tb.disabled = true; await tellClaude(tb.dataset.tell); tb.disabled = false; return; }
   const b = e.target.closest("[data-send]"); if (!b || !db) return;
   const id = b.dataset.send; draftFrom(id);
   const s = document.getElementById("s-"+id); b.disabled = true; s.textContent = "Sending…";
   try {
     await db.collection("decisions").doc(id).update({choice: drafts[id].choice, note: drafts[id].note.trim(), status: "answered", answeredAt: new Date().toISOString()});
     delete drafts[id]; delete editing[id]; s.textContent = "Sent";
+    tellClaude(id);
   } catch(err){
     b.disabled = false;
     s.textContent = err?.code === "permission_denied" ? "Only Charlie can answer these." : "Didn't send. Check your connection and press Send again.";
   }
 });
+told.addEventListener("click", async e => {
+  const tb = e.target.closest("[data-tell]"); if (!tb || !db) return;
+  tb.disabled = true; await tellClaude(tb.dataset.tell);
+});
 mapEl.addEventListener("click", e => {
   const t = e.target.closest("[data-focus]"); if (!t) return;
   const cur = list.querySelector(".card"); if (cur) draftFrom(cur.dataset.id);   // keep anything typed
-  focus = t.dataset.focus; render();
+  focus = t.dataset.focus; told.hidden = true; render();
   list.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
 });
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
-  filter = t.dataset.f;
+  filter = t.dataset.f; told.hidden = true;
   document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-pressed", x === t));
   render();
 }));
@@ -195,5 +234,9 @@ render();
     docs = snap.docs.map(x => ({id: x.id, ...x.data()}));
     render();
   }, () => { list.innerHTML = '<div class="empty">Couldn\'t load the questions. Reload the page to try again.</div>'; });
+  // The connector loads after the questions, so it can never hold them up.
+  try { window.claude.use("mcp").then(m => { mcp = m; if (!m) mcpWhy = "this page can't use the Claude Code Remote connector here."; },
+    err => { mcpWhy = "the Claude Code Remote connector didn't load (" + (err?.code || "unknown") + ")."; }); }
+  catch { mcpWhy = "the Claude Code Remote connector didn't load."; }
 })();
 </script>

@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: the Desk tells Claude when Charlie presses Send
+Charlie: no more finding the Desk and typing "done". Send now messages the current session through his Claude Code Remote connector (`send_message`, the session id in the Desk's `config/session` doc, written at session start by the `decide` skill); answered cards get a **Tell Claude now** button as the backup. If no session is listening the answer is still saved and the next session reads it.
+
 ## 2026-10-09: the Desk opens itself
 Charlie: when **Now** / **Done when** sends him to the Chief's Desk, Claude opens it for him (Artifact `open`) so he never has to find it. Router line and `decide` skill updated.
 
