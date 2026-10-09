@@ -1,5 +1,10 @@
 # Decision log
 
+## 2026-10-09: Codex browser and Higgsfield map promo
+- Charlie asked to keep the Higgsfield work in Codex and chose a cinematic glowing map for a promotional short on Instagram and X. Katana access and generation remain unverified; no credits spent.
+- Charlie chose a browser shared by him and the AI, fitted to iPhone 16 Plus, after reporting slow TinyFish use and repeated logins. A private home-screen web app using Chromium/Selkies was proposed; design approval, spec, implementation and hosting are still pending.
+- Higgsfield CLI 1.1.26 installed outside the repo with the official archive checksum verified; setup/start/network configuration saved. Direct Codex OAuth discovery reached the sign-in flow, but no account authorisation or token was obtained. Intelligent UI/TinyFish control were not exposed in this session. Details and public-source references: `context/handoff.md`.
+
 ## 2026-10-09: pages refreshed, staleness tracked, relation links checked
 Charlie asked to update every page, note what was forgotten, decide whether pages need regular updates, and scan relation links. 8 pages republished (all 6 built from the repo, plus the System map and OS Guide with their facts updated), and the Desk (version 8: clears old tiles, names the "tool turned off" failure Charlie hit in the first live test); Voice Gym, Journey video and Flashcards matched their live versions and were left; the Lesson slides (old names) and Watch Path still need a refresh; two never-listed pages found (Viral Edition map, Thread Notes); Charlie (Desk `old-pages`): keep both. Thread Notes is a private conversation, so only its link is in this repo. Pages update **on change, not on a clock**: `system/published.json` + `tools/pages_status.py` flag pages behind their source, the audit warns, `/session-handoff` republishes. New `tools/check_links.py` (file links, 0 broken) and an Architect rule↔concept check (Rules 2-3 linked to concept 1; Rule 44 echoed on concept 31), both in the audit with planted faults (26/26). Report: `audits/2026-10-09-pages-and-links-check.md`.
 
