@@ -1,55 +1,57 @@
 # Session hand-off
 
-Overwritten at the end of each long session by the `session-handoff` skill.
-History lives in `decisions.md`. For Codex or ChatGPT: `exports/handoff-2026-10-09-for-codex-chatgpt.md`.
-**Written:** 2026-10-09, about 18:30 UK, by Claude; Charlie ran `/session-handoff` to clear the context.
+Overwritten by `session-handoff`; history stays in `decisions.md` and Git.
+**Written:** 2026-10-09, 17:00 EDT, by Codex; Charlie requested `/session-handoff`.
 
 ## Working on
-Nothing half-done. Next job: the Elder pilot (Desk: go), starting with the Quartermaster.
+Charlie's latest request is a smoother browser shared by him and the AI, fitted
+to iPhone 16 Plus, with fewer repeated logins. Design proposed; not approved or built.
+The original Higgsfield/Katana AI OS map promo remains open behind this connection work.
 
 ## Summary points
-- Past sessions (4-9 Oct), the Desk and every branch reviewed; about 8 dropped items now in
-  `context/todo.md` ("Found 2026-10-09"); Elder plan and Watch Path source restored to main (f99bce3).
-- New `session-handoff` skill with a carry-forward check and a paste-back message for
-  Charlie's copy, `/clear`, paste routine (f99bce3, ef51b69).
-- Desk answers acted on, all three cards closed (b5f2816); Guardian said READY, its notes
-  fixed, Reading Room republished (fd2a891, `audits/guardian/2026-10-09-desk-answers.md`).
-- Other sessions the same evening: `guardian` agent built and required for big commits
-  (6869efb, 90669a5); journey video parked (c459e5f, d1c7ead); Nate's Upgrade 2 prompt saved (30f00bb).
+- Updated this checkout to `2830a32` before checking where Claude stopped.
+- Repo checks passed: audit 0 errors/0 warnings; fault drill 26/26; Hands adapter tests 14/14 (mocked); file links 0 broken. This is not a new scored audit.
+- Installed official Higgsfield CLI 1.1.26 at `/workspace/higgsfield-tools/node_modules/.bin/higgsfield`; verified its archive against the official npm SHA-256 manifest. Repeatable setup: `/workspace/higgsfield-tools/setup.sh`.
+- Saved install/start instructions and network additions in environment configuration. Latest config read has no pending draft, retains both scripts, and reports unrestricted network access; no fresh-task restoration test performed.
+- Higgsfield MCP returned HTTP 401; its Clerk OAuth metadata returned HTTP 200. Direct Codex MCP login discovered OAuth and displayed its secure sign-in flow; cancelled without account authorisation or token creation.
+- This cloud's Codex connector configuration is platform-managed/read-only. A separate CLI connection would not automatically add tools to this chat.
+- Intelligent UI and TinyFish control tools were not exposed here; no access to Charlie's signed-in screen. Re-check actual tools next session rather than assuming account-wide absence.
+- Researched TinyFish saved profiles and mobile alternatives. Recommended private home-screen web app reusing LinuxServer Chromium/Selkies; no app code, deployment, paid calls or video generated.
+- Hand-off rebuild completed: Quartermaster, Reading Room, Brain dashboard and Nate-first map need live republishing. Pre-commit audit: 0 errors, 4 publication warnings; post-commit Guardian review is still required.
 
 ## Key files
-- `.claude/skills/session-handoff/SKILL.md`
-- `context/todo.md` ("Reminders for Claude", "Found 2026-10-09", Elder pilot as item 1)
-- `brainstorms/2026-10-09-elder-councils-plan.md` (section 5: rollout steps)
-- `audits/guardian/2026-10-09-desk-answers.md`
+- `context/handoff.md`, `context/current-focus.md`, `context/todo.md`, `decisions.md`.
+- `references/higgsfield-api.md` and `system/system-map/system-map.html` (the promo's real map reference).
+- `/workspace/higgsfield-tools/setup.sh` is current-instance setup outside the checkout; saved environment scripts are the reproduction route if that file is absent.
 
 ## Where the information lives
-- Priority: `context/current-focus.md`. Everything unfinished: `context/todo.md`.
-- Questions for Charlie: the Chief's Desk (`decide` skill, `system/pages.md`).
-- Checking finished work: `guardian` agent; rules in `context/working-rules.md`; big commits need
-  `Checked-by: guardian (...)` and a report in `audits/guardian/` or the audit fails.
-- Latest audit: `audits/audit-2026-10-09-112239-a7c3.md` (64/100; fixes 2-5 left open).
-- Set-up kit: `projects/ai-os-setup-kit/plan.md` (v0.4, paused). Bitcoin newsletter: `projects/bitcoin-newsletter/`.
+- Priority: `context/current-focus.md`; older unfinished work: `context/todo.md`.
+- Chief's Desk and published dashboards: `system/pages.md`; neither Desk answers nor live pages were read in this Codex session.
+- Last scored audit remains `audits/audit-2026-10-09-112239-a7c3.md` (64/100, fixes 2-5 open).
+- TinyFish [profiles](https://docs.tinyfish.ai/key-concepts/browser-context-profiles) save login data for later Agent runs; ordinary [Live Preview](https://docs.tinyfish.ai/live-preview) is read-only. Its documented [15-minute default](https://docs.tinyfish.ai/browser-api/index) concerns inactivity/account limits, not proof of every active session resetting.
+- [LinuxServer Chromium](https://docs.linuxserver.io/images/docker-chromium/) supports persistent storage and Chromium flags; [Selkies mobile controls](https://docs.linuxserver.io/selkies/user-guide/web-client/) include touch and device keyboard. Same-browser Codex control and device performance still need implementation/testing.
+- Browserbase [Live View](https://docs.browserbase.com/platform/browser/observability/session-live-view) is interactive, but mobile keyboards are not officially supported. Its paid keep-alive and persistent contexts are an alternative; neither service was connected.
+- Docker daemon is available here (28.4.0); this task workspace is not established as durable public hosting. Browser profiles/credentials must stay private and outside this public repo. Websites can expire their own logins.
 
 ## Decisions made
-- `/session-handoff` ends with one paste-ready message (Charlie, 9 Oct).
-- Desk, 9 Oct evening: Elder pilot **go** (all recommended answers); Quartermaster buttons and the
-  Desk stay separate; Bitcoin newsletter is a **side project** (only when asked).
-- Journey video parked (Charlie, 9 Oct).
+- Stay in Codex; do not send Charlie to Claude for the browser/Higgsfield workflow.
+- Promo: cinematic glowing map, intended for Instagram and X. Proposed 20 seconds: signal enters, routes to an Elder, Guardian/Chief's Desk, network reveal and "follow the build". Style approved; full storyboard/cost not approved.
+- Browser must be shared by Charlie and the AI. Proposed first version: phone-sized home-screen web app, large controls/keyboard, saved browser profile, reconnect, and My turn / AI's turn takeover.
+- Browser design approval is still pending. Then write/review the spec and implementation plan before coding; consult the brainstorming skill. Hosting and spend require a concrete proposal first.
 
 ## Open decisions
-- Desk: none open (checked about 18:30).
-- Not on the Desk yet: the 6 "Needs Charlie" items at the top of `context/todo.md`
-  (plugins not showing as enabled, 9 claude.ai skills to switch off, Higgsfield, Voice Gym,
-  ChatGPT box length, the "where this is heading" theory).
+- Approve/change that first browser design (also under "Waiting on Charlie" in current-focus).
+- Secure Higgsfield sign-in and a supported persistent connector/browser route; Katana availability and exact credit cost unverified. Never ask for tokens or OAuth callback URLs in chat.
+- Claude Guardian review and live page republishing will remain outstanding after this hand-off commit; current-focus records the commit once saved.
+- Branch review: `claude/nate-brain-wip` has 1 unmerged commit including `research/nate-herk/brain/x-themes.md` (unverified); `elder-councils-plan` has 3; `nate-watch-path` has 2. The Elder plan and Watch Path source are already on main. Historical branches also contain old renamed files; no branches merged/deleted.
 
 ## Pick up here
-1. Read the Desk answers (`decide`); act on any answered cards.
-2. Elder pilot step 0: Quartermaster mini-router at the top of `research/hands/README.md`;
-   then step 1: one plugin trial (once `ListPlugins` shows them) through the council and `guardian`.
-3. Saturday 10 Oct 8:47 Quartermaster update, then Friday 16 Oct 8:59 audit: read both reports.
+1. Read this hand-off and current-focus; re-check exposed browser/UI tools. Resolve the pending browser design approval, then write its spec for review. Do not claim an app already exists.
+2. Prototype the approved shared browser locally; test phone sizing, keyboard, takeover and reconnect before quoting/approving private always-on hosting. Measure performance and real login retention.
+3. Resume Higgsfield in Codex once secure access works: verify Katana/catalog access, obtain an exact credit quote, then seek approval for one 5-second trial before the full promo.
 
 ## Carried forward / dropped
-- All 3 pick-up steps from the 17:45 hand-off carried. Journey video note folded into "Decisions made".
-- Still on a branch only: `research/nate-herk/brain/x-themes.md` (`claude/nate-brain-wip`, unverified WIP; left there).
-- Nothing dropped.
+- Elder pilot: mini-router done; first plugin trial/council/Guardian still open in todo. Do not silently replace the 90-day set-up-kit priority.
+- Prior Desk reads, scheduled Quartermaster/audit reports, the six older Needs Charlie items, paused set-up kit, side-project Bitcoin newsletter and parked journey video remain in todo/current-focus; no fresh Desk or scheduler verification.
+- Prior branch-only WIP preserved above; dropped-item/session-review list remains in todo. Nothing dropped or declared complete without evidence.
+- Rebuilt local pages need live republishing where flagged; no publishing tools here, so publication fingerprints must not be marked current without a real publish.

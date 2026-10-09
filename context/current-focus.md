@@ -16,7 +16,12 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (2026-10-09, after the re-run audit):** both middle plans are built
+**Next step (latest Codex request, 2026-10-09):** resolve the proposed shared
+iPhone browser design approval, then write its build spec for review; the
+Higgsfield/Katana map promo remains open. Read `context/handoff.md`; no app or
+video has been built. The 90-day priority above remains unchanged.
+
+**OS backlog status (2026-10-09, after the re-run audit):** both middle plans are built
 (one `youtube-ingest` skill; elders named by job: Architect, Quartermaster,
 Chief's Desk), and every Desk card is answered or closed. The re-run audit scored
 64/100 (`audits/audit-2026-10-09-112239-a7c3.md`); Charlie chose fix 1 only (this
@@ -56,6 +61,17 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
   live in CLAUDE.md?
 
 **Everything unfinished, in one list:** `context/todo.md`.
+
+## Waiting on Charlie
+- Approve/change the proposed first browser version: a private iPhone-sized
+  home-screen web app shared with Codex, using Chromium/Selkies, a saved browser
+  profile, keyboard/touch controls, reconnect and My turn / AI's turn takeover.
+  Approval permits writing the spec; no hosting/payment or implementation approved yet.
+- Secure Higgsfield account sign-in and a supported writable connector route;
+  re-check Intelligent UI/browser tool availability in the next session. Keep this
+  workflow in Codex. Katana access and credits are still unverified.
+- Claude Guardian needs to review this four-file hand-off change; the saved commit
+  will be recorded here. Live pages must also be republished after the local rebuild.
 
 ## Parking Lot
 - Journey video (parked by Charlie 2026-10-09): Mix draft with the growing brain is

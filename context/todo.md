@@ -6,6 +6,8 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
+- [ ] Approve/change the proposed shared iPhone browser design (`context/handoff.md`): private home-screen web app, phone controls/keyboard, saved profile, reconnect, human/AI takeover. Then spec review and build plan; no app built or hosting chosen.
+- [ ] Complete secure Higgsfield access from Codex and verify Katana/catalog access and exact trial cost; current CLI installed and OAuth discovery works, but no account connected. Map promo style: cinematic glowing network for Instagram and X; no render yet. Keep the older parked journey video separate.
 - [ ] Plugins ticked 9 Oct (Marketing, context7, Superpowers, watch-video, claude-patterns) not yet showing as enabled on his account (`ListPlugins` empty): check they installed; a new session loads them; then one `try-tool` test each
 - [ ] claude.ai settings: switch off 9 unused built-in skills (built-in-browser, chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf)
 - [ ] Add the Higgsfield connector (`https://mcp.higgsfield.ai/mcp`) and finish Canva's sign-in; then Claude makes one test image (cost said first)
@@ -16,6 +18,7 @@ deleting them (history stays in `decisions.md`).
 - [ ] `aios-intake.md` Q2, Q5 and half of Q7 still unanswered
 
 ## Reminders for Claude
+- Review the Codex hand-off commit recorded under "Waiting on Charlie" in `context/current-focus.md`, and republish the local pages flagged by `tools/pages_status.py`; Codex could not run the Claude Guardian or publish artifacts.
 - When Charlie asks how leftover decisions and parked tasks could fit into the set-up kit: go through all of them (this list, the Parking Lot, parked projects), including the Bitcoin newsletter (side project since 9 Oct; his note on the Desk)
 
 ## Next to build (in order, after the Desk answers)
