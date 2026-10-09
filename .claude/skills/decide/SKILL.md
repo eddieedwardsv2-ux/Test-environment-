@@ -24,6 +24,10 @@ and carry on.
 `area`, `asked` (date), `order`, `status: "open"`, `multi` (pick any?),
 `options`: `[{id, label, detail, rec}]` with exactly one `rec: true` for a
 single choice. Tasks only he can do get options "Done" / "Later".
+For any install, sign-up or setting he must change, add `link: {url, label}` (an
+https page; shows as a big button plus the plain address) and `steps` (a short list
+of taps). Charlie is often on his phone, where install cards and chat buttons don't
+show, so the Desk card is the only place he acts (2026-10-09).
 For the map view (2026-10-09) also set: `short` (2 to 5 words for the tile),
 `weight` (1 small, 2 normal, 3 decides others: a bigger tile), `unblocks` (ids of
 cards it decides), and on at most two open cards `pick: 1` or `pick: 2` with a
