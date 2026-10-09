@@ -1,0 +1,156 @@
+<title>Nate Herk Watch Path</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow column, a progress strip, then five ordered stages of tickable videos like a job sheet. */
+:root{
+  --bg:#f3f5f4; --card:#ffffff; --fg:#17201d; --muted:#5d6b66; --line:#d8dfdc;
+  --accent:#1f7a5c; --accent-soft:#dcefe7; --skip:#9a5b1e;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111816; --card:#18211e; --fg:#e6ece9; --muted:#97a8a1; --line:#2b3733;
+  --accent:#5cc79f; --accent-soft:#1d3a30; --skip:#e0a265; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111816; --card:#18211e; --fg:#e6ece9; --muted:#97a8a1; --line:#2b3733;
+  --accent:#5cc79f; --accent-soft:#1d3a30; --skip:#e0a265; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--body)}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px;padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
+h1{font:800 clamp(30px,7vw,44px)/1.05 var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font:600 22px/1.2 var(--display);margin:0;text-wrap:balance}
+p{margin:0;max-width:65ch}
+.lede{color:var(--muted)}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.cut{background:var(--accent-soft);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.cut b{font-family:var(--display)}
+.progress{position:sticky;top:env(safe-area-inset-top,0px);z-index:2;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.stat{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:500 13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.stage{display:flex;flex-direction:column;gap:10px}
+.stage-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.stage-head span{font:500 13px var(--mono);color:var(--muted)}
+.why{color:var(--muted);font-size:15px}
+ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;background:var(--card);overflow:hidden}
+li{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:12px 14px;border-top:1px solid var(--line)}
+li:first-child{border-top:0}
+li.done .t a{text-decoration:line-through;color:var(--muted)}
+input[type=checkbox]{width:20px;height:20px;margin-top:2px;accent-color:var(--accent)}
+.t{min-width:0;display:flex;flex-direction:column;gap:3px}
+.t a{color:var(--fg);font-weight:600;text-decoration-color:var(--line);text-underline-offset:3px}
+.t a:hover{color:var(--accent)}
+.meta{font:500 12px var(--mono);color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+.tag{color:var(--accent)}
+.note{font-size:15px;color:var(--muted)}
+.skips{display:flex;flex-direction:column;gap:8px;border-left:3px solid var(--skip);padding-left:14px}
+.skips h2{color:var(--skip)}
+.skips li{display:block;border:0;padding:0}
+.skips ul{border:0;background:none;gap:6px}
+button{font:600 14px var(--body);background:none;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer;align-self:flex-start}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <div class="eyebrow">Charlie's AI OS · learning path</div>
+    <h1>Nate Herk, start here</h1>
+    <p class="lede">20 videos picked from all 359 on the channel, in the order that builds up without gaps. About 14 hours, or 9½ at 1.5× speed (13½ and 9 without the optional pair), against about 88 hours of Claude-era uploads.</p>
+  </header>
+
+  <section class="cut">
+    <div class="eyebrow">The cut line</div>
+    <p><b>Skip everything older than "Master 95% of Claude Code in 36 Mins" (video #187 of 359, early 2026).</b> Everything before that is the n8n era: no-code workflow building that Nate himself moved away from in "Stop Learning n8n in 2026". Of the 187 videos after the cut, most are model tests, news and one-tool demos that go out of date in weeks. The 20 below are the ones that teach methods.</p>
+  </section>
+
+  <div class="progress" aria-live="polite">
+    <div class="bar"><i id="fill"></i></div>
+    <div class="stat"><span id="count">0 of 20 watched</span><span id="left">839 min left</span></div>
+  </div>
+
+  <main id="stages" style="display:flex;flex-direction:column;gap:32px"></main>
+
+  <section class="skips">
+    <h2>Safe to skip</h2>
+    <ul>
+      <li><b>All n8n videos</b> (#188 to #359). Only the two in "Optional" above are worth it, for the ideas.</li>
+      <li><b>Older full courses:</b> Build &amp; Sell with Claude Code (10 hours), Master 95% of Claude Code in 36 Mins, Build &amp; Sell n8n Agents (8 hours). The 6-hour Non-Coders course replaces them.</li>
+      <li><b>Model tests and news</b> ("I Tested X vs Y", "Just Dropped", "AI News in 5 Mins"). Out of date within weeks.</li>
+      <li><b>Money and agency videos</b> (pricing, signing clients, $20K retainers). Useful later, not for learning the tools.</li>
+      <li><b>One-tool demos</b> (trading bots, video editing, Higgsfield, HeyGen, websites). Fun, but they don't add method.</li>
+      <li><b>Mac-only set-ups</b> (mods, Hermes, Ollama, local models). Save them for when your Mac arrives.</li>
+      <li><b>Already a lesson in your repo:</b> Every Level of a Claude Second Brain. Read <code>lesson-ai-os-and-second-brain.md</code> instead.</li>
+    </ul>
+  </section>
+
+  <button id="reset" type="button">Clear my ticks</button>
+</div>
+
+<script>
+const Y = id => "https://www.youtube.com/watch?v=" + id;
+const STAGES = [
+ {name:"1. The map and the spine", why:"One short overview so you know where everything fits, then the newest full beginner course. Everything later builds on this.", items:[
+  {id:"ZRb7D6R64hM", t:"Every Level of Claude Explained in 21 Minutes", m:22, d:"May 2026", n:"The map: chat, projects, Claude Code, agents. Watch first."},
+  {id:"jdbOVepEtUE", t:"Claude Code for Non-Coders (6 Hour Course)", m:359, d:"Jul 2026", n:"Your spine. Install, CLAUDE.md, connections, permissions (1:09), skills (1:39), what to build (2:11), sub-agents (2:22). Split it over several days."}
+ ]},
+ {name:"2. AI OS and second brain", why:"Your main project. The first video matches your 90-day goal of setting up an OS for someone else.", items:[
+  {id:"bCljOfCH8Ms", t:"Build & Sell Claude Code Operating Systems (2+ Hour Course)", m:153, d:"2026", n:"Closest thing to your set-up kit: building an OS for another person."},
+  {id:"0WDkwMxj13s", t:"I Turned Claude Opus 4.8 Into My Entire AI Operating System", m:29, d:"May 2026", n:"The four C's, file layout, one source of truth."},
+  {id:"8QQ_INxAhRs", t:"I Turned Claude Into the Ultimate Second Brain", m:34, d:"Jun 2026", n:"How he stores and finds knowledge."},
+  {id:"sboNwYmH3AY", t:"Andrej Karpathy Just 10x'd Everyone's Claude Code", m:18, d:"Apr 2026", n:"Karpathy's LLM wiki idea: a raw folder of sources, an AI-kept wiki with an index, and no fancy database. The thinking behind your second brain."},
+  {id:"hQvwMj7IJe4", t:"Fable 5 + Karpathy's LLM Wiki is Basically Cheating", m:15, d:"Jul 2026", n:"The pattern behind your creator brains. Routing explained at 12:38."},
+  {id:"Ek1NBfnnTH0", t:"Steal My Exact AI OS Setup (5 simple tips)", m:25, d:"Jul 2026", n:"Already a lesson in your repo. Watch for the demo, or skip if the lesson stuck."},
+  {id:"bvGptCLDhyo", t:"I Built Another Andrej Karpathy Using Claude", m:11, d:"Oct 2026", n:"Finish stage 2 here. Turn an expert into an agent: crawl, compile a wiki, pull out rules backed by exact quotes, then test. Key line at 10:08: you can outsource your thinking, not your understanding."}
+ ]},
+ {name:"3. Skills and agents done right", why:"Short videos with the newest rules. Where they disagree with older ones, the newer video wins.", items:[
+  {id:"c0kaKxM2pHg", t:"The Skill That 10x'd My Claude Code Projects", m:7, d:"2026", n:"Where your grill-me skill comes from."},
+  {id:"XNQBCRcwXV4", t:"I Deleted All My Claude Skills... And Claude Got Smarter", m:12, d:"Aug 2026", n:"When skills help and when they get in the way."},
+  {id:"HIRDzMtuWFk", t:"Anthropic Engineer Explains: What to Build Instead of AI Agents", m:10, d:"Sep 2026", n:"Skills instead of separate agents."},
+  {id:"9KOtMsZ9I28", t:"How to Build Codex Skills Better than 99% of People", m:27, d:"Sep 2026", n:"Newest skill-building rules. They apply to Claude too."}
+ ]},
+ {name:"4. Daily habits, limits and Codex", why:"Making it work day to day with the two subscriptions you have.", items:[
+  {id:"_qZvORxGqI0", t:"How to Never Hit Your Claude Session Limit Again", m:25, d:"2026", n:"Stretching your usage."},
+  {id:"kB9iMD0EjT8", t:"How to Use Your Claude Code Projects in Codex in 5 Mins", m:9, d:"May 2026", n:"Why your repo has both CLAUDE.md and AGENTS.md."},
+  {id:"DFlELTiSPk8", t:"Master 96% of Codex in under 35 minutes", m:35, d:"Oct 2026", n:"Newest upload. Codex comes with your ChatGPT Plus."}
+ ]},
+ {name:"5. What to do with it", why:"Two short ones to finish, so the watching turns into building.", items:[
+  {id:"S2ME69hra-k", t:"Why Watching AI Videos Isn't Enough", m:3, d:"Jun 2026", n:"A reality check on this list."},
+  {id:"-zL_trhnQaI", t:"So You Learned Claude, Now What?", m:17, d:"Jun 2026", n:"Turning skills into something people want. Useful for your channel."}
+ ]},
+ {name:"Optional: timeless ideas from the n8n years", why:"The tool is outdated but the explanations still hold. Watch only if agents or MCP still feel fuzzy.", items:[
+  {id:"w4qtnXRd8nU", t:"How I Wish Someone Explained AI Agents To Me (as a beginner)", m:12, d:"2024", n:"What an agent actually is, in plain words."},
+  {id:"m0YrxLnFPzQ", t:"How MCPs Make Agents Smarter (for non-techies)", m:16, d:"2025", n:"What a connector is and why it matters."}
+ ]}
+];
+const KEY="nate-watch-path-v1";
+let done={};
+try{done=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){done={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}};
+const all=STAGES.flatMap(s=>s.items);
+const main=document.getElementById("stages");
+STAGES.forEach(s=>{
+  const mins=s.items.reduce((a,b)=>a+b.m,0);
+  const sec=document.createElement("section");sec.className="stage";
+  sec.innerHTML=`<div class="stage-head"><h2>${s.name}</h2><span>${mins} min</span></div><p class="why">${s.why}</p>`;
+  const ul=document.createElement("ul");
+  s.items.forEach(v=>{
+    const li=document.createElement("li");
+    const cid="v-"+v.id.replace(/[^a-zA-Z0-9]/g,"_");
+    li.innerHTML=`<input type="checkbox" id="${cid}" aria-label="Watched: ${v.t.replace(/"/g,"")}"><div class="t"><a href="${Y(v.id)}" target="_blank" rel="noopener">${v.t}</a><div class="meta"><span class="tag">${v.m} min</span><span>${v.d}</span></div><p class="note">${v.n}</p></div>`;
+    const cb=li.querySelector("input");cb.checked=!!done[v.id];li.classList.toggle("done",cb.checked);
+    cb.addEventListener("change",()=>{done[v.id]=cb.checked;li.classList.toggle("done",cb.checked);save();update()});
+    ul.appendChild(li);
+  });
+  sec.appendChild(ul);main.appendChild(sec);
+});
+function update(){
+  const n=all.filter(v=>done[v.id]).length;
+  const left=all.filter(v=>!done[v.id]).reduce((a,b)=>a+b.m,0);
+  document.getElementById("fill").style.width=(n/all.length*100)+"%";
+  document.getElementById("count").textContent=`${n} of ${all.length} watched`;
+  document.getElementById("left").textContent=`${left} min left (${Math.round(left/1.5)} at 1.5×)`;
+}
+document.getElementById("reset").addEventListener("click",()=>{done={};save();document.querySelectorAll("li input").forEach(c=>{c.checked=false;c.closest("li").classList.remove("done")});update()});
+update();
+</script>

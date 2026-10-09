@@ -13,12 +13,25 @@ deleting them (history stays in `decisions.md`).
 - [ ] Check ChatGPT accepts the longer instructions box (`exports/chatgpt-instructions.md`, box 2 is about 2,000 characters)
 - [ ] Confirm or change Claude's "where this is heading" theory for `current-focus.md`
 
+- [ ] Elder councils: 3 open Desk cards (elder-pilot-go, elder-pushback, elder-two-desks); plan now on main at `brainstorms/2026-10-09-elder-councils-plan.md` (was only on branch `elder-councils-plan`, which also holds `research/nate-herk/prompt-upgrade2-landing-page.md`)
+- [ ] Bitcoin newsletter (`projects/bitcoin-newsletter/`, added 9 Oct 16:47 outside a Claude session): active or parked? Not in current-focus or `decisions.md`; Desk card "btc-newsletter"
+- [ ] `aios-intake.md` Q2, Q5 and half of Q7 still unanswered
+
 ## Next to build (in order, after the Desk answers)
 2. [ ] Model comparisons on real work (comparisons 1-2 done 9 Oct: both 9/9; Desk card "promote-sonnet" for the two advisors) before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
 3. [ ] Journey video: improve the Mix style (chosen 9 Oct), then a proper video file with voice-over
 4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker")
 6. [ ] Set-up kit (paused): first friend or family set-up from plan v0.4
 7. [ ] First YouTube short
+
+## Found 2026-10-09 (session review: dropped from the 9 Oct hand-off rewrite)
+- [ ] ChatGPT's model-routing prompt saved, not started (`brainstorms/2026-10-09-model-routing-handoff.md`); triage the Grok Bot video first
+- [ ] Quartermaster's Search / Check / Implement buttons: republished, but one real save, read and close round trip not yet tested
+- [ ] Creative Claw (for YouTube production): sign-in unfinished, no output tested
+- [ ] "Thread Notes No1" page (PQn4jTAa9PzUizgtYynEFW) isn't in `system/pages.md`: keep or drop?
+- [ ] Watch Path page's source was only on branch `nate-watch-path`; now on main at `research/nate-herk/watch-path.html` (add it to `system/pages.md` when refreshed)
+- [ ] Older sessions in the `my-claude-skills` repo (6 Oct) ended waiting on Charlie: a "yes" to write the agency-validation research into that Second Brain; retired-repo deletions and a reply owed by a contact; lesson 1 quiz answer (four parts of an agent). Check if still wanted.
+- [ ] Offered, not agreed: a one-command save script
 
 ## Waiting for the Mac (`context/mac-day.md`, starts when Charlie says "I'm on Mac")
 - [ ] Clone the repo; Obsidian; Nate's 3D brain; context7 and superpowers plugins

@@ -35,6 +35,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Connect a new tool or account (one small job, safest path, real-data test, register it) | `connect` skill | a `connections.md` row + `references/<tool>.md` read guide | a real read, dated |
 | What the OS can reach | `connections.md` | domain, mechanism, last checked | `audit` freshness check |
 | Interview Charlie to capture what he knows | `grill-me` skill | `brainstorms/YYYY-MM-DD-<topic>.md` | Charlie confirms the summary |
+| Hand off at the end of a session (nothing dropped) | `session-handoff` skill | `context/handoff.md` + to-do updates | carry-forward check, audit, push |
 | Start a new, blank AI OS | `templates/standard-ai-os-v1/` | router + filing cabinet | fresh-session routing test |
 | Flashcards | app + `cards` database (see `AGENTS.md`) | cards | backup in `learning/flashcards.md` |
 | Compare our blank template with Nate's kit | Kit Compare app (see `projects/ai-os-setup-kit/README.md`); built by `tools/build_kit_compare.py` | `templates/standard-ai-os-v1/` | page source in `projects/ai-os-setup-kit/compare/` |

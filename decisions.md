@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: new `session-handoff` skill; forgotten items recovered
+Charlie asked for a review of past sessions and a `/session-handoff` skill (summary points, key files, files holding the information, open decisions). Review found: the 9 Oct hand-off rewrite dropped about 8 open items (now in `context/todo.md`); the Elder councils plan was only on an unmerged branch while 3 Desk cards pointed at it, and the Watch Path page source only on another branch (both copied to main); the Bitcoin newsletter project arrived with no log entry (Desk card). The skill's carry-forward check stops a rewrite dropping open items again.
+
 ## 2026-10-09: advisors on Sonnet; plugins chosen; Small Business mapped, not installed
 - `architect` and `quartermaster` moved to `model: sonnet` after comparisons 1-2 (9/9 each, Desk "promote-sonnet": trial). Spot-check stays **weekly** in the Friday audit (Charlie asked whether daily was worth it: no, daily spends usage with nothing changing between runs). One wrong answer sends both back to `inherit`.
 - Plugins Charlie ticked: Marketing, context7, Superpowers, watch-video, claude-patterns (not yet visible as enabled).

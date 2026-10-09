@@ -1,28 +1,44 @@
 # Session hand-off
 
-Overwritten at the end of each long session. History lives in `decisions.md`.
-For Codex or ChatGPT while Claude is out of usage: `exports/handoff-2026-10-09-for-codex-chatgpt.md`.
-**Written:** 2026-10-09, paused at 95% of the weekly usage.
+Overwritten at the end of each long session by the `session-handoff` skill.
+History lives in `decisions.md`. For Codex or ChatGPT: `exports/handoff-2026-10-09-for-codex-chatgpt.md`.
+**Written:** 2026-10-09, about 17:45 UK, by Claude; end of the "previous sessions review" session.
 
-## Done this session (all pushed to main, audit 0 errors, fault drill 23/23)
-- Audit re-run: 64/100 (was 49); fix 1 (current-focus) done; fixes 2-5 left open by choice.
-- Nate's six-phrases DM ingested (concept 44, Rule 44: VERIFIED / NOT VERIFIED).
-- Switchyard reviewed (watch, don't install). System map page (EjVEwU5bNAoU99FPbYSHDh).
-- Quartermaster: Anthropic catalogs as a trust badge (2,722 plugins); Small Business's 44 skills
-  mapped, 12 linked to our skills; stale pick fixed.
-- New `connect` skill (from Anthropic's build-connector); level-up gained build-agent's steps.
-  Canva connected and proven (`references/canva.md`).
-- Desk cards carry a link button and steps (phone-friendly installs).
-- Model comparisons 1-2: Sonnet 9/9 = main model; `architect` + `quartermaster` now on Sonnet,
-  weekly spot-check in the Friday audit (`audits/evidence/2026-10-09-model-compare/spot-check.md`).
+## Summary points
+- Reviewed every past session (4-9 Oct), the Desk (34 cards) and all branches for forgotten work.
+- New `session-handoff` skill (`.claude/skills/session-handoff/SKILL.md`), routed in `AGENTS.md`
+  and `system/capability-map.md`. Its carry-forward check stops a rewrite dropping open items.
+- The earlier 9 Oct hand-off rewrite had dropped about 8 open items: all now in `context/todo.md`
+  ("Found 2026-10-09").
+- Stranded on branches, now on main: the Elder councils plan
+  (`brainstorms/2026-10-09-elder-councils-plan.md`) and the Watch Path page source
+  (`research/nate-herk/watch-path.html`).
+- Plugins Charlie ticked still don't show (`ListPlugins` empty at about 17:30).
 
-## Pick up here (in order, when usage allows)
-1. Check the 5 plugins Charlie ticked (Marketing, context7, Superpowers, watch-video,
-   claude-patterns) with `ListPlugins` in a new session; one `try-tool` test each.
-2. Let the automations test themselves: Saturday 10 Oct 8:47 Quartermaster update, Friday
-   16 Oct 8:59 audit (first Sonnet spot-check). Read both reports.
-3. Journey video (Mix style), then audit fixes 2-5 if the audit lists them again.
-Full list: `context/todo.md`. Priority: `context/current-focus.md`.
+## Key files
+- `.claude/skills/session-handoff/SKILL.md` (new)
+- `context/todo.md` (new items), `decisions.md` (top entry)
+- `brainstorms/2026-10-09-elder-councils-plan.md` (restored)
 
-## Usage note
-Keep the next session small: no helper runs or nested tests until the weekly limit resets.
+## Where the information lives
+- Priority: `context/current-focus.md`. Full unfinished list: `context/todo.md`.
+- Questions for Charlie: the Chief's Desk (`system/pages.md`, `decide` skill).
+- Latest audit: `audits/audit-2026-10-09-112239-a7c3.md` (64/100; fixes 2-5 left open).
+- Model trial: `system/model-usage.md`, `audits/evidence/2026-10-09-model-compare/`.
+- Bitcoin newsletter: `projects/bitcoin-newsletter/README.md`.
+
+## Open decisions (Desk)
+- `btc-newsletter` (new): park, side project or priority?
+- `elder-pilot-go`, `elder-pushback`, `elder-two-desks`: the Elder councils plan.
+- Not on the Desk yet: the 6 "Needs Charlie" items at the top of `context/todo.md`.
+
+## Pick up here
+1. Read the Desk answers (`decide`); act on any answered cards.
+2. Plugins: once `ListPlugins` shows them, one `try-tool` test each.
+3. Saturday 10 Oct 8:47 Quartermaster update, then Friday 16 Oct 8:59 audit: read both reports.
+   Then the journey video (Mix style).
+
+## Carried forward / dropped
+- From the earlier 9 Oct hand-off: all 3 pick-up steps carried (above). Nothing dropped.
+- Old branches (`claude/*` from 7-8 Oct) checked: everything else on them is already on main.
+  One unverified WIP file stays there (`research/nate-herk/brain/x-themes.md` on `claude/nate-brain-wip`).

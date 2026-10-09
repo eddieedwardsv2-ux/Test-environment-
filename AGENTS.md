@@ -72,6 +72,8 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 
 ## Skills and agents (`.claude/skills/`, `.claude/agents/`; Codex via `.agents/skills`)
 - `decide`: any question for Charlie; reading his answers.
+- `session-handoff` (`/session-handoff`): end-of-session hand-off in `context/handoff.md`
+  (summary, key files, where info lives, open decisions); nothing open gets dropped.
 - `connect`: reach a new tool or account safely (one small job, boring path first,
   tested on real data, registered in `connections.md`).
 - Small-business jobs (quotes, invoices, reviews, social posts): Anthropic's **Small
