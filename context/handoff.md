@@ -88,7 +88,40 @@ Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoug
    - d. **One `youtube-ingest` skill**, then add the Anthropic plugin marketplace as
      the tools brain's next source.
    - e. **Prices and licences** (if "price-plan" says go).
-   - f. **Kit for blank accounts**, rebuilt from Nate's newest thesis backwards.
+   - f. **Kit for blank accounts**, rebuilt from Nate's newest thesis backwards (keep
+     Charlie's base-kit note: audit each set-up until the returns stop, a wiki brain
+     from past chats plus an interview, voice from 3 emails, articles or stories).
    - g. **First YouTube short:** script, filming prompt cards, edit plan, HyperFrames titles.
+
+## 6. Also open (checked 2026-10-09; don't lose these)
+- **From another session:** at 04:04 on 9 Oct a non-Claude session added
+  `research/corey-haines/` (Corey Haines' marketing skills compared with NewsJack)
+  and a router line for it, with no `decisions.md` entry. Review it with Charlie,
+  log it, and decide if it feeds the tools brain. (It is also the proof for item 8.)
+- **ChatGPT's copy of the rules** (`exports/chatgpt-instructions.md`) was last synced
+  2026-10-08; re-sync as part of 5b.
+- **Grok Bot video** (Nate, MgvwZaDPCs4) behind ChatGPT's routing prompt: not in our
+  video list or transcribed yet; triage it before that prompt is run.
+- **Voice Gym follow-up:** once Charlie has rewritten 5 or more, Claude writes his
+  voice notes into `aios-intake.md` Q2 (the base-kit note: voice from 3 emails,
+  articles or stories).
+- **Higgsfield:** once Charlie adds the connector, make one small test image (say the
+  credit cost first).
+- **The "desk" name:** if the Mac workspace becomes "the desk", the Decision Desk may
+  need another name. Part of the middle talk.
+- **Claude's theory of where this is heading** (collect, try on real work, keep what
+  wins, teach, set others up): offered as the "why" for `context/current-focus.md`;
+  Charlie hasn't confirmed it.
+- **ENATE tidy:** Rules 2 and 3 and concepts 19 and 28 aren't linked to each other
+  (as written, not from today's changes).
+- **Older open items** (Charlie's call, no need to chase): 8 decisions in
+  `audits/2026-10-08-nate-channel.md` (plan mode, allow-list, auto mode, hand-off
+  wording, private-info scan, challenge step, audit additions, network check);
+  `aios-intake.md` Q2, Q5 and half of Q7; offered, not agreed: rename `tools/` to
+  `scripts/`, a one-command save script, one home page for all pages, refresh the
+  Watch Path and the two oldest lessons, mark Kit Compare as decided, the round Brain
+  map; the "Thread Notes No1" page isn't listed in `system/pages.md` (check with Charlie).
+- **Routines running:** "Weekly AI OS audit" (Fri 8:59), "Weekly Hands Brain update"
+  (Sat 8:47), "Flashcard check" (daily 18:59, though flashcards are parked).
 
 Keep sessions short: hand off at about half the context window.
