@@ -35,8 +35,10 @@ what he picks. Full plan: `context/handoff.md`, section 5. His thinking: `brains
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
 the base is decided (Nate's kit plus our three additions). Next: test it on the
 first friend or family set-up.
-Weekly `audit` (scored, Four Cs, with receipts) runs by itself every Friday at
-8:59 UK time (routine "Weekly AI OS audit", set up 2026-10-09; report lands in `audits/`).
+Weekly `audit` runs by itself every Friday 8:59 UK time and the Quartermaster update
+every Saturday 8:47, each inside its own runner session that has the repo attached
+("Weekly AI OS audit (runner)", "Weekly Hands Brain update (runner)"; fixed 2026-10-09:
+the first routines had no repo and failed).
 
 **Hands Brain window (2026-10-09, Desk):** 4 weeks of history (W38 to W41)
 and stop; new videos only, through the Saturday routine.

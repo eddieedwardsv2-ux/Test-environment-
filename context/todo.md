@@ -35,7 +35,7 @@ deleting them (history stays in `decisions.md`).
 - [ ] Hands Brain: the 35 tools with unknown prices (step 3 of `research/hands/improvement-plan.md`, not chosen)
 
 ## Watch-outs (things running on their own)
-- [ ] Read the re-run Friday audit report when it lands in `audits/` (started 12:09, 9 Oct)
+- [ ] Read the re-run Friday audit report when it lands in `audits/` (running in "Weekly AI OS audit (runner)" from 12:22, 9 Oct)
 - [ ] Old names (ENATE, Hands Brain, Decision Desk) stop being aliases on 2026-11-09: remove them from the router then
 - [ ] "Weekly Hands Brain update" runs Saturdays at 8:47am: the same early time that hit the usage limit on Friday
 - [ ] "Flashcard check" still runs every evening although flashcards are parked: pause it?
