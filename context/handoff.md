@@ -4,7 +4,7 @@ One status file, rewritten at the end of each long session (Nate). History:
 `decisions.md` and this file's Git history. Every agent (Claude, Codex,
 ChatGPT) reads this first and updates it before stopping.
 
-**Written:** 2026-10-09, about 5:30am UK, end of the long 9 October session.
+**Written:** 2026-10-09, about 6am UK, end of the long 9 October session (handed to a new session).
 Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoughts.md`.
 
 ## 1. Charlie's thinking (the big picture)
@@ -62,36 +62,37 @@ Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoug
 - **Known gap:** a non-Claude session changed `AGENTS.md` at 04:04 on 9 Oct with
   no log entry (item 8).
 
-## 4. Waiting on Charlie
-- **Decision Desk** (now a map: tap any tile; Claude's 1st and 2nd picks in amber), **5 open cards:** next-big-step (what first), elder-names,
-  youtube-ingest, hands-window (stop at 4 weeks or go to 3 months), price-plan
-  (split "open source" from cost, our own data first).
-- **His steps:** switch off 9 claude.ai skills (Settings, Skills: built-in-browser,
-  chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf);
-  add Higgsfield (`https://mcp.higgsfield.ai/mcp`) and finish Canva's sign-in
-  (check `ListConnectors` before promising either); rewrite a few Voice Gym messages.
+## 4. Desk answers to act on (all 5 answered 2026-10-09, about 6am; read them with the `decide` skill)
+- **next-big-step: end-to-end test in Claude and Codex** (do this first).
+- **hands-window: stop at 4 weeks** (new videos only, through the Saturday routine).
+- **price-plan: steps 1 and 2, our own data only** (no web searches).
+- **elder-names: by job** (Architect, Quartermaster, Maker, Teacher, Guardian, Charlie as Chief).
+- **youtube-ingest: yes, one skill.**
+- **His steps still open:** switch off 9 claude.ai skills (Settings, Skills: built-in-browser,
+  chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf); add Higgsfield
+  (`https://mcp.higgsfield.ai/mcp`) and finish Canva's sign-in (check `ListConnectors` first);
+  rewrite a few Voice Gym messages.
 
 ## 5. Plan for the next session (in order)
-1. Charlie types `/i-have-adhd`, then "read the hand-off".
-2. Read the Desk answers (`decide` skill) and act on them.
-3. Check the Friday audit left a report in `audits/` and the Saturday Hands run
-   worked; fix anything they found.
-4. **Talk through the middle** (item 5) with Charlie. Nothing in items 4 to 8
-   changes before that talk.
-5. Then the first big job from "next-big-step". Recommended order:
-   - a. **End-to-end test** in Claude and Codex (router to brain to answer): proves
-     what works and answers the routing prompt's first question.
-   - b. **Keep Claude and Codex/ChatGPT in step** (one session-end rule for every
-     agent, an audit warning when the router changes with no log entry).
-   - c. **Names and the council:** rename by job, write each elder's voice file
-     (Nate first), research Boris Cherny.
-   - d. **One `youtube-ingest` skill**, then add the Anthropic plugin marketplace as
-     the tools brain's next source.
-   - e. **Prices and licences** (if "price-plan" says go).
-   - f. **Kit for blank accounts**, rebuilt from Nate's newest thesis backwards (keep
-     Charlie's base-kit note: audit each set-up until the returns stop, a wiki brain
-     from past chats plus an interview, voice from 3 emails, articles or stories).
-   - g. **First YouTube short:** script, filming prompt cards, edit plan, HyperFrames titles.
+1. Follow the `i-have-adhd` style (`.claude/skills/i-have-adhd/SKILL.md`) in replies to Charlie.
+2. Read the Desk answers (`decide` skill); close each card with an outcome when done.
+3. Check the Friday audit report in `audits/` (due 8:59 UK, 9 Oct) and act on its findings.
+4. **End-to-end test** (his first choice): one real question from router to brain to answer,
+   in a fresh helper reading only `AGENTS.md`, plus Codex if it can be run here; record
+   what works, what's partial and what's only on paper, with receipts in `audits/evidence/`.
+   This also answers the first question of ChatGPT's routing prompt.
+5. **hands-window:** record "stop at 4 weeks" in the `hands-ingest` skill and `current-focus.md`.
+6. **price-plan steps 1 and 2** (`research/hands/improvement-plan.md`): split `open_source`
+   from `cost`, then read our own transcripts for prices; no web searches.
+7. **elder-names and youtube-ingest** touch the routing, which Charlie wanted to talk through
+   first ("the middle"). Write the plan for each, then have that short talk with him on the
+   Desk before changing files, unless he says to go straight ahead.
+8. Rebuild and republish the main pages, update this file, commit and push.
+9. Later, one at a time: keep Claude and Codex/ChatGPT in step; the council (Nate's voice
+   first, research Boris Cherny); the Anthropic plugin marketplace as the tools brain's next
+   source; the kit for blank accounts (keep Charlie's base-kit note: audit each set-up until
+   the returns stop, a wiki brain from past chats plus an interview, voice from 3 emails,
+   articles or stories); the first YouTube short.
 
 ## 6. Also open (checked 2026-10-09; don't lose these)
 - **From another session:** at 04:04 on 9 Oct a non-Claude session added
