@@ -32,10 +32,12 @@ deleting items that are still open.
 # Session hand-off
 **Written:** <date, time UK>, by <Claude/Codex/ChatGPT>; why it stopped.
 
+## Working on            (the task in hand, in one or two lines)
 ## Summary points        (what got done; each with its commit or file)
 ## Key files             (made or changed this session: open these first)
 ## Where the information lives (files holding facts the next session needs,
                           changed or not: decisions, plans, reports, Desk)
+## Decisions made        (what Charlie chose this session, so it isn't re-asked)
 ## Open decisions        (Desk card ids still open; choices not yet on the
                           Desk; anything waiting on Charlie)
 ## Pick up here          (1-3 steps, in order)
@@ -51,5 +53,16 @@ deleting items that are still open.
 - Work stranded on a branch: bring the file to main, or list it under Open decisions.
 - Only when Charlie says Codex or ChatGPT is next: also refresh the hand-off in `exports/`.
 - `python3 tools/audit.py`, commit, push, check `git status` is clean.
-- Reply in chat with the 4 headings as short bullets, then **VERIFIED** /
-  **NOT VERIFIED** for "saved and pushed".
+
+## 5. The paste-back message (Charlie's routine: hand off, copy, `/clear`, paste)
+End the reply with one fenced code block he can copy in one go, under 40 lines,
+that works on its own in a blank window:
+- First line: `Resuming from a session hand-off. Read context/handoff.md and
+  context/current-focus.md first, then continue from "Pick up here".`
+- Then the same headings as the file, each as short bullets: Working on, Summary
+  points, Key files, Where the information lives, Decisions made, Open decisions,
+  Pick up here.
+- Plain text only: no links that need the old chat, no "as we discussed".
+Above the block: **VERIFIED** / **NOT VERIFIED** for "saved and pushed". Below it,
+one line: "Copy this, type `/clear`, paste it in." The file is the backup if the
+copy is lost (cloud containers are wiped, so it must be pushed first).

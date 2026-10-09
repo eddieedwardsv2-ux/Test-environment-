@@ -4,6 +4,9 @@ Overwritten at the end of each long session by the `session-handoff` skill.
 History lives in `decisions.md`. For Codex or ChatGPT: `exports/handoff-2026-10-09-for-codex-chatgpt.md`.
 **Written:** 2026-10-09, about 17:45 UK, by Claude; end of the "previous sessions review" session.
 
+## Working on
+The `session-handoff` skill (Charlie's routine: hand off, copy the message, `/clear`, paste) and a review of past sessions for forgotten work.
+
 ## Summary points
 - Reviewed every past session (4-9 Oct), the Desk (34 cards) and all branches for forgotten work.
 - New `session-handoff` skill (`.claude/skills/session-handoff/SKILL.md`), routed in `AGENTS.md`
@@ -26,6 +29,9 @@ History lives in `decisions.md`. For Codex or ChatGPT: `exports/handoff-2026-10-
 - Latest audit: `audits/audit-2026-10-09-112239-a7c3.md` (64/100; fixes 2-5 left open).
 - Model trial: `system/model-usage.md`, `audits/evidence/2026-10-09-model-compare/`.
 - Bitcoin newsletter: `projects/bitcoin-newsletter/README.md`.
+
+## Decisions made
+- `/session-handoff` ends with one paste-ready message: copy, `/clear`, paste (Charlie, 9 Oct).
 
 ## Open decisions (Desk)
 - `btc-newsletter` (new): park, side project or priority?
