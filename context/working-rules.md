@@ -45,7 +45,8 @@ Anything not backed by a source is labelled **(inferring)**.
   agent teams are expensive (`system/standard-ai-os-v1.md` S16-S17).
   **Quality-first model use (Charlie, 2026-10-09):** `system/model-usage.md`
   replaces the blanket Sonnet/Haiku rule. Active helpers inherit the main
-  model until a cheaper route passes task-specific comparisons. Trial a
+  model until a cheaper route passes task-specific comparisons (passed so
+  far: `architect` and `quartermaster` on Sonnet, 2026-10-09, weekly spot-check). Trial a
   candidate once, escalate a quality failure to the strong model, validate
   again. Start with no helpers, or at most two independent ones when useful;
   one lead integrates. Keep the user's main model. Never claim savings or

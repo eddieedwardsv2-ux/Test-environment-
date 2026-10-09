@@ -6,6 +6,7 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
+- [ ] Plugins ticked 9 Oct (Marketing, context7, Superpowers, watch-video, claude-patterns) not yet showing as enabled on his account (`ListPlugins` empty): check they installed; a new session loads them; then one `try-tool` test each
 - [ ] claude.ai settings: switch off 9 unused built-in skills (built-in-browser, chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf)
 - [ ] Add the Higgsfield connector (`https://mcp.higgsfield.ai/mcp`) and finish Canva's sign-in; then Claude makes one test image (cost said first)
 - [ ] Voice Gym: rewrite 5 or more messages; then Claude writes his voice notes into `aios-intake.md` Q2

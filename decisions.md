@@ -1,5 +1,10 @@
 # Decision log
 
+## 2026-10-09: advisors on Sonnet; plugins chosen; Small Business mapped, not installed
+- `architect` and `quartermaster` moved to `model: sonnet` after comparisons 1-2 (9/9 each, Desk "promote-sonnet": trial). Spot-check stays **weekly** in the Friday audit (Charlie asked whether daily was worth it: no, daily spends usage with nothing changing between runs). One wrong answer sends both back to `inherit`.
+- Plugins Charlie ticked: Marketing, context7, Superpowers, watch-video, claude-patterns (not yet visible as enabled).
+- Small Business: not needed (Charlie); instead its 44 skills are in the Quartermaster, 12 linked to our own skills (green links on the map).
+
 ## 2026-10-09: audit fixes, Charlie picked fix 1 only
 Current-focus's two stale next-step blocks ("answer middle-go", "Desk item pending") replaced by one current one (AIOS-a7c3-01 closed). Fixes 2-5 (ChatGPT export, two labels, transcripts concurrency guard, connections dates) left open by his choice; Desk card closed.
 

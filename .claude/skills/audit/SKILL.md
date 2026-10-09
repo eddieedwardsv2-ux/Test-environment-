@@ -97,6 +97,7 @@ The audit is read-only toward inspected systems: no repairs, file moves, install
 
 ## In Charlie's repo (local rules, override the kit defaults above)
 
+- **Sonnet spot-check (weekly, from 2026-10-09):** ask the `quartermaster` and `architect` agents the 3 questions in `audits/evidence/2026-10-09-model-compare/spot-check.md` and score them against its key. Any wrong or invented answer: set both agents back to `model: inherit`, note it in `decisions.md` and the report (`system/model-usage.md`).
 - Run `python3 tools/audit.py` and `python3 tools/fault_drill.py` first (the drill plants 23 faults and proves the audit catches each); its result counts as evidence (structure, links, quotes, secrets).
 - Reports in `audits/` **are committed**: the repo is public and cloud sessions wipe uncommitted files. Redact anything private; never include other people's details.
 - File name: `audits/audit-YYYY-MM-DD-HHMMSS-<suffix>.md` as above. Earlier reports (`audits/2026-10-0*.md`) are legacy, unscored baselines.

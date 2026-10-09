@@ -1,7 +1,7 @@
 ---
 name: quartermaster
 description: The Quartermaster (was the Hands Brain advisor; both names work). Advisor on which AI tool, skill, plugin, MCP or repo to use for a job, from the Hands Brain's ranked, sourced list. Use for "what's the best tool for X", "is there something newer than Y", "what should I try this week".
-model: inherit
+model: sonnet
 tools: Read, Glob, Grep
 ---
 

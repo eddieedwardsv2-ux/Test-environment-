@@ -359,6 +359,7 @@ D.nate.forEach((m, i) => {
   const k = m.in_hands && byKey["t:" + m.in_hands] ? "t:" + m.in_hands : "n:" + i;
   (m.concepts || []).forEach(n => byKey["e:" + n] && L.push([k, "e:" + n, 0.4]));
 });
+D.tools.forEach(t => (t.relates || []).forEach(sk => { node("s:" + sk, {type: "ours", label: sk + " (our skill)", r: 6}); L.push(["t:" + t.id, "s:" + sk, 0.6]); }));   // links to our own skills
 D.tools.forEach(t => { if (t.replaced_by){ const r = D.tools.find(x => x.name === t.replaced_by); if (r) L.push(["t:" + t.id, "t:" + r.id, 0.8]); } });
 const links = L.filter(([a, b]) => byKey[a] && byKey[b]).map(([a, b, s]) => ({source: byKey[a], target: byKey[b], s}));
 const off = new Set();
@@ -444,7 +445,11 @@ function sheetFor(n){
     h += `<p class="k">Nate uses it · not in the weekly shows yet</p><h3>${esc(m.name)}</h3><p>${esc(m.what)}</p>` +
       (m.quote ? `<blockquote>“${esc(m.quote)}”</blockquote>` : "") +
       `<p><a href="https://www.youtube.com/watch?v=${esc(m.video)}&t=${secs(m.t)}s">Watch Nate at ${esc(m.t)}</a></p>`;
-  } else { h += `<h3>${esc(n.label)}</h3><p class="hint">One of our own skills. Its ENATE links are the faint white lines.</p>`; }
+  } else {
+    const sk = n.k.slice(2), rel = D.tools.filter(t => (t.relates || []).includes(sk));
+    h += `<h3>${esc(n.label)}</h3><p class="hint">One of our own skills. Its ENATE links are the faint white lines.</p>` +
+      (rel.length ? `<p class="k">Tools that do the same job</p>` + rel.map(t => `<p><b>${esc(t.name)}</b>: ${esc(t.our_view?.for_what || t.what)}</p>`).join("") : "");
+  }
   document.getElementById("sheetbody").innerHTML = h;
   document.getElementById("x").onclick = () => sheet.close(); sheet.showModal();
 }

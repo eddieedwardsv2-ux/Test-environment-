@@ -69,8 +69,12 @@ tokens (64.6k vs 66.7k), Sonnet twice as fast. Passed, not promoted: no failed-t
 synthesis case yet (comparison 2 adds both).
 Comparison 2 (same folder, `result-2.md`): a missing-file case and a "pick 3 tools" synthesis;
 both 2/2, both caught a stale pick. Together 9/9 each, no critical failure: the candidate meets
-this file's bar for read-only look-up and picks questions only. Switching `architect` and
-`quartermaster` is Charlie's call (Desk card "promote-sonnet"); until then they stay `inherit`.
+this file's bar for read-only look-up and picks questions only. **Promoted 2026-10-09 (Charlie, Desk card
+"promote-sonnet"):** `architect` and `quartermaster` (read-only advisors) run on `model: sonnet`.
+Weekly spot-check, not daily (Charlie asked; daily would spend usage with nothing changing in
+between): the Friday `audit` asks them the 3 questions in
+`audits/evidence/2026-10-09-model-compare/spot-check.md`. One wrong or invented answer → both
+go straight back to `inherit`, recorded in `decisions.md`. All other helpers stay `inherit`.
 
 Next use `try-tool` on held-out real extraction/retrieval jobs against the
 strong baseline. FreeLLMAPI needs a separate explicit-provider trial, current

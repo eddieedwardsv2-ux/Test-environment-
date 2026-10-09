@@ -2,7 +2,7 @@
  "week": "2026-W41",
  "source": "Anthropic marketplaces",
  "videos": [],
- "summary": "Anthropic's own catalogs (2,722 plugins: 315 official, 2,284 community, 123 knowledge-work) are now a trust layer: any tool listed there gets a gold badge and a small bonus. Added Anthropic's Small Business plugin (44 skills, v1.35.1), which Charlie spotted. Review: research/hands/reviews/anthropic-marketplaces-2026-10-09.md.",
+ "summary": "Anthropic's own catalogs (2,722 plugins: 315 official, 2,284 community, 123 knowledge-work) are now a trust layer: any tool listed there gets a gold badge and a small bonus. Added Anthropic's Small Business plugin (44 skills, v1.35.1), which Charlie spotted. Review: research/hands/reviews/anthropic-marketplaces-2026-10-09.md. Also all 44 Small Business skills (Charlie, 9 Oct: map them, don't install), linked to our own skills where the job matches.",
  "tools": [
   {
    "name": "Claude for Small Business",
@@ -19,10 +19,1319 @@
    "quote": "Pre-built small business workflows to help you run and grow your business. Supports a majority of the tools you already use. You approve every step that touches money or customers.",
    "check": "Anthropic-made (knowledge-work-plugins, Apache 2.0, last commit 7 Oct 2026). UK tax isn't covered: tax-prep only builds a packet for your accountant. Desktop app (Cowork) or Claude Code; not confirmed on claude.ai web.",
    "opinion": null,
-   "our_view": {"need": "maybe", "for_what": "The decorating business (parked) and friends' set-ups in the set-up kit: proposal-builder, invoice-chase, review-reputation, social-content-engine", "agree": "n/a", "why": "The decorating business is parked and the kit hasn't had its first set-up yet. Strong candidate to offer a small-business owner in the kit once it's tried with try-tool."},
+   "our_view": {
+    "need": "maybe",
+    "for_what": "The decorating business (parked) and friends' set-ups in the set-up kit: proposal-builder, invoice-chase, review-reputation, social-content-engine",
+    "agree": "n/a",
+    "why": "The decorating business is parked and the kit hasn't had its first set-up yet. Strong candidate to offer a small-business owner in the kit once it's tried with try-tool."
+   },
    "open_source": "yes",
    "repo": "https://github.com/anthropics/knowledge-work-plugins",
-   "cost": {"model": "free", "amount": "included with a paid Claude plan (Pro and up)"}
+   "cost": {
+    "model": "free",
+    "amount": "included with a paid Claude plan (Pro and up)"
+   }
+  },
+  {
+   "name": "Small Business: ad-manager",
+   "url": "https://claude.com/plugins/small-business#ad-manager",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "The ads consultant that becomes an ads agent.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "The ads consultant that becomes an ads agent.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: ap-processor",
+   "url": "https://claude.com/plugins/small-business#ap-processor",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Works the bill pile end to end: reads bills and vendor statements out of the AP inbox or from uploaded PDFs and phone photos, pulls out vendor, amount, due date, and line detail, codes each one to the right account and j",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Works the bill pile end to end: reads bills and vendor statements out of the AP inbox or from uploaded PDFs and phone photos, pulls out vendor, amount, due date, and line detail, codes each one to the right account and job, matches it against the purchase order and the receiving ticket, then stages the entries and a proposed payment run in QuickBooks, Xero, or NetSuite for the owner to approve in one pass.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: brand-style",
+   "url": "https://claude.com/plugins/small-business#brand-style",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Design & websites",
+   "what": "Sets and updates the owner's brand look and output preferences, which every page and document the plugin produces then follows automatically.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Sets and updates the owner's brand look and output preferences, which every page and document the plugin produces then follows automatically.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: build-agent",
+   "url": "https://claude.com/plugins/small-business#build-agent",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Automation & workflows",
+   "what": "Turns a task the owner keeps doing by hand into a named, reusable skill they can trigger by name or put on a schedule.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Turns a task the owner keeps doing by hand into a named, reusable skill they can trigger by name or put on a schedule.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Its ideas are now in our level-up skill (chat = spec, gate only what matters, test on a known answer).",
+    "agree": "n/a",
+    "why": "Ideas already adopted; nothing to install. Its ideas are now in our level-up skill (chat = spec, gate only what matters, test on a known answer)."
+   },
+   "relates": [
+    "level-up",
+    "link"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: build-connector",
+   "url": "https://claude.com/plugins/small-business#build-connector",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "MCP & connectors",
+   "what": "Gets Claude talking to a tool nobody built an official connector for.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Gets Claude talking to a tool nobody built an official connector for.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Our connect skill is adapted from it.",
+    "agree": "n/a",
+    "why": "Ideas already adopted; nothing to install. Our connect skill is adapted from it."
+   },
+   "relates": [
+    "connect"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: business-pulse",
+   "url": "https://claude.com/plugins/small-business#business-pulse",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Produces a one-page cross-functional business snapshot for SMB owners — cash position (the ledger: MYOB, NetSuite, QuickBooks, Xero, or Zoho Books), sales trend (PayPal/Square/Stripe), pipeline movement (HubSpot), this w",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Produces a one-page cross-functional business snapshot for SMB owners — cash position (the ledger: MYOB, NetSuite, QuickBooks, Xero, or Zoho Books), sales trend (PayPal/Square/Stripe), pipeline movement (HubSpot), this week's commitments (Calendar), urgent watch-list items (Gmail or M365, Slack), and the single most important thing needing attention today.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: call-list",
+   "url": "https://claude.com/plugins/small-business#call-list",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Builds today's call list.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Builds today's call list.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: canva-creator",
+   "url": "https://claude.com/plugins/small-business#canva-creator",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Design & websites",
+   "what": "Takes an approved content brief and executes a campaign end-to-end: builds the posting calendar, generates Canva designs for social posts, drafts caption and email copy, and stages social sends in HubSpot.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Takes an approved content brief and executes a campaign end-to-end: builds the posting calendar, generates Canva designs for social posts, drafts caption and email copy, and stages social sends in HubSpot.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Uses the Canva connection we proved with connect.",
+    "agree": "n/a",
+    "why": "Uses the Canva connection we proved with connect."
+   },
+   "relates": [
+    "connect"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: cash-flow-snapshot",
+   "url": "https://claude.com/plugins/small-business#cash-flow-snapshot",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Reads AR/AP, historical cash timing, and known fixed costs from the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) or from PayPal, Square, or Stripe — or a CSV upload — and produces a 30/60/90-day cash flow for",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Reads AR/AP, historical cash timing, and known fixed costs from the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) or from PayPal, Square, or Stripe — or a CSV upload — and produces a 30/60/90-day cash flow forecast with percentage-variance confidence bands and named risk flags.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: close-month",
+   "url": "https://claude.com/plugins/small-business#close-month",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Closes the books and turns them into a decision as a three-link chain — month-end-prep reconciles the ledger against every connected payment processor and writes the P&L narrative, cash-flow-snapshot then refreshes the 3",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Closes the books and turns them into a decision as a three-link chain — month-end-prep reconciles the ledger against every connected payment processor and writes the P&L narrative, cash-flow-snapshot then refreshes the 30/60/90-day forecast off the newly closed numbers rather than raw ones, and report-builder publishes and distributes the close packet.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: content-strategy",
+   "url": "https://claude.com/plugins/small-business#content-strategy",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Analyzes sales data from PayPal and QuickBooks to find top performers and slow movers, layers in seasonality, and produces a prioritized 30-day content brief: what to push, what offers to run, what to hold.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Analyzes sales data from PayPal and QuickBooks to find top performers and slow movers, layers in seasonality, and produces a prioritized 30-day content brief: what to push, what offers to run, what to hold.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: contract-review",
+   "url": "https://claude.com/plugins/small-business#contract-review",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Lightweight NDA, MSA, and vendor contract review for SMBs without legal on staff.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Lightweight NDA, MSA, and vendor contract review for SMBs without legal on staff.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: crm-autopilot",
+   "url": "https://claude.com/plugins/small-business#crm-autopilot",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Keeps the CRM current without the owner ever opening it.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Keeps the CRM current without the owner ever opening it.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: grant-rfp-writer",
+   "url": "https://claude.com/plugins/small-business#grant-rfp-writer",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Finds grant and solicitation opportunities the organization actually qualifies for, runs a hard go/no-go before anyone starts writing, drafts the application or response from past submissions and real program data, and t",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Finds grant and solicitation opportunities the organization actually qualifies for, runs a hard go/no-go before anyone starts writing, drafts the application or response from past submissions and real program data, and tracks every deadline and reporting obligation that follows an award.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: grow-pipeline",
+   "url": "https://claude.com/plugins/small-business#grow-pipeline",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Fills the funnel end to end without the owner babysitting it — reads the market and the competition for context, builds a ranked list of named prospects with a reason attached to each, writes personalized outreach in the",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Fills the funnel end to end without the owner babysitting it — reads the market and the competition for context, builds a ranked list of named prospects with a reason attached to each, writes personalized outreach in the owner's own voice, and logs every touch to the CRM.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: growth-pulse",
+   "url": "https://claude.com/plugins/small-business#growth-pulse",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Answers one question for an SMB owner — is the growth engine actually working?",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Answers one question for an SMB owner — is the growth engine actually working?",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "A weekly 'is it working?' score, like our Friday audit but for growth.",
+    "agree": "n/a",
+    "why": "A weekly 'is it working?' score, like our Friday audit but for growth."
+   },
+   "relates": [
+    "audit"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: hiring-screener",
+   "url": "https://claude.com/plugins/small-business#hiring-screener",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Takes a pile of applications and turns it into a ranked shortlist, scored only against the job's stated rubric, with drafted replies to every candidate, scheduled interviews, and an onboarding checklist for whoever gets ",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Takes a pile of applications and turns it into a ranked shortlist, scored only against the job's stated rubric, with drafted replies to every candidate, scheduled interviews, and an onboarding checklist for whoever gets hired.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: inbox-manager",
+   "url": "https://claude.com/plugins/small-business#inbox-manager",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Automation & workflows",
+   "what": "Turns a full inbox into a short, ranked list of what actually needs the owner.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Turns a full inbox into a short, ranked list of what actually needs the owner.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Same idea as our Chief's Desk: turn a pile into the few things that need the owner.",
+    "agree": "n/a",
+    "why": "Same idea as our Chief's Desk: turn a pile into the few things that need the owner."
+   },
+   "relates": [
+    "decide"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: inventory-planner",
+   "url": "https://claude.com/plugins/small-business#inventory-planner",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Works out what to reorder and when, from what is actually selling: pulls sales history and stock on hand from Shopify, Square, NetSuite, or an uploaded CSV, computes 7-day and 28-day sales velocity per item, projects a c",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Works out what to reorder and when, from what is actually selling: pulls sales history and stock on hand from Shopify, Square, NetSuite, or an uploaded CSV, computes 7-day and 28-day sales velocity per item, projects a conservative stockout date for each, sizes a 60-day reorder quantity, and drafts the purchase orders and vendor emails to cover it.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: invoice-chase",
+   "url": "https://claude.com/plugins/small-business#invoice-chase",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Drafts overdue-invoice reminder emails from the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) plus PayPal, Stripe, and Airwallex data, matched to each customer's payment history and tone (gentle for good custo",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Drafts overdue-invoice reminder emails from the ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) plus PayPal, Stripe, and Airwallex data, matched to each customer's payment history and tone (gentle for good customers, firm for repeat late payers).",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: job-post-builder",
+   "url": "https://claude.com/plugins/small-business#job-post-builder",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Builds end-to-end hiring packets — job post, structured interview guide with scoring rubric, and offer letter template — from a hiring brief.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Builds end-to-end hiring packets — job post, structured interview guide with scoring rubric, and offer letter template — from a hiring brief.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: lead-finder",
+   "url": "https://claude.com/plugins/small-business#lead-finder",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Builds a ranked list of prospects worth contacting.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Builds a ranked list of prospects worth contacting.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: lead-triage",
+   "url": "https://claude.com/plugins/small-business#lead-triage",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Scores inbound HubSpot leads by engagement signals, company fit, and urgency markers, ranks the ones worth a call today with talking points, drafts the follow-ups, and proposes calendar times for the owner to book.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Scores inbound HubSpot leads by engagement signals, company fit, and urgency markers, ranks the ones worth a call today with talking points, drafts the follow-ups, and proposes calendar times for the owner to book.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: marketing-monday",
+   "url": "https://claude.com/plugins/small-business#marketing-monday",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Delivers the weekly growth briefing as one merged read — whether the growth engine is working, what customers are saying in public and private, what competitors actually changed, and the three growth actions worth taking",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Delivers the weekly growth briefing as one merged read — whether the growth engine is working, what customers are saying in public and private, what competitors actually changed, and the three growth actions worth taking this week.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "A weekly briefing on a schedule, like our Friday audit.",
+    "agree": "n/a",
+    "why": "A weekly briefing on a schedule, like our Friday audit."
+   },
+   "relates": [
+    "audit"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: monday-brief",
+   "url": "https://claude.com/plugins/small-business#monday-brief",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Runs the owner's Monday morning briefing as a two-link chain — business-pulse for the cross-connector snapshot of cash, sales, and pipeline, and report-builder for any saved KPI reports the owner has already defined — th",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Runs the owner's Monday morning briefing as a two-link chain — business-pulse for the cross-connector snapshot of cash, sales, and pipeline, and report-builder for any saved KPI reports the owner has already defined — then reads the week ahead straight from Calendar and mail and merges all three parts into a single one-page Monday document, delivered per the owner's stored output preference.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: month-end-prep",
+   "url": "https://claude.com/plugins/small-business#month-end-prep",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Reconciles the accounting ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) against PayPal, Shopify, Square, and Stripe settlements, flags transactions that need attention, suspicious duplicates, and missing recei",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Reconciles the accounting ledger (MYOB, NetSuite, QuickBooks, Xero, or Zoho Books) against PayPal, Shopify, Square, and Stripe settlements, flags transactions that need attention, suspicious duplicates, and missing receipts, then writes a plain-English P&L narrative and exports a close packet (xlsx + one-page PDF).",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: outreach-composer",
+   "url": "https://claude.com/plugins/small-business#outreach-composer",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Writes prospect outreach and follow-up sequences that sound like the owner wrote them, not like an AI did.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Writes prospect outreach and follow-up sequences that sound like the owner wrote them, not like an AI did.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: pay-the-bills",
+   "url": "https://claude.com/plugins/small-business#pay-the-bills",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Works the bill pile from the AP inbox all the way to a staged payment run — reads and codes every bill, then checks the cash position before a dollar is committed, then stages the run for one-click approval and keeps the",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Works the bill pile from the AP inbox all the way to a staged payment run — reads and codes every bill, then checks the cash position before a dollar is committed, then stages the run for one-click approval and keeps the books tidy for close.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: payroll-prep",
+   "url": "https://claude.com/plugins/small-business#payroll-prep",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Gets payroll ready to run without anyone getting shorted: pulls timesheets from Gusto, QuickBooks Payroll, or an uploaded spreadsheet, totals regular, overtime, and PTO hours by person, flags every anomaly it finds — mis",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Gets payroll ready to run without anyone getting shorted: pulls timesheets from Gusto, QuickBooks Payroll, or an uploaded spreadsheet, totals regular, overtime, and PTO hours by person, flags every anomaly it finds — missed punches, overtime spikes, rate changes, mid-period hires and terminations, hours off the schedule — and stages the run for the owner to approve line by line before a dollar moves.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: plan-payroll",
+   "url": "https://claude.com/plugins/small-business#plan-payroll",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Runs the payroll-confidence chain end to end — forecasts cash across the payroll window with cash-flow-snapshot, ranks and drafts overdue-invoice reminders with invoice-chase to close any gap, then assembles timesheets, ",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Runs the payroll-confidence chain end to end — forecasts cash across the payroll window with cash-flow-snapshot, ranks and drafts overdue-invoice reminders with invoice-chase to close any gap, then assembles timesheets, flags every anomaly, and stages the run with payroll-prep.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: proposal-builder",
+   "url": "https://claude.com/plugins/small-business#proposal-builder",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Turns whatever came out of a discovery conversation — a call transcript, a voice memo, jobsite photos, an RFP document, a set of drawings, or scrappy notes — into a branded, costed proposal, estimate, or statement of wor",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Turns whatever came out of a discovery conversation — a call transcript, a voice memo, jobsite photos, an RFP document, a set of drawings, or scrappy notes — into a branded, costed proposal, estimate, or statement of work built on the owner's own templates and historical pricing.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Turns a discovery conversation into a document, like grill-me turns an interview into notes.",
+    "agree": "n/a",
+    "why": "Turns a discovery conversation into a document, like grill-me turns an interview into notes."
+   },
+   "relates": [
+    "grill-me"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: reactivate",
+   "url": "https://claude.com/plugins/small-business#reactivate",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Wins back customers who have quietly stopped buying — finds the ones whose gap has stretched past their own normal rhythm or who are showing churn signals, ranks them by what the relationship was worth, drafts a win-back",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Wins back customers who have quietly stopped buying — finds the ones whose gap has stretched past their own normal rhythm or who are showing churn signals, ranks them by what the relationship was worth, drafts a win-back message per customer in the owner's voice, and sends and logs only what the owner approves.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: report-builder",
+   "url": "https://claude.com/plugins/small-business#report-builder",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Automation & workflows",
+   "what": "Turns a plain-English description of a recurring report into a real, repeatable report — defines the metrics, pulls them from whatever data sources are connected, delivers a chat summary plus an XLSX workbook, and saves ",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Turns a plain-English description of a recurring report into a real, repeatable report — defines the metrics, pulls them from whatever data sources are connected, delivers a chat summary plus an XLSX workbook, and saves the definition so the same report reruns on demand or on a schedule.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "A recurring report defined once and rerun: the level-up pattern for reports.",
+    "agree": "n/a",
+    "why": "A recurring report defined once and rerun: the level-up pattern for reports."
+   },
+   "relates": [
+    "level-up"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: report-pack",
+   "url": "https://claude.com/plugins/small-business#report-pack",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Automation & workflows",
+   "what": "Delivers the owner's custom recurring report pack on a set cadence — runs the saved report definition from report-builder, wraps it in a business-pulse snapshot so the numbers have context, and hands over one chat summar",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Delivers the owner's custom recurring report pack on a set cadence — runs the saved report definition from report-builder, wraps it in a business-pulse snapshot so the numbers have context, and hands over one chat summary plus the workbook.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: restock",
+   "url": "https://claude.com/plugins/small-business#restock",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Turns what is actually selling into a reorder decision and gets it all the way into the books — computes sales velocity and conservative stockout dates per item, sizes the reorder, drafts the purchase order and the vendo",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Turns what is actually selling into a reorder decision and gets it all the way into the books — computes sales velocity and conservative stockout dates per item, sizes the reorder, drafts the purchase order and the vendor email, and then stages the matching entry so the bill matches against the PO when it arrives.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: review-reputation",
+   "url": "https://claude.com/plugins/small-business#review-reputation",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Watches what customers are saying in public and in private, then does something about it.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Watches what customers are saying in public and in private, then does something about it.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: seo-ai-visibility",
+   "url": "https://claude.com/plugins/small-business#seo-ai-visibility",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Audits and fixes both halves of being found — classic search and AI answers.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Audits and fixes both halves of being found — classic search and AI answers.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Findability research, next to how research-creator studies channels.",
+    "agree": "n/a",
+    "why": "Findability research, next to how research-creator studies channels."
+   },
+   "relates": [
+    "research-creator"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: smb-onboard",
+   "url": "https://claude.com/plugins/small-business#smb-onboard",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Automation & workflows",
+   "what": "Claude as the trainer.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Claude as the trainer.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Same job as our grill-me: interview the owner, save what's learned.",
+    "agree": "n/a",
+    "why": "Same job as our grill-me: interview the owner, save what's learned."
+   },
+   "relates": [
+    "grill-me"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: smb-router",
+   "url": "https://claude.com/plugins/small-business#smb-router",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Automation & workflows",
+   "what": "The front door to the Small Business plugin.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "The front door to the Small Business plugin.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Its routing table is the plugin's version of our router (AGENTS.md); link keeps ours current.",
+    "agree": "n/a",
+    "why": "Its routing table is the plugin's version of our router (AGENTS.md); link keeps ours current."
+   },
+   "relates": [
+    "link"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: social-content-engine",
+   "url": "https://claude.com/plugins/small-business#social-content-engine",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Runs the owner's content operation as a standing thing rather than a one-off: keeps a rolling posting calendar, learns the owner's voice, generates on-brand Canva graphics, writes captions that sound like them, repurpose",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Runs the owner's content operation as a standing thing rather than a one-off: keeps a rolling posting calendar, learns the owner's voice, generates on-brand Canva graphics, writes captions that sound like them, repurposes one asset into every channel format, and stages posts for approval instead of publishing on its own.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Content side of the channel; youtube-ingest feeds what we learn from other channels.",
+    "agree": "n/a",
+    "why": "Content side of the channel; youtube-ingest feeds what we learn from other channels."
+   },
+   "relates": [
+    "youtube-ingest"
+   ],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: speed-to-lead",
+   "url": "https://claude.com/plugins/small-business#speed-to-lead",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Marketing, sales & SEO",
+   "what": "Makes sure no inbound lead goes unanswered.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Makes sure no inbound lead goes unanswered.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: tax-prep",
+   "url": "https://claude.com/plugins/small-business#tax-prep",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Prepares tax materials as a two-link chain — month-end-prep confirms the books are closed and reconciled first, then tax-season-organizer calculates the quarterly estimated payment or builds the year-end 1099-NEC list an",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Prepares tax materials as a two-link chain — month-end-prep confirms the books are closed and reconciled first, then tax-season-organizer calculates the quarterly estimated payment or builds the year-end 1099-NEC list and accountant packet from those closed numbers.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: tax-season-organizer",
+   "url": "https://claude.com/plugins/small-business#tax-season-organizer",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Prepares tax-season materials for the owner's accountant, not tax advice.",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Prepares tax-season materials for the owner's accountant, not tax advice.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
+  },
+  {
+   "name": "Small Business: ticket-deflector",
+   "url": "https://claude.com/plugins/small-business#ticket-deflector",
+   "kind": "skill",
+   "plugin": "small-business",
+   "category": "Automation & workflows",
+   "what": "Reads a forwarded customer email or ticket, pulls order and refund status from a payments connector (PayPal, Square, or Stripe) or Shopify, account history from the CRM, and open tickets from a support desk (Zoho Desk), ",
+   "shown": "",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Reads a forwarded customer email or ticket, pulls order and refund status from a payments connector (PayPal, Square, or Stripe) or Shopify, account history from the CRM, and open tickets from a support desk (Zoho Desk), drafts a tone-matched reply in the owner's writing voice, and can issue a refund through the payments connector with explicit owner approval.",
+   "check": "Part of Anthropic's Small Business plugin (needs a paid plan; Charlie: Mac day after Pro).",
+   "opinion": null,
+   "our_view": {
+    "need": "no",
+    "for_what": "Small-business work (decorating business parked)",
+    "agree": "n/a",
+    "why": "Kept for the map: Charlie asked for its skills in the Quartermaster to link with ours (2026-10-09)."
+   },
+   "relates": [],
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {
+    "model": "free",
+    "amount": "with a paid Claude plan"
+   }
   }
  ]
 }
