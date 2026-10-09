@@ -42,18 +42,19 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 ## Open decisions
 - Desk `qm-frontend-design`: Charlie's keep / later / drop for the first Elder trial (comes before pilot step 2).
 - Desk `shared-browser-design`: approve/change that first browser design.
-- Desk `higgsfield-signin`: only Charlie can sign in.
+- Higgsfield sign-in: Charlie couldn't find a way from his phone; moved to Mac day (`context/mac-day.md`).
 - Secure Higgsfield sign-in and a supported persistent connector/browser route; Katana availability and exact credit cost unverified. Never ask for tokens or OAuth callback URLs in chat.
 - Claude Guardian review and live page republishing will remain outstanding after this hand-off commit; current-focus records the commit once saved.
 - Branch review: `claude/nate-brain-wip` has 1 unmerged commit including `research/nate-herk/brain/x-themes.md` (unverified); `elder-councils-plan` has 3; `nate-watch-path` has 2. The Elder plan and Watch Path source are already on main. Historical branches also contain old renamed files; no branches merged/deleted.
 
 ## Pick up here
-1. Read this hand-off and current-focus; re-check exposed browser/UI tools. Resolve the pending browser design approval, then write its spec for review. Do not claim an app already exists.
+0. (Codex, 9 Oct late) Charlie said yes on the Desk: write the shared phone-browser plan for his review; nothing built or paid for until he approves. Claude's own browser is the second route (Mac day).
+1. Read this hand-off and current-focus; re-check exposed browser/UI tools. The browser design is approved for a written plan only (item 0). Do not claim an app already exists.
 2. Prototype the approved shared browser locally; test phone sizing, keyboard, takeover and reconnect before quoting/approving private always-on hosting. Measure performance and real login retention.
 3. Resume Higgsfield in Codex once secure access works: verify Katana/catalog access, obtain an exact credit quote, then seek approval for one 5-second trial before the full promo.
 
 ## Carried forward / dropped
-- Update (Claude, 9 Oct evening): TinyFish is to be removed (Desk `remove-tinyfish`). Two browser routes now: Claude's own browser pane on the Mac (Desk `better-browser`) and this Codex iPhone plan (`shared-browser-design`), which is still the only route for Codex and the iPhone.
+- Update (Claude, 9 Oct evening): TinyFish removed by Charlie (9 Oct). Two browser routes now: Claude's own browser pane on the Mac (Desk `better-browser`) and this Codex iPhone plan (`shared-browser-design`), which is still the only route for Codex and the iPhone.
 - Elder pilot: mini-router done; trial 1 done by Claude the same evening (frontend-design, Guardian READY, `research/hands/reviews/frontend-design-2026-10-09.md`), verdict on Desk card `qm-frontend-design`; next is pilot step 2. Do not silently replace the 90-day set-up-kit priority.
 - Prior Desk reads, scheduled Quartermaster/audit reports, the six older Needs Charlie items, paused set-up kit, side-project Bitcoin newsletter and parked journey video remain in todo/current-focus; no fresh Desk or scheduler verification.
 - Prior branch-only WIP preserved above; dropped-item/session-review list remains in todo. Nothing dropped or declared complete without evidence.

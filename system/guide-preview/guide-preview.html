@@ -1,0 +1,211 @@
+<title>OS Guide, new look</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout (frontend-design trial): a decorator's job manual. Primer-grey page, one column,
+   each part's number on a strip of masking tape; everything else quiet. */
+:root{--bg:#E8EBE7;--panel:#FBFBF8;--ink:#1D2A30;--muted:#55646B;--tape:#E4B83A;--link:#215F94;--line:#CBD1CC;
+  --display:"Fraunces",Georgia,serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A2125;--panel:#212A2F;--ink:#E9ECE8;--muted:#A3B0B5;--tape:#D9AE33;--link:#8CC0EC;--line:#34414A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1A2125;--panel:#212A2F;--ink:#E9ECE8;--muted:#A3B0B5;--tape:#D9AE33;--link:#8CC0EC;--line:#34414A;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body)}
+.wrap{max-width:680px;margin:0 auto;padding-inline:16px;padding-block:28px 72px}
+.eyebrow{font:400 15px var(--body);color:var(--muted)}
+h1{font:800 clamp(34px,8vw,52px)/1.02 var(--display);margin:4px 0 12px;letter-spacing:-.01em;text-wrap:balance}
+h2{font:700 26px/1.15 var(--display);margin:40px 0 10px;text-wrap:balance}
+h3{font:700 21px/1.25 var(--display);margin:0;text-wrap:balance}
+p{margin:0 0 10px;max-width:66ch}
+.lede{font-size:18px}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px;flex-wrap:wrap;padding:10px 0;margin:16px 0 4px;background:var(--bg)}
+.tab{font:700 15px var(--body);border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:6px;padding:8px 14px;cursor:pointer;min-height:44px}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.why{background:var(--panel);padding:14px 16px;border-radius:4px;margin-top:12px}
+.why p{margin:0}
+.list{display:grid;gap:30px;counter-reset:part}
+.card{display:grid;gap:8px}
+.list>.card{counter-increment:part}
+.list>.card h3{display:flex;gap:12px;align-items:baseline}
+.list>.card h3::before{content:counter(part);font:800 22px/1 var(--display);background:var(--tape);color:#1D2A30;padding:6px 10px 5px;transform:rotate(-2deg);flex:none}
+#s-built .card h3{font-size:0}
+#s-built .card h3::before{font-size:22px}
+#s-built .card h3 .t{font-size:21px}
+.k{font:700 16px var(--body);color:var(--ink)}
+.k::after{content:":"}
+.k{margin-right:.35em}
+.trio{display:grid;gap:8px}
+.trio p{margin:0;display:inline}
+.trio div{min-width:0}
+a{color:var(--link)}
+code{font:15px ui-monospace,Menlo,monospace;background:var(--panel);padding:1px 5px;border-radius:3px}
+.gloss{display:grid;grid-template-columns:150px minmax(0,1fr);gap:8px 16px;background:var(--panel);padding:16px;border-radius:4px}
+.gloss dt{font-weight:700}
+.gloss dd{margin:0}
+.group{background:var(--panel);padding:14px 16px;border-radius:4px}
+.skill{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:4px 14px;padding:8px 0;border-top:1px solid var(--line)}
+.skill b{font:700 15px ui-monospace,Menlo,monospace}
+.skill span{color:var(--muted)}
+.next{display:grid;gap:12px;background:var(--panel);padding:14px 16px;border-radius:4px}
+.nx b{font:700 18px var(--display)}
+.nx p{margin:2px 0 0}
+.src{font-size:14px;color:var(--muted)}
+.table{overflow-x:auto;background:var(--panel);border-radius:4px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-top:1px solid var(--line);vertical-align:top}
+th{font-weight:700}
+.ok{color:#1F7A45;font-weight:700}.fix{color:#9A5B00;font-weight:700}
+footer{margin-top:40px;color:var(--muted);font-size:15px;border-top:1px solid var(--line);padding-top:14px}
+button:focus-visible,a:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+@media (max-width:640px){.gloss{grid-template-columns:1fr}.skill{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">A guide to Charlie's AI OS, for beginners</div>
+  <h1>What we've built, and why</h1>
+  <p class="lede">An AI OS is a folder of plain notes that teaches Claude who you are and how you work, so every chat starts already knowing you. This guide explains each part in plain English, lists the skills you'll actually use, and shows the checks we ran to prove it works.</p>
+
+  <div class="tabs" role="group" aria-label="Section">
+    <button class="tab" id="t-built" data-t="built" aria-pressed="true">What we built</button>
+    <button class="tab" id="t-skills" data-t="skills" aria-pressed="false">Skills</button>
+    <button class="tab" id="t-words" data-t="words" aria-pressed="false">Words</button>
+    <button class="tab" id="t-test" data-t="test" aria-pressed="false">Backtest</button>
+  </div>
+
+  <section id="s-built">
+    <div class="why"><p><b>Why it all matters:</b> you kept having to ask me about skills and tools you'd never heard of, and I kept asking you to approve things. Everything below fixes one of those two problems: the OS now finds and ranks tools by itself, explains them, and only asks you when it really needs you.</p></div>
+    <h2>Nine parts</h2>
+    <div class="list">
+      <div class="card"><h3><span class="t">The rulebook (<code>AGENTS.md</code>)</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>A short staff handbook Claude reads before every reply: who you are, how to talk to you, where everything lives.</p></div>
+        <div><span class="k">Why</span><p>Nate's newest video (and Anthropic) showed newer AI needs <i>less</i> telling. We cut it by about 40% and proved nothing was lost.</p></div>
+        <div><span class="k">How you use it</span><p>You don't. It works in the background. Changes go through me.</p></div></div></div>
+      <div class="card"><h3><span class="t">The Chief's Desk (was the Decision Desk)</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>One page holding every question I need you to answer. Tap an option, press Send.</p></div>
+        <div><span class="k">Why</span><p>I was asking you to say "go" on small things and asking the same question four times. Now small things just happen, and real choices wait in one place.</p></div>
+        <div><span class="k">How you use it</span><p>It opens by itself when I say "one new question on the Desk". Tap, press Send, and I'm told straight away: no need to come back and say "done". If I can't be told, a <b>Tell Claude now</b> button appears.</p></div></div></div>
+      <div class="card"><h3><span class="t">One health check (the <code>audit</code> skill)</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>A check-up that scores the OS and spots wrong, stale or clashing notes. Now one skill instead of two, plus a "context doctor" that shows what Claude reads every message.</p></div>
+        <div><span class="k">Why</span><p>Nate: re-check your set-up every time a new model comes out. Clutter quietly makes answers worse.</p></div>
+        <div><span class="k">How you use it</span><p>Nothing: it runs by itself every Friday at 8:59am and notifies your phone. After a model switch, say "audit".</p></div></div></div>
+      <div class="card"><h3><span class="t">The Architect (Nate's brain, was ENATE)</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>Everything Nate teaches about building an AI OS, boiled down from 69 of his videos into 44 ideas and 44 rules, each with his exact words and a timestamp.</p></div>
+        <div><span class="k">Why</span><p>So we follow a proven method instead of guessing, and can ask "what would Nate's method say?" any time. "Nate" now means the real person and his new videos; ENATE is our copy of his know-how.</p></div>
+        <div><span class="k">How you use it</span><p>Ask "what does the Architect say about…". New Nate videos get added with the <code>brain-ingest</code> skill, which now checks titles and chapters first and only reads the videos that fill a gap, to save your usage.</p></div></div></div>
+      <div class="card"><h3><span class="t">The Quartermaster (the tools list, was the Hands Brain)</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>Every tool, skill and plugin from The Next New Thing's weekly shows (newest first) and the skills.sh leaderboard of most-installed skills: 162 so far, ranked in 15 groups, newest video first, then back to week 38. Each new tool is compared with its group's number one, and every tool notes what the presenters think of it and whether we agree. Older tools get crossed out when something newer replaces them.</p></div>
+        <div><span class="k">Why</span><p>Tools change every week. You shouldn't have to watch every video or ask me what each one is. It also links each tool to the ENATE idea it fits.</p></div>
+        <div><span class="k">How you use it</span><p>Open the map, tap a dot. Ask "what's the best free tool for…". It updates itself every Saturday at 8:47am.</p></div></div></div>
+      <div class="card"><h3><span class="t">Charlie's Brain (the map)</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>A picture of the whole OS: every note, skill and idea as a dot, with lines where they connect.</p></div>
+        <div><span class="k">Why</span><p>Our stand-in for Obsidian until you're on the Mac. Seeing it makes gaps and clutter obvious.</p></div>
+        <div><span class="k">How you use it</span><p>Open it on your phone, tap around, mark anything confusing in Review.</p></div></div></div>
+      <div class="card"><h3><span class="t">The Voice Gym</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>Short practice messages written the way AI usually sounds: a text to a mate, a YouTube reply, a quote follow-up. You rewrite each one how you'd really send it.</p></div>
+        <div><span class="k">Why</span><p>You said finding "your voice" is hard. The differences between my version and yours show it: what you cut, the words you use, how you sign off. Those become your voice notes, so drafts start sounding like you.</p></div>
+        <div><span class="k">How you use it</span><p>Open it, rewrite one or two, tap Save. Typos and slang are fine.</p></div></div></div>
+      <div class="card"><h3><span class="t">The council of elders (started)</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>Each brain gets a voice: ENATE, The Next New Thing, you, and later Nick and Karpathy. Ask one question and see where they agree and where they don't.</p></div>
+        <div><span class="k">Why</span><p>One expert can be wrong. Seeing several side by side, each quoting its own sources, makes your decision clearer.</p></div>
+        <div><span class="k">How you use it</span><p>Three are live: the Architect, the Quartermaster and the Guardian. The Elder pilot has started: the Quartermaster runs one real tool trial with its expert council, then the Guardian checks it. Plan: <code>brainstorms/2026-10-09-elder-councils-plan.md</code>.</p></div></div></div>
+      <div class="card"><h3><span class="t">The Guardian and the hand-off</span></h3>
+        <div class="trio"><div><span class="k">What it is</span><p>A separate checker that reads finished work cold and says READY or NOT READY. And <code>/session-handoff</code>: one message that carries everything into a fresh chat.</p></div>
+        <div><span class="k">Why</span><p>Nate: Claude doesn't get to mark its own homework. And long chats get slow and forgetful, so you clear them without losing anything.</p></div>
+        <div><span class="k">How you use it</span><p>The Guardian runs by itself on big changes. Before you clear a chat, type <code>/session-handoff</code>, copy the block, <code>/clear</code>, paste.</p></div></div></div>
+    </div>
+    <p class="src" style="margin-top:14px">All links: <code>system/pages.md</code> in the repo.</p>
+  </section>
+
+  <section id="s-skills" hidden>
+    <div class="why"><p><b>A skill</b> is a saved set of instructions for one job, like a recipe card. Claude only reads it when that job comes up, so having lots of skills doesn't slow it down. You trigger one just by asking in normal words.</p></div>
+    <h2>Our skills, grouped by job</h2>
+    <div class="list">
+      <div class="card group"><span class="k">Asking you things</span>
+        <div class="skill"><b>decide</b><span>Puts a question on the Chief's Desk instead of in chat. Fires by itself.</span></div>
+        <div class="skill"><b>session-handoff</b><span>"/session-handoff": one message to paste into a fresh chat. Nothing gets dropped.</span></div></div>
+      <div class="card group"><span class="k">Learning</span>
+        <div class="skill"><b>teach</b><span>"Teach me…", "I don't get…". Small steps, you predict, then build it.</span></div>
+        <div class="skill"><b>grill-me</b><span>"Grill me on…". I interview you one question at a time and save the answers.</span></div>
+        <div class="skill"><b>video-tutor</b><span>Turns chosen videos into a plain-English lesson.</span></div></div>
+      <div class="card group"><span class="k">Research and brains</span>
+        <div class="skill"><b>research-creator</b><span>"Research &lt;creator&gt;": their video list, transcripts, a first lesson.</span></div>
+        <div class="skill"><b>brain-ingest</b><span>"Add this video to ENATE": updates the ideas and rules, checks every quote.</span></div>
+        <div class="skill"><b>youtube-ingest</b><span>"Get the new videos from…": lists, picks and fetches videos for any brain.</span></div>
+        <div class="skill"><b>hands-ingest</b><span>"Update the tools list": this week's tools, ranked (runs every Saturday).</span></div>
+        <div class="skill"><b>try-tool</b><span>"Try &lt;tool&gt;": one real trial on your own work; your keep or drop changes its rank.</span></div>
+        <div class="skill"><b>connect</b><span>"Connect to X": reaches a new tool or account safely, tested on real data.</span></div>
+        <div class="skill"><b>architect (ENATE), quartermaster</b><span>Advisors: "what would Nate's method say?", "best tool for…?"</span></div></div>
+      <div class="card group"><span class="k">Keeping the OS healthy</span>
+        <div class="skill"><b>audit</b><span>"Audit": weekly score and the clutter check.</span></div>
+        <div class="skill"><b>guardian (helper agent)</b><span>Checks big finished work cold: READY or NOT READY. Runs by itself.</span></div>
+        <div class="skill"><b>link</b><span>Makes a new note findable so nothing gets lost.</span></div>
+        <div class="skill"><b>level-up</b><span>"What should we automate next?" One improvement at a time.</span></div></div>
+      <div class="card group"><span class="k">Finding new skills</span>
+        <div class="skill"><b>find-skills</b><span>Searches for ready-made skills. Installs only with your OK on the Desk.</span></div></div>
+    </div>
+
+    <h2>Skills we'll most likely add next</h2>
+    <p class="lede">Picked from both brains: ranked by the Hands Brain, and checked against what Nate actually uses. None are installed. Each would be one card on the Decision Desk first.</p>
+    <div class="card next">
+      <div class="nx"><div><b>Skill Creator</b> <span class="src">Anthropic, Nate uses it</span><p>Builds new skills properly from a plain-English request. Makes our own skills better and faster to write.</p></div></div>
+      <div class="nx"><div><b>Front-end design skill</b> <span class="src">Anthropic, Nate uses it</span><p>Makes the pages Claude builds look less "AI-made". Every dashboard here would benefit.</p></div></div>
+      <div class="nx"><div><b>Agent Skills</b> <span class="src">Addy Osmani, Hands rank: top starter pack</span><p>A small pack that stops the AI taking shortcuts. The easiest pack to start with.</p></div></div>
+      <div class="nx"><div><b>Superpowers</b> <span class="src">plugin, Nate uses it, on your Mac-day list</span><p>Makes Claude plan, test and review like a senior developer.</p></div></div>
+      <div class="nx"><div><b>Context 7</b> <span class="src">MCP, Nate uses it, on your Mac-day list</span><p>Gives Claude up-to-date instructions for tools, so it stops guessing from old knowledge.</p></div></div>
+      <div class="nx"><div><b>Claude Code Templates</b> <span class="src">Hands rank 2, seen twice</span><p>A catalogue of skills and settings you add with one command. Good for browsing.</p></div></div>
+      <div class="nx"><div><b>ECC</b> <span class="src">Hands rank 1, seen twice</span><p>A big all-in-one skills pack. Powerful, but large: try it after the smaller ones (smallest context first).</p></div></div>
+    </div>
+
+    <h2>The 15 tool groups the Hands Brain uses</h2>
+    <p class="lede">Coding agents; Claude Code skills and plugins; Agent teams; MCP and connectors; Knowledge and second brain; Video, clips and images; Voice and audio; Marketing and SEO; Design and websites; Research and search; Cost and tokens; Automation; Models; Business and finance; Other. Open the Hands Brain map to see every tool in each group.</p>
+  </section>
+
+  <section id="s-words" hidden>
+    <h2>Words you'll hear</h2>
+    <div class="card"><dl class="gloss">
+      <dt>Context</dt><dd>Everything the AI can see while it answers you. Less but better context gives better answers.</dd>
+      <dt>Rulebook / router</dt><dd><code>AGENTS.md</code>: the short handbook read before every reply. It points to where things live.</dd>
+      <dt>Skill</dt><dd>A recipe card for one job, read only when that job comes up.</dd>
+      <dt>Plugin</dt><dd>A bundle you install that can add several skills, helpers and connections at once.</dd>
+      <dt>MCP</dt><dd>A plug that connects Claude to another tool or service (email, a design app, documentation).</dd>
+      <dt>Agent</dt><dd>A helper Claude sends off to do one job, often on a cheaper model, then report back.</dd>
+      <dt>Repo</dt><dd>A project folder kept on GitHub, with every change saved and undoable.</dd>
+      <dt>Brain</dt><dd>A folder of distilled knowledge (ideas, rules, quotes) an advisor reads. ENATE and the Hands Brain are brains.</dd>
+      <dt>Transcript</dt><dd>The words of a video as text. Free to fetch, a few at a time.</dd>
+      <dt>Audit</dt><dd>A health check that finds clutter, stale facts and clashes.</dd>
+      <dt>Backtest</dt><dd>Re-running real questions against what we built to prove it works, not just claiming it.</dd>
+    </dl></div>
+  </section>
+
+  <section id="s-test" hidden>
+    <h2>Backtest, 9 October 2026</h2>
+    <p class="lede">A separate helper re-checked everything built on 8 October, using real commands and the data itself. Full receipts: <code>audits/evidence/2026-10-09-backtest/report.md</code>.</p>
+    <div class="card table"><table>
+      <thead><tr><th>Test</th><th>Result</th><th>What we did</th></tr></thead>
+      <tbody>
+        <tr><td>Right skill fires for "ask Charlie", "best voice tool", "write a lesson"</td><td class="ok">Pass</td><td>No two skills compete.</td></tr>
+        <tr><td>"Update the tools list for this week"</td><td class="fix">Fixed</td><td>Was ambiguous; added those words to <code>hands-ingest</code>.</td></tr>
+        <tr><td>Hands advisor answers 3 real questions from the data</td><td class="ok">Pass</td><td>Ranks, replacements and timestamps all matched.</td></tr>
+        <tr><td>"ElevenLabs replaced by VoiceStudio"</td><td class="fix">Fixed</td><td>True for voice cloning, too strong overall: the advisor now says what the newer tool doesn't cover.</td></tr>
+        <tr><td>Scores, groups, no sponsors listed as tools</td><td class="ok">Pass</td><td>64 of 64 scores correct.</td></tr>
+        <tr><td>Quotes are word for word</td><td class="ok">Pass</td><td>148 of 148; one only looked wrong because it crosses a timestamp line.</td></tr>
+        <tr><td>Repo check and context doctor</td><td class="ok">Pass</td><td>0 errors; about 8,000 characters read per message; nothing hidden.</td></tr>
+        <tr><td>A brand-new session finds the Desk, the Hands Brain and the week-38 pause point</td><td class="ok">Pass</td><td>All found from the rulebook alone.</td></tr>
+        <tr><td>Audit review: is every part checked? (9 Oct)</td><td class="fix">Fixed</td><td>Hands Brain quotes, groups and freshness are now checked on every save; proved by breaking a quote on purpose.</td></tr>
+        <tr><td>Weekly audit actually runs</td><td class="fix">Fixed</td><td>Scheduled every Friday at 8:59am UK time.</td></tr>
+        <tr><td>A fresh session (9 Oct, 2am): rulebook test, skills, Desk, scripts</td><td class="ok">Pass</td><td>10 of 10 answers matched. Higgsfield and Canva are still not connected (yours to do). Receipts: <code>audits/evidence/2026-10-09-new-session-backtest.md</code>.</td></tr>
+      </tbody></table></div>
+  </section>
+
+  <footer>Source of truth: the repo (<code>eddieedwardsv2-ux/Test-environment-</code>). This page: <code>system/guide/guide.html</code>; update it when a part is added.</footer>
+</div>
+
+<script>
+const tabs = document.querySelectorAll(".tab");
+function go(t){
+  tabs.forEach(b => b.setAttribute("aria-pressed", b.dataset.t === t));
+  ["built","skills","words","test"].forEach(s => document.getElementById("s-" + s).hidden = s !== t);
+  try { localStorage.setItem("guide-tab", t); } catch(e) {}
+}
+tabs.forEach(b => b.addEventListener("click", () => go(b.dataset.t)));
+try { const t = localStorage.getItem("guide-tab"); if (t) go(t); } catch(e) {}
+</script>

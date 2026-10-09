@@ -29,6 +29,7 @@ OS Guide) also need their facts checked when a part of the OS changes.
 | **Nate-first map**: our OS today vs the same work started from Nate's kit | https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky | `system/merge-map/merge-map.html` | `python3 tools/build_merge_map.py` (rules and reasons in its MOVES table) |
 | **Kit Compare**: our blank template vs Nate's kit | https://claude.ai/artifact/62wSZBDKYTLCAq6yfcF1qR | `projects/ai-os-setup-kit/compare/kit-compare.html` | `python3 tools/build_kit_compare.py` |
 | **AI OS Map, Viral Edition** (a design canvas made 9 Oct afternoon; not built from the repo; found 9 Oct evening, never listed) | https://claude.ai/artifact/P479tr4siCMvSeB3Mm8vnh | its own files on the page (Design type) | edit on the canvas or ask Claude (kept, Charlie 9 Oct) |
+| **OS Guide, new look** (preview from the frontend-design trial; Charlie compares it with the live Guide, Desk `qm-frontend-design`) | https://claude.ai/artifact/WjXLNv4SiTPSDEzuHH8Abe | `system/guide-preview/guide-preview.html` | edit by hand; delete if the verdict is drop or later |
 | **Thread Notes No1** (7 Oct; private conversation, so its content never comes into this public repo; kept, Charlie 9 Oct) | https://claude.ai/artifact/PQn4jTAa9PzUizgtYynEFW | none in the repo | none |
 | **Flashcards** (parked) | https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 | `learning/flashcards-app.html` | none; its `cards` database is the source of truth. `learning/flashcards.md` is a backup: regenerate it after adding cards |
 

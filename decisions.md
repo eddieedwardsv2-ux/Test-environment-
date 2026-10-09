@@ -1,5 +1,12 @@
 # Decision log
 
+## 2026-10-09: Desk answers, late evening
+- `better-browser` → **both**: Claude's own browser pane / Claude in Chrome / computer use stay on (Mac day), and Codex still plans its shared phone browser; compared on Mac day.
+- `shared-browser-design` → **write the plan** (next Codex session; nothing built or paid for before Charlie approves it).
+- `remove-tinyfish` → **done** (Charlie's step).
+- `higgsfield-signin` → Charlie couldn't find a way to sign in from his phone (cause not checked): moved to Mac day.
+- `qm-frontend-design` → Charlie asked to see the live Guide first: the new look is now its own preview page; card reopened with both links.
+
 ## 2026-10-09: the Desk tells Claude without a connector
 Charlie: "Tell Claude now" didn't work because of connectors (his settings blocked the Claude Code Remote tool). Now Send saves a tiny `poke.json` inside the Desk (its own `artifact` capability, no connector), which republishes it and wakes every Claude session watching the Desk; the `decide` skill watches it at session start. The connector and `config/session` were removed.
 

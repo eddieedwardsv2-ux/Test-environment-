@@ -26,4 +26,6 @@ sign-up or payment. Tick items off here and log each one in `decisions.md`.
 ## Browser that keeps you signed in (added 9 Oct, replaces TinyFish)
 - Open the Claude desktop app, open its browser pane, sign in to Higgsfield (and anything else the AI should use). Sign-ins stay (`built-in-browser` skill).
 - Optional: Claude in Chrome (`chrome-browser`) to use your real Chrome and its logins.
+- Higgsfield (couldn't be done from the phone): claude.ai, Settings, Connectors, Add custom connector, `https://mcp.higgsfield.ai/mcp`, sign in. Or sign in to higgsfield.ai inside Claude's browser pane.
 - Test: a cloud session linked to this Mac opens Higgsfield without asking you to log in again; then the Katana draft (credit quote first).
+- Compare with Codex's shared phone-browser plan (Charlie chose both routes, 9 Oct).

@@ -44,19 +44,19 @@
  "system/reader/reader.html": {
   "page": "Reading Room",
   "url": "https://claude.ai/artifact/E5Skrh9G7ey8DpAUDGXbds",
-  "sha256": "e6b601b25e91f6e6",
+  "sha256": "63051e3f6c297850",
   "published": "2026-10-09"
  },
  "research/nate-herk/brain/map/brain-map.html": {
   "page": "Brain dashboard",
   "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
-  "sha256": "24f5394a3a84fa15",
+  "sha256": "a8b2be0d4694c8a7",
   "published": "2026-10-09"
  },
  "system/merge-map/merge-map.html": {
   "page": "Nate-first map",
   "url": "https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky",
-  "sha256": "b63ecc8a791d85c8",
+  "sha256": "a8900bd1a7fe8fda",
   "published": "2026-10-09"
  },
  "projects/ai-os-setup-kit/compare/kit-compare.html": {
@@ -69,6 +69,12 @@
   "page": "Flashcards",
   "url": "https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144",
   "sha256": "4458813713ce0644",
+  "published": "2026-10-09"
+ },
+ "system/guide-preview/guide-preview.html": {
+  "page": "OS Guide, new look",
+  "url": "https://claude.ai/artifact/WjXLNv4SiTPSDEzuHH8Abe",
+  "sha256": "91bde27262995ea9",
   "published": "2026-10-09"
  }
 }

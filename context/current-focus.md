@@ -63,9 +63,9 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
-- On the Chief's Desk (9 Oct evening): `better-browser` (Claude's own browser pane / Claude
-  in Chrome keeps sign-ins; Mac needed), `shared-browser-design` (Codex's iPhone browser
-  plan, still the only route for Codex and the iPhone), `remove-tinyfish`, `higgsfield-signin`.
+- Answered 9 Oct late evening: both browser routes (Claude's own browser on Mac day; Codex
+  writes its shared phone-browser plan next), TinyFish removed, Higgsfield sign-in moved to
+  Mac day (Charlie couldn't find a way from the phone). Open: `qm-frontend-design` (preview page to compare).
   Katana access and credits are still unverified.
 - Codex's hand-off commits `975420c` and `2c52266` were checked by the Guardian (READY,
   `audits/guardian/2026-10-09-codex-handoff-merge.md`) and the pages republished.

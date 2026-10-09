@@ -43,8 +43,9 @@ Pressing **Send** (or **Tell Claude now** on an answered card) saves a tiny `pok
 inside the Desk, which republishes it. Every Claude session watching the Desk is woken by
 that, so Charlie never types "done". (The first version used the Claude Code Remote
 connector; his settings blocked it, so it was dropped.)
-- **Session start:** `ArtifactComments` `watch` with the Desk's URL (one call; a publish
-  from this session also starts a watch).
+- **Session start:** `ArtifactComments` `watch` with the Desk's URL, before anything else
+  (a session can watch at most 10 pages; every publish also tries to start a watch, so the
+  Desk must be first; if the limit is hit, stop watching another page with `ArtifactComments` `watch` `on: false`).
 - A wake saying the Desk was republished elsewhere is that signal: read the `answered`
   cards (the cards are the record; the wake is only a nudge) and act on them as below.
 - Codex can't watch the Desk: when only Codex is working, nothing is woken, and the next
