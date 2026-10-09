@@ -22,3 +22,8 @@ sign-up or payment. Tick items off here and log each one in `decisions.md`.
    (agent file by hand, `tools/audit.py` before finishing, "Waiting on Charlie"). Also check what Codex blocks instead of our deny list.
 - **Small Business plugin** (after Charlie's own choice to upgrade to Pro; his call, not ours): Claude desktop app → Customize → Plugins → + → Small Business, then say "get me started" (`smb-onboard`). Business details stay in the plugin, never this repo. Then one real trial with `try-tool` (e.g. a quote from job photos). Review: `research/hands/reviews/anthropic-marketplaces-2026-10-09.md`.
 - **Optional: FreeLLMAPI trial** (only if Claude limits have started stopping sessions): one small public task on free models vs the Sonnet helper, with `try-tool`. Review: `research/hands/reviews/freellmapi-2026-10-09.md`.
+
+## Browser that keeps you signed in (added 9 Oct, replaces TinyFish)
+- Open the Claude desktop app, open its browser pane, sign in to Higgsfield (and anything else the AI should use). Sign-ins stay (`built-in-browser` skill).
+- Optional: Claude in Chrome (`chrome-browser`) to use your real Chrome and its logins.
+- Test: a cloud session linked to this Mac opens Higgsfield without asking you to log in again; then the Katana draft (credit quote first).

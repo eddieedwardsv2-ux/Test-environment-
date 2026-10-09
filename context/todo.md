@@ -6,13 +6,13 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
-- [ ] Approve/change the proposed shared iPhone browser design (`context/handoff.md`): private home-screen web app, phone controls/keyboard, saved profile, reconnect, human/AI takeover. Then spec review and build plan; no app built or hosting chosen.
-- [ ] Complete secure Higgsfield access from Codex and verify Katana/catalog access and exact trial cost; current CLI installed and OAuth discovery works, but no account connected. Map promo style: cinematic glowing network for Instagram and X; no render yet. Keep the older parked journey video separate.
+- [ ] A browser that keeps him signed in, two routes (Desk `better-browser`, `shared-browser-design`): (a) Claude's own browser pane / Claude in Chrome on the Mac (Claude sessions; Mac needed); (b) Codex's planned shared iPhone browser (private home-screen web app, saved profile, takeover), which is still the only route for **Codex** and for the **iPhone**. Neither built yet.
 - [ ] Plugins ticked 9 Oct (Marketing, context7, Superpowers, watch-video, claude-patterns) not yet showing as enabled on his account (`ListPlugins` empty): check they installed; a new session loads them; then one `try-tool` test each
-- [ ] claude.ai settings: switch off 9 unused built-in skills (built-in-browser, chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf)
-- [ ] Add the Higgsfield connector (`https://mcp.higgsfield.ai/mcp`) and finish Canva's sign-in; then Claude makes one test image (cost said first)
+- [ ] claude.ai settings: switch off 6 unused built-in skills (import-memory, morning, docx, xlsx, pptx, pdf). Keep built-in-browser, chrome-browser and computer-use: they are the browser that keeps him signed in (9 Oct)
+- [ ] Remove TinyFish (logged out every 15 minutes): Desk card `remove-tinyfish`
+- [ ] Higgsfield Katana draft for the AI OS map promo (cinematic glowing network for Instagram and X; started in Codex, half done; Codex installed the Higgsfield CLI, no account connected): sign in (Desk `higgsfield-signin`: the claude.ai connector `https://mcp.higgsfield.ai/mcp`, or in Codex), then check Katana access and get an exact credit quote before any spend. Keep the parked journey video separate.
 - [ ] Voice Gym: rewrite 5 or more messages; then Claude writes his voice notes into `aios-intake.md` Q2
-- [ ] Check ChatGPT accepts the longer instructions box (`exports/chatgpt-instructions.md`, box 2 is about 2,000 characters)
+- [ ] Check ChatGPT accepts the longer instructions box (`exports/chatgpt-instructions.md`, box 2 is 2,303 characters on 9 Oct; trim it if ChatGPT refuses)
 - [ ] Confirm or change Claude's "where this is heading" theory for `current-focus.md`
 
 - [ ] `aios-intake.md` Q2, Q5 and half of Q7 still unanswered

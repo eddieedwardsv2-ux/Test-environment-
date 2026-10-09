@@ -34,7 +34,7 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 - Docker daemon is available here (28.4.0); this task workspace is not established as durable public hosting. Browser profiles/credentials must stay private and outside this public repo. Websites can expire their own logins.
 
 ## Decisions made
-- Stay in Codex; do not send Charlie to Claude for the browser/Higgsfield workflow.
+- Stay in Codex; do not send Charlie to Claude for the browser/Higgsfield workflow. (Open again since 9 Oct evening: Desk `better-browser` offers Claude's own browser on the Mac, which would move this work to Claude; Charlie chooses.)
 - Promo: cinematic glowing map, intended for Instagram and X. Proposed 20 seconds: signal enters, routes to an Elder, Guardian/Chief's Desk, network reveal and "follow the build". Style approved; full storyboard/cost not approved.
 - Browser must be shared by Charlie and the AI. Proposed first version: phone-sized home-screen web app, large controls/keyboard, saved browser profile, reconnect, and My turn / AI's turn takeover.
 - Browser design approval is still pending. Then write/review the spec and implementation plan before coding; consult the brainstorming skill. Hosting and spend require a concrete proposal first.
@@ -53,6 +53,7 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 3. Resume Higgsfield in Codex once secure access works: verify Katana/catalog access, obtain an exact credit quote, then seek approval for one 5-second trial before the full promo.
 
 ## Carried forward / dropped
+- Update (Claude, 9 Oct evening): TinyFish is to be removed (Desk `remove-tinyfish`). Two browser routes now: Claude's own browser pane on the Mac (Desk `better-browser`) and this Codex iPhone plan (`shared-browser-design`), which is still the only route for Codex and the iPhone.
 - Elder pilot: mini-router done; trial 1 done by Claude the same evening (frontend-design, Guardian READY, `research/hands/reviews/frontend-design-2026-10-09.md`), verdict on Desk card `qm-frontend-design`; next is pilot step 2. Do not silently replace the 90-day set-up-kit priority.
 - Prior Desk reads, scheduled Quartermaster/audit reports, the six older Needs Charlie items, paused set-up kit, side-project Bitcoin newsletter and parked journey video remain in todo/current-focus; no fresh Desk or scheduler verification.
 - Prior branch-only WIP preserved above; dropped-item/session-review list remains in todo. Nothing dropped or declared complete without evidence.

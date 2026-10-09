@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: check the Quartermaster on every task; a browser that keeps you signed in
+Charlie asked whether tasks get checked against the Quartermaster: they didn't. Router rule now: for any task that makes something or needs a tool, ask the `quartermaster` once and say what it found. First use, on his browser problem (TinyFish logged out every 15 minutes): the Hands list has nothing that fits, but Claude already has it: the desktop app's browser pane (sign-ins persist), Claude in Chrome and computer use, which were on the "switch off" list. Kept on; capability map updated. This covers Claude on the Mac only: Codex and the iPhone still need Codex's shared-browser plan (Desk `shared-browser-design`), so both routes stay open (also: Canva connected, GitHub connector needs reconnect, Remote Desktop Commander unfinished, Higgsfield not added). TinyFish removal and the Higgsfield Katana draft are on the Desk and the to-do; the browser set-up is on Mac day.
+
 ## 2026-10-09: Codex browser and Higgsfield map promo
 - Charlie asked to keep the Higgsfield work in Codex and chose a cinematic glowing map for a promotional short on Instagram and X. Katana access and generation remain unverified; no credits spent.
 - Charlie chose a browser shared by him and the AI, fitted to iPhone 16 Plus, after reporting slow TinyFish use and repeated logins. A private home-screen web app using Chromium/Selkies was proposed; design approval, spec, implementation and hosting are still pending.

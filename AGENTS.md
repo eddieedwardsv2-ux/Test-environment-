@@ -31,7 +31,9 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   Read Hands decisions (`research/hands/README.md`); update **Next step** before stopping.
 - **Never stop at "can't".** Try 3 methods, then say what's blocked and the workaround.
 - **Backtrack every miss:** where you looked, why you missed it, fix the route.
-- **Reuse before building:** `system/capability-map.md` first.
+- **Reuse before building:** `system/capability-map.md` first (its "Already available"
+  list too). For any task that makes something or needs a tool, ask the `quartermaster`
+  agent once if a tool would do it better, and say what it found (Charlie, 2026-10-09).
 - **Current beats history:** this router, current-focus and brain index.md
   files are "now"; `decisions.md` and log.md files are history.
 - **Parallel only where safe:** one integration step edits shared files;

@@ -56,9 +56,10 @@ list (`/skills`, or `/skill-doctor`). Update this table when they change.
 
 | Kind | What's there (2026-10-09) | Use for |
 |---|---|---|
-| claude.ai connectors (connected) | GitHub, Gmail, Google Calendar, Google Docs, HyperFrames by HeyGen, Moda (slides and designs), Notion, vidIQ | email, calendar, docs, video projects, designs, notes, YouTube research |
-| claude.ai connectors (not finished) | Canva (sign-in incomplete), Higgsfield (not added yet) | thumbnails, images |
-| claude.ai skills | docs, deep-research, skill-creator, google-workspace; pdf, pptx, docx, xlsx (Charlie switching these off; weekly audit checks if missed) | documents, research reports, building skills, Office files |
+| claude.ai connectors (connected, `ListConnectors` 9 Oct evening) | Canva, Gmail, Google Calendar, Google Docs, Google Drive, HyperFrames by HeyGen, Moda (slides and designs), Notion, vidIQ | email, calendar, docs, video projects, designs, notes, YouTube research |
+| claude.ai connectors (not finished) | GitHub (needs reconnect; the repo's own Git access works), Remote Desktop Commander (sign-in incomplete), Higgsfield (not added) | thumbnails, images, video |
+| **Browsers that keep you signed in** (found 9 Oct after a miss: TinyFish logged out every 15 minutes) | Claude desktop app's own browser pane (`built-in-browser` skill: sign-ins persist), Claude in Chrome (`chrome-browser` skill: Charlie's real Chrome and logins), `computer-use`. Need the desktop app on the Mac; a cloud session can drive them when linked to his computer | websites with logins (Higgsfield and Katana drafts), watching or taking over from the AI |
+| claude.ai skills | docs, deep-research, skill-creator, google-workspace; pdf, pptx, docx, xlsx (Charlie switching these off; weekly audit checks if missed); keep `built-in-browser`, `chrome-browser` and `computer-use` on (row above) | documents, research reports, building skills, Office files |
 | Claude Code built-in skills | artifact-design, dataviz, code-review, security-review, simplify, loop, run, update-config | pages, charts, reviews, recurring jobs, settings |
 | Routines (scheduled) | "Weekly AI OS audit" (Fri 8:59 UK), "Weekly Hands Brain update" (Sat 8:47 UK), "Flashcard check" (daily, parked feature) | things that run without Charlie |
 | Tried, kept out of the repo | HyperFrames skills (`research/hands/tried.json`) | channel videos, installed in scratch when needed |

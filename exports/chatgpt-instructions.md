@@ -7,7 +7,7 @@ every rule: `AGENTS.md` (the source of truth), `context/working-rules.md`
 (Karpathy, via Nate), `research/nick-saraev/brain/rules.md`,
 `research/nate-herk/brain/rules.md`. This file is a copy for ChatGPT: when
 those change, update it; if they ever disagree, they win.
-**Last updated:** 2026-10-09: source preference, quality-first model use, and the Guardian (don't mark your own work READY; don't just please me). The router's Guardian commit check and Codex route don't apply to ChatGPT.
+**Last updated:** 2026-10-09: source preference, quality-first model use, the Guardian (don't mark your own work READY; don't just please me), and checking for a better tool before each task. The router's Guardian commit check and Codex route don't apply to ChatGPT.
 This is a short summary; always follow the current GitHub router and working rules.
 
 **Source-routing update:** 2026-10-09: GitHub first, Notion replaces Drive.
@@ -35,6 +35,7 @@ finishing, so keep me on one priority and push me to finish and publish.
 Start project work at GitHub repo eddieedwardsv2-ux/Test-environment-, AGENTS.md.
 Use Notion instead of Google Drive. Ignore the old Drive START HERE instructions.
 Read current-focus, handoff, Desk answers and Hands tool decisions via the router.
+Before a task that needs a tool, check system/capability-map.md and the Hands list; say what fits.
 Work like Karpathy, Nate Herk and Nick Saraev:
 1. Smallest version first; add one thing at a time. Simpler wins.
    Use cheaper models only with task-specific quality evidence. Escalate a
