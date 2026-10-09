@@ -32,6 +32,7 @@ deleting them (history stays in `decisions.md`).
 - [ ] Creative Claw (for YouTube production): sign-in unfinished, no output tested
 - [ ] Lesson slides (NC9J9KZkE5Wb1vDKgntoGq) still use old names (Decision Desk, ENATE, Hands Brain): edit on the page
 - [ ] Watch Path page's source was only on branch `nate-watch-path`; now on main at `research/nate-herk/watch-path.html`; it still names old files (`MISSION.md`), so refresh it with the two oldest lessons, then add its source to `system/pages.md`
+- [ ] Repo `eddie-ed` (last pushed 8 Oct) exists on GitHub but nothing in this OS mentions it: look at it with Charlie's OK
 - [ ] Older sessions in the `my-claude-skills` repo (6 Oct) ended waiting on Charlie: a "yes" to write the agency-validation research into that Second Brain; retired-repo deletions and a reply owed by a contact; lesson 1 quiz answer (four parts of an agent). Check if still wanted.
 - [ ] Offered, not agreed: a one-command save script
 
