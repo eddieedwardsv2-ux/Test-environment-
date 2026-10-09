@@ -83,13 +83,13 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
       <div class="card"><h3>3. One health check (the <code>audit</code> skill)</h3>
         <div class="trio"><div><span class="k">What it is</span><p>A check-up that scores the OS and spots wrong, stale or clashing notes. Now one skill instead of two, plus a "context doctor" that shows what Claude reads every message.</p></div>
         <div><span class="k">Why</span><p>Nate: re-check your set-up every time a new model comes out. Clutter quietly makes answers worse.</p></div>
-        <div><span class="k">How you use it</span><p>Weekly on Fridays, and after any model switch. Just say "audit".</p></div></div></div>
+        <div><span class="k">How you use it</span><p>Nothing: it runs by itself every Friday at 8:59am and notifies your phone. After a model switch, say "audit".</p></div></div></div>
       <div class="card"><h3>4. ENATE (Nate's brain)</h3>
         <div class="trio"><div><span class="k">What it is</span><p>Everything Nate teaches about building an AI OS, boiled down from 69 of his videos into 43 ideas and 43 rules, each with his exact words and a timestamp.</p></div>
         <div><span class="k">Why</span><p>So we follow a proven method instead of guessing, and can ask "what would Nate's method say?" any time. "Nate" now means the real person and his new videos; ENATE is our copy of his know-how.</p></div>
         <div><span class="k">How you use it</span><p>Ask "what does ENATE say about…". New Nate videos get added with the <code>brain-ingest</code> skill.</p></div></div></div>
       <div class="card"><h3>5. The Hands Brain</h3>
-        <div class="trio"><div><span class="k">What it is</span><p>Every tool, skill and plugin from The Next New Thing's weekly shows, newest first, ranked in 15 groups. Older tools get crossed out when something newer replaces them.</p></div>
+        <div class="trio"><div><span class="k">What it is</span><p>Every tool, skill and plugin from The Next New Thing's weekly shows (newest first) and the skills.sh leaderboard of most-installed skills: 95 so far, ranked in 15 groups. Older tools get crossed out when something newer replaces them, and skills you already have are marked.</p></div>
         <div><span class="k">Why</span><p>Tools change every week. You shouldn't have to watch every video or ask me what each one is. It also links each tool to the ENATE idea it fits.</p></div>
         <div><span class="k">How you use it</span><p>Open the map, tap a dot. Ask "what's the best free tool for…". Weekly update: "update the Hands Brain".</p></div></div></div>
       <div class="card"><h3>6. Charlie's Brain (the map)</h3>
@@ -170,6 +170,8 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
         <tr><td>Quotes are word for word</td><td class="ok">Pass</td><td>148 of 148; one only looked wrong because it crosses a timestamp line.</td></tr>
         <tr><td>Repo check and context doctor</td><td class="ok">Pass</td><td>0 errors; about 8,000 characters read per message; nothing hidden.</td></tr>
         <tr><td>A brand-new session finds the Desk, the Hands Brain and the week-38 pause point</td><td class="ok">Pass</td><td>All found from the rulebook alone.</td></tr>
+        <tr><td>Audit review: is every part checked? (9 Oct)</td><td class="fix">Fixed</td><td>Hands Brain quotes, groups and freshness are now checked on every save; proved by breaking a quote on purpose.</td></tr>
+        <tr><td>Weekly audit actually runs</td><td class="fix">Fixed</td><td>Scheduled every Friday at 8:59am UK time.</td></tr>
       </tbody></table></div>
   </section>
 

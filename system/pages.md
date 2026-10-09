@@ -16,3 +16,12 @@ by publishing the same source file again (keeps the link).
 
 Check any page looks right: `python3 tools/screenshot.py <page>`, then look
 at the PNGs (needs `pip install playwright` each cloud session).
+
+## Older lesson pages (made before this repo's current layout)
+Their "In your repo" sections name `MISSION.md` and `NOTES.md` from the first teaching set-up; today's equivalents are `AGENTS.md` and `context/`.
+
+| Page | Link |
+|---|---|
+| What Makes an Agent (lesson 1, quiz) | https://claude.ai/artifact/CRvv2AY6mrwp2azFjsXHRa |
+| The Agent Recipe (reference sheet) | https://claude.ai/artifact/RYSSnQtwR5a7RDqRJELzkZ |
+| Nate Herk Watch Path (20 videos, ticks saved in your browser) | https://claude.ai/artifact/GWCvFJTreaJUAXFg9z4Kxr |
