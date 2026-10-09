@@ -38,10 +38,11 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   files are "now"; `decisions.md` and log.md files are history.
 - **Parallel only where safe:** one integration step edits shared files;
   model choices follow `context/working-rules.md` (quality before savings).
-- **Main pages stay current:** after every run, rebuild and republish Charlie's
-  Brain, ENATE and the Hands Brain (`system/pages.md`); `tools/pages_status.py --build`
-  lists every page behind its source.
-- **Prove what you report** (done, saved, pushed); on big tasks the `guardian`
+- **Main pages stay current:** once at the end of each run (not after every commit),
+  `tools/pages_status.py --build`, then republish every page it lists (`system/pages.md`).
+- **Prove what you report** (done, saved, pushed). **Guardian paused until the end of 10 Oct**
+  (Charlie: close broken loops and prove the system first; the audit warns, back on 11 Oct).
+  Otherwise, on big tasks the `guardian`
   agent, not the worker, says READY. `tools/audit.py` runs on
   every push and before an agent finishes (its Guardian check runs locally only).
 - **Same routes in Codex** (it has no helpers, hooks or Desk): open the agent

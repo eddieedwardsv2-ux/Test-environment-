@@ -263,6 +263,10 @@ if not (ROOT / ".agents/skills").resolve() == (ROOT / ".claude/skills").resolve(
 #    Limits: shallow clones (GitHub Actions) and copies without Git skip this; it proves a
 #    report was filed, not that the Guardian wrote it.
 GUARD_BASE, GUARD_FROM, GUARD_FILES = "0696628b090127431a86dfbb011f5fcadca50a37", 1791565228, 4
+# Paused by Charlie (2026-10-09) until the end of 10 Oct to close broken loops and prove the
+# system works first: Guardian problems warn instead of fail. Back on by itself on 11 Oct.
+GUARD_PAUSED_UNTIL = date(2026, 10, 10)
+guard_flag = warn if date.today() <= GUARD_PAUSED_UNTIL else err
 GENERATED = re.compile(r"(brain/map/|system/reader/reader\.html|research/hands/site/|research/hands/tools\.json|audits/guardian/)")
 TRAILER = re.compile(r"^Checked-by: guardian \((READY|NOT READY)\) (\S+)", re.M)
 def _git(*a): return subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True)
@@ -290,14 +294,14 @@ for entry in (_log.stdout.split("\x1e") if _log.returncode == 0 else []):
                    else f"says Guardian {m.group(1)}, but {path} doesn't open with that verdict"
                    if first != f"**{m.group(1)}**" else "")
         if problem and not checked_later:
-            err(f"commit {sha[:7]} {problem}")
+            guard_flag(f"commit {sha[:7]} {problem}")
         checked_later = checked_later or not problem
         continue
     if checked_later:
         continue
     hand = [f for f in _changed(sha, merge) if not GENERATED.search(f)]
     if len(hand) >= GUARD_FILES:
-        err(f"commit {sha[:7]} changes {len(hand)} files with no Guardian check: run the guardian agent, "
+        guard_flag(f"commit {sha[:7]} changes {len(hand)} files with no Guardian check: run the guardian agent, "
             f"save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'")
 
 # 10. Relation links (Charlie, 2026-10-09: "scan our systems and check for relation links").

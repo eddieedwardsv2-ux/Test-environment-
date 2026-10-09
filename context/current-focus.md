@@ -14,6 +14,11 @@ recorded (with their consent) for the YouTube channel. Project:
 **Done:** Standard AI-OS v1 (2026-10-08): router confirmed, standard
 `system/standard-ai-os-v1.md`, blank copy `templates/standard-ai-os-v1/`.
 
+**10 Oct (Charlie, 9 Oct late): close the broken loops and prove the system works; Guardian
+paused until then (back 11 Oct).** Loops to close and prove, in `context/todo.md`: the Desk wake
+(press Send, a session wakes), the audit hole on merges, the frontend-design verdict, Higgsfield
+sign-in and the Katana draft (Mac), Codex's browser plan, plugins switched on.
+
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
 **Next step (latest Codex request, 2026-10-09):** resolve the proposed shared

@@ -37,5 +37,10 @@ his AI OS is organised.
   links. If the saved content doesn't cover it, say so and give the closest
   point.
 - Separate what Nate did from what Charlie's repo should do.
+- When the question involves a tool, skill, plugin or MCP, read the Quartermaster's view
+  yourself (helpers can't call each other): the mini-router at the top of
+  `research/hands/README.md`, then grep that tool's entry in `research/hands/tools.json`
+  (never load it whole) and `research/hands/tried.json` for Charlie's verdicts. Add a line
+  **"Quartermaster:"** with its rank, cost and any verdict.
 - Plain UK English, under 250 words.
 - End with one concrete action Charlie can take next.

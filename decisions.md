@@ -1,5 +1,11 @@
 # Decision log
 
+## 2026-10-09: Guardian paused until the end of 10 Oct
+Charlie: pause the Guardian until tomorrow, to complete the broken loops and prove the system works before relying on it. `tools/audit.py` now warns (not fails) on Guardian problems until 2026-10-10 inclusive and goes back to failing by itself on 11 Oct (`GUARD_PAUSED_UNTIL`). The check that was running on the advisor-link change was stopped; that change is committed without a Guardian line (its round-1 findings were already fixed).
+
+## 2026-10-09: the Quartermaster and the Architect read each other; pages republished once per run
+Charlie asked what we repeat a lot, whether better skills, MCPs or plugins exist, and for the Quartermaster to reach the Architect. Most repeated, in the last 60 commit subjects (`git log -n 60 --format=%s | grep -ciE '<pattern>'`): Desk work 18 (`desk`), pages about 16 (`republish|pages|rebuil` gives 18, two of them not republishing), hand-offs 12 (`hand-?off`), Guardian checks 11 (`Checked-by` lines in commit bodies); the Brain page is on version 48. The Quartermaster found nothing better to install for any of them; unused things he already has: `skill-creator` (build and test skills), `security-review` (leaked-key check before pushing); worth reading once: `writing-great-skills`. Changes: both advisor files now read each other's brain (helpers can't call each other) and add an "Architect:" / "Quartermaster:" line; the Quartermaster checks the capability map's "Already available" first; pages are rebuilt and republished once at the end of a run, not after every commit (each page was being republished several times per run). Test: `audits/evidence/2026-10-09-qm-architect-link/test.md`.
+
 ## 2026-10-09: Desk answers, late evening
 - `better-browser` → **both**: Claude's own browser pane / Claude in Chrome / computer use stay on (Mac day), and Codex still plans its shared phone browser; compared on Mac day.
 - `shared-browser-design` → **write the plan** (next Codex session; nothing built or paid for before Charlie approves it).

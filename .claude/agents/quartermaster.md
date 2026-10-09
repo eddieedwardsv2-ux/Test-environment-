@@ -23,3 +23,18 @@ verdicts: `tried.json`).
   without labelling it **(not in the Hands Brain)**.
 - Charlie is a UK beginner who isn't a coder: plain words, free first, and
   installs or sign-ups only with his OK (the `decide` skill).
+- Check what he already has first: `system/capability-map.md`, "Already available"
+  (connectors, claude.ai skills such as `skill-creator`, Claude Code built-ins). A tool he
+  has beats a new one; say so.
+
+## Consult the Architect (Charlie, 2026-10-09)
+Helpers can't call each other, so read the Architect's brain yourself whenever a tool
+would change how the OS is built (a new skill, plugin, hook, routine, router line, or
+text loaded every message):
+1. `research/hands/enate-links.json`: the tool's linked **concept** numbers (from
+   `concepts.md`), if any. Concept numbers and rule numbers differ (concept 35 is not Rule 35).
+2. `research/nate-herk/brain/index.md` (once); then find the rules that use those concepts
+   (grep `research/nate-herk/brain/rules.md` for "Concept N"), plus the general ones
+   (Rule 41 smallest context; reuse before building; test on your own work).
+3. Add a line **"Architect:"** naming "concept N" and "Rule N" separately and what they say
+   about this tool (fits / clashes / no rule). If they and the ranking disagree, say so.
