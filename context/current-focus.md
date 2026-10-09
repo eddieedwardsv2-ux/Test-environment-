@@ -21,16 +21,15 @@ recorded (with their consent) for the YouTube channel. Project:
 Chief's Desk), and every Desk card is answered or closed. The re-run audit scored
 64/100 (`audits/audit-2026-10-09-112239-a7c3.md`); Charlie chose fix 1 only (this
 note); fixes 2-5 stay open in that report. Next to build, in order: real model
-comparisons under `system/model-usage.md` (no cheaper route is promoted yet), then
-the journey video (Mix style). Full list: `context/todo.md`. Nate's six-phrases DM
+comparisons under `system/model-usage.md` (no cheaper route is promoted yet); the
+journey video is parked. Full list: `context/todo.md`. Nate's six-phrases DM
 is ingested (concept 44, Rule 44: finish with VERIFIED / NOT VERIFIED).
 Later the same day: model comparisons 1-2 done (9/9 each), so `architect` and
 `quartermaster` run on Sonnet with a weekly spot-check in the Friday audit; new `connect`
 skill (Canva connected and proven); Small Business's 44 skills mapped in the Quartermaster
 (not installed). **Next:** check the 5 plugins Charlie ticked are enabled
-(`ListPlugins`), test each once with `try-tool`; then the journey video (Mix style).
-9 Oct evening: Mix improved from Charlie's notes (scene 3 cut, growing brain;
-`brainstorms/2026-10-09-journey-video-thesis.md`); waiting on his notes on the page.
+(`ListPlugins`), test each once with `try-tool`. 9 Oct evening: the Guardian built and its report
+required for big commits (`context/working-rules.md`); journey video parked (parked 9 Oct, see Parking Lot).
 GitHub first; Notion replaces Drive (see `AGENTS.md`).
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
@@ -56,6 +55,9 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Parking Lot
+- Journey video (parked by Charlie 2026-10-09): Mix draft with the growing brain is
+  ready for his notes (`system/pages.md`, thesis `brainstorms/2026-10-09-journey-video-thesis.md`);
+  then a video file with voice-over, and later Obsidian footage on the Mac
 - Nick Saraev: build/ship lessons, brain-ingest of his 4 courses, his advice
   as a teaching programme (parked 2026-10-07; still parked for the set-up kit)
 - Flashcards (app, new cards, review): came from Nick's teaching; parked
