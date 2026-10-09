@@ -29,6 +29,8 @@ Later the same day: model comparisons 1-2 done (9/9 each), so `architect` and
 skill (Canva connected and proven); Small Business's 44 skills mapped in the Quartermaster
 (not installed). **Next:** check the 5 plugins Charlie ticked are enabled
 (`ListPlugins`), test each once with `try-tool`; then the journey video (Mix style).
+9 Oct evening: Mix improved from Charlie's notes (scene 3 cut, growing brain;
+`brainstorms/2026-10-09-journey-video-thesis.md`); waiting on his notes on the page.
 GitHub first; Notion replaces Drive (see `AGENTS.md`).
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;

@@ -1,0 +1,384 @@
+<title>Journey Video Drafts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=JetBrains+Mono:wght@400;700&family=Oswald:wght@500;700&display=swap">
+<style>
+/* Layout: a 16:9 "screen" that plays the journey, a style picker above it, and a feedback card below.
+   Page chrome is quiet so each video style carries its own look. */
+:root{
+  --bg:#f2f3f5; --panel:#ffffff; --fg:#151a22; --muted:#5b6574; --line:#d9dde3; --accent:#0e6d9c; --warn:#a85d00;
+  --ui:'DM Sans',system-ui,sans-serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0e14;--panel:#141922;--fg:#e8ecf3;--muted:#98a3b3;--line:#273041;--accent:#5ec3f0;--warn:#f0a64a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b0e14;--panel:#141922;--fg:#e8ecf3;--muted:#98a3b3;--line:#273041;--accent:#5ec3f0;--warn:#f0a64a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 var(--ui)}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:22px 60px;display:grid;gap:16px}
+h1{font:800 clamp(24px,5vw,34px)/1.1 'Archivo',var(--ui);margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;max-width:68ch}
+.picker{display:flex;gap:8px;flex-wrap:wrap}
+.pick{font:600 14px var(--ui);border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:999px;padding:8px 14px;cursor:pointer;display:flex;gap:8px;align-items:center}
+.pick[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.pick small{font:12px var(--mono);color:var(--muted)}
+.pick .fav{color:var(--warn)}
+/* the screen */
+.screen{position:relative;width:100%;max-width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;container-type:inline-size;background:#000;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.stage{position:absolute;inset:0}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{font:600 14px var(--ui);border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.dots{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0}
+.dots button{width:26px;height:8px;border-radius:99px;border:0;background:var(--line);cursor:pointer;padding:0}
+.dots button.on{background:var(--accent)}
+.time{font:13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:10px}
+.card h2{font:800 18px 'Archivo',var(--ui);margin:0}
+.stars{display:flex;gap:6px}
+.stars button{font:22px/1 var(--ui);background:none;border:0;color:var(--line);cursor:pointer;padding:2px}
+.stars button.on{color:var(--warn)}
+textarea{width:100%;min-height:80px;font:15px/1.4 var(--ui);color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.status{font-size:14px;color:var(--muted)}
+label.chk{display:flex;gap:8px;align-items:center;font-weight:600;cursor:pointer}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- shared scene parts (sizes in cqw so they scale with the screen) ---------- */
+.sc{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:6cqw 7cqw;gap:1.6cqw}
+.sc .kicker{font-size:1.6cqw;letter-spacing:.3cqw;text-transform:uppercase}
+.sc .title{margin:0;line-height:1.05;text-wrap:balance}
+.sc ul{margin:0;padding:0;list-style:none;display:grid;gap:.9cqw}
+.sc .stat{position:absolute;right:6cqw;bottom:5cqw;text-align:right}
+.in{opacity:0;animation:rise .7s ease forwards}
+@keyframes rise{from{opacity:0;transform:translateY(2cqw)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.6)}70%{opacity:1;transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
+@keyframes slam{0%{opacity:0;transform:scale(2.4) rotate(-4deg)}60%{opacity:1;transform:scale(.96) rotate(1deg)}100%{opacity:1;transform:none}}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.in,.s-kin .title,.s-kin .stat,.s-mix .band{animation:none;opacity:1}}
+
+/* 1 · Glass (Nate's dark look) */
+.s-glass{background:radial-gradient(60cqw 40cqw at 80% 0%,#12304a,#05070d 70%);color:#e8ecf4;font-family:'DM Sans',sans-serif}
+.s-glass .kicker{color:#38bdf8;font-family:'JetBrains Mono',monospace}
+.s-glass .title{font:800 6cqw/1.05 'Archivo',sans-serif}
+.s-glass li{font-size:2.3cqw;color:#c9d2e3;padding:1cqw 1.6cqw;background:rgba(12,17,28,.7);border:1px solid rgba(255,255,255,.1);border-radius:1cqw;width:fit-content}
+.s-glass .stat b{display:block;font:800 7cqw/1 'Archivo',sans-serif;color:#fbbf24}
+.s-glass .stat span{font:1.5cqw 'JetBrains Mono',monospace;color:#8b94a8}
+.s-glass canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+
+/* 2 · Mix (Charlie's pick, 9 Oct: Glass's dark start, Terminal's typed title, Kinetic's bold colour per scene,
+   and a brain that grows behind the words: router in the middle, Elders branching out, signals firing) */
+.s-mix{background:radial-gradient(70cqw 50cqw at 78% 45%,#10283d,#05070d 70%);color:#eef1f6;font-family:'DM Sans',sans-serif;padding-left:9cqw;padding-right:44cqw;justify-content:center}
+.s-mix canvas{position:absolute;inset:0;width:100%;height:100%}
+.s-mix .band{position:absolute;left:0;top:0;bottom:0;width:3.4cqw;background:var(--k);animation:rise .5s both}
+.s-mix .kicker,.s-mix .title,.s-mix ul,.s-mix .stat{position:relative}
+.s-mix .kicker{font:700 1.6cqw 'JetBrains Mono',monospace;color:var(--k)}
+.s-mix .title{font:800 4.4cqw/1.1 'JetBrains Mono',monospace;color:#ffffff;min-height:10cqw}
+.s-mix .cur{display:inline-block;width:.55em;height:.95em;background:var(--k);vertical-align:-.1em;animation:blink 1s steps(1) infinite}
+.s-mix li{font:600 2.1cqw 'DM Sans',sans-serif;color:#eef1f6;padding:.7cqw 1.3cqw;border-left:.5cqw solid var(--k);background:rgba(5,7,13,.72);width:fit-content}
+.s-mix .stat{position:relative;right:auto;bottom:auto;text-align:left;width:fit-content;margin-top:.6cqw;background:var(--k);color:#05070d;padding:1cqw 1.8cqw;border-radius:.6cqw;display:flex;gap:1.2cqw;align-items:baseline}
+.s-mix .stat b{font:700 5cqw/1 'Oswald',sans-serif}
+.s-mix .stat span{font:700 1.4cqw 'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.15cqw}
+
+/* 3 · Terminal */
+.s-term{background:#07120b;color:#b6f5c7;font-family:'JetBrains Mono',monospace}
+.s-term .bar{position:absolute;left:0;right:0;top:0;height:3.2cqw;background:#10261a;display:flex;gap:.8cqw;align-items:center;padding-left:1.6cqw}
+.s-term .bar i{width:1.1cqw;height:1.1cqw;border-radius:50%;background:#3b5d47}
+.s-term .kicker{color:#5fe08a}
+.s-term .title{font:700 4.6cqw/1.15 'JetBrains Mono',monospace;color:#e8ffe9}
+.s-term li{font-size:2cqw;color:#9fdcb0}
+.s-term li:before{content:"> ";color:#5fe08a}
+.s-term .cur{display:inline-block;width:.9em;height:1em;background:#5fe08a;vertical-align:-.12em;animation:blink 1s steps(1) infinite}
+.s-term .stat b{display:block;font:700 6cqw/1 'JetBrains Mono',monospace;color:#5fe08a}
+.s-term .stat span{font-size:1.5cqw;color:#6fae84}
+
+/* 4 · Kinetic (bold YouTube energy) */
+.s-kin{color:#111;font-family:'Oswald',sans-serif}
+.s-kin .kicker{font:700 2cqw 'Oswald',sans-serif;background:#111;color:#fff;width:fit-content;padding:.4cqw 1.2cqw}
+.s-kin .title{font:700 8.4cqw/.95 'Oswald',sans-serif;text-transform:uppercase;animation:slam .6s cubic-bezier(.2,.9,.3,1.2) both}
+.s-kin li{font:500 2.6cqw 'Oswald',sans-serif;text-transform:uppercase}
+.s-kin .stat{background:#111;color:#fff;padding:1.2cqw 2cqw;animation:pop .5s .9s both}
+.s-kin .stat b{display:block;font:700 6.4cqw/1 'Oswald',sans-serif}
+.s-kin .stat span{font:500 1.6cqw 'Oswald',sans-serif;letter-spacing:.2cqw;text-transform:uppercase}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Our journey: video drafts</h1>
+    <p class="sub">The same story, about a minute long. <b>Mix</b> is the chosen style; it now has 8 scenes (scene 3 cut, as you asked) and a brain that grows behind the words: the router in the middle, the Elders branching out, and signals firing from new information to the Elder that handles it. The other styles stay for comparison. Notes save to this page; Claude reads them next time.</p>
+  </header>
+
+  <div class="picker" id="picker" role="group" aria-label="Video style"></div>
+
+  <div class="screen" id="screen"><div class="stage" id="stage"></div></div>
+
+  <div class="controls">
+    <button class="btn primary" id="play">Play</button>
+    <button class="btn" id="restart">Restart</button>
+    <div class="dots" id="dots" aria-label="Scenes"></div>
+    <span class="time" id="time">0:00</span>
+  </div>
+
+  <section class="card" aria-labelledby="fbh">
+    <h2 id="fbh">Your notes on <span id="fbname"></span></h2>
+    <div class="stars" id="stars" role="group" aria-label="Rating"></div>
+    <label class="chk" for="fav"><input type="checkbox" id="fav"> This is my favourite</label>
+    <label for="note" class="status">What to change (pace, words, colours, a scene to cut or add)</label>
+    <textarea id="note"></textarea>
+    <div class="row"><button class="btn primary" id="send">Save my notes</button><span class="status" id="st"></span></div>
+  </section>
+</div>
+
+<script>
+const SCENES = [
+ {date:"4 to 9 October 2026", kicker:"A beginner's build log", title:"From zero to my own AI OS in six days", lines:["A UK beginner", "No coding background", "Just Claude Code on a phone"], stat:["6","days"]},
+ {date:"4 October", kicker:"Day 1 · the first lesson", title:"What actually makes an agent?", lines:["Brain: the model", "Hands: the tools", "Know-how: skills", "Notebook: memory"], stat:["4","parts"]},
+ {date:"8 October", kicker:"Building the OS", title:"A rulebook that points, not a warehouse", lines:["One router in the middle", "Everything else one step away", "Saved to GitHub, every change undoable"], stat:["266","notes mapped"]},
+ {date:"8 October", kicker:"Less is more", title:"Less context, better answers", lines:["Anthropic cut 80% of its own instructions", "We cut our rulebook by 40%", "Same answers in a fresh-session test"], stat:["40%","smaller"]},
+ {date:"8 October", kicker:"You stay the Chief", title:"One Desk instead of sixteen questions", lines:["Small, undoable work just happens", "Real choices wait on one page", "Tap an answer, press Send"], stat:["16 → 1","place to decide"]},
+ {date:"9 October", kicker:"Giving the brain hands", title:"The Quartermaster ranks the best tools every week", lines:["New tools in, old ones crossed out", "Ranked by what I actually need", "Runs by itself every Saturday"], stat:["95","tools ranked"]},
+ {date:"9 October", kicker:"Prove it, don't claim it", title:"Every answer gets checked", lines:["Broke a quote on purpose: caught", "23 planted faults, 23 caught", "An audit runs itself every Friday"], stat:["23/23","faults caught"]},
+ {date:"What's next", kicker:"A brain that keeps growing", title:"Next: set up a friend's AI OS, on camera", lines:["New Elders join as it learns", "Built in public, one step at a time"], stat:["195","saves so far"]}
+];
+const STYLES = [
+ {id:"mix", name:"Mix", note:"chosen · growing brain"},
+ {id:"glass", name:"Glass", note:"Nate's dark look"},
+ {id:"term", name:"Terminal", note:"typed out"},
+ {id:"kin", name:"Kinetic", note:"bold, fast"}
+];
+const KIN = ["#ffd23f","#3ec1ff","#ff6b6b","#7cf29a","#c69cff","#ff9f43","#3ec1ff","#ffd23f"];
+const DUR = 7000;
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let style = "mix", idx = 0, playing = false, t0 = 0, elapsed = 0, raf = 0, typer = 0, fb = {}, db = null;
+try { const s = localStorage.getItem("journey-style"); if (STYLES.some(x => x.id === s)) style = s; } catch(e) {}
+
+const stage = document.getElementById("stage");
+function scene(i){
+  const s = SCENES[i];
+  clearInterval(typer);
+  const d = (k) => `style="animation-delay:${k}s"`;
+  const lines = s.lines.map((l, k) => `<li class="in" ${d(1 + k * .45)}>${esc(l)}</li>`).join("");
+  const stat = `<div class="stat in" ${d(1.4 + s.lines.length * .45)}><b>${esc(s.stat[0])}</b><span>${esc(s.stat[1])}</span></div>`;
+  brain.stop();
+  if (style === "glass"){
+    stage.innerHTML = `<div class="sc s-glass"><canvas id="net"></canvas><div class="kicker in">${esc(s.date)} · ${esc(s.kicker)}</div><h2 class="title in" ${d(.3)}>${esc(s.title)}</h2><ul>${lines}</ul>${stat}</div>`;
+    net(i);
+  } else if (style === "mix"){
+    stage.innerHTML = `<div class="sc s-mix" style="--k:${KIN[i]}"><canvas id="brain"></canvas><div class="band"></div><div class="kicker in">$ ${esc(s.date)} · ${esc(s.kicker)}</div><h2 class="title"><span id="ty"></span><span class="cur"></span></h2><ul>${lines}</ul>${stat}</div>`;
+    brain.start(document.getElementById("brain"), i);
+    typeTitle(s.title, 26);
+  } else if (style === "term"){
+    stage.innerHTML = `<div class="sc s-term"><div class="bar"><i></i><i></i><i></i></div><div class="kicker in">$ git log --date ${esc(s.date)}</div><h2 class="title"><span id="ty"></span><span class="cur"></span></h2><ul>${lines}</ul>${stat}</div>`;
+    typeTitle(s.title, 28);
+  } else {
+    stage.innerHTML = `<div class="sc s-kin" style="background:${KIN[i]}"><div class="kicker in">${esc(s.date)}</div><h2 class="title">${esc(s.title)}</h2><ul>${lines}</ul>${stat}</div>`;
+  }
+  document.querySelectorAll("#dots button").forEach((b, k) => b.classList.toggle("on", k <= i));
+}
+function typeTitle(txt, ms){
+  const el = document.getElementById("ty");
+  if (REDUCED){ el.textContent = txt; return; }
+  let n = 0;
+  typer = setInterval(() => { el.textContent = txt.slice(0, ++n); if (n >= txt.length) clearInterval(typer); }, ms);
+}
+// Glass background: a network that grows one cluster per scene, like the brain maps.
+function net(i){
+  const c = document.getElementById("net"); if (!c) return;
+  const r = c.getBoundingClientRect(), dpr = devicePixelRatio || 1;
+  c.width = r.width * dpr; c.height = r.height * dpr;
+  const x = c.getContext("2d"); x.scale(dpr, dpr);
+  let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+  const pts = []; for (let k = 0; k < 18 + i * 10; k++) pts.push([rnd() * r.width, rnd() * r.height, 1 + rnd() * 2.5]);
+  const cols = ["#38bdf8","#a78bfa","#34d399","#fbbf24","#f472b6"];
+  x.strokeStyle = "rgba(255,255,255,.07)";
+  pts.forEach((p, a) => pts.slice(a + 1).forEach(q => { if (Math.hypot(p[0] - q[0], p[1] - q[1]) < r.width * .12){ x.beginPath(); x.moveTo(p[0], p[1]); x.lineTo(q[0], q[1]); x.stroke(); } }));
+  pts.forEach((p, a) => { x.fillStyle = cols[a % 5]; x.beginPath(); x.arc(p[0], p[1], p[2], 0, 7); x.fill(); });
+}
+
+/* Mix background: the OS as a brain that grows scene by scene.
+   Each part has the scene it appears in (from) and, for trimmed notes, the scene it fades out (until).
+   ang/dist place it around the router, in units of the brain's radius. */
+const PARTS = [
+ {id:"router", label:"Router", job:"points the way", from:0, ang:0, dist:0, size:1.7, col:"#ffffff"},
+ {id:"skills", label:"Skills", job:"the hands", from:1, ang:155, dist:.78, size:1, col:"#7cf29a", leaves:5},
+ {id:"arch", label:"Architect", job:"how to build", from:2, ang:-35, dist:.85, size:1.2, col:"#3ec1ff", leaves:7},
+ {id:"desk", label:"Chief's Desk", job:"you decide", from:4, ang:-100, dist:.82, size:1.2, col:"#c69cff", leaves:0},
+ {id:"qm", label:"Quartermaster", job:"picks the tools", from:5, ang:35, dist:.88, size:1.2, col:"#ff9f43", leaves:7},
+ {id:"guard", label:"Guardian", job:"checks it's true", from:6, ang:98, dist:.8, size:1.1, col:"#ff6b6b", leaves:3},
+ {id:"maker", label:"Maker", job:"coming", from:7, ang:-158, dist:.9, size:.9, col:"#ffd23f", leaves:0, ghost:true},
+ {id:"teach", label:"Teacher", job:"coming", from:7, ang:-65, dist:1.18, size:.9, col:"#ffd23f", leaves:0, ghost:true}
+];
+// Notes linked straight to the router in scene 3 ("points, not a warehouse"); about 40% fade in scene 4 ("less context").
+const NOTES = Array.from({length:16}, (_, k) => ({ang:k * 22.5 + 8, dist:.42 + (k % 3) * .06, from:2, until:(k % 5 === 1 || k % 5 === 3) ? 3 : 99}));
+
+const brain = (() => {
+  let c, x, w, h, sc = 0, loop = 0, pulses = [], lastSpawn = 0, nodes = [], alpha = new Map();
+  function layout(){
+    const r = c.getBoundingClientRect(), dpr = devicePixelRatio || 1;
+    w = r.width; h = r.height; c.width = w * dpr; c.height = h * dpr;
+    x = c.getContext("2d"); x.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const cx = w * .77, cy = h * .52, R = Math.min(w * .16, h * .34);
+    const pos = (ang, dist, ox = cx, oy = cy) => [ox + Math.cos(ang * Math.PI / 180) * dist * R, oy + Math.sin(ang * Math.PI / 180) * dist * R];
+    nodes = [];
+    PARTS.forEach(p => {
+      const [px, py] = pos(p.ang, p.dist);
+      const n = {...p, x:px, y:py, r:w * .007 * p.size, kind:"part", key:p.id, until:99};
+      nodes.push(n);
+      for (let k = 0; k < (p.leaves || 0); k++){
+        const [lx, ly] = pos(p.ang - 70 + k * (140 / Math.max(1, p.leaves - 1)), .3, px, py);
+        nodes.push({key:p.id + "-" + k, kind:"leaf", parent:n, x:lx, y:ly, r:w * .0028, col:p.col, from:p.from, until:99});
+      }
+    });
+    NOTES.forEach((m, k) => { const [nx, ny] = pos(m.ang, m.dist); nodes.push({key:"note" + k, kind:"note", x:nx, y:ny, r:w * .0024, col:"#9fb3c8", from:m.from, until:m.until}); });
+    nodes.R = R; nodes.cx = cx; nodes.cy = cy;
+  }
+  const target = n => (sc >= n.from && sc < n.until) ? (n.ghost ? .55 : 1) : 0;
+  const live = () => nodes.filter(n => n.kind === "part" && n.id !== "router" && !n.ghost && target(n) > 0);
+  function spawn(now){
+    // A signal comes in from the edge, reaches the router, goes to an Elder, then out to one of its leaves.
+    const elders = live(); if (!elders.length) return;
+    const el = elders[Math.floor(Math.random() * elders.length)];
+    const leaves = nodes.filter(n => n.parent === el);
+    const a = Math.random() * Math.PI * 2, router = nodes[0];
+    const start = [router.x + Math.cos(a) * w * .3, router.y + Math.sin(a) * h * .6];
+    const path = [start, [router.x, router.y], [el.x, el.y]];
+    if (leaves.length){ const l = leaves[Math.floor(Math.random() * leaves.length)]; path.push([l.x, l.y]); }
+    pulses.push({path, t:now, col:el.col, el:el.key});
+  }
+  function draw(now){
+    x.clearRect(0, 0, w, h);
+    nodes.forEach(n => { const a = alpha.get(n.key) ?? 0, t = target(n); alpha.set(n.key, REDUCED ? t : a + (t - a) * .06); });
+    const A = n => alpha.get(n.key) || 0, router = nodes[0];
+    // faint halo that widens as the brain grows
+    const g = x.createRadialGradient(router.x, router.y, 0, router.x, router.y, nodes.R * (1.1 + sc * .06));
+    g.addColorStop(0, "rgba(62,193,255,.10)"); g.addColorStop(1, "rgba(62,193,255,0)");
+    x.fillStyle = g; x.fillRect(0, 0, w, h);
+    // links
+    nodes.forEach(n => {
+      if (n === router) return;
+      const a = A(n); if (a < .01) return;
+      const from = n.kind === "leaf" ? n.parent : router;
+      x.strokeStyle = n.kind === "part" ? hexA(n.col, .45 * a) : `rgba(255,255,255,${.14 * a})`;
+      x.lineWidth = n.kind === "part" ? w * .0016 : w * .0008;
+      x.setLineDash(n.ghost ? [w * .004, w * .004] : []);
+      x.beginPath(); x.moveTo(from.x, from.y); x.lineTo(n.x, n.y); x.stroke();
+    });
+    x.setLineDash([]);
+    // signals
+    pulses = pulses.filter(p => {
+      const k = (now - p.t) / 520, seg = Math.floor(k);
+      if (seg >= p.path.length - 1) return false;
+      const f = k - seg, [ax, ay] = p.path[seg], [bx, by] = p.path[seg + 1];
+      const px = ax + (bx - ax) * f, py = ay + (by - ay) * f;
+      x.fillStyle = hexA(p.col, seg === 0 ? f : 1);
+      x.shadowColor = p.col; x.shadowBlur = w * .012;
+      x.beginPath(); x.arc(px, py, w * .0042, 0, 7); x.fill();
+      x.shadowBlur = 0;
+      if (seg >= 1) { const e = nodes.find(n => n.key === p.el); if (e) e.flash = now; }
+      return true;
+    });
+    // nodes and labels
+    const fs = Math.max(9, w * .0125);
+    nodes.forEach(n => {
+      const a = A(n); if (a < .01) return;
+      const lit = n.flash && now - n.flash < 400 ? 1 - (now - n.flash) / 400 : 0;
+      x.fillStyle = hexA(n.col, a);
+      if (n.kind === "part"){ x.shadowColor = n.col; x.shadowBlur = w * (.01 + lit * .02) * a; }
+      x.beginPath(); x.arc(n.x, n.y, n.r * (1 + lit * .35), 0, 7); x.fill();
+      x.shadowBlur = 0;
+      if (n.kind !== "part") return;
+      x.textAlign = n.x < router.x - 4 ? "right" : n.x > router.x + 4 ? "left" : "center";
+      const off = x.textAlign === "center" ? 0 : (x.textAlign === "left" ? 1 : -1) * (n.r + w * .008);
+      const ty = n.y + (x.textAlign === "center" ? (n.y <= router.y ? -n.r - fs * 1.6 : n.r + fs * 1.3) : -fs * .15);
+      // dark backing so the leaf dots never run through the words
+      x.font = `700 ${fs}px 'JetBrains Mono', monospace`;
+      const bw = Math.max(x.measureText(n.label).width, n.job.length * fs * .45) + fs * .6;
+      const bx = x.textAlign === "left" ? n.x + off - fs * .3 : x.textAlign === "right" ? n.x + off - bw + fs * .3 : n.x - bw / 2;
+      x.fillStyle = `rgba(5,7,13,${.78 * a})`; x.fillRect(bx, ty - fs * 1.05, bw, fs * 2.35);
+      x.fillStyle = `rgba(255,255,255,${a})`;
+      x.fillText(n.label, n.x + off, ty);
+      x.font = `400 ${fs * .82}px 'DM Sans', sans-serif`; x.fillStyle = hexA(n.col, .9 * a);
+      x.fillText(n.job, n.x + off, ty + fs * 1.05);
+    });
+  }
+  function frame(now){
+    if (!REDUCED && sc >= 2 && now - lastSpawn > 650 - sc * 40){ spawn(now); lastSpawn = now; }
+    draw(now);
+    loop = REDUCED ? 0 : requestAnimationFrame(frame);
+  }
+  return {
+    start(canvas, i){
+      // keep what is already grown when moving forward; regrow from scratch when jumping back
+      if (i < sc) alpha.clear();
+      c = canvas; sc = i; pulses = []; layout(); cancelAnimationFrame(loop);
+      if (REDUCED) draw(performance.now()); else loop = requestAnimationFrame(frame);
+    },
+    stop(){ cancelAnimationFrame(loop); loop = 0; },
+    resize(){ if (c && c.isConnected){ layout(); if (REDUCED) draw(performance.now()); } }
+  };
+})();
+function hexA(hex, a){ const v = parseInt(hex.slice(1), 16); return `rgba(${v >> 16},${(v >> 8) & 255},${v & 255},${Math.max(0, Math.min(1, a))})`; }
+
+function tick(now){
+  if (!playing) return;
+  const t = elapsed + (now - t0), i = Math.min(SCENES.length - 1, Math.floor(t / DUR));
+  if (i !== idx){ idx = i; scene(idx); }
+  document.getElementById("time").textContent = fmt(t);
+  if (t >= SCENES.length * DUR){ playing = false; elapsed = 0; document.getElementById("play").textContent = "Play again"; return; }
+  raf = requestAnimationFrame(tick);
+}
+const fmt = ms => { const s = Math.floor(ms / 1000); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
+function play(){
+  if (playing){ playing = false; elapsed += performance.now() - t0; cancelAnimationFrame(raf); document.getElementById("play").textContent = "Play"; return; }
+  if (elapsed === 0){ idx = 0; scene(0); }
+  playing = true; t0 = performance.now(); document.getElementById("play").textContent = "Pause"; raf = requestAnimationFrame(tick);
+}
+function jump(i){ idx = i; elapsed = i * DUR; t0 = performance.now(); scene(i); document.getElementById("time").textContent = fmt(elapsed); }
+document.getElementById("play").onclick = play;
+document.getElementById("restart").onclick = () => { playing = false; cancelAnimationFrame(raf); elapsed = 0; jump(0); play(); };
+document.getElementById("dots").innerHTML = SCENES.map((s, k) => `<button aria-label="Scene ${k + 1}: ${esc(s.kicker)}"></button>`).join("");
+document.querySelectorAll("#dots button").forEach((b, k) => b.onclick = () => jump(k));
+window.addEventListener("resize", () => { if (style === "glass") net(idx); if (style === "mix") brain.resize(); });
+
+// style picker and feedback
+function drawPicker(){
+  document.getElementById("picker").innerHTML = STYLES.map(s => {
+    const f = fb[s.id] || {};
+    return `<button class="pick" data-s="${s.id}" aria-pressed="${s.id === style}">${esc(s.name)} <small>${esc(s.note)}${f.rating ? " · " + "★".repeat(f.rating) : ""}</small>${f.fav ? '<span class="fav">♥</span>' : ""}</button>`;
+  }).join("");
+}
+document.getElementById("picker").addEventListener("click", e => {
+  const b = e.target.closest("[data-s]"); if (!b) return;
+  style = b.dataset.s; try { localStorage.setItem("journey-style", style); } catch(e) {}
+  drawPicker(); loadForm(); scene(idx);
+});
+let rating = 0;
+function drawStars(){ document.getElementById("stars").innerHTML = [1,2,3,4,5].map(n => `<button aria-label="${n} star${n > 1 ? "s" : ""}" class="${n <= rating ? "on" : ""}" data-n="${n}">★</button>`).join(""); }
+document.getElementById("stars").addEventListener("click", e => { const b = e.target.closest("[data-n]"); if (b){ rating = +b.dataset.n; drawStars(); } });
+function loadForm(){
+  const f = fb[style] || {};
+  document.getElementById("fbname").textContent = STYLES.find(s => s.id === style).name;
+  rating = f.rating || 0; drawStars();
+  document.getElementById("fav").checked = !!f.fav;
+  document.getElementById("note").value = f.note || "";
+  document.getElementById("st").textContent = f.at ? "Saved" : "";
+}
+document.getElementById("send").onclick = async () => {
+  const st = document.getElementById("st");
+  if (!db){ st.textContent = "Open this page in claude.ai, signed in, to save notes."; return; }
+  const data = {style, rating, fav: document.getElementById("fav").checked, note: document.getElementById("note").value.trim(), at: new Date().toISOString()};
+  st.textContent = "Saving…";
+  try {
+    if (data.fav) for (const s of STYLES) if (s.id !== style && fb[s.id]?.fav) await db.collection("feedback").doc(s.id).update({fav: false});
+    await db.collection("feedback").doc(style).set(data);
+    st.textContent = "Saved. Claude reads these next time you message.";
+  } catch(e){ st.textContent = "Didn't save. Check your connection and try again."; }
+};
+drawPicker(); loadForm(); scene(0);
+(async () => {
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db) return;
+  db.collection("feedback").onSnapshot(snap => {
+    fb = {}; snap.docs.forEach(d => fb[d.id] = d.data());
+    drawPicker(); loadForm();
+  }, () => {});
+})();
+</script>

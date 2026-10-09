@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: journey video Mix improved from Charlie's dropped note
+Charlie's 11:07 note on the Terminal draft (cut scene 3; organise his thoughts into a thesis; show a brain growing round the router, with its Elders) was never written into the repo, and the page source lived only in an old scratchpad. Now: thesis in `brainstorms/2026-10-09-journey-video-thesis.md`; page source in `system/journey-video/journey-video.html`; Mix cut to 8 scenes with a growing-brain background (router, Skills, Architect, Chief's Desk, Quartermaster, Guardian, then Maker and Teacher fading in; signals travel in, through the router, out to an Elder). Assumption: the router stays "the router" and Charlie stays "the Chief" (the repo's names), not "router chief". Republished to the same link; no script errors in a browser check.
+
 ## 2026-10-09: new `session-handoff` skill; forgotten items recovered
 Charlie asked for a review of past sessions and a `/session-handoff` skill (summary points, key files, files holding the information, open decisions). Review found: the 9 Oct hand-off rewrite dropped about 8 open items (now in `context/todo.md`); the Elder councils plan was only on an unmerged branch while 3 Desk cards pointed at it, and the Watch Path page source only on another branch (both copied to main); the Bitcoin newsletter project arrived with no log entry (Desk card). The skill's carry-forward check stops a rewrite dropping open items again.
 
