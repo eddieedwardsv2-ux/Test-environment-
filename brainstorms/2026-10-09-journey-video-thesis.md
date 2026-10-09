@@ -47,4 +47,4 @@ he meant by "router chief". If not, it's a one-word change on the page.
   the last scene new Elders (Maker, Teacher) fade in. Signals travel in from the
   edge, through the router, out to an Elder.
 - Facts updated (195 saves, 15 skills); the Hands Brain is called the Quartermaster.
-- Next: Charlie watches it and leaves notes; then a real video file with voice-over.
+- Parked by Charlie 2026-10-09. When un-parked: Charlie watches it and leaves notes; then a real video file with voice-over.

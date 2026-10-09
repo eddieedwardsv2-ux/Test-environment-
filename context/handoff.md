@@ -42,7 +42,8 @@ The `session-handoff` skill (Charlie's routine: hand off, copy the message, `/cl
 1. Read the Desk answers (`decide`); act on any answered cards.
 2. Plugins: once `ListPlugins` shows them, one `try-tool` test each.
 3. Saturday 10 Oct 8:47 Quartermaster update, then Friday 16 Oct 8:59 audit: read both reports.
-   Journey video: parked by Charlie 9 Oct (Parking Lot in `context/current-focus.md`).
+
+Parked by Charlie 9 Oct (not a step): the journey video (Parking Lot in `context/current-focus.md`).
 
 ## Carried forward / dropped
 - From the earlier 9 Oct hand-off: all 3 pick-up steps carried (above). Nothing dropped.

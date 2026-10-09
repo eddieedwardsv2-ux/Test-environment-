@@ -104,7 +104,7 @@ saved but not started (`brainstorms/2026-10-09-model-routing-handoff.md`).
 ### ChatGPT can do (research and writing; Charlie or Codex commits the result)
 1. **Triage Nate's "Grok Bot Just Got 2 Massive Upgrades" (MgvwZaDPCs4).** Summarise it and say whether it changes how we route models. This has to happen before the model-routing prompt runs. Output a note for `research/nate-herk/`.
 2. **Research Boris Cherny as "the Maker"** for the council (to-do #4): who he is, what he teaches, and the 5 best public sources. Output for `research/`.
-3. **Journey video, Mix style:** tighten the one-minute script and write the voice-over lines in Charlie's voice. Read `aios-intake.md` and `context/how-i-learn.md` first.
+3. ~~Journey video, Mix style~~: **parked by Charlie 2026-10-09.** Don't work on it until he un-parks it.
 4. **Optional:** prices for the 35 Quartermaster tools marked unknown (step 3 of `research/hands/improvement-plan.md`). Each price needs a source link, or it's marked NOT VERIFIED.
 
 ### Waits for Claude (needs claude.ai-only tools)

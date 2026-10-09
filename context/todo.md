@@ -20,7 +20,6 @@ deleting them (history stays in `decisions.md`).
 ## Next to build (in order, after the Desk answers)
 2. [ ] Model comparisons on real work (comparisons 1-2 done 9 Oct: both 9/9; Desk card "promote-sonnet" for the two advisors) before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
 2b. [x] Guardian report required (9 Oct): `tools/audit.py` errors on a 4+ file commit with no newly added, matching Guardian report; fault drill 24/24. Limits: it runs locally and in the Stop hook only (any shallow clone, e.g. GitHub's, skips it); the hook sends a turn back once, and only after the commit exists; it proves a fresh report with a matching verdict was filed, not that the Guardian wrote it. Ended NOT READY after the last fix round (`audits/guardian/2026-10-09-guardian-enforced.md`); the shallow-clone fix made after it was then checked: READY (`audits/guardian/2026-10-09-shallow-fix.md`). Open: (a) a commit message quoting the rule as an example is read as a citation; (b) file names with spaces are over-counted; (c) Codex route also belongs in this list: Codex commits, leaves the error, notes it under "Waiting on Charlie"; (d) try the Guardian on a different model (Nate says a different model judges)
-3. [ ] **Parked 9 Oct (Charlie).** Journey video: Mix improved 9 Oct evening (scene 3 cut, growing-brain background; `brainstorms/2026-10-09-journey-video-thesis.md`). Next: Charlie's notes on it, then a proper video file with voice-over; later film the real brain growing in Obsidian (Mac)
 4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker")
 6. [ ] Set-up kit (paused): first friend or family set-up from plan v0.4
 7. [ ] First YouTube short
@@ -58,6 +57,7 @@ deleting them (history stays in `decisions.md`).
 - [ ] NVIDIA Switchyard (model router): watch only; look again if a routine moves to pay-per-use API keys (`research/hands/reviews/switchyard-2026-10-09.md`)
 
 ## Parked by choice (don't start without Charlie)
+- [ ] Journey video (parked by Charlie 9 Oct, not next): Mix improved 9 Oct evening (scene 3 cut, growing-brain background; `brainstorms/2026-10-09-journey-video-thesis.md`). When un-parked: Charlie's notes on it, then a proper video file with voice-over; later film the real brain growing in Obsidian (Mac)
 Nick Saraev work; flashcards; Karpathy brain; Dan Martell; the decorators'
 Facebook post and an unlisted test video; vidIQ (after 5 videos) and Canva
 thumbnails (after 3); the decorating business; Nate-channel audit's 8 older

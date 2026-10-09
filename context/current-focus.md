@@ -29,7 +29,7 @@ Later the same day: model comparisons 1-2 done (9/9 each), so `architect` and
 skill (Canva connected and proven); Small Business's 44 skills mapped in the Quartermaster
 (not installed). **Next:** check the 5 plugins Charlie ticked are enabled
 (`ListPlugins`), test each once with `try-tool`. 9 Oct evening: the Guardian built and its report
-required for big commits (`context/working-rules.md`); journey video parked (parked 9 Oct, see Parking Lot).
+required for big commits (`context/working-rules.md`); journey video parked 9 Oct (see Parking Lot).
 GitHub first; Notion replaces Drive (see `AGENTS.md`).
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
