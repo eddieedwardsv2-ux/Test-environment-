@@ -2,7 +2,8 @@
 
 `AGENTS.md` is the only router. This file explains the design; it doesn't
 route. Source: Nate Herk's videos; the full requirement list with quotes
-and status is `system/standard-ai-os-v1.md`.
+and status is `system/standard-ai-os-v1.md`. Folder guide: `system/README.md`;
+the repo's front page for visitors: [README.md](../README.md).
 
 ## Layers (top loads first)
 | Layer | Where | What goes there |

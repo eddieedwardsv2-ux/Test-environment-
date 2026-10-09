@@ -155,7 +155,9 @@ const COL = Object.fromEntries(GROUPS.map(([g])=>[g, css.getPropertyValue("--"+g
 const GNAME = Object.fromEntries(GROUPS);
 const shown = Object.fromEntries(GROUPS.map(([g])=>[g,true]));
 
-let flags = {}, db = null, selected = null, query = "", looseOnly = false;
+let flags = {}, db = null, selected = null, query = "", looseOnly = false, routesOnly = false;
+// Routes view (Charlie, 10 Oct): only the shortest path from the router to each note, the way Claude walks it.
+const RT = new Set((DATA.routes||[]).map(([a,b])=>a+"\u2192"+b));
 const esc = s => { const d=document.createElement("div"); d.textContent=s; return d.innerHTML; };
 const docId = id => /^[cr]\d+$/.test(id) ? id : "f~" + id.replace(/\//g,"~").replace(/[^A-Za-z0-9_\-.~:@+]/g,"_");
 const label = n => n.kind==="concept" ? `C${n.n} · ${n.t}` : n.kind==="rule" ? `R${n.n} · ${n.t}` : n.t;
@@ -174,7 +176,7 @@ function renderLegend(){
   const min = el.classList.contains("min");
   el.innerHTML = `<h3>Sources <button id="lg-t" aria-expanded="${!min}">${min?"Show":"Hide"}</button></h3>
     <div class="list">${GROUPS.map(([g,name])=>`<button class="src" data-g="${g}" aria-pressed="${shown[g]}"><i style="background:${COL[g]}"></i>${esc(name)}<b>${cnt(g)}</b></button>`).join("")}</div>
-    <div class="row2"><button class="pill" id="loose" aria-pressed="${looseOnly}">Loose ends · ${loose}</button><button class="pill" id="reset">Reset view</button></div>`;
+    <div class="row2">${RT.size?`<button class="pill" id="routes" aria-pressed="${routesOnly}">Routes only</button>`:""}<button class="pill" id="loose" aria-pressed="${looseOnly}">Loose ends · ${loose}</button><button class="pill" id="reset">Reset view</button></div>`;
 }
 
 /* ---------------- graph ---------------- */
@@ -196,6 +198,14 @@ const sim = d3.forceSimulation(N)
   .alphaDecay(0.035)
   .on("tick", draw);
 
+// Routes view: rings by steps from the router (router in the middle); notes off any route drift outside.
+function layoutRoutes(){
+  const ring = n => n.id==="AGENTS.md" ? 0 : n.hop==null ? 620 : n.hop*150;
+  sim.force("x").strength(routesOnly ? 0 : 0.07); sim.force("y").strength(routesOnly ? 0 : 0.07);
+  sim.force("r", routesOnly ? d3.forceRadial(ring).strength(0.6) : null);
+  if(routesOnly){ const r = byId["AGENTS.md"]; if(r){ r.fx = 0; r.fy = 0; } } else { const r = byId["AGENTS.md"]; if(r){ r.fx = null; r.fy = null; } }
+  sim.alpha(0.9).restart();
+}
 function size(){
   const r = cv.getBoundingClientRect(); DPR = window.devicePixelRatio||1;
   W = r.width; H = r.height; cv.width = W*DPR; cv.height = H*DPR; draw();
@@ -229,15 +239,16 @@ function draw(){
   ctx.lineWidth = 0.6/transform.k;
   for(const l of L){
     const a=l.source, b=l.target; if(!visible(a)||!visible(b)) continue;
+    if(routesOnly && !RT.has(a.id+"\u2192"+b.id)) continue;
     const on = sel && (a.id===selected || b.id===selected);
-    ctx.strokeStyle = on ? COL[(a.id===selected?b:a).g] : "rgba(140,151,173," + (sel||query?0.05:0.13) + ")";
+    ctx.strokeStyle = on ? COL[(a.id===selected?b:a).g] : "rgba(140,151,173," + (sel||query?0.05:routesOnly?0.55:0.13) + ")";
     if(on) ctx.lineWidth = 1.4/transform.k; else ctx.lineWidth = 0.6/transform.k;
     ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
   }
   // nodes
   for(const n of N){
     if(!visible(n)) continue;
-    const dim = (sel && !sel.has(n.id)) || (query && !hit(n));
+    const dim = (sel && !sel.has(n.id)) || (query && !hit(n)) || (routesOnly && n.hop==null);
     const f = flags[docId(n.id)];
     ctx.globalAlpha = dim ? 0.14 : 1;
     ctx.fillStyle = COL[n.g];
@@ -270,7 +281,7 @@ cv.addEventListener("click", e=>{
 /* ---------------- note body (shared by map + review) ---------------- */
 function bodyHTML(n){
   if(n.kind==="file"){
-    return `<p>${esc(n.ex||"(empty file)")}</p><p class="muted"><code>${esc(n.id)}</code> · <a href="${n.u}" target="_blank" rel="noopener">Open full file on GitHub</a></p>`;
+    return `<p>${esc(n.ex||"(empty file)")}</p><p class="muted">${n.hop!=null?`${n.hop===0?"The router itself":n.hop+(n.hop===1?" step":" steps")+" from the router"}${n.via?" (via "+esc(n.via)+")":""} · `:n.hist?"History: a record, not a route · ":""}<code>${esc(n.id)}</code> · <a href="${n.u}" target="_blank" rel="noopener">Open full file on GitHub</a></p>`;
   }
   let h = n.body.map(b=> b.t==="q" ? `<blockquote>${b.h}</blockquote>` : b.t==="check" ? `<div class="check"><b>Agent check</b>${b.h}</div>` : `<p>${b.h}</p>`).join("");
   if(n.kind==="concept" && !n.rules.length) h += `<p class="muted" style="color:var(--confuse)">Not linked to any rule. Brain says: ${n.note||"no rule yet"}</p>`;
@@ -361,8 +372,9 @@ document.addEventListener("click", e=>{
   if(b.id==="t-rev") return showTab("rev");
   if(b.id==="close"){ selected=null; document.getElementById("sheet").hidden=true; draw(); return; }
   if(b.id==="lg-t"){ document.getElementById("legend").classList.toggle("min"); renderLegend(); return; }
+  if(b.id==="routes"){ routesOnly=!routesOnly; layoutRoutes(); renderLegend(); draw(); return; }
   if(b.id==="loose"){ looseOnly=!looseOnly; renderLegend(); draw(); return; }
-  if(b.id==="reset"){ GROUPS.forEach(([g])=>shown[g]=true); looseOnly=false; selected=null; document.getElementById("sheet").hidden=true; renderLegend(); fit(); return; }
+  if(b.id==="reset"){ GROUPS.forEach(([g])=>shown[g]=true); looseOnly=false; routesOnly=false; layoutRoutes(); selected=null; document.getElementById("sheet").hidden=true; renderLegend(); fit(); return; }
   if(b.dataset.g){ shown[b.dataset.g]=!shown[b.dataset.g]; renderLegend(); draw(); return; }
   if(b.dataset.go){
     if(!document.getElementById("review").hidden){ showTab("map"); }

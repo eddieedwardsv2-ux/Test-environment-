@@ -184,18 +184,37 @@ for n in nodes: n["d"] = deg.get(n["id"], 0)
 print(len(nodes), "nodes", len(edges), "connections", "unlinked:", sum(1 for n in nodes if not n["d"]), file=sys.stderr)
 T = B + "map/template.html"; out = B + "map/brain-map.html"
 if "--stats" in sys.argv: sys.exit(0)
-def write(path, nodes, edges, groups=None, swaps=()):
+# Routes: the shortest path from the router to every current note (tools/route_depth.py),
+# so the map can show how Claude actually walks the OS, not every mention.
+sys.path.insert(0, ROOT + "tools")
+import route_depth, check_links
+_depth, _parent, _ = route_depth.route()
+_rel = lambda p: p.relative_to(route_depth.ROOT).as_posix()
+ROUTES = [[_rel(a), _rel(b)] for b, a in _parent.items()]
+for n in nodes:
+    if n["kind"] != "file": continue
+    p = route_depth.ROOT / n["id"]
+    if p in _depth: n["hop"] = _depth[p]
+    if p in _parent and _depth[p] > 1: n["via"] = _rel(_parent[p])
+    if check_links.HISTORY.search(n["id"]): n["hist"] = True
+# The map's own link finder misses some routes (a skill named only in backticks): draw them too.
+_have = {(x, y) for x, y, _k in edges}
+edges = sorted(set(edges) | {(x, y, "link") for x, y in ROUTES if x in ids and y in ids and (x, y) not in _have})
+def write(path, nodes, edges, groups=None, swaps=(), routes=None):
     for n in nodes: n["d"] = 0
     for a, b, _ in edges:
         for n in nodes:
             if n["id"] in (a, b): n["d"] += 1
     data = {"nodes": nodes, "edges": [list(e) for e in edges]}
     if groups: data["groups"] = groups
+    if routes:
+        ids = {n["id"] for n in nodes}
+        data["routes"] = [r for r in routes if r[0] in ids and r[1] in ids]
     page = open(T).read()
     for a, b in swaps: page = page.replace(a, b)
     open(path, "w").write(page.replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
     print("wrote", path, len(nodes), "nodes", len(edges), "connections", file=sys.stderr)
-write(out, nodes, edges)
+write(out, nodes, edges, routes=ROUTES)
 # ENATE page: Nate's brain on its own (concepts, rules, his videos, the brain's pages).
 import copy
 NATE = "research/nate-herk/"

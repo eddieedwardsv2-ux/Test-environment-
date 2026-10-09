@@ -1,7 +1,7 @@
 """Router steps: how many hops from AGENTS.md to every current note (Charlie, 2026-10-09:
 "show how many steps our router is going through"). A hop = one file naming the next (a
 markdown link, a `path`, a bare `file.md`, or a skill/agent named in backticks; skills and
-agents are found by name through the skill list). History files are skipped.
+agents are found by name through the skill list). History files are skipped, and never used as a hop.
 Run: python3 tools/route_depth.py [file ...]   (the audit warns on any unreached note)."""
 import collections, re, sys
 from pathlib import Path
@@ -30,6 +30,9 @@ def route():
     while q:
         n = q.popleft()
         if n.suffix != ".md": continue
+        # History is a record, not a route (Charlie, 10 Oct: "not very efficient when looking at
+        # paths"): a note reachable only through decisions.md or a brainstorm has no real route.
+        if n != start and cl.HISTORY.search(n.relative_to(ROOT).as_posix()): continue
         for r in refs(n):
             if r not in depth: depth[r] = depth[n] + 1; parent[r] = n; q.append(r)
     cur = [p.resolve() for p in ROOT.rglob("*.md") if ".git" not in p.parts and "templates" not in p.parts
@@ -39,7 +42,7 @@ def route():
 
 def path(f, depth, parent):
     p = ROOT / f
-    if p not in depth: return "unreached"
+    if p not in depth: return f"{f} (no route)"
     out = []
     while p in parent: out.append(p.relative_to(ROOT).as_posix()); p = parent[p]
     return " <- ".join(out + ["AGENTS.md"])

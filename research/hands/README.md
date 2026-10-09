@@ -14,7 +14,7 @@ History: `weeks/` (evidence by week), `decisions.md` (repo-wide).
 | Charlie's orders on a tool (Search / Check / Implement) | the Hands page's `tool_actions` collection (section below) |
 | Video list and links | `pipeline.py` → `sources/<creator>/videos.json` |
 | Nate's links and quotes | `enate-links.json`, `nate-mentions.json` |
-| Presenters' opinions vs ours | `voices/<show>.md` |
+| Presenters' opinions vs ours | `voices/<show>.md` (now: `voices/the-next-new-thing.md`, weekly notes in `voices/notes/`) |
 | Suggested improvements | `improvement-plan.md` |
 | The site | `site/template.html` → `site/hands.html` (`python3 tools/build_hands.py`) |
 
