@@ -28,7 +28,7 @@ rate-limited. Transcripts (free, slower) are only needed for what each video
 actually *shows*, and they download in the background while earlier weeks are
 classified. Ranking: Charlie's relevance × 3, mentions × 2, recency, price, and for skills.sh
 skills up to 3 points for installs (10k = 1, 100k = 2, 1M+ = 3).
-Ask it questions with the `hands-brain` agent.
+Ask it questions with the `quartermaster` agent.
 
 ## Decisions from the map and ranked review
 Open a tool and choose Search, Check or Implement, with an optional note.

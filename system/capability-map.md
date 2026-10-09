@@ -16,7 +16,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Tick coverage / counts | `tools/update_coverage.py` | README ticks and counts | audit counts |
 | Add sources to a brain | `brain-ingest` skill | updated concepts, rules, index, log | quote + link checks |
 | Turn transcripts into a lesson | `video-tutor` agent | `lesson-*.md` | timestamp spot-check |
-| OS / routing / brain design advice | `nate-brain` agent | sourced advice | links to transcripts |
+| OS / routing / brain design advice | `architect` agent | sourced advice | links to transcripts |
 | Nick's view on a plan | `nick-brain` agent | sourced advice | links to transcripts |
 | Teach Charlie a topic | `teach` skill | active lesson, flashcards | 7-rule self-check |
 | Find or install a new skill | `find-skills` skill | install command | Charlie's OK |

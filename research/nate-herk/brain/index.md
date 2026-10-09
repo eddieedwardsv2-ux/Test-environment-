@@ -1,6 +1,6 @@
 # Nate's brain: index
 
-The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.md`): a source-grounded guide to AI-OS architecture (routing, context, second-brain organisation, audits, ingestion, verification). Built from Nate Herk's public videos only. It summarises his methods with sources; it is not Nate.
+The knowledge base behind the `architect` advisor (`.claude/agents/architect.md`): a source-grounded guide to AI-OS architecture (routing, context, second-brain organisation, audits, ingestion, verification). Built from Nate Herk's public videos only. It summarises his methods with sources; it is not Nate.
 
 **This page is the current state.** What changed and when is in [log.md](log.md).
 

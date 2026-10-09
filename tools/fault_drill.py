@@ -42,7 +42,7 @@ FAULTS = [
  ("a Hands week file corrupted", lambda: (work / "research/hands/weeks/2026-W39.json").write_text("{not json"), "not valid json"),
  ("a bad line in the transcript queue", lambda: edit("research/transcript-queue.txt", lambda t: t + "\nthis is not a valid line\n"), "malformed"),
  ("the 3-month focus review missed", lambda: edit("context/current-focus.md", lambda t: re.sub(r"(Refresh by:\*?\*?\s*)\d{4}-\d{2}-\d{2}", r"\g<1>2020-01-01", t, count=1)), "refresh date"),
- ("a helper agent forced back onto Sonnet", lambda: edit(".claude/agents/hands-brain.md", lambda t: t.replace("model: inherit", "model: sonnet")), "model"),
+ ("a helper agent forced back onto Sonnet", lambda: edit(".claude/agents/quartermaster.md", lambda t: t.replace("model: inherit", "model: sonnet")), "model"),
 ]
 
 backup = work.parent / "pristine"

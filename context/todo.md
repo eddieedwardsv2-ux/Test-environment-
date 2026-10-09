@@ -6,9 +6,6 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
-- [ ] Desk: **missed Friday audit** (run now / wait / move later)
-- [ ] Desk: **middle-go** (one YouTube ingester, elder names by job)
-- [ ] Desk: **journey video style** (Mix recommended; Terminal is his favourite)
 - [ ] claude.ai settings: switch off 9 unused built-in skills (built-in-browser, chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf)
 - [ ] Add the Higgsfield connector (`https://mcp.higgsfield.ai/mcp`) and finish Canva's sign-in; then Claude makes one test image (cost said first)
 - [ ] Voice Gym: rewrite 5 or more messages; then Claude writes his voice notes into `aios-intake.md` Q2
@@ -16,9 +13,8 @@ deleting them (history stays in `decisions.md`).
 - [ ] Confirm or change Claude's "where this is heading" theory for `current-focus.md`
 
 ## Next to build (in order, after the Desk answers)
-1. [ ] Whatever "middle-go" picks: one `youtube-ingest` skill, then elder names (`brainstorms/2026-10-09-middle-plans.md`), re-running the end-to-end test after any rename
 2. [ ] Model comparisons on real work before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
-3. [ ] Journey video: improve the chosen style, then a proper video file with voice-over
+3. [ ] Journey video: improve the Mix style (chosen 9 Oct), then a proper video file with voice-over
 4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker")
 5. [ ] Anthropic's plugin marketplace as the Hands Brain's next source
 6. [ ] Set-up kit (paused): first friend or family set-up from plan v0.4
@@ -39,6 +35,8 @@ deleting them (history stays in `decisions.md`).
 - [ ] Hands Brain: the 35 tools with unknown prices (step 3 of `research/hands/improvement-plan.md`, not chosen)
 
 ## Watch-outs (things running on their own)
+- [ ] Read the re-run Friday audit report when it lands in `audits/` (started 12:09, 9 Oct)
+- [ ] Old names (ENATE, Hands Brain, Decision Desk) stop being aliases on 2026-11-09: remove them from the router then
 - [ ] "Weekly Hands Brain update" runs Saturdays at 8:47am: the same early time that hit the usage limit on Friday
 - [ ] "Flashcard check" still runs every evening although flashcards are parked: pause it?
 - [ ] Two sessions editing at once caused clashes today: close sessions when they finish

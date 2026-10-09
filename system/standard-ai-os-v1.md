@@ -181,7 +181,7 @@ brainstorms/ audits/    created by grill-me and the audit skill when first used
 ## 5. Skills, agents, tools
 | # | Requirement | Nate's words | Src | Here |
 |---|---|---|---|---|
-| S1 | Package expertise as a subagent plus a skill | "it has Claude turn them into two files for us" | bvG 6:34 | ✅ `nate-brain` + `brain-ingest` |
+| S1 | Package expertise as a subagent plus a skill | "it has Claude turn them into two files for us" | bvG 6:34 | ✅ `architect` + `brain-ingest` |
 | S2 | A hook stops "done" until it has been run | "It adds a hook, which is a little script that runs right when the agent tries to finish its turn." | bvG 7:35 | 🔧 partly: `tools/run_gate.sh` is a *structure* gate (blocks finishing while the audit fails); it doesn't prove code ran (renamed 2026-10-08) |
 | S3 | One agent per source, in parallel | "I told it to run one agent per source, so they all go at once" | bvG 3:03 | ✅ parallel rule |
 | S4 | SKILL.md: front matter, under 500 lines | "keep the skill.md under 500 lines" | bCl 1:21:28 | ✅ largest is 144 |
@@ -197,7 +197,7 @@ brainstorms/ audits/    created by grill-me and the audit skill when first used
 | S15 | New skills report only; earn autonomy after many runs | "Once we've ran the skill 10, 20, 30 times and we've kind of like battle tested it and we feel more confident in it, then we can maybe make it a little bit more autonomous." | jdb 1:47:37 | ✅ the `audit` content check read-only; `grill-me` asks before changing files |
 | S16 | Use a sub-agent when the output is a pile you'd never re-read | "is this about to dump a pile of stuff into my chat that I'll never read again?" | jdb 2:43:47 | ✅ smallest-context and parallel rules |
 | S17 | Don't overuse sub-agents (not for quick or dependent steps) | "if you're forcing too many sub agents, you're going to get worse results" | e18 24:57 | ✅ parallel rule: plan dependencies first |
-| S18 | Sub-agents are made read-only by their tools, not by a prompt | "you can put that so that these sub-agents are explicitly read-only" | e18 7:10 | ✅ `nate-brain`, `nick-brain`: Read, Glob, Grep only |
+| S18 | Sub-agents are made read-only by their tools, not by a prompt | "you can put that so that these sub-agents are explicitly read-only" | e18 7:10 | ✅ `architect`, `nick-brain`: Read, Glob, Grep only |
 | S19 | Keep scripts that worked in files, not in the chat | "don't leave that code trapped inside the chat" | HIR 2:02 | ✅ `tools/`, `research/*.py` |
 | S11 | Re-test skills when a new model arrives | "run you this model through your skills. Make sure they all still work." | XNQ 1:34 | ➖ do it at the next model change |
 | S20 | Plan before building anything non-trivial (Nate: plan mode) | "So what you always want to do when you're creating an idea is you want to go on plan mode." | mpA 2:01:40 | ➖ plan mode declined by Charlie 2026-10-08; R14 option B (ask 1-2 questions) covers it. Nate repeats this in at least 13 of the 35 audited videos: worth revisiting |

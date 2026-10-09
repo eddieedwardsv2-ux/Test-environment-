@@ -117,7 +117,7 @@ hedges = {(hmap[a], hmap[b]) for a, b in edges if a in hmap and b in hmap and hm
 hedges |= {("AGENTS.md", ".claude/skills/3d-brain/SKILL.md"), ("AGENTS.md", "scripts/sync-codex-skills.sh"),
            ("research/CLAUDE.md", "research/README.md"), ("AGENTS.md", "research/CLAUDE.md")}
 for s in ("brain-ingest", "research-creator"): hedges.add(("research/CLAUDE.md", f".claude/skills/{s}/SKILL.md"))
-for a in ("video-tutor", "nate-brain", "nick-brain"): hedges.add(("research/CLAUDE.md", f".claude/agents/{a}.md"))
+for a in ("video-tutor", "architect", "nick-brain"): hedges.add(("research/CLAUDE.md", f".claude/agents/{a}.md"))
 hedges = {e for e in hedges if e[0] in hyp and e[1] in hyp}
 hnodes = list(hyp.values())
 for n in nodes: n.pop("kit", None)

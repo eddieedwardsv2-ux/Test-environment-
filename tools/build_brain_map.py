@@ -86,7 +86,7 @@ ROOT = _ROOT
 REPO = "https://github.com/eddieedwardsv2-ux/test-environment-/blob/main/"
 SKIP = {".git", "node_modules", "__pycache__"}
 # The Hands Brain has its own site (system/pages.md), so it stays off this map.
-HANDS = ("research/hands/", ".claude/skills/hands-ingest/", ".claude/agents/hands-brain.md", "research/the-next-new-thing/")
+HANDS = ("research/hands/", ".claude/skills/hands-ingest/", ".claude/agents/quartermaster.md", "research/the-next-new-thing/")
 files = []
 for d, ds, fs in os.walk(ROOT):
     ds[:] = sorted(x for x in ds if x not in SKIP)
@@ -205,8 +205,8 @@ for n in en:
 eid = {n["id"] for n in en}
 ee = [e for e in edges if e[0] in eid and e[1] in eid]
 write(B + "map/enate.html", en, ee,
-      groups=[["nate", "ENATE: concepts (C) and rules (R)"], ["transcripts", "Nate's videos"], ["creators", "Brain pages and lessons"]],
-      swaps=[("<title>Charlie's Brain</title>", "<title>ENATE</title>"),
-             ('<i></i>Charlie\'s Brain</div>', '<i></i>ENATE</div>'),
+      groups=[["nate", "Architect (ENATE): concepts (C) and rules (R)"], ["transcripts", "Nate's videos"], ["creators", "Brain pages and lessons"]],
+      swaps=[("<title>Charlie's Brain</title>", "<title>Architect (Nate)</title>"),
+             ('<i></i>Charlie\'s Brain</div>', '<i></i>Architect (Nate)</div>'),
              ("<h1>Every idea.<br><span>Connected.</span></h1>", "<h1>Nate's method.<br><span>Every source.</span></h1>"),
              ('aria-label="Map of every note and how they connect"', 'aria-label="Map of Nate\'s ideas, rules and the videos they come from"')])

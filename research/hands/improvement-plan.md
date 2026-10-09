@@ -1,7 +1,7 @@
 # Hands Brain: improvements and skill plan (2026-10-09)
 
 Written from a read of `tools.json` (95 tools, weeks W39-W41 plus one
-skills.sh snapshot), the `hands-ingest` skill and the `hands-brain` agent.
+skills.sh snapshot), the `hands-ingest` skill and the `quartermaster` agent.
 Nothing here is built yet; Charlie picks on the Decision Desk
 (cards "hands-improve" and "hands-skills").
 
@@ -41,7 +41,7 @@ result back so the Hands Brain learns from Charlie's own use, not just the show.
 Charlie at a real job) needs his own results. ENATE Rule 23 (new skills
 report only until tested) and Rule 34 (built from a real run).
 **Steps it would follow:**
-1. Ask `hands-brain` for the #1 new tool for the job (improvement 1 first).
+1. Ask `quartermaster` for the #1 new tool for the job (improvement 1 first).
 2. Read the tool's page and `check` flag; say price, what it installs, risks.
 3. Decision Desk card for the install (always: the rule says ask for installs).
 4. Install into this project only (never globally), run one real task from

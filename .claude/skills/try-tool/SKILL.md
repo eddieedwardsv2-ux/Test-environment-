@@ -9,7 +9,7 @@ The Hands Brain ranks tools from what a show says. This skill adds what
 happened when Charlie actually used one. ENATE Rules 23, 34 and 43: a new
 tool reports only until tested, on our own work, cost counted.
 
-1. **Pick:** ask `hands-brain` for the #1 tool for the job that Charlie
+1. **Pick:** ask `quartermaster` for the #1 tool for the job that Charlie
    doesn't already have. Read its page and its `check` flag. Say price, what
    it installs, and the risks.
 2. **Ask once:** a Decision Desk card for the install (the `decide` skill),

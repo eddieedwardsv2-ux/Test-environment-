@@ -23,7 +23,7 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   easy-to-undo work (edits, drafts, research): state what you assumed and do
   it. Ask only for sign-ups, payments, plugin installs, publishing outside
   this repo, deleting or moving work, or a real choice of direction, and
-  ask on the **Decision Desk** (the `decide` skill), never as chat
+  ask on the **Chief's Desk** (the Decision Desk, the `decide` skill), never as chat
   questions. Ask once; an open card is never re-asked.
 - **Session start:** read `context/current-focus.md` (the only place the
   priority lives; don't start parked work) and the Decision Desk's answers.
@@ -84,13 +84,16 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 - `youtube-ingest` (get YouTube videos into any brain: list, triage, fetch,
   hand over), `research-creator` (new creator end to end), `brain-ingest` (new sources
   into a creator brain), `video-tutor` agent (transcripts into a lesson).
-- `hands-ingest`: the **Hands Brain** (`research/hands/`), every tool, skill,
-  plugin and repo from The Next New Thing, week by week, ranked. Ask it with
-  the `hands-brain` agent. `try-tool`: one real trial of a tool; his keep or
+- `hands-ingest`: the **Quartermaster's** kit list (`research/hands/`, was the
+  Hands Brain; both names work until 2026-11-09), every tool, skill, plugin and
+  repo from The Next New Thing and skills.sh, ranked. Ask it with the
+  `quartermaster` agent. `try-tool`: one real trial of a tool; his keep or
   drop verdict (`research/hands/tried.json`) changes its rank.
-- `nate-brain` agent = **ENATE** (Charlie's name for Nate's brain; "Nate" means
-  the real person and his new videos): his method for organising the OS, in
-  `research/nate-herk/brain/`, `nick-brain` agent (Nick Saraev's view; parked).
+- `architect` agent = **the Architect** (was ENATE, Charlie's name for Nate's
+  brain; both names work until 2026-11-09; "Nate" means the real person and his
+  new videos): his method for organising the OS, in `research/nate-herk/brain/`.
+  Elders by job (head = this router, middle = the council, hands = skills;
+  Charlie = the Chief): `brainstorms/2026-10-09-middle-plans.md`. `nick-brain` agent (Nick Saraev's view; parked).
 
 When a file moves, a folder is added or a project starts, update this router
 (and that folder's README) in the same turn. A stale pointer is worse than none.
