@@ -81,7 +81,8 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
   `find-skills` (find and install skills, with his OK; plugin families in
   `research/plugin-map.md`). Parked skills (e.g. `onboard`, set someone
   up): `references/parked-skills/`.
-- `research-creator` (new creator end to end), `brain-ingest` (new sources
+- `youtube-ingest` (get YouTube videos into any brain: list, triage, fetch,
+  hand over), `research-creator` (new creator end to end), `brain-ingest` (new sources
   into a creator brain), `video-tutor` agent (transcripts into a lesson).
 - `hands-ingest`: the **Hands Brain** (`research/hands/`), every tool, skill,
   plugin and repo from The Next New Thing, week by week, ranked. Ask it with

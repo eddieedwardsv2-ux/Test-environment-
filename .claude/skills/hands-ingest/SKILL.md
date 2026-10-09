@@ -22,13 +22,13 @@ current number one in its category (`vs` field below), so we find what we're
 missing and close the gap in knowing how to use it.
 
 ## Steps
-1. **List, free:** `python3 research/hands/pipeline.py --weeks <n>` writes
+1. **List and fetch with `youtube-ingest`** (its steps 1 and 3). The list step,
+   `python3 research/hands/pipeline.py --weeks <n>`, writes
    `research/hands/sources/<creator>/videos.json`: newest first, ISO week,
    the show's own link list and chapter times from each description.
    Descriptions name almost every tool, so this step alone gives the list.
-2. **Transcripts** (to know what they actually *show*): `python3 research/get_transcript.py <creator> <id>`
-   in a background loop with pauses; failures go in `research/transcript-queue.txt`.
-   A week can be classified once its transcripts are in.
+2. **Transcripts** (to know what they actually *show*): fetched by `youtube-ingest`
+   step 3. A week can be classified once its transcripts are in.
 3. **One helper per week** (model per `system/model-usage.md`, parallel; each writes only its
    own `research/hands/weeks/<YYYY-Www>.json`, schema below). It reads that
    week's descriptions, chapters and transcripts. Work newest week first.

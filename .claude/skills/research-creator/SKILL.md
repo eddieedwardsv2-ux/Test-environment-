@@ -14,21 +14,12 @@ Before starting, read `context/environment.md` (what works from the cloud) and
 
 ## Steps
 
-### 1. Find the channel
-```bash
-yt-dlp --flat-playlist --playlist-end 3 --print "%(channel)s | %(channel_url)s | %(title)s" "ytsearch3:<name>"
-```
-If the results show more than one plausible channel, or none matches the name,
-ask Charlie which one before going on.
+### 1. Find the channel and list its videos
+Use the `youtube-ingest` skill, step 1 (find the channel, then list its videos).
+In parallel, do (b) below.
 
 ### 2. In parallel (fire both at once)
-**(a) Video inventory.**
-```bash
-yt-dlp --flat-playlist --print $'%(id)s\t%(title)s\t%(view_count)s\t%(duration)s' "<channel_url>/videos"
-```
-(`$'...'` makes `\t` a real tab. Duration is in seconds: convert to `m:ss`
-or `XhYY` like the example.)
-Write `research/<creator>/README.md` in the same format as
+**(a) Video inventory.** Write `research/<creator>/README.md` in the same format as
 `research/nick-saraev/README.md`: channel link, focus line, a **Coverage** line
 (`N videos listed (date, newest first), M transcribed`), why Charlie wants
 them, a **Start with (★)** line, then the table
@@ -45,15 +36,8 @@ fails, note that in the README and move on.
 
 ### 3. Pick 3 starters and fetch transcripts — ONE AT A TIME
 Choose the 3 videos most relevant to Charlie's current priority in
-`context/current-focus.md`. Run them as separate, sequential calls (the free
-service is rate-limited after ~4 calls; never in parallel):
-```bash
-python3 research/get_transcript.py <creator> <video-id>
-```
-If a call prints `UNAVAILABLE`, stop fetching here and add the remaining
-videos to `research/transcript-queue.txt` (`<creator> <video-id>` per line),
-commit, push, and trigger the queue (command in `context/environment.md`).
-GitHub fetches them within the hour; pull, then continue from step 4. Update the README's Transcript column to
+`context/current-focus.md`, then fetch them with `youtube-ingest` step 3
+(one at a time; it queues the rest for GitHub if rate-limited). Update the README's Transcript column to
 `✅ [transcript](<title>--<id>-transcript.md)` only for files that actually exist
 (`python3 tools/update_coverage.py` does this for you). The script names files
 from the video title automatically; never rename them by hand.

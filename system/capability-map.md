@@ -22,6 +22,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Find or install a new skill | `find-skills` skill | install command | Charlie's OK |
 | Check a page looks right (visual validation) | `tools/screenshot.py <page>` then open the PNGs | phone + desktop screenshots, script errors | looking at them |
 | Structural audit (incl. every checklist quote, `tools/check_quotes.py`) | `tools/audit.py` (runs on push and as the Stop-hook structure gate `tools/run_gate.sh`; includes the secret scan) | errors/warnings | GitHub Actions |
+| Get YouTube videos into any brain (list, triage, fetch, hand over) | `youtube-ingest` skill | transcripts + triage file | coverage ticks, audit |
 | Show a plan or list as an easy-to-read page | `tools/build_reader.py` → Reading Room (`system/pages.md`) | one page, a tab per document | screenshot on phone |
 | Prove the audit catches mistakes (23 planted faults) | `tools/fault_drill.py` | caught / missed list | weekly audit; add a fault after every real miss |
 | What loads into every message, hidden instructions (our /doctor) | `tools/context_check.py` | sizes + warnings | run after big changes and model switches |

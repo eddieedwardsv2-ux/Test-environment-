@@ -12,19 +12,9 @@ hand. A brain lives in `research/<creator>/brain/`:
 (opinions from X), `rules.md` (operating rules, each with quotes),
 `log.md` (what was added when).
 
-## Triage first: read as little as possible (Charlie, 2026-10-09)
-Spend usage only where the brain has a gap. Record every call in
-`research/<creator>/triage.md`.
-- **Tier 0 (free):** titles from the video list. Drop news, model tests and
-  how-tos for tools we don't use.
-- **Tier 1 (cheap):** description and chapters (`yt-dlp --skip-download
-  --print "%(description)s"`). `grep` the brain for each chapter's topic; a
-  topic with 0 or 1 hits is a gap.
-- **Tier 2 (free fetch):** add gap videos to `research/transcript-queue.txt`
-  and push; GitHub fetches them with no Claude usage.
-- **Tier 3 (spend):** when Charlie has time to spare (or says "ingest the
-  queue"), read only the chapters that matched, then run the steps below.
-Everything else stays listed as "Spare time" or "Skip" in the triage file.
+## Getting the videos
+List, triage (tiers 0-3, read as little as possible) and fetch with the
+`youtube-ingest` skill; it hands the transcripts back here at step 3.
 
 ## Steps
 1. **Work out what's new.** Read `brain/index.md` and `brain/log.md`. New
@@ -33,9 +23,7 @@ Everything else stays listed as "Spare time" or "Skip" in the triage file.
    will still be useful in a year (Nate, DTCyvo6cC54 27:23); fast-changing
    data is fetched live instead.
 2. **Get the raw source** (parallel where possible):
-   - YouTube link: `python3 research/get_transcript.py <creator> <id>`; if
-     UNAVAILABLE, queue it (`research/transcript-queue.txt`) and trigger
-     GitHub (see `context/environment.md`), then continue when it lands.
+   - YouTube: the `youtube-ingest` skill (triage, fetch, queue).
    - X: `python3 research/get_x_posts.py <creator> <handle>`.
    - Anything else (blog, post, Skool): Charlie pastes it; save it as
      `research/<creator>/<short-name>-source.md` with its link and date.
