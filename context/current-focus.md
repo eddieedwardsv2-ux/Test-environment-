@@ -50,6 +50,8 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
   satin but customer said eggshell. Bonus: should one customer's job notes
   live in CLAUDE.md?
 
+**Everything unfinished, in one list:** `context/todo.md`.
+
 ## Parking Lot
 - Nick Saraev: build/ship lessons, brain-ingest of his 4 courses, his advice
   as a teaching programme (parked 2026-10-07; still parked for the set-up kit)

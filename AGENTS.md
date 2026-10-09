@@ -61,6 +61,7 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 | What works or is blocked in cloud sessions (YouTube, GitHub) | `context/environment.md`: read before any YouTube or GitHub task |
 | How the OS is built; Nate's standard and its tests | `system/architecture.md`, `system/standard-ai-os-v1.md`; blank copy `templates/standard-ai-os-v1/` |
 | Every dashboard Charlie opens (links, sources, rebuild steps) | `system/pages.md` |
+| Everything unfinished (one list) | `context/todo.md` |
 | Past decisions | `decisions.md` (new ones at the top, dated) |
 | Projects | `projects/<name>/` |
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |

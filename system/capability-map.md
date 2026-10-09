@@ -22,6 +22,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Find or install a new skill | `find-skills` skill | install command | Charlie's OK |
 | Check a page looks right (visual validation) | `tools/screenshot.py <page>` then open the PNGs | phone + desktop screenshots, script errors | looking at them |
 | Structural audit (incl. every checklist quote, `tools/check_quotes.py`) | `tools/audit.py` (runs on push and as the Stop-hook structure gate `tools/run_gate.sh`; includes the secret scan) | errors/warnings | GitHub Actions |
+| Prove the audit catches mistakes (23 planted faults) | `tools/fault_drill.py` | caught / missed list | weekly audit; add a fault after every real miss |
 | What loads into every message, hidden instructions (our /doctor) | `tools/context_check.py` | sizes + warnings | run after big changes and model switches |
 | Scored audit (weekly, Four Cs rubric v2) | `audit` skill (Nate's AIS-OS kit) | `audits/audit-<date>-<id>.md` with score, findings ledger, top 3 fixes | next run rechecks each finding |
 | Failure-mode check, backtrack after a miss | `audit` skill, `content-check.md` | smallest fixes | Charlie approves on the Decision Desk |

@@ -133,6 +133,10 @@ SECRET = re.compile(r"(sk-ant-[A-Za-z0-9_-]{20,}|sk-[A-Za-z0-9]{32,}|gh[pousr]_[
                     r"|AKIA[0-9A-Z]{16}|xox[baprs]-[A-Za-z0-9-]{10,}|AIza[0-9A-Za-z_-]{35}|-----BEGIN [A-Z ]*PRIVATE KEY-----)")
 files = subprocess.run(["git", "ls-files", "--cached", "--others", "--exclude-standard"], cwd=ROOT,
                        capture_output=True, text=True).stdout.splitlines()
+if not files:   # not a Git checkout (a zip or a copy): scan every file instead of none
+    import os
+    files = [os.path.relpath(os.path.join(d, f), ROOT) for d, ds, fs in os.walk(ROOT)
+             if not ds.__setitem__(slice(None), [x for x in ds if x not in {".git", "node_modules", "__pycache__"}]) for f in fs]
 for rel in files:
     if rel == ".env" or rel.endswith("/.env"):
         err(f"{rel} would be published: secrets belong in an untracked .env")
@@ -220,6 +224,21 @@ for line in cc.split("Warnings:")[1].splitlines() if "Warnings:" in cc else []:
 #    user-only (disable-model-invocation hides it from Claude; found 2026-10-09
 #    with `link`). Skills only Charlie starts are listed here on purpose.
 USER_ONLY = {"i-have-adhd"}
+#    ...and every skill or agent the router names still exists (found by tools/fault_drill.py).
+_r = (ROOT / "AGENTS.md").read_text(); sec = _r[_r.find("## Skills and agents"):]
+for name in set(re.findall(r"`([a-z][a-z0-9-]+)`", sec)):
+    if not any((ROOT / p).exists() for p in (f".claude/skills/{name}", f".claude/agents/{name}.md", f"references/parked-skills/{name}")):
+        err(f"AGENTS.md names `{name}` as a skill or agent, but it doesn't exist")
+#    ...and every page's source file in system/pages.md exists, so each page can be rebuilt.
+for path in re.findall(r"`([\w./-]+\.(?:html|md|json|py))`", (ROOT / "system/pages.md").read_text()):
+    if "/" in path and not (ROOT / path).exists():
+        err(f"system/pages.md: page source {path} is missing, so that page can't be rebuilt")
+#    ...and helper agents follow system/model-usage.md: inherit the main model until a
+#    cheaper route has passed its comparison (ChatGPT's rule, 2026-10-09).
+for ag in ROOT.glob(".claude/agents/*.md"):
+    m = re.search(r"^model:\s*(\S+)", ag.read_text(), re.M)
+    if m and m.group(1) != "inherit" and ag.stem not in (ROOT / "system/model-usage.md").read_text():
+        warn(f"{ag.relative_to(ROOT)} uses model {m.group(1)} without a passed comparison in system/model-usage.md")
 for cap in ROOT.glob(".claude/skills/*/SKILL.md"):
     if re.search(r"^disable-model-invocation:\s*true", cap.read_text(), re.M) and cap.parent.name not in USER_ONLY:
         err(f"{cap.relative_to(ROOT)} is hidden from Claude (disable-model-invocation); remove it or add it to USER_ONLY in tools/audit.py")

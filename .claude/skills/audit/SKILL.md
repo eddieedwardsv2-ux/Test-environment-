@@ -97,7 +97,7 @@ The audit is read-only toward inspected systems: no repairs, file moves, install
 
 ## In Charlie's repo (local rules, override the kit defaults above)
 
-- Run `python3 tools/audit.py` first; its result counts as evidence (structure, links, quotes, secrets).
+- Run `python3 tools/audit.py` and `python3 tools/fault_drill.py` first (the drill plants 23 faults and proves the audit catches each); its result counts as evidence (structure, links, quotes, secrets).
 - Reports in `audits/` **are committed**: the repo is public and cloud sessions wipe uncommitted files. Redact anything private; never include other people's details.
 - File name: `audits/audit-YYYY-MM-DD-HHMMSS-<suffix>.md` as above. Earlier reports (`audits/2026-10-0*.md`) are legacy, unscored baselines.
 - **Receipts (proof, not claims):** every run saves its evidence in `audits/evidence/<run-id>/`, committed with the report:
