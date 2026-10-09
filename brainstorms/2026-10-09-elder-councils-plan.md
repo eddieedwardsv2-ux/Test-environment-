@@ -613,6 +613,11 @@ re-run the fresh-session routing test (both "ask the Quartermaster" and
 
 ## 6. Open questions for Charlie (for the Chief's Desk; my recommendation first)
 
+**Answered 2026-10-09:** `elder-pilot-go` go, all recommended answers;
+`elder-pushback` recommended answer (see `decisions.md`); `elder-two-desks` keep both.
+The pilot starts at section 5, step 0.
+
+
 **On the Chief's Desk (2026-10-09), three cards, not eleven.** Questions 1-8
 and N1 all have a clear recommendation and are easy to undo, so they share
 one card, **`elder-pilot-go`** ("start the pilot with the recommended

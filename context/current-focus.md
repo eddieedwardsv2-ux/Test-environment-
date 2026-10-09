@@ -30,6 +30,9 @@ skill (Canva connected and proven); Small Business's 44 skills mapped in the Qua
 (not installed). **Next:** check the 5 plugins Charlie ticked are enabled
 (`ListPlugins`), test each once with `try-tool`. 9 Oct evening: the Guardian built and its report
 required for big commits (`context/working-rules.md`); journey video parked 9 Oct (see Parking Lot).
+Desk answers 9 Oct evening: **Elder pilot go** (next session: step 0 mini-router, then the
+first plugin trial through the council and the `guardian`; plan section 5); Quartermaster
+buttons and the Desk stay separate; Bitcoin newsletter is a side project (only when asked).
 GitHub first; Notion replaces Drive (see `AGENTS.md`).
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;

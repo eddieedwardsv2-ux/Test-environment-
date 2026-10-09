@@ -32,15 +32,17 @@ The `session-handoff` skill (Charlie's routine: hand off, copy the message, `/cl
 
 ## Decisions made
 - `/session-handoff` ends with one paste-ready message: copy, `/clear`, paste (Charlie, 9 Oct).
+- Desk, 9 Oct evening: Elder pilot **go** (all recommended answers); Quartermaster buttons and
+  the Desk stay separate; Bitcoin newsletter is a **side project** (only when asked).
 
 ## Open decisions (Desk)
-- `btc-newsletter` (new): park, side project or priority?
-- `elder-pilot-go`, `elder-pushback`, `elder-two-desks`: the Elder councils plan.
+- None open on the Desk (all answered cards closed 9 Oct evening).
 - Not on the Desk yet: the 6 "Needs Charlie" items at the top of `context/todo.md`.
 
 ## Pick up here
 1. Read the Desk answers (`decide`); act on any answered cards.
-2. Plugins: once `ListPlugins` shows them, one `try-tool` test each.
+2. Elder pilot step 0: Quartermaster mini-router at the top of `research/hands/README.md`;
+   then step 1: one plugin trial (once `ListPlugins` shows them) through the council and `guardian`.
 3. Saturday 10 Oct 8:47 Quartermaster update, then Friday 16 Oct 8:59 audit: read both reports.
 
 Parked by Charlie 9 Oct (not a step): the journey video (Parking Lot in `context/current-focus.md`).

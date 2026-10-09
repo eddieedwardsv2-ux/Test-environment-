@@ -13,11 +13,11 @@ deleting them (history stays in `decisions.md`).
 - [ ] Check ChatGPT accepts the longer instructions box (`exports/chatgpt-instructions.md`, box 2 is about 2,000 characters)
 - [ ] Confirm or change Claude's "where this is heading" theory for `current-focus.md`
 
-- [ ] Elder councils: 3 open Desk cards (elder-pilot-go, elder-pushback, elder-two-desks); plan now on main at `brainstorms/2026-10-09-elder-councils-plan.md` (was only on branch `elder-councils-plan`, which also holds `research/nate-herk/prompt-upgrade2-landing-page.md`)
-- [ ] Bitcoin newsletter (`projects/bitcoin-newsletter/`, added 9 Oct 16:47 outside a Claude session): active or parked? Not in current-focus or `decisions.md`; Desk card "btc-newsletter"
+- [ ] When Charlie asks how leftover decisions and parked tasks fit into the set-up kit: include the Bitcoin newsletter (side project since 9 Oct, his note on the Desk)
 - [ ] `aios-intake.md` Q2, Q5 and half of Q7 still unanswered
 
 ## Next to build (in order, after the Desk answers)
+1. [ ] Elder pilot (Desk: go, 9 Oct): step 0 mini-router at the top of `research/hands/README.md`, then step 1, one plugin trial through the council and the `guardian` (`brainstorms/2026-10-09-elder-councils-plan.md` section 5)
 2. [ ] Model comparisons on real work (comparisons 1-2 done 9 Oct: both 9/9; Desk card "promote-sonnet" for the two advisors) before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
 2b. [x] Guardian report required (9 Oct): `tools/audit.py` errors on a 4+ file commit with no newly added, matching Guardian report; fault drill 24/24. Limits: it runs locally and in the Stop hook only (any shallow clone, e.g. GitHub's, skips it); the hook sends a turn back once, and only after the commit exists; it proves a fresh report with a matching verdict was filed, not that the Guardian wrote it. Ended NOT READY after the last fix round (`audits/guardian/2026-10-09-guardian-enforced.md`); the shallow-clone fix made after it was then checked: READY (`audits/guardian/2026-10-09-shallow-fix.md`). Open: (a) a commit message quoting the rule as an example is read as a citation; (b) file names with spaces are over-counted; (c) Codex route also belongs in this list: Codex commits, leaves the error, notes it under "Waiting on Charlie"; (d) try the Guardian on a different model (Nate says a different model judges)
 4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker")

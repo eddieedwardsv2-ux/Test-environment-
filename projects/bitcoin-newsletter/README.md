@@ -1,5 +1,7 @@
 # Bitcoin market newsletter
 
+**Status:** side project (Charlie, Desk 2026-10-09): worked on only when he asks; not part of the 90-day priority.
+
 Goal: publish clear, evidence-led BTC technical analysis that works from monthly to intraday timeframes, distinguishes tactical trades from higher-timeframe bias, and makes invalidation explicit.
 
 **Done when:** a dated, readable draft exists; chart-derived levels are labeled; source limitations and scenario invalidations are stated; public publication requires separate review and approval.
