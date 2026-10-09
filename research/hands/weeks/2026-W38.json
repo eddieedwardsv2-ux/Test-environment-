@@ -188,7 +188,7 @@
    "video": "1fHsIveXRa8",
    "t": "2:07",
    "quote": "It's scannable so you understand it.",
-   "check": "Star count (47,000) is the host's claim.",
+   "check": "Checked 2026-10-09: 55,849 GitHub stars, 24,300 installs on skills.sh (the host said 47,000). One MIT skill file; runs only when typed (/i-have-adhd); its plugin version adds a start-up hook.",
    "vs": {
     "tool": "find-skills",
     "verdict": "different job",
