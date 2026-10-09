@@ -9,12 +9,18 @@ ROOT = Path(__file__).resolve().parent.parent
 DESK = "https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx"
 DOCS = [  # (file, short label, Desk card it feeds or None)
     ("audits/audit-2026-10-09-112239-a7c3.md", "Audit 9 Oct: 64/100", "audit-fixes-2026-10-09"),
+    ("brainstorms/2026-10-09-elder-councils-plan.md", "Elder councils plan", "elder-pilot-go"),
     ("brainstorms/2026-10-09-middle-plans.md", "The middle: two plans", "middle-go"),
     ("context/todo.md", "Everything unfinished", None),
     ("research/council-plan.md", "The council plan", None),
     ("system/model-usage.md", "How we choose models", None),
 ]
 SUMMARY = {  # plain-English "in short" box shown above a document
+    "brainstorms/2026-10-09-elder-councils-plan.md": [
+        "Each Elder gets a council of experts (one is always a contrarian) and a separate guardian who checks the work without seeing the makers' reasoning.",
+        "New (3b): each Elder gets a mini-router (its own \"where things live\", links up and across) and a mini-desk (what it settles, what comes to you, same card shape).",
+        "Built in so it doesn't just please you: drop is a normal verdict, NOT VERIFIED is never empty, disagreement is said first with reasons. You still decide.",
+    ],
     "audits/audit-2026-10-09-112239-a7c3.md": [
         "Score 64/100, up from 49: \"working, with gaps\". Connections is the weakest area (11/25).",
         "Biggest fix: current-focus still tells a new session to answer cards that are already closed.",
