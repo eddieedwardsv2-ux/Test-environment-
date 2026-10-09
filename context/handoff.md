@@ -1,6 +1,7 @@
 # Session hand-off
 
 Overwritten at the end of each long session. History lives in `decisions.md`.
+For Codex or ChatGPT while Claude is out of usage: `exports/handoff-2026-10-09-for-codex-chatgpt.md`.
 **Written:** 2026-10-09, paused at 95% of the weekly usage.
 
 ## Done this session (all pushed to main, audit 0 errors, fault drill 23/23)
