@@ -23,6 +23,8 @@ Sources: context/about-me.md; context/current-focus.md; brainstorms/2026-10-08-w
 
 An email, a LinkedIn post, a DM, a doc — anything that sounds like you when you're not trying. **Paste verbatim.** Do not type these mid-conversation with Claude — chat-shaped samples are worse than no samples (voice contamination).
 
+*2026-10-09: no samples yet, so Charlie practises on the Voice Gym (`system/pages.md`): AI-style drafts he rewrites his way. Once 5+ are done, Claude writes the patterns here (what he cuts, adds, his words), with his rewrites as the samples.*
+
 ```
 [Sample 1 — paste raw]
 ```

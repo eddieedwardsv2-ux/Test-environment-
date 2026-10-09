@@ -6,6 +6,7 @@ by publishing the same source file again (keeps the link).
 | Page | Link | Source | Rebuild, then republish |
 |---|---|---|---|
 | **Decision Desk**: every question waiting for Charlie (the `decide` skill) | https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx | `system/decision-desk/decision-desk.html` | none; questions live in its `decisions` database (ArtifactData) |
+| **Voice Gym**: practice messages written the AI way; Charlie rewrites them, the differences become his voice notes | https://claude.ai/artifact/VftqKWwvitMR2RF2mvQT76 | `system/voice-practice/voice-practice.html` | none; drills and his versions live in its `drills` database (ArtifactData); voice notes go in `aios-intake.md` Q2 |
 | **Hands Brain**: best tools to use now: a map (like Charlie's Brain, with ENATE links) and a ranked list | https://claude.ai/artifact/QVni63FtP7cG1z9UrajfCL | `research/hands/site/hands.html` | `python3 research/hands/pipeline.py`, week files (the `hands-ingest` skill), then `python3 tools/build_hands.py` |
 | **OS Guide**: plain-English guide (what we built and why, skill groups, words, backtest) | https://claude.ai/artifact/UMdY5JYymKneEhi9ZLhewa | `system/guide/guide.html` | edit by hand when a part is added |
 | **Lesson: new findings** (slides, 13): less context, the Desk, skills, ENATE, Hands Brain, backtest | https://claude.ai/artifact/NC9J9KZkE5Wb1vDKgntoGq | its own files on the page (Slides type) | edit slides on the page or ask Claude |

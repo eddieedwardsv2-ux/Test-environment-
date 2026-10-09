@@ -58,6 +58,11 @@ for line in listing:
     tr = list((ROOT / f"research/{a.creator}").glob(f"*--{vid}-transcript.md"))
     v["transcript"] = str(tr[0].relative_to(ROOT)) if tr else None
     videos.append(v)
+# Merge with the saved list so a short --weeks run never drops older videos.
+fresh = {v["id"] for v in videos}
+if out_file.exists():
+    videos += [v for v in json.loads(out_file.read_text()) if v["id"] not in fresh]
+videos.sort(key=lambda v: v.get("date") or "", reverse=True)
 out_file.write_text(json.dumps(videos, indent=1, ensure_ascii=False))
 weeks = {}
 for v in videos: weeks.setdefault(v.get("week", "unknown"), []).append(v["id"])

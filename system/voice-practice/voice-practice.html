@@ -1,0 +1,122 @@
+<title>Charlie's Voice Gym</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: one column of practice cards; each card = the job, the AI draft (struck through as you go), your version underneath. */
+:root{
+  --bg:#f5f3ef; --card:#ffffff; --fg:#1d1b18; --muted:#635d55; --line:#ded8cf;
+  --ai:#6b5f8a; --ai-soft:#eeebf5; --me:#0f6b5c; --me-soft:#e1f0ec; --warn:#a85d00;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141311; --card:#1d1b19; --fg:#ece8e2; --muted:#a59d93; --line:#34302b;
+  --ai:#b3a6dd; --ai-soft:#2a2638; --me:#4cc3a9; --me-soft:#16332c; --warn:#f0a64a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141311; --card:#1d1b19; --fg:#ece8e2; --muted:#a59d93; --line:#34302b;
+  --ai:#b3a6dd; --ai-soft:#2a2638; --me:#4cc3a9; --me-soft:#16332c; --warn:#f0a64a; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--body);margin:0}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px;padding-block:28px 60px;display:grid;gap:18px}
+h1{font:800 clamp(28px,6vw,40px)/1.05 var(--display);margin:0;text-wrap:balance}
+.lede{color:var(--muted);margin:6px 0 0;max-width:62ch}
+.how{display:grid;gap:6px;margin:0;padding-left:20px;color:var(--muted)}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.progress{font-weight:700;font-variant-numeric:tabular-nums}
+.toggle{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--muted);cursor:pointer}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:12px;min-width:0}
+.meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px;color:var(--muted)}
+.pill{font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:var(--ai-soft);color:var(--ai)}
+.pill.done{background:var(--me-soft);color:var(--me)}
+.job{font:700 19px/1.3 var(--display);margin:0;text-wrap:balance}
+.label{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.draft{background:var(--ai-soft);border-radius:8px;padding:12px 14px;white-space:pre-wrap;margin:0;font-size:15px}
+.draft.hidden-draft{color:transparent;text-shadow:0 0 8px var(--ai);user-select:none}
+textarea{width:100%;box-sizing:border-box;min-height:120px;font:16px/1.5 var(--body);color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;resize:vertical}
+textarea:focus-visible,button:focus-visible,.tag:focus-within{outline:2px solid var(--me);outline-offset:2px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px;cursor:pointer;background:var(--card)}
+.tag input{accent-color:var(--me);margin:0}
+.tag:has(input:checked){border-color:var(--me);background:var(--me-soft)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+button{font:700 15px var(--body);border-radius:999px;padding:9px 18px;cursor:pointer;border:1px solid var(--me);background:var(--me);color:var(--bg)}
+button:disabled{opacity:.5;cursor:default}
+.status{font-size:14px;color:var(--muted)}
+.status.err{color:var(--warn)}
+.empty{color:var(--muted);text-align:center;padding:30px 10px}
+footer{color:var(--muted);font-size:14px}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .2s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Charlie's Voice Gym</h1>
+    <p class="lede">Short practice messages. Claude wrote each one the way AI usually sounds. Rewrite it exactly how you'd send it. The gap between the two is your voice.</p>
+  </header>
+
+  <ol class="how">
+    <li>Read the job, then type your version how you'd really send it from your phone. Typos and slang are fine. Don't tidy it up.</li>
+    <li>Tick what felt wrong about the AI version.</li>
+    <li>Tap <strong>Save my version</strong>. Claude reads them later and writes your voice notes.</li>
+  </ol>
+
+  <div class="bar">
+    <span class="progress" id="progress">Loading practice…</span>
+    <label class="toggle" for="hideDrafts"><input type="checkbox" id="hideDrafts"> Hide the AI version until I've saved mine</label>
+  </div>
+
+  <main id="list"><p class="empty">Loading your practice messages…</p></main>
+
+  <footer>This page is private to you. Don't put anyone's real name, address or money details in here: the voice notes go in a public repo.</footer>
+</div>
+
+<script>
+const TAGS=[["formal","Too formal"],["long","Too long"],["words","Words I'd never use"],["cold","Not friendly enough"],["salesy","Too salesy"],["right","Actually fine"]];
+const list=document.getElementById("list"), progress=document.getElementById("progress"), hide=document.getElementById("hideDrafts");
+let db=null, drills=[], canWrite=true;
+try{hide.checked=localStorage.getItem("vg-hide")==="1"}catch(e){}
+hide.addEventListener("change",()=>{try{localStorage.setItem("vg-hide",hide.checked?"1":"0")}catch(e){} render()});
+
+function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(k==="class")n.className=v;else if(k==="text")n.textContent=v;else n.setAttribute(k,v)}kids.forEach(k=>k&&n.append(k));return n}
+
+function render(){
+  const done=drills.filter(d=>d.data.status==="done").length;
+  progress.textContent=drills.length?`${done} of ${drills.length} done`:"No practice yet";
+  if(!drills.length){list.replaceChildren(el("p",{class:"empty",text:db?"No practice messages yet. Ask Claude to add some.":"Open this page in claude.ai, signed in, to save your versions."}));return}
+  // keep any typing in progress
+  const typed={};list.querySelectorAll("textarea").forEach(t=>typed[t.id]=t.value);
+  list.replaceChildren(...drills.map(({id,data:d})=>{
+    const isDone=d.status==="done";
+    const ta=el("textarea",{id:"mine-"+id,placeholder:"Type it how you'd send it…","aria-label":"My version"});
+    ta.value=typed["mine-"+id]??d.mine??"";
+    const tags=el("div",{class:"tags"},...TAGS.map(([k,l])=>{const cb=el("input",{type:"checkbox",id:`t-${id}-${k}`,value:k});if((d.tags||[]).includes(k))cb.checked=true;return el("label",{class:"tag",for:`t-${id}-${k}`},cb,document.createTextNode(l))}));
+    const status=el("span",{class:"status",text:isDone&&d.savedAt?"Saved "+new Date(d.savedAt).toLocaleDateString("en-GB",{day:"numeric",month:"short"}):""});
+    const btn=el("button",{type:"button",text:isDone?"Update my version":"Save my version"});
+    if(!db||!canWrite)btn.disabled=true;
+    btn.addEventListener("click",async()=>{
+      const mine=ta.value.trim();if(!mine){status.textContent="Type your version first.";status.className="status err";return}
+      btn.disabled=true;status.className="status";status.textContent="Saving…";
+      const picked=[...tags.querySelectorAll("input:checked")].map(i=>i.value);
+      try{await db.doc("drills/"+id).update({mine,tags:picked,status:"done",savedAt:new Date().toISOString()});status.textContent="Saved"}
+      catch(e){status.className="status err";status.textContent=e&&e.code==="invalid_argument"?"This page can't save for you. Open it signed in as the owner.":"Didn't save. Check your connection and tap again."}
+      finally{btn.disabled=false}
+    });
+    const blur=hide.checked&&!isDone;
+    return el("article",{class:"card"},
+      el("div",{class:"meta"},el("span",{class:"pill"+(isDone?" done":""),text:isDone?"Done":"To do"}),el("span",{text:d.kind||""})),
+      el("h2",{class:"job",text:d.job}),
+      el("div",{},el("p",{class:"label",text:"How AI would send it"}),el("p",{class:"draft"+(blur?" hidden-draft":""),text:d.draft,"aria-hidden":blur?"true":"false"})),
+      el("div",{},el("p",{class:"label",text:"How I'd send it"}),ta),
+      el("div",{},el("p",{class:"label",text:"What was wrong with the AI version?"}),tags),
+      el("div",{class:"row"},btn,status));
+  }));
+}
+
+(async()=>{
+  db=await claude.use("db");
+  if(!db){render();return}
+  const user=await claude.use("user");
+  if(user&&typeof user.can==="function"){try{const c=await user.can("data.write");if(c===false)canWrite=false}catch(e){}}
+  db.collection("drills").orderBy("order").onSnapshot(s=>{drills=s.docs.map(d=>({id:d.id,data:d.data()}));render()},
+    ()=>{progress.textContent="Couldn't load the practice. Reload the page.";});
+})();
+</script>
