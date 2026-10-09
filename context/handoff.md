@@ -41,23 +41,24 @@ knowledge base is added.
    `save` script.
 
 ## Pick up here
-Done since the hand-off (2026-10-08): first scored audit, 49/100 Foundation
-(`audits/audit-2026-10-08-184245-b9f5.md`); audits now keep receipts;
-Brain dashboard (whole repo + Nate's brain as one map, review cards); "I'm on
-Mac" checklist (`context/mac-day.md`). Brain review: everything accepted for
-now; only Concept 2 marked confusing (explained in chat, wording unchanged).
-Set-up kit plan now v0.3 (`projects/ai-os-setup-kit/plan.md`: three
-questions, one automation, the bike method; 14 days designed later); ChatGPT
-export refreshed. Kit Compare v2 (two connected maps, link in the project
-README). Nate-first map (https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky, `system/merge-map/`): our OS today vs the same
-work placed by Nate's kit rules (75 of 99 dots stay put, 20 move, our blank
-template not needed). The two map builders share `tools/graph_lib.py`.
-Later the same day: Nate's newest video ingested (concept 39, Rule 41);
-router trimmed to 76 lines, `os-audit` folded into `audit`, and every
-question for Charlie now lives on the Decision Desk (`decide` skill, links in
-`system/pages.md`).
-**First thing next session:** run the `decide` skill's "read answers" step
-and act on what Charlie sent. Open cards: base kit, trimming the kit's thick
-skills, which new Nate videos to ingest, `/doctor`, GitHub connector.
-Then: rebuild the Brain dashboard in the radial style.
+**Written 2026-10-09** at the end of the long session that built: the trimmed
+rulebook (76 lines), the Decision Desk (`decide` skill), one `audit` skill with
+the content check, ENATE (Nate's brain: 69 videos, 43 concepts, 43 rules), the
+Hands Brain (`research/hands/`: The Next New Thing + skills.sh, 95 tools, map
+view, ENATE links), the OS Guide, the lesson slides, the audit review, and the
+Friday audit routine ("Weekly AI OS audit", 8:59 UK time). All links:
+`system/pages.md`. History: `decisions.md`.
+
+**First thing:** run the `decide` skill's "read answers" step. Open card:
+"enate-merge" (merge ENATE's overlapping rules; see
+`research/nate-herk/brain/overlap-review.md`).
+
+**Waiting on Charlie:** add Higgsfield as a custom connector
+(`https://mcp.higgsfield.ai/mcp`, guide `references/higgsfield-api.md`);
+finish the Canva sign-in. Connectors load only when a session starts.
+
+**Suggestions offered, not yet chosen:** one home page for all pages; refresh
+the Watch Path and the two oldest lessons; mark Kit Compare as decided; a
+weekly Hands Brain routine; the round Brain map.
+
 Keep sessions short: hand off at about half the context window.
