@@ -3,7 +3,7 @@
 Charlie wrote this with ChatGPT on a walk. **Not started.** It overlaps his own
 question from earlier the same day ("is the routing clear, and where is our
 brains' middle?", `context/handoff.md`), which he wants to discuss before
-anything changes. His spoken notes from the walk are still to come.
+anything changes. His spoken notes from the walk are still to come; his thoughts from the chat are in `2026-10-09-charlies-thoughts.md`.
 
 Notes for whoever runs it:
 - The video (Nate Herk, "Grok Bot Just Got 2 Massive Upgrades", MgvwZaDPCs4) is
