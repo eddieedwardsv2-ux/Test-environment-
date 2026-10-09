@@ -65,6 +65,7 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
+- Claude Guardian also needs to review deployment notes `a69926b`; final audit has four missing-review errors and four publication warnings. External hosting remains unverified.
 - Claude Guardian also needs to review typing fix `baa609d` (five files): 16/16 tests, Docker build and clean dependency audit; live typing check exited0.
 - Claude Guardian review of browser app commit `c0b51c5` on
   `codex/shared-iphone-browser` is required. Independent code review and 16/16
