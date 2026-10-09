@@ -18,12 +18,11 @@ deleting them (history stays in `decisions.md`).
 - [ ] `aios-intake.md` Q2, Q5 and half of Q7 still unanswered
 
 ## Reminders for Claude
-- Review the Codex hand-off commit recorded under "Waiting on Charlie" in `context/current-focus.md`, and republish the local pages flagged by `tools/pages_status.py`; Codex could not run the Claude Guardian or publish artifacts.
+- After any Codex session: run the Guardian on its commits and republish the pages `tools/pages_status.py --build` flags (Codex can do neither).
 - When Charlie asks how leftover decisions and parked tasks could fit into the set-up kit: go through all of them (this list, the Parking Lot, parked projects), including the Bitcoin newsletter (side project since 9 Oct; his note on the Desk)
 
-- [ ] Guardian check of Codex's hand-off commits `975420c` and `2c52266` (Codex can't check its own work). The audit didn't flag them: a Guardian line on a parallel commit (this merge's Claude side) cleared them when the two histories merged; fix that hole in `tools/audit.py` (a trailer should only clear its own ancestors)
-
 ## Next to build (in order, after the Desk answers)
+0. [ ] Fix a hole in `tools/audit.py`: a Guardian line on one side of a merge clears unchecked commits on the other side (Codex's `975420c` passed this way, 9 Oct; it has since been checked). A Guardian line should only clear its own ancestors
 1. [ ] Elder pilot (Desk: go, 9 Oct): step 0 done (mini-router); step 1 done 9 Oct: first trial, frontend-design, through the council and the `guardian` (`research/hands/reviews/frontend-design-2026-10-09.md`; Charlie's verdict on Desk card `qm-frontend-design`). Next: step 2, plant two faults in copies of that review and check the guardian catches both (plan section 5)
 2. [ ] Model comparisons on real work (comparisons 1-2 done 9 Oct: both 9/9; Desk card "promote-sonnet" for the two advisors) before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
 2b. [x] Guardian report required (9 Oct): `tools/audit.py` errors on a 4+ file commit with no newly added, matching Guardian report; fault drill 24/24. Limits: it runs locally and in the Stop hook only (any shallow clone, e.g. GitHub's, skips it); the hook sends a turn back once, and only after the commit exists; it proves a fresh report with a matching verdict was filed, not that the Guardian wrote it. Ended NOT READY after the last fix round (`audits/guardian/2026-10-09-guardian-enforced.md`); the shallow-clone fix made after it was then checked: READY (`audits/guardian/2026-10-09-shallow-fix.md`). Open: (a) a commit message quoting the rule as an example is read as a citation; (b) file names with spaces are over-counted; (c) Codex route also belongs in this list: Codex commits, leaves the error, notes it under "Waiting on Charlie"; (d) try the Guardian on a different model (Nate says a different model judges)

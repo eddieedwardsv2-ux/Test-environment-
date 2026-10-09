@@ -40,7 +40,9 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 - Browser design approval is still pending. Then write/review the spec and implementation plan before coding; consult the brainstorming skill. Hosting and spend require a concrete proposal first.
 
 ## Open decisions
-- Approve/change that first browser design (also under "Waiting on Charlie" in current-focus).
+- Desk `qm-frontend-design`: Charlie's keep / later / drop for the first Elder trial (comes before pilot step 2).
+- Desk `shared-browser-design`: approve/change that first browser design.
+- Desk `higgsfield-signin`: only Charlie can sign in.
 - Secure Higgsfield sign-in and a supported persistent connector/browser route; Katana availability and exact credit cost unverified. Never ask for tokens or OAuth callback URLs in chat.
 - Claude Guardian review and live page republishing will remain outstanding after this hand-off commit; current-focus records the commit once saved.
 - Branch review: `claude/nate-brain-wip` has 1 unmerged commit including `research/nate-herk/brain/x-themes.md` (unverified); `elder-councils-plan` has 3; `nate-watch-path` has 2. The Elder plan and Watch Path source are already on main. Historical branches also contain old renamed files; no branches merged/deleted.
@@ -54,4 +56,4 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 - Elder pilot: mini-router done; trial 1 done by Claude the same evening (frontend-design, Guardian READY, `research/hands/reviews/frontend-design-2026-10-09.md`), verdict on Desk card `qm-frontend-design`; next is pilot step 2. Do not silently replace the 90-day set-up-kit priority.
 - Prior Desk reads, scheduled Quartermaster/audit reports, the six older Needs Charlie items, paused set-up kit, side-project Bitcoin newsletter and parked journey video remain in todo/current-focus; no fresh Desk or scheduler verification.
 - Prior branch-only WIP preserved above; dropped-item/session-review list remains in todo. Nothing dropped or declared complete without evidence.
-- Rebuilt local pages need live republishing where flagged; no publishing tools here, so publication fingerprints must not be marked current without a real publish.
+- Pages: republished by Claude after the merge (`tools/pages_status.py`: 0 behind); Codex's commits checked by the Guardian (READY).

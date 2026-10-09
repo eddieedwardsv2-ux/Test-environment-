@@ -63,16 +63,11 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
-- Approve/change the proposed first browser version: a private iPhone-sized
-  home-screen web app shared with Codex, using Chromium/Selkies, a saved browser
-  profile, keyboard/touch controls, reconnect and My turn / AI's turn takeover.
-  Approval permits writing the spec; no hosting/payment or implementation approved yet.
-- Secure Higgsfield account sign-in and a supported writable connector route;
-  re-check Intelligent UI/browser tool availability in the next session. Keep this
-  workflow in Codex. Katana access and credits are still unverified.
-- Claude Guardian needs to review hand-off commit `975420c` (four documents plus
-  rebuilt pages). Post-commit audit: 1 missing-Guardian error, 4 publication warnings.
-  Republish Quartermaster, Reading Room, Brain dashboard and Nate-first map after review.
+- Moved to the Chief's Desk 9 Oct evening: `shared-browser-design` (Codex's shared browser:
+  write its plan?) and `higgsfield-signin` (only Charlie can sign in). Keep the browser and
+  Higgsfield work in Codex. Katana access and credits are still unverified.
+- Codex's hand-off commits `975420c` and `2c52266` were checked by the Guardian (READY,
+  `audits/guardian/2026-10-09-codex-handoff-merge.md`) and the pages republished.
 
 ## Parking Lot
 - Journey video (parked by Charlie 2026-10-09): Mix draft with the growing brain is
