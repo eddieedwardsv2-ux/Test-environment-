@@ -20,5 +20,16 @@
   "adds": "would add about 1,000 SKILL.md files and 7 hooks; adopted instead: 3 short rules",
   "verdict": "drop",
   "why": "Charlie agreed 2026-10-09: ideas only. A 293-skill coding kit with hooks on 7 events breaks smallest context; its done-when check, READY/NOT READY report and scored lessons are now in our rules (review: research/hands/reviews/ecc-2026-10-09.md)."
+ },
+ {
+  "name": "frontend-design",
+  "date": "2026-10-09",
+  "task": "Restyle Charlie's OS Guide page (scratch copy only) following the skill's plan, check and critique steps",
+  "result": "Worked: light one-column 'job manual' look; ALL-CAPS mono labels and all 24 'A · B · C' dot strings removed (grep count 12 to 0), dark cards gone; one spacing fault caught by its self-critique step; the Guardian caught 23 dot strings the first pass missed, then fixed; no script errors",
+  "time": "about 15 minutes",
+  "cost": "free (Apache 2.0, Anthropic's official skills)",
+  "adds": "nothing if kept as a reference file; about 200 characters every message if installed as a skill",
+  "verdict": "pending",
+  "why": "Elder pilot trial 1 (council + guardian); council recommends keep as a reference; Charlie decides on the Desk (qm-frontend-design). Review: research/hands/reviews/frontend-design-2026-10-09.md"
  }
 ]

@@ -20,7 +20,7 @@
  "research/hands/site/hands.html": {
   "page": "Quartermaster",
   "url": "https://claude.ai/artifact/QVni63FtP7cG1z9UrajfCL",
-  "sha256": "388a0b67fea6cf79",
+  "sha256": "853aef0eed09feb1",
   "published": "2026-10-09"
  },
  "system/guide/guide.html": {
@@ -44,19 +44,19 @@
  "system/reader/reader.html": {
   "page": "Reading Room",
   "url": "https://claude.ai/artifact/E5Skrh9G7ey8DpAUDGXbds",
-  "sha256": "71dfa12a7350d9a5",
+  "sha256": "151b371525547cfe",
   "published": "2026-10-09"
  },
  "research/nate-herk/brain/map/brain-map.html": {
   "page": "Brain dashboard",
   "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
-  "sha256": "fdddb0c7ed07fdd9",
+  "sha256": "071a6f411ff7a48a",
   "published": "2026-10-09"
  },
  "system/merge-map/merge-map.html": {
   "page": "Nate-first map",
   "url": "https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky",
-  "sha256": "4f522dbe5a302824",
+  "sha256": "443189c1d4538815",
   "published": "2026-10-09"
  },
  "projects/ai-os-setup-kit/compare/kit-compare.html": {
