@@ -154,3 +154,5 @@ before the first person reaches them.
    interview.
 4. **Their voice, early:** ask for 3 emails, 3 articles, or just 3 spoken
    stories, saved as their voice samples, because the OS uses them all the time.
+
+**Charlie's note (Desk, 2026-10-09):** when he asks how leftover decisions and parked tasks could fit into this kit, go through them all (`context/todo.md`, the Parking Lot in `context/current-focus.md`, side projects such as `projects/bitcoin-newsletter/`).

@@ -13,8 +13,10 @@ deleting them (history stays in `decisions.md`).
 - [ ] Check ChatGPT accepts the longer instructions box (`exports/chatgpt-instructions.md`, box 2 is about 2,000 characters)
 - [ ] Confirm or change Claude's "where this is heading" theory for `current-focus.md`
 
-- [ ] When Charlie asks how leftover decisions and parked tasks fit into the set-up kit: include the Bitcoin newsletter (side project since 9 Oct, his note on the Desk)
 - [ ] `aios-intake.md` Q2, Q5 and half of Q7 still unanswered
+
+## Reminders for Claude
+- When Charlie asks how leftover decisions and parked tasks could fit into the set-up kit: go through all of them (this list, the Parking Lot, parked projects), including the Bitcoin newsletter (side project since 9 Oct; his note on the Desk)
 
 ## Next to build (in order, after the Desk answers)
 1. [ ] Elder pilot (Desk: go, 9 Oct): step 0 mini-router at the top of `research/hands/README.md`, then step 1, one plugin trial through the council and the `guardian` (`brainstorms/2026-10-09-elder-councils-plan.md` section 5)

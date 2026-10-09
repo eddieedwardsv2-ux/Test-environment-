@@ -2,7 +2,7 @@
 
 Overwritten at the end of each long session by the `session-handoff` skill.
 History lives in `decisions.md`. For Codex or ChatGPT: `exports/handoff-2026-10-09-for-codex-chatgpt.md`.
-**Written:** 2026-10-09, about 17:45 UK, by Claude; end of the "previous sessions review" session.
+**Written:** 2026-10-09, about 17:45 UK, by Claude; end of the "previous sessions review" session. Updated about 18:10 UK with the evening Desk answers.
 
 ## Working on
 The `session-handoff` skill (Charlie's routine: hand off, copy the message, `/clear`, paste) and a review of past sessions for forgotten work.
