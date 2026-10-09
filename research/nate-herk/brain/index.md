@@ -45,3 +45,5 @@ The knowledge base behind the `nate-brain` advisor (`.claude/agents/nate-brain.m
 - **2026-10-08, newest:** oz2CwrPV2Rg (Anthropic Engineers Just 10x'd Everyone's Claude Code) → concept 39, Rule 41. Then the other 13 newest transcripts (Charlie chose all, on the Decision Desk) → concepts 40-43 and "Also" lines on 15, 16, 25, 31, 32, 33, 35, 37, 39; Rules 42-43; Rule 41 gained a second source. Who won which model test is deliberately not kept.
 - **Not ingested:** Nate's X posts (`../x-posts.md`; no X themes page, not yet verified) and his untranscribed videos (mostly model news, n8n and single-tool demos).
 - **Adding to the brain:** use the `brain-ingest` skill; it updates every page a source touches, then this index and the log.
+
+**Overlap review (2026-10-09):** `overlap-review.md`: about 14 rules and 5 concepts repeat each other; merging is a Decision Desk card.
