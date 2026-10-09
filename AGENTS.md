@@ -64,6 +64,8 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
 - `decide`: any question for Charlie; reading his answers.
 - `audit`: weekly Four Cs score (reports in `audits/`), and its content
   check after a wrong answer, a big change or **a switch to a new model**.
+- `i-have-adhd` (Charlie types it: action-first replies until "stop adhd mode";
+  installed from skills.sh, MIT).
 - `teach` (teach a topic), `grill-me` (interview Charlie, notes in
   `brainstorms/`), `level-up`
   (next automation, weekly), `link` (make a new file findable),

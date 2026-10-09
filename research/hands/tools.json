@@ -1505,60 +1505,6 @@
   "rank": 10
  },
  {
-  "id": "gh:ayghri/i-have-adhd",
-  "name": "I Have ADHD",
-  "url": "https://github.com/ayghri/i-have-adhd",
-  "kind": "repo",
-  "category": "Claude Code skills & plugins",
-  "what": "A single skill file that makes the AI answer short and easy to scan; 47,000 stars.",
-  "price": "open-source",
-  "for_charlie": 3,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "2:07",
-    "shown": "A clip of the Claude web app before and after the slash command: answer became much shorter.",
-    "quote": "It's scannable so you understand it.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Andrew",
-     "why": "Makes the AI answer short and scannable, which he sees as the reason it keeps growing.",
-     "quote": "I like this one and I could see why it continues to grow.",
-     "t": "2:36"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Shorter answers in Claude Code sessions",
-     "agree": "agree",
-     "why": "Rule 41: smallest context that works. Test it against our Now/Done-when format first (Rule 43)."
-    }
-   }
-  ],
-  "check": "Checked 2026-10-09: 55,849 GitHub stars, 24,300 installs on skills.sh (the host said 47,000). One MIT skill file; runs only when typed (/i-have-adhd); its plugin version adds a start-up hook.",
-  "vs": {
-   "tool": "find-skills",
-   "verdict": "different job",
-   "gap": "Not tried in Charlie's own sessions; unknown if it clashes with the plain UK English and Now/Done when rules in AGENTS.md."
-  },
-  "weeks": [
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W38",
-  "mentions": 1,
-  "score": 12,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 11
- },
- {
   "id": "gh:alibaba/open-code-review",
   "name": "Open Code Review",
   "url": "https://github.com/alibaba/open-code-review",
@@ -2092,7 +2038,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 12
+  "rank": 11
  },
  {
   "id": "n:creativeclaw",
@@ -3177,7 +3123,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 13
+  "rank": 12
  },
  {
   "id": "gh:odysseus-dev/odysseus",
@@ -3813,7 +3759,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 14
+  "rank": 13
  },
  {
   "id": "n:pexo",
@@ -3913,7 +3859,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 15
+  "rank": 14
  },
  {
   "id": "gh:anthropics/financial-services",
@@ -3985,7 +3931,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 16
+  "rank": 15
  },
  {
   "id": "gh:cactus-compute/needle",
@@ -4299,7 +4245,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 17
+  "rank": 16
  },
  {
   "id": "gh:captainasic/reckoner",
@@ -6249,6 +6195,60 @@
   "score": 16.9,
   "replaced_by": null,
   "status": "rising",
+  "ours": true,
+  "have": true,
+  "shown": true,
+  "tried": null,
+  "rank": null
+ },
+ {
+  "id": "gh:ayghri/i-have-adhd",
+  "name": "I Have ADHD",
+  "url": "https://github.com/ayghri/i-have-adhd",
+  "kind": "repo",
+  "category": "Claude Code skills & plugins",
+  "what": "A single skill file that makes the AI answer short and easy to scan; 47,000 stars.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "2:07",
+    "shown": "A clip of the Claude web app before and after the slash command: answer became much shorter.",
+    "quote": "It's scannable so you understand it.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Andrew",
+     "why": "Makes the AI answer short and scannable, which he sees as the reason it keeps growing.",
+     "quote": "I like this one and I could see why it continues to grow.",
+     "t": "2:36"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Shorter answers in Claude Code sessions",
+     "agree": "agree",
+     "why": "Rule 41: smallest context that works. Test it against our Now/Done-when format first (Rule 43)."
+    }
+   }
+  ],
+  "check": "Checked 2026-10-09: 55,849 GitHub stars, 24,300 installs on skills.sh (the host said 47,000). One MIT skill file; runs only when typed (/i-have-adhd); its plugin version adds a start-up hook.",
+  "vs": {
+   "tool": "find-skills",
+   "verdict": "different job",
+   "gap": "Not tried in Charlie's own sessions; unknown if it clashes with the plain UK English and Now/Done when rules in AGENTS.md."
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "score": 12,
+  "replaced_by": null,
+  "status": "steady",
   "ours": true,
   "have": true,
   "shown": true,

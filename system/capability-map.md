@@ -26,6 +26,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Scored audit (weekly, Four Cs rubric v2) | `audit` skill (Nate's AIS-OS kit) | `audits/audit-<date>-<id>.md` with score, findings ledger, top 3 fixes | next run rechecks each finding |
 | Failure-mode check, backtrack after a miss | `audit` skill, `content-check.md` | smallest fixes | Charlie approves on the Decision Desk |
 | Set someone up (7-question intake) | `onboard` skill, parked in `references/parked-skills/onboard/` (each person runs the one in Nate's kit) | `aios-intake.md` + Day-1 context files | the "what should I focus on this week?" test |
+| Replies he can act on fast (on request) | `i-have-adhd` skill (`/i-have-adhd`, off with "stop adhd mode") | next action first, numbered steps, state each turn | Charlie trying it |
 | Make something findable | `link` skill | one route in `AGENTS.md` or a folder index | following the route |
 | Ship the next automation | `level-up` skill (`references/3ms-framework.md`) | one artifact + `decisions.md` entry | rerun `audit` |
 | What the OS can reach | `connections.md` | domain, mechanism, last checked | `audit` freshness check |
