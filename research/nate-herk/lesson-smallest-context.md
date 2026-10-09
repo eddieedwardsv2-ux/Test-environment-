@@ -38,7 +38,7 @@ That's small next to Claude Code's own prompt, but we can still cut it.
    Move the rebuild commands, URLs and step lists (Brain dashboard,
    Nate-first map, flashcards backup, transcript and X commands) into
    their own folder READMEs or skills, where they load only when needed.
-   Cut rows whose answer is just the folder name. Target: about 55 lines.
+   Cut rows whose answer is just the folder name. (A line target was dropped on 2026-10-09: cut for a reason, never for length.)
 2. **Say each rule once.** For example, "prove it, don't claim it" is in
    `AGENTS.md` and `context/working-rules.md`. The router keeps a
    one-line pointer only. (The ChatGPT export stays a copy on purpose.)

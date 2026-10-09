@@ -58,6 +58,12 @@ Anything not backed by a source is labelled **(inferring)**.
   Actions and via the Stop-hook structure gate `tools/run_gate.sh`); reasoning
   checks use the `audit` skill (weekly, scored) and its content check (clash, bloat, stale facts). Don't
   re-audit everything after small edits.
+- **Smallest context is not shortest** (Nate, oz2CwrPV2Rg 2:03: "minimal
+  doesn't necessarily mean short"; Boris Cherny, XNQBCRcwXV4 8:14: describe
+  the task, the guardrails and the exit criteria). Cut a line only when it is
+  duplicated, can be looked up, or is stale. Never trim to hit a line count;
+  add what a task genuinely needs. The only cap is the router's 200 lines
+  (Charlie, 2026-10-09: the 90-line target was ours, not Nate's, and is gone).
 - **"Done when" first, then build** (from ECC's eval-harness and TDD
   workflow, 2026-10-09; Rules 17 and 43). Before building anything bigger
   than an edit, write down the check that will prove it worked: a question

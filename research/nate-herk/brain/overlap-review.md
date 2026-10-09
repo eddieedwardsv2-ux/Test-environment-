@@ -38,7 +38,7 @@ titles. So most "overlap" is the same idea written twice, on two pages.
 
 ## Clashes with how we work now
 1. **Rule 19 "under 200 lines" vs Rule 41 "smallest that works".** Our rulebook is
-   76 lines; `tools/context_check.py` warns past 90, `tools/audit.py` still
+   76 lines (no lower target since 2026-10-09: cut for a reason, never for length); `tools/audit.py` still
    errors only past 200. Newer wins: 41 is the rule, 200 is just the hard ceiling.
 2. **Rule 7 "audit, then wait for approval" vs "don't make Charlie a checkpoint".**
    No real clash: approval still happens, but once, on the Decision Desk.

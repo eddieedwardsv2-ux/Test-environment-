@@ -59,9 +59,12 @@ for p in [ROOT / ".mcp.json"]:
         for name in json.loads(p.read_text()).get("mcpServers", {}):
             rows.append(("MCP server (adds tools)", name, 0, 0))
 
-# 4. Router size (Nate: under 200 lines; our target after the trim: under 90).
+# 4. Router size. Nate's ceiling is 200 lines (audit.py errors past it). There is no
+#    lower target: "minimal doesn't necessarily mean short" (Nate, oz2CwrPV2Rg 2:03).
+#    Cut a line only when it is duplicated, can be looked up, or is stale; never for
+#    length alone (Charlie, 2026-10-09). This only reports the size.
 router = (ROOT / "AGENTS.md").read_text().splitlines()
-if len(router) > 90: warns.append(f"AGENTS.md is {len(router)} lines (target under 90)")
+print(f"AGENTS.md: {len(router)} lines (ceiling 200)")
 
 total = sum(r[3] for r in rows)
 print(f"{'What':34} {'Lines':>5} {'Chars':>6}  Where")

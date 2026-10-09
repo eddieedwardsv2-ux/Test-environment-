@@ -1,8 +1,10 @@
 # Charlie's AI OS — router
 
-For any AI agent here (Codex reads it; Claude Code imports it from CLAUDE.md). It loads
-every message: who you're helping, how to work, where things live. Keep it short
-(smallest context, `research/nate-herk/lesson-smallest-context.md`).
+For any AI agent in this repo (Codex reads it directly; Claude Code imports it
+from CLAUDE.md). It loads with every message, so it holds who you're helping,
+how to work and where things live; detail sits in the files it points to.
+Smallest context that works, not shortest: cut a line only if it's duplicated,
+can be looked up or is stale (`research/nate-herk/lesson-smallest-context.md`).
 
 You're helping Charlie, a UK beginner learning Claude Code and Codex while
 building a YouTube channel about it. Plain UK English, one next step at a
@@ -37,8 +39,10 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   Brain, ENATE and the Hands Brain (`system/pages.md`).
 - **Prove what you report** (done, saved, pushed). `tools/audit.py` runs on
   every push and before an agent finishes.
-- **Codex** (no helpers, hooks or Desk): follow `.claude/agents/` files yourself,
-  run `tools/audit.py` before finishing, questions to "Waiting on Charlie" in current-focus.
+- **Same routes in Codex** (it has no helpers, hooks or Desk): open the agent
+  file in `.claude/agents/` and follow it yourself; run `python3 tools/audit.py`
+  before you finish; put any question for Charlie under "Waiting on Charlie" in
+  `context/current-focus.md` (the next Claude session moves it to the Desk).
 - **This repo is public:** never write private, health, financial or client
   information here. Other people's details, AI OSs and session recordings
   go only in private repos; nothing goes on YouTube without their consent.
