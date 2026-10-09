@@ -16,14 +16,11 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Now (2026-10-08, Charlie):** the **Hands Brain** (`research/hands/`): every
-tool, skill and plugin from The Next New Thing, newest week first, ranked
-(the `hands-ingest` skill; site link in `system/pages.md`). Weeks 2026-W38 to
-W41 first, then further back a week at a time. Order changed 2026-10-09 (Charlie):
-newest video first, each new tool compared head-to-head with its category's
-number one; then work back day by day to W38 (context, relations, old tools not yet
-replaced). Each tool also gets the presenters' opinion vs ours (the council idea). After that: the radial Brain
-dashboard. Cleaner brain done (router trimmed, one audit skill, Decision Desk).
+**Now (2026-10-09, Charlie):** the Hands Brain is done back to W38 (21 videos, 117 tools,
+presenters' opinions on each; new videos come in through the Saturday routine). Next:
+talk through the "middle" (how the router and the brains fit together), then the first job
+chosen on the Decision Desk ("next-big-step"; recommended: an end-to-end test in Claude and
+Codex). Full plan: `context/handoff.md`, section 5. His thinking: `brainstorms/2026-10-09-charlies-thoughts.md`.
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
 the base is decided (Nate's kit plus our three additions). Next: test it on the
