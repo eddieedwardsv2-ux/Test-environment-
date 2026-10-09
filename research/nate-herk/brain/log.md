@@ -2,6 +2,12 @@
 
 **This is history.** It records what was added and when; it may be out of date about what the brain holds now. The current state is in [index.md](index.md). Newest first.
 
+## 2026-10-10: iTY8Q449YNQ upgrade 4 (missed part of an ingested video)
+**Ingested:** 21:23-25:27 of "I asked Claude Code to make me as much money as possible": parallel helpers on independent pieces, a written finish line, `/goal` with a separate judge. Charlie pasted the passage and asked if we had it.
+**Why it was missed:** the video was mined for upgrades 1-2 only (concepts 30-31, Rules 32-33); upgrade 4 never got its own concept. Route fix: when a video lists numbered upgrades or steps, check each one has a home.
+**Pages changed:** `concepts.md` concept 45; `index.md` count (45) and question table.
+**Promoted:** none (no new rule; Rules 33 and 44 already cover the judge and the proof).
+
 ## 2026-10-09: six-phrases Instagram DM (1 source, not a video)
 **Ingested:** "The 6 Phrases That Make Claude Build 10x Faster", an Instagram auto-DM Charlie pasted, saved verbatim as `../six-phrases-instagram-source.md` (attributed to Nate; date sent unknown).
 **Pages changed:** `concepts.md` new section J and concept 44; `rules.md` Rule 44 (stated); `index.md` counts (44 concepts, 44 rules), sources and question table.
