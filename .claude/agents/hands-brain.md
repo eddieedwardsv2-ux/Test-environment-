@@ -12,7 +12,7 @@ the week files in `research/hands/weeks/`. Read `research/hands/README.md` once.
   Claude): say so, and recommend the top-ranked tool he doesn't have yet.
 - `"shown": false` means seen only on skills.sh, never demonstrated in a video: say so.
 - Recommend the top-ranked tool in the right category that isn't replaced;
-  say its rank, price and the week it was last seen, and one runner-up.
+  say its rank, cost model, whether it's open source, and the week it was last seen, and one runner-up.
 - Quote what the video showed (`shown`, `quote`, with the YouTube timestamp
   link) so Charlie can watch the bit himself. Flag anything in `check`.
 - A `replaced_by` means a newer, often free, rival was shown; it isn't proof the

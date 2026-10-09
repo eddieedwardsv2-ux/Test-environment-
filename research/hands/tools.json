@@ -1,84 +1,14 @@
 [
  {
-  "id": "n:hyperframes",
-  "name": "hyperframes",
-  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes",
-  "kind": "skill",
-  "category": "Video, clips & images",
-  "what": "Entry-point skill for making videos, animations and motion graphics from HTML with HeyGen's HyperFrames.",
-  "price": "open-source",
-  "for_charlie": 3,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "6xi2KL_NujU",
-    "t": "3:38",
-    "shown": "A host's answer to the best agentic slides: make a short video with it.",
-    "quote": "using hyperframes to create a high-quality",
-    "opinion": {
-     "stance": "would use",
-     "who": "Matt",
-     "why": "His best answer for agent slides: make a short video and drop it into Keynote.",
-     "quote": "my answer is actually Keynote, which is not agentic, and hyperframes.",
-     "t": "3:38"
-    },
-    "our_view": {
-     "need": "yes",
-     "for_what": "Short intro and explainer videos for the YouTube channel, made from HTML",
-     "agree": "agree",
-     "why": "Rule 42: start at the lowest rung with one 30-second clip; Rule 43: judge it on our own footage. Install via the Decision Desk."
-    }
-   }
-  ],
-  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
-  "vs": null,
-  "installs": 842535,
-  "weeks": [
-   "2026-W41",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 2,
-  "score": 19.9,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": {
-   "name": "hyperframes",
-   "date": "2026-10-09",
-   "task": "10-second title card for Charlie's YouTube channel (\"Charlie's AI OS\")",
-   "result": "Worked: its checker caught a layout overlap, fixed in one edit; rendered a 1920x1080, 30fps, 10.0s MP4 (328 KB) at draft quality",
-   "time": "about 5 minutes, render 14 seconds",
-   "cost": "free (open source, renders locally)",
-   "adds": "21 skills, 19 MB, about 6,000 characters of skill descriptions every message if kept in the repo; its CLI also put 10 skills in ~/.claude/skills on the cloud machine (wiped when the session ends)",
-   "verdict": "later",
-   "why": "Charlie couldn't play the video in the app, so the result wasn't clear to him; revisit when making the first short (2026-10-09)"
-  },
-  "rank": 1
- },
- {
   "id": "gh:affaan-m/ecc",
   "name": "ECC",
   "url": "https://github.com/affaan-m/ECC",
   "kind": "repo",
   "category": "Claude Code skills & plugins",
   "what": "Open-source toolkit of skills that plans, builds with tests, makes a promo video and sends outreach.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/affaan-m/ecc",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
@@ -170,14 +100,16 @@
   "rank": 1
  },
  {
-  "id": "n:agentbrowser",
-  "name": "agent-browser",
-  "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
+  "id": "n:hyperframes",
+  "name": "hyperframes",
+  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes",
   "kind": "skill",
-  "category": "Automation & workflows",
-  "what": "Browser automation command line so an AI agent can click, fill forms and take screenshots.",
-  "price": "open-source",
-  "for_charlie": 2,
+  "category": "Video, clips & images",
+  "what": "Entry-point skill for making videos, animations and motion graphics from HTML with HeyGen's HyperFrames.",
+  "open_source": "public code",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "cost": null,
+  "for_charlie": 3,
   "replaces": [],
   "sightings": [
    {
@@ -193,28 +125,28 @@
    {
     "week": "2026-W38",
     "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "3:54",
-    "shown": "Showed the skill file and example tasks (log in and screenshot a billing page; sign up as a test user); no live run.",
-    "quote": "This agent is headless, meaning that it does everything like under the under the covers.",
+    "video": "6xi2KL_NujU",
+    "t": "3:38",
+    "shown": "A host's answer to the best agentic slides: make a short video with it.",
+    "quote": "using hyperframes to create a high-quality",
     "opinion": {
      "stance": "would use",
-     "who": "Robbie",
-     "why": "Calls it super powerful because it screenshots pages without the browser ever opening.",
-     "quote": "It's a I mean it is a su- it is a super powerful tool.",
-     "t": "5:11"
+     "who": "Matt",
+     "why": "His best answer for agent slides: make a short video and drop it into Keynote.",
+     "quote": "my answer is actually Keynote, which is not agentic, and hyperframes.",
+     "t": "3:38"
     },
     "our_view": {
-     "need": "maybe",
-     "for_what": "Checking our own dashboards render, and screenshots for lessons",
+     "need": "yes",
+     "for_what": "Short intro and explainer videos for the YouTube channel, made from HTML",
      "agree": "agree",
-     "why": "Rule 36: read-only first, never give it logins; Rule 43: try on one public page."
+     "why": "Rule 42: start at the lowest rung with one 30-second clip; Rule 43: judge it on our own footage. Install via the Decision Desk."
     }
    }
   ],
-  "check": "You cannot watch the mouse move; a different video's guest said that makes him trust it less.",
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
   "vs": null,
-  "installs": 1066994,
+  "installs": 842535,
   "weeks": [
    "2026-W41",
    "2026-W38"
@@ -222,13 +154,23 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
-  "score": 17,
+  "score": 18.9,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
   "have": false,
   "shown": true,
-  "tried": null,
+  "tried": {
+   "name": "hyperframes",
+   "date": "2026-10-09",
+   "task": "10-second title card for Charlie's YouTube channel (\"Charlie's AI OS\")",
+   "result": "Worked: its checker caught a layout overlap, fixed in one edit; rendered a 1920x1080, 30fps, 10.0s MP4 (328 KB) at draft quality",
+   "time": "about 5 minutes, render 14 seconds",
+   "cost": "free (open source, renders locally)",
+   "adds": "21 skills, 19 MB, about 6,000 characters of skill descriptions every message if kept in the repo; its CLI also put 10 skills in ~/.claude/skills on the cloud machine (wiped when the session ends)",
+   "verdict": "later",
+   "why": "Charlie couldn't play the video in the app, so the result wasn't clear to him; revisit when making the first short (2026-10-09)"
+  },
   "rank": 1
  },
  {
@@ -238,7 +180,9 @@
   "kind": "repo",
   "category": "Cost & tokens",
   "what": "Routes a coding agent across many free model providers so you can keep coding when one hits its limit.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/tashfeenahmed/freellmapi",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [
    "Claude Code usage limits"
@@ -306,13 +250,15 @@
   "rank": 1
  },
  {
-  "id": "n:frontenddesign",
-  "name": "frontend-design",
-  "url": "https://skills.sh/anthropics/skills/frontend-design",
+  "id": "n:agentbrowser",
+  "name": "agent-browser",
+  "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
   "kind": "skill",
-  "category": "Design & websites",
-  "what": "Guidance for distinctive, good-looking UI design and typography when building web pages.",
-  "price": "open-source",
+  "category": "Automation & workflows",
+  "what": "Browser automation command line so an AI agent can click, fill forms and take screenshots.",
+  "open_source": "public code",
+  "repo": "https://github.com/vercel-labs/agent-browser",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -330,27 +276,27 @@
     "week": "2026-W38",
     "source": "The Next New Thing",
     "video": "ehab5PtgRo8",
-    "t": "2:15",
-    "shown": "Showed a website before (cream background, generic) and after the skill (different colours, more design, links at the top).",
-    "quote": "The whole idea behind this is to eliminate that and create better designs.",
+    "t": "3:54",
+    "shown": "Showed the skill file and example tasks (log in and screenshot a billing page; sign up as a test user); no live run.",
+    "quote": "This agent is headless, meaning that it does everything like under the under the covers.",
     "opinion": {
      "stance": "would use",
      "who": "Robbie",
-     "why": "The after version felt like it had a purpose, more than just making it look nice.",
-     "quote": "It's more than just make this look nice.",
-     "t": "2:38"
+     "why": "Calls it super powerful because it screenshots pages without the browser ever opening.",
+     "quote": "It's a I mean it is a su- it is a super powerful tool.",
+     "t": "5:11"
     },
     "our_view": {
      "need": "maybe",
-     "for_what": "Dashboards and any page Charlie builds for the channel",
+     "for_what": "Checking our own dashboards render, and screenshots for lessons",
      "agree": "agree",
-     "why": "Worth a single trial on one of our own pages (Rule 43), not a blind install."
+     "why": "Rule 36: read-only first, never give it logins; Rule 43: try on one public page."
     }
    }
   ],
-  "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
+  "check": "You cannot watch the mouse move; a different video's guest said that makes him trust it less.",
   "vs": null,
-  "installs": 964997,
+  "installs": 1066994,
   "weeks": [
    "2026-W41",
    "2026-W38"
@@ -358,7 +304,7 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
-  "score": 17.0,
+  "score": 16,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
@@ -368,79 +314,15 @@
   "rank": 1
  },
  {
-  "id": "n:grilling",
-  "name": "grilling",
-  "url": "https://skills.sh/mattpocock/skills/grilling",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Grills you about a plan or idea to stress-test your thinking.",
-  "price": "open-source",
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "7:39",
-    "shown": "Showed the file that Grill Me points to; no live run.",
-    "quote": "this is now the actual file that the other Grill Me skill refers to",
-    "opinion": {
-     "stance": "would use",
-     "who": "Robbie",
-     "why": "Likes grilling as the engine with Grill Me as its first use.",
-     "quote": "I I think it's great.",
-     "t": "8:20"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "A reusable interview step inside other skills",
-     "agree": "agree",
-     "why": "Worth reading before we rewrite our own `grill-me`; no install needed."
-    }
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": {
-   "tool": "ECC",
-   "verdict": "different job",
-   "gap": "Unknown what it adds over plain grill-me for our use; Matt says he split it out so other skills can reuse it."
-  },
-  "installs": 868047,
-  "weeks": [
-   "2026-W41",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 2,
-  "score": 16.9,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 2
- },
- {
   "id": "gh:davila7/claude-code-templates",
   "name": "Claude Code Templates",
   "url": "https://github.com/davila7/claude-code-templates",
   "kind": "repo",
   "category": "Claude Code skills & plugins",
   "what": "One-command install of skills, commands and settings for Claude Code.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/davila7/claude-code-templates",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
@@ -507,6 +389,138 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "rank": 2
+ },
+ {
+  "id": "n:frontenddesign",
+  "name": "frontend-design",
+  "url": "https://skills.sh/anthropics/skills/frontend-design",
+  "kind": "skill",
+  "category": "Design & websites",
+  "what": "Guidance for distinctive, good-looking UI design and typography when building web pages.",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "2:15",
+    "shown": "Showed a website before (cream background, generic) and after the skill (different colours, more design, links at the top).",
+    "quote": "The whole idea behind this is to eliminate that and create better designs.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Robbie",
+     "why": "The after version felt like it had a purpose, more than just making it look nice.",
+     "quote": "It's more than just make this look nice.",
+     "t": "2:38"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Dashboards and any page Charlie builds for the channel",
+     "agree": "agree",
+     "why": "Worth a single trial on one of our own pages (Rule 43), not a blind install."
+    }
+   }
+  ],
+  "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
+  "vs": null,
+  "installs": 964997,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "score": 16.0,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 1
+ },
+ {
+  "id": "n:grilling",
+  "name": "grilling",
+  "url": "https://skills.sh/mattpocock/skills/grilling",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Grills you about a plan or idea to stress-test your thinking.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "7:39",
+    "shown": "Showed the file that Grill Me points to; no live run.",
+    "quote": "this is now the actual file that the other Grill Me skill refers to",
+    "opinion": {
+     "stance": "would use",
+     "who": "Robbie",
+     "why": "Likes grilling as the engine with Grill Me as its first use.",
+     "quote": "I I think it's great.",
+     "t": "8:20"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "A reusable interview step inside other skills",
+     "agree": "agree",
+     "why": "Worth reading before we rewrite our own `grill-me`; no install needed."
+    }
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": {
+   "tool": "ECC",
+   "verdict": "different job",
+   "gap": "Unknown what it adds over plain grill-me for our use; Matt says he split it out so other skills can reuse it."
+  },
+  "installs": 868047,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "score": 15.9,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
   "rank": 3
  },
  {
@@ -516,7 +530,9 @@
   "kind": "skill",
   "category": "Claude Code skills & plugins",
   "what": "Addy Osmani's pack of workflow skills that stops agents taking shortcuts; easier to install than ECC.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [
    "ECC (for beginners)"
@@ -588,53 +604,15 @@
   "rank": 4
  },
  {
-  "id": "n:handoff",
-  "name": "handoff",
-  "url": "https://skills.sh/mattpocock/skills/handoff",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Compacts the current chat into a handoff document for another agent to pick up.",
-  "price": "open-source",
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 945759,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 15.0,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 5
- },
- {
   "id": "gh:mutonby/openshorts",
   "name": "OpenShorts",
   "url": "https://github.com/mutonby/openshorts",
   "kind": "repo",
   "category": "Video, clips & images",
   "what": "Self-hosted tool that turns long videos into captioned vertical clips and can schedule posts.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/mutonby/openshorts",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [
    "Opus Clip"
@@ -684,13 +662,15 @@
   "rank": 2
  },
  {
-  "id": "n:hyperframescli",
-  "name": "hyperframes-cli",
-  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-cli",
+  "id": "n:handoff",
+  "name": "handoff",
+  "url": "https://skills.sh/mattpocock/skills/handoff",
   "kind": "skill",
-  "category": "Video, clips & images",
-  "what": "Command-line loop for HeyGen's HyperFrames: init, lint, preview and render HTML videos.",
-  "price": "open-source",
+  "category": "Claude Code skills & plugins",
+  "what": "Compacts the current chat into a handoff document for another agent to pick up.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -705,143 +685,23 @@
     "our_view": null
    }
   ],
-  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
-  "vs": null,
-  "installs": 878869,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 14.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 3
- },
- {
-  "id": "n:brainstorming",
-  "name": "brainstorming",
-  "url": "https://skills.sh/obra/superpowers/brainstorming",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Explores what you want before any creative or build work starts.",
-  "price": "open-source",
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "You MUST use this before any creative work",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "installs": 384538,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 14.6,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 6
- },
- {
-  "id": "n:writinggreatskills",
-  "name": "writing-great-skills",
-  "url": "https://skills.sh/mattpocock/skills/writing-great-skills",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Reference on how to write and edit skills well.",
-  "price": "open-source",
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "Reference for writing and editing skills well",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
   "vs": null,
-  "installs": 306531,
+  "installs": 945759,
   "weeks": [
    "2026-W41"
   ],
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
-  "score": 14.5,
+  "score": 14.0,
   "replaced_by": null,
   "status": "new",
   "ours": false,
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 7
- },
- {
-  "id": "n:writeaskill",
-  "name": "write-a-skill",
-  "url": "https://skills.sh/mattpocock/skills/write-a-skill",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Creates new agent skills with the right structure and bundled resources.",
-  "price": "open-source",
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "Create new agent skills with proper structure, progressive disclosure, and bundled resources.",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 219742,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 14.3,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 8
+  "rank": 5
  },
  {
   "id": "gh:pbakaus/impeccable",
@@ -850,7 +710,9 @@
   "kind": "repo",
   "category": "Design & websites",
   "what": "Skill pack that gives a coding agent a designer's eye so apps stop looking generic.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/pbakaus/impeccable",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
@@ -898,79 +760,15 @@
   "rank": 2
  },
  {
-  "id": "n:setupmattpocockskills",
-  "name": "setup-matt-pocock-skills",
-  "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Sets up a repo for Matt Pocock's engineering skills (issue tracker, labels, doc layout).",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "5:33",
-    "shown": "Read out what it scaffolds (issue tracker, triage labels, domain docs); no live run.",
-    "quote": "It's a one-time setup that that wires his engineering skills into your repo.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Robbie",
-     "why": "Compares it to hiring Matt for 60 days to set up best practices, ready for AI agents.",
-     "quote": "so this is a way to set up those skills right at bat but it's also ready for AI agents",
-     "t": "5:41"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "agree",
-     "why": "Rule 34: skills do one job; this adds a pack. Borrow the habits, not the install."
-    }
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": {
-   "tool": "ECC",
-   "verdict": "different job",
-   "gap": "Unknown how many skills it adds or whether it clashes with our own router and skills."
-  },
-  "installs": 966567,
-  "weeks": [
-   "2026-W41",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 2,
-  "score": 14.0,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 9
- },
- {
   "id": "gh:debpalash/voicestudio",
   "name": "VoiceStudio",
   "url": "https://github.com/debpalash/VoiceStudio",
   "kind": "repo",
   "category": "Voice & audio",
   "what": "Free desktop app for voice cloning, text-to-speech and video dubbing, run locally.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/debpalash/voicestudio",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [
    "ElevenLabs"
@@ -1038,13 +836,104 @@
   "rank": 1
  },
  {
+  "id": "n:hyperframescli",
+  "name": "hyperframes-cli",
+  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-cli",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Command-line loop for HeyGen's HyperFrames: init, lint, preview and render HTML videos.",
+  "open_source": "public code",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 878869,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 13.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 3
+ },
+ {
+  "id": "n:brainstorming",
+  "name": "brainstorming",
+  "url": "https://skills.sh/obra/superpowers/brainstorming",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Explores what you want before any creative or build work starts.",
+  "open_source": "public code",
+  "repo": "https://github.com/obra/superpowers",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "You MUST use this before any creative work",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 384538,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 13.6,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 6
+ },
+ {
   "id": "n:metamuse",
   "name": "Meta Muse",
   "url": "https://www.youtube.com/watch?v=SdKFDIAGF24",
   "kind": "app",
   "category": "Agent orchestration & teams",
   "what": "Meta's AI agent for bills, price tracking, local files and daily briefs.",
-  "price": "freemium",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "free tier + paid",
+   "amount": "free tier; 'eventually they'll start to charge you'",
+   "source": "6IxiArssGvg 11:53",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -1157,13 +1046,99 @@
   "rank": 1
  },
  {
+  "id": "n:writinggreatskills",
+  "name": "writing-great-skills",
+  "url": "https://skills.sh/mattpocock/skills/writing-great-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Reference on how to write and edit skills well.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Reference for writing and editing skills well",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 306531,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 13.5,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 7
+ },
+ {
+  "id": "n:writeaskill",
+  "name": "write-a-skill",
+  "url": "https://skills.sh/mattpocock/skills/write-a-skill",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Creates new agent skills with the right structure and bundled resources.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Create new agent skills with proper structure, progressive disclosure, and bundled resources.",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 219742,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 13.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 8
+ },
+ {
   "id": "n:chatgptdots",
   "name": "ChatGPT Dots",
   "url": "https://chatgpt.com/dots/01a11894-3ed2-72a3-8d38-aa079bac7032",
   "kind": "app",
   "category": "Agent orchestration & teams",
   "what": "OpenAI agent that can manage Codex threads and ChatGPT chats from one place.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -1235,7 +1210,14 @@
   "kind": "app",
   "category": "Coding agents & IDEs",
   "what": "Claude Code now reads the shared agents.md instruction file, so one file serves Claude and Codex.",
-  "price": "free",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/claude-code",
+  "cost": {
+   "model": "free",
+   "amount": "",
+   "source": "earlier week-file price",
+   "date": "2026-10-09"
+  },
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
@@ -1285,7 +1267,9 @@
   "kind": "repo",
   "category": "Marketing, sales & SEO",
   "what": "Open-source SEO tool for keyword research and rank tracking that you run yourself.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/every-app/open-seo",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [
    "Semrush"
@@ -1359,7 +1343,9 @@
   "kind": "repo",
   "category": "Agent orchestration & teams",
   "what": "Open-source platform that gives AI agents an org chart, tasks and permissions so they work together.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/paperclipai/paperclip",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -1425,13 +1411,83 @@
   "rank": 3
  },
  {
+  "id": "n:setupmattpocockskills",
+  "name": "setup-matt-pocock-skills",
+  "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Sets up a repo for Matt Pocock's engineering skills (issue tracker, labels, doc layout).",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "5:33",
+    "shown": "Read out what it scaffolds (issue tracker, triage labels, domain docs); no live run.",
+    "quote": "It's a one-time setup that that wires his engineering skills into your repo.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Robbie",
+     "why": "Compares it to hiring Matt for 60 days to set up best practices, ready for AI agents.",
+     "quote": "so this is a way to set up those skills right at bat but it's also ready for AI agents",
+     "t": "5:41"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "Rule 34: skills do one job; this adds a pack. Borrow the habits, not the install."
+    }
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": {
+   "tool": "ECC",
+   "verdict": "different job",
+   "gap": "Unknown how many skills it adds or whether it clashes with our own router and skills."
+  },
+  "installs": 966567,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "score": 13.0,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 9
+ },
+ {
   "id": "n:higgsfieldyoutubethumbnail",
   "name": "higgsfield-youtube-thumbnail",
   "url": "https://skills.sh/higgsfield-ai/skills/higgsfield-youtube-thumbnail",
   "kind": "skill",
   "category": "Video, clips & images",
   "what": "Makes YouTube thumbnails and vertical covers via the Higgsfield CLI.",
-  "price": "unknown",
+  "open_source": "public code",
+  "repo": "https://github.com/higgsfield-ai/skills",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -1465,53 +1521,15 @@
   "rank": 4
  },
  {
-  "id": "n:grillwithdocs",
-  "name": "grill-with-docs",
-  "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Same grilling interview, but also writes decision records and a glossary as it goes.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 1124863,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 12,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 10
- },
- {
   "id": "gh:alibaba/open-code-review",
   "name": "Open Code Review",
   "url": "https://github.com/alibaba/open-code-review",
   "kind": "repo",
   "category": "Coding agents & IDEs",
   "what": "Alibaba's open-source code reviewer for vibe coders, now with a VS Code extension, using your existing AI subscription.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/alibaba/open-code-review",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [
    "paid code-review tools"
@@ -1583,53 +1601,15 @@
   "rank": 2
  },
  {
-  "id": "n:prototype",
-  "name": "prototype",
-  "url": "https://skills.sh/mattpocock/skills/prototype",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Builds a throwaway prototype to answer a design question.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 906480,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 12.0,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 3
- },
- {
   "id": "gh:itzcrazykns/vane",
   "name": "Vane",
   "url": "https://github.com/ItzCrazyKns/Vane",
   "kind": "repo",
   "category": "Research & search",
   "what": "Self-hosted research assistant that searches the web and gives numbered sources; formerly Perplexica.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/itzcrazykns/vane",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [
    "Perplexity"
@@ -1681,7 +1661,9 @@
   "kind": "repo",
   "category": "Knowledge & second brain",
   "what": "Tencent's open-source knowledge system that links files into a searchable graph wiki for your agents.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/tencent/weknora",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -1751,253 +1733,15 @@
   "rank": 1
  },
  {
-  "id": "n:domainmodeling",
-  "name": "domain-modeling",
-  "url": "https://skills.sh/mattpocock/skills/domain-modeling",
-  "kind": "skill",
-  "category": "Knowledge & second brain",
-  "what": "Builds a project's glossary and decision records.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 783607,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 11.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "n:hyperframesregistry",
-  "name": "hyperframes-registry",
-  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-registry",
-  "kind": "skill",
-  "category": "Video, clips & images",
-  "what": "Searches and installs ready-made blocks and components for HyperFrames videos.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
-  "vs": null,
-  "installs": 755261,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 11.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 5
- },
- {
-  "id": "n:mediause",
-  "name": "media-use",
-  "url": "https://skills.sh/heygen-com/hyperframes/media-use",
-  "kind": "skill",
-  "category": "Video, clips & images",
-  "what": "Fetches music, sound effects, images, logos and voice for a HyperFrames project.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
-  "vs": null,
-  "installs": 753721,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 11.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 6
- },
- {
-  "id": "n:redditautomation",
-  "name": "reddit-automation",
-  "url": "https://skills.sh/flowkit-labs/skills/reddit-automation",
-  "kind": "skill",
-  "category": "Marketing, sales & SEO",
-  "what": "Finds Reddit threads asking for what you offer and drafts helpful replies, disclosing affiliation.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Unknown publisher (flowkit-labs); 846k installs looks inflated for a niche skill; auto-posting to Reddit risks bans. Read SKILL.md first.",
-  "vs": null,
-  "installs": 846658,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 11.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "n:copywriting",
-  "name": "copywriting",
-  "url": "https://skills.sh/coreyhaines31/marketingskills/copywriting",
-  "kind": "skill",
-  "category": "Marketing, sales & SEO",
-  "what": "Writes or improves marketing copy for web pages.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "installs": 219116,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 11.3,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 3
- },
- {
-  "id": "n:seoaudit",
-  "name": "seo-audit",
-  "url": "https://skills.sh/coreyhaines31/marketingskills/seo-audit",
-  "kind": "skill",
-  "category": "Marketing, sales & SEO",
-  "what": "Audits a site for technical and on-page SEO problems.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "installs": 222971,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 11.3,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 4
- },
- {
   "id": "gh:alirezarezvani/claude-skills",
   "name": "Claude Skills",
   "url": "https://github.com/alirezarezvani/claude-skills",
   "kind": "repo",
   "category": "Claude Code skills & plugins",
   "what": "Repo of 388 job-specific skill playbooks and personas.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/alirezarezvani/claude-skills",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -2038,7 +1782,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 11
+  "rank": 10
  },
  {
   "id": "n:creativeclaw",
@@ -2047,7 +1791,14 @@
   "kind": "mcp",
   "category": "MCP & connectors",
   "what": "One MCP that adds image, video and voiceover generation to Claude, Codex and other agents, pay per use.",
-  "price": "paid",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "pay-per-use",
+   "amount": "not stated",
+   "source": "c5ZkPhzaLdA 16:17",
+   "date": "2026-10-09"
+  },
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -2091,13 +1842,62 @@
   "rank": 1
  },
  {
+  "id": "n:grillwithdocs",
+  "name": "grill-with-docs",
+  "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Same grilling interview, but also writes decision records and a glossary as it goes.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1124863,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 11
+ },
+ {
   "id": "n:grokbot",
   "name": "GrokBot",
   "url": "https://thenextnewthing.ai/l/grokbot-reaction-oct3",
   "kind": "app",
   "category": "Agent orchestration & teams",
   "what": "Personal agent with local file access, sub-agents, webhooks and email, run from creators' real workflows.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "monthly + pay-per-use",
+   "amount": "entry plan about $20; a host's $140/month plan ran $265 over in 2 days",
+   "source": "6IxiArssGvg 11:53; o7Rm5FvA7hU 9:11",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -2195,7 +1995,9 @@
   "kind": "repo",
   "category": "Knowledge & second brain",
   "what": "Persistent AI memory so an agent remembers you across sessions; built by a real company.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/vectorize-io/hindsight",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -2236,7 +2038,90 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 3
+  "rank": 2
+ },
+ {
+  "id": "n:instinct",
+  "name": "Instinct",
+  "url": "https://x.com/noahrshinn/status/2107161132192690558",
+  "kind": "app",
+  "category": "Automation & workflows",
+  "what": "Personal AI agent that lives in iMessage and just added group chats.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "free",
+   "amount": "free for now (until its funding is settled)",
+   "source": "6IxiArssGvg 11:53",
+   "date": "2026-10-09"
+  },
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "The Next New Thing",
+    "video": "c5ZkPhzaLdA",
+    "t": "7:12",
+    "shown": "Corey described finding accountant documents in his email within about 60 seconds by text.",
+    "quote": "So, it has access to my email.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Corey",
+     "why": "Finds accountant documents in his email in about a minute by text.",
+     "quote": "it found it within like 60 seconds.",
+     "t": "8:08"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Needs email and card access. Rule 36: permissions in layers, read-only first; this repo is public, so no private data near it."
+    }
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "6IxiArssGvg",
+    "t": "0:18",
+    "shown": "Texted it an Airbnb search; it answered 5 to 10 minutes later with links and a text list, no browser view.",
+    "quote": "Instinct is an agent that is a free agent um that is all the rage right now.",
+    "opinion": {
+     "stance": "mixed",
+     "who": "Michael",
+     "why": "Fine as a toy, but he doesn't trust it as a daily tool because he can't see what it does.",
+     "quote": "not having control of the browser or seeing how it's doing things makes me trust it less",
+     "t": "13:25"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "Invite-only, and a user said it kept his email data after cancelling. Rule 36: start read-only; this repo is public so nothing private goes near it."
+    }
+   }
+  ],
+  "check": "Needs email and card access; check privacy. Price not stated.",
+  "vs": {
+   "tool": "agent-browser",
+   "verdict": "different job",
+   "gap": "Not tested for our jobs (Claude Code, AI OS, YouTube); unknown whether it can run repeatable tasks or touch files."
+  },
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "score": 11,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 2
  },
  {
   "id": "n:jev",
@@ -2245,7 +2130,14 @@
   "kind": "model",
   "category": "Models & LLMs",
   "what": "Tiny, very fast decision model (not a chatbot) that answers multiple-choice and yes/no questions with probabilities, cheaply.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "pay-per-use",
+   "amount": "under $1 for a 300-story NewsJack run",
+   "source": "ZodAaTH-6_E 5:44-6:14",
+   "date": "2026-10-09"
+  },
   "for_charlie": 2,
   "replaces": [
    "flash models"
@@ -2312,13 +2204,361 @@
   "rank": 1
  },
  {
+  "id": "n:prototype",
+  "name": "prototype",
+  "url": "https://skills.sh/mattpocock/skills/prototype",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Builds a throwaway prototype to answer a design question.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 906480,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 3
+ },
+ {
+  "id": "n:domainmodeling",
+  "name": "domain-modeling",
+  "url": "https://skills.sh/mattpocock/skills/domain-modeling",
+  "kind": "skill",
+  "category": "Knowledge & second brain",
+  "what": "Builds a project's glossary and decision records.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 783607,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 10.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 3
+ },
+ {
+  "id": "n:hyperframesregistry",
+  "name": "hyperframes-registry",
+  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-registry",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Searches and installs ready-made blocks and components for HyperFrames videos.",
+  "open_source": "public code",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 755261,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 10.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 5
+ },
+ {
+  "id": "n:mediause",
+  "name": "media-use",
+  "url": "https://skills.sh/heygen-com/hyperframes/media-use",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Fetches music, sound effects, images, logos and voice for a HyperFrames project.",
+  "open_source": "public code",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 753721,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 10.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 6
+ },
+ {
+  "id": "n:redditautomation",
+  "name": "reddit-automation",
+  "url": "https://skills.sh/flowkit-labs/skills/reddit-automation",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Finds Reddit threads asking for what you offer and drafts helpful replies, disclosing affiliation.",
+  "open_source": "public code",
+  "repo": "https://github.com/flowkit-labs/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Unknown publisher (flowkit-labs); 846k installs looks inflated for a niche skill; auto-posting to Reddit risks bans. Read SKILL.md first.",
+  "vs": null,
+  "installs": 846658,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 10.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 2
+ },
+ {
+  "id": "n:copywriting",
+  "name": "copywriting",
+  "url": "https://skills.sh/coreyhaines31/marketingskills/copywriting",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Writes or improves marketing copy for web pages.",
+  "open_source": "public code",
+  "repo": "https://github.com/coreyhaines31/marketingskills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 219116,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 10.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 3
+ },
+ {
+  "id": "n:seoaudit",
+  "name": "seo-audit",
+  "url": "https://skills.sh/coreyhaines31/marketingskills/seo-audit",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Audits a site for technical and on-page SEO problems.",
+  "open_source": "public code",
+  "repo": "https://github.com/coreyhaines31/marketingskills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 222971,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 10.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 4
+ },
+ {
+  "id": "gh:elvisun/newsjack",
+  "name": "NewsJack",
+  "url": "https://github.com/elvisun/newsjack",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Free open-source agent skills that research journalists and stories and write pitches, like a PR team.",
+  "open_source": "yes",
+  "repo": "https://github.com/elvisun/newsjack",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "ZodAaTH-6_E",
+    "t": "5:13",
+    "shown": "Showed Elvis's demo plugging Jev into it to scrape and pitch quickly and cheaply.",
+    "quote": "It's a free GitHub repo and these skills basically turn your agent into a PR team.",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "",
+     "why": "Calls it a cool skill suite, but nobody says they would use it.",
+     "quote": "",
+     "t": "5:13"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "n/a",
+     "why": "Pitching journalists is a business job, not an AI OS or channel-building job yet. Rule 39."
+    }
+   }
+  ],
+  "check": "Claimed 8-15k a month PR cost comparison not verified.",
+  "vs": null,
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 10,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 5
+ },
+ {
   "id": "n:obsidianmarkdown",
   "name": "obsidian-markdown",
   "url": "https://skills.sh/kepano/obsidian-skills/obsidian-markdown",
   "kind": "skill",
   "category": "Knowledge & second brain",
   "what": "Writes Obsidian-style markdown: wikilinks, embeds, callouts and properties.",
-  "price": "open-source",
+  "open_source": "public code",
+  "repo": "https://github.com/kepano/obsidian-skills",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -2342,7 +2582,7 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
-  "score": 11.0,
+  "score": 10.0,
   "replaced_by": null,
   "status": "new",
   "ours": false,
@@ -2352,13 +2592,69 @@
   "rank": 4
  },
  {
+  "id": "gh:stablyai/orca",
+  "name": "Orca",
+  "url": "https://github.com/stablyai/orca",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "Interface for running several coding agents side by side, designed around agents rather than code.",
+  "open_source": "yes",
+  "repo": "https://github.com/stablyai/orca",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [
+   "VS Code for agent work"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "hlOk-EFUITQ",
+    "t": "25:07",
+    "shown": "Showed the readme screenshot with Claude Code and Codex in one window plus mobile link.",
+    "quote": "Run five coding agents at once. Keep the best.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Adam",
+     "why": "Calls it awesome and a new kind of editor designed around agents, not code.",
+     "quote": "I would call this the new era of VS Code",
+     "t": "26:40"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Several agents at once is the opposite of one next step at a time. Rule 24 and Rule 39 (cap parallel sessions)."
+    }
+   }
+  ],
+  "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion.",
+  "vs": null,
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "score": 10,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 5
+ },
+ {
   "id": "n:vercelreactbestpractices",
   "name": "vercel-react-best-practices",
   "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
   "kind": "skill",
   "category": "Coding agents & IDEs",
   "what": "React and Next.js performance guidelines from Vercel.",
-  "price": "open-source",
+  "open_source": "public code",
+  "repo": "https://github.com/vercel-labs/agent-skills",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -2408,7 +2704,7 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
-  "score": 10.9,
+  "score": 9.9,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
@@ -2418,75 +2714,53 @@
   "rank": 4
  },
  {
-  "id": "n:instinct",
-  "name": "Instinct",
-  "url": "https://x.com/noahrshinn/status/2107161132192690558",
-  "kind": "app",
-  "category": "Automation & workflows",
-  "what": "Personal AI agent that lives in iMessage and just added group chats.",
-  "price": "unknown",
+  "id": "gh:ace-step/ace-step-1.5",
+  "name": "ACE-Step",
+  "url": "https://github.com/ace-step/ACE-Step-1.5",
+  "kind": "repo",
+  "category": "Voice & audio",
+  "what": "Open-source song generator with vocals that runs on your own computer.",
+  "open_source": "yes",
+  "repo": "https://github.com/ace-step/ace-step-1.5",
+  "cost": null,
   "for_charlie": 1,
-  "replaces": [],
+  "replaces": [
+   "Suno"
+  ],
   "sightings": [
    {
     "week": "2026-W41",
     "source": "The Next New Thing",
-    "video": "c5ZkPhzaLdA",
-    "t": "7:12",
-    "shown": "Corey described finding accountant documents in his email within about 60 seconds by text.",
-    "quote": "So, it has access to my email.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Corey",
-     "why": "Finds accountant documents in his email in about a minute by text.",
-     "quote": "it found it within like 60 seconds.",
-     "t": "8:08"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "disagree",
-     "why": "Needs email and card access. Rule 36: permissions in layers, read-only first; this repo is public, so no private data near it."
-    }
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "6IxiArssGvg",
-    "t": "0:18",
-    "shown": "Texted it an Airbnb search; it answered 5 to 10 minutes later with links and a text list, no browser view.",
-    "quote": "Instinct is an agent that is a free agent um that is all the rage right now.",
+    "video": "GZtLsvklYBI",
+    "t": "13:57",
+    "shown": "Made a short hip-hop song on the hosted web version; host said it was not as good as Suno.",
+    "quote": "unlimited songs hosted by you for free.",
     "opinion": {
      "stance": "mixed",
-     "who": "Michael",
-     "why": "Fine as a toy, but he doesn't trust it as a daily tool because he can't see what it does.",
-     "quote": "not having control of the browser or seeing how it's doing things makes me trust it less",
-     "t": "13:25"
+     "who": "host",
+     "why": "Free and unlimited, but he tried it and was underwhelmed against Suno.",
+     "quote": "I don't think it's anything to write home about.",
+     "t": "16:18"
     },
     "our_view": {
-     "need": "no",
-     "for_what": "",
+     "need": "maybe",
+     "for_what": "Free background music for channel videos",
      "agree": "agree",
-     "why": "Invite-only, and a user said it kept his email data after cancelling. Rule 36: start read-only; this repo is public so nothing private goes near it."
+     "why": "His own test was weak, so try the hosted version on one real video before any install (Rule 43)."
     }
    }
   ],
-  "check": "Needs email and card access; check privacy. Price not stated.",
-  "vs": {
-   "tool": "agent-browser",
-   "verdict": "different job",
-   "gap": "Not tested for our jobs (Claude Code, AI OS, YouTube); unknown whether it can run repeatable tasks or touch files."
-  },
+  "check": "Quality below Suno per host.",
+  "vs": null,
   "weeks": [
-   "2026-W41",
-   "2026-W38"
+   "2026-W41"
   ],
-  "first": "2026-W38",
+  "first": "2026-W41",
   "last": "2026-W41",
-  "mentions": 2,
-  "score": 10,
+  "mentions": 1,
+  "score": 9,
   "replaced_by": null,
-  "status": "rising",
+  "status": "new",
   "ours": false,
   "have": false,
   "shown": true,
@@ -2494,13 +2768,128 @@
   "rank": 2
  },
  {
-  "id": "gh:elvisun/newsjack",
-  "name": "NewsJack",
-  "url": "https://github.com/elvisun/newsjack",
-  "kind": "skill",
-  "category": "Marketing, sales & SEO",
-  "what": "Free open-source agent skills that research journalists and stories and write pitches, like a PR team.",
-  "price": "open-source",
+  "id": "gh:jonimmswordpressdev/claude-dashboard",
+  "name": "Claude Dashboard",
+  "url": "https://github.com/JonImmsWordpressDev/claude-dashboard",
+  "kind": "repo",
+  "category": "Agent orchestration & teams",
+  "what": "One board showing every Claude Code session on your machine and which one is stuck.",
+  "open_source": "yes",
+  "repo": "https://github.com/jonimmswordpressdev/claude-dashboard",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "23:30",
+    "shown": "A screenshot from the README.",
+    "quote": "every cloud code session on your machine. One board that tells you which one is stuck.",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "Andrew",
+     "why": "Only praises the README screenshot.",
+     "quote": "",
+     "t": "23:30"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "n/a",
+     "why": "Our cloud sessions run elsewhere, so it can't see them. Rule 39."
+    }
+   }
+  ],
+  "check": "Audience submission.",
+  "vs": {
+   "tool": "ChatGPT Dots",
+   "verdict": "different job",
+   "gap": "Not tried; cloud sessions here run elsewhere, so unknown if it helps Charlie."
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 6
+ },
+ {
+  "id": "n:claudeforstartups",
+  "name": "Claude for Startups",
+  "url": "https://claude.com/programs/startups",
+  "kind": "service",
+  "category": "Cost & tokens",
+  "what": "Anthropic programme giving eligible startups a year of Claude for Teams and API credits.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "free",
+   "amount": "1 year of Claude for Teams + $1,000 API credits, if eligible",
+   "source": "c5ZkPhzaLdA 6:04",
+   "date": "2026-10-09"
+  },
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "The Next New Thing",
+    "video": "c5ZkPhzaLdA",
+    "t": "6:18",
+    "shown": "Read out the offer; hosts said they are applying.",
+    "quote": "free access. One year of Claude for Teams, $1,000 in Claude API credits",
+    "opinion": {
+     "stance": "would use",
+     "who": "Both hosts",
+     "why": "Free year of Claude for Teams plus API credits is a no-brainer to apply for.",
+     "quote": "I think it's a no-brainer. Like, why not go and apply?",
+     "t": "7:07"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Free credits for the channel, if it counts as a startup",
+     "agree": "agree",
+     "why": "Applying costs nothing, but check UK eligibility and the terms first. A sign-up goes on the Decision Desk."
+    }
+   }
+  ],
+  "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page.",
+  "vs": null,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 2
+ },
+ {
+  "id": "n:claudeopus55",
+  "name": "Claude Opus 5.5",
+  "url": "https://www.anthropic.com/claude-opus-5-5",
+  "kind": "model",
+  "category": "Models & LLMs",
+  "what": "New Claude model praised for writing, visual design and animation.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -2508,25 +2897,25 @@
     "week": "2026-W39",
     "source": "The Next New Thing",
     "video": "ZodAaTH-6_E",
-    "t": "5:13",
-    "shown": "Showed Elvis's demo plugging Jev into it to scrape and pitch quickly and cheaply.",
-    "quote": "It's a free GitHub repo and these skills basically turn your agent into a PR team.",
+    "t": "13:55",
+    "shown": "Showed community examples including a music video animation and a walkable shop built with it.",
+    "quote": "it just is the best feeling model we've we've had in a long time.",
     "opinion": {
-     "stance": "no opinion",
+     "stance": "would use",
      "who": "",
-     "why": "Calls it a cool skill suite, but nobody says they would use it.",
-     "quote": "",
-     "t": "5:13"
+     "why": "Says it is the best-feeling model in a long time, best for writing and visual design.",
+     "quote": "it just is the best feeling model we've we've had in a long time.",
+     "t": "13:55"
     },
     "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "n/a",
-     "why": "Pitching journalists is a business job, not an AI OS or channel-building job yet. Rule 39."
+     "need": "maybe",
+     "for_what": "Scripts, titles and descriptions for the channel, and running the OS",
+     "agree": "agree",
+     "why": "Likely worth it, but it is a feeling, not a test. Rule 43 (same prompt, own work) and Rule 41 (prune after every new model); run the audit content check after switching."
     }
    }
   ],
-  "check": "Claimed 8-15k a month PR cost comparison not verified.",
+  "check": "Opinion only; no benchmarks or pricing given.",
   "vs": null,
   "weeks": [
    "2026-W39"
@@ -2534,66 +2923,124 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
-  "score": 10,
+  "score": 9,
   "replaced_by": null,
   "status": "steady",
   "ours": false,
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 5
+  "rank": 2
  },
  {
-  "id": "gh:stablyai/orca",
-  "name": "Orca",
-  "url": "https://github.com/stablyai/orca",
-  "kind": "app",
-  "category": "Agent orchestration & teams",
-  "what": "Interface for running several coding agents side by side, designed around agents rather than code.",
-  "price": "open-source",
+  "id": "gh:mksglu/context-mode",
+  "name": "Context Mode",
+  "url": "https://github.com/mksglu/context-mode",
+  "kind": "repo",
+  "category": "Cost & tokens",
+  "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
+  "open_source": "yes",
+  "repo": "https://github.com/mksglu/context-mode",
+  "cost": null,
   "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "11:49",
+    "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
+    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "Adam",
+     "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
+     "quote": "",
+     "t": "11:17"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Keeping long sessions short if context fills up",
+     "agree": "n/a",
+     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
+    }
+   }
+  ],
+  "check": "Token-saving figures not shown on screen.",
+  "vs": {
+   "tool": "FreeLLMAPI",
+   "verdict": "different job",
+   "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 3
+ },
+ {
+  "id": "gh:dyad-sh/dyad",
+  "name": "Dyad",
+  "url": "https://github.com/dyad-sh/dyad",
+  "kind": "repo",
+  "category": "Design & websites",
+  "what": "Open-source local app builder that turns plain English into apps using your chosen AI model.",
+  "open_source": "yes",
+  "repo": "https://github.com/dyad-sh/dyad",
+  "cost": null,
+  "for_charlie": 1,
   "replaces": [
-   "VS Code for agent work"
+   "Lovable"
   ],
   "sightings": [
    {
-    "week": "2026-W39",
+    "week": "2026-W41",
     "source": "The Next New Thing",
-    "video": "hlOk-EFUITQ",
-    "t": "25:07",
-    "shown": "Showed the readme screenshot with Claude Code and Codex in one window plus mobile link.",
-    "quote": "Run five coding agents at once. Keep the best.",
+    "video": "GZtLsvklYBI",
+    "t": "23:51",
+    "shown": "Described features; no demo.",
+    "quote": "You just describe what you want in plain English and you get it.",
     "opinion": {
-     "stance": "would use",
-     "who": "Adam",
-     "why": "Calls it awesome and a new kind of editor designed around agents, not code.",
-     "quote": "I would call this the new era of VS Code",
-     "t": "26:40"
+     "stance": "mixed",
+     "who": "host",
+     "why": "Describes it, then doubts it will last because Claude Code does the same job.",
+     "quote": "maybe even this is uh is a tool whose days are numbered because we're seeing more and more that claude code can do this stuff on its own.",
+     "t": "24:59"
     },
     "our_view": {
      "need": "no",
      "for_what": "",
-     "agree": "disagree",
-     "why": "Several agents at once is the opposite of one next step at a time. Rule 24 and Rule 39 (cap parallel sessions)."
+     "agree": "agree",
+     "why": "Charlie already builds in Claude Code, so a second app builder is a duplicate. Rule 42; reuse before building (capability map)."
     }
    }
   ],
-  "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion.",
+  "check": "Model cost depends on what you plug in; free Gemini key possible.",
   "vs": null,
   "weeks": [
-   "2026-W39"
+   "2026-W41"
   ],
-  "first": "2026-W39",
-  "last": "2026-W39",
+  "first": "2026-W41",
+  "last": "2026-W41",
   "mentions": 1,
-  "score": 10,
+  "score": 9,
   "replaced_by": null,
-  "status": "steady",
+  "status": "new",
   "ours": false,
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 5
+  "rank": 3
  },
  {
   "id": "n:hyperagent",
@@ -2602,7 +3049,14 @@
   "kind": "service",
   "category": "Agent orchestration & teams",
   "what": "Workspace where humans and several AI agents share Rooms, with permissions and model routing.",
-  "price": "freemium",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "pay-per-use",
+   "amount": "credits topped up as you go; can use your ChatGPT subscription instead",
+   "source": "bTbyRKO0hxs 12:16-13:16",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -2662,366 +3116,14 @@
   "first": "2026-W38",
   "last": "2026-W40",
   "mentions": 2,
-  "score": 9.5,
+  "score": 9,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 6
- },
- {
-  "id": "gh:ace-step/ace-step-1.5",
-  "name": "ACE-Step",
-  "url": "https://github.com/ace-step/ACE-Step-1.5",
-  "kind": "repo",
-  "category": "Voice & audio",
-  "what": "Open-source song generator with vocals that runs on your own computer.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [
-   "Suno"
-  ],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "The Next New Thing",
-    "video": "GZtLsvklYBI",
-    "t": "13:57",
-    "shown": "Made a short hip-hop song on the hosted web version; host said it was not as good as Suno.",
-    "quote": "unlimited songs hosted by you for free.",
-    "opinion": {
-     "stance": "mixed",
-     "who": "host",
-     "why": "Free and unlimited, but he tried it and was underwhelmed against Suno.",
-     "quote": "I don't think it's anything to write home about.",
-     "t": "16:18"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Free background music for channel videos",
-     "agree": "agree",
-     "why": "His own test was weak, so try the hosted version on one real video before any install (Rule 43)."
-    }
-   }
-  ],
-  "check": "Quality below Suno per host.",
-  "vs": null,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "gh:jonimmswordpressdev/claude-dashboard",
-  "name": "Claude Dashboard",
-  "url": "https://github.com/JonImmsWordpressDev/claude-dashboard",
-  "kind": "repo",
-  "category": "Agent orchestration & teams",
-  "what": "One board showing every Claude Code session on your machine and which one is stuck.",
-  "price": "open-source",
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "23:30",
-    "shown": "A screenshot from the README.",
-    "quote": "every cloud code session on your machine. One board that tells you which one is stuck.",
-    "opinion": {
-     "stance": "no opinion",
-     "who": "Andrew",
-     "why": "Only praises the README screenshot.",
-     "quote": "",
-     "t": "23:30"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "n/a",
-     "why": "Our cloud sessions run elsewhere, so it can't see them. Rule 39."
-    }
-   }
-  ],
-  "check": "Audience submission.",
-  "vs": {
-   "tool": "ChatGPT Dots",
-   "verdict": "different job",
-   "gap": "Not tried; cloud sessions here run elsewhere, so unknown if it helps Charlie."
-  },
-  "weeks": [
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W38",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
   "rank": 7
- },
- {
-  "id": "n:claudeforstartups",
-  "name": "Claude for Startups",
-  "url": "https://claude.com/programs/startups",
-  "kind": "service",
-  "category": "Cost & tokens",
-  "what": "Anthropic programme giving eligible startups a year of Claude for Teams and API credits.",
-  "price": "free",
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "The Next New Thing",
-    "video": "c5ZkPhzaLdA",
-    "t": "6:18",
-    "shown": "Read out the offer; hosts said they are applying.",
-    "quote": "free access. One year of Claude for Teams, $1,000 in Claude API credits",
-    "opinion": {
-     "stance": "would use",
-     "who": "Both hosts",
-     "why": "Free year of Claude for Teams plus API credits is a no-brainer to apply for.",
-     "quote": "I think it's a no-brainer. Like, why not go and apply?",
-     "t": "7:07"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Free credits for the channel, if it counts as a startup",
-     "agree": "agree",
-     "why": "Applying costs nothing, but check UK eligibility and the terms first. A sign-up goes on the Decision Desk."
-    }
-   }
-  ],
-  "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page.",
-  "vs": null,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "n:claudeopus55",
-  "name": "Claude Opus 5.5",
-  "url": "https://www.anthropic.com/claude-opus-5-5",
-  "kind": "model",
-  "category": "Models & LLMs",
-  "what": "New Claude model praised for writing, visual design and animation.",
-  "price": "unknown",
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "ZodAaTH-6_E",
-    "t": "13:55",
-    "shown": "Showed community examples including a music video animation and a walkable shop built with it.",
-    "quote": "it just is the best feeling model we've we've had in a long time.",
-    "opinion": {
-     "stance": "would use",
-     "who": "",
-     "why": "Says it is the best-feeling model in a long time, best for writing and visual design.",
-     "quote": "it just is the best feeling model we've we've had in a long time.",
-     "t": "13:55"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Scripts, titles and descriptions for the channel, and running the OS",
-     "agree": "agree",
-     "why": "Likely worth it, but it is a feeling, not a test. Rule 43 (same prompt, own work) and Rule 41 (prune after every new model); run the audit content check after switching."
-    }
-   }
-  ],
-  "check": "Opinion only; no benchmarks or pricing given.",
-  "vs": null,
-  "weeks": [
-   "2026-W39"
-  ],
-  "first": "2026-W39",
-  "last": "2026-W39",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "gh:mksglu/context-mode",
-  "name": "Context Mode",
-  "url": "https://github.com/mksglu/context-mode",
-  "kind": "repo",
-  "category": "Cost & tokens",
-  "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
-  "price": "open-source",
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "11:49",
-    "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
-    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
-    "opinion": {
-     "stance": "no opinion",
-     "who": "Adam",
-     "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
-     "quote": "",
-     "t": "11:17"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Keeping long sessions short if context fills up",
-     "agree": "n/a",
-     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
-    }
-   }
-  ],
-  "check": "Token-saving figures not shown on screen.",
-  "vs": {
-   "tool": "FreeLLMAPI",
-   "verdict": "different job",
-   "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
-  },
-  "weeks": [
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W38",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 3
- },
- {
-  "id": "gh:dyad-sh/dyad",
-  "name": "Dyad",
-  "url": "https://github.com/dyad-sh/dyad",
-  "kind": "repo",
-  "category": "Design & websites",
-  "what": "Open-source local app builder that turns plain English into apps using your chosen AI model.",
-  "price": "open-source",
-  "for_charlie": 1,
-  "replaces": [
-   "Lovable"
-  ],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "The Next New Thing",
-    "video": "GZtLsvklYBI",
-    "t": "23:51",
-    "shown": "Described features; no demo.",
-    "quote": "You just describe what you want in plain English and you get it.",
-    "opinion": {
-     "stance": "mixed",
-     "who": "host",
-     "why": "Describes it, then doubts it will last because Claude Code does the same job.",
-     "quote": "maybe even this is uh is a tool whose days are numbered because we're seeing more and more that claude code can do this stuff on its own.",
-     "t": "24:59"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "agree",
-     "why": "Charlie already builds in Claude Code, so a second app builder is a duplicate. Rule 42; reuse before building (capability map)."
-    }
-   }
-  ],
-  "check": "Model cost depends on what you plug in; free Gemini key possible.",
-  "vs": null,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 3
- },
- {
-  "id": "n:improvecodebasearchitecture",
-  "name": "improve-codebase-architecture",
-  "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Scans a codebase for tidy-up opportunities and shows them as an HTML report.",
-  "price": "open-source",
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 1073339,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 5
  },
  {
   "id": "gh:invoke-ai/invokeai",
@@ -3030,7 +3132,9 @@
   "kind": "repo",
   "category": "Video, clips & images",
   "what": "Open-source local image studio with layered canvas and editing.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/invoke-ai/invokeai",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [
    "Midjourney"
@@ -3082,7 +3186,9 @@
   "kind": "plugin",
   "category": "Claude Code skills & plugins",
   "what": "Anthropic's plugins for finance, HR, legal, marketing and operations work.",
-  "price": "unknown",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/knowledge-work-plugins",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -3132,7 +3238,9 @@
   "kind": "repo",
   "category": "Models & LLMs",
   "what": "Private ChatGPT-style assistant on your computer with local models, memory, research and agents, made by PewDiePie.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/odysseus-dev/odysseus",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [
    "ChatGPT"
@@ -3184,7 +3292,9 @@
   "kind": "repo",
   "category": "Agent orchestration & teams",
   "what": "Open-source general agent that plans, browses, codes and saves files using your own model.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/foundationagents/openmanus",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [
    "Manus"
@@ -3230,93 +3340,15 @@
   "rank": 8
  },
  {
-  "id": "n:tdd",
-  "name": "tdd",
-  "url": "https://skills.sh/mattpocock/skills/tdd",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Builds features test-first (red, green, refactor).",
-  "price": "open-source",
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 1046160,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 6
- },
- {
-  "id": "n:triage",
-  "name": "triage",
-  "url": "https://skills.sh/mattpocock/skills/triage",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Moves issues and external pull requests through triage roles and writes agent-ready briefs.",
-  "price": "open-source",
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 910765,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 9.0,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 7
- },
- {
   "id": "gh:upscayl/upscayl",
   "name": "Upscayl",
   "url": "https://github.com/upscayl/upscayl",
   "kind": "repo",
   "category": "Video, clips & images",
   "what": "Free desktop app that upscales photos four times locally, singly or in bulk.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/upscayl/upscayl",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [
    "Topaz Gigapixel"
@@ -3362,53 +3394,20 @@
   "rank": 8
  },
  {
-  "id": "n:codebasedesign",
-  "name": "codebase-design",
-  "url": "https://skills.sh/mattpocock/skills/codebase-design",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Shared vocabulary for designing deep, simple code modules.",
-  "price": "open-source",
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 760424,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 8.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 8
- },
- {
   "id": "n:omnisendmcp",
   "name": "Omnisend MCP",
   "url": "https://www.omnisend.com/ai/mcp/",
   "kind": "mcp",
   "category": "MCP & connectors",
   "what": "MCP that lets Claude or another agent build email campaigns and customer segments in Omnisend.",
-  "price": "freemium",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "free tier + paid",
+   "amount": "",
+   "source": "earlier week-file price",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -3458,7 +3457,14 @@
   "kind": "repo",
   "category": "Other",
   "what": "Free step-by-step AI engineering course.",
-  "price": "free",
+  "open_source": "public code",
+  "repo": "https://github.com/rohitg00/ai-engineering-from-scratch",
+  "cost": {
+   "model": "free",
+   "amount": "",
+   "source": "earlier week-file price",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -3508,7 +3514,14 @@
   "kind": "service",
   "category": "Marketing, sales & SEO",
   "what": "Weekly full-funnel breakdowns plus a copy-able prompt for Claude Code or Codex to rebuild the funnel.",
-  "price": "paid",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "yearly",
+   "amount": "said as '$2.99 a year' (probably a caption slip; check)",
+   "source": "c5ZkPhzaLdA 12:12",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -3558,7 +3571,9 @@
   "kind": "repo",
   "category": "Automation & workflows",
   "what": "Self-hosted booking page that avoids double-bookings and can take payment first.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/calcom/cal.diy",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [
    "Calendly"
@@ -3610,7 +3625,9 @@
   "kind": "app",
   "category": "Other",
   "what": "Claude's built-in slides and docs: turn a markdown file into an editable presentation and edit by chatting.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -3664,7 +3681,9 @@
   "kind": "repo",
   "category": "MCP & connectors",
   "what": "Turns desktop apps into command-line interfaces that agents can drive; small marketplace of ready-made ones.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/hkuds/cli-anything",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -3708,13 +3727,57 @@
   "rank": 3
  },
  {
+  "id": "n:improvecodebasearchitecture",
+  "name": "improve-codebase-architecture",
+  "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Scans a codebase for tidy-up opportunities and shows them as an HTML report.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1073339,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 5
+ },
+ {
   "id": "n:notionskillslibrary",
   "name": "Notion Skills Library",
   "url": "https://www.notion.com/blog/a-skills-library-for-every-agent",
   "kind": "service",
   "category": "Claude Code skills & plugins",
   "what": "Notion now stores agent skills as pages so non-GitHub teammates can share and edit them.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -3768,7 +3831,9 @@
   "kind": "service",
   "category": "Video, clips & images",
   "what": "AI video agent that turns an idea into a product launch video.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -3818,7 +3883,14 @@
   "kind": "service",
   "category": "Claude Code skills & plugins",
   "what": "Paid directory of premium agent skills with a visible demo of each output.",
-  "price": "paid",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "monthly or one-off",
+   "amount": "monthly fee, or buy all; single skills from $4.99",
+   "source": "c5ZkPhzaLdA 13:45-14:16",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -3862,13 +3934,141 @@
   "rank": 14
  },
  {
+  "id": "n:tdd",
+  "name": "tdd",
+  "url": "https://skills.sh/mattpocock/skills/tdd",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Builds features test-first (red, green, refactor).",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1046160,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 6
+ },
+ {
+  "id": "n:triage",
+  "name": "triage",
+  "url": "https://skills.sh/mattpocock/skills/triage",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Moves issues and external pull requests through triage roles and writes agent-ready briefs.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 910765,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 7
+ },
+ {
+  "id": "n:codebasedesign",
+  "name": "codebase-design",
+  "url": "https://skills.sh/mattpocock/skills/codebase-design",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Shared vocabulary for designing deep, simple code modules.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 760424,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 7.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "rank": 8
+ },
+ {
   "id": "gh:anthropics/financial-services",
   "name": "Anthropic Financial Services",
   "url": "https://github.com/anthropics/financial-services",
   "kind": "repo",
   "category": "Claude Code skills & plugins",
   "what": "Anthropic plugin of about 10 skill files that make an agent act like a finance professional.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/anthropics/financial-services",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -3940,7 +4140,9 @@
   "kind": "model",
   "category": "Models & LLMs",
   "what": "Tiny free on-device LLM (8-29 MB) that turns plain requests into safe structured tool calls with confidence scores, offline.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/cactus-compute/needle",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -3990,7 +4192,9 @@
   "kind": "repo",
   "category": "Agent orchestration & teams",
   "what": "A set of AI departments that run a company with compounding memory.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/trainingsites/campus-ai-os",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -4044,7 +4248,9 @@
   "kind": "app",
   "category": "Voice & audio",
   "what": "ChatGPT voice mode now reaches email, calendar and Slack through connectors.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -4094,7 +4300,9 @@
   "kind": "service",
   "category": "Video, clips & images",
   "what": "Turns a rough screen recording into a polished demo, training video or SOP with zooms and voiceover.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [
    "Screen Studio"
@@ -4146,7 +4354,9 @@
   "kind": "repo",
   "category": "Agent orchestration & teams",
   "what": "Project-centred workspace that puts Claude Code, Codex and Cursor sessions one tab apart with shared memory.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/superlogicai/logic-loop",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -4200,7 +4410,9 @@
   "kind": "repo",
   "category": "Claude Code skills & plugins",
   "what": "OpenAI's open plugin packs (e.g. Figma); Claude can convert them or use a connector.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/openai/plugins",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -4254,7 +4466,9 @@
   "kind": "repo",
   "category": "Cost & tokens",
   "what": "Dashboard that shows how much you've spent and how many credits are left across many LLMs.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/captainasic/reckoner",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -4308,7 +4522,9 @@
   "kind": "skill",
   "category": "Design & websites",
   "what": "Vercel skill that reviews a page against web guidelines for accessibility, forms, typography and animation.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/vercel-labs/agent-skills",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -4362,7 +4578,9 @@
   "kind": "repo",
   "category": "Agent orchestration & teams",
   "what": "Command line tool that makes git worktrees (separate folders) easy so several AI agents don't edit the same files.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/max-sixty/worktrunk",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -4416,7 +4634,9 @@
   "kind": "repo",
   "category": "Business & finance",
   "what": "Subscriptions and usage or token-based billing for software you build.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/useautumn/autumn",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -4466,7 +4686,9 @@
   "kind": "repo",
   "category": "Marketing, sales & SEO",
   "what": "Self-hosted support inbox with AI replies and no per-seat pricing.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/chatwoot/chatwoot",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [
    "Intercom"
@@ -4518,7 +4740,9 @@
   "kind": "repo",
   "category": "Business & finance",
   "what": "Customisable open-source CRM for leads and deals.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/frappe/crm",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [
    "Pipedrive"
@@ -4570,7 +4794,9 @@
   "kind": "app",
   "category": "Coding agents & IDEs",
   "what": "New agent app with better web browser access and widgets that track your accounts.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -4620,7 +4846,9 @@
   "kind": "repo",
   "category": "Business & finance",
   "what": "Self-hosted quotes, invoices and billing with no per-seat fee.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/invoiceninja/invoiceninja",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [
    "QuickBooks"
@@ -4672,7 +4900,9 @@
   "kind": "service",
   "category": "Marketing, sales & SEO",
   "what": "Vercel tool that scores how easy a website is for AI agents to read and use.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -4726,7 +4956,9 @@
   "kind": "repo",
   "category": "Marketing, sales & SEO",
   "what": "Self-hosted email marketing, landing pages and automation.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/mautic/mautic",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [
    "GoHighLevel"
@@ -4778,7 +5010,9 @@
   "kind": "repo",
   "category": "Design & websites",
   "what": "Popular JavaScript web framework; trending after a run of security fixes.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/vercel/next.js",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -4828,7 +5062,9 @@
   "kind": "repo",
   "category": "Marketing, sales & SEO",
   "what": "Self-hosted product analytics: funnels, retention, session replays, experiments.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/posthog/posthog",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -4878,7 +5114,14 @@
   "kind": "service",
   "category": "Marketing, sales & SEO",
   "what": "Platform that creates and runs a fake AI influencer account promoting your product.",
-  "price": "paid",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "paid (model not stated)",
+   "amount": "",
+   "source": "earlier week-file price",
+   "date": "2026-10-09"
+  },
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -4928,7 +5171,9 @@
   "kind": "service",
   "category": "Marketing, sales & SEO",
   "what": "Embeddable website popup widget with triggers, installed in about five minutes.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -4978,7 +5223,9 @@
   "kind": "repo",
   "category": "Marketing, sales & SEO",
   "what": "Self-hosted chat-style forms with branching and lead qualification.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/baptistearno/typebot.io",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [
    "Typeform"
@@ -5030,7 +5277,14 @@
   "kind": "service",
   "category": "Design & websites",
   "what": "Domain search and buying page on Vercel with cheap prices, all in one place with hosting.",
-  "price": "paid",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "per domain",
+   "amount": "$12, $18 and $275 domains shown; renewal not stated",
+   "source": "6xi2KL_NujU 18:32-19:32",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -5084,7 +5338,9 @@
   "kind": "service",
   "category": "Other",
   "what": "Clean single-page directory of AI tools, monetised by sponsored spots.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5134,7 +5390,14 @@
   "kind": "app",
   "category": "Coding agents & IDEs",
   "what": "Mac app that runs isolated virtual machines so an agent gets its own computer.",
-  "price": "paid",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "one-off",
+   "amount": "about $34-35, then free",
+   "source": "c5ZkPhzaLdA 10:10",
+   "date": "2026-10-09"
+  },
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5184,7 +5447,14 @@
   "kind": "repo",
   "category": "Other",
   "what": "Free repo that has AI watch your webcam in real time and describe faces, gestures or custom yes/no checks.",
-  "price": "free",
+  "open_source": "public code",
+  "repo": "https://github.com/yoheinakajima/glance-speedlab",
+  "cost": {
+   "model": "free",
+   "amount": "",
+   "source": "earlier week-file price",
+   "date": "2026-10-09"
+  },
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5234,7 +5504,9 @@
   "kind": "app",
   "category": "Automation & workflows",
   "what": "Meeting note-taker whose notes feed GrokBot tasks.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5284,7 +5556,9 @@
   "kind": "repo",
   "category": "Agent orchestration & teams",
   "what": "Tencent Cloud's open-source team/family agent assistant, aimed at Asian chat apps.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/tencentcloud/octop",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5334,7 +5608,9 @@
   "kind": "repo",
   "category": "Automation & workflows",
   "what": "Open-source task board that moves tasks along when work is done rather than by dragging.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/codpal-limited/deckgauge",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5388,7 +5664,9 @@
   "kind": "repo",
   "category": "Research & search",
   "what": "Interactive map joining open public data (traffic, CCTV cameras, flights); also available as a Pinocchio app.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/bilawalsidhu/gods-eye-view",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5442,7 +5720,9 @@
   "kind": "skill",
   "category": "Automation & workflows",
   "what": "ByteDance skill for working with Lark, its workplace tool (contacts, messenger, sheets, calendar, wiki).",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/larksuite/cli",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5496,7 +5776,9 @@
   "kind": "app",
   "category": "Other",
   "what": "AI sidebar that sits on top of almost any app so you can ask about what is on screen.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5546,7 +5828,9 @@
   "kind": "app",
   "category": "Other",
   "what": "Vibe-coded walkable online mall where you shop as an avatar and stores sell real goods and ad space.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5596,7 +5880,14 @@
   "kind": "service",
   "category": "Voice & audio",
   "what": "Provides the phone number the voice agent calls from.",
-  "price": "paid",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "paid (model not stated)",
+   "amount": "",
+   "source": "earlier week-file price",
+   "date": "2026-10-09"
+  },
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5646,7 +5937,14 @@
   "kind": "service",
   "category": "Coding agents & IDEs",
   "what": "Builds native iOS and Android apps (Swift and Kotlin) from one prompt, with widgets and Live Activities.",
-  "price": "freemium",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "free tier + paid",
+   "amount": "'free plan, no credit card'",
+   "source": "6xi2KL_NujU 1:34",
+   "date": "2026-10-09"
+  },
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5700,7 +5998,9 @@
   "kind": "app",
   "category": "Other",
   "what": "AI stylist that finds your outfits in your photo album and suggests what to wear.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5754,7 +6054,9 @@
   "kind": "service",
   "category": "Automation & workflows",
   "what": "Gives any AI tool a browser, like the one in ChatGPT.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5808,7 +6110,9 @@
   "kind": "service",
   "category": "Voice & audio",
   "what": "AI receptionist that answers calls, helps customers, transfers and books appointments.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5862,7 +6166,9 @@
   "kind": "service",
   "category": "Design & websites",
   "what": "Lets Claude, ChatGPT or other AI control a WordPress site by chat.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5916,7 +6222,9 @@
   "kind": "app",
   "category": "Other",
   "what": "AI wristband that learns your habits, answers questions and works with a phone app.",
-  "price": "unknown",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
   "for_charlie": 0,
   "replaces": [],
   "sightings": [
@@ -5970,7 +6278,9 @@
   "kind": "skill",
   "category": "Claude Code skills & plugins",
   "what": "Finds and installs agent skills when you ask 'is there a skill for X'.",
-  "price": "open-source",
+  "open_source": "public code",
+  "repo": "https://github.com/vercel-labs/skills",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
@@ -6020,7 +6330,7 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
-  "score": 20,
+  "score": 19,
   "replaced_by": null,
   "status": "rising",
   "ours": true,
@@ -6036,7 +6346,9 @@
   "kind": "skill",
   "category": "Claude Code skills & plugins",
   "what": "Interviews you relentlessly about a plan until it is sharp.",
-  "price": "open-source",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
@@ -6086,7 +6398,7 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
-  "score": 20,
+  "score": 19,
   "replaced_by": null,
   "status": "rising",
   "ours": true,
@@ -6102,7 +6414,9 @@
   "kind": "skill",
   "category": "Claude Code skills & plugins",
   "what": "Anthropic's skill for creating, improving and testing your own skills.",
-  "price": "open-source",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/skills",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
@@ -6126,7 +6440,7 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
-  "score": 17.6,
+  "score": 16.6,
   "replaced_by": null,
   "status": "new",
   "ours": false,
@@ -6142,7 +6456,9 @@
   "kind": "skill",
   "category": "Claude Code skills & plugins",
   "what": "Teaches you a new skill or concept inside your workspace.",
-  "price": "open-source",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
@@ -6192,7 +6508,7 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
-  "score": 16.9,
+  "score": 15.9,
   "replaced_by": null,
   "status": "rising",
   "ours": true,
@@ -6208,7 +6524,9 @@
   "kind": "repo",
   "category": "Claude Code skills & plugins",
   "what": "A single skill file that makes the AI answer short and easy to scan; 47,000 stars.",
-  "price": "open-source",
+  "open_source": "yes",
+  "repo": "https://github.com/ayghri/i-have-adhd",
+  "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
@@ -6262,7 +6580,9 @@
   "kind": "skill",
   "category": "Other",
   "what": "Anthropic's skill to create, read and edit PowerPoint files.",
-  "price": "open-source",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/skills",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -6286,7 +6606,7 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
-  "score": 11.4,
+  "score": 10.4,
   "replaced_by": null,
   "status": "new",
   "ours": false,
@@ -6302,7 +6622,9 @@
   "kind": "skill",
   "category": "Other",
   "what": "Anthropic's skill to read, merge, split, fill and create PDFs.",
-  "price": "open-source",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/skills",
+  "cost": null,
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -6326,7 +6648,7 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
-  "score": 11.3,
+  "score": 10.3,
   "replaced_by": null,
   "status": "new",
   "ours": false,
@@ -6342,7 +6664,14 @@
   "kind": "service",
   "category": "Voice & audio",
   "what": "Voice agent platform; here it runs the phone conversations, with the founder's cloned voice.",
-  "price": "freemium",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": {
+   "model": "monthly",
+   "amount": "subscription (amount not stated)",
+   "source": "c5ZkPhzaLdA 16:47",
+   "date": "2026-10-09"
+  },
   "for_charlie": 1,
   "replaces": [],
   "sightings": [
@@ -6376,7 +6705,7 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
-  "score": 6.5,
+  "score": 6,
   "replaced_by": "VoiceStudio",
   "status": "replaced",
   "ours": false,

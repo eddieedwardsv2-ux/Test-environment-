@@ -17,7 +17,6 @@
    "category": "Models & LLMs",
    "what": "Tiny, very fast decision model (not a chatbot) that answers multiple-choice and yes/no questions with probabilities, cheaply.",
    "shown": "Sorted 500 emails live, built a voice-controlled browser, model routing, support triage, lead scoring, agent memory search, clip scoring and smart-home control.",
-   "price": "unknown",
    "for_charlie": 2,
    "replaces": [
     "flash models"
@@ -38,6 +37,14 @@
     "for_what": "Sorting a pile of comments or emails if the channel ever gets one",
     "agree": "disagree",
     "why": "Charlie has no 500-email pile yet, so no real pain. Rule 39 (adopt tools only for real pain); Rule 42 (lowest rung first). Any API key goes in .env (Rule 26)."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "pay-per-use",
+    "amount": "under $1 for a 300-story NewsJack run",
+    "source": "ZodAaTH-6_E 5:44-6:14",
+    "date": "2026-10-09"
    }
   },
   {
@@ -47,7 +54,6 @@
    "category": "Models & LLMs",
    "what": "Fast decision model that lets you talk to a Mac app and have it act, cheaply.",
    "shown": "Clip of someone speaking to the computer to open Notes and create a note; hosts did not try it.",
-   "price": "unknown",
    "for_charlie": 1,
    "replaces": [],
    "video": "ZodAaTH-6_E",
@@ -66,6 +72,14 @@
     "for_what": "",
     "agree": "n/a",
     "why": "A Mac-only app nobody has published, so nothing to adopt. Rule 39."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "pay-per-use",
+    "amount": "under $1 for a 300-story NewsJack run",
+    "source": "ZodAaTH-6_E 5:44-6:14",
+    "date": "2026-10-09"
    }
   },
   {
@@ -75,7 +89,6 @@
    "category": "Automation & workflows",
    "what": "Free consumer AI agent from Meta that people use to find cheaper insurance, cancel forgotten subscriptions and find money owed.",
    "shown": "Walked through other people's examples and showed a simple chat screen; hosts did not run it themselves.",
-   "price": "free",
    "for_charlie": 1,
    "replaces": [],
    "video": "ZodAaTH-6_E",
@@ -94,6 +107,14 @@
     "for_what": "",
     "agree": "agree",
     "why": "Insurance, receipts and money owed are private finance, which never goes in this public repo. Rule 36 (read-only first) and Rule 39 (no pain, no tool)."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "free tier + paid",
+    "amount": "free tier; 'eventually they'll start to charge you'",
+    "source": "6IxiArssGvg 11:53",
+    "date": "2026-10-09"
    }
   },
   {
@@ -103,7 +124,6 @@
    "category": "Video, clips & images",
    "what": "Turns a rough screen recording into a polished demo, training video or SOP with zooms and voiceover.",
    "shown": "Played a launch demo video made with it.",
-   "price": "unknown",
    "for_charlie": 1,
    "replaces": [
     "Screen Studio"
@@ -124,7 +144,10 @@
     "for_what": "Polishing screen recordings of Claude Code builds for the channel",
     "agree": "agree",
     "why": "Fits the channel, but price is unknown. Rule 43 (measure on your own work first): try it on one real recording."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "NewsJack",
@@ -133,7 +156,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Free open-source agent skills that research journalists and stories and write pitches, like a PR team.",
    "shown": "Showed Elvis's demo plugging Jev into it to scrape and pitch quickly and cheaply.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": "ZodAaTH-6_E",
@@ -152,7 +174,10 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Pitching journalists is a business job, not an AI OS or channel-building job yet. Rule 39."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/elvisun/newsjack",
+   "cost": null
   },
   {
    "name": "ChatGPT Voice",
@@ -161,7 +186,6 @@
    "category": "Voice & audio",
    "what": "ChatGPT voice mode now reaches email, calendar and Slack through connectors.",
    "shown": "Played OpenAI's launch video; Andrew said the email part did not work until he updated the app.",
-   "price": "unknown",
    "for_charlie": 1,
    "replaces": [],
    "video": "ZodAaTH-6_E",
@@ -180,7 +204,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Voice with email and calendar access is exactly the broad access Rule 36 says to start read-only; he also could not get it working. Rule 39."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Sider Omni",
@@ -189,7 +216,6 @@
    "category": "Other",
    "what": "AI sidebar that sits on top of almost any app so you can ask about what is on screen.",
    "shown": "Showed a demo with Apple Mail; The co-host said he would not use it.",
-   "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "ZodAaTH-6_E",
@@ -208,7 +234,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Claude Code already sits where Charlie works; a sidebar adds nothing. Rule 39."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Camera Bench",
@@ -217,7 +246,6 @@
    "category": "Other",
    "what": "Free repo that has AI watch your webcam in real time and describe faces, gestures or custom yes/no checks.",
    "shown": "Showed it reading expressions and finger counts live.",
-   "price": "free",
    "for_charlie": 0,
    "replaces": [],
    "video": "ZodAaTH-6_E",
@@ -236,6 +264,14 @@
     "for_what": "",
     "agree": "agree",
     "why": "A demo with no use. Rule 39 (adopt tools only for real pain)."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/yoheinakajima/glance-speedlab",
+   "cost": {
+    "model": "free",
+    "amount": "",
+    "source": "earlier week-file price",
+    "date": "2026-10-09"
    }
   },
   {
@@ -245,7 +281,6 @@
    "category": "Models & LLMs",
    "what": "New Claude model praised for writing, visual design and animation.",
    "shown": "Showed community examples including a music video animation and a walkable shop built with it.",
-   "price": "unknown",
    "for_charlie": 2,
    "replaces": [],
    "video": "ZodAaTH-6_E",
@@ -264,7 +299,10 @@
     "for_what": "Scripts, titles and descriptions for the channel, and running the OS",
     "agree": "agree",
     "why": "Likely worth it, but it is a feeling, not a test. Rule 43 (same prompt, own work) and Rule 41 (prune after every new model); run the audit content check after switching."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Systo Commerce",
@@ -273,7 +311,6 @@
    "category": "Other",
    "what": "Vibe-coded walkable online mall where you shop as an avatar and stores sell real goods and ad space.",
    "shown": "Showed a demo clip of an avatar trying on a jacket.",
-   "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "ZodAaTH-6_E",
@@ -292,7 +329,10 @@
     "for_what": "",
     "agree": "n/a",
     "why": "A demo mall, not a tool for Charlie. Rule 39."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Needle",
@@ -301,7 +341,6 @@
    "category": "Models & LLMs",
    "what": "Tiny free on-device LLM (8-29 MB) that turns plain requests into safe structured tool calls with confidence scores, offline.",
    "shown": "Live demos: smart-home lights, reminders and note search, a robot vacuum, phone and laptop actions.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": "tsWOiibaaxA",
@@ -320,7 +359,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Charlie is not shipping software with a model inside. The guest also says quality depends on how tools are scoped, so 'no mistakes' needs testing first (Rule 17)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/cactus-compute/needle",
+   "cost": null
   },
   {
    "name": "GrokBot",
@@ -329,7 +371,6 @@
    "category": "Agent orchestration & teams",
    "what": "Always-on agent used as the orchestrator that wires voice, phone, CRM and forms together.",
    "shown": "Guest built an outbound sales-call system live from a voice-note plan, using it as the orchestrator.",
-   "price": "unknown",
    "for_charlie": 1,
    "replaces": [],
    "video": "WPUAZm5rnGc",
@@ -348,6 +389,14 @@
     "for_what": "",
     "agree": "disagree",
     "why": "He admits other agents can do the same, and Charlie already has Claude Code and Codex. Rule 39; Rule 43 before switching."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "monthly + pay-per-use",
+    "amount": "entry plan about $20; a host's $140/month plan ran $265 over in 2 days",
+    "source": "6IxiArssGvg 11:53; o7Rm5FvA7hU 9:11",
+    "date": "2026-10-09"
    }
   },
   {
@@ -357,7 +406,6 @@
    "category": "Voice & audio",
    "what": "Voice agent platform; here it runs the phone conversations, with the founder's cloned voice.",
    "shown": "Set up the voice agent and cloned voice in the build.",
-   "price": "freemium",
    "for_charlie": 1,
    "replaces": [],
    "video": "WPUAZm5rnGc",
@@ -376,6 +424,14 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Phone sales is not Charlie's job. A cloned voice for videos is a later question, and Rule 37 says check before anything goes public."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "monthly",
+    "amount": "subscription (amount not stated)",
+    "source": "c5ZkPhzaLdA 16:47",
+    "date": "2026-10-09"
    }
   },
   {
@@ -385,7 +441,6 @@
    "category": "Voice & audio",
    "what": "Provides the phone number the voice agent calls from.",
    "shown": "Bought and registered a number live.",
-   "price": "paid",
    "for_charlie": 0,
    "replaces": [],
    "video": "WPUAZm5rnGc",
@@ -404,6 +459,14 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Only needed for phone calls. Paid and UK number rules apply. Rule 39."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "paid (model not stated)",
+    "amount": "",
+    "source": "earlier week-file price",
+    "date": "2026-10-09"
    }
   },
   {
@@ -413,7 +476,6 @@
    "category": "Coding agents & IDEs",
    "what": "Alibaba's open-source code reviewer for vibe coders, now with a VS Code extension, using your existing AI subscription.",
    "shown": "Hosts showed the repo and discussed running it on commit; not installed live.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [
     "paid code-review tools"
@@ -434,7 +496,10 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Their firm ships code at scale; Charlie's checks are tools/audit.py and the audit skill. Rule 33 says a separate checker is wanted, and we have one."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/alibaba/open-code-review",
+   "cost": null
   },
   {
    "name": "OpenSEO",
@@ -443,7 +508,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Open-source Semrush rival; self-host free or have it hosted for about 10 dollars a month.",
    "shown": "Showed the repo and debate about its Y Combinator funding; Adam is a paying customer.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [
     "Semrush"
@@ -464,7 +528,10 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Web SEO tool; Charlie has no website, and YouTube search is covered by vidIQ. Rule 39."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/every-app/open-seo",
+   "cost": null
   },
   {
    "name": "Paperclip",
@@ -473,7 +540,6 @@
    "category": "Agent orchestration & teams",
    "what": "Dashboard that organises many agents like a company so you can assign tasks and see who does what.",
    "shown": "Showed the repo and a popular video about it; not run live.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": "hlOk-EFUITQ",
@@ -492,7 +558,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "One person with a few agents does not need an org chart. Rule 24 (sub-agents not overused) and Rule 39 (cap parallel sessions)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/paperclipai/paperclip",
+   "cost": null
   },
   {
    "name": "Anthropic Financial Services",
@@ -501,7 +570,6 @@
    "category": "Business & finance",
    "what": "Anthropic's skill pack for finance work such as stock analysis and know-your-customer screening.",
    "shown": "Discussed a user who analysed a stock with it; not run live.",
-   "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "hlOk-EFUITQ",
@@ -520,7 +588,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Finance and know-your-customer work is not Charlie's, and finance details stay out of this public repo. Rule 39."
-   }
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/anthropics/financial-services",
+   "cost": null
   },
   {
    "name": "Claude Code agents.md support",
@@ -529,7 +600,6 @@
    "category": "Coding agents & IDEs",
    "what": "Claude Code now reads the shared agents.md instruction file, so one file serves Claude and Codex.",
    "shown": "Explained why one shared instruction file ends the claude.md versus agents.md mismatch; no demo.",
-   "price": "free",
    "for_charlie": 3,
    "replaces": [],
    "video": "hlOk-EFUITQ",
@@ -548,6 +618,14 @@
     "for_what": "Keep AGENTS.md as the one instruction file for Claude Code and Codex",
     "agree": "agree",
     "why": "Already how this OS works: CLAUDE.md imports AGENTS.md. Rule 3 (one current source per fact). Check the Claude Code docs before dropping the import, as the hosts do not demo it."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/anthropics/claude-code",
+   "cost": {
+    "model": "free",
+    "amount": "",
+    "source": "earlier week-file price",
+    "date": "2026-10-09"
    }
   },
   {
@@ -557,7 +635,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Huge skill pack with plan-to-verify loops and memory that improves your agent over time.",
    "shown": "Showed the repo and the remember/improve features; compared it to Agent Skills.",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [],
    "video": "hlOk-EFUITQ",
@@ -576,7 +653,10 @@
     "for_what": "Borrow the remember-and-improve idea; install none of its 292 skills",
     "agree": "agree",
     "why": "Matches Rule 41 (smallest context) and Rule 34 (skills built from a real run). Rule 37: vet any plugin before installing, and ask on the Decision Desk."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/affaan-m/ecc",
+   "cost": null
   },
   {
    "name": "WeKnora",
@@ -585,7 +665,6 @@
    "category": "Knowledge & second brain",
    "what": "Tencent's open-source knowledge system that links files into a searchable graph wiki for your agents.",
    "shown": "Described and showed the repo; not installed live.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": "hlOk-EFUITQ",
@@ -604,7 +683,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie's OS is organised by hand so he can find things without search (Rule 6) and raw sources stay untouched (Rule 12). Pointing it at all your files also breaks Rule 36 for a public repo."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/tencent/weknora",
+   "cost": null
   },
   {
    "name": "Agent Skills",
@@ -613,7 +695,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Addy Osmani's pack of workflow skills that stops agents taking shortcuts; easier to install than ECC.",
    "shown": "Compared side by side with ECC using a Claude comparison.",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [
     "ECC (for beginners)"
@@ -634,7 +715,10 @@
     "for_what": "Read its 25 skills for ideas on spec, plan and review steps",
     "agree": "agree",
     "why": "Easier than ECC is fair. Rule 34 (one job, built from a real run) and Rule 37 (vet before install); install nothing without the Decision Desk."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/addyosmani/agent-skills",
+   "cost": null
   },
   {
    "name": "Knowledge Work Plugins",
@@ -643,7 +727,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Anthropic's plugins for finance, HR, legal, marketing and operations work.",
    "shown": "Discussed browsing the marketing plugin to learn its structure; no live run.",
-   "price": "unknown",
    "for_charlie": 2,
    "replaces": [],
    "video": "hlOk-EFUITQ",
@@ -662,7 +745,10 @@
     "for_what": "Read the marketing plugin to learn how a good plugin is built",
     "agree": "agree",
     "why": "Learning its structure is cheap and safe. Rule 37 (plugin vetting) before installing; check research/plugin-map.md first."
-   }
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": null
   },
   {
    "name": "Orca",
@@ -671,7 +757,6 @@
    "category": "Agent orchestration & teams",
    "what": "Interface for running several coding agents side by side, designed around agents rather than code.",
    "shown": "Showed the readme screenshot with Claude Code and Codex in one window plus mobile link.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [
     "VS Code for agent work"
@@ -692,7 +777,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Several agents at once is the opposite of one next step at a time. Rule 24 and Rule 39 (cap parallel sessions)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/stablyai/orca",
+   "cost": null
   },
   {
    "name": "Octop",
@@ -701,7 +789,6 @@
    "category": "Agent orchestration & teams",
    "what": "Tencent Cloud's open-source team/family agent assistant, aimed at Asian chat apps.",
    "shown": "Browsed the repo and its supported apps.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": "hlOk-EFUITQ",
@@ -720,7 +807,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Telegram and QQ style apps; Charlie is in the UK and needs nothing like it. Rule 39."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/tencentcloud/octop",
+   "cost": null
   },
   {
    "name": "Claude Code Templates",
@@ -729,7 +819,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Browsable catalogue of Claude Code skills, plugins and commands.",
    "shown": "Showed the marketplace-style site; about 900 skills and 34 plugins.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": "hlOk-EFUITQ",
@@ -753,7 +842,10 @@
     "tool": "ECC",
     "verdict": "different job",
     "gap": "A catalogue you pick single skills from, where ECC is one big pack; we don't know which of its skills are worth adding for a beginner."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/davila7/claude-code-templates",
+   "cost": null
   }
  ]
 }

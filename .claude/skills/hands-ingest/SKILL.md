@@ -1,9 +1,9 @@
 ---
 name: hands-ingest
-description: Feeds the Hands Brain (tools, skills, plugins, MCPs, repos) from a YouTube channel week by week, newest first, then ranks what's best to use now and rebuilds its site. Use for "update the Hands Brain", "update the tools list", "what's new this week", "add <channel> to Hands".
+description: Feeds the Hands Brain (tools, skills, plugins, MCPs, repos) from a YouTube channel, new videos only (history stops at W38), then ranks what's best to use now and rebuilds its site. Use for "update the Hands Brain", "update the tools list", "what's new this week", "add <channel> to Hands".
 ---
 
-# Hands ingest (newest video first, then back to W38)
+# Hands ingest (new videos only; history stops at W38)
 
 The Hands Brain (`research/hands/`) learns and teaches the tools people use
 with AI. Sources: The Next New Thing (weekly round-ups) and the skills.sh leaderboard
@@ -12,10 +12,12 @@ with AI. Sources: The Next New Thing (weekly round-ups) and the skills.sh leader
 `brain-ingest`, but the unit is a **tool**, and newer tools can replace older ones.
 
 ## Order (Charlie, 2026-10-09)
-Always take the **newest video not yet in** first, so new tools are tested
-against the ones we already know. Then work **backwards day by day to W38** (Charlie, 2026-10-09): older
-videos add context and relations, and catch old tools nothing newer has
-replaced yet. First refresh the list (`pipeline.py --weeks 1`). Each new tool gets a head-to-head with the
+**History window: 4 weeks, then stop** (Charlie on the Decision Desk,
+2026-10-09, card `hands-window`). We hold 14 September to 8 October 2026
+(W38 to W41, 21 videos). Don't go back before W38 unless he asks: older shows
+are mostly beaten by newer tools, and it saves usage. From now on take only
+**new videos**, newest first, through the Saturday routine "Weekly Hands
+Brain update". First refresh the list (`pipeline.py --weeks 1`). Each new tool gets a head-to-head with the
 current number one in its category (`vs` field below), so we find what we're
 missing and close the gap in knowing how to use it.
 
@@ -42,7 +44,8 @@ missing and close the gap in knowing how to use it.
 "tools": [{"name", "url", "kind": "skill|plugin|mcp|repo|app|model|service",
 "category": one of CATEGORIES in tools/build_hands.py,
 "what": "one plain line", "shown": "what they actually demonstrated, one line, or ''",
-"price": "free|open-source|freemium|paid|unknown",
+"open_source": "yes|public code|unknown" (yes = the show or repo says open source; public code = readable on GitHub, licence not checked), "repo": "GitHub link or ''",
+"cost": null, or only when one applies {"model": "free|pay-per-use|monthly|yearly|one-off|free tier + paid|per domain|paid (model not stated)", "amount", "source": "video id m:ss", "date"} (from what the show says; no web),
 "for_charlie": 0-3 (3 = use now for Claude Code, his AI OS or YouTube channel),
 "replaces": ["older or rival tools it beats, by name"], "video", "t": "m:ss",
 "quote": "verbatim line from the transcript that supports 'what' or 'shown', or ''",

@@ -28,6 +28,9 @@ first friend or family set-up.
 Weekly `audit` (scored, Four Cs, with receipts) runs by itself every Friday at
 8:59 UK time (routine "Weekly AI OS audit", set up 2026-10-09; report lands in `audits/`).
 
+**Hands Brain window (2026-10-09, Desk):** 4 weeks of history (W38 to W41)
+and stop; new videos only, through the Saturday routine.
+
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work while the set-up kit is the priority (v1 done; kept parked 2026-10-08).
 

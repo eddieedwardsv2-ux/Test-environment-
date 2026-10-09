@@ -16,7 +16,6 @@
    "category": "Agent orchestration & teams",
    "what": "Open-source platform that gives AI agents an org chart, tasks and permissions so they work together.",
    "shown": "Hosts walked through the repo and its permissions; no full build.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -35,7 +34,10 @@
     "for_what": "Later, if Charlie runs several Claude Code agents at once",
     "agree": "n/a",
     "why": "Not needed yet. Rule 24 says sub-agents only for bulky output, and Rule 42 says start at the lowest rung."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/paperclipai/paperclip",
+   "cost": null
   },
   {
    "name": "Hindsight",
@@ -44,7 +46,6 @@
    "category": "Knowledge & second brain",
    "what": "Persistent AI memory so an agent remembers you across sessions; built by a real company.",
    "shown": "Discussed on the repo page; hosts unsure why it took off.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -63,7 +64,10 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Our memory is plain files in this repo (Rule 3, one current source per fact), and cloud memory is wiped each session anyway."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/vectorize-io/hindsight",
+   "cost": null
   },
   {
    "name": "VoiceStudio",
@@ -72,7 +76,6 @@
    "category": "Voice & audio",
    "what": "Free local voice cloning with Mac, Windows and Linux apps, instead of a hosted service.",
    "shown": "Showed the repo and the easy-install apps; no clone demo.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [
     "ElevenLabs"
@@ -93,7 +96,10 @@
     "for_what": "A free narration voice for channel videos, using only Charlie's own voice",
     "agree": "agree",
     "why": "Free and local beats a paid host (Rule 39), but test on one real video first (Rule 43) and never clone anyone else's voice without consent."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/debpalash/voicestudio",
+   "cost": null
   },
   {
    "name": "AI Engineering From Scratch",
@@ -102,7 +108,6 @@
    "category": "Other",
    "what": "Free step-by-step AI engineering course.",
    "shown": "Looked at the repo; hosts doubted its quality (AI-written, verbose).",
-   "price": "free",
    "for_charlie": 1,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -121,6 +126,14 @@
     "for_what": "",
     "agree": "agree",
     "why": "Charlie is learning through the teach skill on his own projects, not an engineering course (Rule 39, real pain only)."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/rohitg00/ai-engineering-from-scratch",
+   "cost": {
+    "model": "free",
+    "amount": "",
+    "source": "earlier week-file price",
+    "date": "2026-10-09"
    }
   },
   {
@@ -130,7 +143,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Anthropic plugin of about 10 skill files that make an agent act like a finance professional.",
    "shown": "Hosts discussed it; said it is for financial professionals.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -149,7 +161,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Finance work is not Charlie's pain (Rule 39), and finance details stay out of this public repo."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/financial-services",
+   "cost": null
   },
   {
    "name": "Next.js",
@@ -158,7 +173,6 @@
    "category": "Design & websites",
    "what": "Popular JavaScript web framework; trending after a run of security fixes.",
    "shown": "Explained what it is and why the fixes matter.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -177,7 +191,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Charlie builds with Claude Code, not by choosing web frameworks (Rule 39)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/vercel/next.js",
+   "cost": null
   },
   {
    "name": "Impeccable",
@@ -186,7 +203,6 @@
    "category": "Design & websites",
    "what": "Skill pack that gives a coding agent a designer's eye so apps stop looking generic.",
    "shown": "Demoed picking an aesthetic and pasting the prompt into an agent.",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -210,7 +226,10 @@
     "tool": "frontend-design",
     "verdict": "leader stays",
     "gap": "Both give pages a designer's eye; Claude's built-in artifact-design already covers our pages, so it is only worth a trial if a page looks generic."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/pbakaus/impeccable",
+   "cost": null
   },
   {
    "name": "CLI-Anything",
@@ -219,7 +238,6 @@
    "category": "MCP & connectors",
    "what": "Turns desktop apps into command-line interfaces that agents can drive; small marketplace of ready-made ones.",
    "shown": "Explained with a booking example; noted it does not cover Uber.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -238,7 +256,10 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Charlie has no desktop app he needs an agent to drive (Rule 39)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/hkuds/cli-anything",
+   "cost": null
   },
   {
    "name": "Claude Skills",
@@ -247,7 +268,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Repo of 388 job-specific skill playbooks and personas.",
    "shown": "Showed the repo; hosts joked about too many skills.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -266,7 +286,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "388 playbooks is bloat. Rule 34: one job per skill, built from a real run. Rule 4: always-loaded context is for expertise only."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/alirezarezvani/claude-skills",
+   "cost": null
   },
   {
    "name": "Claude Code Templates",
@@ -275,7 +298,6 @@
    "category": "Claude Code skills & plugins",
    "what": "One-command install of skills, commands and settings for Claude Code.",
    "shown": "Browsed the website listing skills, commands and settings.",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [],
    "video": "CQhWqUOouYM",
@@ -299,7 +321,10 @@
     "tool": "ECC",
     "verdict": "different job",
     "gap": "A catalogue you pick single skills from, where ECC is one big pack; we don't know which of its skills are worth adding for a beginner."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/davila7/claude-code-templates",
+   "cost": null
   },
   {
    "name": "PostHog",
@@ -308,7 +333,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Self-hosted product analytics: funnels, retention, session replays, experiments.",
    "shown": "Explained uses for a business; no live demo.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": "kMPyFWFqX5I",
@@ -327,7 +351,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie has no shop or site with customers (Rule 39, real pain only). Self-hosting is also beyond Rule 42's lowest rung."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/posthog/posthog",
+   "cost": null
   },
   {
    "name": "OpenSEO",
@@ -336,7 +363,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Open-source SEO tool for keyword research and rank tracking that you run yourself.",
    "shown": "Walked through it; founder was on the show before.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [
     "Semrush"
@@ -357,7 +383,10 @@
     "for_what": "Keyword research only if the channel gets its own website",
     "agree": "disagree",
     "why": "They say hand your SEO to the agent now. Charlie has no site yet, and vidIQ already covers YouTube keywords (Rule 39)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/every-app/open-seo",
+   "cost": null
   },
   {
    "name": "Invoice Ninja",
@@ -366,7 +395,6 @@
    "category": "Business & finance",
    "what": "Self-hosted quotes, invoices and billing with no per-seat fee.",
    "shown": "Explained the quote-to-invoice flow.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [
     "QuickBooks"
@@ -387,7 +415,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie has no clients to bill. Money and client details must stay out of this public repo (Rule 39)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/invoiceninja/invoiceninja",
+   "cost": null
   },
   {
    "name": "Cal.diy",
@@ -396,7 +427,6 @@
    "category": "Automation & workflows",
    "what": "Self-hosted booking page that avoids double-bookings and can take payment first.",
    "shown": "Explained the free alternative.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [
     "Calendly"
@@ -417,7 +447,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie takes no bookings. A free calendar link is enough until he does (Rule 42, lowest rung)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/calcom/cal.diy",
+   "cost": null
   },
   {
    "name": "Autumn",
@@ -426,7 +459,6 @@
    "category": "Business & finance",
    "what": "Subscriptions and usage or token-based billing for software you build.",
    "shown": "Explained pricing options.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": "kMPyFWFqX5I",
@@ -445,7 +477,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie has no software to charge for (Rule 39, real pain only)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/useautumn/autumn",
+   "cost": null
   },
   {
    "name": "Typebot",
@@ -454,7 +489,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Self-hosted chat-style forms with branching and lead qualification.",
    "shown": "Described what it is.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [
     "Typeform"
@@ -475,7 +509,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "No forms to run yet (Rule 39); a self-hosted tool is more upkeep than a beginner needs (Rule 42)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/baptistearno/typebot.io",
+   "cost": null
   },
   {
    "name": "Frappe CRM",
@@ -484,7 +521,6 @@
    "category": "Business & finance",
    "what": "Customisable open-source CRM for leads and deals.",
    "shown": "Compared with Pipedrive; brief.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [
     "Pipedrive"
@@ -505,7 +541,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie has no leads or deals, and contact details must stay out of this public repo (Rule 39)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/frappe/crm",
+   "cost": null
   },
   {
    "name": "Mautic",
@@ -514,7 +553,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Self-hosted email marketing, landing pages and automation.",
    "shown": "Described it; said Claude Code can set up follow-up emails.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [
     "GoHighLevel"
@@ -535,7 +573,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Heavy to self-host for a beginner with no email list yet (Rule 42, lowest rung)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/mautic/mautic",
+   "cost": null
   },
   {
    "name": "Chatwoot",
@@ -544,7 +585,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Self-hosted support inbox with AI replies and no per-seat pricing.",
    "shown": "Described it.",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [
     "Intercom"
@@ -565,7 +605,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie has no customer inbox. An AI key would also need handling under Rule 26 (secrets in .env only)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/chatwoot/chatwoot",
+   "cost": null
   },
   {
    "name": "GrokBot",
@@ -574,7 +617,6 @@
    "category": "Agent orchestration & teams",
    "what": "Personal agent with local file access, sub-agents, webhooks and email, run from creators' real workflows.",
    "shown": "Played 11 creator clips (meeting notes to agents, file renaming, inbox triage) with commentary.",
-   "price": "unknown",
    "for_charlie": 1,
    "replaces": [],
    "video": "o7Rm5FvA7hU",
@@ -593,6 +635,14 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie already has Claude Code and Codex (Rule 39). Even the host paid $265 extra in two days, so we want bounded runs (Rule 35)."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "monthly + pay-per-use",
+    "amount": "entry plan about $20; a host's $140/month plan ran $265 over in 2 days",
+    "source": "6IxiArssGvg 11:53; o7Rm5FvA7hU 9:11",
+    "date": "2026-10-09"
    }
   },
   {
@@ -602,7 +652,6 @@
    "category": "Automation & workflows",
    "what": "Meeting note-taker whose notes feed GrokBot tasks.",
    "shown": "Shown as the source of meeting notes in a creator clip.",
-   "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "o7Rm5FvA7hU",
@@ -621,7 +670,10 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Charlie has no meetings to transcribe (Rule 39)."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Meta Muse",
@@ -630,7 +682,6 @@
    "category": "Agent orchestration & teams",
    "what": "Meta's AI agent for bills, price tracking, local files and daily briefs.",
    "shown": "Played creator demos and gave verdict.",
-   "price": "freemium",
    "for_charlie": 0,
    "replaces": [],
    "video": "dfFKE7EetoA",
@@ -649,6 +700,14 @@
     "for_what": "",
     "agree": "disagree",
     "why": "He wants agents that never check in. We keep the confirm step: Rule 36 says start strict, drafts and read-only first, and ask before outside actions."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "free tier + paid",
+    "amount": "free tier; 'eventually they'll start to charge you'",
+    "source": "6IxiArssGvg 11:53",
+    "date": "2026-10-09"
    }
   },
   {
@@ -658,7 +717,6 @@
    "category": "Agent orchestration & teams",
    "what": "Workspace where humans and several AI agents share Rooms, with permissions and model routing.",
    "shown": "Alex demoed Rooms, a paid-ads agent team and permissions.",
-   "price": "freemium",
    "for_charlie": 1,
    "replaces": [],
    "video": "bTbyRKO0hxs",
@@ -677,6 +735,14 @@
     "for_what": "",
     "agree": "n/a",
     "why": "It is built for teams; Charlie works alone (Rule 39, real pain only)."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "pay-per-use",
+    "amount": "credits topped up as you go; can use your ChatGPT subscription instead",
+    "source": "bTbyRKO0hxs 12:16-13:16",
+    "date": "2026-10-09"
    }
   },
   {
@@ -686,7 +752,6 @@
    "category": "Agent orchestration & teams",
    "what": "OpenAI personal agent that can be connected to Slack.",
    "shown": "Created a Dot and connected Slack on screen.",
-   "price": "unknown",
    "for_charlie": 1,
    "replaces": [],
    "video": "bTbyRKO0hxs",
@@ -705,7 +770,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Rule 36: least access first. A personal agent holding private data does not belong in shared spaces, and this repo is public."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   }
  ]
 }

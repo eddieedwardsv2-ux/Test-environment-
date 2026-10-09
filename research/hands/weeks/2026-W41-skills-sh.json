@@ -11,7 +11,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Finds and installs agent skills when you ask 'is there a skill for X'.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [],
    "video": null,
@@ -19,7 +18,10 @@
    "quote": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\"",
    "check": "Install count (3.7M) is the highest by far; Vercel Labs is a known publisher but still read any skill it finds before installing.",
    "installs": 3756497,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/vercel-labs/skills",
+   "cost": null
   },
   {
    "name": "grill-me",
@@ -28,7 +30,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Interviews you relentlessly about a plan until it is sharp.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [],
    "video": null,
@@ -36,7 +37,10 @@
    "quote": "A relentless interview to sharpen a plan or design.",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 1313697,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "grill-with-docs",
@@ -45,7 +49,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Same grilling interview, but also writes decision records and a glossary as it goes.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -53,7 +56,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 1124863,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "improve-codebase-architecture",
@@ -62,7 +68,6 @@
    "category": "Coding agents & IDEs",
    "what": "Scans a codebase for tidy-up opportunities and shows them as an HTML report.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": null,
@@ -70,7 +75,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 1073339,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "agent-browser",
@@ -79,7 +87,6 @@
    "category": "Automation & workflows",
    "what": "Browser automation command line so an AI agent can click, fill forms and take screenshots.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -87,7 +94,10 @@
    "quote": "",
    "check": "",
    "installs": 1066994,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/vercel-labs/agent-browser",
+   "cost": null
   },
   {
    "name": "tdd",
@@ -96,7 +106,6 @@
    "category": "Coding agents & IDEs",
    "what": "Builds features test-first (red, green, refactor).",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": null,
@@ -104,7 +113,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 1046160,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "setup-matt-pocock-skills",
@@ -113,7 +125,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Sets up a repo for Matt Pocock's engineering skills (issue tracker, labels, doc layout).",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": null,
@@ -121,7 +132,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 966567,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "frontend-design",
@@ -130,7 +144,6 @@
    "category": "Design & websites",
    "what": "Guidance for distinctive, good-looking UI design and typography when building web pages.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -138,7 +151,10 @@
    "quote": "",
    "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
    "installs": 964997,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/anthropics/skills",
+   "cost": null
   },
   {
    "name": "handoff",
@@ -147,7 +163,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Compacts the current chat into a handoff document for another agent to pick up.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -155,7 +170,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 945759,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "triage",
@@ -164,7 +182,6 @@
    "category": "Coding agents & IDEs",
    "what": "Moves issues and external pull requests through triage roles and writes agent-ready briefs.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": null,
@@ -172,7 +189,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 910765,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "prototype",
@@ -181,7 +201,6 @@
    "category": "Coding agents & IDEs",
    "what": "Builds a throwaway prototype to answer a design question.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -189,7 +208,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 906480,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "hyperframes-cli",
@@ -198,7 +220,6 @@
    "category": "Video, clips & images",
    "what": "Command-line loop for HeyGen's HyperFrames: init, lint, preview and render HTML videos.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -206,7 +227,10 @@
    "quote": "",
    "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
    "installs": 878869,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/heygen-com/hyperframes",
+   "cost": null
   },
   {
    "name": "grilling",
@@ -215,7 +239,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Grills you about a plan or idea to stress-test your thinking.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -223,7 +246,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 868047,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "reddit-automation",
@@ -232,7 +258,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Finds Reddit threads asking for what you offer and drafts helpful replies, disclosing affiliation.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -240,7 +265,10 @@
    "quote": "",
    "check": "Unknown publisher (flowkit-labs); 846k installs looks inflated for a niche skill; auto-posting to Reddit risks bans. Read SKILL.md first.",
    "installs": 846658,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/flowkit-labs/skills",
+   "cost": null
   },
   {
    "name": "hyperframes",
@@ -249,7 +277,6 @@
    "category": "Video, clips & images",
    "what": "Entry-point skill for making videos, animations and motion graphics from HTML with HeyGen's HyperFrames.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [],
    "video": null,
@@ -257,7 +284,10 @@
    "quote": "",
    "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
    "installs": 842535,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/heygen-com/hyperframes",
+   "cost": null
   },
   {
    "name": "domain-modeling",
@@ -266,7 +296,6 @@
    "category": "Knowledge & second brain",
    "what": "Builds a project's glossary and decision records.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -274,7 +303,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 783607,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "vercel-react-best-practices",
@@ -283,7 +315,6 @@
    "category": "Coding agents & IDEs",
    "what": "React and Next.js performance guidelines from Vercel.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": null,
@@ -291,7 +322,10 @@
    "quote": "",
    "check": "",
    "installs": 781225,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "cost": null
   },
   {
    "name": "teach",
@@ -300,7 +334,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Teaches you a new skill or concept inside your workspace.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -308,7 +341,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 778210,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "codebase-design",
@@ -317,7 +353,6 @@
    "category": "Coding agents & IDEs",
    "what": "Shared vocabulary for designing deep, simple code modules.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 0,
    "replaces": [],
    "video": null,
@@ -325,7 +360,10 @@
    "quote": "",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 760424,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "hyperframes-registry",
@@ -334,7 +372,6 @@
    "category": "Video, clips & images",
    "what": "Searches and installs ready-made blocks and components for HyperFrames videos.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -342,7 +379,10 @@
    "quote": "",
    "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
    "installs": 755261,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/heygen-com/hyperframes",
+   "cost": null
   },
   {
    "name": "media-use",
@@ -351,7 +391,6 @@
    "category": "Video, clips & images",
    "what": "Fetches music, sound effects, images, logos and voice for a HyperFrames project.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -359,7 +398,10 @@
    "quote": "",
    "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
    "installs": 753721,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/heygen-com/hyperframes",
+   "cost": null
   },
   {
    "name": "skill-creator",
@@ -368,7 +410,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Anthropic's skill for creating, improving and testing your own skills.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [],
    "video": null,
@@ -376,7 +417,10 @@
    "quote": "",
    "check": "",
    "installs": 400669,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/anthropics/skills",
+   "cost": null
   },
   {
    "name": "brainstorming",
@@ -385,7 +429,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Explores what you want before any creative or build work starts.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -393,7 +436,10 @@
    "quote": "You MUST use this before any creative work",
    "check": "",
    "installs": 384538,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/obra/superpowers",
+   "cost": null
   },
   {
    "name": "writing-great-skills",
@@ -402,7 +448,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Reference on how to write and edit skills well.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -410,7 +455,10 @@
    "quote": "Reference for writing and editing skills well",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 306531,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "pptx",
@@ -419,7 +467,6 @@
    "category": "Other",
    "what": "Anthropic's skill to create, read and edit PowerPoint files.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -427,7 +474,10 @@
    "quote": "",
    "check": "",
    "installs": 232334,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/anthropics/skills",
+   "cost": null
   },
   {
    "name": "seo-audit",
@@ -436,7 +486,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Audits a site for technical and on-page SEO problems.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -444,7 +493,10 @@
    "quote": "",
    "check": "",
    "installs": 222971,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "cost": null
   },
   {
    "name": "write-a-skill",
@@ -453,7 +505,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Creates new agent skills with the right structure and bundled resources.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -461,7 +512,10 @@
    "quote": "Create new agent skills with proper structure, progressive disclosure, and bundled resources.",
    "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
    "installs": 219742,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null
   },
   {
    "name": "copywriting",
@@ -470,7 +524,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Writes or improves marketing copy for web pages.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -478,7 +531,10 @@
    "quote": "",
    "check": "",
    "installs": 219116,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "cost": null
   },
   {
    "name": "pdf",
@@ -487,7 +543,6 @@
    "category": "Other",
    "what": "Anthropic's skill to read, merge, split, fill and create PDFs.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -495,7 +550,10 @@
    "quote": "",
    "check": "",
    "installs": 207552,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/anthropics/skills",
+   "cost": null
   },
   {
    "name": "obsidian-markdown",
@@ -504,7 +562,6 @@
    "category": "Knowledge & second brain",
    "what": "Writes Obsidian-style markdown: wikilinks, embeds, callouts and properties.",
    "shown": "",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [],
    "video": null,
@@ -512,7 +569,10 @@
    "quote": "",
    "check": "",
    "installs": 89170,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/kepano/obsidian-skills",
+   "cost": null
   },
   {
    "name": "higgsfield-youtube-thumbnail",
@@ -521,7 +581,6 @@
    "category": "Video, clips & images",
    "what": "Makes YouTube thumbnails and vertical covers via the Higgsfield CLI.",
    "shown": "",
-   "price": "unknown",
    "for_charlie": 2,
    "replaces": [],
    "video": null,
@@ -529,7 +588,10 @@
    "quote": "Create high-click-through YouTube thumbnails and vertical video covers through the Higgsfield CLI.",
    "check": "Needs the Higgsfield CLI, which probably needs a paid account; price unverified.",
    "installs": 79859,
-   "vs": null
+   "vs": null,
+   "open_source": "public code",
+   "repo": "https://github.com/higgsfield-ai/skills",
+   "cost": null
   }
  ]
 }

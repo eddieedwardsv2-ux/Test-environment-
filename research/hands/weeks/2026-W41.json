@@ -15,7 +15,6 @@
    "category": "Video, clips & images",
    "what": "AI video agent that turns an idea into a product launch video.",
    "shown": "Hosts discussed it and showed the site; no live build.",
-   "price": "unknown",
    "for_charlie": 1,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -34,7 +33,10 @@
     "for_what": "One intro or channel-launch video to test it",
     "agree": "n/a",
     "why": "They pitch it for product launches; Charlie has no product. Rule 42: try the simplest video route first."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Spira AI",
@@ -43,7 +45,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Platform that creates and runs a fake AI influencer account promoting your product.",
    "shown": "Showed an example AI influencer promoting a brand; hosts did not try it.",
-   "price": "paid",
    "for_charlie": 0,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -62,6 +63,14 @@
     "for_what": "",
     "agree": "agree",
     "why": "A fake face on a channel about learning in public is off-brand; Rule 37 (check before anything goes public). We side with the host, not the 'left behind' push."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "paid (model not stated)",
+    "amount": "",
+    "source": "earlier week-file price",
+    "date": "2026-10-09"
    }
   },
   {
@@ -71,7 +80,6 @@
    "category": "Agent orchestration & teams",
    "what": "OpenAI agent that can manage Codex threads and ChatGPT chats from one place.",
    "shown": "Corey described using it as a chief of staff to spin up and track Codex threads; Andrew found it nagging.",
-   "price": "unknown",
    "for_charlie": 2,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -90,7 +98,10 @@
     "for_what": "Only if Codex threads pile up too many to track",
     "agree": "agree",
     "why": "Split verdict is fair. Rule 43: test it on Charlie's own tasks before switching; Rule 42: no manager layer until the pain shows."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Hark",
@@ -99,7 +110,6 @@
    "category": "Coding agents & IDEs",
    "what": "New agent app with better web browser access and widgets that track your accounts.",
    "shown": "Showed Alex Finn's screenshot of widgets; hosts were lukewarm and had not used it.",
-   "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -118,7 +128,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Early access, nothing shown working. Rule 42: adopt tools only for real pain."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Claude for Startups",
@@ -127,7 +140,6 @@
    "category": "Cost & tokens",
    "what": "Anthropic programme giving eligible startups a year of Claude for Teams and API credits.",
    "shown": "Read out the offer; hosts said they are applying.",
-   "price": "free",
    "for_charlie": 1,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -146,6 +158,14 @@
     "for_what": "Free credits for the channel, if it counts as a startup",
     "agree": "agree",
     "why": "Applying costs nothing, but check UK eligibility and the terms first. A sign-up goes on the Decision Desk."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "free",
+    "amount": "1 year of Claude for Teams + $1,000 API credits, if eligible",
+    "source": "c5ZkPhzaLdA 6:04",
+    "date": "2026-10-09"
    }
   },
   {
@@ -155,7 +175,6 @@
    "category": "Automation & workflows",
    "what": "Personal AI agent that lives in iMessage and just added group chats.",
    "shown": "Corey described finding accountant documents in his email within about 60 seconds by text.",
-   "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -174,6 +193,14 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Needs email and card access. Rule 36: permissions in layers, read-only first; this repo is public, so no private data near it."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "free",
+    "amount": "free for now (until its funding is settled)",
+    "source": "6IxiArssGvg 11:53",
+    "date": "2026-10-09"
    }
   },
   {
@@ -183,7 +210,6 @@
    "category": "Coding agents & IDEs",
    "what": "Mac app that runs isolated virtual machines so an agent gets its own computer.",
    "shown": "Andrew explained plans to run a fresh Mac OS VM for agents; no demo.",
-   "price": "paid",
    "for_charlie": 0,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -202,6 +228,14 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Mac only and a lot of set-up for a beginner. Rule 42: lowest rung first; cloud sessions are already isolated."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "one-off",
+    "amount": "about $34-35, then free",
+    "source": "c5ZkPhzaLdA 10:10",
+    "date": "2026-10-09"
    }
   },
   {
@@ -211,7 +245,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Weekly full-funnel breakdowns plus a copy-able prompt for Claude Code or Codex to rebuild the funnel.",
    "shown": "Described the product; no live use.",
-   "price": "paid",
    "for_charlie": 1,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -230,6 +263,14 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie has no funnels to rebuild. Rule 39: adopt tools only for real pain. Check the '$2.99 a year' price."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "yearly",
+    "amount": "said as '$2.99 a year' (probably a caption slip; check)",
+    "source": "c5ZkPhzaLdA 12:12",
+    "date": "2026-10-09"
    }
   },
   {
@@ -239,7 +280,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Paid directory of premium agent skills with a visible demo of each output.",
    "shown": "Showed the site, a pixel promo video skill demo and its verified revenue.",
-   "price": "paid",
    "for_charlie": 1,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -258,6 +298,14 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Rule 34: a skill earns its place when built from a real run. Rule 37: vet any bought skill before installing."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "monthly or one-off",
+    "amount": "monthly fee, or buy all; single skills from $4.99",
+    "source": "c5ZkPhzaLdA 13:45-14:16",
+    "date": "2026-10-09"
    }
   },
   {
@@ -267,7 +315,6 @@
    "category": "MCP & connectors",
    "what": "One MCP that adds image, video and voiceover generation to Claude, Codex and other agents, pay per use.",
    "shown": "Showed example outputs and revenue page.",
-   "price": "paid",
    "for_charlie": 2,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -286,6 +333,14 @@
     "for_what": "Thumbnails and voiceover for the channel",
     "agree": "agree",
     "why": "Pay-per-use fits a beginner. Rule 43: compare one thumbnail with his current route first; Rule 37: vet the MCP before installing."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "pay-per-use",
+    "amount": "not stated",
+    "source": "c5ZkPhzaLdA 16:17",
+    "date": "2026-10-09"
    }
   },
   {
@@ -295,7 +350,6 @@
    "category": "Other",
    "what": "Clean single-page directory of AI tools, monetised by sponsored spots.",
    "shown": "Showed the site as an example of a simple profitable idea.",
-   "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -314,7 +368,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "The Hands Brain already is our tool directory. Interesting idea only if the site went public (Rule 37 first)."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "TinyPopups",
@@ -323,7 +380,6 @@
    "category": "Marketing, sales & SEO",
    "what": "Embeddable website popup widget with triggers, installed in about five minutes.",
    "shown": "Described the features and claimed reply rates; no demo.",
-   "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "c5ZkPhzaLdA",
@@ -342,7 +398,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Charlie has no website needing popups. The 30% reply rate is the maker's claim (Rule 43)."
-   }
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null
   },
   {
    "name": "Omnisend MCP",
@@ -351,7 +410,6 @@
    "category": "MCP & connectors",
    "what": "MCP that lets Claude or another agent build email campaigns and customer segments in Omnisend.",
    "shown": "Live demo in Claude: campaign draft from top campaigns, new-subscriber segment, competitor style guide from Gmail, then a campaign.",
-   "price": "freemium",
    "for_charlie": 1,
    "replaces": [],
    "video": "uWnQLASl95U",
@@ -370,6 +428,14 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Needs an Omnisend store and a mailing list; Charlie has neither. Sponsor link in the video. Rule 39: adopt a tool only for real pain."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": {
+    "model": "free tier + paid",
+    "amount": "",
+    "source": "earlier week-file price",
+    "date": "2026-10-09"
    }
   },
   {
@@ -379,7 +445,6 @@
    "category": "Voice & audio",
    "what": "Free desktop app for voice cloning, text-to-speech and video dubbing, run locally.",
    "shown": "Played sample voices and the install page.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [
     "ElevenLabs"
@@ -400,7 +465,10 @@
     "for_what": "Free voiceover for channel videos, if Charlie ever wants a voice other than his own",
     "agree": "disagree",
     "why": "His excitement is about saving credits Charlie does not pay for. Rule 39 (real pain only); Rule 37: no cloning anyone's voice, and this repo is public."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/debpalash/voicestudio",
+   "cost": null
   },
   {
    "name": "Odysseus",
@@ -409,7 +477,6 @@
    "category": "Models & LLMs",
    "what": "Private ChatGPT-style assistant on your computer with local models, memory, research and agents, made by PewDiePie.",
    "shown": "Described features and the GitHub repo; no demo.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [
     "ChatGPT"
@@ -430,7 +497,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Charlie already has Claude Code and Codex; a weaker local chat adds a tool without removing a pain. Rule 42: lowest rung that works."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/odysseus-dev/odysseus",
+   "cost": null
   },
   {
    "name": "FreeLLMAPI",
@@ -439,7 +509,6 @@
    "category": "Cost & tokens",
    "what": "Routes a coding agent across many free model providers so you can keep coding when one hits its limit.",
    "shown": "Explained the idea and said the install is easy; no coding demo.",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [
     "Claude Code usage limits"
@@ -460,7 +529,10 @@
     "for_what": "A fallback if Claude Code usage limits stop a session",
     "agree": "disagree",
     "why": "He is a heavy user who hits caps; Charlie may not. It sends code to free third-party providers and excludes Claude, so Rule 43 (test on his own work) and Rule 26 (keys stay in .env) come first."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/tashfeenahmed/freellmapi",
+   "cost": null
   },
   {
    "name": "Vane",
@@ -469,7 +541,6 @@
    "category": "Research & search",
    "what": "Self-hosted research assistant that searches the web and gives numbered sources; formerly Perplexica.",
    "shown": "Described features; no demo.",
-   "price": "open-source",
    "for_charlie": 2,
    "replaces": [
     "Perplexity"
@@ -490,7 +561,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Claude Code already searches the web with sources; a self-hosted search app needs a model and setup. Rule 42."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/itzcrazykns/vane",
+   "cost": null
   },
   {
    "name": "InvokeAI",
@@ -499,7 +573,6 @@
    "category": "Video, clips & images",
    "what": "Open-source local image studio with layered canvas and editing.",
    "shown": "Described features; no demo.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [
     "Midjourney"
@@ -520,7 +593,10 @@
     "for_what": "",
     "agree": "disagree",
     "why": "Strong hardware needed and no image pain today. Thumbnails can start with the simplest route first (Rule 42)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/invoke-ai/invokeai",
+   "cost": null
   },
   {
    "name": "ACE-Step",
@@ -529,7 +605,6 @@
    "category": "Voice & audio",
    "what": "Open-source song generator with vocals that runs on your own computer.",
    "shown": "Made a short hip-hop song on the hosted web version; host said it was not as good as Suno.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [
     "Suno"
@@ -550,7 +625,10 @@
     "for_what": "Free background music for channel videos",
     "agree": "agree",
     "why": "His own test was weak, so try the hosted version on one real video before any install (Rule 43)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/ace-step/ace-step-1.5",
+   "cost": null
   },
   {
    "name": "OpenShorts",
@@ -559,7 +637,6 @@
    "category": "Video, clips & images",
    "what": "Self-hosted tool that turns long videos into captioned vertical clips and can schedule posts.",
    "shown": "Ran it on a YouTube video on the free hosted site; framing needed fixing.",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [
     "Opus Clip"
@@ -585,7 +662,10 @@
     "tool": "hyperframes",
     "verdict": "different job",
     "gap": "Cuts long videos into vertical clips, where HyperFrames makes new motion graphics; untested until Charlie has a long video to cut."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/mutonby/openshorts",
+   "cost": null
   },
   {
    "name": "Dyad",
@@ -594,7 +674,6 @@
    "category": "Design & websites",
    "what": "Open-source local app builder that turns plain English into apps using your chosen AI model.",
    "shown": "Described features; no demo.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [
     "Lovable"
@@ -615,7 +694,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "Charlie already builds in Claude Code, so a second app builder is a duplicate. Rule 42; reuse before building (capability map)."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/dyad-sh/dyad",
+   "cost": null
   },
   {
    "name": "OpenManus",
@@ -624,7 +706,6 @@
    "category": "Agent orchestration & teams",
    "what": "Open-source general agent that plans, browses, codes and saves files using your own model.",
    "shown": "Described features; no demo.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [
     "Manus"
@@ -645,7 +726,10 @@
     "for_what": "",
     "agree": "n/a",
     "why": "Needs a paid API key, and Claude Code plus Codex already plan and act on goals. Rule 39."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/foundationagents/openmanus",
+   "cost": null
   },
   {
    "name": "Upscayl",
@@ -654,7 +738,6 @@
    "category": "Video, clips & images",
    "what": "Free desktop app that upscales photos four times locally, singly or in bulk.",
    "shown": "Showed the repo and described the models.",
-   "price": "open-source",
    "for_charlie": 1,
    "replaces": [
     "Topaz Gigapixel"
@@ -675,7 +758,10 @@
     "for_what": "",
     "agree": "agree",
     "why": "His case is a folder of old photos; Charlie has none to rescue. Rule 39."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/upscayl/upscayl",
+   "cost": null
   },
   {
    "name": "ECC",
@@ -684,7 +770,6 @@
    "category": "Claude Code skills & plugins",
    "what": "Open-source toolkit of skills that plans, builds with tests, makes a promo video and sends outreach.",
    "shown": "Live 20-minute run: orchestrator drove tmux panes, built a pitch-roasting app, made a video, drafted and sent X DMs.",
-   "price": "open-source",
    "for_charlie": 3,
    "replaces": [],
    "video": "BcNAQynKUk4",
@@ -703,7 +788,10 @@
     "for_what": "Borrow its plan and test-first skills for the OS, not the outreach",
     "agree": "disagree",
     "why": "He is hands-off and had it DM real people from his accounts; Rule 36 says drafts first with a human approving outward actions, Rule 33 a separate checker, Rule 37 check before anything goes public."
-   }
+   },
+   "open_source": "yes",
+   "repo": "https://github.com/affaan-m/ecc",
+   "cost": null
   }
  ]
 }

@@ -165,7 +165,7 @@ function match(t){
   if (!q) return true;
   return (t.name + " " + t.what + " " + t.category).toLowerCase().includes(q);
 }
-const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span><span class="price">${esc(t.price)}</span>${t.have ? `<span class="st rising">✓ you have it</span>` : ""}${t.tried ? `<span class="st new">tried: ${esc(t.tried.verdict)}</span>` : ""}${t.shown === false ? `<span class="st steady">skills.sh only, not shown</span>` : ""}</div>`;
+const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span>${t.open_source === "yes" ? `<span class="price">open source</span>` : t.open_source === "public code" ? `<span class="price">public code</span>` : ""}${t.cost ? `<span class="price">${esc(t.cost.model + (t.cost.amount ? ": " + t.cost.amount : ""))}</span>` : t.open_source === "unknown" ? `<span class="price">price unknown</span>` : ""}${t.have ? `<span class="st rising">✓ you have it</span>` : ""}${t.tried ? `<span class="st new">tried: ${esc(t.tried.verdict)}</span>` : ""}${t.shown === false ? `<span class="st steady">skills.sh only, not shown</span>` : ""}</div>`;
 
 function render(){
   const live = D.tools.filter(match);

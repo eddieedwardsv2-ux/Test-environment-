@@ -102,3 +102,21 @@ are "unknown"; 10 tools already have a price mentioned in their notes.
    "open source, could we build our own?" feeds the build-or-buy debate.
 5. Ranking: free and open source keep their small bonus; a monthly fee gets
    none. Re-check prices in the Saturday routine for new tools only.
+
+**Done 2026-10-09 (Desk card `price-plan`: steps 1 and 2, our own data only):**
+- Step 1: every week file now has `open_source` (`yes` 47, `public code` 35,
+  `unknown` 35 tools), `repo` and `cost` instead of `price`. "Public code" =
+  readable on GitHub but licence not checked (most skills.sh entries), so the
+  30 skills.sh tools no longer count as open source. `cost` is filled only
+  when one applies (19 tools); empty otherwise.
+- Step 2: read our 23 saved transcripts for price talk near each tool (no web).
+  13 tools got a real cost model with its video and time, e.g. GrokBot (about
+  $20 entry, then pay-per-use: a $140/month plan ran $265 over in 2 days),
+  VMPal (one-off, about $34-35), CreativeClaw and Hyperagent (pay-per-use),
+  Skillry (monthly or one-off; skills from $4.99), Instinct (free for now).
+  Boring Funnels' "$2.99 a year" looks like a caption slip: flagged.
+- Build: the small score bonus now goes to free or truly open-source tools
+  (1) and free tiers (0.5); 8 lower ranks moved, no category #1 changed.
+  Site: separate "open source" / "public code" and cost tags.
+- Left for step 3 (web, not chosen): the 35 "unknown" tools and paid tools
+  with no stated model (Twilio, Spira AI).

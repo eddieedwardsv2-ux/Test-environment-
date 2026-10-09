@@ -12,7 +12,10 @@ CATEGORIES = ["Coding agents & IDEs", "Claude Code skills & plugins", "Agent orc
               "MCP & connectors", "Knowledge & second brain", "Video, clips & images", "Voice & audio",
               "Marketing, sales & SEO", "Design & websites", "Research & search", "Cost & tokens",
               "Automation & workflows", "Models & LLMs", "Business & finance", "Other"]
-PRICE_BONUS = {"free": 1, "open-source": 1, "freemium": 0.5}
+# Small bonus: free to use or open source 1, a free tier 0.5, anything paid 0 (price-plan, 2026-10-09)
+def price_bonus(e):
+    m = (e["cost"] or {}).get("model", "")
+    return 1 if m == "free" or e["open_source"] == "yes" else 0.5 if m == "free tier + paid" else 0
 
 def key(t):
     u = (t.get("url") or "").lower()
@@ -36,11 +39,15 @@ for w in weeks:
         k = key(t)
         e = tools.setdefault(k, {"id": k, "name": t["name"], "url": t.get("url", ""), "kind": t.get("kind", ""),
                                  "category": t.get("category") if t.get("category") in CATEGORIES else "Other",
-                                 "what": t.get("what", ""), "price": t.get("price", "unknown"),
+                                 "what": t.get("what", ""), "open_source": t.get("open_source", "unknown"),
+                                 "repo": t.get("repo", ""), "cost": t.get("cost"),
                                  "for_charlie": 0, "replaces": set(), "sightings": [], "check": "", "vs": None})
         e["for_charlie"] = max(e["for_charlie"], int(t.get("for_charlie", 0)))
         e["replaces"] |= set(t.get("replaces") or [])
         if t.get("check"): e["check"] = e["check"] or t["check"]
+        if t.get("cost") and not e["cost"]: e["cost"] = t["cost"]
+        if e["open_source"] == "unknown": e["open_source"] = t.get("open_source", "unknown")
+        e["repo"] = e["repo"] or t.get("repo", "")
         if t.get("vs") and not e["vs"]: e["vs"] = t["vs"]
         if t.get("installs"): e["installs"] = max(e.get("installs", 0), int(t["installs"]))
         e["sightings"].append({"week": w["week"], "source": w.get("source", "The Next New Thing"), "video": t.get("video"), "t": t.get("t", ""),
@@ -55,7 +62,7 @@ for e in tools.values():
     e["weeks"], e["first"], e["last"] = seen, seen[-1], seen[0]
     e["mentions"] = len({s["video"] or s["source"] for s in e["sightings"]})
     age = order.index(e["last"])
-    e["score"] = round(3 * e["for_charlie"] + 2 * e["mentions"] + max(0, 3 - age) + PRICE_BONUS.get(e["price"], 0)
+    e["score"] = round(3 * e["for_charlie"] + 2 * e["mentions"] + max(0, 3 - age) + price_bonus(e)
                        + min(3, max(0, math.log10(e.get("installs", 1)) - 3)), 1)   # skills.sh installs: 10k=1, 100k=2, 1M+=3
     e["replaced_by"] = None
 for e in tools.values():                                  # newer tool says it replaces an older one
