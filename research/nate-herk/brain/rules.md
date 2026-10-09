@@ -19,11 +19,11 @@ A wrong answer is poisoning, bloat, confusion or clash. Each has a different fix
 Cross-check facts against a live source or a search; if the agent isn't sure, put a human in the loop.
 > "poisoning is the easiest one to fix because basically it's just a matter of having some verification." [2:36](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=156s)
 > Also: "Never accept AI output without asking why" [6:37](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=397s)
-**Agent check:** *Where does this fact get checked before it's used?*
+**Agent check:** *Where does this fact get checked before it's used?* (Concept 1: poisoning)
 
 **Rule 3: One current source per fact** (inference)
 Nate describes clash (old and new policies side by side, [4:07](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=247s)) but gives no fix in these videos (none of the 14 added on 2026-10-07 gives one either, so this stays inference). Our rule: when a fact changes, update or retire the old copy rather than adding a second one; history goes in a log, not beside the current state.
-**Agent check:** *Is this fact written anywhere else? Which one wins?*
+**Agent check:** *Is this fact written anywhere else? Which one wins?* (Concept 1: clash)
 
 **Rule 4: Always-loaded is for expertise only** (stated)
 Load who you are, goals and policies every run. Fetch one-off, situational data just in time.

@@ -300,6 +300,20 @@ for entry in (_log.stdout.split("\x1e") if _log.returncode == 0 else []):
         err(f"commit {sha[:7]} changes {len(hand)} files with no Guardian check: run the guardian agent, "
             f"save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'")
 
+# 10. Relation links (Charlie, 2026-10-09: "scan our systems and check for relation links").
+#     Every file path a current note names exists; the Architect's rules and concepts link
+#     both ways. History files (audits, decisions, logs, plans) are skipped: they name old paths on purpose.
+sys.path.insert(0, str(ROOT / "tools"))
+import check_links
+for b in check_links.scan(): warn(f"broken link {b}")
+_re, _rw = check_links.brain_relations()
+for x in _re: err(f"research/nate-herk/brain: {x}")
+for x in _rw: warn(f"research/nate-herk/brain: {x}")
+
+#     ...and no published page is behind its source (age alone is fine; changed-but-not-republished isn't).
+import pages_status
+for src, page in pages_status.stale(): warn(f"page {page} is behind {src}: republish it, then `python3 tools/pages_status.py --mark {src}`")
+
 for w in warns:
     print("WARN ", w)
 for e in errors:

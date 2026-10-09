@@ -60,7 +60,7 @@ def group(p):
 tracked = set(subprocess.run(["git", "-C", ROOT, "ls-files"], capture_output=True, text=True).stdout.split())
 is_tx = lambda p: p.endswith(("-transcript.md", "-raw.txt"))
 fs = [p for p in files_of(ROOT, {".git", ".agents"}, exts=(".md", ".py", ".sh", ".yml", ".json"), names=(),
-      skip=lambda p: p not in tracked or is_tx(p))]
+      skip=lambda p: p not in tracked or is_tx(p) or p == "system/published.json")]   # the publish record changes on every publish
 fileset = set(fs); skills = {p.split("/")[2] for p in fs if p.startswith(".claude/skills/")}
 kit_files = set(files_of(NATE_DIR, {".agents", "docs"}, exts=(".md", ".sh"), names=()))
 nodes, edges, byid = [], set(), {}

@@ -20,7 +20,7 @@ When an agent is wrong because of its context, it is one of four things. *Poison
 > "In March your policy was always refund. In June your policy is now to never refund." [4:07](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=247s)
 Also: verification fix [2:36](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=156s); bloat [3:06](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=186s); confusion [3:36](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=216s). Source: AI OS ([transcript][os]).
 Nate gives no specific fix for clash or confusion in this video. **(inference)** Clash is fixed by keeping one current source per fact and marking or retiring old ones; confusion by making sure the missing thing has a route.
-**Used by:** Rule 1 ([rules.md](rules.md)).
+**Used by:** Rules 1, 2 and 3 ([rules.md](rules.md)); Rule 2 is the fix for poisoning, Rule 3 for clash.
 
 **2. Expertise context vs situational context**
 Expertise context is what the agent needs on every run (who you are, goals, what the business does, policies): the rulebook, like a system prompt. Situational context is pulled in just in time for one task (a support ticket from yesterday). His analogy: the principal knows how classrooms run; the teacher knows each student. Keeping situational data always loaded adds bloat, confusion and even clash. In his "four C's" framework he maps *context* to expertise and *connections* to situational.
@@ -284,7 +284,7 @@ The worker should not mark its own homework: a different model or persona checks
 > "Claude doesn't get to declare itself done. A different model has to look at it with a different persona" [iTY 22:25](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=1345s)
 > "by the time it tells you it's done, you stress test it more. and you try to find those edge cases" [iTY 9:43](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=583s)
 Also: stress test an automation with many helpers before a customer finds the bugs, "spin up 50 different sub aents and have all of them test this thing, try to break it" [Fqn 22:20](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=1340s); an AI judge checked against a human is concept 41.
-**Used by:** Rule 33 ([rules.md](rules.md)).
+**Used by:** Rules 33 and 44 ([rules.md](rules.md)).
 
 **32. Skills do one job, are built from a real run, and retire when they stop earning**
 Each skill or agent does one specific job. Build it by doing the task together once, then turning that run into a skill, and keep adding a line to a "don'ts" list for each real failure. Write instructions specifically, not vaguely. Retire a skill that no longer adds value, which matters once you have around ten.

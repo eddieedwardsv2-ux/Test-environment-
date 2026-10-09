@@ -1,0 +1,74 @@
+{
+ "system/decision-desk/decision-desk.html": {
+  "page": "Chief's Desk",
+  "url": "https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx",
+  "sha256": "c6761f2a50d0ba26",
+  "published": "2026-10-09"
+ },
+ "system/system-map/system-map.html": {
+  "page": "System map",
+  "url": "https://claude.ai/artifact/EjVEwU5bNAoU99FPbYSHDh",
+  "sha256": "5b05f49a8bdda991",
+  "published": "2026-10-09"
+ },
+ "system/voice-practice/voice-practice.html": {
+  "page": "Voice Gym",
+  "url": "https://claude.ai/artifact/VftqKWwvitMR2RF2mvQT76",
+  "sha256": "90dfc73e6885fe82",
+  "published": "2026-10-09"
+ },
+ "research/hands/site/hands.html": {
+  "page": "Quartermaster",
+  "url": "https://claude.ai/artifact/QVni63FtP7cG1z9UrajfCL",
+  "sha256": "388a0b67fea6cf79",
+  "published": "2026-10-09"
+ },
+ "system/guide/guide.html": {
+  "page": "OS Guide",
+  "url": "https://claude.ai/artifact/UMdY5JYymKneEhi9ZLhewa",
+  "sha256": "0bc96bccb881f892",
+  "published": "2026-10-09"
+ },
+ "research/nate-herk/brain/map/enate.html": {
+  "page": "Architect (Nate)",
+  "url": "https://claude.ai/artifact/7zEayuFD7i4FNrMqzoM7KJ",
+  "sha256": "d4c76ab18fcfa634",
+  "published": "2026-10-09"
+ },
+ "system/journey-video/journey-video.html": {
+  "page": "Journey video drafts",
+  "url": "https://claude.ai/artifact/83pyWDYaEvNmEx8oXP4dX2",
+  "sha256": "3e2dd68b40af9a92",
+  "published": "2026-10-09"
+ },
+ "system/reader/reader.html": {
+  "page": "Reading Room",
+  "url": "https://claude.ai/artifact/E5Skrh9G7ey8DpAUDGXbds",
+  "sha256": "f162307db9c432e3",
+  "published": "2026-10-09"
+ },
+ "research/nate-herk/brain/map/brain-map.html": {
+  "page": "Brain dashboard",
+  "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
+  "sha256": "fdddb0c7ed07fdd9",
+  "published": "2026-10-09"
+ },
+ "system/merge-map/merge-map.html": {
+  "page": "Nate-first map",
+  "url": "https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky",
+  "sha256": "effe703163009418",
+  "published": "2026-10-09"
+ },
+ "projects/ai-os-setup-kit/compare/kit-compare.html": {
+  "page": "Kit Compare",
+  "url": "https://claude.ai/artifact/62wSZBDKYTLCAq6yfcF1qR",
+  "sha256": "f4879bc6727edcf9",
+  "published": "2026-10-09"
+ },
+ "learning/flashcards-app.html": {
+  "page": "Flashcards",
+  "url": "https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144",
+  "sha256": "4458813713ce0644",
+  "published": "2026-10-09"
+ }
+}

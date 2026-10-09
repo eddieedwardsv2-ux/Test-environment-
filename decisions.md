@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: pages refreshed, staleness tracked, relation links checked
+Charlie asked to update every page, note what was forgotten, decide whether pages need regular updates, and scan relation links. 8 pages republished (all 6 built from the repo, plus the System map and OS Guide with their facts updated), and the Desk (version 8: clears old tiles, names the "tool turned off" failure Charlie hit in the first live test); Voice Gym, Journey video and Flashcards matched their live versions and were left; the Lesson slides (old names) and Watch Path still need a refresh; two never-listed pages found (Viral Edition map, Thread Notes); Charlie (Desk `old-pages`): keep both. Thread Notes is a private conversation, so only its link is in this repo. Pages update **on change, not on a clock**: `system/published.json` + `tools/pages_status.py` flag pages behind their source, the audit warns, `/session-handoff` republishes. New `tools/check_links.py` (file links, 0 broken) and an Architect rule↔concept check (Rules 2-3 linked to concept 1; Rule 44 echoed on concept 31), both in the audit with planted faults (26/26). Report: `audits/2026-10-09-pages-and-links-check.md`.
+
 ## 2026-10-09: the Desk tells Claude when Charlie presses Send
 Charlie: no more finding the Desk and typing "done". Send now messages the current session through his Claude Code Remote connector (`send_message`, the session id in the Desk's `config/session` doc, written at session start by the `decide` skill); answered cards get a **Tell Claude now** button as the backup. If no session is listening the answer is still saved and the next session reads it.
 

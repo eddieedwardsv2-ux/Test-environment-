@@ -30,8 +30,8 @@ deleting them (history stays in `decisions.md`).
 - [ ] ChatGPT's model-routing prompt saved, not started (`brainstorms/2026-10-09-model-routing-handoff.md`); triage the Grok Bot video first
 - [ ] Quartermaster's Search / Check / Implement buttons: republished, but one real save, read and close round trip not yet tested
 - [ ] Creative Claw (for YouTube production): sign-in unfinished, no output tested
-- [ ] "Thread Notes No1" page (PQn4jTAa9PzUizgtYynEFW) isn't in `system/pages.md`: keep or drop?
-- [ ] Watch Path page's source was only on branch `nate-watch-path`; now on main at `research/nate-herk/watch-path.html` (add it to `system/pages.md` when refreshed)
+- [ ] Lesson slides (NC9J9KZkE5Wb1vDKgntoGq) still use old names (Decision Desk, ENATE, Hands Brain): edit on the page
+- [ ] Watch Path page's source was only on branch `nate-watch-path`; now on main at `research/nate-herk/watch-path.html`; it still names old files (`MISSION.md`), so refresh it with the two oldest lessons, then add its source to `system/pages.md`
 - [ ] Older sessions in the `my-claude-skills` repo (6 Oct) ended waiting on Charlie: a "yes" to write the agency-validation research into that Second Brain; retired-repo deletions and a reply owed by a contact; lesson 1 quiz answer (four parts of an agent). Check if still wanted.
 - [ ] Offered, not agreed: a one-command save script
 
@@ -47,7 +47,7 @@ deleting them (history stays in `decisions.md`).
 - [ ] Mark Kit Compare as decided; the round Brain map
 - [ ] Review the Corey Haines research another session added (`research/corey-haines/`) and log it
 - [ ] Triage Nate's Grok Bot video (MgvwZaDPCs4) before ChatGPT's routing prompt is run
-- [ ] ENATE: link Rules 2 and 3 with concepts 19 and 28
+- [ ] Architect: concepts 19 (four Cs in order) and 28 (one set of files for every tool) have no rule yet; write Rules 45-46 only if Charlie wants (Rules 2-3 now link concept 1, done 9 Oct)
 - [ ] Hands Brain: the 35 tools with unknown prices (step 3 of `research/hands/improvement-plan.md`, not chosen)
 
 ## Watch-outs (things running on their own)

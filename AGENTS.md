@@ -37,7 +37,8 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
 - **Parallel only where safe:** one integration step edits shared files;
   model choices follow `context/working-rules.md` (quality before savings).
 - **Main pages stay current:** after every run, rebuild and republish Charlie's
-  Brain, ENATE and the Hands Brain (`system/pages.md`).
+  Brain, ENATE and the Hands Brain (`system/pages.md`); `tools/pages_status.py --build`
+  lists every page behind its source.
 - **Prove what you report** (done, saved, pushed); on big tasks the `guardian`
   agent, not the worker, says READY. `tools/audit.py` runs on
   every push and before an agent finishes (its Guardian check runs locally only).

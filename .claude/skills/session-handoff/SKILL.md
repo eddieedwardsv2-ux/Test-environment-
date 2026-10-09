@@ -52,6 +52,9 @@ deleting items that are still open.
   line here. Codex has no Desk: write it under "Waiting on Charlie".
 - Work stranded on a branch: bring the file to main, or list it under Open decisions.
 - Only when Charlie says Codex or ChatGPT is next: also refresh the hand-off in `exports/`.
+- Pages: `python3 tools/pages_status.py --build`; republish every page it lists, then
+  `--mark` each (`system/pages.md`). Also `Artifact` `list`: any page not in
+  `system/pages.md` gets a row there (two were found unlisted on 9 Oct).
 - `python3 tools/audit.py`, commit, push, check `git status` is clean.
 
 ## 5. The paste-back message (Charlie's routine: hand off, copy, `/clear`, paste)

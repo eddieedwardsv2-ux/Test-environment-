@@ -51,6 +51,8 @@ FAULTS = [
  ("the 3-month focus review missed", lambda: edit("context/current-focus.md", lambda t: re.sub(r"(Refresh by:\*?\*?\s*)\d{4}-\d{2}-\d{2}", r"\g<1>2020-01-01", t, count=1)), "refresh date"),
  ("a big commit nobody checked (Guardian)", lambda: big_unchecked_commit(), "no guardian check"),
  ("a helper agent forced back onto Sonnet", lambda: edit(".claude/agents/video-tutor.md", lambda t: t.replace("model: inherit", "model: sonnet")), "model"),
+    ("a note points at a file that isn't there", lambda: edit("context/todo.md", lambda s: s + "\n- see `system/no-such-page.md`\n"), "broken link context/todo.md"),
+    ("a rule links a concept that doesn't link back", lambda: edit("research/nate-herk/brain/rules.md", lambda s: s.replace("(Concept 1: clash)", "(Concept 1: clash) (Concept 20)", 1)), "concept 20's 'Used by' doesn't name Rule 3"),
 ]
 
 backup = work.parent / "pristine"

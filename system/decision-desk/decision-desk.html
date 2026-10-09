@@ -111,6 +111,7 @@ function render(){
     .sort((a,b) => (a.order ?? 99) - (b.order ?? 99));
   if (!db && !docs.length){ list.innerHTML = '<div class="empty">Open this page in claude.ai while signed in to see and answer the questions.</div>'; return; }
   if (!shown.length){
+    mapEl.innerHTML = "";
     list.innerHTML = '<div class="empty">' + (filter === "open"
       ? "Nothing is waiting for you. When Claude needs a decision, it appears here."
       : filter === "answered" ? "No answers waiting for Claude." : "Nothing finished yet.") + '</div>';
@@ -181,8 +182,9 @@ async function tellClaude(id){
     say("Sent and saved, but Claude wasn't told: " + (
       c === "not_in_manifest" || c === "approval_required" ? "this page isn't allowed to message Claude yet. Press Tell Claude now and choose Allow."
       : c === "server_not_connected" || c === "needs_reauth" ? "Claude Code Remote isn't connected (claude.ai Settings, Connectors)."
+      : c === "blocked_by_policy" ? "its send_message tool is turned off. Tap Open connector settings at the top, allow it, then press Tell Claude now."
       : c === "tool_error" ? "Claude Code Remote said no (" + (err.message || "no reason given") + "). If that session has finished, the next one reads it."
-      : "Claude couldn't be reached just now."), id);
+      : "Claude couldn't be reached just now (" + (c || "no reason given") + ")."), id);
   }
 }
 function draftFrom(id){
