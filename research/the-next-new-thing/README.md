@@ -3,7 +3,7 @@
 Channel: https://www.youtube.com/channel/UCNZEktrsM5oJZ-MK4jKPMOQ
 Format: weekly round-ups of popular free GitHub tools and AI apps.
 
-Coverage: **161 videos listed** (2026-10-08, newest first), **20 transcribed**.
+Coverage: **161 videos listed** (2026-10-08, newest first), **23 transcribed**.
 Status: feeds the Hands Brain (`research/hands/`, from 2026-10-08). Many titles are money-themed clickbait ("make money"); judge tools on evidence, not titles.
 
 Most relevant to Charlie: *Hermes: your video clipping machine* (clipper idea).
@@ -28,9 +28,9 @@ Most relevant to Charlie: *Hermes: your video clipping machine* (clipper idea).
 | 16 | [We tested the same request on all 3](https://www.youtube.com/watch?v=6IxiArssGvg) | – | 19:25 | ✅ [transcript](we-tested-the-same-request-on-all-3--6IxiArssGvg-transcript.md) |
 | 17 | [Top Repos Explained: Code Review, World Camera, Better AI Builds, etc.](https://www.youtube.com/watch?v=1fHsIveXRa8) | 52,000 | 26:45 | ✅ [transcript](top-repos-explained-code-review-world-camera-better-ai--1fHsIveXRa8-transcript.md) |
 | 18 | [New: AI mobile app builder, AI slides, AI receptionist, and more](https://www.youtube.com/watch?v=6xi2KL_NujU) | 14,000 | 23:51 | ✅ [transcript](new-ai-mobile-app-builder-ai-slides-ai-receptionist-and-more--6xi2KL_NujU-transcript.md) |
-| 19 | [Why is everyone using these?](https://www.youtube.com/watch?v=ehab5PtgRo8) | 30,000 | 12:31 | – |
-| 20 | [Why Everyone Is Talking About Meta’s New Muse Agent](https://www.youtube.com/watch?v=pkwnJcETgfE) | – | 19:22 | – |
-| 21 | [Free LLM - for building, agents, images, etc.](https://www.youtube.com/watch?v=ANJTdT0Ggrw) | 28,000 | 8:55 | – |
+| 19 | [Why is everyone using these?](https://www.youtube.com/watch?v=ehab5PtgRo8) | 30,000 | 12:31 | ✅ [transcript](why-is-everyone-using-these--ehab5PtgRo8-transcript.md) |
+| 20 | [Why Everyone Is Talking About Meta’s New Muse Agent](https://www.youtube.com/watch?v=pkwnJcETgfE) | – | 19:22 | ✅ [transcript](why-everyone-is-talking-about-meta-s-new-muse-agent--pkwnJcETgfE-transcript.md) |
+| 21 | [Free LLM - for building, agents, images, etc.](https://www.youtube.com/watch?v=ANJTdT0Ggrw) | 28,000 | 8:55 | ✅ [transcript](free-llm-for-building-agents-images-etc--ANJTdT0Ggrw-transcript.md) |
 | 22 | [Have Astra do this right now](https://www.youtube.com/watch?v=NdeOsuoIGuc) | 22,000 | 28:04 | – |
 | 23 | [Top 10 Repos explained: ADHD, Ponytail, and more](https://www.youtube.com/watch?v=aX8Y183qDpY) | 57,000 | 22:57 | – |
 | 24 | [Free AI agent & all of this week’s AI launches](https://www.youtube.com/watch?v=1JTyPNeD9dk) | – | 16:09 | – |
