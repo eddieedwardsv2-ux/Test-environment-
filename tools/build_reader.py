@@ -8,12 +8,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DESK = "https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx"
 DOCS = [  # (file, short label, Desk card it feeds or None)
+    ("audits/audit-2026-10-09-112239-a7c3.md", "Audit 9 Oct: 64/100", "audit-fixes-2026-10-09"),
     ("brainstorms/2026-10-09-middle-plans.md", "The middle: two plans", "middle-go"),
     ("context/todo.md", "Everything unfinished", None),
     ("research/council-plan.md", "The council plan", None),
     ("system/model-usage.md", "How we choose models", None),
 ]
 SUMMARY = {  # plain-English "in short" box shown above a document
+    "audits/audit-2026-10-09-112239-a7c3.md": [
+        "Score 64/100, up from 49: \"working, with gaps\". Connections is the weakest area (11/25).",
+        "Biggest fix: current-focus still tells a new session to answer cards that are already closed.",
+        "Five small fixes in all, on one Desk card. The next audit runs by itself on Friday 16 Oct.",
+    ],
     "brainstorms/2026-10-09-middle-plans.md": [
         "Plan 1: give the brains job titles. ENATE becomes the Architect, the Hands Brain the Quartermaster. Names only; folders and links stay.",
         "Plan 2: one skill fetches YouTube videos for every brain, instead of the same steps copied into three skills.",
