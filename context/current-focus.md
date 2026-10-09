@@ -19,7 +19,7 @@ recorded (with their consent) for the YouTube channel. Project:
 **Next step (latest Codex request, 2026-10-09):** deploy the shared iPhone browser
 from `projects/shared-browser/` to Charlie's external host. He authorised creation
 and hosting; no hosting account is connected and this cloud blocks Cloudflare
-quick-tunnel provisioning. App/deployment built: 14/14 tests, live touch/keyboard/AI/reconnect and full
+quick-tunnel provisioning. App/deployment built: 16/16 tests, live touch/keyboard/AI/reconnect and full
 service restart passed. Actual iPhone and external hosting are not verified.
 The Higgsfield/Katana map promo remains open. The 90-day priority is unchanged.
 
@@ -65,8 +65,9 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
+- Claude Guardian also needs to review typing fix `baa609d` (five files): 16/16 tests, Docker build and clean dependency audit; live typing check exited0.
 - Claude Guardian review of browser app commit `c0b51c5` on
-  `codex/shared-iphone-browser` is required. Independent code review and 14/14
+  `codex/shared-iphone-browser` is required. Independent code review and 16/16
   tests passed; they do not replace that repository gate. App is not on main
   and external hosting remains pending.
 - Name an existing hosting provider/server and connect it securely for the shared

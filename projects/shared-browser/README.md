@@ -16,6 +16,13 @@ Use a private VPS with Docker Compose, at least 2 GB RAM and 10 GB free disk.
 A stable domain must point to the server. Allow ports 80/443; keep SSH restricted.
 Do not use a free service that sleeps after 15 minutes for this browser.
 
+Check out the saved app branch on that server:
+
+```sh
+git clone --branch codex/shared-iphone-browser https://github.com/eddieedwardsv2-ux/Test-environment-.git charlie-ai-os
+cd charlie-ai-os/projects/shared-browser
+```
+
 From this folder on that server:
 
 ```sh

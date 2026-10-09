@@ -19,7 +19,8 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 - This cloud's Codex connector configuration is platform-managed/read-only. A separate CLI connection would not automatically add tools to this chat.
 - Intelligent UI and TinyFish control tools were not exposed here; no access to Charlie's signed-in screen. Re-check actual tools next session rather than assuming account-wide absence.
 - Created `projects/shared-browser/`: paired iPhone PWA, live noVNC touch/keyboard, saved Chromium profile, reconnect, human/AI handoff and private Codex API/CLI. Selkies image filled the disk and was removed; noVNC reused a much smaller runtime.
-- Verified 14/14 tests and full live test exit0: real touch, phone typing, same-tab AI action, takeover, reconnect and cookie retention. Full service restart retained the approved device and browser test cookie. External Example Domain loaded with normal TLS verification.
+- Verified 16/16 tests and full live test exit0: real touch, phone typing, same-tab AI action, takeover, reconnect and cookie retention. Full service restart retained the approved device and browser test cookie. External Example Domain loaded with normal TLS verification.
+- Final typing fix `baa609d`: unfocused inputs report409 and keep the phone draft; open-shadow inputs supported. Fresh live test exited0 after waiting for actual VNC focus; shadow case passed the isolated regression.
 - Independent code review found/rechecked takeover fixes; production Chromium sandbox enabled. Signed apt/npm checks preserved; trusted proxy CA imported normally. Caddy/Compose validated. No external HTTPS deployment, actual iPhone, Higgsfield login, paid call or video verified.
 - Hosting attempt: direct quick-tunnel connection refused, verified HTTPS proxy request returned403. Asked once for existing hosting provider; no secret values requested.
 - Cloud install/start scripts tested and draft save confirmed, preserving Higgsfield setup. Environment settings Review/Save and Publish still required; fresh-task restoration unverified.
@@ -51,7 +52,7 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 ## Open decisions
 - Existing hosting provider/server and secure deployment access are needed (asked once asynchronously); do not request passwords/keys in chat. Actual device pairing and public HTTPS verification follow deployment.
 - Secure Higgsfield sign-in and a supported persistent connector/browser route; Katana availability and exact credit cost unverified. Never ask for tokens or OAuth callback URLs in chat.
-- Claude Guardian review is outstanding for `975420c` and app `c0b51c5`; 2 missing-review errors expected after the app commit, plus4 publication warnings. Code is on `codex/shared-iphone-browser`, not merged into main.
+- Claude Guardian review is outstanding for `975420c`, app `c0b51c5` and typing fix `baa609d`; audit currently reports 3 missing-review errors and4 publication warnings before the final notes commit. Code is on `codex/shared-iphone-browser`, not merged into main.
 - Branch review: `claude/nate-brain-wip` has 1 unmerged commit including `research/nate-herk/brain/x-themes.md` (unverified); `elder-councils-plan` has 3; `nate-watch-path` has 2. The Elder plan and Watch Path source are already on main. Historical branches also contain old renamed files; no branches merged/deleted.
 
 ## Pick up here
