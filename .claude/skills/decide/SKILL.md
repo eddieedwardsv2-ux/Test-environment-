@@ -24,6 +24,11 @@ and carry on.
 `area`, `asked` (date), `order`, `status: "open"`, `multi` (pick any?),
 `options`: `[{id, label, detail, rec}]` with exactly one `rec: true` for a
 single choice. Tasks only he can do get options "Done" / "Later".
+For the map view (2026-10-09) also set: `short` (2 to 5 words for the tile),
+`weight` (1 small, 2 normal, 3 decides others: a bigger tile), `unblocks` (ids of
+cards it decides), and on at most two open cards `pick: 1` or `pick: 2` with a
+one-line `pickWhy` (Claude's suggested 1st and 2nd, shown in amber). Move the
+picks when cards close, so there are always a 1st and 2nd while two are open.
 Then in chat say one line: "One new question on the Decision Desk" with the
 link. Carry on with other work while you wait; never ask the same thing in
 chat, and never re-ask a card that is still open.

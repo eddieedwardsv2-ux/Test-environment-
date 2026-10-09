@@ -2,7 +2,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <style>
-/* Layout: one column of question cards, newest waiting first; tap an option, add a note, send. */
+/* Layout: "Waiting" opens on a map of every open question (small tiles, grouped by area,
+   bigger when it decides others, Claude's 1st and 2nd picks tagged in amber); tap a tile to
+   answer that one below. Answered and Done stay as plain lists. */
 :root{
   --bg:#f3f5f4; --card:#ffffff; --fg:#17201d; --muted:#5b6964; --line:#d8dfdc;
   --accent:#0f6b5c; --accent-soft:#e1f0ec; --rec:#a85d00; --rec-soft:#fdf0dc;
@@ -54,24 +56,39 @@ button:focus-visible,.tab:focus-visible,.opt:focus-within,textarea:focus-visible
 .answer{background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-top:10px}
 .answer p{margin:0}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:22px;color:var(--muted)}
+.map{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:0 0 18px}
+.tile{display:flex;flex-direction:column;gap:4px;text-align:left;font:15px/1.3 var(--body);color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;min-width:0}
+.tile.big{grid-column:span 2;border-width:2px}
+.tile .ta{font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.tile .tq{font:700 16px/1.25 var(--display);text-wrap:balance}
+.tile .tu{font-size:13px;color:var(--muted)}
+.tile.pick{border-color:var(--rec);box-shadow:inset 3px 0 0 var(--rec)}
+.tile .tp{font-size:12px;font-weight:700;color:var(--rec)}
+.tile[aria-current="true"]{background:var(--accent-soft);border-color:var(--accent)}
+.maphead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 8px}
+.maphead h2{font:700 15px var(--body);margin:0;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.maphead span{font-size:13px;color:var(--muted)}
+@media (max-width:360px){.tile.big{grid-column:auto}}
 .foot{margin-top:28px;font-size:14px;color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){.card{transition:border-color .2s}}
 </style>
 
 <div class="wrap">
   <h1>Decision Desk</h1>
-  <p class="lede">Every question Claude needs you to answer, in one place. Tap an option (the recommended one is marked), add a note if you like, and press <b>Send answer</b>. Claude reads your answers at the start of the next message or session, so you don't need to type them in chat.</p>
+  <p class="lede">Every question Claude needs you to answer. Tap any question on the map to answer it, in any order. Bigger tiles decide other questions; the amber ones are Claude's suggested 1st and 2nd. Claude reads your answers next message, so nothing needs typing in chat.</p>
   <div class="tabs" role="group" aria-label="Show">
     <button class="tab" id="t-open" data-f="open" aria-pressed="true">Waiting for you<span class="n" id="n-open"></span></button>
     <button class="tab" id="t-answered" data-f="answered" aria-pressed="false">Answered<span class="n" id="n-answered"></span></button>
     <button class="tab" id="t-closed" data-f="closed" aria-pressed="false">Done<span class="n" id="n-closed"></span></button>
   </div>
+  <div id="map"></div>
   <div class="list" id="list"><div class="empty">Loading your questions…</div></div>
   <p class="foot">"Answered" means Claude hasn't acted on it yet. "Done" means Claude has acted and logged it in <code>decisions.md</code>.</p>
 </div>
 
 <script>
-let filter = "open", docs = [], db = null, drafts = {}, editing = {};
+let filter = "open", docs = [], db = null, drafts = {}, editing = {}, focus = null;
+const mapEl = document.getElementById("map");
 const list = document.getElementById("list");
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
@@ -90,7 +107,20 @@ function render(){
       : filter === "answered" ? "No answers waiting for Claude." : "Nothing finished yet.") + '</div>';
     return;
   }
-  list.innerHTML = shown.map(card).join("");
+  if (filter !== "open"){ mapEl.innerHTML = ""; list.innerHTML = shown.map(card).join(""); return; }
+  // Waiting: the map of every open question, then only the chosen one in full.
+  const rank = d => (d.pick ? d.pick : 9) * 10 - (d.weight || 1);
+  const tiles = [...shown].sort((a,b) => rank(a) - rank(b) || (a.order ?? 99) - (b.order ?? 99));
+  if (!focus || !shown.some(d => d.id === focus)) focus = tiles[0].id;
+  const unb = d => (d.unblocks || []).filter(id => shown.some(x => x.id === id)).length;
+  mapEl.innerHTML = `<div class="maphead"><h2>All ${shown.length} questions</h2><span>Tap one to answer it</span></div><div class="map" role="list">`
+    + tiles.map(d => `<button class="tile${(d.weight||1) >= 3 ? " big" : ""}${d.pick ? " pick" : ""}" role="listitem" data-focus="${esc(d.id)}" aria-current="${d.id === focus}">`
+      + `<span class="ta">${esc(d.area || "")}</span><span class="tq">${esc(d.short || d.q)}</span>`
+      + (unb(d) ? `<span class="tu">Decides ${unb(d)} other${unb(d) > 1 ? "s" : ""}</span>` : "")
+      + (d.pick ? `<span class="tp">Claude's ${d.pick === 1 ? "1st" : "2nd"} suggestion</span>` : "")
+      + `</button>`).join("") + `</div>`;
+  const d = shown.find(x => x.id === focus);
+  list.innerHTML = card(d);
 }
 function card(d){
   const st = d.status || "open", opts = d.options || [], type = d.multi ? "checkbox" : "radio";
@@ -99,7 +129,8 @@ function card(d){
   const label = {open:"Waiting", answered:"Answered", closed:"Done"}[st];
   let h = `<article class="card" data-id="${esc(d.id)}"><div class="meta"><span class="pill ${st}">${label}</span>`
     + (d.area ? `<span>${esc(d.area)}</span>` : "") + (d.asked ? `<span>asked ${esc(d.asked)}</span>` : "") + `</div>`
-    + `<h2 class="q">${esc(d.q)}</h2>` + (d.why ? `<p class="why">${esc(d.why)}</p>` : "");
+    + `<h2 class="q">${esc(d.q)}</h2>` + (d.why ? `<p class="why">${esc(d.why)}</p>` : "")
+    + (st === "open" && d.pick && d.pickWhy ? `<p class="why"><b style="color:var(--rec)">Why Claude suggests this ${d.pick === 1 ? "first" : "second"}:</b> ${esc(d.pickWhy)}</p>` : "");
   if (live){
     h += `<fieldset class="opts"><legend class="status">${d.multi ? "Pick any that apply" : "Pick one"}</legend>`
       + opts.map(o => `<label class="opt"><input type="${type}" name="c-${esc(d.id)}" id="o-${esc(d.id)}-${esc(o.id)}" value="${esc(o.id)}" ${picked.includes(o.id) ? "checked" : ""}>`
@@ -137,6 +168,12 @@ list.addEventListener("click", async e => {
     b.disabled = false;
     s.textContent = err?.code === "permission_denied" ? "Only Charlie can answer these." : "Didn't send. Check your connection and press Send again.";
   }
+});
+mapEl.addEventListener("click", e => {
+  const t = e.target.closest("[data-focus]"); if (!t) return;
+  const cur = list.querySelector(".card"); if (cur) draftFrom(cur.dataset.id);   // keep anything typed
+  focus = t.dataset.focus; render();
+  list.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
 });
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
   filter = t.dataset.f;

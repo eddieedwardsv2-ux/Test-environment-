@@ -63,7 +63,7 @@ Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoug
   no log entry (item 8).
 
 ## 4. Waiting on Charlie
-- **Decision Desk, 5 open cards:** next-big-step (what first), elder-names,
+- **Decision Desk** (now a map: tap any tile; Claude's 1st and 2nd picks in amber), **5 open cards:** next-big-step (what first), elder-names,
   youtube-ingest, hands-window (stop at 4 weeks or go to 3 months), price-plan
   (split "open source" from cost, our own data first).
 - **His steps:** switch off 9 claude.ai skills (Settings, Skills: built-in-browser,
