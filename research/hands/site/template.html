@@ -116,7 +116,7 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
   <header>
     <div class="eyebrow">Charlie's AI OS · Hands Brain</div>
     <h1>The best tools to use now</h1>
-    <p class="sub">Every tool, skill, plugin and repo from The Next New Thing, read week by week from newest to oldest. Each category is ranked; when a newer tool replaces an older one, the old one drops down and is crossed out.</p>
+    <p class="sub">Every tool, skill, plugin and repo from The Next New Thing and skills.sh, read week by week from newest to oldest. Each category is ranked; when a newer tool replaces an older one, the old one drops down and is crossed out.</p>
     <div class="stats" id="stats"></div>
   </header>
 
@@ -165,7 +165,7 @@ function match(t){
   if (!q) return true;
   return (t.name + " " + t.what + " " + t.category).toLowerCase().includes(q);
 }
-const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span><span class="price">${esc(t.price)}</span></div>`;
+const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span><span class="price">${esc(t.price)}</span>${t.ours ? `<span class="st rising">you have one</span>` : ""}</div>`;
 
 function render(){
   const live = D.tools.filter(match);
@@ -199,11 +199,11 @@ function open(id){
   const sight = t.sightings.map(s => {
     const v = D.videos[s.video] || {};
     const link = s.video ? `https://www.youtube.com/watch?v=${esc(s.video)}${s.t ? "&t=" + secs(s.t) + "s" : ""}` : "";
-    return `<div><p class="k">${esc(s.week)}${s.t ? " · " + esc(s.t) : ""}</p><p>${esc(s.shown || "Mentioned.")} ${link ? `<a href="${link}">Watch${s.t ? " at " + esc(s.t) : ""}</a>` : ""}</p>${s.quote ? `<blockquote>“${esc(s.quote)}”</blockquote>` : ""}<p class="price">${esc(v.title || "")}</p></div>`;
+    return `<div><p class="k">${esc(s.week)} · ${esc(s.source || "")}${s.t ? " · " + esc(s.t) : ""}</p><p>${esc(s.shown || "Mentioned.")} ${link ? `<a href="${link}">Watch${s.t ? " at " + esc(s.t) : ""}</a>` : ""}</p>${s.quote ? `<blockquote>“${esc(s.quote)}”</blockquote>` : ""}<p class="price">${esc(v.title || "")}</p></div>`;
   }).join("");
   document.getElementById("sheetbody").innerHTML = `<button class="close" id="x">Close</button><h3>${esc(t.name)}</h3>${tags(t)}
     <p>${esc(t.what)}</p>
-    <p class="k">Rank ${t.rank} in ${esc(t.category)} · score ${t.score} · seen in ${t.mentions} video${t.mentions > 1 ? "s" : ""}</p>
+    <p class="k">Rank ${t.rank} in ${esc(t.category)} · score ${t.score} · seen in ${t.mentions} source${t.mentions > 1 ? "s" : ""}${t.installs ? " · " + t.installs.toLocaleString("en-GB") + " installs on skills.sh" : ""}</p>
     ${t.replaced_by ? `<p><b>Replaced by ${esc(t.replaced_by)}.</b></p>` : ""}
     ${t.replaces.length ? `<p><span class="k">Replaces</span><br>${esc(t.replaces.join(", "))}</p>` : ""}
     ${t.check ? `<p><span class="k">Check before trusting</span><br>${esc(t.check)}</p>` : ""}

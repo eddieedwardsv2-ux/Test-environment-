@@ -1,5 +1,145 @@
 [
  {
+  "id": "n:findskills",
+  "name": "find-skills",
+  "url": "https://skills.sh/vercel-labs/skills/find-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Finds and installs agent skills when you ask 'is there a skill for X'.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\""
+   }
+  ],
+  "check": "Install count (3.7M) is the highest by far; Vercel Labs is a known publisher but still read any skill it finds before installing.",
+  "vs": null,
+  "installs": 3756497,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 18,
+  "replaced_by": null,
+  "status": "new",
+  "ours": true,
+  "rank": 1
+ },
+ {
+  "id": "n:grillme",
+  "name": "grill-me",
+  "url": "https://skills.sh/mattpocock/skills/grill-me",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Interviews you relentlessly about a plan until it is sharp.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "A relentless interview to sharpen a plan or design."
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1313697,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 18,
+  "replaced_by": null,
+  "status": "new",
+  "ours": true,
+  "rank": 2
+ },
+ {
+  "id": "n:hyperframes",
+  "name": "hyperframes",
+  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Entry-point skill for making videos, animations and motion graphics from HTML with HeyGen's HyperFrames.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 842535,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 17.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 1
+ },
+ {
+  "id": "n:skillcreator",
+  "name": "skill-creator",
+  "url": "https://skills.sh/anthropics/skills/skill-creator",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Anthropic's skill for creating, improving and testing your own skills.",
+  "price": "open-source",
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 400669,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 17.6,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 3
+ },
+ {
   "id": "gh:affaan-m/ecc",
   "name": "ECC",
   "url": "https://github.com/affaan-m/ECC",
@@ -39,7 +179,8 @@
   "score": 17,
   "replaced_by": null,
   "status": "rising",
-  "rank": 1
+  "ours": false,
+  "rank": 4
  },
  {
   "id": "gh:davila7/claude-code-templates",
@@ -81,7 +222,8 @@
   "score": 16,
   "replaced_by": null,
   "status": "rising",
-  "rank": 2
+  "ours": false,
+  "rank": 5
  },
  {
   "id": "gh:tashfeenahmed/freellmapi",
@@ -116,7 +258,78 @@
   "score": 15,
   "replaced_by": null,
   "status": "new",
+  "ours": false,
   "rank": 1
+ },
+ {
+  "id": "n:frontenddesign",
+  "name": "frontend-design",
+  "url": "https://skills.sh/anthropics/skills/frontend-design",
+  "kind": "skill",
+  "category": "Design & websites",
+  "what": "Guidance for distinctive, good-looking UI design and typography when building web pages.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
+  "vs": null,
+  "installs": 964997,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 15.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 1
+ },
+ {
+  "id": "n:handoff",
+  "name": "handoff",
+  "url": "https://skills.sh/mattpocock/skills/handoff",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Compacts the current chat into a handoff document for another agent to pick up.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 945759,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 15.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 6
  },
  {
   "id": "gh:mutonby/openshorts",
@@ -151,7 +364,218 @@
   "score": 15,
   "replaced_by": null,
   "status": "new",
-  "rank": 1
+  "ours": false,
+  "rank": 2
+ },
+ {
+  "id": "n:grilling",
+  "name": "grilling",
+  "url": "https://skills.sh/mattpocock/skills/grilling",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Grills you about a plan or idea to stress-test your thinking.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 868047,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 14.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 7
+ },
+ {
+  "id": "n:hyperframescli",
+  "name": "hyperframes-cli",
+  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-cli",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Command-line loop for HeyGen's HyperFrames: init, lint, preview and render HTML videos.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 878869,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 14.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 3
+ },
+ {
+  "id": "n:teach",
+  "name": "teach",
+  "url": "https://skills.sh/mattpocock/skills/teach",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Teaches you a new skill or concept inside your workspace.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 778210,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 14.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": true,
+  "rank": 8
+ },
+ {
+  "id": "n:brainstorming",
+  "name": "brainstorming",
+  "url": "https://skills.sh/obra/superpowers/brainstorming",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Explores what you want before any creative or build work starts.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "You MUST use this before any creative work"
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 384538,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 14.6,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 9
+ },
+ {
+  "id": "n:writinggreatskills",
+  "name": "writing-great-skills",
+  "url": "https://skills.sh/mattpocock/skills/writing-great-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Reference on how to write and edit skills well.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Reference for writing and editing skills well"
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 306531,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 14.5,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 10
+ },
+ {
+  "id": "n:writeaskill",
+  "name": "write-a-skill",
+  "url": "https://skills.sh/mattpocock/skills/write-a-skill",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Creates new agent skills with the right structure and bundled resources.",
+  "price": "open-source",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Create new agent skills with proper structure, progressive disclosure, and bundled resources."
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 219742,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 14.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 11
  },
  {
   "id": "gh:pbakaus/impeccable",
@@ -184,7 +608,8 @@
   "score": 14,
   "replaced_by": null,
   "status": "steady",
-  "rank": 1
+  "ours": false,
+  "rank": 2
  },
  {
   "id": "gh:debpalash/voicestudio",
@@ -228,6 +653,7 @@
   "score": 14,
   "replaced_by": null,
   "status": "rising",
+  "ours": false,
   "rank": 1
  },
  {
@@ -263,7 +689,8 @@
   "score": 13,
   "replaced_by": null,
   "status": "steady",
-  "rank": 3
+  "ours": false,
+  "rank": 12
  },
  {
   "id": "n:chatgptdots",
@@ -305,6 +732,7 @@
   "score": 13,
   "replaced_by": null,
   "status": "rising",
+  "ours": false,
   "rank": 1
  },
  {
@@ -338,6 +766,7 @@
   "score": 13,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 1
  },
  {
@@ -382,6 +811,7 @@
   "score": 13,
   "replaced_by": null,
   "status": "rising",
+  "ours": false,
   "rank": 1
  },
  {
@@ -424,6 +854,147 @@
   "score": 13,
   "replaced_by": null,
   "status": "rising",
+  "ours": false,
+  "rank": 2
+ },
+ {
+  "id": "n:higgsfieldyoutubethumbnail",
+  "name": "higgsfield-youtube-thumbnail",
+  "url": "https://skills.sh/higgsfield-ai/skills/higgsfield-youtube-thumbnail",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Makes YouTube thumbnails and vertical covers via the Higgsfield CLI.",
+  "price": "unknown",
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Create high-click-through YouTube thumbnails and vertical video covers through the Higgsfield CLI."
+   }
+  ],
+  "check": "Needs the Higgsfield CLI, which probably needs a paid account; price unverified.",
+  "vs": null,
+  "installs": 79859,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 12.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 4
+ },
+ {
+  "id": "n:agentbrowser",
+  "name": "agent-browser",
+  "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
+  "kind": "skill",
+  "category": "Automation & workflows",
+  "what": "Browser automation command line so an AI agent can click, fill forms and take screenshots.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 1066994,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 12,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 1
+ },
+ {
+  "id": "n:grillwithdocs",
+  "name": "grill-with-docs",
+  "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Same grilling interview, but also writes decision records and a glossary as it goes.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1124863,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 12,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 13
+ },
+ {
+  "id": "n:prototype",
+  "name": "prototype",
+  "url": "https://skills.sh/mattpocock/skills/prototype",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Builds a throwaway prototype to answer a design question.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 906480,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 12.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
   "rank": 2
  },
  {
@@ -459,7 +1030,288 @@
   "score": 12,
   "replaced_by": null,
   "status": "new",
+  "ours": false,
   "rank": 1
+ },
+ {
+  "id": "n:domainmodeling",
+  "name": "domain-modeling",
+  "url": "https://skills.sh/mattpocock/skills/domain-modeling",
+  "kind": "skill",
+  "category": "Knowledge & second brain",
+  "what": "Builds a project's glossary and decision records.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 783607,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 1
+ },
+ {
+  "id": "n:hyperframesregistry",
+  "name": "hyperframes-registry",
+  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-registry",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Searches and installs ready-made blocks and components for HyperFrames videos.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 755261,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 5
+ },
+ {
+  "id": "n:mediause",
+  "name": "media-use",
+  "url": "https://skills.sh/heygen-com/hyperframes/media-use",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Fetches music, sound effects, images, logos and voice for a HyperFrames project.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 753721,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 6
+ },
+ {
+  "id": "n:redditautomation",
+  "name": "reddit-automation",
+  "url": "https://skills.sh/flowkit-labs/skills/reddit-automation",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Finds Reddit threads asking for what you offer and drafts helpful replies, disclosing affiliation.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Unknown publisher (flowkit-labs); 846k installs looks inflated for a niche skill; auto-posting to Reddit risks bans. Read SKILL.md first.",
+  "vs": null,
+  "installs": 846658,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 2
+ },
+ {
+  "id": "n:pptx",
+  "name": "pptx",
+  "url": "https://skills.sh/anthropics/skills/pptx",
+  "kind": "skill",
+  "category": "Other",
+  "what": "Anthropic's skill to create, read and edit PowerPoint files.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 232334,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.4,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 1
+ },
+ {
+  "id": "n:copywriting",
+  "name": "copywriting",
+  "url": "https://skills.sh/coreyhaines31/marketingskills/copywriting",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Writes or improves marketing copy for web pages.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 219116,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 3
+ },
+ {
+  "id": "n:pdf",
+  "name": "pdf",
+  "url": "https://skills.sh/anthropics/skills/pdf",
+  "kind": "skill",
+  "category": "Other",
+  "what": "Anthropic's skill to read, merge, split, fill and create PDFs.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 207552,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 2
+ },
+ {
+  "id": "n:seoaudit",
+  "name": "seo-audit",
+  "url": "https://skills.sh/coreyhaines31/marketingskills/seo-audit",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Audits a site for technical and on-page SEO problems.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 222971,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 4
  },
  {
   "id": "gh:alirezarezvani/claude-skills",
@@ -492,7 +1344,8 @@
   "score": 11,
   "replaced_by": null,
   "status": "steady",
-  "rank": 4
+  "ours": false,
+  "rank": 14
  },
  {
   "id": "n:creativeclaw",
@@ -525,6 +1378,7 @@
   "score": 11,
   "replaced_by": null,
   "status": "new",
+  "ours": false,
   "rank": 1
  },
  {
@@ -558,7 +1412,8 @@
   "score": 11,
   "replaced_by": null,
   "status": "steady",
-  "rank": 1
+  "ours": false,
+  "rank": 2
  },
  {
   "id": "n:jev",
@@ -601,7 +1456,43 @@
   "score": 11,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 1
+ },
+ {
+  "id": "n:obsidianmarkdown",
+  "name": "obsidian-markdown",
+  "url": "https://skills.sh/kepano/obsidian-skills/obsidian-markdown",
+  "kind": "skill",
+  "category": "Knowledge & second brain",
+  "what": "Writes Obsidian-style markdown: wikilinks, embeds, callouts and properties.",
+  "price": "open-source",
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 89170,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 11.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 3
  },
  {
   "id": "gh:elvisun/newsjack",
@@ -634,7 +1525,8 @@
   "score": 10,
   "replaced_by": null,
   "status": "steady",
-  "rank": 2
+  "ours": false,
+  "rank": 5
  },
  {
   "id": "gh:alibaba/open-code-review",
@@ -669,7 +1561,8 @@
   "score": 10,
   "replaced_by": null,
   "status": "steady",
-  "rank": 2
+  "ours": false,
+  "rank": 3
  },
  {
   "id": "gh:stablyai/orca",
@@ -704,6 +1597,7 @@
   "score": 10,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 3
  },
  {
@@ -737,7 +1631,8 @@
   "score": 10,
   "replaced_by": null,
   "status": "steady",
-  "rank": 2
+  "ours": false,
+  "rank": 4
  },
  {
   "id": "n:metamuse",
@@ -779,6 +1674,7 @@
   "score": 9.5,
   "replaced_by": null,
   "status": "rising",
+  "ours": false,
   "rank": 4
  },
  {
@@ -814,6 +1710,7 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
+  "ours": false,
   "rank": 2
  },
  {
@@ -847,6 +1744,7 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
+  "ours": false,
   "rank": 2
  },
  {
@@ -880,6 +1778,7 @@
   "score": 9,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 2
  },
  {
@@ -915,7 +1814,8 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
-  "rank": 2
+  "ours": false,
+  "rank": 3
  },
  {
   "id": "n:grokbot",
@@ -957,7 +1857,43 @@
   "score": 9,
   "replaced_by": null,
   "status": "rising",
+  "ours": false,
   "rank": 5
+ },
+ {
+  "id": "n:improvecodebasearchitecture",
+  "name": "improve-codebase-architecture",
+  "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Scans a codebase for tidy-up opportunities and shows them as an HTML report.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1073339,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 4
  },
  {
   "id": "gh:invoke-ai/invokeai",
@@ -992,7 +1928,8 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
-  "rank": 2
+  "ours": false,
+  "rank": 7
  },
  {
   "id": "gh:anthropics/knowledge-work-plugins",
@@ -1025,7 +1962,8 @@
   "score": 9,
   "replaced_by": null,
   "status": "steady",
-  "rank": 5
+  "ours": false,
+  "rank": 15
  },
  {
   "id": "gh:odysseus-dev/odysseus",
@@ -1060,6 +1998,7 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
+  "ours": false,
   "rank": 3
  },
  {
@@ -1095,6 +2034,112 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
+  "ours": false,
+  "rank": 6
+ },
+ {
+  "id": "n:setupmattpocockskills",
+  "name": "setup-matt-pocock-skills",
+  "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Sets up a repo for Matt Pocock's engineering skills (issue tracker, labels, doc layout).",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 966567,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 16
+ },
+ {
+  "id": "n:tdd",
+  "name": "tdd",
+  "url": "https://skills.sh/mattpocock/skills/tdd",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Builds features test-first (red, green, refactor).",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1046160,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 5
+ },
+ {
+  "id": "n:triage",
+  "name": "triage",
+  "url": "https://skills.sh/mattpocock/skills/triage",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Moves issues and external pull requests through triage roles and writes agent-ready briefs.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 910765,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 9.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
   "rank": 6
  },
  {
@@ -1130,7 +2175,78 @@
   "score": 9,
   "replaced_by": null,
   "status": "new",
-  "rank": 3
+  "ours": false,
+  "rank": 8
+ },
+ {
+  "id": "n:codebasedesign",
+  "name": "codebase-design",
+  "url": "https://skills.sh/mattpocock/skills/codebase-design",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Shared vocabulary for designing deep, simple code modules.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 760424,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 7
+ },
+ {
+  "id": "n:vercelreactbestpractices",
+  "name": "vercel-react-best-practices",
+  "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "React and Next.js performance guidelines from Vercel.",
+  "price": "open-source",
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": ""
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 781225,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "score": 8.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "rank": 8
  },
  {
   "id": "n:omnisendmcp",
@@ -1163,6 +2279,7 @@
   "score": 8.5,
   "replaced_by": null,
   "status": "new",
+  "ours": false,
   "rank": 2
  },
  {
@@ -1196,7 +2313,8 @@
   "score": 8,
   "replaced_by": null,
   "status": "steady",
-  "rank": 1
+  "ours": false,
+  "rank": 3
  },
  {
   "id": "n:boringfunnels",
@@ -1229,7 +2347,8 @@
   "score": 8,
   "replaced_by": null,
   "status": "new",
-  "rank": 3
+  "ours": false,
+  "rank": 6
  },
  {
   "id": "gh:calcom/cal.diy",
@@ -1264,7 +2383,8 @@
   "score": 8,
   "replaced_by": null,
   "status": "steady",
-  "rank": 1
+  "ours": false,
+  "rank": 2
  },
  {
   "id": "gh:hkuds/cli-anything",
@@ -1297,6 +2417,7 @@
   "score": 8,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 3
  },
  {
@@ -1330,7 +2451,8 @@
   "score": 8,
   "replaced_by": null,
   "status": "new",
-  "rank": 4
+  "ours": false,
+  "rank": 9
  },
  {
   "id": "n:skillry",
@@ -1363,7 +2485,8 @@
   "score": 8,
   "replaced_by": null,
   "status": "new",
-  "rank": 6
+  "ours": false,
+  "rank": 17
  },
  {
   "id": "n:hyperagent",
@@ -1396,6 +2519,7 @@
   "score": 7.5,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 7
  },
  {
@@ -1438,7 +2562,8 @@
   "score": 7,
   "replaced_by": null,
   "status": "rising",
-  "rank": 7
+  "ours": false,
+  "rank": 18
  },
  {
   "id": "gh:cactus-compute/needle",
@@ -1471,6 +2596,7 @@
   "score": 7,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 4
  },
  {
@@ -1504,6 +2630,7 @@
   "score": 6,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 3
  },
  {
@@ -1539,7 +2666,8 @@
   "score": 6,
   "replaced_by": null,
   "status": "steady",
-  "rank": 5
+  "ours": false,
+  "rank": 10
  },
  {
   "id": "gh:useautumn/autumn",
@@ -1572,6 +2700,7 @@
   "score": 5,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 1
  },
  {
@@ -1607,7 +2736,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "steady",
-  "rank": 4
+  "ours": false,
+  "rank": 7
  },
  {
   "id": "gh:frappe/crm",
@@ -1642,6 +2772,7 @@
   "score": 5,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 2
  },
  {
@@ -1675,7 +2806,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 3
+  "ours": false,
+  "rank": 9
  },
  {
   "id": "n:instinct",
@@ -1708,7 +2840,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 2
+  "ours": false,
+  "rank": 3
  },
  {
   "id": "gh:invoiceninja/invoiceninja",
@@ -1743,6 +2876,7 @@
   "score": 5,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 3
  },
  {
@@ -1778,7 +2912,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "steady",
-  "rank": 5
+  "ours": false,
+  "rank": 8
  },
  {
   "id": "gh:vercel/next.js",
@@ -1811,7 +2946,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "steady",
-  "rank": 3
+  "ours": false,
+  "rank": 4
  },
  {
   "id": "gh:posthog/posthog",
@@ -1844,7 +2980,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "steady",
-  "rank": 6
+  "ours": false,
+  "rank": 9
  },
  {
   "id": "n:spiraai",
@@ -1877,7 +3014,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 7
+  "ours": false,
+  "rank": 10
  },
  {
   "id": "n:tinypopups",
@@ -1910,7 +3048,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 8
+  "ours": false,
+  "rank": 11
  },
  {
   "id": "gh:baptistearno/typebot.io",
@@ -1945,7 +3084,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "steady",
-  "rank": 9
+  "ours": false,
+  "rank": 12
  },
  {
   "id": "n:vibecodeing",
@@ -1978,7 +3118,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 2
+  "ours": false,
+  "rank": 4
  },
  {
   "id": "n:vmpal",
@@ -2011,7 +3152,8 @@
   "score": 5,
   "replaced_by": null,
   "status": "new",
-  "rank": 4
+  "ours": false,
+  "rank": 10
  },
  {
   "id": "gh:yoheinakajima/glance-speedlab",
@@ -2044,7 +3186,8 @@
   "score": 4,
   "replaced_by": null,
   "status": "steady",
-  "rank": 3
+  "ours": false,
+  "rank": 5
  },
  {
   "id": "n:granola",
@@ -2077,7 +3220,8 @@
   "score": 4,
   "replaced_by": null,
   "status": "steady",
-  "rank": 3
+  "ours": false,
+  "rank": 4
  },
  {
   "id": "gh:tencentcloud/octop",
@@ -2110,6 +3254,7 @@
   "score": 4,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 8
  },
  {
@@ -2143,7 +3288,8 @@
   "score": 3,
   "replaced_by": null,
   "status": "steady",
-  "rank": 4
+  "ours": false,
+  "rank": 6
  },
  {
   "id": "n:systocommerce",
@@ -2176,7 +3322,8 @@
   "score": 3,
   "replaced_by": null,
   "status": "steady",
-  "rank": 5
+  "ours": false,
+  "rank": 7
  },
  {
   "id": "n:twilio",
@@ -2209,6 +3356,7 @@
   "score": 3,
   "replaced_by": null,
   "status": "steady",
+  "ours": false,
   "rank": 4
  },
  {
@@ -2242,6 +3390,7 @@
   "score": 6.5,
   "replaced_by": "VoiceStudio",
   "status": "replaced",
+  "ours": false,
   "rank": 5
  }
 ]

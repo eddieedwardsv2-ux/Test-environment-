@@ -66,6 +66,8 @@ for e in tools.values():
     e["status"] = ("replaced" if e["replaced_by"] else "new" if e["first"] == latest
                    else "rising" if e["mentions"] >= 2 and order.index(e["last"]) <= 1 else "steady")
     e["replaces"] = sorted(e["replaces"])
+ours = {p.parent.name for p in ROOT.glob(".claude/skills/*/SKILL.md")} | {p.parent.name for p in ROOT.glob("references/parked-skills/*/SKILL.md")}
+for e in tools.values(): e["ours"] = norm(e["name"]) in {norm(o) for o in ours}   # we already have a skill by this name
 ranked = sorted(tools.values(), key=lambda e: (e["status"] == "replaced", -e["score"], e["name"].lower()))
 for c in CATEGORIES:
     for i, e in enumerate([e for e in ranked if e["category"] == c], 1): e["rank"] = i
