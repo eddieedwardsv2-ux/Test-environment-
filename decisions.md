@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: the Desk tells Claude without a connector
+Charlie: "Tell Claude now" didn't work because of connectors (his settings blocked the Claude Code Remote tool). Now Send saves a tiny `poke.json` inside the Desk (its own `artifact` capability, no connector), which republishes it and wakes every Claude session watching the Desk; the `decide` skill watches it at session start. The connector and `config/session` were removed.
+
 ## 2026-10-09: check the Quartermaster on every task; a browser that keeps you signed in
 Charlie asked whether tasks get checked against the Quartermaster: they didn't. Router rule now: for any task that makes something or needs a tool, ask the `quartermaster` once and say what it found. First use, on his browser problem (TinyFish logged out every 15 minutes): the Hands list has nothing that fits, but Claude already has it: the desktop app's browser pane (sign-ins persist), Claude in Chrome and computer use, which were on the "switch off" list. Kept on; capability map updated. This covers Claude on the Mac only: Codex and the iPhone still need Codex's shared-browser plan (Desk `shared-browser-design`), so both routes stay open (also: Canva connected, GitHub connector needs reconnect, Remote Desktop Commander unfinished, Higgsfield not added). TinyFish removal and the Higgsfield Katana draft are on the Desk and the to-do; the browser set-up is on Mac day.
 

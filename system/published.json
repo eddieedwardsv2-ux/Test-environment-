@@ -2,7 +2,7 @@
  "system/decision-desk/decision-desk.html": {
   "page": "Chief's Desk",
   "url": "https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx",
-  "sha256": "c6761f2a50d0ba26",
+  "sha256": "7293780ff2292bd1",
   "published": "2026-10-09"
  },
  "system/system-map/system-map.html": {
@@ -50,13 +50,13 @@
  "research/nate-herk/brain/map/brain-map.html": {
   "page": "Brain dashboard",
   "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
-  "sha256": "29074eb20960757c",
+  "sha256": "24f5394a3a84fa15",
   "published": "2026-10-09"
  },
  "system/merge-map/merge-map.html": {
   "page": "Nate-first map",
   "url": "https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky",
-  "sha256": "d66c999be68eb14a",
+  "sha256": "b63ecc8a791d85c8",
   "published": "2026-10-09"
  },
  "projects/ai-os-setup-kit/compare/kit-compare.html": {

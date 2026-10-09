@@ -38,18 +38,17 @@ link, and open the Desk for him (Artifact `open` with its URL): whenever a
 reply's **Now** sends Charlie to the Desk, it opens itself (his rule, 2026-10-09). Carry on with other work while you wait; never ask the same thing in
 chat, and never re-ask a card that is still open.
 
-## The Desk tells Claude itself (2026-10-09)
-Pressing **Send** (or **Tell Claude now** on an answered card) makes the Desk message
-the session in its `config/session` doc through Charlie's Claude Code Remote connector
-(`send_message`), so he never types "done".
-- **Session start:** `get_session` (claude-code-remote) for your own id, then
-  `ArtifactData` `set` `config`/`session` `{id, title, at}`. The newest session wins.
-- A turn sent by the Desk page (it arrives as if from another session) starting
-  "Chief's Desk: Charlie just answered" is that signal: read the card from the Desk (it is the record; the message is only a
-  nudge) and act on it as below.
-- Codex has no session id and skips this; the Desk then still nudges the last Claude
-  session that registered (harmless: the card is the record), or shows the failure with a
-  **Tell Claude now** button.
+## The Desk tells Claude itself (2026-10-09, connector-free since 9 Oct evening)
+Pressing **Send** (or **Tell Claude now** on an answered card) saves a tiny `poke.json`
+inside the Desk, which republishes it. Every Claude session watching the Desk is woken by
+that, so Charlie never types "done". (The first version used the Claude Code Remote
+connector; his settings blocked it, so it was dropped.)
+- **Session start:** `ArtifactComments` `watch` with the Desk's URL (one call; a publish
+  from this session also starts a watch).
+- A wake saying the Desk was republished elsewhere is that signal: read the `answered`
+  cards (the cards are the record; the wake is only a nudge) and act on them as below.
+- Codex can't watch the Desk: when only Codex is working, nothing is woken, and the next
+  Claude session picks the answers up at its start.
 
 ## Read answers (start of every session, and when he says "answered")
 1. `ArtifactData` `list` `decisions`. Act on `status: "answered"` cards

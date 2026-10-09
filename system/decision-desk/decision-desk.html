@@ -95,7 +95,7 @@ button:focus-visible,.tab:focus-visible,.opt:focus-within,textarea:focus-visible
 </div>
 
 <script>
-let filter = "open", docs = [], db = null, mcp = null, mcpWhy = "", drafts = {}, editing = {}, focus = null;
+let filter = "open", docs = [], db = null, art = null, artWhy = "", drafts = {}, editing = {}, focus = null;
 const told = document.getElementById("told");
 const mapEl = document.getElementById("map");
 const list = document.getElementById("list");
@@ -158,8 +158,9 @@ function card(d){
   }
   return h + `</article>`;
 }
-// Tell the Claude session that asked (its id is in config/session, written by Claude at
-// session start) through the Claude Code Remote connector, so Charlie never types "done".
+// Tell Claude without any connector (Charlie, 2026-10-09: the connector route was blocked).
+// Send saves a tiny poke.json inside this page; that republishes the Desk, and every Claude
+// session watching the Desk (the decide skill watches it at session start) is woken by it.
 function say(text, id){
   told.hidden = false;
   told.innerHTML = esc(text) + (id ? ` <button class="link" data-tell="${esc(id)}">Tell Claude now</button>` : "");
@@ -167,24 +168,19 @@ function say(text, id){
 }
 async function tellClaude(id){
   const d = docs.find(x => x.id === id) || {};
-  let session = null;
-  try { const snap = await db.doc("config/session").get(); session = snap.exists ? snap.data().id : null; }
-  catch { say("Sent and saved, but Claude wasn't told: the Desk couldn't look up which session to tell.", id); return; }
-  if (!session){ say("Sent and saved. No Claude session has registered with the Desk, so the next session reads it."); return; }
-  if (!mcp){ say("Sent and saved, but Claude wasn't told: " + (mcpWhy || "the Claude Code Remote connector isn't ready on this page yet."), id); return; }
+  if (!art){ say("Sent and saved, but Claude wasn't told: " + (artWhy || "this page can't tell Claude here yet."), id); return; }
   say("Sent. Telling Claude…");
   try {
-    await mcp.callTool("Claude Code Remote", "send_message", {session_id: session,
-      message: `Chief's Desk: Charlie just answered "${d.short || d.q || id}" (card ${id}). Read it from the Desk with the decide skill and act on it.`});
-    say("Sent. Claude has been told.");
+    await art.publish({"poke.json": JSON.stringify({card: id, q: d.short || d.q || id, at: new Date().toISOString()})});
+    say("Sent. The Desk pinged any open Claude session; if none is open, the next one reads it.");
   } catch(err){
     const c = err?.code;
     say("Sent and saved, but Claude wasn't told: " + (
-      c === "not_in_manifest" || c === "approval_required" ? "this page isn't allowed to message Claude yet. Press Tell Claude now and choose Allow."
-      : c === "server_not_connected" || c === "needs_reauth" ? "Claude Code Remote isn't connected (claude.ai Settings, Connectors)."
-      : c === "blocked_by_policy" ? "its send_message tool is turned off. Tap Open connector settings at the top, allow it, then press Tell Claude now."
-      : c === "tool_error" ? "Claude Code Remote said no (" + (err.message || "no reason given") + "). If that session has finished, the next one reads it."
-      : "Claude couldn't be reached just now (" + (c || "no reason given") + ")."), id);
+      c === "conflict" ? "the Desk was updating at that moment. Press Tell Claude now again."
+      : c === "not_writer" || c === "not_granted" ? "this view of the Desk can't tell Claude. Open it signed in as you."
+      : c === "rate_limited" ? "too many in a row. Wait a minute, then press Tell Claude now."
+      : c === "capability_disabled" ? "this app can't do it here. Open the Desk at claude.ai in a browser and press Tell Claude now."
+      : "Claude couldn't be reached just now (" + (c || "no reason given") + ")."), ["not_writer","not_granted","capability_disabled","capability_removed","not_declared"].includes(c) ? null : id);
   }
 }
 function draftFrom(id){
@@ -236,9 +232,9 @@ render();
     docs = snap.docs.map(x => ({id: x.id, ...x.data()}));
     render();
   }, () => { list.innerHTML = '<div class="empty">Couldn\'t load the questions. Reload the page to try again.</div>'; });
-  // The connector loads after the questions, so it can never hold them up.
-  try { window.claude.use("mcp").then(m => { mcp = m; if (!m) mcpWhy = "this page can't use the Claude Code Remote connector here."; },
-    err => { mcpWhy = "the Claude Code Remote connector didn't load (" + (err?.code || "unknown") + ")."; }); }
-  catch { mcpWhy = "the Claude Code Remote connector didn't load."; }
+  // Loaded after the questions, so telling Claude can never hold them up.
+  try { window.claude.use("artifact").then(a => { art = a; if (!a) artWhy = "this page can't tell Claude here."; },
+    err => { artWhy = "telling Claude didn't load (" + (err?.code || "unknown") + ")."; }); }
+  catch { artWhy = "telling Claude didn't load."; }
 })();
 </script>
