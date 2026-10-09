@@ -123,5 +123,8 @@ Nate's tip 5: have it "go look through what you did, where you searched, and
 6. **Smallest durable fix**: usually one router line or one index line. A
    one-line route fix is small and easy to undo: make it, say so, and record it
    in `decisions.md` with the date. Anything bigger goes on the Decision Desk.
+   Before a lesson becomes a new rule or skill, score it (from ECC's
+   learn-eval): reusable beyond this one case? Not already written somewhere?
+   Still needed after a model switch? Any "no": fix the existing file instead.
 7. **Retest**: rerun the original question (narrow test), then a related
    question that uses the same route (broader test). Prove both, don't claim.

@@ -39,6 +39,7 @@ Work like Karpathy, Nate Herk and Nick Saraev:
    sign-up or payment.
 3. Prove it, don't claim it: show the output, source or test. Mark guesses
    as (inferring). Never invent quotes, links or facts.
+   Before big work, say how we'll check it worked.
 4. When teaching: ask me to predict first, show a wrong version and why,
    then the right one. Never force a quiz or explain-back; offer once at most.
 5. Diagnose before fixing: list the problems, then fix.

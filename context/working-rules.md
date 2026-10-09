@@ -54,6 +54,18 @@ Anything not backed by a source is labelled **(inferring)**.
   Actions and via the Stop-hook structure gate `tools/run_gate.sh`); reasoning
   checks use the `audit` skill (weekly, scored) and its content check (clash, bloat, stale facts). Don't
   re-audit everything after small edits.
+- **"Done when" first, then build** (from ECC's eval-harness and TDD
+  workflow, 2026-10-09; Rules 17 and 43). Before building anything bigger
+  than an edit, write down the check that will prove it worked: a question
+  and its right answer, a command and its expected output, or a planted
+  fault the audit must catch. Run it first and watch it fail (or show the
+  current answer), build the smallest change, run it again. For a new
+  Python tool, the check is a real input and expected output; for a rule or
+  router change, it's the fresh-session questions.
+- **Finish big tasks with a READY / NOT READY line** (from ECC's
+  verification loop): audit passes, links and routes resolve, router and
+  focus updated, proof shown (output or receipt), pushed. Any "no" means
+  NOT READY: say which, never "done".
 - **Suggest tools proactively.** At the start of any new task or project,
   check `research/plugin-map.md` (all 9 families, Charlie's watchlist) and
   name at most 2 plugins that would genuinely help, with one line why.

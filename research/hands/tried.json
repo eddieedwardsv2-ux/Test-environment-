@@ -9,5 +9,16 @@
   "adds": "21 skills, 19 MB, about 6,000 characters of skill descriptions every message if kept in the repo; its CLI also put 10 skills in ~/.claude/skills on the cloud machine (wiped when the session ends)",
   "verdict": "later",
   "why": "Charlie couldn't play the video in the app, so the result wasn't clear to him; revisit when making the first short (2026-10-09)"
+ },
+ {
+  "name": "ECC",
+  "date": "2026-10-09",
+  "task": "Research only: read its plan, eval, TDD and verification-loop files in a scratch copy (nothing run)",
+  "result": "A 293-skill coding kit with hooks on 7 events; three of its ideas fit us and were written into our rules",
+  "time": "about 20 minutes",
+  "cost": "free (MIT)",
+  "adds": "would add about 1,000 SKILL.md files and 7 hooks; adopted instead: 3 short rules",
+  "verdict": "pending",
+  "why": "Recommend principles only (review: research/hands/reviews/ecc-2026-10-09.md); Charlie's verdict on the Decision Desk"
  }
 ]
