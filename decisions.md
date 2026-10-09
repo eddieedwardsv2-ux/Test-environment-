@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: audit fixes, Charlie picked fix 1 only
+Current-focus's two stale next-step blocks ("answer middle-go", "Desk item pending") replaced by one current one (AIOS-a7c3-01 closed). Fixes 2-5 (ChatGPT export, two labels, transcripts concurrency guard, connections dates) left open by his choice; Desk card closed.
+
 ## 2026-10-09 — Quality-first usage and actionable Hands review
 Charlie asked to continue implementation after the connected GitHub write
 route succeeded. Added Search / Check / Implement and notes to the Hands

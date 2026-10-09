@@ -16,21 +16,15 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (latest request, 2026-10-09):** Hands review controls are live
-(Claude fixed the load bug, republished, proved a save/read/close round trip).
-Next: run held-out real model comparisons under `system/model-usage.md`.
-The Friday audit failed at 08:59 on the usage limit; re-run it (Desk card).
-The scoped repository check and one synthetic model smoke test are recorded
-in `audits/2026-10-09-usage-hands-check.md`; no cheaper route is promoted yet.
-GitHub first; Notion replaces Drive (see `AGENTS.md`). The older Desk item
-below remains pending; no answer is assumed.
-
-**Previous status (2026-10-09, Charlie):** the Hands Brain is done back to W38 (21 videos, 117 tools,
-presenters' opinions on each; new videos come in through the Saturday routine). The
-end-to-end test passed in Claude (`audits/evidence/2026-10-09-end-to-end/`; Codex waits for
-the Mac). **Next step (2026-10-09):** Charlie answers "middle-go" on the Decision Desk (one
-YouTube ingester, elder names by job: `brainstorms/2026-10-09-middle-plans.md`), then build
-what he picks. Full plan: `context/handoff.md`, section 5. His thinking: `brainstorms/2026-10-09-charlies-thoughts.md`.
+**Next step (2026-10-09, after the re-run audit):** both middle plans are built
+(one `youtube-ingest` skill; elders named by job: Architect, Quartermaster,
+Chief's Desk), and every Desk card is answered or closed. The re-run audit scored
+64/100 (`audits/audit-2026-10-09-112239-a7c3.md`); Charlie chose fix 1 only (this
+note); fixes 2-5 stay open in that report. Next to build, in order: real model
+comparisons under `system/model-usage.md` (no cheaper route is promoted yet), then
+the journey video (Mix style). Full list: `context/todo.md`. Nate's six-phrases DM
+is ingested (concept 44, Rule 44: finish with VERIFIED / NOT VERIFIED).
+GitHub first; Notion replaces Drive (see `AGENTS.md`). Nothing is waiting on the Desk.
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
 the base is decided (Nate's kit plus our three additions). Next: test it on the
