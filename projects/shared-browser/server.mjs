@@ -116,7 +116,7 @@ export async function createApp({dataDir,adminToken,allowHttp=false,cdp='http://
     }
     if(path==='/api/text'&&req.method==='POST'){
      const input=await body(req);if(transitioning||owner!=='human')throw fail(409,'Choose My turn first');
-     const expected=lease;await sequential(async()=>{const p=await page();if(transitioning||owner!=='human'||lease!==expected)throw fail(409,'Control changed');await p.keyboard.insertText(String(input.text||'').slice(0,10000));});return json(200,{ok:true});
+     const expected=lease;await sequential(async()=>{const p=await page();if(transitioning||owner!=='human'||lease!==expected)throw fail(409,'Control changed');const focused=await Promise.all(p.frames().map(frame=>frame.evaluate(()=>{let e=document.activeElement;while(e?.shadowRoot?.activeElement)e=e.shadowRoot.activeElement;return document.hasFocus()&&!!e&&(e.isContentEditable||((e.tagName==='TEXTAREA'||(e.tagName==='INPUT'&&['text','search','email','password','url','tel','number'].includes(e.type)))&&!e.readOnly&&!e.disabled));}).catch(()=>false)));if(!focused.some(Boolean))throw fail(409,'Tap a text field in the browser, then press Send again. Your typing is kept here.');if(transitioning||owner!=='human'||lease!==expected)throw fail(409,'Control changed');await p.keyboard.insertText(String(input.text||'').slice(0,10000));});return json(200,{ok:true});
     }
     if(path==='/api/screen')throw fail(404,'Use the authenticated display stream');
     throw fail(404,'Unknown API route');

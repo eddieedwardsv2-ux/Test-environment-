@@ -99,3 +99,30 @@ test('a stream revoked by AI handoff cannot send input after a later human hando
   await delay(100);
   assert.equal(received, '', 'revoked stream data must never reach the VNC input socket');
 });
+
+test('phone typing reports an unfocused field instead of silently dropping text', async t => {
+  const profileDir=await mkdtemp(join(tmpdir(),'charlie-text-profile-'));
+  const port=await unusedPort();
+  const context=await chromium.launchPersistentContext(profileDir,{executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox',`--remote-debugging-port=${port}`]});
+  t.after(async()=>{await context.close();await rm(profileDir,{recursive:true,force:true});});
+  const page=context.pages()[0];await page.setContent('<input id="field">');
+  const f=await fixture(t,{cdp:`http://127.0.0.1:${port}`});
+  const result=await f.request('/api/text',{text:'Keep my typing'},f.cookie);
+  assert.equal(result.status,409);
+  assert.equal(await page.locator('#field').inputValue(),'');
+  await page.locator('#field').focus();
+  assert.equal((await f.request('/api/text',{text:'Keep my typing'},f.cookie)).status,200);
+  assert.equal(await page.locator('#field').inputValue(),'Keep my typing');
+});
+
+test('phone typing accepts a focused input inside an open shadow root', async t => {
+  const profileDir=await mkdtemp(join(tmpdir(),'charlie-shadow-profile-'));
+  const port=await unusedPort();
+  const context=await chromium.launchPersistentContext(profileDir,{executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox',`--remote-debugging-port=${port}`]});
+  t.after(async()=>{await context.close();await rm(profileDir,{recursive:true,force:true});});
+  const page=context.pages()[0];await page.setContent('<div id="host"></div>');
+  await page.evaluate(()=>{const root=document.querySelector('#host').attachShadow({mode:'open'});root.innerHTML='<input id="field">';root.querySelector('#field').focus();});
+  const f=await fixture(t,{cdp:`http://127.0.0.1:${port}`});
+  assert.equal((await f.request('/api/text',{text:'Web component typing'},f.cookie)).status,200);
+  assert.equal(await page.locator('#field').inputValue(),'Web component typing');
+});

@@ -17,6 +17,7 @@ try{
  const rect=await p.locator('#screen canvas').boundingBox();assert.ok(rect.width>250&&rect.height>400,'live video fills phone');
  const input=await tab.locator('#keyboard-test').boundingBox();
  await p.touchscreen.tap(rect.x+(input.x+input.width/2)*rect.width/430,rect.y+(input.y+input.height/2)*rect.height/720);
+ await tab.waitForFunction(()=>document.activeElement===document.querySelector('#keyboard-test'),null,{timeout:5000,polling:100});
  await p.locator('#keyboard').click();await p.locator('#type-text').fill('Phone keyboard works');await p.getByRole('button',{name:'Send',exact:true}).click();
  await tab.waitForFunction(()=>document.querySelector('#keyboard-test').value==='Phone keyboard works',null,{timeout:5000,polling:100});
  console.log('Touch and keyboard verified');await p.locator('#keyboard').click();

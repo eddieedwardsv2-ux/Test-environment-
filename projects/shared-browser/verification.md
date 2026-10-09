@@ -2,13 +2,17 @@
 
 **VERIFIED in this workspace:** implementation, not a Claude Guardian verdict.
 
-- `npm test`: 14/14 passed, 0 failed/skipped. Covers device approval, session
+- `npm test`: 16/16 passed, 0 failed/skipped. Covers device approval, session
   persistence/simulated 16 minutes, CSRF, WS denial, logout, takeover cancellation,
   stale stream revocation, source rate limit, full-stack readiness failure,
-  live-stream shutdown, and iPhone portrait/landscape controls.
+  live-stream shutdown, unfocused typing feedback, focused shadow inputs, and iPhone portrait/landscape controls.
 - `docker exec charlie-stack-test npm run test:live`: exited 0 after testing real
   touch, phone keyboard, same-tab Codex action/screenshot, human takeover,
   reconnect, retained test cookie, screenshots and complete fixture cleanup.
+- A fresh post-restart live run exposed typing before asynchronous VNC focus.
+  The isolated regression failed (200 after dropping text), then passed: the
+  gateway now returns409 until a text field is focused and the phone keeps the
+  draft for retry. The live check waits for actual remote field focus.
 - Actual full service stop/start retained an approved device session and a
   persistent Chromium test cookie. External `https://example.com` loaded as
   "Example Domain" with normal certificate verification, including after restart.

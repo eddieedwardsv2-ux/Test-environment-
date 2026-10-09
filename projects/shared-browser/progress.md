@@ -27,3 +27,11 @@
   restart. Cloud install/start scripts executed and configuration draft saved.
 - Public hosting blocked: quick tunnel direct connection refused, proxy 403.
   Asked once for Charlie's existing host; external deployment remains pending.
+
+- Post-restart typing timing: live check failed before remote field focus.
+  New regression failed on silently dropped text, then passed with explicit
+  unfocused-field feedback and retained phone draft. Full suite now15/15; live
+  check waits for real touch focus rather than assuming immediate delivery.
+- Reviewer reproduced an open-shadow input rejected as unfocused. New focused
+  shadow-input regression failed409; descending the active shadow roots fixes
+  that compatibility case while keeping unfocused-field feedback.
