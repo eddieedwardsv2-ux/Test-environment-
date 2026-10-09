@@ -1,7 +1,8 @@
 """Hands Brain, step 4: merge every week file into research/hands/tools.json,
 rank each category, mark what newer tools have replaced, and build the site
 research/hands/site/hands.html from research/hands/site/template.html.
-Run: python3 tools/build_hands.py   then republish the page (system/pages.md)."""
+Run: python3 tools/build_hands.py   then republish the page (system/pages.md).
+`--check` writes nothing and exits 1 if tools.json is out of date (the audit uses it)."""
 import json, re
 from pathlib import Path
 
@@ -27,7 +28,8 @@ for f in (HANDS / "sources").glob("*/videos.json"):
         videos[v["id"]] = {"id": v["id"], "title": v["title"], "date": v.get("date"), "week": v.get("week"),
                            "duration": v.get("duration"), "creator": f.parent.name}
 weeks = sorted((json.loads(p.read_text()) for p in (HANDS / "weeks").glob("*.json")), key=lambda w: w["week"], reverse=True)
-order = [w["week"] for w in weeks]                        # newest first
+order = sorted({w["week"] for w in weeks}, reverse=True)   # newest first; a week can have several sources
+import math
 tools = {}
 for w in weeks:
     for t in w["tools"]:
@@ -40,7 +42,8 @@ for w in weeks:
         e["replaces"] |= set(t.get("replaces") or [])
         if t.get("check"): e["check"] = e["check"] or t["check"]
         if t.get("vs") and not e["vs"]: e["vs"] = t["vs"]
-        e["sightings"].append({"week": w["week"], "video": t.get("video"), "t": t.get("t", ""),
+        if t.get("installs"): e["installs"] = max(e.get("installs", 0), int(t["installs"]))
+        e["sightings"].append({"week": w["week"], "source": w.get("source", "The Next New Thing"), "video": t.get("video"), "t": t.get("t", ""),
                                "shown": t.get("shown", ""), "quote": t.get("quote", "")})
 
 latest = order[0] if order else None
@@ -49,9 +52,10 @@ for e in tools.values(): names.setdefault(norm(e["name"]), e)
 for e in tools.values():
     seen = sorted({s["week"] for s in e["sightings"]}, reverse=True)
     e["weeks"], e["first"], e["last"] = seen, seen[-1], seen[0]
-    e["mentions"] = len({s["video"] for s in e["sightings"]})
+    e["mentions"] = len({s["video"] or s["source"] for s in e["sightings"]})
     age = order.index(e["last"])
-    e["score"] = round(3 * e["for_charlie"] + 2 * e["mentions"] + max(0, 3 - age) + PRICE_BONUS.get(e["price"], 0), 1)
+    e["score"] = round(3 * e["for_charlie"] + 2 * e["mentions"] + max(0, 3 - age) + PRICE_BONUS.get(e["price"], 0)
+                       + min(3, max(0, math.log10(e.get("installs", 1)) - 3)), 1)   # skills.sh installs: 10k=1, 100k=2, 1M+=3
     e["replaced_by"] = None
 for e in tools.values():                                  # newer tool says it replaces an older one
     for old in e["replaces"]:
@@ -66,7 +70,12 @@ ranked = sorted(tools.values(), key=lambda e: (e["status"] == "replaced", -e["sc
 for c in CATEGORIES:
     for i, e in enumerate([e for e in ranked if e["category"] == c], 1): e["rank"] = i
 
-(HANDS / "tools.json").write_text(json.dumps(ranked, indent=1, ensure_ascii=False))
+import sys
+new_json = json.dumps(ranked, indent=1, ensure_ascii=False)
+if "--check" in sys.argv:                                  # used by tools/audit.py: is the site up to date?
+    old = (HANDS / "tools.json").read_text() if (HANDS / "tools.json").exists() else ""
+    sys.exit(0 if old == new_json else 1)
+(HANDS / "tools.json").write_text(new_json)
 # ENATE (Nate's brain) concepts, and links from tools to them (written by a helper; optional).
 concepts = [{"n": int(m.group(1)), "title": m.group(2)} for m in
             re.finditer(r"^\*\*(\d+)\. (.+?)\*\*$", (ROOT / "research/nate-herk/brain/concepts.md").read_text(), re.M)]
@@ -74,7 +83,8 @@ def opt(name, empty):
     f = HANDS / name
     return json.loads(f.read_text()) if f.exists() else empty
 data = {"tools": ranked, "concepts": concepts, "enate": opt("enate-links.json", {}),
-        "nate": opt("nate-mentions.json", []), "weeks": [{"week": w["week"], "summary": w.get("summary", ""), "videos": w.get("videos", [])} for w in weeks],
+        "nate": opt("nate-mentions.json", []), "weeks": [{"week": wk, "summary": " ".join(w.get("summary", "") for w in weeks if w["week"] == wk),
+                   "videos": [v for w in weeks if w["week"] == wk for v in w.get("videos", [])]} for wk in order],
         "videos": videos, "categories": CATEGORIES}
 tpl = (HANDS / "site/template.html").read_text()
 (HANDS / "site/hands.html").write_text(tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))

@@ -6,7 +6,9 @@ description: Feeds the Hands Brain (tools, skills, plugins, MCPs, repos) from a 
 # Hands ingest (newest video first, then backfill)
 
 The Hands Brain (`research/hands/`) learns and teaches the tools people use
-with AI. First source: The Next New Thing (weekly round-ups). Same idea as
+with AI. Sources: The Next New Thing (weekly round-ups) and the skills.sh leaderboard
+(`python3 research/hands/skills_sh.py`, one snapshot a week, classified into
+`weeks/<YYYY-Www>-skills-sh.json` with `"source": "skills.sh"` and each skill's `installs`). Same idea as
 `brain-ingest`, but the unit is a **tool**, and newer tools can replace older ones.
 
 ## Order (Charlie, 2026-10-09)

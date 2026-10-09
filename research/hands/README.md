@@ -4,8 +4,9 @@ The OS's "hands": every tool, skill, plugin, MCP server and repo worth
 knowing, learned week by week and ranked so the best one to use **now** is
 always on top. Started 2026-10-08 (Charlie). Site: see `system/pages.md`.
 
-**First source:** The Next New Thing (weekly round-ups), newest week first.
-More sources later (e.g. the Anthropic community marketplace), same pipeline.
+**Sources:** The Next New Thing (weekly round-ups), newest week first, and the
+skills.sh leaderboard (most-installed agent skills; `skills_sh.py`). More later
+(e.g. the Anthropic community marketplace), same pipeline.
 
 | File | What |
 |---|---|
@@ -20,5 +21,6 @@ More sources later (e.g. the Anthropic community marketplace), same pipeline.
 with its link and chapter time, so the tool list costs nothing and isn't
 rate-limited. Transcripts (free, slower) are only needed for what each video
 actually *shows*, and they download in the background while earlier weeks are
-classified. Ranking: Charlie's relevance × 3, mentions × 2, recency, price.
+classified. Ranking: Charlie's relevance × 3, mentions × 2, recency, price, and for skills.sh
+skills up to 3 points for installs (10k = 1, 100k = 2, 1M+ = 3).
 Ask it questions with the `hands-brain` agent.

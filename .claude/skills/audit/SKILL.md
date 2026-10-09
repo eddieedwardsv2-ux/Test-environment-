@@ -104,5 +104,9 @@ The audit is read-only toward inspected systems: no repairs, file moves, install
   - `commands.md`: each check run, the exact command or tool call, the date-time (UTC) and its real output, trimmed to what proves the point. Redact first: connector reads (Gmail, Calendar, Drive) record only "read OK", the date and the tool name, never inbox counts, file names, titles or addresses.
   - Screenshots: for every page or visual output the audit covers, run `python3 tools/screenshot.py <local page source> audits/evidence/<run-id>/` (phone and desktop), then look at the PNGs before scoring. Screenshot the local source file, not a signed-in claude.ai page or any connector screen, so nothing private gets in.
   - In the report, each criterion score and each "verified" finding names its receipt (e.g. `commands.md#c2`, `brain-map-phone.png`). A score with no receipt counts as unverified.
+- **Parts the script can't see** (check them by hand each weekly run, receipts in `commands.md`):
+  - Decision Desk (`decide` skill): list its `decisions` cards; flag any "answered" card not yet closed, and any card open over 7 days.
+  - Every link in `system/pages.md` opens (Artifact `read` or `list`), and each page was rebuilt after its data last changed.
+  - The model: write the model this run used at the top of the report; if it differs from the last report, also run the content check (Rule 41).
 - **Content check** (four failure modes, stale facts, duplicates, backtrack after a miss): read `content-check.md` in this folder. Use it alone after a wrong answer or a model switch, or inside the weekly run.
 - Adapted from Nate Herk's AIS-OS kit (MIT, see `THIRD-PARTY-NOTICES.md`).

@@ -2,7 +2,8 @@
 
 Runs on every push via .github/workflows/audit.yml, and locally with
 `python3 tools/audit.py`. Read-only: it reports problems, it never fixes them.
-Checks: routing integrity, index truth, freshness, queue health.
+Checks: routing integrity, index truth, freshness, queue health, quotes
+(standard, creator brains, Hands Brain), Hands Brain schema and freshness, context size.
 Exit code 1 if any ERROR (so GitHub shows a red cross); WARNs don't fail.
 """
 import re
@@ -156,6 +157,55 @@ for doc in [ROOT / "system/standard-ai-os-v1.md"]:
 for page in ROOT.glob("research/*/brain/*.md"):
     for f in check_linked(page)[1]:
         err(f)
+
+# 6. Hands Brain (research/hands/): week files follow the schema, every quote is
+#    verbatim in its transcript, ENATE links point at real concepts, and the
+#    built list matches the week files (else: rebuild and republish the site).
+import json, subprocess
+hands = ROOT / "research/hands"
+if hands.exists():
+    src = (ROOT / "tools/build_hands.py").read_text()
+    cats = set(re.findall(r'"([^"]+)"', src[src.index("CATEGORIES"):src.index("]", src.index("CATEGORIES"))]))
+    flat = lambda s: " ".join(re.sub(r"\*\*\[[^\]]*\]\([^)]*\)\*\*", " ", s).replace("’", "'").replace("“", '"').replace("”", '"').lower().split())
+    texts = {}
+    def transcript(vid):
+        if vid not in texts:
+            f = list(ROOT.glob(f"research/*/*--{vid}-transcript.md"))
+            texts[vid] = flat(f[0].read_text()) if f else None
+        return texts[vid]
+    n_q = 0
+    for wf in sorted((hands / "weeks").glob("*.json")):
+        rel = wf.relative_to(ROOT)
+        try: wk = json.loads(wf.read_text())
+        except ValueError as e: err(f"{rel}: not valid JSON ({e})"); continue
+        for tl in wk.get("tools", []):
+            if re.search(r"zapier|monid", tl.get("name", ""), re.I): warn(f"{rel}: {tl['name']} is a show sponsor, not a tool (hands-ingest rule)")
+            if tl.get("category") not in cats: err(f"{rel}: {tl.get('name')} has unknown category {tl.get('category')!r}")
+            q, vid = tl.get("quote", ""), tl.get("video")
+            if q and vid:
+                n_q += 1
+                body = transcript(vid)
+                parts = [x for x in re.split(r"…|\.\.\.", flat(q)) if len(x.strip(" .,")) > 3]
+                if body is None: err(f"{rel}: {tl['name']} cites {vid} but no transcript is saved")
+                elif not all(x.strip(" .,") in body for x in parts): err(f"{rel}: {tl['name']} quote not in transcript {vid}: \"{q[:50]}\"")
+    nm = hands / "nate-mentions.json"
+    for m in (json.loads(nm.read_text()) if nm.exists() else []):
+        n_q += 1
+        body = transcript(m.get("video"))
+        if body is None or flat(m.get("quote", "")).strip(" .,") not in body:
+            err(f"research/hands/nate-mentions.json: {m.get('name')} quote not found in {m.get('video')}")
+    n_concepts = len(re.findall(r"^\*\*\d+\. ", (ROOT / "research/nate-herk/brain/concepts.md").read_text(), re.M))
+    el = hands / "enate-links.json"
+    for k, arr in (json.loads(el.read_text()) if el.exists() else {}).items():
+        for x in arr or []:
+            if not 1 <= int(x.get("concept", 0)) <= n_concepts: err(f"research/hands/enate-links.json: {k} links to concept {x.get('concept')}, which doesn't exist")
+    if subprocess.run([sys.executable, str(ROOT / "tools/build_hands.py"), "--check"], capture_output=True).returncode:
+        warn("research/hands/tools.json is out of date with the week files: run python3 tools/build_hands.py, then republish the Hands Brain")
+
+# 7. Context doctor (tools/context_check.py, our /doctor): what loads every message.
+cc = subprocess.run([sys.executable, str(ROOT / "tools/context_check.py")], capture_output=True, text=True).stdout
+for line in cc.split("Warnings:")[1].splitlines() if "Warnings:" in cc else []:
+    if line.strip().startswith("- "): warn("context: " + line.strip()[2:])
 
 for w in warns:
     print("WARN ", w)
