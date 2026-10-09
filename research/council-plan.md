@@ -5,6 +5,9 @@ he can ask them side by side, see where they agree and where they don't,
 then decide. It grows out of the parked "council" (Nick, Nate, Karpathy) in
 `context/current-focus.md`.
 
+Not the same as each Elder's own **expert council and guardian** (plan,
+not built): `brainstorms/2026-10-09-elder-councils-plan.md`.
+
 ## The members (now)
 | Member | Knows | Voice file | State |
 |---|---|---|---|
