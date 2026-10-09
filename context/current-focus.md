@@ -31,8 +31,10 @@ skill (Canva connected and proven); Small Business's 44 skills mapped in the Qua
 (`ListPlugins`), test each once with `try-tool`; then the journey video (Mix style).
 GitHub first; Notion replaces Drive (see `AGENTS.md`).
 Plan written, not built (2026-10-09): each Elder gets an expert council and a
-guardian, Quartermaster first (`brainstorms/2026-10-09-elder-councils-plan.md`);
-its 8 open questions go on the Chief's Desk next Claude session.
+guardian, Quartermaster first (`brainstorms/2026-10-09-elder-councils-plan.md`).
+Section 3b added: a mini-router and mini-desk per Elder, and anti-"please me"
+checks. Its questions are on the Chief's Desk as 3 cards (`elder-pilot-go`,
+`elder-pushback`, `elder-two-desks`); the pilot starts once they're answered.
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
 the base is decided (Nate's kit plus our three additions). Next: test it on the

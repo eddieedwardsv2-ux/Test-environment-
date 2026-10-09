@@ -16,7 +16,7 @@ deleting them (history stays in `decisions.md`).
 ## Next to build (in order, after the Desk answers)
 2. [ ] Model comparisons on real work (comparisons 1-2 done 9 Oct: both 9/9; Desk card "promote-sonnet" for the two advisors) before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
 3. [ ] Journey video: improve the Mix style (chosen 9 Oct), then a proper video file with voice-over
-4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker"); each Elder's own expert council and guardian: `brainstorms/2026-10-09-elder-councils-plan.md`
+4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker"); each Elder's own expert council, guardian, mini-router and mini-desk: `brainstorms/2026-10-09-elder-councils-plan.md` (3 Desk cards open)
 6. [ ] Set-up kit (paused): first friend or family set-up from plan v0.4
 7. [ ] First YouTube short
 

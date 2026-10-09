@@ -100,7 +100,7 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
   new videos): his method for organising the OS, in `research/nate-herk/brain/`.
   Elders by job (head = this router, middle = the council, hands = skills;
   Charlie = the Chief): `brainstorms/2026-10-09-middle-plans.md`; plan for each Elder's
-  expert council and guardian (not built): `brainstorms/2026-10-09-elder-councils-plan.md`. `nick-brain` agent (Nick Saraev's view; parked).
+  expert council, guardian, mini-router and mini-desk (not built): `brainstorms/2026-10-09-elder-councils-plan.md`. `nick-brain` agent (Nick Saraev's view; parked).
 
 When a file moves, a folder is added or a project starts, update this router
 (and that folder's README) in the same turn. A stale pointer is worse than none.
