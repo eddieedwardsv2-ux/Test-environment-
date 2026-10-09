@@ -85,6 +85,18 @@ Anything not backed by a source is labelled **(inferring)**.
   given only Charlie's ask, the "done when" list, the files or commits and the
   draft report (never the maker's reasoning). At most 2 fix rounds, then it
   goes to Charlie as NOT READY with the findings. Small edits don't need it.
+  **Enforced (2026-10-09):** a commit changing 4+ hand-written files needs, in it
+  or a later commit, `Checked-by: guardian (READY) audits/guardian/<date>-<slug>.md`
+  (or NOT READY), with the Guardian's report saved word for word at that path.
+  The report must be added (not edited) by that commit, live in `audits/guardian/`
+  and open with the same verdict; a later genuine check clears an earlier miss (history is never
+  rewritten). `tools/audit.py` errors otherwise. Limits: it runs locally and in the Stop hook only (GitHub's shallow clone skips
+  it); the hook sends a turn back once, and only after the commit exists; it proves
+  a fresh report with a matching verdict was filed, not that the Guardian wrote it.
+  Order: build; run the Guardian on the uncommitted diff; fix (2 rounds max); save
+  its report; commit with the line; push; prove the push yourself (`git ls-remote`).
+  Codex can't run the Guardian: it commits, leaves the error and notes the commit under
+  "Waiting on Charlie"; the next Claude session runs the Guardian and clears it.
 - **Nate's end process for big jobs** (iTY8Q449YNQ 22:25-25:27, his `/goal`
   run): (1) an objective finish line first (files exist and aren't empty,
   counts, a command's output), not "make it good"; (2) one helper per
@@ -94,7 +106,7 @@ Anything not backed by a source is labelled **(inferring)**.
   (his is `/goal`'s evaluator model; ours is the Guardian). "it literally
   separates the worker from the judge" (22:55). Our Guardian is a fresh context
   and persona on the same model, not a different model as Nate describes.
-  Nothing forces it to run yet: the worker chooses to call it. Not checked here yet: whether this
+  Since 2026-10-09 the audit requires a filed Guardian report for big commits (above, with its limits). Not checked here yet: whether this
   environment has Claude Code's own `/goal` command; the steps work without it.
 - **Don't just please Charlie** (Charlie, 2026-10-09; Nate iTY 0:32-2:36: Claude
   is "tuned to make you feel productive", and gets more agreeable the more it

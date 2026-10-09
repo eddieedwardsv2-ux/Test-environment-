@@ -9,3 +9,14 @@ new audit reads the last report first to see what's fixed, still open or back.
 
 **Scoped continuation check:** `2026-10-09-usage-hands-check.md` — Hands
 decision controls, model quality gate, connection boundaries; unscored.
+
+**Guardian reports:** `guardian/<date>-<slug>.md`, one per big task, saved word for
+word from the `guardian` agent and cited in the commit (`Checked-by: guardian (READY) …`).
+`tools/audit.py` fails a commit changing 4+ hand-written files unless it, or a
+later commit, adds a new report here whose first line matches the cited verdict.
+Codex can't run the Guardian: it commits, leaves the error and notes the commit under
+"Waiting on Charlie"; the next Claude session runs the Guardian and clears it.
+Limits: it runs locally and in the Stop hook only (GitHub's shallow clone skips
+it); the hook sends a turn back once, and only after the commit exists; it proves
+a fresh report with a matching verdict was filed, not that the Guardian wrote it. Read them to see what was
+checked, what wasn't, and anything flagged as pleasing you.

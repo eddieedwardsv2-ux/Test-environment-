@@ -51,6 +51,15 @@ First line: **READY** or **NOT READY**. Then:
   always something a check can't see.
 - **Pleasing check:** "none found" or the lines you flagged.
 
-READY needs every "done when" item proved and no blocking finding. Rounds:
+READY needs every "done when" item proved and no blocking finding.
+Your report is saved word for word in `audits/guardian/` and cited in the
+commit (`Checked-by: guardian (READY) <report>` or `(NOT READY)`); `tools/audit.py`
+checks the report was added (not edited) by that commit and opens with the same
+verdict on its first line. Codex can't run the Guardian: it commits, leaves the error and notes the commit under
+"Waiting on Charlie"; the next Claude session runs the Guardian and clears it. Limits: it runs locally and in the Stop hook only (GitHub's shallow clone skips
+it); the hook sends a turn back once, and only after the commit exists; it proves
+a fresh report with a matching verdict was filed, not that the Guardian wrote it.
+You usually check the work before it is committed, so "pushed" is not yours to
+prove: list it under NOT VERIFIED. Rounds:
 the maker fixes and asks you again, at most 2 fix rounds; after that the work
 goes to Charlie as NOT READY with your findings, never as "done".

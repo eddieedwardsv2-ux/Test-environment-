@@ -16,6 +16,13 @@ def edit(rel, fn):
 def week(rel, fn):
     p = work / rel; d = json.loads(p.read_text()); fn(d); p.write_text(json.dumps(d))
 
+def big_unchecked_commit():
+    # The copy has no Git, so give it a history: a base commit, then a 5-file change with no Guardian line.
+    g = lambda *a: subprocess.run(["git", "-c", "user.name=drill", "-c", "user.email=drill@example.com", *a], cwd=work, check=True, capture_output=True)
+    g("init", "-q"); g("add", "-A"); g("commit", "-q", "-m", "base")
+    for n in range(5): (work / f"context/drill-{n}.md").write_text("drill\n")
+    g("add", "-A"); g("commit", "-q", "-m", "a big change, self-declared done")
+
 def first_quoted(d):
     return next(t for t in d["tools"] if t.get("quote") and t.get("video"))
 
@@ -42,6 +49,7 @@ FAULTS = [
  ("a Hands week file corrupted", lambda: (work / "research/hands/weeks/2026-W39.json").write_text("{not json"), "not valid json"),
  ("a bad line in the transcript queue", lambda: edit("research/transcript-queue.txt", lambda t: t + "\nthis is not a valid line\n"), "malformed"),
  ("the 3-month focus review missed", lambda: edit("context/current-focus.md", lambda t: re.sub(r"(Refresh by:\*?\*?\s*)\d{4}-\d{2}-\d{2}", r"\g<1>2020-01-01", t, count=1)), "refresh date"),
+ ("a big commit nobody checked (Guardian)", lambda: big_unchecked_commit(), "no guardian check"),
  ("a helper agent forced back onto Sonnet", lambda: edit(".claude/agents/video-tutor.md", lambda t: t.replace("model: inherit", "model: sonnet")), "model"),
 ]
 

@@ -39,11 +39,12 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   Brain, ENATE and the Hands Brain (`system/pages.md`).
 - **Prove what you report** (done, saved, pushed); on big tasks the `guardian`
   agent, not the worker, says READY. `tools/audit.py` runs on
-  every push and before an agent finishes.
+  every push and before an agent finishes (its Guardian check runs locally only).
 - **Same routes in Codex** (it has no helpers, hooks or Desk): open the agent
   file in `.claude/agents/` and follow it yourself (except `guardian`: Codex can't
-  check its own work, so big work ends NOT VERIFIED until a Claude session runs
-  the Guardian); run `python3 tools/audit.py` before you finish; put any question for Charlie under "Waiting on Charlie" in
+  check its own work, so big work ends NOT VERIFIED: commit it, leave the audit's
+  Guardian error, and note the commit under "Waiting on Charlie"; the next Claude
+  session runs the Guardian and clears it with a later commit); run `python3 tools/audit.py` before you finish; put any question for Charlie under "Waiting on Charlie" in
   `context/current-focus.md` (the next Claude session moves it to the Desk).
 - **This repo is public:** never write private, health, financial or client
   information here. Other people's details, AI OSs and session recordings

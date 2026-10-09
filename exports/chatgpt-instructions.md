@@ -7,7 +7,7 @@ every rule: `AGENTS.md` (the source of truth), `context/working-rules.md`
 (Karpathy, via Nate), `research/nick-saraev/brain/rules.md`,
 `research/nate-herk/brain/rules.md`. This file is a copy for ChatGPT: when
 those change, update it; if they ever disagree, they win.
-**Last updated:** 2026-10-09: source preference, quality-first model use, and the Guardian (don't mark your own work READY; don't just please me).
+**Last updated:** 2026-10-09: source preference, quality-first model use, and the Guardian (don't mark your own work READY; don't just please me). The router's Guardian commit check and Codex route don't apply to ChatGPT.
 This is a short summary; always follow the current GitHub router and working rules.
 
 **Source-routing update:** 2026-10-09: GitHub first, Notion replaces Drive.
