@@ -1,84 +1,73 @@
 # Session hand-off
 
-Overwritten at the end of each long session (Nate: one status file, rewritten
-each time, not a growing log). History lives in `decisions.md`.
+One status file, rewritten at the end of each long session (Nate). History:
+`decisions.md` and this file's Git history. Every agent (Claude, Codex,
+ChatGPT) reads this and updates it before stopping.
 
-**Written:** 2026-10-08, end of the long Standard AI-OS v1 session (about
-2,000 replies; it was handed off because each message was re-reading about
-340k tokens).
+**Written:** 2026-10-09, about 5am UK, end of the long 9 October session.
 
-## Where we started
-Build a "not yet personalised" Standard AI-OS v1 from Nate Herk's teaching,
-with a router (`AGENTS.md`, read via `CLAUDE.md`) that works before the
-knowledge base is added.
+## Where things stand
+- **Proven working (receipts in `audits/evidence/2026-10-09-new-session-backtest.md`):**
+  the router (fresh-session test 10/10), `tools/audit.py` on every push and
+  before finishing, the Decision Desk, the GitHub transcript queue, the tools
+  brain pipeline, the maps, quote checking.
+- **Not yet proven:** the two weekly routines ("Weekly AI OS audit" Fri 8:59 UK,
+  first run today; "Weekly Hands Brain update" Sat 8:47 UK), Codex in this repo,
+  the ChatGPT side, the Voice Gym (no rewrites yet), `try-tool` (one run), the
+  set-up kit on a real person.
+- **Theory only:** the "middle", the council of elders, model routing.
 
-## Decisions locked (details in `decisions.md`, newest first)
-- Router confirmed as final by Charlie; ends with "Keep this router current".
-- Nate's full channel audited (`audits/2026-10-08-nate-channel.md`); his brain
-  covers all 55 saved transcripts (concepts 1-38, rules 1-40).
-- Nate's AIS-OS kit adopted (github.com/nateherkai/AIS-OS, MIT): skills
-  `onboard`, `audit` (weekly, scored on the Four Cs), `link`, `level-up`,
-  newer `grill-me`; `connections.md`, `aios-intake.md`,
-  `references/3ms-framework.md`, `EXPANSIONS.md`.
-- 90-day priority: the AI OS set-up kit for beginners, built on Nate's kit
-  (`projects/ai-os-setup-kit/`). Nick and flashcards parked.
-- Charlie's working style: no forced quizzes or explain-backs; don't repeat a
-  question he hasn't answered; plain UK English; end with **Now:** /
-  **Done when:**.
+## Built on 9 October
+- **ENATE page** (Nate's brain on its own map) beside Charlie's Brain and the
+  Hands Brain. Rule: rebuild and republish all three after every run.
+- **Hands Brain:** 21 videos (14 Sep to 8 Oct), 117 tools; head-to-heads;
+  owned tools ticked; grey "skills.sh only" tag; presenters' opinions on 115
+  tools (they'd use 64, we disagree on 29) in `research/hands/voices/`.
+- **HyperFrames tried** (10-second title card, 14 s render), kept out of the repo;
+  new `try-tool` skill built from that run.
+- **Voice Gym** page (7 practice messages to rewrite), feeds `aios-intake.md` Q2.
+- **Cheaper ingest:** `brain-ingest` triages first; 4 Nate gap videos transcribed,
+  waiting in `research/nate-herk/triage.md` until Charlie says "ingest the queue".
+- **Fixes:** capability map now lists connectors and built-in skills (why tools
+  were missed); ENATE Rule 19 replaced by Rule 41; pipeline no longer drops videos.
+- All links: `system/pages.md`.
 
-## Running state
-- Branch `claude/standard-ai-os-v1` and `main` are identical; working tree
-  clean; `python3 tools/audit.py` shows 0 errors.
-- Saving pattern used: audit → commit (with attribution lines) → push branch
-  → if `main` has no new commits, push branch to `main`.
+## Charlie's thinking (in his words: `brainstorms/2026-10-09-charlies-thoughts.md`)
+1. **Learn in the most streamlined way**, save usage for when there's spare.
+2. **Find his voice:** the Voice Gym.
+3. **Newest first, older for context**; the tools brain will have more sources
+   (next: Anthropic's community plugin marketplace).
+4. **Council of elders:** each brain gets a voice (Nate's too, so "Nate" and
+   ENATE become one), named by its job, giving input on what's best, optimal,
+   safest and properly audited.
+5. **The "middle":** is the routing clear, and where is the brains' middle?
+   Also what are our head, hands and desk (desk = Mac-day context, later).
+   **Discuss before changing anything.**
+6. **One YouTube ingester skill** for every brain.
+7. **Nate's kit from his newest thesis backwards**, plus Boris Cherny (named in
+   10 of Nate's transcripts, the source of the "10x Claude" thesis) and Karpathy.
+8. **Claude and ChatGPT/Codex in step:** both must hear about each other's work
+   at every hand-off. Gap found: a non-Claude session changed `AGENTS.md` at
+   04:04 on 9 Oct with no log entry.
+9. **Is it working or theory?** See "Where things stand".
+10. **A kit for blank accounts:** core thesis, routes, workflows, skills and
+    plugins, no ingested data (`projects/ai-os-setup-kit/`, the 90-day priority).
+11. **Lessons to YouTube:** a pipeline from lessons to shorts, filming prompt
+    cards and edit plans; first short next.
+- Also saved, not started: ChatGPT's model-routing prompt
+  (`brainstorms/2026-10-09-model-routing-handoff.md`), the same theme as 5.
 
-## Open items (Charlie's call, no need to chase)
-1. 8 decisions in `audits/2026-10-08-nate-channel.md` (plan mode, allow-list,
-   auto mode, hand-off wording, private-info scan, challenge step, audit
-   additions, network check).
-2. `aios-intake.md`: Q2 writing samples (paste raw), Q5, first half of Q7.
-3. Offered, not yet agreed: rename `tools/` → `scripts/`; a one-command
-   `save` script.
+## Waiting on Charlie (Decision Desk, 7 open cards)
+next-big-step (what first; recommended: end-to-end test in Claude and Codex) ·
+elder-names · youtube-ingest · hands-window (stop at 4 weeks, or 3 months) ·
+hyperframes-verdict · hands-prices (24 unknown) · and his own steps: switch off
+9 claude.ai skills; add Higgsfield (`https://mcp.higgsfield.ai/mcp`) and finish
+Canva's sign-in (check `ListConnectors` before promising either).
 
 ## Pick up here
-**Written 2026-10-09** at the end of the long session that built: the trimmed
-rulebook (76 lines), the Decision Desk (`decide` skill), one `audit` skill with
-the content check, ENATE (Nate's brain: 69 videos, 43 concepts, 43 rules), the
-Hands Brain (`research/hands/`: The Next New Thing + skills.sh, 95 tools, map
-view, ENATE links), the OS Guide, the lesson slides, the audit review, and the
-Friday audit routine ("Weekly AI OS audit", 8:59 UK time). All links:
-`system/pages.md`. History: `decisions.md`.
-
-**Backtested 2026-10-09** (`audits/evidence/2026-10-09-new-session-backtest.md`):
-fresh-session test 10/10, "enate-merge" answered and done (clashes only).
-
-**First thing:** run the `decide` skill's "read answers" step.
-
-**Waiting on Charlie:** add Higgsfield as a custom connector
-(`https://mcp.higgsfield.ai/mcp`, guide `references/higgsfield-api.md`);
-finish the Canva sign-in. Both were still not done on 2026-10-09 01:50. Check
-`ListConnectors` first: if Higgsfield isn't listed, it hasn't been added yet,
-so don't promise it will appear in a new session.
-
-**After 09:00 Friday 9 Oct:** check the first "Weekly AI OS audit" run left a
-new dated report in `audits/`.
-
-**Suggestions offered, not yet chosen:** one home page for all pages; refresh
-the Watch Path and the two oldest lessons; mark Kit Compare as decided; a
-weekly Hands Brain routine; the round Brain map.
+1. Read the Desk answers (`decide` skill).
+2. Check the Friday audit left a new report in `audits/` (after 8:59 today).
+3. Talk through the "middle" with Charlie before acting on items 4 to 8.
+4. Then do what "next-big-step" says.
 
 Keep sessions short: hand off at about half the context window.
-
-## Charlie's thought for next session (discuss first, change nothing yet)
-Written 2026-10-09, about 3am. After looking at the maps, Charlie asked: is the
-routing clear, and where is our brains' "middle"? Bring it up at the start of
-the next session and talk it through with him before acting on it.
-
-## State at 2026-10-09, about 4:45am
-- Hands Brain complete back to W38 (21 videos, 117 tools), presenter opinions on every tool, voice summary in `research/hands/voices/`. New videos: the Saturday routine "Weekly Hands Brain update" (8:47 UK).
-- Desk cards open for Charlie: "hyperframes-verdict" (keep, use only when needed, or drop) and "hands-prices" (look up the 24 unknown prices).
-- His step: switch off 9 claude.ai skills (Settings, Skills; list in the closed "skill-trim" card).
-- Waiting for spare usage: 4 Nate gap videos are transcribed (`research/nate-herk/triage.md`); ingest only when he says "ingest the queue".
-- Saved, not started: the ChatGPT hand-off on model routing (`brainstorms/2026-10-09-model-routing-handoff.md`); Charlie's walk notes still to come.
-- First thing next session: read the Desk, then discuss his "middle of the brains" question (above) before changing anything.
-
