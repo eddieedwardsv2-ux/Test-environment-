@@ -70,8 +70,9 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 - Secure Higgsfield account sign-in and a supported writable connector route;
   re-check Intelligent UI/browser tool availability in the next session. Keep this
   workflow in Codex. Katana access and credits are still unverified.
-- Claude Guardian needs to review this four-file hand-off change; the saved commit
-  will be recorded here. Live pages must also be republished after the local rebuild.
+- Claude Guardian needs to review hand-off commit `975420c` (four documents plus
+  rebuilt pages). Post-commit audit: 1 missing-Guardian error, 4 publication warnings.
+  Republish Quartermaster, Reading Room, Brain dashboard and Nate-first map after review.
 
 ## Parking Lot
 - Journey video (parked by Charlie 2026-10-09): Mix draft with the growing brain is

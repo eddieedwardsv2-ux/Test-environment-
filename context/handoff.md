@@ -17,7 +17,7 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 - This cloud's Codex connector configuration is platform-managed/read-only. A separate CLI connection would not automatically add tools to this chat.
 - Intelligent UI and TinyFish control tools were not exposed here; no access to Charlie's signed-in screen. Re-check actual tools next session rather than assuming account-wide absence.
 - Researched TinyFish saved profiles and mobile alternatives. Recommended private home-screen web app reusing LinuxServer Chromium/Selkies; no app code, deployment, paid calls or video generated.
-- Hand-off rebuild completed: Quartermaster, Reading Room, Brain dashboard and Nate-first map need live republishing. Pre-commit audit: 0 errors, 4 publication warnings; post-commit Guardian review is still required.
+- Hand-off rebuild completed: Quartermaster, Reading Room, Brain dashboard and Nate-first map need live republishing. Pre-commit audit: 0 errors/4 warnings; after commit `975420c`: 1 missing-Guardian error/4 publication warnings. Review remains outstanding.
 
 ## Key files
 - `context/handoff.md`, `context/current-focus.md`, `context/todo.md`, `decisions.md`.
