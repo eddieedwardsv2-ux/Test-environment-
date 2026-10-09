@@ -112,9 +112,9 @@ function render(){
 }
 
 (async()=>{
-  db=await claude.use("db");
+  db=window.claude?.use ? await window.claude.use("db") : null;
   if(!db){render();return}
-  const user=await claude.use("user");
+  const user=await window.claude.use("user");
   if(user&&typeof user.can==="function"){try{const c=await user.can("data.write");if(c===false)canWrite=false}catch(e){}}
   db.collection("drills").orderBy("order").onSnapshot(s=>{drills=s.docs.map(d=>({id:d.id,data:d.data()}));render()},
     ()=>{progress.textContent="Couldn't load the practice. Reload the page.";});

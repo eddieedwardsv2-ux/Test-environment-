@@ -115,7 +115,8 @@ The system should leave Charlie understanding what he built and how his OS is la
 > "I actually understand my own second brain" [18:51](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=1131s)
 **Agent check:** *Could Charlie explain this change in his own words?* (Concept 17)
 
-**Rule 19: Keep the router under 200 lines** (stated) — *replaced by Rule 41 (2026-10-09, Charlie's choice on the Decision Desk)*
+**Rule 19: Keep the router under 200 lines** (stated)
+*Replaced by Rule 41 (2026-10-09, Charlie's choice on the Decision Desk).*
 *Newer wins:* the aim is no longer a line count but Rule 41, the smallest context that works ("minimal doesn't necessarily mean short"). A router can be longer when the extra lines are things only Charlie can supply; 200 lines stays only as the hard ceiling `tools/audit.py` errors at. Quotes kept below as history.
 It is re-read with every message, so every line costs on every turn; past the limit it gets ignored.
 > "So keep it under 200 lines." [5:36:27](https://www.youtube.com/watch?v=jdbOVepEtUE&t=20187s)

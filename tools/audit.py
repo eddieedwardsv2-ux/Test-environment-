@@ -158,6 +158,15 @@ for page in ROOT.glob("research/*/brain/*.md"):
     for f in check_linked(page)[1]:
         err(f)
 
+#    Every rule and concept must reach the maps (a title line the map builder
+#    can't read drops it silently, as Rule 19 did on 2026-10-09).
+import subprocess as _sp
+_out = _sp.run([sys.executable, str(ROOT / "tools/build_brain_map.py"), "--stats"], capture_output=True, text=True).stderr.split()
+_bd = ROOT / "research/nate-herk/brain"
+_want = (len(re.findall(r"^\*\*\d+\. ", (_bd / "concepts.md").read_text(), re.M)), len(re.findall(r"^\*\*Rule \d+:", (_bd / "rules.md").read_text(), re.M)))
+if _out[:2] != [str(_want[0]), str(_want[1])]:
+    err(f"research/nate-herk/brain: the map builder reads {_out[:2]} concepts/rules but the files have {list(_want)}; fix the title line it can't read")
+
 # 6. Hands Brain (research/hands/): week files follow the schema, every quote is
 #    verbatim in its transcript, ENATE links point at real concepts, and the
 #    built list matches the week files (else: rebuild and republish the site).
