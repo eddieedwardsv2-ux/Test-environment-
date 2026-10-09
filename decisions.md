@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: frontend-design: Later
+Charlie compared the preview with the live Guide and chose Later on the Desk. Recorded in `tried.json`; nothing kept; the live Guide and the preview page stay as they are.
+
 ## 2026-10-09: names checked against the rules and concepts
 Charlie asked whether files are named so the AI can find and use them through the router, per Nate's rules and concepts. Checked: Rule 20 (folders and skills in the router), Rule 38 / concept 36 (folder READMEs), Rule 21 (skill front matter), concept 7 (index vs disk), Rule 3 (one current name), concept 28 (same files for Codex). Passing: no spaces or odd names, every skill and agent name matches its file, Codex sees the same skills, 0 broken links, 0 unreachable notes. Fixed: three skill descriptions (`hands-ingest`, `try-tool`, `decide`) only used the old names, so "update the Quartermaster" or "the Chief's Desk" might not pick them; they now lead with the new names and keep the old ones. Added READMEs for `tools/`, `brainstorms/`, `audits/guardian/`, `research/hands/reviews/`; `learning/` and the three projects are now listed. Left by choice: folder paths keep their old names (`research/hands/` = Quartermaster, `research/nate-herk/brain/` = Architect, `system/decision-desk/` = Chief's Desk; the router maps each), and old names in prose stay as aliases until the 9 Nov clean-up.
 

@@ -29,7 +29,7 @@
   "time": "about 15 minutes",
   "cost": "free (Apache 2.0, Anthropic's official skills)",
   "adds": "nothing if kept as a reference file; about 200 characters every message if installed as a skill",
-  "verdict": "pending",
-  "why": "Elder pilot trial 1 (council + guardian); council recommends keep as a reference; Charlie decides on the Desk (qm-frontend-design). Review: research/hands/reviews/frontend-design-2026-10-09.md"
+  "verdict": "later",
+  "why": "Charlie chose Later on the Desk (9 Oct, after comparing the preview with the live Guide). Council recommended keeping it as a reference. Review: research/hands/reviews/frontend-design-2026-10-09.md"
  }
 ]
