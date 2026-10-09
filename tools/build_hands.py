@@ -35,10 +35,11 @@ for w in weeks:
         e = tools.setdefault(k, {"id": k, "name": t["name"], "url": t.get("url", ""), "kind": t.get("kind", ""),
                                  "category": t.get("category") if t.get("category") in CATEGORIES else "Other",
                                  "what": t.get("what", ""), "price": t.get("price", "unknown"),
-                                 "for_charlie": 0, "replaces": set(), "sightings": [], "check": ""})
+                                 "for_charlie": 0, "replaces": set(), "sightings": [], "check": "", "vs": None})
         e["for_charlie"] = max(e["for_charlie"], int(t.get("for_charlie", 0)))
         e["replaces"] |= set(t.get("replaces") or [])
         if t.get("check"): e["check"] = e["check"] or t["check"]
+        if t.get("vs") and not e["vs"]: e["vs"] = t["vs"]
         e["sightings"].append({"week": w["week"], "video": t.get("video"), "t": t.get("t", ""),
                                "shown": t.get("shown", ""), "quote": t.get("quote", "")})
 

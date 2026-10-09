@@ -26,6 +26,7 @@
    }
   ],
   "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials.",
+  "vs": null,
   "weeks": [
    "2026-W41",
    "2026-W39"
@@ -65,6 +66,7 @@
    }
   ],
   "check": "Review anything before installing.",
+  "vs": null,
   "weeks": [
    "2026-W40",
    "2026-W39"
@@ -99,6 +101,7 @@
    }
   ],
   "check": "Does not include Claude or frontier models; optional $19 a year add-on. Host frames it as replacing Claude Code for some people.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -132,6 +135,7 @@
    }
   ],
   "check": "Hosted free tier is 20 minutes a month with watermark; self-hosting slow without GPU.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -163,6 +167,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -203,6 +208,7 @@
    }
   ],
   "check": "Default model is non-commercial only; Pro is $99 a month.",
+  "vs": null,
   "weeks": [
    "2026-W41",
    "2026-W40"
@@ -237,6 +243,7 @@
    }
   ],
   "check": "Hosts frame it as easier, not better; ECC has far more skills.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -275,6 +282,7 @@
    }
   ],
   "check": "Availability and price not stated.",
+  "vs": null,
   "weeks": [
    "2026-W41",
    "2026-W40"
@@ -307,6 +315,7 @@
    }
   ],
   "check": "Skills are still not shared between Claude and Codex, per the hosts; check Claude Code docs for the exact behaviour.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -347,6 +356,7 @@
    }
   ],
   "check": "Semrush price claim is the host's.",
+  "vs": null,
   "weeks": [
    "2026-W40",
    "2026-W39"
@@ -386,6 +396,7 @@
    }
   ],
   "check": "95,000+ stars claimed; not tested.",
+  "vs": null,
   "weeks": [
    "2026-W40",
    "2026-W39"
@@ -420,6 +431,7 @@
    }
   ],
   "check": "Host says it is not as strong as Perplexity; needs a model (Ollama or free Gemini key).",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -451,6 +463,7 @@
    }
   ],
   "check": "Downloaded skills need checking before install (the show warns about plugins).",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -482,6 +495,7 @@
    }
   ],
   "check": "Revenue figures ($10k MRR, $125k lifetime) are the founder's; verify.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -513,6 +527,7 @@
    }
   ],
   "check": "Star count may be inflated; unverified.",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -553,6 +568,7 @@
    }
   ],
   "check": "Pricing not stated; waitlist said to be gone and also available via OpenRouter; not for high-stakes predictions (trading) per the video.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -584,6 +600,7 @@
    }
   ],
   "check": "Claimed 8-15k a month PR cost comparison not verified.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -617,6 +634,7 @@
    }
   ],
   "check": "Hosts say open-source versions let you use existing subscriptions instead of paid tools.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -650,6 +668,7 @@
    }
   ],
   "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -681,6 +700,7 @@
    }
   ],
   "check": "Auto-caption mishears the name as Nora.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -719,6 +739,7 @@
    }
   ],
   "check": "Free-token offer is Meta's claim.",
+  "vs": null,
   "weeks": [
    "2026-W40",
    "2026-W39"
@@ -753,6 +774,7 @@
    }
   ],
   "check": "Quality below Suno per host.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -784,6 +806,7 @@
    }
   ],
   "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -815,6 +838,7 @@
    }
   ],
   "check": "Opinion only; no benchmarks or pricing given.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -848,6 +872,7 @@
    }
   ],
   "check": "Model cost depends on what you plug in; free Gemini key possible.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -886,6 +911,7 @@
    }
   ],
   "check": "Price and availability not stated.",
+  "vs": null,
   "weeks": [
    "2026-W40",
    "2026-W39"
@@ -920,6 +946,7 @@
    }
   ],
   "check": "Needs a strong GPU or recent Mac.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -951,6 +978,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -984,6 +1012,7 @@
    }
   ],
   "check": "Host says it is not as good as ChatGPT.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1017,6 +1046,7 @@
    }
   ],
   "check": "Needs a paid API key or limited free tier.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1050,6 +1080,7 @@
    }
   ],
   "check": "Needs a Vulkan-capable GPU.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1081,6 +1112,7 @@
    }
   ],
   "check": "Sponsor link with 30% off; pricing and free tier not stated. Image upload through Claude failed in demo.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1112,6 +1144,7 @@
    }
   ],
   "check": "Hacker News reaction was negative.",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1143,6 +1176,7 @@
    }
   ],
   "check": "Price said as '$2.99 a year' in captions; verify.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1176,6 +1210,7 @@
    }
   ],
   "check": "Calendly $12 a seat claimed by host.",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1207,6 +1242,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1238,6 +1274,7 @@
    }
   ],
   "check": "Pricing not stated.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1269,6 +1306,7 @@
    }
   ],
   "check": "$5,000 a month revenue claim via TrustMRR; skill price $4.99 as stated.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1300,6 +1338,7 @@
    }
   ],
   "check": "$100 bonus credits claimed.",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1338,6 +1377,7 @@
    }
   ],
   "check": "Finance output should not be trusted blindly.",
+  "vs": null,
   "weeks": [
    "2026-W40",
    "2026-W39"
@@ -1370,6 +1410,7 @@
    }
   ],
   "check": "'No mistakes' is a marketing line; the guest says reliability depends on tightly scoped tools and confidence scores. Title says better than Jev, not shown.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -1401,6 +1442,7 @@
    }
   ],
   "check": "Which plan gets connectors not stated.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -1434,6 +1476,7 @@
    }
   ],
   "check": "Pricing not stated; auto-caption spells it Cluso.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -1465,6 +1508,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1498,6 +1542,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1531,6 +1576,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1562,6 +1608,7 @@
    }
   ],
   "check": "Early access; price unknown.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1593,6 +1640,7 @@
    }
   ],
   "check": "Needs email and card access; check privacy. Price not stated.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1626,6 +1674,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1659,6 +1708,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1690,6 +1740,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1721,6 +1772,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1752,6 +1804,7 @@
    }
   ],
   "check": "50% off offer claimed; Product Hunt number one claim not verified.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1783,6 +1836,7 @@
    }
   ],
   "check": "30% reply rate is the maker's claim.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1816,6 +1870,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1847,6 +1902,7 @@
    }
   ],
   "check": "Sponsored slot price stated as about $350.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1878,6 +1934,7 @@
    }
   ],
   "check": "One-off fee of about $34-35 claimed; Mac only as described.",
+  "vs": null,
   "weeks": [
    "2026-W41"
   ],
@@ -1909,6 +1966,7 @@
    }
   ],
   "check": "Link list names the repo Glance Speedlab; URL taken from there.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -1940,6 +1998,7 @@
    }
   ],
   "check": "",
+  "vs": null,
   "weeks": [
    "2026-W40"
   ],
@@ -1971,6 +2030,7 @@
    }
   ],
   "check": "Integrations target apps popular in Asia, not the UK.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -2002,6 +2062,7 @@
    }
   ],
   "check": "Pricing not stated.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -2033,6 +2094,7 @@
    }
   ],
   "check": "Built with Claude Opus 5.5; demo only.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -2064,6 +2126,7 @@
    }
   ],
   "check": "Pricing not stated.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],
@@ -2095,6 +2158,7 @@
    }
   ],
   "check": "Pricing not stated.",
+  "vs": null,
   "weeks": [
    "2026-W39"
   ],

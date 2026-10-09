@@ -19,9 +19,10 @@ recorded (with their consent) for the YouTube channel. Project:
 **Now (2026-10-08, Charlie):** the **Hands Brain** (`research/hands/`): every
 tool, skill and plugin from The Next New Thing, newest week first, ranked
 (the `hands-ingest` skill; site link in `system/pages.md`). Weeks 2026-W38 to
-W41 first, then further back a week at a time. Paused 2026-10-08 to save
-usage: W41, W40, W39 done; **next session:** fetch the 3 missing W38
-transcripts (ehab5PtgRo8, pkwnJcETgfE, ANJTdT0Ggrw), classify W38, rebuild. After that: the radial Brain
+W41 first, then further back a week at a time. Order changed 2026-10-09 (Charlie):
+newest video first, each new tool compared head-to-head with its category's
+number one; backfill W38 (3 transcripts missing) only when nothing newer is
+waiting. After that: the radial Brain
 dashboard. Cleaner brain done (router trimmed, one audit skill, Decision Desk).
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;

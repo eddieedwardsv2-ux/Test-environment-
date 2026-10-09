@@ -207,6 +207,7 @@ function open(id){
     ${t.replaced_by ? `<p><b>Replaced by ${esc(t.replaced_by)}.</b></p>` : ""}
     ${t.replaces.length ? `<p><span class="k">Replaces</span><br>${esc(t.replaces.join(", "))}</p>` : ""}
     ${t.check ? `<p><span class="k">Check before trusting</span><br>${esc(t.check)}</p>` : ""}
+    ${t.vs ? `<p><span class="k">Head-to-head with ${esc(t.vs.tool)}</span><br>${esc(t.vs.verdict)}${t.vs.gap ? ". Still to learn: " + esc(t.vs.gap) : ""}</p>` : ""}
     ${t.url ? `<p><a href="${esc(t.url)}">Open ${esc(t.name)}</a></p>` : ""}
     <p class="k">Where it came up</p>${sight}`;
   document.getElementById("x").onclick = () => sheet.close();
