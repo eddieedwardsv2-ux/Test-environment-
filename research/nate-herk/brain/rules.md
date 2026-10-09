@@ -203,6 +203,7 @@ The worker doesn't mark its own homework: a different checker looks at it, then 
 > Also: "by the time it tells you it's done, you stress test it more. and you try to find those edge cases" [9:43](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=583s)
 > Also: "creating alignment between the human reviewer and the LLM." [38:04](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=2284s) (a guest: an AI judge is trusted only after it agrees with a human); "spin up 50 different sub aents and have all of them test this thing, try to break it" [22:20](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=1340s)
 **Agent check:** *Who other than the builder checked this, and what did we try to break?* (Concepts 31, 41)
+**Built as:** the `guardian` agent (`.claude/agents/guardian.md`, 2026-10-09), called at the end of big tasks (`context/working-rules.md`).
 
 **Rule 34: Skills do one job, are built from a real run, and retire when they stop earning** (stated)
 One skill, one job; build it by walking the AI through a real task first, then turn that into the skill. Retire any skill that no longer adds value.

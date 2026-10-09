@@ -37,7 +37,8 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   model choices follow `context/working-rules.md` (quality before savings).
 - **Main pages stay current:** after every run, rebuild and republish Charlie's
   Brain, ENATE and the Hands Brain (`system/pages.md`).
-- **Prove what you report** (done, saved, pushed). `tools/audit.py` runs on
+- **Prove what you report** (done, saved, pushed); on big tasks the `guardian`
+  agent, not the worker, says READY. `tools/audit.py` runs on
   every push and before an agent finishes.
 - **Same routes in Codex** (it has no helpers, hooks or Desk): open the agent
   file in `.claude/agents/` and follow it yourself; run `python3 tools/audit.py`
@@ -78,6 +79,9 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
   tested on real data, registered in `connections.md`).
 - Small-business jobs (quotes, invoices, reviews, social posts): Anthropic's **Small
   Business** plugin (`system/capability-map.md`); its business data never comes into this repo.
+- `guardian` agent: checks big finished work in a fresh context and writes the
+  READY / NOT READY line; the worker never marks its own homework
+  (`context/working-rules.md`: Nate's end process, don't just please Charlie).
 - `audit`: weekly Four Cs score (reports in `audits/`), and its content
   check after a wrong answer, a big change or **a switch to a new model**.
 - `i-have-adhd` (Charlie types it: action-first replies until "stop adhd mode";

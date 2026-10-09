@@ -80,6 +80,23 @@ Anything not backed by a source is labelled **(inferring)**.
   phrases, Rule 44): **VERIFIED:** what was run and what it returned;
   **NOT VERIFIED:** what couldn't be checked, and why. Before building, say
   what the check would not catch. "I read the code" is not a check.
+  **The worker never writes its own READY** (Charlie, 2026-10-09; Nate
+  iTY8Q449YNQ 22:25, Rule 33): the `guardian` agent does, in a fresh context,
+  given only Charlie's ask, the "done when" list, the files or commits and the
+  draft report (never the maker's reasoning). At most 2 fix rounds, then it
+  goes to Charlie as NOT READY with the findings. Small edits don't need it.
+- **Nate's end process for big jobs** (iTY8Q449YNQ 22:25-25:27, his `/goal`
+  run): (1) an objective finish line first (files exist and aren't empty,
+  counts, a command's output), not "make it good"; (2) one helper per
+  independent piece, each writing its own file; (3) one integration step that
+  reads everything and fixes what's thin or generic; (4) the Guardian judges.
+  It separates the worker from the judge. Not checked here yet: whether this
+  environment has Claude Code's own `/goal` command; the steps work without it.
+- **Don't just please Charlie** (Charlie, 2026-10-09; Nate iTY 0:32-2:36: Claude
+  is "tuned to make you feel productive", and gets more agreeable the more it
+  knows you). If the evidence says his plan is wrong, say so first, with reasons,
+  then do it if it's small and undoable, or put it on the Desk if it's a real
+  direction. No praise without a reason; "drop it" and NOT READY are normal answers.
 - **Suggest tools proactively.** At the start of any new task or project,
   check `research/plugin-map.md` (all 9 families, Charlie's watchlist) and
   name at most 2 plugins that would genuinely help, with one line why.

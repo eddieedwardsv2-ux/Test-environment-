@@ -11,6 +11,24 @@ Brain: [index](brain/index.md). Not yet transcribed (291): [triage](triage.md), 
 | [I Built Another Andrej Karpathy Using Claude](https://www.youtube.com/watch?v=bvGptCLDhyo) | 2026-10-05 | 11 min | 58.8k | ✅ [transcript](i-built-another-andrej-karpathy-using-claude--bvGptCLDhyo-transcript.md) |
 | [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54) | 2026-06-17 | 31 min | 280.5k | ✅ [transcript](every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md) (analysed in the lesson) |
 
+## For when we build something to sell (iTY8Q449YNQ, saved 2026-10-09)
+Charlie asked to keep this video for the day we build a product. Full
+transcript: [i-asked-claude-code…](i-asked-claude-code-to-make-me-as-much-money-as-possible--iTY8Q449YNQ-transcript.md).
+Its checking-your-work steps are already in our system (`guardian` agent,
+`context/working-rules.md`); the rest is for later:
+- **Test the idea before building** ("roast" council: contrarian, expansionist,
+  first-principles, researcher, the buyer, then one verdict and the cheapest
+  48-hour test): [3:07](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=187s) to [6:42](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=402s). Plain Claude gave a vaguer answer.
+- **Build and verify a landing page** (screenshots at both screen sizes, try
+  odd inputs, fix, re-check): [9:43](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=583s) to [15:18](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=918s). Prompt:
+  [Upgrade 2 landing-page prompt](prompt-upgrade2-landing-page.md). It passed every
+  check and still looked generic: [13:17](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=797s).
+- **Go-to-market kit in one `/goal` run** (positioning, market research,
+  launch plan, outreach, drafts, content calendar; six helpers, one file
+  each): [23:55](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=1435s) to [27:29](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=1649s).
+- Linked: Elder plan `brainstorms/2026-10-09-elder-councils-plan.md` (councils,
+  Guardian); Nate's brain concepts 30 and 31, Rule 33.
+
 ## Claims from the descriptions
 Both videos: **all confirmed by transcript** (2026-10-07).
 - **AI OS video:** CLAUDE.md should be a *routing file* (says where things
