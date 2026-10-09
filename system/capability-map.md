@@ -32,6 +32,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Replies he can act on fast (on request) | `i-have-adhd` skill (`/i-have-adhd`, off with "stop adhd mode") | next action first, numbered steps, state each turn | Charlie trying it |
 | Make something findable | `link` skill | one route in `AGENTS.md` or a folder index | following the route |
 | Ship the next automation | `level-up` skill (`references/3ms-framework.md`) | one artifact + `decisions.md` entry | rerun `audit` |
+| Connect a new tool or account (one small job, safest path, real-data test, register it) | `connect` skill | a `connections.md` row + `references/<tool>.md` read guide | a real read, dated |
 | What the OS can reach | `connections.md` | domain, mechanism, last checked | `audit` freshness check |
 | Interview Charlie to capture what he knows | `grill-me` skill | `brainstorms/YYYY-MM-DD-<topic>.md` | Charlie confirms the summary |
 | Start a new, blank AI OS | `templates/standard-ai-os-v1/` | router + filing cabinet | fresh-session routing test |

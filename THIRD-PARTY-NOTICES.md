@@ -36,3 +36,15 @@ SOFTWARE.
 ---
 
 `.claude/skills/i-have-adhd/` comes from https://github.com/ayghri/i-have-adhd (installed 2026-10-09 with `npx skills add ayghri/i-have-adhd@i-have-adhd`; pinned in `skills-lock.json`), under the MIT licence. Copyright (c) 2026 Ayoub Ghriss.
+
+
+## Anthropic knowledge-work-plugins (Apache 2.0)
+
+Ideas and some step wording adapted from Anthropic's Small Business plugin
+skills `build-connector` and `build-agent`,
+https://github.com/anthropics/knowledge-work-plugins/tree/main/small-business
+(read 2026-10-09), licensed under the Apache License 2.0
+(https://www.apache.org/licenses/LICENSE-2.0). Adapted, not copied, in
+`.claude/skills/connect/SKILL.md` and the "When the job was just done in this
+chat" section of `.claude/skills/level-up/SKILL.md`. Changes: fitted to this OS
+(own-keys rule, Chief's Desk, public repo); Zapier is not assumed as a build path.

@@ -6,7 +6,7 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
-- [ ] Enable the **Small Business** plugin (Desk card "install-small-business", 9 Oct; install cards don't show on his phone), then run `smb-onboard` in the Claude desktop app; Claude checks it with ListPlugins and logs the first real use (e.g. one quote from job photos) with `try-tool`
+- [ ] Finish Canva's sign-in (Desk card "connect-canva"; first test of the `connect` skill)
 - [ ] claude.ai settings: switch off 9 unused built-in skills (built-in-browser, chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf)
 - [ ] Add the Higgsfield connector (`https://mcp.higgsfield.ai/mcp`) and finish Canva's sign-in; then Claude makes one test image (cost said first)
 - [ ] Voice Gym: rewrite 5 or more messages; then Claude writes his voice notes into `aios-intake.md` Q2
@@ -23,6 +23,7 @@ deleting them (history stays in `decisions.md`).
 ## Waiting for the Mac (`context/mac-day.md`, starts when Charlie says "I'm on Mac")
 - [ ] Clone the repo; Obsidian; Nate's 3D brain; context7 and superpowers plugins
 - [ ] **Codex test**: same 5 rulebook questions, every skill listed, the three Codex fallbacks, what Codex blocks
+- [ ] Small Business plugin (after Charlie's Pro upgrade): install in the desktop app, `smb-onboard`, one `try-tool` trial
 - [ ] `/doctor` on the Mac; optional FreeLLMAPI trial only if limits keep stopping sessions
 
 ## Small tidy-ups (Claude can do these; offered, not yet agreed)

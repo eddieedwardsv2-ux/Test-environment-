@@ -48,6 +48,25 @@ three-ms-attribution: |
 
 Machine principles: Lego (smallest steps, zero-AI first), Validation Chain (test each step), Iteration (ship the proof of concept, expand from use).
 
+### When the job was just done in this chat (from Anthropic's `build-agent`)
+Turning a repeated job into a skill (Nate: build it the second time, Rule 44):
+1. **The chat is the spec.** Don't re-interview; Charlie's corrections are the
+   rules he'd never think to state ("skip anything under X" = a rule; "hmm,
+   depends" = an approval step).
+2. **Split each step:** fixed (order, sources, output shape), varies (dates, names,
+   files), judgment (his call). Never hard-code the example.
+3. **Gate only what matters:** anything that sends, spends, publishes or deletes,
+   and the steps he hesitated over. Nine approvals is worse than doing it by hand.
+4. **Write it in his words**, as numbered instructions to a future agent, with a
+   fallback when a connection is missing and "missing data is reported, never
+   invented".
+5. **Test on a case with a known answer** (ideally the one just done), side by
+   side. A near-miss is fixed and re-run, not accepted.
+6. **Register** its trigger phrases in his words (`link`), then offer a schedule
+   only after it has matched a known answer.
+(Adapted from anthropics/knowledge-work-plugins `small-business/skills/build-agent`,
+Apache 2.0; see `THIRD-PARTY-NOTICES.md`.)
+
 ## Output contract
 1. One dated decisions-log entry with the Method spec.
 2. One delivered artifact (prompt, skill or agent file) or verified repair.
