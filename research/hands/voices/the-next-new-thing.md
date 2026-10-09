@@ -1,18 +1,18 @@
 # The Next New Thing: the show's voice
 
-**Now covers 4 weeks (W38 to W41, 18 videos, 103 tools with an opinion), 2026-10-09.**
+**Now covers 4 weeks (W38 to W41, 21 videos, 115 tools with an opinion), 2026-10-09.**
 Week by week evidence, every point with a verbatim quote and timestamp: [W41](notes/2026-W41.md) · [W40](notes/2026-W40.md) · [W39](notes/2026-W39.md) · [W38](notes/2026-W38.md).
 The per-tool opinions live in `../weeks/<week>.json` (`opinion`, `our_view`); this page is the summary.
 
 ## Across all four weeks
 | | Count |
 |---|---|
-| Presenters would use | 53 |
+| Presenters would use | 64 |
 | Mixed | 34 |
 | No opinion | 11 |
-| Wouldn't use | 5 |
-| We agree with them | 56 |
-| We disagree | 28 |
+| Wouldn't use | 6 |
+| We agree with them | 67 |
+| We disagree | 29 |
 | Nothing to compare | 19 |
 
 - **Their lens moves week to week.** W41's newest show is money first ("make you money", "no-brainer").

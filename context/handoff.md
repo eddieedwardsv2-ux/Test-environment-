@@ -75,9 +75,10 @@ routing clear, and where is our brains' "middle"? Bring it up at the start of
 the next session and talk it through with him before acting on it.
 
 ## State at 2026-10-09, about 4:45am
-- Hands Brain complete back to W38 (18 videos, 117 tools), presenter opinions on every tool, voice summary in `research/hands/voices/`. New videos: the Saturday routine "Weekly Hands Brain update" (8:47 UK).
-- Desk cards open for Charlie: "hyperframes-verdict" (keep, use only when needed, or drop) and "hands-prices" (look up the 16 unknown prices).
+- Hands Brain complete back to W38 (21 videos, 117 tools), presenter opinions on every tool, voice summary in `research/hands/voices/`. New videos: the Saturday routine "Weekly Hands Brain update" (8:47 UK).
+- Desk cards open for Charlie: "hyperframes-verdict" (keep, use only when needed, or drop) and "hands-prices" (look up the 24 unknown prices).
 - His step: switch off 9 claude.ai skills (Settings, Skills; list in the closed "skill-trim" card).
 - Waiting for spare usage: 4 Nate gap videos are transcribed (`research/nate-herk/triage.md`); ingest only when he says "ingest the queue".
+- Saved, not started: the ChatGPT hand-off on model routing (`brainstorms/2026-10-09-model-routing-handoff.md`); Charlie's walk notes still to come.
 - First thing next session: read the Desk, then discuss his "middle of the brains" question (above) before changing anything.
 
