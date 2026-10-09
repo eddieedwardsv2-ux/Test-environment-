@@ -16,7 +16,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -24,7 +26,9 @@
     "video": "6xi2KL_NujU",
     "t": "3:38",
     "shown": "A host's answer to the best agentic slides: make a short video with it.",
-    "quote": "using hyperframes to create a high-quality"
+    "quote": "using hyperframes to create a high-quality",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
@@ -60,7 +64,9 @@
     "video": "BcNAQynKUk4",
     "t": "0:33",
     "shown": "Live 20-minute run: orchestrator drove tmux panes, built a pitch-roasting app, made a video, drafted and sent X DMs.",
-    "quote": "we're going to give it a task and build a product. So, it's going to use ECC skills"
+    "quote": "we're going to give it a task and build a product. So, it's going to use ECC skills",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W39",
@@ -68,7 +74,9 @@
     "video": "hlOk-EFUITQ",
     "t": "17:26",
     "shown": "Showed the repo and the remember/improve features; compared it to Agent Skills.",
-    "quote": "You get all that experience baked into your cloud for free."
+    "quote": "You get all that experience baked into your cloud for free.",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -76,7 +84,9 @@
     "video": "1fHsIveXRa8",
     "t": "8:15",
     "shown": "A clip of the creator running plan mode then the TDD workflow before building.",
-    "quote": "It's a way to get decades of of experience from other software engineers and inject that into your uh coding sessions."
+    "quote": "It's a way to get decades of of experience from other software engineers and inject that into your uh coding sessions.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials.",
@@ -116,7 +126,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\""
+    "quote": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\"",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Install count (3.7M) is the highest by far; Vercel Labs is a known publisher but still read any skill it finds before installing.",
@@ -151,7 +163,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": "A relentless interview to sharpen a plan or design."
+    "quote": "A relentless interview to sharpen a plan or design.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -186,7 +200,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -221,7 +237,9 @@
     "video": "CQhWqUOouYM",
     "t": "20:21",
     "shown": "Browsed the website listing skills, commands and settings.",
-    "quote": "You kit out Claude code with one install command"
+    "quote": "You kit out Claude code with one install command",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W39",
@@ -229,7 +247,9 @@
     "video": "hlOk-EFUITQ",
     "t": "29:46",
     "shown": "Showed the marketplace-style site; about 900 skills and 34 plugins.",
-    "quote": "This is a collection of Claude Code add-ons."
+    "quote": "This is a collection of Claude Code add-ons.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Review anything before installing.",
@@ -266,7 +286,9 @@
     "video": "hlOk-EFUITQ",
     "t": "22:03",
     "shown": "Compared side by side with ECC using a Claude comparison.",
-    "quote": "So maybe agent skills is easier if you're just getting into this"
+    "quote": "So maybe agent skills is easier if you're just getting into this",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -274,7 +296,9 @@
     "video": "1fHsIveXRa8",
     "t": "19:27",
     "shown": "Walked through the order of the workflow on the README.",
-    "quote": "you're meant to run these skills in this order"
+    "quote": "you're meant to run these skills in this order",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Hosts frame it as easier, not better; ECC has far more skills.",
@@ -315,7 +339,9 @@
     "video": "GZtLsvklYBI",
     "t": "5:51",
     "shown": "Explained the idea and said the install is easy; no coding demo.",
-    "quote": "string together all these freebies"
+    "quote": "string together all these freebies",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Does not include Claude or frontier models; optional $19 a year add-on. Host frames it as replacing Claude Code for some people.",
@@ -349,7 +375,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
@@ -384,7 +412,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -421,7 +451,9 @@
     "video": "GZtLsvklYBI",
     "t": "19:30",
     "shown": "Ran it on a YouTube video on the free hosted site; framing needed fixing.",
-    "quote": "This is a free clip maker that you can host yourself or you can go to their website and use for free."
+    "quote": "This is a free clip maker that you can host yourself or you can go to their website and use for free.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Hosted free tier is 20 minutes a month with watermark; self-hosting slow without GPU.",
@@ -455,7 +487,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -490,7 +524,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
@@ -525,7 +561,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -560,7 +598,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": "You MUST use this before any creative work"
+    "quote": "You MUST use this before any creative work",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -595,7 +635,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": "Reference for writing and editing skills well"
+    "quote": "Reference for writing and editing skills well",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -630,7 +672,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": "Create new agent skills with proper structure, progressive disclosure, and bundled resources."
+    "quote": "Create new agent skills with proper structure, progressive disclosure, and bundled resources.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -665,7 +709,9 @@
     "video": "CQhWqUOouYM",
     "t": "14:15",
     "shown": "Demoed picking an aesthetic and pasting the prompt into an agent.",
-    "quote": "give your coding agent a designer's eye"
+    "quote": "give your coding agent a designer's eye",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -701,7 +747,9 @@
     "video": "GZtLsvklYBI",
     "t": "0:27",
     "shown": "Played sample voices and the install page.",
-    "quote": "There is no credit counter, so you can redo a line 50 times and it's going to cost you nothing."
+    "quote": "There is no credit counter, so you can redo a line 50 times and it's going to cost you nothing.",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W40",
@@ -709,7 +757,9 @@
     "video": "CQhWqUOouYM",
     "t": "5:35",
     "shown": "Showed the repo and the easy-install apps; no clone demo.",
-    "quote": "This is for people who want to clone their voices, but not pay a service like 11 Labs to host it."
+    "quote": "This is for people who want to clone their voices, but not pay a service like 11 Labs to host it.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Default model is non-commercial only; Pro is $99 a month.",
@@ -744,7 +794,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "3:18",
     "shown": "Corey described using it as a chief of staff to spin up and track Codex threads; Andrew found it nagging.",
-    "quote": "I use Dot as almost the manager of codec."
+    "quote": "I use Dot as almost the manager of codec.",
+    "opinion": {
+     "stance": "mixed",
+     "who": "Corey for, host against",
+     "why": "Corey uses it as a chief of staff for Codex threads; the host only gets nagging.",
+     "quote": "I use Dot as almost the manager of codec.",
+     "t": "3:33"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Only if Codex threads pile up too many to track",
+     "agree": "agree",
+     "why": "Split verdict is fair. Rule 43: test it on Charlie's own tasks before switching; Rule 42: no manager layer until the pain shows."
+    }
    },
    {
     "week": "2026-W40",
@@ -752,7 +815,9 @@
     "video": "bTbyRKO0hxs",
     "t": "14:20",
     "shown": "Created a Dot and connected Slack on screen.",
-    "quote": "what it looks like if I were to use dot directly from them"
+    "quote": "what it looks like if I were to use dot directly from them",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Availability and price not stated.",
@@ -787,7 +852,9 @@
     "video": "hlOk-EFUITQ",
     "t": "12:19",
     "shown": "Explained why one shared instruction file ends the claude.md versus agents.md mismatch; no demo.",
-    "quote": "typically they're looking at an agents.md file that's in your project folder"
+    "quote": "typically they're looking at an agents.md file that's in your project folder",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Skills are still not shared between Claude and Codex, per the hosts; check Claude Code docs for the exact behaviour.",
@@ -823,7 +890,9 @@
     "video": "kMPyFWFqX5I",
     "t": "2:31",
     "shown": "Walked through it; founder was on the show before.",
-    "quote": "open-source SEO that you can run yourself"
+    "quote": "open-source SEO that you can run yourself",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W39",
@@ -831,7 +900,9 @@
     "video": "hlOk-EFUITQ",
     "t": "2:33",
     "shown": "Showed the repo and debate about its Y Combinator funding; Adam is a paying customer.",
-    "quote": "Semrush rival that you basically pay peanuts for"
+    "quote": "Semrush rival that you basically pay peanuts for",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Semrush price claim is the host's.",
@@ -866,7 +937,9 @@
     "video": "CQhWqUOouYM",
     "t": "0:01",
     "shown": "Hosts walked through the repo and its permissions; no full build.",
-    "quote": "your agents get an org chart to work together"
+    "quote": "your agents get an org chart to work together",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W39",
@@ -874,7 +947,9 @@
     "video": "hlOk-EFUITQ",
     "t": "5:37",
     "shown": "Showed the repo and a popular video about it; not run live.",
-    "quote": "allows you to manage your agents like their employees"
+    "quote": "allows you to manage your agents like their employees",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "95,000+ stars claimed; not tested.",
@@ -909,7 +984,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": "Create high-click-through YouTube thumbnails and vertical video covers through the Higgsfield CLI."
+    "quote": "Create high-click-through YouTube thumbnails and vertical video covers through the Higgsfield CLI.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Needs the Higgsfield CLI, which probably needs a paid account; price unverified.",
@@ -944,7 +1021,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -979,7 +1058,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -1014,7 +1095,9 @@
     "video": "1fHsIveXRa8",
     "t": "2:07",
     "shown": "A clip of the Claude web app before and after the slash command: answer became much shorter.",
-    "quote": "It's scannable so you understand it."
+    "quote": "It's scannable so you understand it.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Star count (47,000) is the host's claim.",
@@ -1054,7 +1137,9 @@
     "video": "hlOk-EFUITQ",
     "t": "9:43",
     "shown": "Hosts showed the repo and discussed running it on commit; not installed live.",
-    "quote": "Alibaba's code reviewer now leaves the terminal."
+    "quote": "Alibaba's code reviewer now leaves the terminal.",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -1062,7 +1147,9 @@
     "video": "1fHsIveXRa8",
     "t": "0:33",
     "shown": "A linked demo found a deliberately planted plain-text password and made an HTML report with one command.",
-    "quote": "This is the thing that will let you check your code to find common or maybe even uncommon problems."
+    "quote": "This is the thing that will let you check your code to find common or maybe even uncommon problems.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Hosts say open-source versions let you use existing subscriptions instead of paid tools.",
@@ -1101,7 +1188,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -1138,7 +1227,9 @@
     "video": "GZtLsvklYBI",
     "t": "9:27",
     "shown": "Described features; no demo.",
-    "quote": "You type a question. It searches the web. It writes the answer. It gives you numbered sources."
+    "quote": "You type a question. It searches the web. It writes the answer. It gives you numbered sources.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Host says it is not as strong as Perplexity; needs a model (Ollama or free Gemini key).",
@@ -1172,7 +1263,9 @@
     "video": "hlOk-EFUITQ",
     "t": "18:58",
     "shown": "Described and showed the repo; not installed live.",
-    "quote": "Obsidian plus rag plus a graph database plus some extra integrations"
+    "quote": "Obsidian plus rag plus a graph database plus some extra integrations",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -1180,7 +1273,9 @@
     "video": "1fHsIveXRa8",
     "t": "13:52",
     "shown": "A clip of the graph and linked wiki pages (in Chinese).",
-    "quote": "it seems like Obsidian plus rag plus AI plus a graph database."
+    "quote": "it seems like Obsidian plus rag plus AI plus a graph database.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Auto-caption mishears the name as Nora.",
@@ -1219,7 +1314,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -1254,7 +1351,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
@@ -1289,7 +1388,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
@@ -1324,7 +1425,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Unknown publisher (flowkit-labs); 846k installs looks inflated for a niche skill; auto-posting to Reddit risks bans. Read SKILL.md first.",
@@ -1359,7 +1462,9 @@
     "video": "dfFKE7EetoA",
     "t": "0:02",
     "shown": "Played creator demos and gave verdict.",
-    "quote": "making Muse free for a huge number of tokens"
+    "quote": "making Muse free for a huge number of tokens",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W39",
@@ -1367,7 +1472,9 @@
     "video": "ZodAaTH-6_E",
     "t": "0:02",
     "shown": "Walked through other people's examples and showed a simple chat screen; hosts did not run it themselves.",
-    "quote": "People are banking money with Muse, the free AI agent from Facebook."
+    "quote": "People are banking money with Muse, the free AI agent from Facebook.",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -1375,7 +1482,9 @@
     "video": "6IxiArssGvg",
     "t": "7:49",
     "shown": "Same Airbnb search: table of ratings and cancellation dates, near-instant follow-ups, then a live Mexico City browse.",
-    "quote": "Also, it was faster than everybody else."
+    "quote": "Also, it was faster than everybody else.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Free-token offer is Meta's claim.",
@@ -1415,7 +1524,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -1450,7 +1561,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -1485,7 +1598,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -1520,7 +1635,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -1555,7 +1672,9 @@
     "video": "CQhWqUOouYM",
     "t": "18:48",
     "shown": "Showed the repo; hosts joked about too many skills.",
-    "quote": "Your AI assistant is going to get 388 job-specific playbooks"
+    "quote": "Your AI assistant is going to get 388 job-specific playbooks",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Downloaded skills need checking before install (the show warns about plugins).",
@@ -1589,7 +1708,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "15:18",
     "shown": "Showed example outputs and revenue page.",
-    "quote": "with one MCP, you get to make it into much more of an artist."
+    "quote": "with one MCP, you get to make it into much more of an artist.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Host",
+     "why": "One pay-per-use MCP beats several separate subscriptions.",
+     "quote": "makes so much more sense than going to 11 Labs and paying for a subscription",
+     "t": "16:47"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Thumbnails and voiceover for the channel",
+     "agree": "agree",
+     "why": "Pay-per-use fits a beginner. Rule 43: compare one thumbnail with his current route first; Rule 37: vet the MCP before installing."
+    }
    }
   ],
   "check": "Revenue figures ($10k MRR, $125k lifetime) are the founder's; verify.",
@@ -1623,7 +1755,9 @@
     "video": "o7Rm5FvA7hU",
     "t": "4:05",
     "shown": "Played 11 creator clips (meeting notes to agents, file renaming, inbox triage) with commentary.",
-    "quote": "they can access local files"
+    "quote": "they can access local files",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W39",
@@ -1631,7 +1765,9 @@
     "video": "WPUAZm5rnGc",
     "t": "8:41",
     "shown": "Guest built an outbound sales-call system live from a voice-note plan, using it as the orchestrator.",
-    "quote": "I would think of Grok Bot as the as the orchestrator agent."
+    "quote": "I would think of Grok Bot as the as the orchestrator agent.",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -1639,7 +1775,9 @@
     "video": "6IxiArssGvg",
     "t": "11:53",
     "shown": "Ran the same Airbnb search; sent browser screenshots and a map and let the user take over the browser.",
-    "quote": "Grockbot is paid and they've reduced their entry price to about 20 bucks, but you'll burn through the 20 bucks pretty quickly."
+    "quote": "Grockbot is paid and they've reduced their entry price to about 20 bucks, but you'll burn through the 20 bucks pretty quickly.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Price and availability not stated.",
@@ -1679,7 +1817,9 @@
     "video": "CQhWqUOouYM",
     "t": "4:03",
     "shown": "Discussed on the repo page; hosts unsure why it took off.",
-    "quote": "remembers you across your sessions"
+    "quote": "remembers you across your sessions",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Star count may be inflated; unverified.",
@@ -1715,7 +1855,9 @@
     "video": "pxaMzr7al3I",
     "t": "0:01",
     "shown": "Sorted 500 emails live, built a voice-controlled browser, model routing, support triage, lead scoring, agent memory search, clip scoring and smart-home control.",
-    "quote": "It's not a chatbot. It can't even write a sentence."
+    "quote": "It's not a chatbot. It can't even write a sentence.",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W39",
@@ -1723,7 +1865,9 @@
     "video": "ZodAaTH-6_E",
     "t": "2:05",
     "shown": "Clip of someone speaking to the computer to open Notes and create a note; hosts did not try it.",
-    "quote": "Here's the thing about uh Jev, it now no longer has a waitlist."
+    "quote": "Here's the thing about uh Jev, it now no longer has a waitlist.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Pricing not stated; waitlist said to be gone and also available via OpenRouter; not for high-stakes predictions (trading) per the video.",
@@ -1757,7 +1901,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -1792,7 +1938,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "7:12",
     "shown": "Corey described finding accountant documents in his email within about 60 seconds by text.",
-    "quote": "So, it has access to my email."
+    "quote": "So, it has access to my email.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Corey",
+     "why": "Finds accountant documents in his email in about a minute by text.",
+     "quote": "it found it within like 60 seconds.",
+     "t": "8:08"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Needs email and card access. Rule 36: permissions in layers, read-only first; this repo is public, so no private data near it."
+    }
    },
    {
     "week": "2026-W38",
@@ -1800,7 +1959,9 @@
     "video": "6IxiArssGvg",
     "t": "0:18",
     "shown": "Texted it an Airbnb search; it answered 5 to 10 minutes later with links and a text list, no browser view.",
-    "quote": "Instinct is an agent that is a free agent um that is all the rage right now."
+    "quote": "Instinct is an agent that is a free agent um that is all the rage right now.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Needs email and card access; check privacy. Price not stated.",
@@ -1839,7 +2000,9 @@
     "video": "ZodAaTH-6_E",
     "t": "5:13",
     "shown": "Showed Elvis's demo plugging Jev into it to scrape and pitch quickly and cheaply.",
-    "quote": "It's a free GitHub repo and these skills basically turn your agent into a PR team."
+    "quote": "It's a free GitHub repo and these skills basically turn your agent into a PR team.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Claimed 8-15k a month PR cost comparison not verified.",
@@ -1875,7 +2038,9 @@
     "video": "hlOk-EFUITQ",
     "t": "25:07",
     "shown": "Showed the readme screenshot with Claude Code and Codex in one window plus mobile link.",
-    "quote": "Run five coding agents at once. Keep the best."
+    "quote": "Run five coding agents at once. Keep the best.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion.",
@@ -1909,7 +2074,9 @@
     "video": "bTbyRKO0hxs",
     "t": "13:16",
     "shown": "Alex demoed Rooms, a paid-ads agent team and permissions.",
-    "quote": "sign in with Chat GPT and use the subscription you already pay for"
+    "quote": "sign in with Chat GPT and use the subscription you already pay for",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -1917,7 +2084,9 @@
     "video": "6IxiArssGvg",
     "t": "19:01",
     "shown": "",
-    "quote": "Hyper Agent I find to be really good at that."
+    "quote": "Hyper Agent I find to be really good at that.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "$100 bonus credits claimed.",
@@ -1958,7 +2127,9 @@
     "video": "GZtLsvklYBI",
     "t": "13:57",
     "shown": "Made a short hip-hop song on the hosted web version; host said it was not as good as Suno.",
-    "quote": "unlimited songs hosted by you for free."
+    "quote": "unlimited songs hosted by you for free.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Quality below Suno per host.",
@@ -1992,7 +2163,9 @@
     "video": "1fHsIveXRa8",
     "t": "23:30",
     "shown": "A screenshot from the README.",
-    "quote": "every cloud code session on your machine. One board that tells you which one is stuck."
+    "quote": "every cloud code session on your machine. One board that tells you which one is stuck.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Audience submission.",
@@ -2030,7 +2203,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "6:18",
     "shown": "Read out the offer; hosts said they are applying.",
-    "quote": "free access. One year of Claude for Teams, $1,000 in Claude API credits"
+    "quote": "free access. One year of Claude for Teams, $1,000 in Claude API credits",
+    "opinion": {
+     "stance": "would use",
+     "who": "Both hosts",
+     "why": "Free year of Claude for Teams plus API credits is a no-brainer to apply for.",
+     "quote": "I think it's a no-brainer. Like, why not go and apply?",
+     "t": "7:07"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Free credits for the channel, if it counts as a startup",
+     "agree": "agree",
+     "why": "Applying costs nothing, but check UK eligibility and the terms first. A sign-up goes on the Decision Desk."
+    }
    }
   ],
   "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page.",
@@ -2064,7 +2250,9 @@
     "video": "ZodAaTH-6_E",
     "t": "13:55",
     "shown": "Showed community examples including a music video animation and a walkable shop built with it.",
-    "quote": "it just is the best feeling model we've we've had in a long time."
+    "quote": "it just is the best feeling model we've we've had in a long time.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Opinion only; no benchmarks or pricing given.",
@@ -2098,7 +2286,9 @@
     "video": "1fHsIveXRa8",
     "t": "11:49",
     "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
-    "quote": "makes the focus of your main conversation stay on the work instead of all the side work"
+    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Token-saving figures not shown on screen.",
@@ -2138,7 +2328,9 @@
     "video": "GZtLsvklYBI",
     "t": "23:51",
     "shown": "Described features; no demo.",
-    "quote": "You just describe what you want in plain English and you get it."
+    "quote": "You just describe what you want in plain English and you get it.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Model cost depends on what you plug in; free Gemini key possible.",
@@ -2172,7 +2364,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -2209,7 +2403,9 @@
     "video": "GZtLsvklYBI",
     "t": "11:51",
     "shown": "Described features; no demo.",
-    "quote": "It's the AI image studio that you can run yourself."
+    "quote": "It's the AI image studio that you can run yourself.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Needs a strong GPU or recent Mac.",
@@ -2243,7 +2439,9 @@
     "video": "hlOk-EFUITQ",
     "t": "23:35",
     "shown": "Discussed browsing the marketing plugin to learn its structure; no live run.",
-    "quote": "This is for uh knowledge workers. It's a collection of skills like how to do finance, human resources, legal, marketing, operations."
+    "quote": "This is for uh knowledge workers. It's a collection of skills like how to do finance, human resources, legal, marketing, operations.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -2279,7 +2477,9 @@
     "video": "GZtLsvklYBI",
     "t": "2:42",
     "shown": "Described features and the GitHub repo; no demo.",
-    "quote": "you're going to get chat, you're going to get deep research, you're going to get memory"
+    "quote": "you're going to get chat, you're going to get deep research, you're going to get memory",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Host says it is not as good as ChatGPT.",
@@ -2315,7 +2515,9 @@
     "video": "GZtLsvklYBI",
     "t": "26:15",
     "shown": "Described features; no demo.",
-    "quote": "You type what you want, the goal in English, and it plans the steps itself."
+    "quote": "You type what you want, the goal in English, and it plans the steps itself.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Needs a paid API key or limited free tier.",
@@ -2349,7 +2551,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -2384,7 +2588,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -2419,7 +2625,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -2456,7 +2664,9 @@
     "video": "GZtLsvklYBI",
     "t": "29:06",
     "shown": "Showed the repo and described the models.",
-    "quote": "It runs on your computer so your photos never leave"
+    "quote": "It runs on your computer so your photos never leave",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Needs a Vulkan-capable GPU.",
@@ -2490,7 +2700,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
@@ -2525,7 +2737,9 @@
     "video": null,
     "t": "",
     "shown": "",
-    "quote": ""
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -2560,7 +2774,9 @@
     "video": "uWnQLASl95U",
     "t": "1:48",
     "shown": "Live demo in Claude: campaign draft from top campaigns, new-subscriber segment, competitor style guide from Gmail, then a campaign.",
-    "quote": "Based on the best performing email campaigns, I want you to use Omnisend MCP to create an email campaign"
+    "quote": "Based on the best performing email campaigns, I want you to use Omnisend MCP to create an email campaign",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Sponsor link with 30% off; pricing and free tier not stated. Image upload through Claude failed in demo.",
@@ -2594,7 +2810,9 @@
     "video": "CQhWqUOouYM",
     "t": "8:08",
     "shown": "Looked at the repo; hosts doubted its quality (AI-written, verbose).",
-    "quote": "This is a free course"
+    "quote": "This is a free course",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Hacker News reaction was negative.",
@@ -2628,7 +2846,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "11:24",
     "shown": "Described the product; no live use.",
-    "quote": "one-click prompt that you can one-click copy, hand to Claude Code, or hand to Codex"
+    "quote": "one-click prompt that you can one-click copy, hand to Claude Code, or hand to Codex",
+    "opinion": {
+     "stance": "would use",
+     "who": "Corey",
+     "why": "Copy-and-hand-to-Claude funnel prompts, and a possible agency back end.",
+     "quote": "this is such a no-brainer.",
+     "t": "12:42"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Charlie has no funnels to rebuild. Rule 39: adopt tools only for real pain. Check the '$2.99 a year' price."
+    }
    }
   ],
   "check": "Price said as '$2.99 a year' in captions; verify.",
@@ -2664,7 +2895,9 @@
     "video": "kMPyFWFqX5I",
     "t": "11:34",
     "shown": "Explained the free alternative.",
-    "quote": "they also put it on GitHub for free for you to use"
+    "quote": "they also put it on GitHub for free for you to use",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Calendly $12 a seat claimed by host.",
@@ -2698,7 +2931,9 @@
     "video": "6xi2KL_NujU",
     "t": "2:35",
     "shown": "Turned a markdown research file into a deck with one prompt and asked it to reorder slides.",
-    "quote": "turn this into a presentation. Boom."
+    "quote": "turn this into a presentation. Boom.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Pricing not stated; host says output needs more work to look good.",
@@ -2736,7 +2971,9 @@
     "video": "CQhWqUOouYM",
     "t": "16:16",
     "shown": "Explained with a booking example; noted it does not cover Uber.",
-    "quote": "turn any app into a command line, your agent can drive"
+    "quote": "turn any app into a command line, your agent can drive",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -2770,7 +3007,9 @@
     "video": "6xi2KL_NujU",
     "t": "10:47",
     "shown": "Explained the idea; hosts disagreed about whether it replaces GitHub.",
-    "quote": "because all these skills are is a set of text files."
+    "quote": "because all these skills are is a set of text files.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Pricing and sync with GitHub not shown.",
@@ -2808,7 +3047,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "0:00",
     "shown": "Hosts discussed it and showed the site; no live build.",
-    "quote": "It's an AI video agent that turns your ideas into videos."
+    "quote": "It's an AI video agent that turns your ideas into videos.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Corey",
+     "why": "Good for cheap or mini launch videos, or as the back end of a launch agency.",
+     "quote": "you could use this tool to launch your products or to create launch videos.",
+     "t": "1:02"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "One intro or channel-launch video to test it",
+     "agree": "n/a",
+     "why": "They pitch it for product launches; Charlie has no product. Rule 42: try the simplest video route first."
+    }
    }
   ],
   "check": "Pricing not stated.",
@@ -2842,7 +3094,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "13:39",
     "shown": "Showed the site, a pixel promo video skill demo and its verified revenue.",
-    "quote": "This is where you pay a smaller price for premium skills and you can see exactly what the output's going to look like before you buy it."
+    "quote": "This is where you pay a smaller price for premium skills and you can see exactly what the output's going to look like before you buy it.",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "Corey",
+     "why": "Praises paid skills with a visible demo as a business idea; doesn't say they'd buy one.",
+     "quote": "This is where you pay a smaller price for premium skills and you can see exactly what the output's going to look like before you buy it.",
+     "t": "14:16"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "n/a",
+     "why": "Rule 34: a skill earns its place when built from a real run. Rule 37: vet any bought skill before installing."
+    }
    }
   ],
   "check": "$5,000 a month revenue claim via TrustMRR; skill price $4.99 as stated.",
@@ -2876,7 +3141,9 @@
     "video": "CQhWqUOouYM",
     "t": "9:38",
     "shown": "Hosts discussed it; said it is for financial professionals.",
-    "quote": "I think it's just 10 skill files"
+    "quote": "I think it's just 10 skill files",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W39",
@@ -2884,7 +3151,9 @@
     "video": "hlOk-EFUITQ",
     "t": "7:26",
     "shown": "Discussed a user who analysed a stock with it; not run live.",
-    "quote": "financial company sitting there and analyzing stocks for you."
+    "quote": "financial company sitting there and analyzing stocks for you.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Finance output should not be trusted blindly.",
@@ -2919,7 +3188,9 @@
     "video": "tsWOiibaaxA",
     "t": "0:02",
     "shown": "Live demos: smart-home lights, reminders and note search, a robot vacuum, phone and laptop actions.",
-    "quote": "There's a free LLM that works like Jev, so it will make no mistakes."
+    "quote": "There's a free LLM that works like Jev, so it will make no mistakes.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "'No mistakes' is a marketing line; the guest says reliability depends on tightly scoped tools and confidence scores. Title says better than Jev, not shown.",
@@ -2953,7 +3224,9 @@
     "video": "1fHsIveXRa8",
     "t": "25:00",
     "shown": "Described only; no demo.",
-    "quote": "an AI department or set of departments that runs your company"
+    "quote": "an AI department or set of departments that runs your company",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Audience submission.",
@@ -2991,7 +3264,9 @@
     "video": "ZodAaTH-6_E",
     "t": "7:46",
     "shown": "Played OpenAI's launch video; Andrew said the email part did not work until he updated the app.",
-    "quote": "connector access, it's going to make it a hundred times more useful."
+    "quote": "connector access, it's going to make it a hundred times more useful.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Which plan gets connectors not stated.",
@@ -3027,7 +3302,9 @@
     "video": "ZodAaTH-6_E",
     "t": "4:11",
     "shown": "Played a launch demo video made with it.",
-    "quote": "this in my mind is like Screen Studio, but easier to use"
+    "quote": "this in my mind is like Screen Studio, but easier to use",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Pricing not stated; auto-caption spells it Cluso.",
@@ -3061,7 +3338,9 @@
     "video": "1fHsIveXRa8",
     "t": "23:00",
     "shown": "Described by the host and the submitter; no demo.",
-    "quote": "This one is centered around projects and in one project you might use yeah five different types of agents."
+    "quote": "This one is centered around projects and in one project you might use yeah five different types of agents.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Audience submission, brand new.",
@@ -3099,7 +3378,9 @@
     "video": "1fHsIveXRa8",
     "t": "16:23",
     "shown": "Browsed the repo and discussed whether Claude Code can use them.",
-    "quote": "when you start to install these plugins, it's like installing software on your computer and you're giving it access to all your data, your code, your secret keys."
+    "quote": "when you start to install these plugins, it's like installing software on your computer and you're giving it access to all your data, your code, your secret keys.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Security warning: plugins can run code. Star count (6 to 7 thousand) is a claim.",
@@ -3137,7 +3418,9 @@
     "video": "1fHsIveXRa8",
     "t": "25:30",
     "shown": "Screenshots sent by the creator, viewed on an iPad.",
-    "quote": "What he did was he created a dashboard that does this."
+    "quote": "What he did was he created a dashboard that does this.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Audience submission.",
@@ -3175,7 +3458,9 @@
     "video": "1fHsIveXRa8",
     "t": "16:53",
     "shown": "Explained on the README plus a linked walkthrough video.",
-    "quote": "Five agents, five copies of your project, one tool."
+    "quote": "Five agents, five copies of your project, one tool.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3213,7 +3498,9 @@
     "video": "kMPyFWFqX5I",
     "t": "14:08",
     "shown": "Explained pricing options.",
-    "quote": "This is going to allow you to charge your users."
+    "quote": "This is going to allow you to charge your users.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3249,7 +3536,9 @@
     "video": "kMPyFWFqX5I",
     "t": "25:22",
     "shown": "Described it.",
-    "quote": "you don't have to pay per seat, you can bring your own OpenAI key"
+    "quote": "you don't have to pay per seat, you can bring your own OpenAI key",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3285,7 +3574,9 @@
     "video": "kMPyFWFqX5I",
     "t": "20:46",
     "shown": "Compared with Pipedrive; brief.",
-    "quote": "It's more like a Pipedrive."
+    "quote": "It's more like a Pipedrive.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3319,7 +3610,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "4:57",
     "shown": "Showed Alex Finn's screenshot of widgets; hosts were lukewarm and had not used it.",
-    "quote": "I don't see it being that unique enough for me to go and test it out"
+    "quote": "I don't see it being that unique enough for me to go and test it out",
+    "opinion": {
+     "stance": "wouldn't use",
+     "who": "Corey",
+     "why": "Not unique enough to replace Dots or other agents.",
+     "quote": "I don't see it being that unique enough for me to go and test it out",
+     "t": "5:34"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "Early access, nothing shown working. Rule 42: adopt tools only for real pain."
+    }
    }
   ],
   "check": "Early access; price unknown.",
@@ -3355,7 +3659,9 @@
     "video": "kMPyFWFqX5I",
     "t": "6:02",
     "shown": "Explained the quote-to-invoice flow.",
-    "quote": "why go for a very expensive paid plan from someone else when you could just host this yourself"
+    "quote": "why go for a very expensive paid plan from someone else when you could just host this yourself",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3389,7 +3695,9 @@
     "video": "6xi2KL_NujU",
     "t": "16:30",
     "shown": "Scored printingpress.dev 56 out of 100 and showed the checks.",
-    "quote": "Can an agent actually read and navigate your site?"
+    "quote": "Can an agent actually read and navigate your site?",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Price not stated.",
@@ -3429,7 +3737,9 @@
     "video": "kMPyFWFqX5I",
     "t": "22:19",
     "shown": "Described it; said Claude Code can set up follow-up emails.",
-    "quote": "This is the competitor to GoHighLevel."
+    "quote": "This is the competitor to GoHighLevel.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3463,7 +3773,9 @@
     "video": "CQhWqUOouYM",
     "t": "11:42",
     "shown": "Explained what it is and why the fixes matter.",
-    "quote": "They had eight security fixes in eight days"
+    "quote": "They had eight security fixes in eight days",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3497,7 +3809,9 @@
     "video": "kMPyFWFqX5I",
     "t": "1:01",
     "shown": "Explained uses for a business; no live demo.",
-    "quote": "PostHog is free, but it's really, really good"
+    "quote": "PostHog is free, but it's really, really good",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3531,7 +3845,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "1:39",
     "shown": "Showed an example AI influencer promoting a brand; hosts did not try it.",
-    "quote": "you can now get your own fake influencer that's basically just promoting your stuff."
+    "quote": "you can now get your own fake influencer that's basically just promoting your stuff.",
+    "opinion": {
+     "stance": "mixed",
+     "who": "Host doubtful, Corey keen",
+     "why": "Host finds it fun and effective but wouldn't use it; Corey says skip it and you get left behind.",
+     "quote": "I don't know that I would mess with this, but I do think it looks like it's fun and it's super effective.",
+     "t": "2:02"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "A fake face on a channel about learning in public is off-brand; Rule 37 (check before anything goes public). We side with the host, not the 'left behind' push."
+    }
    }
   ],
   "check": "50% off offer claimed; Product Hunt number one claim not verified.",
@@ -3565,7 +3892,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "18:36",
     "shown": "Described the features and claimed reply rates; no demo.",
-    "quote": "intelligent website popups that take five it takes 5 minutes to install this on your website."
+    "quote": "intelligent website popups that take five it takes 5 minutes to install this on your website.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Corey",
+     "why": "Simple five-minute popups for people who don't want to code.",
+     "quote": "be a customer of this for sure.",
+     "t": "19:50"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Charlie has no website needing popups. The 30% reply rate is the maker's claim (Rule 43)."
+    }
    }
   ],
   "check": "30% reply rate is the maker's claim.",
@@ -3601,7 +3941,9 @@
     "video": "kMPyFWFqX5I",
     "t": "16:39",
     "shown": "Described what it is.",
-    "quote": "I don't love how closely their name is to the name Typeform"
+    "quote": "I don't love how closely their name is to the name Typeform",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3635,7 +3977,9 @@
     "video": "6xi2KL_NujU",
     "t": "18:32",
     "shown": "Searched names live and showed prices.",
-    "quote": "Look, you can get andrew.tech for $275."
+    "quote": "Look, you can get andrew.tech for $275.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Prices shown vary by domain.",
@@ -3673,7 +4017,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "17:06",
     "shown": "Showed the site as an example of a simple profitable idea.",
-    "quote": "this is just a really good example of a AI tool directory done right."
+    "quote": "this is just a really good example of a AI tool directory done right.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Corey",
+     "why": "A clean one-page directory he would return to for design tools.",
+     "quote": "this is just a really good example of a AI tool directory done right.",
+     "t": "17:17"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "The Hands Brain already is our tool directory. Interesting idea only if the site went public (Rule 37 first)."
+    }
    }
   ],
   "check": "Sponsored slot price stated as about $350.",
@@ -3707,7 +4064,20 @@
     "video": "c5ZkPhzaLdA",
     "t": "9:09",
     "shown": "Andrew explained plans to run a fresh Mac OS VM for agents; no demo.",
-    "quote": "if you're going to give your agent a computer, you might as well put it on your own computer and then isolate it to that one computer."
+    "quote": "if you're going to give your agent a computer, you might as well put it on your own computer and then isolate it to that one computer.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Host, Corey agrees",
+     "why": "A cheap one-off fee for a clean Mac with agents isolated on it.",
+     "quote": "This one is the app that I'm going to rebuild my whole MacBook around.",
+     "t": "8:38"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Mac only and a lot of set-up for a beginner. Rule 42: lowest rung first; cloud sessions are already isolated."
+    }
    }
   ],
   "check": "One-off fee of about $34-35 claimed; Mac only as described.",
@@ -3741,7 +4111,9 @@
     "video": "ZodAaTH-6_E",
     "t": "10:50",
     "shown": "Showed it reading expressions and finger counts live.",
-    "quote": "it's a free GitHub repo for AI to essentially watch your camera, right?"
+    "quote": "it's a free GitHub repo for AI to essentially watch your camera, right?",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Link list names the repo Glance Speedlab; URL taken from there.",
@@ -3775,7 +4147,9 @@
     "video": "o7Rm5FvA7hU",
     "t": "0:32",
     "shown": "Shown as the source of meeting notes in a creator clip.",
-    "quote": "he's using Granola as a meeting notetaker"
+    "quote": "he's using Granola as a meeting notetaker",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3809,7 +4183,9 @@
     "video": "hlOk-EFUITQ",
     "t": "28:15",
     "shown": "Browsed the repo and its supported apps.",
-    "quote": "This is their opensource version of Grockbot"
+    "quote": "This is their opensource version of Grockbot",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Integrations target apps popular in Asia, not the UK.",
@@ -3843,7 +4219,9 @@
     "video": "1fHsIveXRa8",
     "t": "24:00",
     "shown": "A screenshot and a demo page.",
-    "quote": "You can go to the demo page."
+    "quote": "You can go to the demo page.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Audience submission.",
@@ -3881,7 +4259,9 @@
     "video": "1fHsIveXRa8",
     "t": "3:40",
     "shown": "A clip of the map with TomTom traffic, camera previews on hover and live flights.",
-    "quote": "it pulls together all the open data that's available online"
+    "quote": "it pulls together all the open data that's available online",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
@@ -3919,7 +4299,9 @@
     "video": "ZodAaTH-6_E",
     "t": "9:50",
     "shown": "Showed a demo with Apple Mail; Andrew said he would not use it.",
-    "quote": "It adds it to just about any app you have."
+    "quote": "It adds it to just about any app you have.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Pricing not stated.",
@@ -3953,7 +4335,9 @@
     "video": "ZodAaTH-6_E",
     "t": "12:52",
     "shown": "Showed a demo clip of an avatar trying on a jacket.",
-    "quote": "you can walk into different stores"
+    "quote": "you can walk into different stores",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Built with Claude Opus 5.5; demo only.",
@@ -3987,7 +4371,9 @@
     "video": "WPUAZm5rnGc",
     "t": "7:09",
     "shown": "Bought and registered a number live.",
-    "quote": "The telephone number from Twilio."
+    "quote": "The telephone number from Twilio.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Pricing not stated.",
@@ -4021,7 +4407,9 @@
     "video": "6xi2KL_NujU",
     "t": "1:34",
     "shown": "Hosts discussed the idea; no live build shown in this part.",
-    "quote": "It says it's native Swift and Kotlin, so that it's it's building it the right way, theoretically."
+    "quote": "It says it's native Swift and Kotlin, so that it's it's building it the right way, theoretically.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "'Free plan, no credit card' said; full pricing not given.",
@@ -4059,7 +4447,9 @@
     "video": "6xi2KL_NujU",
     "t": "15:28",
     "shown": "Described a launch post on X.",
-    "quote": "we're going to help you figure out what you should wear today."
+    "quote": "we're going to help you figure out what you should wear today.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Needs photo access (privacy).",
@@ -4097,7 +4487,9 @@
     "video": "6xi2KL_NujU",
     "t": "13:55",
     "shown": "Described only.",
-    "quote": "It gives a browser to whatever AI tool"
+    "quote": "It gives a browser to whatever AI tool",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Hosts doubt it can compete with built-in browsers.",
@@ -4135,7 +4527,9 @@
     "video": "6xi2KL_NujU",
     "t": "20:36",
     "shown": "Described; no demo.",
-    "quote": "Finally, 11 Labs launched a receptionist."
+    "quote": "Finally, 11 Labs launched a receptionist.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Price not stated.",
@@ -4173,7 +4567,9 @@
     "video": "6xi2KL_NujU",
     "t": "7:11",
     "shown": "Described; no demo.",
-    "quote": "It will allow you to speak to your website using whatever you like."
+    "quote": "It will allow you to speak to your website using whatever you like.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Price not stated.",
@@ -4211,7 +4607,9 @@
     "video": "6xi2KL_NujU",
     "t": "4:38",
     "shown": "Played the launch video only.",
-    "quote": "I should say, it's a wristband and it will answer questions, and it will also work through the mobile app."
+    "quote": "I should say, it's a wristband and it will answer questions, and it will also work through the mobile app.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Price and availability not stated.",
@@ -4249,7 +4647,9 @@
     "video": "WPUAZm5rnGc",
     "t": "6:08",
     "shown": "Set up the voice agent and cloned voice in the build.",
-    "quote": "you go ahead and add 11 Labs"
+    "quote": "you go ahead and add 11 Labs",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Pricing not stated.",

@@ -21,7 +21,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "0:00",
    "quote": "It's an AI video agent that turns your ideas into videos.",
-   "check": "Pricing not stated."
+   "check": "Pricing not stated.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Corey",
+    "why": "Good for cheap or mini launch videos, or as the back end of a launch agency.",
+    "quote": "you could use this tool to launch your products or to create launch videos.",
+    "t": "1:02"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "One intro or channel-launch video to test it",
+    "agree": "n/a",
+    "why": "They pitch it for product launches; Charlie has no product. Rule 42: try the simplest video route first."
+   }
   },
   {
    "name": "Spira AI",
@@ -36,7 +49,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "1:39",
    "quote": "you can now get your own fake influencer that's basically just promoting your stuff.",
-   "check": "50% off offer claimed; Product Hunt number one claim not verified."
+   "check": "50% off offer claimed; Product Hunt number one claim not verified.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Host doubtful, Corey keen",
+    "why": "Host finds it fun and effective but wouldn't use it; Corey says skip it and you get left behind.",
+    "quote": "I don't know that I would mess with this, but I do think it looks like it's fun and it's super effective.",
+    "t": "2:02"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "A fake face on a channel about learning in public is off-brand; Rule 37 (check before anything goes public). We side with the host, not the 'left behind' push."
+   }
   },
   {
    "name": "ChatGPT Dots",
@@ -51,7 +77,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "3:18",
    "quote": "I use Dot as almost the manager of codec.",
-   "check": "Availability and price not stated."
+   "check": "Availability and price not stated.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Corey for, host against",
+    "why": "Corey uses it as a chief of staff for Codex threads; the host only gets nagging.",
+    "quote": "I use Dot as almost the manager of codec.",
+    "t": "3:33"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Only if Codex threads pile up too many to track",
+    "agree": "agree",
+    "why": "Split verdict is fair. Rule 43: test it on Charlie's own tasks before switching; Rule 42: no manager layer until the pain shows."
+   }
   },
   {
    "name": "Hark",
@@ -66,7 +105,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "4:57",
    "quote": "I don't see it being that unique enough for me to go and test it out",
-   "check": "Early access; price unknown."
+   "check": "Early access; price unknown.",
+   "opinion": {
+    "stance": "wouldn't use",
+    "who": "Corey",
+    "why": "Not unique enough to replace Dots or other agents.",
+    "quote": "I don't see it being that unique enough for me to go and test it out",
+    "t": "5:34"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Early access, nothing shown working. Rule 42: adopt tools only for real pain."
+   }
   },
   {
    "name": "Claude for Startups",
@@ -81,7 +133,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "6:18",
    "quote": "free access. One year of Claude for Teams, $1,000 in Claude API credits",
-   "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page."
+   "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Both hosts",
+    "why": "Free year of Claude for Teams plus API credits is a no-brainer to apply for.",
+    "quote": "I think it's a no-brainer. Like, why not go and apply?",
+    "t": "7:07"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Free credits for the channel, if it counts as a startup",
+    "agree": "agree",
+    "why": "Applying costs nothing, but check UK eligibility and the terms first. A sign-up goes on the Decision Desk."
+   }
   },
   {
    "name": "Instinct",
@@ -96,7 +161,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "7:12",
    "quote": "So, it has access to my email.",
-   "check": "Needs email and card access; check privacy. Price not stated."
+   "check": "Needs email and card access; check privacy. Price not stated.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Corey",
+    "why": "Finds accountant documents in his email in about a minute by text.",
+    "quote": "it found it within like 60 seconds.",
+    "t": "8:08"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Needs email and card access. Rule 36: permissions in layers, read-only first; this repo is public, so no private data near it."
+   }
   },
   {
    "name": "VMPal",
@@ -111,7 +189,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "9:09",
    "quote": "if you're going to give your agent a computer, you might as well put it on your own computer and then isolate it to that one computer.",
-   "check": "One-off fee of about $34-35 claimed; Mac only as described."
+   "check": "One-off fee of about $34-35 claimed; Mac only as described.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Host, Corey agrees",
+    "why": "A cheap one-off fee for a clean Mac with agents isolated on it.",
+    "quote": "This one is the app that I'm going to rebuild my whole MacBook around.",
+    "t": "8:38"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Mac only and a lot of set-up for a beginner. Rule 42: lowest rung first; cloud sessions are already isolated."
+   }
   },
   {
    "name": "Boring Funnels",
@@ -126,7 +217,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "11:24",
    "quote": "one-click prompt that you can one-click copy, hand to Claude Code, or hand to Codex",
-   "check": "Price said as '$2.99 a year' in captions; verify."
+   "check": "Price said as '$2.99 a year' in captions; verify.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Corey",
+    "why": "Copy-and-hand-to-Claude funnel prompts, and a possible agency back end.",
+    "quote": "this is such a no-brainer.",
+    "t": "12:42"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie has no funnels to rebuild. Rule 39: adopt tools only for real pain. Check the '$2.99 a year' price."
+   }
   },
   {
    "name": "Skillry",
@@ -141,7 +245,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "13:39",
    "quote": "This is where you pay a smaller price for premium skills and you can see exactly what the output's going to look like before you buy it.",
-   "check": "$5,000 a month revenue claim via TrustMRR; skill price $4.99 as stated."
+   "check": "$5,000 a month revenue claim via TrustMRR; skill price $4.99 as stated.",
+   "opinion": {
+    "stance": "no opinion",
+    "who": "Corey",
+    "why": "Praises paid skills with a visible demo as a business idea; doesn't say they'd buy one.",
+    "quote": "This is where you pay a smaller price for premium skills and you can see exactly what the output's going to look like before you buy it.",
+    "t": "14:16"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Rule 34: a skill earns its place when built from a real run. Rule 37: vet any bought skill before installing."
+   }
   },
   {
    "name": "CreativeClaw",
@@ -156,7 +273,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "15:18",
    "quote": "with one MCP, you get to make it into much more of an artist.",
-   "check": "Revenue figures ($10k MRR, $125k lifetime) are the founder's; verify."
+   "check": "Revenue figures ($10k MRR, $125k lifetime) are the founder's; verify.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Host",
+    "why": "One pay-per-use MCP beats several separate subscriptions.",
+    "quote": "makes so much more sense than going to 11 Labs and paying for a subscription",
+    "t": "16:47"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Thumbnails and voiceover for the channel",
+    "agree": "agree",
+    "why": "Pay-per-use fits a beginner. Rule 43: compare one thumbnail with his current route first; Rule 37: vet the MCP before installing."
+   }
   },
   {
    "name": "vibe-code.ing",
@@ -171,7 +301,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "17:06",
    "quote": "this is just a really good example of a AI tool directory done right.",
-   "check": "Sponsored slot price stated as about $350."
+   "check": "Sponsored slot price stated as about $350.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Corey",
+    "why": "A clean one-page directory he would return to for design tools.",
+    "quote": "this is just a really good example of a AI tool directory done right.",
+    "t": "17:17"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "The Hands Brain already is our tool directory. Interesting idea only if the site went public (Rule 37 first)."
+   }
   },
   {
    "name": "TinyPopups",
@@ -186,7 +329,20 @@
    "video": "c5ZkPhzaLdA",
    "t": "18:36",
    "quote": "intelligent website popups that take five it takes 5 minutes to install this on your website.",
-   "check": "30% reply rate is the maker's claim."
+   "check": "30% reply rate is the maker's claim.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Corey",
+    "why": "Simple five-minute popups for people who don't want to code.",
+    "quote": "be a customer of this for sure.",
+    "t": "19:50"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie has no website needing popups. The 30% reply rate is the maker's claim (Rule 43)."
+   }
   },
   {
    "name": "Omnisend MCP",

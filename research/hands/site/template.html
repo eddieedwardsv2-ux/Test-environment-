@@ -199,7 +199,7 @@ function open(id){
   const sight = t.sightings.map(s => {
     const v = D.videos[s.video] || {};
     const link = s.video ? `https://www.youtube.com/watch?v=${esc(s.video)}${s.t ? "&t=" + secs(s.t) + "s" : ""}` : "";
-    return `<div><p class="k">${esc(s.week)} · ${esc(s.source || "")}${s.t ? " · " + esc(s.t) : ""}</p><p>${esc(s.shown || "Mentioned.")} ${link ? `<a href="${link}">Watch${s.t ? " at " + esc(s.t) : ""}</a>` : ""}</p>${s.quote ? `<blockquote>“${esc(s.quote)}”</blockquote>` : ""}<p class="price">${esc(v.title || "")}</p></div>`;
+    return `<div><p class="k">${esc(s.week)} · ${esc(s.source || "")}${s.t ? " · " + esc(s.t) : ""}</p><p>${esc(s.shown || "Mentioned.")} ${link ? `<a href="${link}">Watch${s.t ? " at " + esc(s.t) : ""}</a>` : ""}</p>${s.quote ? `<blockquote>“${esc(s.quote)}”</blockquote>` : ""}${s.opinion && s.opinion.stance !== "no opinion" ? `<p><b>Presenters: ${esc(s.opinion.stance)}.</b> ${esc(s.opinion.why || "")}</p>${s.opinion.quote ? `<blockquote>“${esc(s.opinion.quote)}”${s.opinion.t ? " (" + esc(s.opinion.t) + ")" : ""}</blockquote>` : ""}` : ""}${s.our_view ? `<p><b>Us: ${esc(s.our_view.need === "yes" ? "need it" : s.our_view.need === "maybe" ? "maybe" : "don't need it")}${s.our_view.agree && s.our_view.agree !== "n/a" ? " (we " + esc(s.our_view.agree) + ")" : ""}.</b> ${esc(s.our_view.why || "")}</p>` : ""}<p class="price">${esc(v.title || "")}</p></div>`;
   }).join("");
   document.getElementById("sheetbody").innerHTML = `<button class="close" id="x">Close</button><h3>${esc(t.name)}</h3>${tags(t)}
     <p>${esc(t.what)}</p>

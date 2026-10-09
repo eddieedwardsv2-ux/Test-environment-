@@ -5,7 +5,9 @@ review queue. Run after the repo or brain changes, then republish the page:
     python3 tools/build_brain_map.py
 Review marks live in the published page's "flags" database, not in this file."""
 import re, json, html, sys
-B = "/home/user/test-environment-/research/nate-herk/brain/"
+import pathlib as _pl
+_ROOT = str(_pl.Path(__file__).resolve().parent.parent) + "/"
+B = _ROOT + "research/nate-herk/brain/"
 GH = "https://github.com/eddieedwardsv2-ux/test-environment-/blob/main/research/nate-herk/"
 REFS = {"os": "../steal-my-exact-ai-os-setup-5-simple-tips--Ek1NBfnnTH0-transcript.md",
         "kb": "../i-built-another-andrej-karpathy-using-claude--bvGptCLDhyo-transcript.md"}
@@ -80,7 +82,7 @@ print("orphan concepts",[c["n"] for c in concepts if not c["rules"]],file=sys.st
 
 # ---------- whole-repo graph ----------
 import os
-ROOT = "/home/user/test-environment-/"
+ROOT = _ROOT
 REPO = "https://github.com/eddieedwardsv2-ux/test-environment-/blob/main/"
 SKIP = {".git", "node_modules", "__pycache__"}
 # The Hands Brain has its own site (system/pages.md), so it stays off this map.
