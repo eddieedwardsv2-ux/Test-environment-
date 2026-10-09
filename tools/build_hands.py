@@ -69,7 +69,7 @@ for e in tools.values():
     e["replaces"] = sorted(e["replaces"])
 ours = {p.parent.name for p in ROOT.glob(".claude/skills/*/SKILL.md")} | {p.parent.name for p in ROOT.glob("references/parked-skills/*/SKILL.md")}
 # Built into Claude already (Anthropic's own skills): nothing to install, so they leave the ranking too.
-BUILTIN = {"pptx", "pdf", "docx", "xlsx", "skill-creator"}
+BUILTIN = {"pptx", "pdf", "docx", "xlsx", "skill-creator", "deep-research", "docs", "code-review", "security-review", "simplify", "dataviz"}   # see system/capability-map.md
 for e in tools.values():
     e["ours"] = norm(e["name"]) in {norm(o) for o in ours}   # we already have a skill by this name
     e["have"] = e["ours"] or norm(e["name"]) in {norm(b) for b in BUILTIN}
