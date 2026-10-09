@@ -400,6 +400,21 @@ Also: why planning matters less now, "the better models and harnesses get, the e
 
 ---
 
+## J. Other formats (Instagram DMs, posts)
+
+**44. Six phrases, in order: interview, spec, verify, skill; sub-agents for research; automate last**
+A ready-made prompt for each stage of a real task. **Interview me:** one question at a time until a stranger could build it, asking what "done" looks like and flagging what was vague, and never asking what was already said. **Implementation spec:** what gets built, which files (named), the order, what could go wrong, what is *not* being done, and the three decisions you'd most likely disagree with. **Verify before you build:** pick the strongest check you have (a test run, a command's output, real data, a re-read of the diff against the ask), say what it would *not* catch, then report VERIFIED and NOT VERIFIED; "I reviewed the code" is not a check. **Build me a skill:** the second time you solve something, written as imperative instructions to a future agent (when it fires, steps, prompts that worked, mistakes and fixes), under 300 lines. **Sub-agents** only for independent work (search, review, research): say how many, what each owns and how a contradiction is settled, then reconcile into one answer. **Automate this** last: show what runs, when, what it touches and what happens on failure; read broadly, write to exactly one place, show anything it would send, log every run.
+> "Then tell me what that check would NOT catch." [six phrases, 4](../six-phrases-instagram-source.md)
+> "VERIFIED: [what you ran, what it returned]" [six phrases, 4](../six-phrases-instagram-source.md)
+> "NOT VERIFIED: [what you couldn't check and why]" [six phrases, 4](../six-phrases-instagram-source.md)
+> "End with the three decisions in this plan I'm most likely to disagree with, and why you chose them." [six phrases, 2](../six-phrases-instagram-source.md)
+> "The rule: run this the second time you solve something, not the first." [six phrases, 5](../six-phrases-instagram-source.md)
+> "Let it read broadly and write to exactly one place." [six phrases, 6](../six-phrases-instagram-source.md)
+> "Make it state the conflict before resolving it." [six phrases, what breaks](../six-phrases-instagram-source.md)
+Also: the trap in interviews, "One question at a time is not optional." [six phrases, 3](../six-phrases-instagram-source.md); "Get phrases 2 and 4 reliable before you reach for this one." [six phrases, 6](../six-phrases-instagram-source.md).
+*Source:* an Instagram auto-DM pasted by Charlie on 2026-10-09 ([six-phrases-instagram-source.md](../six-phrases-instagram-source.md)); attributed to Nate, not a video, date sent unknown. It restates concepts 22 (skills earn autonomy), 23 (sub-agents), 26 (grill me), 31 (a separate checker) and 42 (fixed flows, careful automation); what's new is the exact report shape, "what it would NOT catch", the "three decisions you'd disagree with" line and "write to exactly one place". Its "do not write code until I say go" is a checkpoint; this OS keeps Charlie out of the loop for small, easy-to-undo work and puts real choices on the Desk instead (see `context/working-rules.md`).
+**Used by:** Rule 44 ([rules.md](rules.md)).
+
 ## Limits and things to treat carefully
 - **Karpathy's 7 teaching rules** (build it, first-order term first, predict-run-compare, and so on, [5:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=334s)–[6:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=394s)) are Karpathy's, relayed by Nate. They live in `context/working-rules.md`, not in Nate's rules here.
 - **Counting slip:** he says "four steps" but also "six prompts" ([2:33](https://www.youtube.com/watch?v=bvGptCLDhyo&t=153s), [10:08](https://www.youtube.com/watch?v=bvGptCLDhyo&t=608s)). The method matters, not the count.

@@ -2,6 +2,14 @@
 
 **This is history.** It records what was added and when; it may be out of date about what the brain holds now. The current state is in [index.md](index.md). Newest first.
 
+## 2026-10-09: six-phrases Instagram DM (1 source, not a video)
+**Ingested:** "The 6 Phrases That Make Claude Build 10x Faster", an Instagram auto-DM Charlie pasted, saved verbatim as `../six-phrases-instagram-source.md` (attributed to Nate; date sent unknown).
+**Pages changed:** `concepts.md` new section J and concept 44; `rules.md` Rule 44 (stated); `index.md` counts (44 concepts, 44 rules), sources and question table.
+**Promoted:** none. It is a second source for concepts 22, 23, 26, 31 and 42 (they were already stated). New: the VERIFIED / NOT VERIFIED report shape, "what the check would NOT catch", "the three decisions you'd disagree with" in a spec, and automations that write to one place.
+**Applied to the OS:** `context/working-rules.md` READY / NOT READY now ends with VERIFIED / NOT VERIFIED lines (the DM's own checklist asks for this in CLAUDE.md; ours lives in working-rules, which the router points to).
+**Left out:** the "comment PHRASES" promotion. "Do not write code until I say go" isn't adopted as written: it would make Charlie a checkpoint on small work; real choices go on the Desk.
+**Checked:** every quote found word for word in the source file (script, 12/12); `tools/audit.py`.
+
 ## 2026-10-09: clashes fixed (Charlie's choice: no merge)
 **Pages changed:** `rules.md` Rule 19 marked replaced by Rule 41 (a "Newer wins" line; quotes kept); `concepts.md` concept 18 marked replaced by concept 39, concept 3's length pointer moved to 39; `overlap-review.md` records the choice. Nothing else merged.
 

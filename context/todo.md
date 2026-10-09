@@ -35,11 +35,12 @@ deleting them (history stays in `decisions.md`).
 - [ ] Hands Brain: the 35 tools with unknown prices (step 3 of `research/hands/improvement-plan.md`, not chosen)
 
 ## Watch-outs (things running on their own)
-- [ ] Read the re-run Friday audit report when it lands in `audits/` (running in "Weekly AI OS audit (runner)" from 12:22, 9 Oct)
+- [x] Re-run Friday audit landed: 64/100 (`audits/audit-2026-10-09-112239-a7c3.md`); fixes on the Desk card "Audit fixes"
 - [ ] Old names (ENATE, Hands Brain, Decision Desk) stop being aliases on 2026-11-09: remove them from the router then
 - [ ] "Weekly Hands Brain update" runs Saturdays at 8:47am: the same early time that hit the usage limit on Friday
 - [ ] "Flashcard check" still runs every evening although flashcards are parked: pause it?
 - [ ] Two sessions editing at once caused clashes today: close sessions when they finish
+- [ ] NVIDIA Switchyard (model router): watch only; look again if a routine moves to pay-per-use API keys (`research/hands/reviews/switchyard-2026-10-09.md`)
 
 ## Parked by choice (don't start without Charlie)
 Nick Saraev work; flashcards; Karpathy brain; Dan Martell; the decorators'

@@ -64,3 +64,8 @@ source updated; live artifact republish and a
 real shared save/read/close test are still required. This environment has
 no Claude ArtifactData/publishing tools. Local mocked tests are not live proof. The latest source was checked with
 14 adapter tests; browser rendering still needs verification in Claude.
+
+## Reviews (one tool, researched in depth)
+`reviews/`: ECC (`ecc-2026-10-09.md`, not installed, 3 ideas adopted), FreeLLMAPI
+(`freellmapi-2026-10-09.md`, optional Mac-day trial), NVIDIA Switchyard
+(`switchyard-2026-10-09.md`, a model router: watch, don't install).

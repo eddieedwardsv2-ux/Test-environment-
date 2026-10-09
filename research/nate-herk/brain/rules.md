@@ -268,6 +268,12 @@ Before changing a model, effort level or prompt for real work, run the same task
 > Also: "I put them in different work trees so they literally can't touch." [1:02](https://www.youtube.com/watch?v=GmLcJVzkxPA&t=62s); "What you're really going to want to do is run evals, meaning you're going to have a golden data set of 100 use cases and 100 correct answers" [12:43](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=763s)
 **Agent check:** *Was the change tried on Charlie's real tasks, in isolation, with cost counted and a known-right answer to compare with?* (Concepts 40, 41)
 
+**Rule 44: Prove it in a fixed shape: say what the check won't catch, then VERIFIED / NOT VERIFIED** (stated)
+Before building, name the strongest check you actually have and what it would not catch. After building, run it and report two lines: VERIFIED (what was run and what it returned) and NOT VERIFIED (what couldn't be checked, and why). Reading your own code is not a check. On a real task the order is interview, spec (naming files and the decisions Charlie would question), verify, then a skill on the second solve; automate only once that skill is trusted, writing to one place and logging every run.
+> "Why the format is mandatory: without a required shape, "it should work" slides right in. NOT VERIFIED forces honesty." [six phrases, 4](../six-phrases-instagram-source.md)
+> Also: "The verifier is "I reviewed the code." That's not a verifier." [six phrases, what breaks](../six-phrases-instagram-source.md); "Let it read broadly and write to exactly one place." [six phrases, 6](../six-phrases-instagram-source.md)
+**Agent check:** *Did the report show what was run and what it returned, and say plainly what wasn't checked? Did the plan name files and the calls Charlie might disagree with?* (Concepts 44, 31)
+
 ---
 
 ## Inferring

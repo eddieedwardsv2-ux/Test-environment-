@@ -75,7 +75,10 @@ Anything not backed by a source is labelled **(inferring)**.
 - **Finish big tasks with a READY / NOT READY line** (from ECC's
   verification loop): audit passes, links and routes resolve, router and
   focus updated, proof shown (output or receipt), pushed. Any "no" means
-  NOT READY: say which, never "done".
+  NOT READY: say which, never "done". Under it, two lines (Nate's six
+  phrases, Rule 44): **VERIFIED:** what was run and what it returned;
+  **NOT VERIFIED:** what couldn't be checked, and why. Before building, say
+  what the check would not catch. "I read the code" is not a check.
 - **Suggest tools proactively.** At the start of any new task or project,
   check `research/plugin-map.md` (all 9 families, Charlie's watchlist) and
   name at most 2 plugins that would genuinely help, with one line why.
