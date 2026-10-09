@@ -171,7 +171,9 @@ function render(){
   const live = D.tools.filter(match);
   document.getElementById("stats").innerHTML =
     `<span><b>${D.tools.length}</b> tools</span><span><b>${D.weeks.length}</b> week${D.weeks.length === 1 ? "" : "s"}</span><span><b>${D.weeks.reduce((n, w) => n + w.videos.length, 0)}</b> videos</span><span>newest week <b>${esc(D.weeks[0]?.week || "–")}</b></span>`;
-  const picks = live.filter(t => t.status !== "replaced" && !t.have && t.for_charlie >= 2).slice(0, 6);
+  const notNow = t => t.tried && ["later", "drop"].includes(t.tried.verdict);   // Charlie said later or drop
+  const picks = live.filter(t => t.status !== "replaced" && !t.have && !notNow(t) && t.relevance >= 2)
+    .sort((a, b) => (b.need === "yes") - (a.need === "yes") || b.score - a.score).slice(0, 6);
   document.getElementById("picks").innerHTML = picks.length ? picks.map(t =>
     `<button class="card" data-id="${esc(t.id)}"><span class="name">${esc(t.name)}</span><p>${esc(t.what)}</p>${tags(t)}</button>`).join("")
     : `<div class="empty">No tools match. Clear the search to see them all.</div>`;

@@ -62,7 +62,13 @@ for e in tools.values():
     e["weeks"], e["first"], e["last"] = seen, seen[-1], seen[0]
     e["mentions"] = len({s["video"] or s["source"] for s in e["sightings"]})
     age = order.index(e["last"])
-    e["score"] = round(3 * e["for_charlie"] + 2 * e["mentions"] + max(0, 3 - age) + price_bonus(e)
+    # Our own verdict beats the presenter's excitement (Charlie, 2026-10-09): the newest
+    # sighting's our_view.need caps relevance (yes 3, maybe 2, no 1).
+    needs = [s["our_view"]["need"] for s in sorted(e["sightings"], key=lambda s: s["week"], reverse=True)
+             if (s.get("our_view") or {}).get("need")]
+    e["need"] = needs[0] if needs else None
+    e["relevance"] = min(e["for_charlie"], {"yes": 3, "maybe": 2, "no": 1}.get(e["need"], 3))
+    e["score"] = round(3 * e["relevance"] + 2 * e["mentions"] + max(0, 3 - age) + price_bonus(e)
                        + min(3, max(0, math.log10(e.get("installs", 1)) - 3)), 1)   # skills.sh installs: 10k=1, 100k=2, 1M+=3
     e["replaced_by"] = None
 for e in tools.values():                                  # newer tool says it replaces an older one

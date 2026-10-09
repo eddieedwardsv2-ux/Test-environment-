@@ -27,3 +27,10 @@ results from weak prompts; some pay for trade software with dated AI features.
 - "I asked AI to interview me before it helped me" (first test video)
 - "I watched Nate Herk's second-brain video and built level 1 — here's what happened"
 - "Why my AI said it couldn't get YouTube transcripts — and how I made it find a way"
+
+## Voice notes (finding Charlie's on-screen style)
+- 2026-10-09, journey video drafts: likes **Terminal** best (the font, and titles
+  typed out rather than revealed at once); likes **Kinetic**'s boldness, clear
+  facts and colour changes; likes **Glass**'s first two scenes. Asked for a mix
+  of all three (built as "Mix"). The style he settles on counts towards his
+  channel voice. Draft page: see `system/pages.md` (journey video drafts).

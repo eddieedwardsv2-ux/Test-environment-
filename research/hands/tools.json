@@ -54,6 +54,8 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
+  "need": "yes",
+  "relevance": 3,
   "score": 18.9,
   "replaced_by": null,
   "status": "rising",
@@ -71,6 +73,208 @@
    "verdict": "later",
    "why": "Charlie couldn't play the video in the app, so the result wasn't clear to him; revisit when making the first short (2026-10-09)"
   },
+  "rank": 1
+ },
+ {
+  "id": "n:agentbrowser",
+  "name": "agent-browser",
+  "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
+  "kind": "skill",
+  "category": "Automation & workflows",
+  "what": "Browser automation command line so an AI agent can click, fill forms and take screenshots.",
+  "open_source": "public code",
+  "repo": "https://github.com/vercel-labs/agent-browser",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "3:54",
+    "shown": "Showed the skill file and example tasks (log in and screenshot a billing page; sign up as a test user); no live run.",
+    "quote": "This agent is headless, meaning that it does everything like under the under the covers.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Robbie",
+     "why": "Calls it super powerful because it screenshots pages without the browser ever opening.",
+     "quote": "It's a I mean it is a su- it is a super powerful tool.",
+     "t": "5:11"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Checking our own dashboards render, and screenshots for lessons",
+     "agree": "agree",
+     "why": "Rule 36: read-only first, never give it logins; Rule 43: try on one public page."
+    }
+   }
+  ],
+  "check": "You cannot watch the mouse move; a different video's guest said that makes him trust it less.",
+  "vs": null,
+  "installs": 1066994,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 16,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 1
+ },
+ {
+  "id": "n:frontenddesign",
+  "name": "frontend-design",
+  "url": "https://skills.sh/anthropics/skills/frontend-design",
+  "kind": "skill",
+  "category": "Design & websites",
+  "what": "Guidance for distinctive, good-looking UI design and typography when building web pages.",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "2:15",
+    "shown": "Showed a website before (cream background, generic) and after the skill (different colours, more design, links at the top).",
+    "quote": "The whole idea behind this is to eliminate that and create better designs.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Robbie",
+     "why": "The after version felt like it had a purpose, more than just making it look nice.",
+     "quote": "It's more than just make this look nice.",
+     "t": "2:38"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Dashboards and any page Charlie builds for the channel",
+     "agree": "agree",
+     "why": "Worth a single trial on one of our own pages (Rule 43), not a blind install."
+    }
+   }
+  ],
+  "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
+  "vs": null,
+  "installs": 964997,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 16.0,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 1
+ },
+ {
+  "id": "n:grilling",
+  "name": "grilling",
+  "url": "https://skills.sh/mattpocock/skills/grilling",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Grills you about a plan or idea to stress-test your thinking.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "7:39",
+    "shown": "Showed the file that Grill Me points to; no live run.",
+    "quote": "this is now the actual file that the other Grill Me skill refers to",
+    "opinion": {
+     "stance": "would use",
+     "who": "Robbie",
+     "why": "Likes grilling as the engine with Grill Me as its first use.",
+     "quote": "I I think it's great.",
+     "t": "8:20"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "A reusable interview step inside other skills",
+     "agree": "agree",
+     "why": "Worth reading before we rewrite our own `grill-me`; no install needed."
+    }
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": {
+   "tool": "ECC",
+   "verdict": "different job",
+   "gap": "Unknown what it adds over plain grill-me for our use; Matt says he split it out so other skills can reuse it."
+  },
+  "installs": 868047,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 15.9,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
   "rank": 1
  },
  {
@@ -140,7 +344,9 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
-  "score": 17,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 14,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
@@ -148,418 +354,6 @@
   "shown": true,
   "tried": null,
   "rank": 1
- },
- {
-  "id": "n:agentbrowser",
-  "name": "agent-browser",
-  "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
-  "kind": "skill",
-  "category": "Automation & workflows",
-  "what": "Browser automation command line so an AI agent can click, fill forms and take screenshots.",
-  "open_source": "public code",
-  "repo": "https://github.com/vercel-labs/agent-browser",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "3:54",
-    "shown": "Showed the skill file and example tasks (log in and screenshot a billing page; sign up as a test user); no live run.",
-    "quote": "This agent is headless, meaning that it does everything like under the under the covers.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Robbie",
-     "why": "Calls it super powerful because it screenshots pages without the browser ever opening.",
-     "quote": "It's a I mean it is a su- it is a super powerful tool.",
-     "t": "5:11"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Checking our own dashboards render, and screenshots for lessons",
-     "agree": "agree",
-     "why": "Rule 36: read-only first, never give it logins; Rule 43: try on one public page."
-    }
-   }
-  ],
-  "check": "You cannot watch the mouse move; a different video's guest said that makes him trust it less.",
-  "vs": null,
-  "installs": 1066994,
-  "weeks": [
-   "2026-W41",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 2,
-  "score": 16,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 1
- },
- {
-  "id": "gh:davila7/claude-code-templates",
-  "name": "Claude Code Templates",
-  "url": "https://github.com/davila7/claude-code-templates",
-  "kind": "repo",
-  "category": "Claude Code skills & plugins",
-  "what": "One-command install of skills, commands and settings for Claude Code.",
-  "open_source": "yes",
-  "repo": "https://github.com/davila7/claude-code-templates",
-  "cost": null,
-  "for_charlie": 3,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W40",
-    "source": "The Next New Thing",
-    "video": "CQhWqUOouYM",
-    "t": "20:21",
-    "shown": "Browsed the website listing skills, commands and settings.",
-    "quote": "You kit out Claude code with one install command",
-    "opinion": {
-     "stance": "mixed",
-     "who": "co-host",
-     "why": "Likes a curated pack but warns plugins run with full permission on your computer.",
-     "quote": "if you're downloading plugins that aren't trusted, please be careful at what's running on your computer.",
-     "t": "20:52"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Browse for ideas for Charlie's own skills; install nothing from it",
-     "agree": "agree",
-     "why": "Rule 37: vet plugins before use. Any install goes through the Decision Desk first."
-    }
-   },
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "hlOk-EFUITQ",
-    "t": "29:46",
-    "shown": "Showed the marketplace-style site; about 900 skills and 34 plugins.",
-    "quote": "This is a collection of Claude Code add-ons.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Adam",
-     "why": "Says it is worth a bookmark as a browsable place to find skills and plugins.",
-     "quote": "this would be a a worthy of a bookmark",
-     "t": "30:48"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Browse for ideas, not for installing",
-     "agree": "agree",
-     "why": "Fine to browse. Being 'curated' is not vetting, so Rule 37 still applies before any install."
-    }
-   }
-  ],
-  "check": "Review anything before installing.",
-  "vs": {
-   "tool": "ECC",
-   "verdict": "different job",
-   "gap": "A catalogue you pick single skills from, where ECC is one big pack; we don't know which of its skills are worth adding for a beginner."
-  },
-  "weeks": [
-   "2026-W40",
-   "2026-W39"
-  ],
-  "first": "2026-W39",
-  "last": "2026-W40",
-  "mentions": 2,
-  "score": 16,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 1
- },
- {
-  "id": "n:frontenddesign",
-  "name": "frontend-design",
-  "url": "https://skills.sh/anthropics/skills/frontend-design",
-  "kind": "skill",
-  "category": "Design & websites",
-  "what": "Guidance for distinctive, good-looking UI design and typography when building web pages.",
-  "open_source": "public code",
-  "repo": "https://github.com/anthropics/skills",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "2:15",
-    "shown": "Showed a website before (cream background, generic) and after the skill (different colours, more design, links at the top).",
-    "quote": "The whole idea behind this is to eliminate that and create better designs.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Robbie",
-     "why": "The after version felt like it had a purpose, more than just making it look nice.",
-     "quote": "It's more than just make this look nice.",
-     "t": "2:38"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Dashboards and any page Charlie builds for the channel",
-     "agree": "agree",
-     "why": "Worth a single trial on one of our own pages (Rule 43), not a blind install."
-    }
-   }
-  ],
-  "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
-  "vs": null,
-  "installs": 964997,
-  "weeks": [
-   "2026-W41",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 2,
-  "score": 16.0,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 1
- },
- {
-  "id": "n:grilling",
-  "name": "grilling",
-  "url": "https://skills.sh/mattpocock/skills/grilling",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Grills you about a plan or idea to stress-test your thinking.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "7:39",
-    "shown": "Showed the file that Grill Me points to; no live run.",
-    "quote": "this is now the actual file that the other Grill Me skill refers to",
-    "opinion": {
-     "stance": "would use",
-     "who": "Robbie",
-     "why": "Likes grilling as the engine with Grill Me as its first use.",
-     "quote": "I I think it's great.",
-     "t": "8:20"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "A reusable interview step inside other skills",
-     "agree": "agree",
-     "why": "Worth reading before we rewrite our own `grill-me`; no install needed."
-    }
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": {
-   "tool": "ECC",
-   "verdict": "different job",
-   "gap": "Unknown what it adds over plain grill-me for our use; Matt says he split it out so other skills can reuse it."
-  },
-  "installs": 868047,
-  "weeks": [
-   "2026-W41",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 2,
-  "score": 15.9,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "gh:addyosmani/agent-skills",
-  "name": "Agent Skills",
-  "url": "https://github.com/addyosmani/agent-skills",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Addy Osmani's pack of workflow skills that stops agents taking shortcuts; easier to install than ECC.",
-  "open_source": "yes",
-  "repo": "https://github.com/addyosmani/agent-skills",
-  "cost": null,
-  "for_charlie": 3,
-  "replaces": [
-   "ECC (for beginners)"
-  ],
-  "sightings": [
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "hlOk-EFUITQ",
-    "t": "22:03",
-    "shown": "Compared side by side with ECC using a Claude comparison.",
-    "quote": "So maybe agent skills is easier if you're just getting into this",
-    "opinion": {
-     "stance": "would use",
-     "who": "Adam",
-     "why": "Recommends it over ECC for someone just getting into this.",
-     "quote": "So maybe agent skills is easier if you're just getting into this",
-     "t": "22:03"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Read its 25 skills for ideas on spec, plan and review steps",
-     "agree": "agree",
-     "why": "Easier than ECC is fair. Rule 34 (one job, built from a real run) and Rule 37 (vet before install); install nothing without the Decision Desk."
-    }
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "19:27",
-    "shown": "Walked through the order of the workflow on the README.",
-    "quote": "you're meant to run these skills in this order",
-    "opinion": {
-     "stance": "would use",
-     "who": "Adam",
-     "why": "The order spec, plan, build, test, review, ship is how a professional engineer works.",
-     "quote": "this is exactly how a professional software engineer would would develop something too.",
-     "t": "19:27"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Borrow the plan, test and review habit for our own builds; pick 2 or 3 of the 25 skills, not all",
-     "agree": "agree",
-     "why": "Rule 32: plan and attack the plan before building; Rule 33: a separate checker decides done."
-    }
-   }
-  ],
-  "check": "Hosts frame it as easier, not better; ECC has far more skills.",
-  "vs": {
-   "tool": "find-skills",
-   "verdict": "different job",
-   "gap": "Unknown which of the 25 skills are worth installing first for a beginner and how they fit our own skills."
-  },
-  "weeks": [
-   "2026-W39",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W39",
-  "mentions": 2,
-  "score": 15,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 3
- },
- {
-  "id": "gh:mutonby/openshorts",
-  "name": "OpenShorts",
-  "url": "https://github.com/mutonby/openshorts",
-  "kind": "repo",
-  "category": "Video, clips & images",
-  "what": "Self-hosted tool that turns long videos into captioned vertical clips and can schedule posts.",
-  "open_source": "yes",
-  "repo": "https://github.com/mutonby/openshorts",
-  "cost": null,
-  "for_charlie": 3,
-  "replaces": [
-   "Opus Clip"
-  ],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "The Next New Thing",
-    "video": "GZtLsvklYBI",
-    "t": "19:30",
-    "shown": "Ran it on a YouTube video on the free hosted site; framing needed fixing.",
-    "quote": "This is a free clip maker that you can host yourself or you can go to their website and use for free.",
-    "opinion": {
-     "stance": "mixed",
-     "who": "host",
-     "why": "Free hosted clip maker, but his test clip was badly framed and needed manual fixing.",
-     "quote": "I have to go into edit framing and then I go and I reframe it.",
-     "t": "21:54"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Cutting Shorts from Charlie's own videos once the channel has long videos",
-     "agree": "agree",
-     "why": "Try the free hosted tier (20 minutes a month, watermark) on one real video first; do not self-host. Rules 42 and 43."
-    }
-   }
-  ],
-  "check": "Hosted free tier is 20 minutes a month with watermark; self-hosting slow without GPU.",
-  "vs": {
-   "tool": "hyperframes",
-   "verdict": "different job",
-   "gap": "Cuts long videos into vertical clips, where HyperFrames makes new motion graphics; untested until Charlie has a long video to cut."
-  },
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 15,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 2
  },
  {
   "id": "n:handoff",
@@ -594,6 +388,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 2,
   "score": 14.0,
   "replaced_by": null,
   "status": "new",
@@ -601,7 +397,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 4
+  "rank": 2
  },
  {
   "id": "gh:pbakaus/impeccable",
@@ -650,6 +446,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "yes",
+  "relevance": 3,
   "score": 14,
   "replaced_by": null,
   "status": "steady",
@@ -726,6 +524,8 @@
   "first": "2026-W40",
   "last": "2026-W41",
   "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
   "score": 14,
   "replaced_by": null,
   "status": "rising",
@@ -768,6 +568,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 2,
   "score": 13.9,
   "replaced_by": null,
   "status": "new",
@@ -775,7 +577,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 3
+  "rank": 2
  },
  {
   "id": "n:brainstorming",
@@ -810,6 +612,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 2,
   "score": 13.6,
   "replaced_by": null,
   "status": "new",
@@ -817,7 +621,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 5
+  "rank": 3
  },
  {
   "id": "n:metamuse",
@@ -936,6 +740,8 @@
   "first": "2026-W38",
   "last": "2026-W40",
   "mentions": 4,
+  "need": "no",
+  "relevance": 1,
   "score": 13.5,
   "replaced_by": null,
   "status": "rising",
@@ -978,6 +784,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 2,
   "score": 13.5,
   "replaced_by": null,
   "status": "new",
@@ -985,7 +793,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 6
+  "rank": 4
  },
  {
   "id": "n:writeaskill",
@@ -1020,6 +828,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 2,
   "score": 13.3,
   "replaced_by": null,
   "status": "new",
@@ -1027,7 +837,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 7
+  "rank": 5
  },
  {
   "id": "n:chatgptdots",
@@ -1094,6 +904,8 @@
   "first": "2026-W40",
   "last": "2026-W41",
   "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
   "score": 13,
   "replaced_by": null,
   "status": "rising",
@@ -1151,6 +963,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "yes",
+  "relevance": 3,
   "score": 13,
   "replaced_by": null,
   "status": "steady",
@@ -1159,6 +973,86 @@
   "shown": true,
   "tried": null,
   "rank": 1
+ },
+ {
+  "id": "gh:davila7/claude-code-templates",
+  "name": "Claude Code Templates",
+  "url": "https://github.com/davila7/claude-code-templates",
+  "kind": "repo",
+  "category": "Claude Code skills & plugins",
+  "what": "One-command install of skills, commands and settings for Claude Code.",
+  "open_source": "yes",
+  "repo": "https://github.com/davila7/claude-code-templates",
+  "cost": null,
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "source": "The Next New Thing",
+    "video": "CQhWqUOouYM",
+    "t": "20:21",
+    "shown": "Browsed the website listing skills, commands and settings.",
+    "quote": "You kit out Claude code with one install command",
+    "opinion": {
+     "stance": "mixed",
+     "who": "co-host",
+     "why": "Likes a curated pack but warns plugins run with full permission on your computer.",
+     "quote": "if you're downloading plugins that aren't trusted, please be careful at what's running on your computer.",
+     "t": "20:52"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Browse for ideas for Charlie's own skills; install nothing from it",
+     "agree": "agree",
+     "why": "Rule 37: vet plugins before use. Any install goes through the Decision Desk first."
+    }
+   },
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "hlOk-EFUITQ",
+    "t": "29:46",
+    "shown": "Showed the marketplace-style site; about 900 skills and 34 plugins.",
+    "quote": "This is a collection of Claude Code add-ons.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Adam",
+     "why": "Says it is worth a bookmark as a browsable place to find skills and plugins.",
+     "quote": "this would be a a worthy of a bookmark",
+     "t": "30:48"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Browse for ideas, not for installing",
+     "agree": "agree",
+     "why": "Fine to browse. Being 'curated' is not vetting, so Rule 37 still applies before any install."
+    }
+   }
+  ],
+  "check": "Review anything before installing.",
+  "vs": {
+   "tool": "ECC",
+   "verdict": "different job",
+   "gap": "A catalogue you pick single skills from, where ECC is one big pack; we don't know which of its skills are worth adding for a beginner."
+  },
+  "weeks": [
+   "2026-W40",
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W40",
+  "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 13,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 6
  },
  {
   "id": "gh:every-app/open-seo",
@@ -1227,6 +1121,8 @@
   "first": "2026-W39",
   "last": "2026-W40",
   "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
   "score": 13,
   "replaced_by": null,
   "status": "rising",
@@ -1301,6 +1197,8 @@
   "first": "2026-W39",
   "last": "2026-W40",
   "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
   "score": 13,
   "replaced_by": null,
   "status": "rising",
@@ -1369,6 +1267,8 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
+  "need": "no",
+  "relevance": 1,
   "score": 13.0,
   "replaced_by": null,
   "status": "rising",
@@ -1376,7 +1276,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 8
+  "rank": 7
  },
  {
   "id": "n:higgsfieldyoutubethumbnail",
@@ -1411,6 +1311,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 2,
   "score": 12.9,
   "replaced_by": null,
   "status": "new",
@@ -1418,71 +1320,71 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 4
+  "rank": 3
  },
  {
-  "id": "gh:alibaba/open-code-review",
-  "name": "Open Code Review",
-  "url": "https://github.com/alibaba/open-code-review",
-  "kind": "repo",
-  "category": "Coding agents & IDEs",
-  "what": "Alibaba's open-source code reviewer for vibe coders, now with a VS Code extension, using your existing AI subscription.",
+  "id": "gh:addyosmani/agent-skills",
+  "name": "Agent Skills",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Addy Osmani's pack of workflow skills that stops agents taking shortcuts; easier to install than ECC.",
   "open_source": "yes",
-  "repo": "https://github.com/alibaba/open-code-review",
+  "repo": "https://github.com/addyosmani/agent-skills",
   "cost": null,
-  "for_charlie": 2,
+  "for_charlie": 3,
   "replaces": [
-   "paid code-review tools"
+   "ECC (for beginners)"
   ],
   "sightings": [
    {
     "week": "2026-W39",
     "source": "The Next New Thing",
     "video": "hlOk-EFUITQ",
-    "t": "9:43",
-    "shown": "Hosts showed the repo and discussed running it on commit; not installed live.",
-    "quote": "Alibaba's code reviewer now leaves the terminal.",
+    "t": "22:03",
+    "shown": "Compared side by side with ECC using a Claude comparison.",
+    "quote": "So maybe agent skills is easier if you're just getting into this",
     "opinion": {
      "stance": "would use",
      "who": "Adam",
-     "why": "Likes open versions that let his firm use its existing subscriptions instead of paid reviewers.",
-     "quote": "more and more of these open-source versions are coming out that just let us use our existing cloud subscriptions or tokens or whatever",
-     "t": "10:14"
+     "why": "Recommends it over ECC for someone just getting into this.",
+     "quote": "So maybe agent skills is easier if you're just getting into this",
+     "t": "22:03"
     },
     "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "n/a",
-     "why": "Their firm ships code at scale; Charlie's checks are tools/audit.py and the audit skill. Rule 33 says a separate checker is wanted, and we have one."
+     "need": "maybe",
+     "for_what": "Read its 25 skills for ideas on spec, plan and review steps",
+     "agree": "agree",
+     "why": "Easier than ECC is fair. Rule 34 (one job, built from a real run) and Rule 37 (vet before install); install nothing without the Decision Desk."
     }
    },
    {
     "week": "2026-W38",
     "source": "The Next New Thing",
     "video": "1fHsIveXRa8",
-    "t": "0:33",
-    "shown": "A linked demo found a deliberately planted plain-text password and made an HTML report with one command.",
-    "quote": "This is the thing that will let you check your code to find common or maybe even uncommon problems.",
+    "t": "19:27",
+    "shown": "Walked through the order of the workflow on the README.",
+    "quote": "you're meant to run these skills in this order",
     "opinion": {
      "stance": "would use",
      "who": "Adam",
-     "why": "Automatic checking is the baseline for anyone who vibe codes.",
-     "quote": "and even better run automatically is is table stakes. I think everybody should be doing this.",
-     "t": "1:34"
+     "why": "The order spec, plan, build, test, review, ship is how a professional engineer works.",
+     "quote": "this is exactly how a professional software engineer would would develop something too.",
+     "t": "19:27"
     },
     "our_view": {
      "need": "maybe",
-     "for_what": "Scan this public repo for leaked keys or plain-text passwords before pushing",
+     "for_what": "Borrow the plan, test and review habit for our own builds; pick 2 or 3 of the 25 skills, not all",
      "agree": "agree",
-     "why": "Rule 37: check before anything goes public. Try it once on this repo (Rule 43), don't build a git hook yet (Rule 42)."
+     "why": "Rule 32: plan and attack the plan before building; Rule 33: a separate checker decides done."
     }
    }
   ],
-  "check": "Hosts say open-source versions let you use existing subscriptions instead of paid tools.",
+  "check": "Hosts frame it as easier, not better; ECC has far more skills.",
   "vs": {
-   "tool": "Claude Code agents.md support",
+   "tool": "find-skills",
    "verdict": "different job",
-   "gap": "Not run by us; unknown how to wire it to a git hook for this repo or whether it adds value for non-code files."
+   "gap": "Unknown which of the 25 skills are worth installing first for a beginner and how they fit our own skills."
   },
   "weeks": [
    "2026-W39",
@@ -1491,6 +1393,8 @@
   "first": "2026-W38",
   "last": "2026-W39",
   "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
   "score": 12,
   "replaced_by": null,
   "status": "steady",
@@ -1498,53 +1402,59 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 2
+  "rank": 8
  },
  {
-  "id": "gh:itzcrazykns/vane",
-  "name": "Vane",
-  "url": "https://github.com/ItzCrazyKns/Vane",
+  "id": "gh:mutonby/openshorts",
+  "name": "OpenShorts",
+  "url": "https://github.com/mutonby/openshorts",
   "kind": "repo",
-  "category": "Research & search",
-  "what": "Self-hosted research assistant that searches the web and gives numbered sources; formerly Perplexica.",
+  "category": "Video, clips & images",
+  "what": "Self-hosted tool that turns long videos into captioned vertical clips and can schedule posts.",
   "open_source": "yes",
-  "repo": "https://github.com/itzcrazykns/vane",
+  "repo": "https://github.com/mutonby/openshorts",
   "cost": null,
-  "for_charlie": 2,
+  "for_charlie": 3,
   "replaces": [
-   "Perplexity"
+   "Opus Clip"
   ],
   "sightings": [
    {
     "week": "2026-W41",
     "source": "The Next New Thing",
     "video": "GZtLsvklYBI",
-    "t": "9:27",
-    "shown": "Described features; no demo.",
-    "quote": "You type a question. It searches the web. It writes the answer. It gives you numbered sources.",
+    "t": "19:30",
+    "shown": "Ran it on a YouTube video on the free hosted site; framing needed fixing.",
+    "quote": "This is a free clip maker that you can host yourself or you can go to their website and use for free.",
     "opinion": {
      "stance": "mixed",
      "who": "host",
-     "why": "Free, cited answers, but he doubts it matches Perplexity.",
-     "quote": "I don't think it's nearly as strong as Perplexity for many people.",
-     "t": "11:14"
+     "why": "Free hosted clip maker, but his test clip was badly framed and needed manual fixing.",
+     "quote": "I have to go into edit framing and then I go and I reframe it.",
+     "t": "21:54"
     },
     "our_view": {
-     "need": "no",
-     "for_what": "",
+     "need": "maybe",
+     "for_what": "Cutting Shorts from Charlie's own videos once the channel has long videos",
      "agree": "agree",
-     "why": "Claude Code already searches the web with sources; a self-hosted search app needs a model and setup. Rule 42."
+     "why": "Try the free hosted tier (20 minutes a month, watermark) on one real video first; do not self-host. Rules 42 and 43."
     }
    }
   ],
-  "check": "Host says it is not as strong as Perplexity; needs a model (Ollama or free Gemini key).",
-  "vs": null,
+  "check": "Hosted free tier is 20 minutes a month with watermark; self-hosting slow without GPU.",
+  "vs": {
+   "tool": "hyperframes",
+   "verdict": "different job",
+   "gap": "Cuts long videos into vertical clips, where HyperFrames makes new motion graphics; untested until Charlie has a long video to cut."
+  },
   "weeks": [
    "2026-W41"
   ],
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
   "score": 12,
   "replaced_by": null,
   "status": "new",
@@ -1552,137 +1462,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 1
- },
- {
-  "id": "gh:tencent/weknora",
-  "name": "WeKnora",
-  "url": "https://github.com/Tencent/WeKnora",
-  "kind": "repo",
-  "category": "Knowledge & second brain",
-  "what": "Tencent's open-source knowledge system that links files into a searchable graph wiki for your agents.",
-  "open_source": "yes",
-  "repo": "https://github.com/tencent/weknora",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "hlOk-EFUITQ",
-    "t": "18:58",
-    "shown": "Described and showed the repo; not installed live.",
-    "quote": "Obsidian plus rag plus a graph database plus some extra integrations",
-    "opinion": {
-     "stance": "would use",
-     "who": "Adam",
-     "why": "Likes that it links files and builds the structure for him; he never had the patience to do it by hand.",
-     "quote": "you could just point this at your computer and all your files and it will build those relationships automatically.",
-     "t": "18:58"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "disagree",
-     "why": "Charlie's OS is organised by hand so he can find things without search (Rule 6) and raw sources stay untouched (Rule 12). Pointing it at all your files also breaks Rule 36 for a public repo."
-    }
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "13:52",
-    "shown": "A clip of the graph and linked wiki pages (in Chinese).",
-    "quote": "it seems like Obsidian plus rag plus AI plus a graph database.",
-    "opinion": {
-     "stance": "no opinion",
-     "who": "Adam",
-     "why": "Describes it as Obsidian plus RAG plus a graph database; no verdict.",
-     "quote": "",
-     "t": "13:52"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "n/a",
-     "why": "We already find things by plain markdown index (Rule 6). Rule 42: start at the lowest rung."
-    }
-   }
-  ],
-  "check": "Auto-caption mishears the name as Nora.",
-  "vs": {
-   "tool": "domain-modeling",
-   "verdict": "different job",
-   "gap": "Unknown setup effort and whether it beats the plain markdown brain files we already use."
-  },
-  "weeks": [
-   "2026-W39",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W39",
-  "mentions": 2,
-  "score": 12,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 1
- },
- {
-  "id": "gh:alirezarezvani/claude-skills",
-  "name": "Claude Skills",
-  "url": "https://github.com/alirezarezvani/claude-skills",
-  "kind": "repo",
-  "category": "Claude Code skills & plugins",
-  "what": "Repo of 388 job-specific skill playbooks and personas.",
-  "open_source": "yes",
-  "repo": "https://github.com/alirezarezvani/claude-skills",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W40",
-    "source": "The Next New Thing",
-    "video": "CQhWqUOouYM",
-    "t": "18:48",
-    "shown": "Showed the repo; hosts joked about too many skills.",
-    "quote": "Your AI assistant is going to get 388 job-specific playbooks",
-    "opinion": {
-     "stance": "mixed",
-     "who": "co-host",
-     "why": "Calls himself the negative skill guy but likes the persona idea over loose skills.",
-     "quote": "I'm the negative skill guy, but let me tell you the thing I like about this one.",
-     "t": "18:48"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "agree",
-     "why": "388 playbooks is bloat. Rule 34: one job per skill, built from a real run. Rule 4: always-loaded context is for expertise only."
-    }
-   }
-  ],
-  "check": "Downloaded skills need checking before install (the show warns about plugins).",
-  "vs": null,
-  "weeks": [
-   "2026-W40"
-  ],
-  "first": "2026-W40",
-  "last": "2026-W40",
-  "mentions": 1,
-  "score": 11,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 9
+  "rank": 4
  },
  {
   "id": "n:creativeclaw",
@@ -1732,6 +1512,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
   "score": 11,
   "replaced_by": null,
   "status": "new",
@@ -1774,6 +1556,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 11,
   "replaced_by": null,
   "status": "new",
@@ -1781,7 +1565,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 10
+  "rank": 9
  },
  {
   "id": "n:grokbot",
@@ -1879,6 +1663,8 @@
   "first": "2026-W38",
   "last": "2026-W40",
   "mentions": 3,
+  "need": "no",
+  "relevance": 1,
   "score": 11,
   "replaced_by": null,
   "status": "rising",
@@ -1887,58 +1673,6 @@
   "shown": true,
   "tried": null,
   "rank": 4
- },
- {
-  "id": "gh:vectorize-io/hindsight",
-  "name": "Hindsight",
-  "url": "https://github.com/vectorize-io/hindsight",
-  "kind": "repo",
-  "category": "Knowledge & second brain",
-  "what": "Persistent AI memory so an agent remembers you across sessions; built by a real company.",
-  "open_source": "yes",
-  "repo": "https://github.com/vectorize-io/hindsight",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W40",
-    "source": "The Next New Thing",
-    "video": "CQhWqUOouYM",
-    "t": "4:03",
-    "shown": "Discussed on the repo page; hosts unsure why it took off.",
-    "quote": "remembers you across your sessions",
-    "opinion": {
-     "stance": "would use",
-     "who": "co-host",
-     "why": "Prefers a memory tool backed by a real company, so it keeps up with new models.",
-     "quote": "this is actually brought to you like by a real business.",
-     "t": "4:34"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "n/a",
-     "why": "Our memory is plain files in this repo (Rule 3, one current source per fact), and cloud memory is wiped each session anyway."
-    }
-   }
-  ],
-  "check": "Star count may be inflated; unverified.",
-  "vs": null,
-  "weeks": [
-   "2026-W40"
-  ],
-  "first": "2026-W40",
-  "last": "2026-W40",
-  "mentions": 1,
-  "score": 11,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 2
  },
  {
   "id": "n:instinct",
@@ -2014,6 +1748,8 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
+  "need": "no",
+  "relevance": 1,
   "score": 11,
   "replaced_by": null,
   "status": "rising",
@@ -2094,6 +1830,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
   "score": 11,
   "replaced_by": null,
   "status": "steady",
@@ -2136,6 +1874,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 11.0,
   "replaced_by": null,
   "status": "new",
@@ -2143,7 +1883,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 3
+  "rank": 2
  },
  {
   "id": "n:domainmodeling",
@@ -2178,6 +1918,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 10.9,
   "replaced_by": null,
   "status": "new",
@@ -2185,7 +1927,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 3
+  "rank": 1
  },
  {
   "id": "n:hyperframesregistry",
@@ -2220,6 +1962,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 10.9,
   "replaced_by": null,
   "status": "new",
@@ -2262,6 +2006,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 10.9,
   "replaced_by": null,
   "status": "new",
@@ -2304,6 +2050,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 10.9,
   "replaced_by": null,
   "status": "new",
@@ -2346,6 +2094,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 10.3,
   "replaced_by": null,
   "status": "new",
@@ -2388,6 +2138,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 10.3,
   "replaced_by": null,
   "status": "new",
@@ -2396,58 +2148,6 @@
   "shown": false,
   "tried": null,
   "rank": 4
- },
- {
-  "id": "gh:elvisun/newsjack",
-  "name": "NewsJack",
-  "url": "https://github.com/elvisun/newsjack",
-  "kind": "skill",
-  "category": "Marketing, sales & SEO",
-  "what": "Free open-source agent skills that research journalists and stories and write pitches, like a PR team.",
-  "open_source": "yes",
-  "repo": "https://github.com/elvisun/newsjack",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "ZodAaTH-6_E",
-    "t": "5:13",
-    "shown": "Showed Elvis's demo plugging Jev into it to scrape and pitch quickly and cheaply.",
-    "quote": "It's a free GitHub repo and these skills basically turn your agent into a PR team.",
-    "opinion": {
-     "stance": "no opinion",
-     "who": "",
-     "why": "Calls it a cool skill suite, but nobody says they would use it.",
-     "quote": "",
-     "t": "5:13"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "n/a",
-     "why": "Pitching journalists is a business job, not an AI OS or channel-building job yet. Rule 39."
-    }
-   }
-  ],
-  "check": "Claimed 8-15k a month PR cost comparison not verified.",
-  "vs": null,
-  "weeks": [
-   "2026-W39"
-  ],
-  "first": "2026-W39",
-  "last": "2026-W39",
-  "mentions": 1,
-  "score": 10,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 5
  },
  {
   "id": "n:obsidianmarkdown",
@@ -2482,6 +2182,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 1,
   "score": 10.0,
   "replaced_by": null,
   "status": "new",
@@ -2489,61 +2191,7 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 4
- },
- {
-  "id": "gh:stablyai/orca",
-  "name": "Orca",
-  "url": "https://github.com/stablyai/orca",
-  "kind": "app",
-  "category": "Agent orchestration & teams",
-  "what": "Interface for running several coding agents side by side, designed around agents rather than code.",
-  "open_source": "yes",
-  "repo": "https://github.com/stablyai/orca",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [
-   "VS Code for agent work"
-  ],
-  "sightings": [
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "hlOk-EFUITQ",
-    "t": "25:07",
-    "shown": "Showed the readme screenshot with Claude Code and Codex in one window plus mobile link.",
-    "quote": "Run five coding agents at once. Keep the best.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Adam",
-     "why": "Calls it awesome and a new kind of editor designed around agents, not code.",
-     "quote": "I would call this the new era of VS Code",
-     "t": "26:40"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "disagree",
-     "why": "Several agents at once is the opposite of one next step at a time. Rule 24 and Rule 39 (cap parallel sessions)."
-    }
-   }
-  ],
-  "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion.",
-  "vs": null,
-  "weeks": [
-   "2026-W39"
-  ],
-  "first": "2026-W39",
-  "last": "2026-W39",
-  "mentions": 1,
-  "score": 10,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 5
+  "rank": 2
  },
  {
   "id": "n:vercelreactbestpractices",
@@ -2604,6 +2252,8 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
+  "need": "no",
+  "relevance": 0,
   "score": 9.9,
   "replaced_by": null,
   "status": "rising",
@@ -2611,7 +2261,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 4
+  "rank": 3
  },
  {
   "id": "gh:ace-step/ace-step-1.5",
@@ -2658,6 +2308,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 1,
   "score": 9,
   "replaced_by": null,
   "status": "new",
@@ -2666,62 +2318,6 @@
   "shown": true,
   "tried": null,
   "rank": 2
- },
- {
-  "id": "gh:jonimmswordpressdev/claude-dashboard",
-  "name": "Claude Dashboard",
-  "url": "https://github.com/JonImmsWordpressDev/claude-dashboard",
-  "kind": "repo",
-  "category": "Agent orchestration & teams",
-  "what": "One board showing every Claude Code session on your machine and which one is stuck.",
-  "open_source": "yes",
-  "repo": "https://github.com/jonimmswordpressdev/claude-dashboard",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "23:30",
-    "shown": "A screenshot from the README.",
-    "quote": "every cloud code session on your machine. One board that tells you which one is stuck.",
-    "opinion": {
-     "stance": "no opinion",
-     "who": "Andrew",
-     "why": "Only praises the README screenshot.",
-     "quote": "",
-     "t": "23:30"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "n/a",
-     "why": "Our cloud sessions run elsewhere, so it can't see them. Rule 39."
-    }
-   }
-  ],
-  "check": "Audience submission.",
-  "vs": {
-   "tool": "ChatGPT Dots",
-   "verdict": "different job",
-   "gap": "Not tried; cloud sessions here run elsewhere, so unknown if it helps Charlie."
-  },
-  "weeks": [
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W38",
-  "mentions": 1,
-  "score": 9,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 6
  },
  {
   "id": "n:claudeforstartups",
@@ -2771,6 +2367,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 1,
   "score": 9,
   "replaced_by": null,
   "status": "new",
@@ -2823,6 +2421,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
   "score": 9,
   "replaced_by": null,
   "status": "steady",
@@ -2879,6 +2479,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
   "score": 9,
   "replaced_by": null,
   "status": "steady",
@@ -2933,6 +2535,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 9,
   "replaced_by": null,
   "status": "new",
@@ -3016,6 +2620,8 @@
   "first": "2026-W38",
   "last": "2026-W40",
   "mentions": 2,
+  "need": "no",
+  "relevance": 1,
   "score": 9,
   "replaced_by": null,
   "status": "rising",
@@ -3023,7 +2629,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 7
+  "rank": 5
  },
  {
   "id": "gh:invoke-ai/invokeai",
@@ -3070,6 +2676,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 9,
   "replaced_by": null,
   "status": "new",
@@ -3122,6 +2730,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
   "score": 9,
   "replaced_by": null,
   "status": "steady",
@@ -3129,7 +2739,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 11
+  "rank": 10
  },
  {
   "id": "gh:odysseus-dev/odysseus",
@@ -3176,6 +2786,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 9,
   "replaced_by": null,
   "status": "new",
@@ -3184,6 +2796,88 @@
   "shown": true,
   "tried": null,
   "rank": 3
+ },
+ {
+  "id": "gh:alibaba/open-code-review",
+  "name": "Open Code Review",
+  "url": "https://github.com/alibaba/open-code-review",
+  "kind": "repo",
+  "category": "Coding agents & IDEs",
+  "what": "Alibaba's open-source code reviewer for vibe coders, now with a VS Code extension, using your existing AI subscription.",
+  "open_source": "yes",
+  "repo": "https://github.com/alibaba/open-code-review",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [
+   "paid code-review tools"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "hlOk-EFUITQ",
+    "t": "9:43",
+    "shown": "Hosts showed the repo and discussed running it on commit; not installed live.",
+    "quote": "Alibaba's code reviewer now leaves the terminal.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Adam",
+     "why": "Likes open versions that let his firm use its existing subscriptions instead of paid reviewers.",
+     "quote": "more and more of these open-source versions are coming out that just let us use our existing cloud subscriptions or tokens or whatever",
+     "t": "10:14"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "n/a",
+     "why": "Their firm ships code at scale; Charlie's checks are tools/audit.py and the audit skill. Rule 33 says a separate checker is wanted, and we have one."
+    }
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "0:33",
+    "shown": "A linked demo found a deliberately planted plain-text password and made an HTML report with one command.",
+    "quote": "This is the thing that will let you check your code to find common or maybe even uncommon problems.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Adam",
+     "why": "Automatic checking is the baseline for anyone who vibe codes.",
+     "quote": "and even better run automatically is is table stakes. I think everybody should be doing this.",
+     "t": "1:34"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Scan this public repo for leaked keys or plain-text passwords before pushing",
+     "agree": "agree",
+     "why": "Rule 37: check before anything goes public. Try it once on this repo (Rule 43), don't build a git hook yet (Rule 42)."
+    }
+   }
+  ],
+  "check": "Hosts say open-source versions let you use existing subscriptions instead of paid tools.",
+  "vs": {
+   "tool": "Claude Code agents.md support",
+   "verdict": "different job",
+   "gap": "Not run by us; unknown how to wire it to a git hook for this repo or whether it adds value for non-code files."
+  },
+  "weeks": [
+   "2026-W39",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W39",
+  "mentions": 2,
+  "need": "no",
+  "relevance": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 4
  },
  {
   "id": "gh:foundationagents/openmanus",
@@ -3230,6 +2924,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 9,
   "replaced_by": null,
   "status": "new",
@@ -3237,7 +2933,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 8
+  "rank": 6
  },
  {
   "id": "gh:upscayl/upscayl",
@@ -3284,6 +2980,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 9,
   "replaced_by": null,
   "status": "new",
@@ -3292,6 +2990,142 @@
   "shown": true,
   "tried": null,
   "rank": 8
+ },
+ {
+  "id": "gh:itzcrazykns/vane",
+  "name": "Vane",
+  "url": "https://github.com/ItzCrazyKns/Vane",
+  "kind": "repo",
+  "category": "Research & search",
+  "what": "Self-hosted research assistant that searches the web and gives numbered sources; formerly Perplexica.",
+  "open_source": "yes",
+  "repo": "https://github.com/itzcrazykns/vane",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [
+   "Perplexity"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "The Next New Thing",
+    "video": "GZtLsvklYBI",
+    "t": "9:27",
+    "shown": "Described features; no demo.",
+    "quote": "You type a question. It searches the web. It writes the answer. It gives you numbered sources.",
+    "opinion": {
+     "stance": "mixed",
+     "who": "host",
+     "why": "Free, cited answers, but he doubts it matches Perplexity.",
+     "quote": "I don't think it's nearly as strong as Perplexity for many people.",
+     "t": "11:14"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "Claude Code already searches the web with sources; a self-hosted search app needs a model and setup. Rule 42."
+    }
+   }
+  ],
+  "check": "Host says it is not as strong as Perplexity; needs a model (Ollama or free Gemini key).",
+  "vs": null,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 1
+ },
+ {
+  "id": "gh:tencent/weknora",
+  "name": "WeKnora",
+  "url": "https://github.com/Tencent/WeKnora",
+  "kind": "repo",
+  "category": "Knowledge & second brain",
+  "what": "Tencent's open-source knowledge system that links files into a searchable graph wiki for your agents.",
+  "open_source": "yes",
+  "repo": "https://github.com/tencent/weknora",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "hlOk-EFUITQ",
+    "t": "18:58",
+    "shown": "Described and showed the repo; not installed live.",
+    "quote": "Obsidian plus rag plus a graph database plus some extra integrations",
+    "opinion": {
+     "stance": "would use",
+     "who": "Adam",
+     "why": "Likes that it links files and builds the structure for him; he never had the patience to do it by hand.",
+     "quote": "you could just point this at your computer and all your files and it will build those relationships automatically.",
+     "t": "18:58"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Charlie's OS is organised by hand so he can find things without search (Rule 6) and raw sources stay untouched (Rule 12). Pointing it at all your files also breaks Rule 36 for a public repo."
+    }
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "13:52",
+    "shown": "A clip of the graph and linked wiki pages (in Chinese).",
+    "quote": "it seems like Obsidian plus rag plus AI plus a graph database.",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "Adam",
+     "why": "Describes it as Obsidian plus RAG plus a graph database; no verdict.",
+     "quote": "",
+     "t": "13:52"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "n/a",
+     "why": "We already find things by plain markdown index (Rule 6). Rule 42: start at the lowest rung."
+    }
+   }
+  ],
+  "check": "Auto-caption mishears the name as Nora.",
+  "vs": {
+   "tool": "domain-modeling",
+   "verdict": "different job",
+   "gap": "Unknown setup effort and whether it beats the plain markdown brain files we already use."
+  },
+  "weeks": [
+   "2026-W39",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W39",
+  "mentions": 2,
+  "need": "no",
+  "relevance": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 3
  },
  {
   "id": "n:omnisendmcp",
@@ -3341,6 +3175,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 8.5,
   "replaced_by": null,
   "status": "new",
@@ -3398,6 +3234,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 8,
   "replaced_by": null,
   "status": "steady",
@@ -3455,6 +3293,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 8,
   "replaced_by": null,
   "status": "new",
@@ -3462,7 +3302,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 6
+  "rank": 5
  },
  {
   "id": "gh:calcom/cal.diy",
@@ -3509,6 +3349,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 8,
   "replaced_by": null,
   "status": "steady",
@@ -3517,6 +3359,60 @@
   "shown": true,
   "tried": null,
   "rank": 3
+ },
+ {
+  "id": "gh:alirezarezvani/claude-skills",
+  "name": "Claude Skills",
+  "url": "https://github.com/alirezarezvani/claude-skills",
+  "kind": "repo",
+  "category": "Claude Code skills & plugins",
+  "what": "Repo of 388 job-specific skill playbooks and personas.",
+  "open_source": "yes",
+  "repo": "https://github.com/alirezarezvani/claude-skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "source": "The Next New Thing",
+    "video": "CQhWqUOouYM",
+    "t": "18:48",
+    "shown": "Showed the repo; hosts joked about too many skills.",
+    "quote": "Your AI assistant is going to get 388 job-specific playbooks",
+    "opinion": {
+     "stance": "mixed",
+     "who": "co-host",
+     "why": "Calls himself the negative skill guy but likes the persona idea over loose skills.",
+     "quote": "I'm the negative skill guy, but let me tell you the thing I like about this one.",
+     "t": "18:48"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "388 playbooks is bloat. Rule 34: one job per skill, built from a real run. Rule 4: always-loaded context is for expertise only."
+    }
+   }
+  ],
+  "check": "Downloaded skills need checking before install (the show warns about plugins).",
+  "vs": null,
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 11
  },
  {
   "id": "n:claudeslidesdocs",
@@ -3565,6 +3461,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
   "score": 8,
   "replaced_by": null,
   "status": "steady",
@@ -3617,6 +3515,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 8,
   "replaced_by": null,
   "status": "steady",
@@ -3625,6 +3525,60 @@
   "shown": true,
   "tried": null,
   "rank": 3
+ },
+ {
+  "id": "gh:vectorize-io/hindsight",
+  "name": "Hindsight",
+  "url": "https://github.com/vectorize-io/hindsight",
+  "kind": "repo",
+  "category": "Knowledge & second brain",
+  "what": "Persistent AI memory so an agent remembers you across sessions; built by a real company.",
+  "open_source": "yes",
+  "repo": "https://github.com/vectorize-io/hindsight",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "source": "The Next New Thing",
+    "video": "CQhWqUOouYM",
+    "t": "4:03",
+    "shown": "Discussed on the repo page; hosts unsure why it took off.",
+    "quote": "remembers you across your sessions",
+    "opinion": {
+     "stance": "would use",
+     "who": "co-host",
+     "why": "Prefers a memory tool backed by a real company, so it keeps up with new models.",
+     "quote": "this is actually brought to you like by a real business.",
+     "t": "4:34"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "n/a",
+     "why": "Our memory is plain files in this repo (Rule 3, one current source per fact), and cloud memory is wiped each session anyway."
+    }
+   }
+  ],
+  "check": "Star count may be inflated; unverified.",
+  "vs": null,
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 4
  },
  {
   "id": "n:improvecodebasearchitecture",
@@ -3659,6 +3613,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 0,
   "score": 8,
   "replaced_by": null,
   "status": "new",
@@ -3667,62 +3623,6 @@
   "shown": false,
   "tried": null,
   "rank": 5
- },
- {
-  "id": "n:notionskillslibrary",
-  "name": "Notion Skills Library",
-  "url": "https://www.notion.com/blog/a-skills-library-for-every-agent",
-  "kind": "service",
-  "category": "Claude Code skills & plugins",
-  "what": "Notion now stores agent skills as pages so non-GitHub teammates can share and edit them.",
-  "open_source": "unknown",
-  "repo": "",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "6xi2KL_NujU",
-    "t": "10:47",
-    "shown": "Explained the idea; hosts disagreed about whether it replaces GitHub.",
-    "quote": "because all these skills are is a set of text files.",
-    "opinion": {
-     "stance": "mixed",
-     "who": "Andrew for, Matt unconvinced",
-     "why": "Andrew wants teammates off GitHub; Matt keeps skills on GitHub and doesn't use Notion's agents.",
-     "quote": "I think everyone should go and use it and install it.",
-     "t": "10:47"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "agree",
-     "why": "Skills already live in this repo. Rule 3: one current source per fact; a Notion copy would drift."
-    }
-   }
-  ],
-  "check": "Pricing and sync with GitHub not shown.",
-  "vs": {
-   "tool": "find-skills",
-   "verdict": "different job",
-   "gap": "Unknown whether skills sync both ways with GitHub or just copy; we already keep skills in this repo."
-  },
-  "weeks": [
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W38",
-  "mentions": 1,
-  "score": 8,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 12
  },
  {
   "id": "n:pexo",
@@ -3767,6 +3667,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 1,
   "score": 8,
   "replaced_by": null,
   "status": "new",
@@ -3824,6 +3726,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 8,
   "replaced_by": null,
   "status": "new",
@@ -3831,7 +3735,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 13
+  "rank": 12
  },
  {
   "id": "n:tdd",
@@ -3866,6 +3770,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 0,
   "score": 8,
   "replaced_by": null,
   "status": "new",
@@ -3908,6 +3814,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 0,
   "score": 8.0,
   "replaced_by": null,
   "status": "new",
@@ -3950,6 +3858,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 0,
   "score": 7.9,
   "replaced_by": null,
   "status": "new",
@@ -4024,6 +3934,8 @@
   "first": "2026-W39",
   "last": "2026-W40",
   "mentions": 2,
+  "need": "no",
+  "relevance": 0,
   "score": 7,
   "replaced_by": null,
   "status": "rising",
@@ -4031,7 +3943,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 14
+  "rank": 13
  },
  {
   "id": "gh:cactus-compute/needle",
@@ -4076,6 +3988,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 7,
   "replaced_by": null,
   "status": "steady",
@@ -4084,6 +3998,116 @@
   "shown": true,
   "tried": null,
   "rank": 4
+ },
+ {
+  "id": "gh:elvisun/newsjack",
+  "name": "NewsJack",
+  "url": "https://github.com/elvisun/newsjack",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Free open-source agent skills that research journalists and stories and write pitches, like a PR team.",
+  "open_source": "yes",
+  "repo": "https://github.com/elvisun/newsjack",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "ZodAaTH-6_E",
+    "t": "5:13",
+    "shown": "Showed Elvis's demo plugging Jev into it to scrape and pitch quickly and cheaply.",
+    "quote": "It's a free GitHub repo and these skills basically turn your agent into a PR team.",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "",
+     "why": "Calls it a cool skill suite, but nobody says they would use it.",
+     "quote": "",
+     "t": "5:13"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "n/a",
+     "why": "Pitching journalists is a business job, not an AI OS or channel-building job yet. Rule 39."
+    }
+   }
+  ],
+  "check": "Claimed 8-15k a month PR cost comparison not verified.",
+  "vs": null,
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 1,
+  "score": 7,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 6
+ },
+ {
+  "id": "gh:stablyai/orca",
+  "name": "Orca",
+  "url": "https://github.com/stablyai/orca",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "Interface for running several coding agents side by side, designed around agents rather than code.",
+  "open_source": "yes",
+  "repo": "https://github.com/stablyai/orca",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [
+   "VS Code for agent work"
+  ],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "hlOk-EFUITQ",
+    "t": "25:07",
+    "shown": "Showed the readme screenshot with Claude Code and Codex in one window plus mobile link.",
+    "quote": "Run five coding agents at once. Keep the best.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Adam",
+     "why": "Calls it awesome and a new kind of editor designed around agents, not code.",
+     "quote": "I would call this the new era of VS Code",
+     "t": "26:40"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Several agents at once is the opposite of one next step at a time. Rule 24 and Rule 39 (cap parallel sessions)."
+    }
+   }
+  ],
+  "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion.",
+  "vs": null,
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 1,
+  "score": 7,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 7
  },
  {
   "id": "gh:trainingsites/campus-ai-os",
@@ -4132,6 +4156,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 6,
   "replaced_by": null,
   "status": "steady",
@@ -4139,7 +4165,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 9
+  "rank": 8
  },
  {
   "id": "n:chatgptvoice",
@@ -4184,6 +4210,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 6,
   "replaced_by": null,
   "status": "steady",
@@ -4192,6 +4220,64 @@
   "shown": true,
   "tried": null,
   "rank": 3
+ },
+ {
+  "id": "gh:jonimmswordpressdev/claude-dashboard",
+  "name": "Claude Dashboard",
+  "url": "https://github.com/JonImmsWordpressDev/claude-dashboard",
+  "kind": "repo",
+  "category": "Agent orchestration & teams",
+  "what": "One board showing every Claude Code session on your machine and which one is stuck.",
+  "open_source": "yes",
+  "repo": "https://github.com/jonimmswordpressdev/claude-dashboard",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "23:30",
+    "shown": "A screenshot from the README.",
+    "quote": "every cloud code session on your machine. One board that tells you which one is stuck.",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "Andrew",
+     "why": "Only praises the README screenshot.",
+     "quote": "",
+     "t": "23:30"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "n/a",
+     "why": "Our cloud sessions run elsewhere, so it can't see them. Rule 39."
+    }
+   }
+  ],
+  "check": "Audience submission.",
+  "vs": {
+   "tool": "ChatGPT Dots",
+   "verdict": "different job",
+   "gap": "Not tried; cloud sessions here run elsewhere, so unknown if it helps Charlie."
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 1,
+  "score": 6,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 9
  },
  {
   "id": "n:clueso",
@@ -4238,6 +4324,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 1,
   "score": 6,
   "replaced_by": null,
   "status": "steady",
@@ -4294,6 +4382,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 6,
   "replaced_by": null,
   "status": "steady",
@@ -4350,6 +4440,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 6,
   "replaced_by": null,
   "status": "steady",
@@ -4357,7 +4449,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 15
+  "rank": 14
  },
  {
   "id": "gh:captainasic/reckoner",
@@ -4406,6 +4498,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 1,
   "score": 6,
   "replaced_by": null,
   "status": "steady",
@@ -4462,6 +4556,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 1,
   "score": 6,
   "replaced_by": null,
   "status": "steady",
@@ -4518,6 +4614,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 6,
   "replaced_by": null,
   "status": "steady",
@@ -4570,6 +4668,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -4624,6 +4724,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -4678,6 +4780,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -4730,6 +4834,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "new",
@@ -4784,6 +4890,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -4840,6 +4948,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 1,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -4894,6 +5004,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -4946,6 +5058,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -4954,6 +5068,64 @@
   "shown": true,
   "tried": null,
   "rank": 5
+ },
+ {
+  "id": "n:notionskillslibrary",
+  "name": "Notion Skills Library",
+  "url": "https://www.notion.com/blog/a-skills-library-for-every-agent",
+  "kind": "service",
+  "category": "Claude Code skills & plugins",
+  "what": "Notion now stores agent skills as pages so non-GitHub teammates can share and edit them.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "6xi2KL_NujU",
+    "t": "10:47",
+    "shown": "Explained the idea; hosts disagreed about whether it replaces GitHub.",
+    "quote": "because all these skills are is a set of text files.",
+    "opinion": {
+     "stance": "mixed",
+     "who": "Andrew for, Matt unconvinced",
+     "why": "Andrew wants teammates off GitHub; Matt keeps skills on GitHub and doesn't use Notion's agents.",
+     "quote": "I think everyone should go and use it and install it.",
+     "t": "10:47"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "Skills already live in this repo. Rule 3: one current source per fact; a Notion copy would drift."
+    }
+   }
+  ],
+  "check": "Pricing and sync with GitHub not shown.",
+  "vs": {
+   "tool": "find-skills",
+   "verdict": "different job",
+   "gap": "Unknown whether skills sync both ways with GitHub or just copy; we already keep skills in this repo."
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 1,
+  "score": 5,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 15
  },
  {
   "id": "gh:posthog/posthog",
@@ -4998,6 +5170,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -5055,6 +5229,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "new",
@@ -5107,6 +5283,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "new",
@@ -5161,6 +5339,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -5222,6 +5402,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "maybe",
+  "relevance": 1,
   "score": 5,
   "replaced_by": null,
   "status": "steady",
@@ -5274,6 +5456,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "new",
@@ -5331,6 +5515,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 5,
   "replaced_by": null,
   "status": "new",
@@ -5388,6 +5574,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 4,
   "replaced_by": null,
   "status": "steady",
@@ -5440,6 +5628,8 @@
   "first": "2026-W40",
   "last": "2026-W40",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 4,
   "replaced_by": null,
   "status": "steady",
@@ -5492,6 +5682,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 4,
   "replaced_by": null,
   "status": "steady",
@@ -5548,6 +5740,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 3,
   "replaced_by": null,
   "status": "steady",
@@ -5604,6 +5798,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 3,
   "replaced_by": null,
   "status": "steady",
@@ -5660,6 +5856,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 3,
   "replaced_by": null,
   "status": "steady",
@@ -5712,6 +5910,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 3,
   "replaced_by": null,
   "status": "steady",
@@ -5764,6 +5964,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 3,
   "replaced_by": null,
   "status": "steady",
@@ -5821,6 +6023,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 3,
   "replaced_by": null,
   "status": "steady",
@@ -5882,6 +6086,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 2.5,
   "replaced_by": null,
   "status": "steady",
@@ -5938,6 +6144,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 2,
   "replaced_by": null,
   "status": "steady",
@@ -5994,6 +6202,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 2,
   "replaced_by": null,
   "status": "steady",
@@ -6050,6 +6260,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 2,
   "replaced_by": null,
   "status": "steady",
@@ -6106,6 +6318,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 2,
   "replaced_by": null,
   "status": "steady",
@@ -6162,6 +6376,8 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
+  "need": "no",
+  "relevance": 0,
   "score": 2,
   "replaced_by": null,
   "status": "steady",
@@ -6262,7 +6478,9 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 3,
-  "score": 19,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 16,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
@@ -6280,74 +6498,6 @@
    "why": "Charlie agreed 2026-10-09: ideas only. A 293-skill coding kit with hooks on 7 events breaks smallest context; its done-when check, READY/NOT READY report and scored lessons are now in our rules (review: research/hands/reviews/ecc-2026-10-09.md)."
   },
   "rank": 16
- },
- {
-  "id": "n:findskills",
-  "name": "find-skills",
-  "url": "https://skills.sh/vercel-labs/skills/find-skills",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Finds and installs agent skills when you ask 'is there a skill for X'.",
-  "open_source": "public code",
-  "repo": "https://github.com/vercel-labs/skills",
-  "cost": null,
-  "for_charlie": 3,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\"",
-    "opinion": null,
-    "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "0:27",
-    "shown": "Showed the skill file and the idea of asking an agent to find a skill for writing tests; no live install.",
-    "quote": "So, what you do is you go into your agent and you say, \"Find a skill for writing tests.\"",
-    "opinion": {
-     "stance": "would use",
-     "who": "Andrew",
-     "why": "Calls it a simple way to install a skill and the most-installed one.",
-     "quote": "Simple way to install it.",
-     "t": "0:32"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "agree",
-     "why": "Already installed here (`find-skills`). Rule 36: vet each plugin before it is installed, which this skill does not do."
-    }
-   }
-  ],
-  "check": "Install count (3.7M) is the highest by far; Vercel Labs is a known publisher but still read any skill it finds before installing.",
-  "vs": {
-   "tool": "ECC",
-   "verdict": "different job",
-   "gap": "We already have it; unknown how well it ranks or vets results compared with the find-skills skill we use."
-  },
-  "installs": 3756497,
-  "weeks": [
-   "2026-W41",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 2,
-  "score": 19,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": true,
-  "have": true,
-  "shown": true,
-  "tried": null,
-  "rank": null
  },
  {
   "id": "n:grillme",
@@ -6408,6 +6558,8 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
+  "need": "yes",
+  "relevance": 3,
   "score": 19,
   "replaced_by": null,
   "status": "rising",
@@ -6450,6 +6602,8 @@
   "first": "2026-W41",
   "last": "2026-W41",
   "mentions": 1,
+  "need": null,
+  "relevance": 3,
   "score": 16.6,
   "replaced_by": null,
   "status": "new",
@@ -6518,12 +6672,172 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
+  "need": "yes",
+  "relevance": 2,
   "score": 15.9,
   "replaced_by": null,
   "status": "rising",
   "ours": true,
   "have": true,
   "shown": true,
+  "tried": null,
+  "rank": null
+ },
+ {
+  "id": "n:findskills",
+  "name": "find-skills",
+  "url": "https://skills.sh/vercel-labs/skills/find-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Finds and installs agent skills when you ask 'is there a skill for X'.",
+  "open_source": "public code",
+  "repo": "https://github.com/vercel-labs/skills",
+  "cost": null,
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\"",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "0:27",
+    "shown": "Showed the skill file and the idea of asking an agent to find a skill for writing tests; no live install.",
+    "quote": "So, what you do is you go into your agent and you say, \"Find a skill for writing tests.\"",
+    "opinion": {
+     "stance": "would use",
+     "who": "Andrew",
+     "why": "Calls it a simple way to install a skill and the most-installed one.",
+     "quote": "Simple way to install it.",
+     "t": "0:32"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "Already installed here (`find-skills`). Rule 36: vet each plugin before it is installed, which this skill does not do."
+    }
+   }
+  ],
+  "check": "Install count (3.7M) is the highest by far; Vercel Labs is a known publisher but still read any skill it finds before installing.",
+  "vs": {
+   "tool": "ECC",
+   "verdict": "different job",
+   "gap": "We already have it; unknown how well it ranks or vets results compared with the find-skills skill we use."
+  },
+  "installs": 3756497,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "need": "no",
+  "relevance": 1,
+  "score": 13,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": true,
+  "have": true,
+  "shown": true,
+  "tried": null,
+  "rank": null
+ },
+ {
+  "id": "n:pptx",
+  "name": "pptx",
+  "url": "https://skills.sh/anthropics/skills/pptx",
+  "kind": "skill",
+  "category": "Other",
+  "what": "Anthropic's skill to create, read and edit PowerPoint files.",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 232334,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 1,
+  "score": 10.4,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": true,
+  "shown": false,
+  "tried": null,
+  "rank": null
+ },
+ {
+  "id": "n:pdf",
+  "name": "pdf",
+  "url": "https://skills.sh/anthropics/skills/pdf",
+  "kind": "skill",
+  "category": "Other",
+  "what": "Anthropic's skill to read, merge, split, fill and create PDFs.",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 207552,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 1,
+  "score": 10.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": true,
+  "shown": false,
   "tried": null,
   "rank": null
  },
@@ -6574,96 +6888,14 @@
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
-  "score": 12,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 9,
   "replaced_by": null,
   "status": "steady",
   "ours": true,
   "have": true,
   "shown": true,
-  "tried": null,
-  "rank": null
- },
- {
-  "id": "n:pptx",
-  "name": "pptx",
-  "url": "https://skills.sh/anthropics/skills/pptx",
-  "kind": "skill",
-  "category": "Other",
-  "what": "Anthropic's skill to create, read and edit PowerPoint files.",
-  "open_source": "public code",
-  "repo": "https://github.com/anthropics/skills",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "installs": 232334,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 10.4,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": true,
-  "shown": false,
-  "tried": null,
-  "rank": null
- },
- {
-  "id": "n:pdf",
-  "name": "pdf",
-  "url": "https://skills.sh/anthropics/skills/pdf",
-  "kind": "skill",
-  "category": "Other",
-  "what": "Anthropic's skill to read, merge, split, fill and create PDFs.",
-  "open_source": "public code",
-  "repo": "https://github.com/anthropics/skills",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "installs": 207552,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "score": 10.3,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": true,
-  "shown": false,
   "tried": null,
   "rank": null
  },
@@ -6715,6 +6947,8 @@
   "first": "2026-W39",
   "last": "2026-W39",
   "mentions": 1,
+  "need": "no",
+  "relevance": 1,
   "score": 6,
   "replaced_by": "VoiceStudio",
   "status": "replaced",

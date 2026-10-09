@@ -18,3 +18,4 @@ sign-up or payment. Tick items off here and log each one in `decisions.md`.
 4. **Plugins:** context7 and superpowers; test the watch-video plugin.
 5. **Codex check** (audit finding AIOS-b9f5-05): confirm Codex lists the 10
    skills through `.agents/skills`.
+- **Optional: FreeLLMAPI trial** (only if Claude limits have started stopping sessions): one small public task on free models vs the Sonnet helper, with `try-tool`. Review: `research/hands/reviews/freellmapi-2026-10-09.md`.
