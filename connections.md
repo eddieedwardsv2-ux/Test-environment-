@@ -14,7 +14,7 @@ details (keys: `context/environment.md`).
 | 4 | Communication | Gmail | `mcp` (claude.ai connector) | connector sign-in | not checked |
 | 5 | Project / task tracking | This repo: `context/current-focus.md`, `projects/` | local files | GitHub | 2026-10-08 (push works) |
 | 6 | Meeting intelligence | — | not applicable yet (set-up session recordings will live in a private repo) | — | — |
-| 7 | Knowledge / files | This repo; Google Drive | local files; `mcp` (claude.ai connector) | GitHub; connector sign-in | repo 2026-10-08; Drive not checked |
+| 7 | Knowledge / files | This repo; Notion | local files; `mcp` (claude.ai connector) | GitHub; connector sign-in | repo read 2026-10-09; Notion tools available in ChatGPT, content read not yet tested |
 | 8 | Content research: YouTube transcripts | youtube-transcript.ai | `script` (`research/get_transcript.py`; queue `research/transcript-queue.txt`, fetched hourly by GitHub Actions) | none (free, rate-limited) | 2026-10-08 (20 fetched) |
 | 9 | Content research: X posts | X | `script` (`research/get_x_posts.py`) | none | not checked |
 | 10 | YouTube analytics | vidIQ | `mcp` (claude.ai connector) | connector sign-in | not checked (parked until 5 videos) |
@@ -25,6 +25,11 @@ details (keys: `context/environment.md`).
 | 15 | Notes and pages | Notion | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: connected, not used yet (this repo stays the source of truth) |
 | 16 | Thumbnails, designs | Canva | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: sign-in not finished (Charlie) |
 
+**Creative Claw (requested 2026-10-09):** media MCP/plugin for YouTube flows.
+Install listing: https://chatgpt.com/plugins/creativeclaw . Connection and
+content access not tested; directory search did not return a matching install
+target. Workflow and first-trial checks: `projects/youtube-channel/README.md`.
+
 **Mechanism options:** `mcp` (MCP server or claude.ai connector), `script`
 (Python/Bash hitting an API, in `research/` or `tools/`), `export` (CSV/JSON
 dump), `key+ref` (key in environment secrets + `references/{tool}-api.md`
@@ -32,3 +37,8 @@ guide), `not yet connected`.
 
 When you wire a new tool, add a row here and save `references/{tool}-api.md`
 with endpoints, auth flow and common queries: researched once, saved forever.
+
+**Source preference (2026-10-09):** GitHub remains the project entry point.
+Use Notion wherever Google Drive would previously have been used. ChatGPT
+reported Google Drive not installed when removal was requested; Claude
+connection status was not checked. No files were migrated or deleted.

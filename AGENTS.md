@@ -45,6 +45,9 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   (`context/environment.md`). Never in files or chat. Blocked commands:
   deny list in `.claude/settings.json`.
 
+**Source preference (2026-10-09):** GitHub first. Use Notion instead of
+Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
+
 ## Where things live
 | Need | Look in |
 |---|---|

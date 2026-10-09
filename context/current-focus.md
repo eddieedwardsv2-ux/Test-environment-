@@ -16,7 +16,13 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Now (2026-10-09, Charlie):** the Hands Brain is done back to W38 (21 videos, 117 tools,
+**Next step (latest request, 2026-10-09):** finish the interrupted system
+check, then evaluate cheaper models against the strongest-model baseline.
+Keep cheaper routes only where measured output meets the same quality bar.
+GitHub first; Notion replaces Drive (see `AGENTS.md`). The older Desk item
+below remains pending; no answer is assumed.
+
+**Previous status (2026-10-09, Charlie):** the Hands Brain is done back to W38 (21 videos, 117 tools,
 presenters' opinions on each; new videos come in through the Saturday routine). The
 end-to-end test passed in Claude (`audits/evidence/2026-10-09-end-to-end/`; Codex waits for
 the Mac). **Next step (2026-10-09):** Charlie answers "middle-go" on the Decision Desk (one

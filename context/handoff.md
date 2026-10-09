@@ -8,6 +8,18 @@ ChatGPT) reads this first and updates it before stopping.
 **Updated:** 2026-10-09, about 05:29 UK, by the session that ran the 5 Desk answers (sections 3-5).
 Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoughts.md`.
 
+## Latest steering (2026-10-09, ChatGPT)
+- Creative Claw requested for the next YouTube production session; route and
+  first trial in `projects/youtube-channel/README.md`. Installation/sign-in
+  remains incomplete; no credits spent or output tested.
+- GitHub first; ignore the old Google Drive START HERE instructions. Use
+  Notion for work previously routed to Drive. ChatGPT removal reported Drive
+  not installed; this does not revoke a separate Claude connection.
+- Next: finish the interrupted system check, then evaluate cheaper models
+  against the strongest-model baseline; only keep cheaper routes that meet
+  the same quality criteria. This latest request advances the model-usage
+  work previously parked below. No model benchmark has been run here yet.
+
 ## 1. Charlie's thinking (the big picture)
 1. **Learn the most streamlined way.** Claude works faster than watching videos;
    save usage for when there's more to spare.

@@ -1,5 +1,19 @@
 # Decision log
 
+## 2026-10-09 — Include Creative Claw in YouTube production
+Charlie requested finding and adding Creative Claw for future YouTube flows.
+Matched the existing Hands Brain entry to CreativeClawCo; added connection
+preflight and first-trial steps to the channel README and capability map.
+Plugin not connected in this session. No spending or publishing authorised
+by this route alone.
+
+## 2026-10-09 — Notion replaces Google Drive
+Charlie explicitly requested dropping Google Drive and using Notion whenever
+Drive would previously have been used. GitHub remains the project entry
+point. Updated the router, connections, capability map and ChatGPT export.
+ChatGPT removal returned "not installed"; Claude connection status remains
+unverified. No content migration or deletion performed.
+
 Newest first. One line per decision: date — decision — why.
 This is history: what's true now is in `AGENTS.md` and
 `context/current-focus.md`. A later entry can supersede an earlier one.

@@ -10,6 +10,8 @@ those change, update it; if they ever disagree, they win.
 **Last synced:** 2026-10-08, with `AGENTS.md` (Four Cs, audit skill) and
 `context/how-i-learn.md` (no forced quizzes).
 
+**Source-routing update:** 2026-10-09: GitHub first, Notion replaces Drive.
+
 Codex doesn't need this: it reads `AGENTS.md` from this GitHub project.
 
 ---
@@ -30,6 +32,8 @@ finishing, so keep me on one priority and push me to finish and publish.
 ## Box 2: How should ChatGPT respond?
 
 ```
+Start project work at GitHub repo eddieedwardsv2-ux/Test-environment-, AGENTS.md.
+Use Notion instead of Google Drive. Ignore the old Drive START HERE instructions.
 Work like Karpathy, Nate Herk and Nick Saraev:
 1. Smallest version first; add one thing at a time. Simpler wins.
 2. Say what you're assuming. Small, easy-to-undo things: just do them and say
