@@ -123,7 +123,8 @@ suggestions for discussion, not decisions.
   in no file, so the Hands Brain ranked pdf and pptx as "new". `connections.md`
   also misses HyperFrames, Moda, Notion and Canva.
 - Fixed 2026-10-09: the capability map now has "Already available, nothing to
-  build", and the Hands build treats those as already owned.
+  build", the Hands build treats those as already owned, and `connections.md`
+  now lists HyperFrames, Moda, Notion and Canva (rows 13 to 16).
 
 ## F. Stop ingesting older shows
 - "Maybe we don't need to ingest anymore skills from older videos as we already

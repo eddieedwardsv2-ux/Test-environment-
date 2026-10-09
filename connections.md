@@ -20,6 +20,10 @@ details (keys: `context/environment.md`).
 | 10 | YouTube analytics | vidIQ | `mcp` (claude.ai connector) | connector sign-in | not checked (parked until 5 videos) |
 | 11 | Code hosting | GitHub | `git` over the session proxy; GitHub connector for PRs | session credentials; connector needs re-authorising | 2026-10-08 (git push works; connector asked for sign-in) |
 | 12 | Video, images, thumbnails | Higgsfield | `mcp` (custom claude.ai connector `https://mcp.higgsfield.ai/mcp`, not in the official directory); or its skills + CLI on the Mac | Higgsfield account sign-in (paid credits) | 2026-10-09: server found and answers, not connected (Charlie adds it) |
+| 13 | Video and motion graphics | HyperFrames by HeyGen | `mcp` (claude.ai connector: read tools only from Claude Code; making videos needs its local skills, see `research/hands/tried.json`) | connector sign-in | 2026-10-09: connected; local trial rendered a title card |
+| 14 | Slides, designs, social graphics | Moda | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: connected, not used yet |
+| 15 | Notes and pages | Notion | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: connected, not used yet (this repo stays the source of truth) |
+| 16 | Thumbnails, designs | Canva | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: sign-in not finished (Charlie) |
 
 **Mechanism options:** `mcp` (MCP server or claude.ai connector), `script`
 (Python/Bash hitting an API, in `research/` or `tools/`), `export` (CSV/JSON
