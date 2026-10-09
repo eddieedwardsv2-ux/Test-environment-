@@ -65,6 +65,10 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
+- Claude Guardian review of browser app commit `c0b51c5` on
+  `codex/shared-iphone-browser` is required. Independent code review and 14/14
+  tests passed; they do not replace that repository gate. App is not on main
+  and external hosting remains pending.
 - Name an existing hosting provider/server and connect it securely for the shared
   iPhone app. Missing host access is the deployment blocker; don't ask for keys
   or passwords in chat. Creation/deployment authorised; sign-up/payment still

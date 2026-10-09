@@ -26,6 +26,8 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 - Hand-off rebuild completed: Quartermaster, Reading Room, Brain dashboard and Nate-first map need live republishing. Pre-commit audit: 0 errors/4 warnings; after commit `975420c`: 1 missing-Guardian error/4 publication warnings. Review remains outstanding.
 
 ## Key files
+- App commit `c0b51c5`, branch `codex/shared-iphone-browser`; main is unchanged.
+  Claude Guardian review required; independent code review is not that gate.
 - `context/handoff.md`, `context/current-focus.md`, `context/todo.md`, `decisions.md`.
 - `projects/shared-browser/README.md`, `verification.md`, `cloud-install.sh`, `cloud-start.sh`, Docker Compose/Caddy files and tests. Private development container `charlie-stack-test`; profile/device data in its Docker volume, never the public repo. Use `docker exec charlie-stack-test node agent.mjs status`; no public phone URL exists.
 - `references/higgsfield-api.md` and `system/system-map/system-map.html` (the promo's real map reference).
@@ -49,7 +51,7 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 ## Open decisions
 - Existing hosting provider/server and secure deployment access are needed (asked once asynchronously); do not request passwords/keys in chat. Actual device pairing and public HTTPS verification follow deployment.
 - Secure Higgsfield sign-in and a supported persistent connector/browser route; Katana availability and exact credit cost unverified. Never ask for tokens or OAuth callback URLs in chat.
-- Claude Guardian review and live page republishing will remain outstanding after this hand-off commit; current-focus records the commit once saved.
+- Claude Guardian review is outstanding for `975420c` and app `c0b51c5`; 2 missing-review errors expected after the app commit, plus4 publication warnings. Code is on `codex/shared-iphone-browser`, not merged into main.
 - Branch review: `claude/nate-brain-wip` has 1 unmerged commit including `research/nate-herk/brain/x-themes.md` (unverified); `elder-councils-plan` has 3; `nate-watch-path` has 2. The Elder plan and Watch Path source are already on main. Historical branches also contain old renamed files; no branches merged/deleted.
 
 ## Pick up here
