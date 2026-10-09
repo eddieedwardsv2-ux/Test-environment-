@@ -71,7 +71,8 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 | Every dashboard Charlie opens (links, sources, rebuild steps) | `system/pages.md` |
 | Everything unfinished (one list) | `context/todo.md` |
 | Past decisions | `decisions.md` (new ones at the top, dated) |
-| Projects | `projects/<name>/` |
+| Projects | `projects/<name>/` (list in `projects/README.md`) |
+| Flashcards and lessons (parked) | `learning/` |
 | BTC technical-analysis newsletter | `projects/bitcoin-newsletter/README.md` (issues and editorial checks) |
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |
 | Tools the OS can reach | `connections.md` (API guides in `references/`) |

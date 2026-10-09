@@ -1,6 +1,6 @@
 ---
 name: hands-ingest
-description: Feeds the Hands Brain (tools, skills, plugins, MCPs, repos) from a YouTube channel, new videos only (history stops at W38), then ranks what's best to use now and rebuilds its site. Use for "update the Hands Brain", "update the tools list", "what's new this week", "add <channel> to Hands".
+description: Feeds the Quartermaster's tool list (was the Hands Brain): tools, skills, plugins, MCPs and repos from a YouTube channel, new videos only, ranked, site rebuilt. Use for "update the Quartermaster", "update the tools list", "what's new this week", "update the Hands Brain".
 ---
 
 # Hands ingest (new videos only; history stops at W38)

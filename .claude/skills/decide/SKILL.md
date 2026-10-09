@@ -1,6 +1,6 @@
 ---
 name: decide
-description: Puts a question for Charlie on the Decision Desk instead of asking in chat, and reads his answers back. Use whenever you need Charlie to choose, approve or do something, and at the start of every session.
+description: Puts a question for Charlie on the Chief's Desk (was the Decision Desk) instead of asking in chat, and reads his answers back. Use whenever Charlie must choose, approve or do something, and at the start of every session.
 ---
 
 # Decide (the Decision Desk)

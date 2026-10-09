@@ -1,6 +1,6 @@
 ---
 name: try-tool
-description: Gives one tool from the Hands Brain a safe, real trial on Charlie's own work and records his keep or drop verdict, which changes its rank. Use for "try <tool>", "test this tool", "is <tool> any good for me".
+description: Gives one tool from the Quartermaster's list (was the Hands Brain) a safe, real trial on Charlie's own work and records his keep or drop verdict, which changes its rank. Use for "try <tool>", "test this tool", "is <tool> any good for me".
 ---
 
 # Try a tool (built from the HyperFrames trial, 2026-10-09)
