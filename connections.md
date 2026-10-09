@@ -19,6 +19,7 @@ details (keys: `context/environment.md`).
 | 9 | Content research: X posts | X | `script` (`research/get_x_posts.py`) | none | not checked |
 | 10 | YouTube analytics | vidIQ | `mcp` (claude.ai connector) | connector sign-in | not checked (parked until 5 videos) |
 | 11 | Code hosting | GitHub | `git` over the session proxy; GitHub connector for PRs | session credentials; connector needs re-authorising | 2026-10-08 (git push works; connector asked for sign-in) |
+| 12 | Video, images, thumbnails | Higgsfield | `mcp` (custom claude.ai connector `https://mcp.higgsfield.ai/mcp`, not in the official directory); or its skills + CLI on the Mac | Higgsfield account sign-in (paid credits) | 2026-10-09: server found and answers, not connected (Charlie adds it) |
 
 **Mechanism options:** `mcp` (MCP server or claude.ai connector), `script`
 (Python/Bash hitting an API, in `research/` or `tools/`), `export` (CSV/JSON
