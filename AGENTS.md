@@ -64,6 +64,7 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 | Everything unfinished (one list) | `context/todo.md` |
 | Past decisions | `decisions.md` (new ones at the top, dated) |
 | Projects | `projects/<name>/` |
+| BTC technical-analysis newsletter | `projects/bitcoin-newsletter/README.md` (issues and editorial checks) |
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |
 | Tools the OS can reach | `connections.md` (API guides in `references/`) |
 | Nate's kit licence | `THIRD-PARTY-NOTICES.md` |
