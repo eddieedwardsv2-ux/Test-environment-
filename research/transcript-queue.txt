@@ -1,2 +1,6 @@
 # Videos waiting for transcripts: "<creator-folder> <video-id>", one per line.
 # GitHub fetches up to 9 an hour (3 jobs x 3) and removes each line once its transcript is saved.
+nate-herk YHk45NEpspE
+nate-herk lnm0PMi-4mE
+nate-herk Tj3018n5MVg
+nate-herk xJ5oz63mIec

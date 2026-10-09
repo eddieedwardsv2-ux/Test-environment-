@@ -12,6 +12,20 @@ hand. A brain lives in `research/<creator>/brain/`:
 (opinions from X), `rules.md` (operating rules, each with quotes),
 `log.md` (what was added when).
 
+## Triage first: read as little as possible (Charlie, 2026-10-09)
+Spend usage only where the brain has a gap. Record every call in
+`research/<creator>/triage.md`.
+- **Tier 0 (free):** titles from the video list. Drop news, model tests and
+  how-tos for tools we don't use.
+- **Tier 1 (cheap):** description and chapters (`yt-dlp --skip-download
+  --print "%(description)s"`). `grep` the brain for each chapter's topic; a
+  topic with 0 or 1 hits is a gap.
+- **Tier 2 (free fetch):** add gap videos to `research/transcript-queue.txt`
+  and push; GitHub fetches them with no Claude usage.
+- **Tier 3 (spend):** when Charlie has time to spare (or says "ingest the
+  queue"), read only the chapters that matched, then run the steps below.
+Everything else stays listed as "Spare time" or "Skip" in the triage file.
+
 ## Steps
 1. **Work out what's new.** Read `brain/index.md` and `brain/log.md`. New
    sources are transcripts in `research/<creator>/` not listed as ingested,

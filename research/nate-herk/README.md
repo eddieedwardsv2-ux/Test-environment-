@@ -3,7 +3,7 @@
 Coverage: **69 transcribed** (with timestamps) via `research/get_transcript.py`. **All 69 are ingested into the brain** (see [brain/index](brain/index.md); 2026-10-08).
 **Primary (the foundation curriculum):** "Steal My Exact AI OS Setup" and "I
 Built Another Andrej Karpathy Using Claude". The rest are supporting evidence.
-Brain: [index](brain/index.md). Lessons: [AI OS + second brain](lesson-ai-os-and-second-brain.md); [smallest context, cleaner brain](lesson-smallest-context.md) (newest video, 2026-10-08).
+Brain: [index](brain/index.md). Not yet transcribed (291): [triage](triage.md), cheapest first. Lessons: [AI OS + second brain](lesson-ai-os-and-second-brain.md); [smallest context, cleaner brain](lesson-smallest-context.md) (newest video, 2026-10-08).
 
 | Video | Date | Length | Views | Transcript |
 |---|---|---|---|---|

@@ -1,0 +1,588 @@
+{
+ "week": "2026-W38",
+ "videos": [
+  "6IxiArssGvg",
+  "1fHsIveXRa8",
+  "6xi2KL_NujU"
+ ],
+ "partial": "3 of 6 W38 videos; ehab5PtgRo8, pkwnJcETgfE, ANJTdT0Ggrw still to do",
+ "summary": "New personal agents head to head (Instinct, GrokBot, Muse), a trending repos round-up (code review, skill packs, worktrees, context saving) and new releases (Claude Slides, Notion skills, Vercel tools). Best for Charlie: Agent Skills, I Have ADHD, hyperframes.",
+ "tools": [
+  {
+   "name": "Instinct",
+   "url": "https://instinct.com/",
+   "kind": "service",
+   "category": "Automation & workflows",
+   "what": "Free personal AI agent you text through iMessage or WhatsApp; it researches and can buy for you.",
+   "shown": "Texted it an Airbnb search; it answered 5 to 10 minutes later with links and a text list, no browser view.",
+   "price": "free",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "6IxiArssGvg",
+   "t": "0:18",
+   "quote": "Instinct is an agent that is a free agent um that is all the rage right now.",
+   "check": "Free 'for now' while VC funded; invite-only signup; one user said it kept his email data after he cancelled.",
+   "vs": {
+    "tool": "agent-browser",
+    "verdict": "different job",
+    "gap": "Not tested for our jobs (Claude Code, AI OS, YouTube); unknown whether it can run repeatable tasks or touch files."
+   }
+  },
+  {
+   "name": "GrokBot",
+   "url": "https://x.ai/bot",
+   "kind": "service",
+   "category": "Agent orchestration & teams",
+   "what": "Paid personal agent with a visible browser, reusable skills, shareable personas and multi-step processes.",
+   "shown": "Ran the same Airbnb search; sent browser screenshots and a map and let the user take over the browser.",
+   "price": "paid",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "6IxiArssGvg",
+   "t": "11:53",
+   "quote": "Grockbot is paid and they've reduced their entry price to about 20 bucks, but you'll burn through the 20 bucks pretty quickly.",
+   "check": "Price: about 20 dollars entry but said to burn through quickly.",
+   "vs": {
+    "tool": "ChatGPT Dots",
+    "verdict": "different job",
+    "gap": "Unknown how its shareable skills compare with Claude Code skills, or whether it is worth paying for when we already have Claude Code."
+   }
+  },
+  {
+   "name": "Meta Muse",
+   "url": "https://www.muse.ai/",
+   "kind": "service",
+   "category": "Agent orchestration & teams",
+   "what": "Meta's free-tier personal agent: clean tables, fast replies, opens the Airbnb app, can now make phone calls.",
+   "shown": "Same Airbnb search: table of ratings and cancellation dates, near-instant follow-ups, then a live Mexico City browse.",
+   "price": "freemium",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "6IxiArssGvg",
+   "t": "7:49",
+   "quote": "Also, it was faster than everybody else.",
+   "check": "Free tier then charges more the more you use it.",
+   "vs": {
+    "tool": "ChatGPT Dots",
+    "verdict": "different job",
+    "gap": "Not tested for building or running an AI OS; unknown how custom connectors work or what it costs after the free tier."
+   }
+  },
+  {
+   "name": "Hyperagent",
+   "url": "https://www.hyperagent.com/",
+   "kind": "service",
+   "category": "Agent orchestration & teams",
+   "what": "Agent platform Andrew uses at his company because it handles teams of people.",
+   "shown": "",
+   "price": "unknown",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "6IxiArssGvg",
+   "t": "19:01",
+   "quote": "Hyper Agent I find to be really good at that.",
+   "check": "Only a one-line mention; the detail is in a separate video.",
+   "vs": {
+    "tool": "ChatGPT Dots",
+    "verdict": "different job",
+    "gap": "Not shown here; we don't know its price or whether it suits a one-person channel."
+   }
+  },
+  {
+   "name": "Open Code Review",
+   "url": "https://github.com/alibaba/open-code-review",
+   "kind": "repo",
+   "category": "Coding agents & IDEs",
+   "what": "Alibaba's tool that checks code for security problems and can write an HTML report; has a CLI and skills.",
+   "shown": "A linked demo found a deliberately planted plain-text password and made an HTML report with one command.",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "0:33",
+   "quote": "This is the thing that will let you check your code to find common or maybe even uncommon problems.",
+   "check": "Demo was a clip, not run live by the hosts.",
+   "vs": {
+    "tool": "Claude Code agents.md support",
+    "verdict": "different job",
+    "gap": "Not run by us; unknown how to wire it to a git hook for this repo or whether it adds value for non-code files."
+   }
+  },
+  {
+   "name": "I Have ADHD",
+   "url": "https://github.com/ayghri/i-have-adhd",
+   "kind": "repo",
+   "category": "Claude Code skills & plugins",
+   "what": "A single skill file that makes the AI answer short and easy to scan; 47,000 stars.",
+   "shown": "A clip of the Claude web app before and after the slash command: answer became much shorter.",
+   "price": "open-source",
+   "for_charlie": 3,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "2:07",
+   "quote": "It's scannable so you understand it.",
+   "check": "Star count (47,000) is the host's claim.",
+   "vs": {
+    "tool": "find-skills",
+    "verdict": "different job",
+    "gap": "Not tried in Charlie's own sessions; unknown if it clashes with the plain UK English and Now/Done when rules in AGENTS.md."
+   }
+  },
+  {
+   "name": "God's Eye View",
+   "url": "https://github.com/bilawalsidhu/gods-eye-view",
+   "kind": "repo",
+   "category": "Research & search",
+   "what": "Interactive map joining open public data (traffic, CCTV cameras, flights); also available as a Pinocchio app.",
+   "shown": "A clip of the map with TomTom traffic, camera previews on hover and live flights.",
+   "price": "open-source",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "3:40",
+   "quote": "it pulls together all the open data that's available online",
+   "check": "",
+   "vs": {
+    "tool": "Vane",
+    "verdict": "different job",
+    "gap": "Fun demo only; no link to Charlie's jobs and not tried."
+   }
+  },
+  {
+   "name": "ECC",
+   "url": "https://github.com/affaan-m/ECC",
+   "kind": "repo",
+   "category": "Claude Code skills & plugins",
+   "what": "Huge pack of engineering workflows and skills (plan, test-driven development) for coding agents; 261,000 stars.",
+   "shown": "A clip of the creator running plan mode then the TDD workflow before building.",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "8:15",
+   "quote": "It's a way to get decades of of experience from other software engineers and inject that into your uh coding sessions.",
+   "check": "Star count (261,000) is the host's claim.",
+   "vs": {
+    "tool": "find-skills",
+    "verdict": "different job",
+    "gap": "Unknown how heavy it is to install and whether a beginner needs a pack this big next to Agent Skills."
+   }
+  },
+  {
+   "name": "Context Mode",
+   "url": "https://github.com/mksglu/context-mode",
+   "kind": "repo",
+   "category": "Cost & tokens",
+   "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
+   "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "11:49",
+   "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
+   "check": "Token-saving figures not shown on screen.",
+   "vs": {
+    "tool": "FreeLLMAPI",
+    "verdict": "different job",
+    "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
+   }
+  },
+  {
+   "name": "WeKnora",
+   "url": "https://github.com/Tencent/WeKnora",
+   "kind": "repo",
+   "category": "Knowledge & second brain",
+   "what": "Tencent tool that turns your files into a searchable AI knowledge graph and wiki.",
+   "shown": "A clip of the graph and linked wiki pages (in Chinese).",
+   "price": "open-source",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "13:52",
+   "quote": "it seems like Obsidian plus rag plus AI plus a graph database.",
+   "check": "",
+   "vs": {
+    "tool": "domain-modeling",
+    "verdict": "different job",
+    "gap": "Unknown setup effort and whether it beats the plain markdown brain files we already use."
+   }
+  },
+  {
+   "name": "OpenAI Plugins",
+   "url": "https://github.com/openai/plugins",
+   "kind": "repo",
+   "category": "Claude Code skills & plugins",
+   "what": "OpenAI's open plugin packs (e.g. Figma); Claude can convert them or use a connector.",
+   "shown": "Browsed the repo and discussed whether Claude Code can use them.",
+   "price": "open-source",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "16:23",
+   "quote": "when you start to install these plugins, it's like installing software on your computer and you're giving it access to all your data, your code, your secret keys.",
+   "check": "Security warning: plugins can run code. Star count (6 to 7 thousand) is a claim.",
+   "vs": {
+    "tool": "find-skills",
+    "verdict": "different job",
+    "gap": "Unknown whether a Codex plugin works unchanged in Claude Code; we install plugins only with Charlie's OK."
+   }
+  },
+  {
+   "name": "Worktrunk",
+   "url": "https://github.com/max-sixty/worktrunk",
+   "kind": "repo",
+   "category": "Agent orchestration & teams",
+   "what": "Command line tool that makes git worktrees (separate folders) easy so several AI agents don't edit the same files.",
+   "shown": "Explained on the README plus a linked walkthrough video.",
+   "price": "open-source",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "16:53",
+   "quote": "Five agents, five copies of your project, one tool.",
+   "check": "",
+   "vs": {
+    "tool": "ChatGPT Dots",
+    "verdict": "different job",
+    "gap": "Not tried; unknown if it helps one-at-a-time work like Charlie's, and git worktrees are an advanced topic."
+   }
+  },
+  {
+   "name": "Agent Skills",
+   "url": "https://github.com/addyosmani/agent-skills",
+   "kind": "repo",
+   "category": "Claude Code skills & plugins",
+   "what": "Addy Osmani's set of skills run in order: spec, plan, build, test, review, ship; 95,000 stars.",
+   "shown": "Walked through the order of the workflow on the README.",
+   "price": "open-source",
+   "for_charlie": 3,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "19:27",
+   "quote": "you're meant to run these skills in this order",
+   "check": "Star count (95,000) is the host's claim.",
+   "vs": {
+    "tool": "find-skills",
+    "verdict": "different job",
+    "gap": "Unknown which of the 25 skills are worth installing first for a beginner and how they fit our own skills."
+   }
+  },
+  {
+   "name": "Logic Loop",
+   "url": "https://github.com/SuperLogicAI/Logic-Loop",
+   "kind": "repo",
+   "category": "Agent orchestration & teams",
+   "what": "Project-centred workspace that puts Claude Code, Codex and Cursor sessions one tab apart with shared memory.",
+   "shown": "Described by the host and the submitter; no demo.",
+   "price": "open-source",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "23:00",
+   "quote": "This one is centered around projects and in one project you might use yeah five different types of agents.",
+   "check": "Audience submission, brand new.",
+   "vs": {
+    "tool": "ChatGPT Dots",
+    "verdict": "different job",
+    "gap": "Not tried; unknown if it is stable or useful with just one agent."
+   }
+  },
+  {
+   "name": "Claude Dashboard",
+   "url": "https://github.com/JonImmsWordpressDev/claude-dashboard",
+   "kind": "repo",
+   "category": "Agent orchestration & teams",
+   "what": "One board showing every Claude Code session on your machine and which one is stuck.",
+   "shown": "A screenshot from the README.",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "23:30",
+   "quote": "every cloud code session on your machine. One board that tells you which one is stuck.",
+   "check": "Audience submission.",
+   "vs": {
+    "tool": "ChatGPT Dots",
+    "verdict": "different job",
+    "gap": "Not tried; cloud sessions here run elsewhere, so unknown if it helps Charlie."
+   }
+  },
+  {
+   "name": "Deck Gauge",
+   "url": "https://github.com/Codpal-Limited/deckgauge",
+   "kind": "repo",
+   "category": "Automation & workflows",
+   "what": "Open-source task board that moves tasks along when work is done rather than by dragging.",
+   "shown": "A screenshot and a demo page.",
+   "price": "open-source",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "24:00",
+   "quote": "You can go to the demo page.",
+   "check": "Audience submission.",
+   "vs": {
+    "tool": "agent-browser",
+    "verdict": "different job",
+    "gap": "Not tried; no obvious fit with Charlie's jobs."
+   }
+  },
+  {
+   "name": "Campus AIOS",
+   "url": "https://github.com/trainingsites/campus-ai-os",
+   "kind": "repo",
+   "category": "Agent orchestration & teams",
+   "what": "A set of AI departments that run a company with compounding memory.",
+   "shown": "Described only; no demo.",
+   "price": "open-source",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "25:00",
+   "quote": "an AI department or set of departments that runs your company",
+   "check": "Audience submission.",
+   "vs": {
+    "tool": "ChatGPT Dots",
+    "verdict": "different job",
+    "gap": "Not tried; unknown how it compares with our own AI OS build."
+   }
+  },
+  {
+   "name": "Reckoner",
+   "url": "https://github.com/CaptainASIC/reckoner",
+   "kind": "repo",
+   "category": "Cost & tokens",
+   "what": "Dashboard that shows how much you've spent and how many credits are left across many LLMs.",
+   "shown": "Screenshots sent by the creator, viewed on an iPad.",
+   "price": "open-source",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "1fHsIveXRa8",
+   "t": "25:30",
+   "quote": "What he did was he created a dashboard that does this.",
+   "check": "Audience submission.",
+   "vs": {
+    "tool": "FreeLLMAPI",
+    "verdict": "different job",
+    "gap": "Not tried; unknown if it reads Claude and ChatGPT usage without extra keys."
+   }
+  },
+  {
+   "name": "Modaal",
+   "url": "https://modaal.dev/",
+   "kind": "service",
+   "category": "Coding agents & IDEs",
+   "what": "Builds native iOS and Android apps (Swift and Kotlin) from one prompt, with widgets and Live Activities.",
+   "shown": "Hosts discussed the idea; no live build shown in this part.",
+   "price": "freemium",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "1:34",
+   "quote": "It says it's native Swift and Kotlin, so that it's it's building it the right way, theoretically.",
+   "check": "'Free plan, no credit card' said; full pricing not given.",
+   "vs": {
+    "tool": "Claude Code agents.md support",
+    "verdict": "different job",
+    "gap": "Not tried; a mobile app builder is outside Charlie's current jobs."
+   }
+  },
+  {
+   "name": "Claude Slides & Docs",
+   "url": "https://claude.com/blog/cowork-is-now-claude/",
+   "kind": "app",
+   "category": "Other",
+   "what": "Claude's built-in slides and docs: turn a markdown file into an editable presentation and edit by chatting.",
+   "shown": "Turned a markdown research file into a deck with one prompt and asked it to reorder slides.",
+   "price": "unknown",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "2:35",
+   "quote": "turn this into a presentation. Boom.",
+   "check": "Pricing not stated; host says output needs more work to look good.",
+   "vs": {
+    "tool": "pptx",
+    "verdict": "leader stays",
+    "gap": "Not compared against the pptx skill on the same input, so we don't know which looks better."
+   }
+  },
+  {
+   "name": "YourPersona Band",
+   "url": "https://yourpersona.com/band",
+   "kind": "app",
+   "category": "Other",
+   "what": "AI wristband that learns your habits, answers questions and works with a phone app.",
+   "shown": "Played the launch video only.",
+   "price": "unknown",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "4:38",
+   "quote": "I should say, it's a wristband and it will answer questions, and it will also work through the mobile app.",
+   "check": "Price and availability not stated.",
+   "vs": {
+    "tool": "pptx",
+    "verdict": "different job",
+    "gap": "Hardware; not relevant to Charlie's jobs now."
+   }
+  },
+  {
+   "name": "WPVibe",
+   "url": "https://wpvibe.ai/",
+   "kind": "service",
+   "category": "Design & websites",
+   "what": "Lets Claude, ChatGPT or other AI control a WordPress site by chat.",
+   "shown": "Described; no demo.",
+   "price": "unknown",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "7:11",
+   "quote": "It will allow you to speak to your website using whatever you like.",
+   "check": "Price not stated.",
+   "vs": {
+    "tool": "frontend-design",
+    "verdict": "different job",
+    "gap": "Not tried; only useful if Charlie uses WordPress."
+   }
+  },
+  {
+   "name": "Notion Skills Library",
+   "url": "https://www.notion.com/blog/a-skills-library-for-every-agent",
+   "kind": "service",
+   "category": "Claude Code skills & plugins",
+   "what": "Notion now stores agent skills as pages so non-GitHub teammates can share and edit them.",
+   "shown": "Explained the idea; hosts disagreed about whether it replaces GitHub.",
+   "price": "unknown",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "10:47",
+   "quote": "because all these skills are is a set of text files.",
+   "check": "Pricing and sync with GitHub not shown.",
+   "vs": {
+    "tool": "find-skills",
+    "verdict": "different job",
+    "gap": "Unknown whether skills sync both ways with GitHub or just copy; we already keep skills in this repo."
+   }
+  },
+  {
+   "name": "Aside",
+   "url": "https://aside.com/",
+   "kind": "service",
+   "category": "Automation & workflows",
+   "what": "Gives any AI tool a browser, like the one in ChatGPT.",
+   "shown": "Described only.",
+   "price": "unknown",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "13:55",
+   "quote": "It gives a browser to whatever AI tool",
+   "check": "Hosts doubt it can compete with built-in browsers.",
+   "vs": {
+    "tool": "agent-browser",
+    "verdict": "leader stays",
+    "gap": "Not tried; the hosts said there is not much for it to stand on."
+   }
+  },
+  {
+   "name": "Aesty",
+   "url": "https://www.aesty.ai/",
+   "kind": "app",
+   "category": "Other",
+   "what": "AI stylist that finds your outfits in your photo album and suggests what to wear.",
+   "shown": "Described a launch post on X.",
+   "price": "unknown",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "15:28",
+   "quote": "we're going to help you figure out what you should wear today.",
+   "check": "Needs photo access (privacy).",
+   "vs": {
+    "tool": "pptx",
+    "verdict": "different job",
+    "gap": "Not relevant to Charlie's jobs."
+   }
+  },
+  {
+   "name": "Is Agentic",
+   "url": "https://is-agentic.com/",
+   "kind": "service",
+   "category": "Marketing, sales & SEO",
+   "what": "Vercel tool that scores how easy a website is for AI agents to read and use.",
+   "shown": "Scored printingpress.dev 56 out of 100 and showed the checks.",
+   "price": "unknown",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "16:30",
+   "quote": "Can an agent actually read and navigate your site?",
+   "check": "Price not stated.",
+   "vs": {
+    "tool": "OpenSEO",
+    "verdict": "different job",
+    "gap": "Not run on Charlie's pages; unknown if the score matters for a YouTube channel site."
+   }
+  },
+  {
+   "name": "Vercel Domains",
+   "url": "https://vercel.com/domains",
+   "kind": "service",
+   "category": "Design & websites",
+   "what": "Domain search and buying page on Vercel with cheap prices, all in one place with hosting.",
+   "shown": "Searched names live and showed prices.",
+   "price": "paid",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "18:32",
+   "quote": "Look, you can get andrew.tech for $275.",
+   "check": "Prices shown vary by domain.",
+   "vs": {
+    "tool": "frontend-design",
+    "verdict": "different job",
+    "gap": "Not used by us; unknown if Charlie needs a domain yet."
+   }
+  },
+  {
+   "name": "ElevenLabs Reception",
+   "url": "https://elevenlabs.io/reception",
+   "kind": "service",
+   "category": "Voice & audio",
+   "what": "AI receptionist that answers calls, helps customers, transfers and books appointments.",
+   "shown": "Described; no demo.",
+   "price": "unknown",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "20:36",
+   "quote": "Finally, 11 Labs launched a receptionist.",
+   "check": "Price not stated.",
+   "vs": {
+    "tool": "VoiceStudio",
+    "verdict": "different job",
+    "gap": "Business phone tool; not relevant to Charlie's jobs."
+   }
+  },
+  {
+   "name": "hyperframes",
+   "url": "https://skills.sh/heygen-com/hyperframes/hyperframes",
+   "kind": "skill",
+   "category": "Video, clips & images",
+   "what": "Makes videos from HTML; Matt uses it for demo videos to drop into slides.",
+   "shown": "A host's answer to the best agentic slides: make a short video with it.",
+   "price": "open-source",
+   "for_charlie": 3,
+   "replaces": [],
+   "video": "6xi2KL_NujU",
+   "t": "3:38",
+   "quote": "using hyperframes to create a high-quality",
+   "check": "",
+   "vs": null
+  }
+ ]
+}
