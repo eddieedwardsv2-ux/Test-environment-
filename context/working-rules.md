@@ -90,7 +90,7 @@ Anything not backed by a source is labelled **(inferring)**.
   (or NOT READY), with the Guardian's report saved word for word at that path.
   The report must be added (not edited) by that commit, live in `audits/guardian/`
   and open with the same verdict; a later genuine check clears an earlier miss (history is never
-  rewritten). `tools/audit.py` errors otherwise. Limits: it runs locally and in the Stop hook only (GitHub's shallow clone skips
+  rewritten). `tools/audit.py` errors otherwise. Limits: it runs locally and in the Stop hook only (any shallow clone, e.g. GitHub's, skips
   it); the hook sends a turn back once, and only after the commit exists; it proves
   a fresh report with a matching verdict was filed, not that the Guardian wrote it.
   Order: build; run the Guardian on the uncommitted diff; fix (2 rounds max); save

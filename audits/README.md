@@ -16,7 +16,7 @@ word from the `guardian` agent and cited in the commit (`Checked-by: guardian (R
 later commit, adds a new report here whose first line matches the cited verdict.
 Codex can't run the Guardian: it commits, leaves the error and notes the commit under
 "Waiting on Charlie"; the next Claude session runs the Guardian and clears it.
-Limits: it runs locally and in the Stop hook only (GitHub's shallow clone skips
+Limits: it runs locally and in the Stop hook only (any shallow clone, e.g. GitHub's, skips
 it); the hook sends a turn back once, and only after the commit exists; it proves
 a fresh report with a matching verdict was filed, not that the Guardian wrote it. Read them to see what was
 checked, what wasn't, and anything flagged as pleasing you.

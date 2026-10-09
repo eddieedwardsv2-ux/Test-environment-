@@ -56,7 +56,7 @@ Your report is saved word for word in `audits/guardian/` and cited in the
 commit (`Checked-by: guardian (READY) <report>` or `(NOT READY)`); `tools/audit.py`
 checks the report was added (not edited) by that commit and opens with the same
 verdict on its first line. Codex can't run the Guardian: it commits, leaves the error and notes the commit under
-"Waiting on Charlie"; the next Claude session runs the Guardian and clears it. Limits: it runs locally and in the Stop hook only (GitHub's shallow clone skips
+"Waiting on Charlie"; the next Claude session runs the Guardian and clears it. Limits: it runs locally and in the Stop hook only (any shallow clone, e.g. GitHub's, skips
 it); the hook sends a turn back once, and only after the commit exists; it proves
 a fresh report with a matching verdict was filed, not that the Guardian wrote it.
 You usually check the work before it is committed, so "pushed" is not yours to
