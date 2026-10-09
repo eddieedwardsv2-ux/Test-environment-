@@ -6,6 +6,8 @@ status), `<title>--<video-id>-transcript.md` files (named automatically; the
 the `video-tutor` agent, and sometimes a `brain/` (derived knowledge an
 advisor agent reads; raw evidence stays in the transcripts). Anything not from a transcript is marked as such.
 
+**Council of elders** (each brain gets a voice, asked side by side): [council-plan.md](council-plan.md).
+
 | Creator | Topic | Videos | Transcribed | Lessons |
 |---|---|---|---|---|
 | [Nate Herk](nate-herk/README.md) | AI OS, second brain, Claude Code (current foundation) | 360 listed ([all](nate-herk/videos.md)) | 69 | [AI OS + second brain](nate-herk/lesson-ai-os-and-second-brain.md); [smallest context](nate-herk/lesson-smallest-context.md) |

@@ -44,7 +44,8 @@ for w in weeks:
         if t.get("vs") and not e["vs"]: e["vs"] = t["vs"]
         if t.get("installs"): e["installs"] = max(e.get("installs", 0), int(t["installs"]))
         e["sightings"].append({"week": w["week"], "source": w.get("source", "The Next New Thing"), "video": t.get("video"), "t": t.get("t", ""),
-                               "shown": t.get("shown", ""), "quote": t.get("quote", "")})
+                               "shown": t.get("shown", ""), "quote": t.get("quote", ""),
+                               "opinion": t.get("opinion"), "our_view": t.get("our_view")})
 
 latest = order[0] if order else None
 names = {}

@@ -21,8 +21,8 @@ tool, skill and plugin from The Next New Thing, newest week first, ranked
 (the `hands-ingest` skill; site link in `system/pages.md`). Weeks 2026-W38 to
 W41 first, then further back a week at a time. Order changed 2026-10-09 (Charlie):
 newest video first, each new tool compared head-to-head with its category's
-number one; no backfill before W39 (Charlie, 2026-10-09: older tools are mostly
-outdated; W38 gave 0 "newer wins"). No new video out? Say so and stop. After that: the radial Brain
+number one; then work back day by day to W38 (context, relations, old tools not yet
+replaced). Each tool also gets the presenters' opinion vs ours (the council idea). After that: the radial Brain
 dashboard. Cleaner brain done (router trimmed, one audit skill, Decision Desk).
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
