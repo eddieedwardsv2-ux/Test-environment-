@@ -4,7 +4,8 @@ One status file, rewritten at the end of each long session (Nate). History:
 `decisions.md` and this file's Git history. Every agent (Claude, Codex,
 ChatGPT) reads this first and updates it before stopping.
 
-**Written:** 2026-10-09, about 6am UK, end of the long 9 October session (handed to a new session).
+**Written:** 2026-10-09, about 6am UK, end of the long 9 October session.
+**Updated:** 2026-10-09, about 05:29 UK, by the session that ran the 5 Desk answers (sections 3-5).
 Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoughts.md`.
 
 ## 1. Charlie's thinking (the big picture)
@@ -54,45 +55,47 @@ Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoug
 
 ## 3. Where things stand
 - **Proven:** the router, `tools/audit.py` on every push and before finishing,
-  the Decision Desk, the transcript queue, the Hands pipeline, the maps, quote checks.
+  the Decision Desk, the transcript queue, the Hands pipeline, the maps, quote
+  checks, and now the **end-to-end path in Claude** (fresh headless session:
+  router → Nate's brain → checked quote; `audits/evidence/2026-10-09-end-to-end/`).
 - **Not yet proven:** both weekly routines (first runs Fri 9 Oct 8:59, Sat 10 Oct
-  8:47), Codex in this repo, the ChatGPT side, the Voice Gym, `try-tool`, the
-  set-up kit on a real person.
-- **Theory only:** the middle, the council, model routing.
+  8:47), **Codex** (not installed in the cloud; repeat the test on the Mac:
+  command in the report), the ChatGPT side, the Voice Gym, `try-tool`, the set-up kit on a real person.
+- **Theory only:** the middle, the council, model routing. The test found one
+  gap for that talk: no written rule for stepping up to a stronger model.
 - **Known gap:** a non-Claude session changed `AGENTS.md` at 04:04 on 9 Oct with
-  no log entry (item 8).
+  no log entry (item 8). Also: another Claude session was pushing to main at the
+  same time as this one (journey video drafts); pull before every push.
 
-## 4. Desk answers to act on (all 5 answered 2026-10-09, about 6am; read them with the `decide` skill)
-- **next-big-step: end-to-end test in Claude and Codex** (do this first).
-- **hands-window: stop at 4 weeks** (new videos only, through the Saturday routine).
-- **price-plan: steps 1 and 2, our own data only** (no web searches).
-- **elder-names: by job** (Architect, Quartermaster, Maker, Teacher, Guardian, Charlie as Chief).
-- **youtube-ingest: yes, one skill.**
+## 4. Desk answers (all 5 closed 2026-10-09 with outcomes)
+- **next-big-step → end-to-end test:** done (Claude works; Codex on paper).
+- **hands-window → stop at 4 weeks:** in `hands-ingest` and `current-focus.md`.
+- **price-plan → steps 1 and 2:** done; `research/hands/improvement-plan.md` (bottom).
+  Step 3 (web lookups for the 35 unknowns) not chosen.
+- **elder-names, youtube-ingest:** plans only, in `brainstorms/2026-10-09-middle-plans.md`.
+  **Open card "middle-go"** asks: go ahead (ingester first, then names), one only, or talk first.
+- **Also open on the Desk:** "journey-video-style" (from the other session).
 - **His steps still open:** switch off 9 claude.ai skills (Settings, Skills: built-in-browser,
   chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf); add Higgsfield
   (`https://mcp.higgsfield.ai/mcp`) and finish Canva's sign-in (check `ListConnectors` first);
   rewrite a few Voice Gym messages.
 
 ## 5. Plan for the next session (in order)
-1. Follow the `i-have-adhd` style (`.claude/skills/i-have-adhd/SKILL.md`) in replies to Charlie.
-2. Read the Desk answers (`decide` skill); close each card with an outcome when done.
-3. Check the Friday audit report in `audits/` (due 8:59 UK, 9 Oct) and act on its findings.
-4. **End-to-end test** (his first choice): one real question from router to brain to answer,
-   in a fresh helper reading only `AGENTS.md`, plus Codex if it can be run here; record
-   what works, what's partial and what's only on paper, with receipts in `audits/evidence/`.
-   This also answers the first question of ChatGPT's routing prompt.
-5. **hands-window:** record "stop at 4 weeks" in the `hands-ingest` skill and `current-focus.md`.
-6. **price-plan steps 1 and 2** (`research/hands/improvement-plan.md`): split `open_source`
-   from `cost`, then read our own transcripts for prices; no web searches.
-7. **elder-names and youtube-ingest** touch the routing, which Charlie wanted to talk through
-   first ("the middle"). Write the plan for each, then have that short talk with him on the
-   Desk before changing files, unless he says to go straight ahead.
-8. Rebuild and republish the main pages, update this file, commit and push.
-9. Later, one at a time: keep Claude and Codex/ChatGPT in step; the council (Nate's voice
-   first, research Boris Cherny); the Anthropic plugin marketplace as the tools brain's next
-   source; the kit for blank accounts (keep Charlie's base-kit note: audit each set-up until
-   the returns stop, a wiki brain from past chats plus an interview, voice from 3 emails,
-   articles or stories); the first YouTube short.
+1. Follow the `i-have-adhd` style in replies; read the Desk (`decide` skill) first.
+2. Check the Friday audit report in `audits/` (routine ran 8:59 UK, 9 Oct) and act on it.
+   (Not done this session: it ran at about 05:20, before the routine.)
+3. **If "middle-go" is answered:** build the plan he picked from
+   `brainstorms/2026-10-09-middle-plans.md` (ingester first: move steps, no
+   script changes, re-run last week's ingest, `git diff` must match); re-run the
+   end-to-end test after any rename. If he picked "talk", start with its 4 questions.
+4. Rebuild and republish the main pages, update this file, commit and push.
+5. Later, one at a time: keep Claude and Codex/ChatGPT in step (re-run the
+   end-to-end test in Codex on the Mac); model routing talk (ChatGPT's prompt; the
+   step-up gap); the council (Nate's voice first, research Boris Cherny); the
+   Anthropic plugin marketplace as the tools brain's next source; the kit for blank
+   accounts (keep Charlie's base-kit note: audit each set-up until the returns stop,
+   a wiki brain from past chats plus an interview, voice from 3 emails, articles or
+   stories); the first YouTube short.
 
 ## 6. Also open (checked 2026-10-09; don't lose these)
 - **From another session:** at 04:04 on 9 Oct a non-Claude session added

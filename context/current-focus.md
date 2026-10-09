@@ -17,10 +17,11 @@ recorded (with their consent) for the YouTube channel. Project:
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
 **Now (2026-10-09, Charlie):** the Hands Brain is done back to W38 (21 videos, 117 tools,
-presenters' opinions on each; new videos come in through the Saturday routine). Next:
-talk through the "middle" (how the router and the brains fit together), then the first job
-chosen on the Decision Desk ("next-big-step"; recommended: an end-to-end test in Claude and
-Codex). Full plan: `context/handoff.md`, section 5. His thinking: `brainstorms/2026-10-09-charlies-thoughts.md`.
+presenters' opinions on each; new videos come in through the Saturday routine). The
+end-to-end test passed in Claude (`audits/evidence/2026-10-09-end-to-end/`; Codex waits for
+the Mac). **Next step (2026-10-09):** Charlie answers "middle-go" on the Decision Desk (one
+YouTube ingester, elder names by job: `brainstorms/2026-10-09-middle-plans.md`), then build
+what he picks. Full plan: `context/handoff.md`, section 5. His thinking: `brainstorms/2026-10-09-charlies-thoughts.md`.
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
 the base is decided (Nate's kit plus our three additions). Next: test it on the
