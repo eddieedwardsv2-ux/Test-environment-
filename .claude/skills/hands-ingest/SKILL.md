@@ -3,7 +3,7 @@ name: hands-ingest
 description: Feeds the Hands Brain (tools, skills, plugins, MCPs, repos) from a YouTube channel week by week, newest first, then ranks what's best to use now and rebuilds its site. Use for "update the Hands Brain", "update the tools list", "what's new this week", "add <channel> to Hands".
 ---
 
-# Hands ingest (newest video first, then backfill)
+# Hands ingest (newest video first, no backfill before W39)
 
 The Hands Brain (`research/hands/`) learns and teaches the tools people use
 with AI. Sources: The Next New Thing (weekly round-ups) and the skills.sh leaderboard
@@ -13,8 +13,9 @@ with AI. Sources: The Next New Thing (weekly round-ups) and the skills.sh leader
 
 ## Order (Charlie, 2026-10-09)
 Always take the **newest video not yet in** first, so new tools are tested
-against the ones we already know. Backfill older weeks (W38, then earlier)
-only when nothing newer is waiting. Each new tool gets a head-to-head with the
+against the ones we already know. **No backfill before W39** (Charlie, 2026-10-09): older tools are mostly
+already beaten by newer ones. First refresh the list (`pipeline.py --weeks 1`);
+if no new video is out, say "nothing new this week" and stop. Each new tool gets a head-to-head with the
 current number one in its category (`vs` field below), so we find what we're
 missing and close the gap in knowing how to use it.
 
