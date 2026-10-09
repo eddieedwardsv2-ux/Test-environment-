@@ -28,7 +28,8 @@ dashboard. Cleaner brain done (router trimmed, one audit skill, Decision Desk).
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
 the base is decided (Nate's kit plus our three additions). Next: test it on the
 first friend or family set-up.
-Weekly `audit` (scored, Four Cs, with receipts) on Fridays.
+Weekly `audit` (scored, Four Cs, with receipts) runs by itself every Friday at
+8:59 UK time (routine "Weekly AI OS audit", set up 2026-10-09; report lands in `audits/`).
 
 **Parked:** Nick Saraev — his research, brain and `nick-brain` agent stay as
 they are, but no Nick work while the set-up kit is the priority (v1 done; kept parked 2026-10-08).

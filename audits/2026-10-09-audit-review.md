@@ -44,5 +44,5 @@ audit: 2 errors, 1 warnings
 Matched. File restored; `python3 tools/audit.py` → `audit: 0 errors, 0 warnings`.
 
 ## Still open
-1. Nothing starts the weekly scored audit: Decision Desk card "weekly-audit-routine".
+1. ~~Nothing starts the weekly scored audit~~ Fixed 2026-10-09: routine "Weekly AI OS audit", Fridays 8:59 UK time, fresh session, notifies Charlie's phone.
 2. The last scored audit is 2026-10-08 (49/100, Foundation). The next one should score after these fixes.
