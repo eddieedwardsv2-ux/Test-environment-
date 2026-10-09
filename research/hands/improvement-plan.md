@@ -76,3 +76,29 @@ Chromium (installed here). Read the skill files before installing.
 1 → B (via A's steps by hand) → A written from that real run → 2 → 3 → 4 → 5.
 Building `try-tool` *from* the HyperFrames trial follows ENATE Rule 34
 (skills built from a real run, not from imagination).
+
+## Prices and licences (Charlie's note on the Desk, 2026-10-09)
+"Learn from our data about prices: pay per use, or monthly and yearly
+subscription, but only when one applies, as some skills and MCPs are just free.
+Also know which ones are open source, in case a skill deserves debating whether
+to build our own or pay for the existing one."
+
+**What our data shows now:** the single `price` field mixes two different
+things. "Open source" is a licence (can we read and copy the code?), not a
+price, and 77 of 117 tools are filed as "open-source" (30 of them only because
+they're on skills.sh). Some open-source tools also sell a hosted plan. 24 tools
+are "unknown"; 10 tools already have a price mentioned in their notes.
+
+**Plan (smallest first):**
+1. Split the field in the week files and the build: `open_source` (yes / no /
+   unknown, with the repo link) and `cost`, filled only when one applies:
+   `free`, `pay-per-use`, `monthly`, `yearly`, `one-off` or `free tier + paid`,
+   with the amount, where it was found and the date. No web needed: derive from
+   what we hold (GitHub links, the show's own words, the `check` notes).
+2. Read our own transcripts for price talk on the 24 unknowns (one helper,
+   Sonnet), so we learn from our data before searching.
+3. Web lookup only for what's left, number ones first, each with a source link.
+4. Site: show "Open source" and the cost model as separate tags. A filter for
+   "open source, could we build our own?" feeds the build-or-buy debate.
+5. Ranking: free and open source keep their small bonus; a monthly fee gets
+   none. Re-check prices in the Saturday routine for new tools only.
