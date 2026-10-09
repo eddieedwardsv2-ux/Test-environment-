@@ -39,7 +39,7 @@ h2{font:800 20px var(--display);margin:0 0 4px}
 .cat{font:600 11px var(--mono);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 45%,transparent);border-radius:6px;padding:1px 6px}
 .st{font:600 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:2px 7px}
 .st.new{background:rgba(56,189,248,.16);color:var(--accent)} .st.rising{background:rgba(52,211,153,.16);color:var(--good)}
-.st.steady{background:rgba(255,255,255,.07);color:var(--muted)} .st.replaced{background:rgba(251,113,133,.14);color:var(--bad)}
+.st.anth{background:rgba(245,199,107,.15);color:#f5c76b} .st.steady{background:rgba(255,255,255,.07);color:var(--muted)} .st.replaced{background:rgba(251,113,133,.14);color:var(--bad)}
 .price{font:11px var(--mono);color:var(--muted)}
 .cats{display:grid;gap:8px}
 .row{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -124,7 +124,7 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
   <header>
     <div class="eyebrow">Charlie's AI OS · Quartermaster (was the Hands Brain)</div>
     <h1>The best tools to use now</h1>
-    <p class="sub">Every tool, skill, plugin and repo from The Next New Thing and skills.sh, read week by week from newest to oldest. Each category is ranked; when a newer tool replaces an older one, the old one drops down and is crossed out.</p>
+    <p class="sub">Every tool, skill, plugin and repo from The Next New Thing and skills.sh, read week by week from newest to oldest. Each category is ranked; when a newer tool replaces an older one, the old one drops down and is crossed out. A gold <b>✓ Anthropic</b> badge means it's in one of Anthropic's plugin catalogs, which are security-scanned and approved: it adds a small bonus to the score, but those catalogs have no ratings or reviews.</p>
     <div class="stats" id="stats"></div>
   </header>
 
@@ -246,7 +246,7 @@ function match(t){
   if (!q) return true;
   return (t.name + " " + t.what + " " + t.category).toLowerCase().includes(q);
 }
-const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span>${t.open_source === "yes" ? `<span class="price">open source</span>` : t.open_source === "public code" ? `<span class="price">public code</span>` : ""}${t.cost ? `<span class="price">${esc(t.cost.model + (t.cost.amount ? ": " + t.cost.amount : ""))}</span>` : t.open_source === "unknown" ? `<span class="price">price unknown</span>` : ""}${t.have ? `<span class="st rising">✓ you have it</span>` : ""}${t.tried ? `<span class="st new">tried: ${esc(t.tried.verdict)}</span>` : ""}${t.shown === false ? `<span class="st steady">skills.sh only, not shown</span>` : ""}</div>`;
+const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span>${t.open_source === "yes" ? `<span class="price">open source</span>` : t.open_source === "public code" ? `<span class="price">public code</span>` : ""}${t.cost ? `<span class="price">${esc(t.cost.model + (t.cost.amount ? ": " + t.cost.amount : ""))}</span>` : t.open_source === "unknown" ? `<span class="price">price unknown</span>` : ""}${t.have ? `<span class="st rising">✓ you have it</span>` : ""}${t.anthropic ? `<span class="st anth" title="${esc(t.anthropic.match !== "name" ? "Listed as \"" + t.anthropic.plugin + "\"" : "A plugin with this name is listed (\"" + t.anthropic.plugin + "\")")}: passed Anthropic's automated security scan and approval. No ratings or reviews.">✓ Anthropic ${esc(t.anthropic.market)}${t.anthropic.match === "name" ? " (by name)" : ""}</span>` : ""}${t.tried ? `<span class="st new">tried: ${esc(t.tried.verdict)}</span>` : ""}${t.shown === false ? `<span class="st steady">skills.sh only, not shown</span>` : ""}</div>`;
 
 function render(){
   const live = D.tools.filter(match);

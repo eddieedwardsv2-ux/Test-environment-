@@ -86,7 +86,8 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
   into a creator brain), `video-tutor` agent (transcripts into a lesson).
 - `hands-ingest`: the **Quartermaster's** kit list (`research/hands/`, was the
   Hands Brain; both names work until 2026-11-09), every tool, skill, plugin and
-  repo from The Next New Thing and skills.sh, ranked. Ask it with the
+  repo from The Next New Thing and skills.sh, ranked, with Anthropic's plugin
+  catalogs as a trust badge. Ask it with the
   `quartermaster` agent. `try-tool`: one real trial of a tool; his keep or
   drop verdict (`research/hands/tried.json`) changes its rank.
 - `architect` agent = **the Architect** (was ENATE, Charlie's name for Nate's

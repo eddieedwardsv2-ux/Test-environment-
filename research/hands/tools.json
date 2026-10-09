@@ -56,7 +56,7 @@
   "mentions": 2,
   "need": "yes",
   "relevance": 3,
-  "score": 18.9,
+  "score": 20.9,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
@@ -72,6 +72,157 @@
    "adds": "21 skills, 19 MB, about 6,000 characters of skill descriptions every message if kept in the repo; its CLI also put 10 skills in ~/.claude/skills on the cloud machine (wiped when the session ends)",
    "verdict": "later",
    "why": "Charlie couldn't play the video in the app, so the result wasn't clear to him; revisit when making the first short (2026-10-09)"
+  },
+  "anthropic": {
+   "market": "official",
+   "plugin": "hyperframes",
+   "match": "repo"
+  },
+  "rank": 1
+ },
+ {
+  "id": "n:frontenddesign",
+  "name": "frontend-design",
+  "url": "https://skills.sh/anthropics/skills/frontend-design",
+  "kind": "skill",
+  "category": "Design & websites",
+  "what": "Guidance for distinctive, good-looking UI design and typography when building web pages.",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "2:15",
+    "shown": "Showed a website before (cream background, generic) and after the skill (different colours, more design, links at the top).",
+    "quote": "The whole idea behind this is to eliminate that and create better designs.",
+    "opinion": {
+     "stance": "would use",
+     "who": "Robbie",
+     "why": "The after version felt like it had a purpose, more than just making it look nice.",
+     "quote": "It's more than just make this look nice.",
+     "t": "2:38"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Dashboards and any page Charlie builds for the channel",
+     "agree": "agree",
+     "why": "Worth a single trial on one of our own pages (Rule 43), not a blind install."
+    }
+   }
+  ],
+  "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
+  "vs": null,
+  "installs": 964997,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 18.0,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "frontend-design",
+   "match": "name"
+  },
+  "rank": 1
+ },
+ {
+  "id": "n:grilling",
+  "name": "grilling",
+  "url": "https://skills.sh/mattpocock/skills/grilling",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Grills you about a plan or idea to stress-test your thinking.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "ehab5PtgRo8",
+    "t": "7:39",
+    "shown": "Showed the file that Grill Me points to; no live run.",
+    "quote": "this is now the actual file that the other Grill Me skill refers to",
+    "opinion": {
+     "stance": "would use",
+     "who": "Robbie",
+     "why": "Likes grilling as the engine with Grill Me as its first use.",
+     "quote": "I I think it's great.",
+     "t": "8:20"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "A reusable interview step inside other skills",
+     "agree": "agree",
+     "why": "Worth reading before we rewrite our own `grill-me`; no install needed."
+    }
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": {
+   "tool": "ECC",
+   "verdict": "different job",
+   "gap": "Unknown what it adds over plain grill-me for our use; Matt says he split it out so other skills can reuse it."
+  },
+  "installs": 868047,
+  "weeks": [
+   "2026-W41",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W41",
+  "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 17.9,
+  "replaced_by": null,
+  "status": "rising",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
   },
   "rank": 1
  },
@@ -139,81 +290,16 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
  },
  {
-  "id": "n:frontenddesign",
-  "name": "frontend-design",
-  "url": "https://skills.sh/anthropics/skills/frontend-design",
-  "kind": "skill",
-  "category": "Design & websites",
-  "what": "Guidance for distinctive, good-looking UI design and typography when building web pages.",
-  "open_source": "public code",
-  "repo": "https://github.com/anthropics/skills",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "2:15",
-    "shown": "Showed a website before (cream background, generic) and after the skill (different colours, more design, links at the top).",
-    "quote": "The whole idea behind this is to eliminate that and create better designs.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Robbie",
-     "why": "The after version felt like it had a purpose, more than just making it look nice.",
-     "quote": "It's more than just make this look nice.",
-     "t": "2:38"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Dashboards and any page Charlie builds for the channel",
-     "agree": "agree",
-     "why": "Worth a single trial on one of our own pages (Rule 43), not a blind install."
-    }
-   }
-  ],
-  "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
-  "vs": null,
-  "installs": 964997,
-  "weeks": [
-   "2026-W41",
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W41",
-  "mentions": 2,
-  "need": "maybe",
-  "relevance": 2,
-  "score": 16.0,
-  "replaced_by": null,
-  "status": "rising",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 1
- },
- {
-  "id": "n:grilling",
-  "name": "grilling",
-  "url": "https://skills.sh/mattpocock/skills/grilling",
+  "id": "n:handoff",
+  "name": "handoff",
+  "url": "https://skills.sh/mattpocock/skills/handoff",
   "kind": "skill",
   "category": "Claude Code skills & plugins",
-  "what": "Grills you about a plan or idea to stress-test your thinking.",
+  "what": "Compacts the current chat into a handoff document for another agent to pick up.",
   "open_source": "public code",
   "repo": "https://github.com/mattpocock/skills",
   "cost": null,
@@ -229,26 +315,334 @@
     "quote": "",
     "opinion": null,
     "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 945759,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 16.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 2
+ },
+ {
+  "id": "n:hyperframescli",
+  "name": "hyperframes-cli",
+  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-cli",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Command-line loop for HeyGen's HyperFrames: init, lint, preview and render HTML videos.",
+  "open_source": "public code",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 878869,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 15.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "hyperframes",
+   "match": "repo"
+  },
+  "rank": 2
+ },
+ {
+  "id": "n:brainstorming",
+  "name": "brainstorming",
+  "url": "https://skills.sh/obra/superpowers/brainstorming",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Explores what you want before any creative or build work starts.",
+  "open_source": "public code",
+  "repo": "https://github.com/obra/superpowers",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "You MUST use this before any creative work",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 384538,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 15.6,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "superpowers",
+   "match": "repo"
+  },
+  "rank": 3
+ },
+ {
+  "id": "n:writinggreatskills",
+  "name": "writing-great-skills",
+  "url": "https://skills.sh/mattpocock/skills/writing-great-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Reference on how to write and edit skills well.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Reference for writing and editing skills well",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 306531,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 15.5,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 4
+ },
+ {
+  "id": "n:writeaskill",
+  "name": "write-a-skill",
+  "url": "https://skills.sh/mattpocock/skills/write-a-skill",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Creates new agent skills with the right structure and bundled resources.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Create new agent skills with proper structure, progressive disclosure, and bundled resources.",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 219742,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 15.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 5
+ },
+ {
+  "id": "gh:pbakaus/impeccable",
+  "name": "Impeccable",
+  "url": "https://github.com/pbakaus/impeccable",
+  "kind": "repo",
+  "category": "Design & websites",
+  "what": "Skill pack that gives a coding agent a designer's eye so apps stop looking generic.",
+  "open_source": "yes",
+  "repo": "https://github.com/pbakaus/impeccable",
+  "cost": null,
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "source": "The Next New Thing",
+    "video": "CQhWqUOouYM",
+    "t": "14:15",
+    "shown": "Demoed picking an aesthetic and pasting the prompt into an agent.",
+    "quote": "give your coding agent a designer's eye",
+    "opinion": {
+     "stance": "would use",
+     "who": "host",
+     "why": "Gives his agent a designer's eye; he restyled a whole presentation with it.",
+     "quote": "I think these are so useful to just take the URL of the repo, give it to your agent",
+     "t": "14:46"
+    },
+    "our_view": {
+     "need": "yes",
+     "for_what": "Make Charlie's dashboards, slides and thumbnails look less generic",
+     "agree": "agree",
+     "why": "A real pain for the dashboards. Rule 27: look at the screenshot before calling it done, and try it on one page first (Rule 43)."
+    }
+   }
+  ],
+  "check": "",
+  "vs": {
+   "tool": "frontend-design",
+   "verdict": "leader stays",
+   "gap": "Both give pages a designer's eye; Claude's built-in artifact-design already covers our pages, so it is only worth a trial if a page looks generic."
+  },
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "need": "yes",
+  "relevance": 3,
+  "score": 15,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "community",
+   "plugin": "impeccable",
+   "match": "repo"
+  },
+  "rank": 2
+ },
+ {
+  "id": "n:setupmattpocockskills",
+  "name": "setup-matt-pocock-skills",
+  "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Sets up a repo for Matt Pocock's engineering skills (issue tracker, labels, doc layout).",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
    },
    {
     "week": "2026-W38",
     "source": "The Next New Thing",
     "video": "ehab5PtgRo8",
-    "t": "7:39",
-    "shown": "Showed the file that Grill Me points to; no live run.",
-    "quote": "this is now the actual file that the other Grill Me skill refers to",
+    "t": "5:33",
+    "shown": "Read out what it scaffolds (issue tracker, triage labels, domain docs); no live run.",
+    "quote": "It's a one-time setup that that wires his engineering skills into your repo.",
     "opinion": {
      "stance": "would use",
      "who": "Robbie",
-     "why": "Likes grilling as the engine with Grill Me as its first use.",
-     "quote": "I I think it's great.",
-     "t": "8:20"
+     "why": "Compares it to hiring Matt for 60 days to set up best practices, ready for AI agents.",
+     "quote": "so this is a way to set up those skills right at bat but it's also ready for AI agents",
+     "t": "5:41"
     },
     "our_view": {
-     "need": "maybe",
-     "for_what": "A reusable interview step inside other skills",
+     "need": "no",
+     "for_what": "",
      "agree": "agree",
-     "why": "Worth reading before we rewrite our own `grill-me`; no install needed."
+     "why": "Rule 34: skills do one job; this adds a pack. Borrow the habits, not the install."
     }
    }
   ],
@@ -256,9 +650,9 @@
   "vs": {
    "tool": "ECC",
    "verdict": "different job",
-   "gap": "Unknown what it adds over plain grill-me for our use; Matt says he split it out so other skills can reuse it."
+   "gap": "Unknown how many skills it adds or whether it clashes with our own router and skills."
   },
-  "installs": 868047,
+  "installs": 966567,
   "weeks": [
    "2026-W41",
    "2026-W38"
@@ -266,16 +660,21 @@
   "first": "2026-W38",
   "last": "2026-W41",
   "mentions": 2,
-  "need": "maybe",
-  "relevance": 2,
-  "score": 15.9,
+  "need": "no",
+  "relevance": 1,
+  "score": 15.0,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 1
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 6
  },
  {
   "id": "gh:tashfeenahmed/freellmapi",
@@ -353,109 +752,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
- },
- {
-  "id": "n:handoff",
-  "name": "handoff",
-  "url": "https://skills.sh/mattpocock/skills/handoff",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Compacts the current chat into a handoff document for another agent to pick up.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 945759,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 2,
-  "score": 14.0,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "gh:pbakaus/impeccable",
-  "name": "Impeccable",
-  "url": "https://github.com/pbakaus/impeccable",
-  "kind": "repo",
-  "category": "Design & websites",
-  "what": "Skill pack that gives a coding agent a designer's eye so apps stop looking generic.",
-  "open_source": "yes",
-  "repo": "https://github.com/pbakaus/impeccable",
-  "cost": null,
-  "for_charlie": 3,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W40",
-    "source": "The Next New Thing",
-    "video": "CQhWqUOouYM",
-    "t": "14:15",
-    "shown": "Demoed picking an aesthetic and pasting the prompt into an agent.",
-    "quote": "give your coding agent a designer's eye",
-    "opinion": {
-     "stance": "would use",
-     "who": "host",
-     "why": "Gives his agent a designer's eye; he restyled a whole presentation with it.",
-     "quote": "I think these are so useful to just take the URL of the repo, give it to your agent",
-     "t": "14:46"
-    },
-    "our_view": {
-     "need": "yes",
-     "for_what": "Make Charlie's dashboards, slides and thumbnails look less generic",
-     "agree": "agree",
-     "why": "A real pain for the dashboards. Rule 27: look at the screenshot before calling it done, and try it on one page first (Rule 43)."
-    }
-   }
-  ],
-  "check": "",
-  "vs": {
-   "tool": "frontend-design",
-   "verdict": "leader stays",
-   "gap": "Both give pages a designer's eye; Claude's built-in artifact-design already covers our pages, so it is only worth a trial if a page looks generic."
-  },
-  "weeks": [
-   "2026-W40"
-  ],
-  "first": "2026-W40",
-  "last": "2026-W40",
-  "mentions": 1,
-  "need": "yes",
-  "relevance": 3,
-  "score": 14,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 2
  },
  {
   "id": "gh:debpalash/voicestudio",
@@ -533,95 +831,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
- },
- {
-  "id": "n:hyperframescli",
-  "name": "hyperframes-cli",
-  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-cli",
-  "kind": "skill",
-  "category": "Video, clips & images",
-  "what": "Command-line loop for HeyGen's HyperFrames: init, lint, preview and render HTML videos.",
-  "open_source": "public code",
-  "repo": "https://github.com/heygen-com/hyperframes",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
-  "vs": null,
-  "installs": 878869,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 2,
-  "score": 13.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "n:brainstorming",
-  "name": "brainstorming",
-  "url": "https://skills.sh/obra/superpowers/brainstorming",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Explores what you want before any creative or build work starts.",
-  "open_source": "public code",
-  "repo": "https://github.com/obra/superpowers",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "You MUST use this before any creative work",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "installs": 384538,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 2,
-  "score": 13.6,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 3
  },
  {
   "id": "n:metamuse",
@@ -749,95 +960,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
- },
- {
-  "id": "n:writinggreatskills",
-  "name": "writing-great-skills",
-  "url": "https://skills.sh/mattpocock/skills/writing-great-skills",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Reference on how to write and edit skills well.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "Reference for writing and editing skills well",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 306531,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 2,
-  "score": 13.5,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 4
- },
- {
-  "id": "n:writeaskill",
-  "name": "write-a-skill",
-  "url": "https://skills.sh/mattpocock/skills/write-a-skill",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Creates new agent skills with the right structure and bundled resources.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "Create new agent skills with proper structure, progressive disclosure, and bundled resources.",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 219742,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 2,
-  "score": 13.3,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 5
  },
  {
   "id": "n:chatgptdots",
@@ -913,6 +1037,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 2
  },
  {
@@ -972,6 +1097,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
  },
  {
@@ -1052,7 +1178,114 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 6
+  "anthropic": null,
+  "rank": 7
+ },
+ {
+  "id": "n:claudeforsmallbusiness",
+  "name": "Claude for Small Business",
+  "url": "https://claude.com/plugins/small-business",
+  "kind": "plugin",
+  "category": "Business & finance",
+  "what": "Anthropic's plugin of 44 small-business skills: quotes from job photos, chasing invoices, review replies, a social posting calendar, a Monday cash brief. Works in GBP; asks before anything touches money or customers.",
+  "open_source": "yes",
+  "repo": "https://github.com/anthropics/knowledge-work-plugins",
+  "cost": {
+   "model": "free",
+   "amount": "included with a paid Claude plan (Pro and up)"
+  },
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "Anthropic marketplaces",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "Pre-built small business workflows to help you run and grow your business. Supports a majority of the tools you already use. You approve every step that touches money or customers.",
+    "opinion": null,
+    "our_view": {
+     "need": "maybe",
+     "for_what": "The decorating business (parked) and friends' set-ups in the set-up kit: proposal-builder, invoice-chase, review-reputation, social-content-engine",
+     "agree": "n/a",
+     "why": "The decorating business is parked and the kit hasn't had its first set-up yet. Strong candidate to offer a small-business owner in the kit once it's tried with try-tool."
+    }
+   }
+  ],
+  "check": "Anthropic-made (knowledge-work-plugins, Apache 2.0, last commit 7 Oct 2026). UK tax isn't covered: tax-prep only builds a packet for your accountant. Desktop app (Cowork) or Claude Code; not confirmed on claude.ai web.",
+  "vs": null,
+  "plugin": "small-business",
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 13,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "knowledge-work",
+   "plugin": "small-business",
+   "match": "plugin"
+  },
+  "rank": 1
+ },
+ {
+  "id": "n:grillwithdocs",
+  "name": "grill-with-docs",
+  "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
+  "kind": "skill",
+  "category": "Claude Code skills & plugins",
+  "what": "Same grilling interview, but also writes decision records and a glossary as it goes.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1124863,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 1,
+  "score": 13,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 8
  },
  {
   "id": "gh:every-app/open-seo",
@@ -1130,6 +1363,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
  },
  {
@@ -1206,15 +1440,16 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 3
  },
  {
-  "id": "n:setupmattpocockskills",
-  "name": "setup-matt-pocock-skills",
-  "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
+  "id": "n:prototype",
+  "name": "prototype",
+  "url": "https://skills.sh/mattpocock/skills/prototype",
   "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Sets up a repo for Matt Pocock's engineering skills (issue tracker, labels, doc layout).",
+  "category": "Coding agents & IDEs",
+  "what": "Builds a throwaway prototype to answer a design question.",
   "open_source": "public code",
   "repo": "https://github.com/mattpocock/skills",
   "cost": null,
@@ -1230,53 +1465,81 @@
     "quote": "",
     "opinion": null,
     "our_view": null
-   },
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "ehab5PtgRo8",
-    "t": "5:33",
-    "shown": "Read out what it scaffolds (issue tracker, triage labels, domain docs); no live run.",
-    "quote": "It's a one-time setup that that wires his engineering skills into your repo.",
-    "opinion": {
-     "stance": "would use",
-     "who": "Robbie",
-     "why": "Compares it to hiring Matt for 60 days to set up best practices, ready for AI agents.",
-     "quote": "so this is a way to set up those skills right at bat but it's also ready for AI agents",
-     "t": "5:41"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "agree",
-     "why": "Rule 34: skills do one job; this adds a pack. Borrow the habits, not the install."
-    }
    }
   ],
   "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": {
-   "tool": "ECC",
-   "verdict": "different job",
-   "gap": "Unknown how many skills it adds or whether it clashes with our own router and skills."
-  },
-  "installs": 966567,
+  "vs": null,
+  "installs": 906480,
   "weeks": [
-   "2026-W41",
-   "2026-W38"
+   "2026-W41"
   ],
-  "first": "2026-W38",
+  "first": "2026-W41",
   "last": "2026-W41",
-  "mentions": 2,
-  "need": "no",
+  "mentions": 1,
+  "need": null,
   "relevance": 1,
   "score": 13.0,
   "replaced_by": null,
-  "status": "rising",
+  "status": "new",
   "ours": false,
   "have": false,
-  "shown": true,
+  "shown": false,
   "tried": null,
-  "rank": 7
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 2
+ },
+ {
+  "id": "n:domainmodeling",
+  "name": "domain-modeling",
+  "url": "https://skills.sh/mattpocock/skills/domain-modeling",
+  "kind": "skill",
+  "category": "Knowledge & second brain",
+  "what": "Builds a project's glossary and decision records.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 783607,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 1,
+  "score": 12.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 1
  },
  {
   "id": "n:higgsfieldyoutubethumbnail",
@@ -1320,7 +1583,106 @@
   "have": false,
   "shown": false,
   "tried": null,
+  "anthropic": null,
   "rank": 3
+ },
+ {
+  "id": "n:hyperframesregistry",
+  "name": "hyperframes-registry",
+  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-registry",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Searches and installs ready-made blocks and components for HyperFrames videos.",
+  "open_source": "public code",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 755261,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 1,
+  "score": 12.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "hyperframes",
+   "match": "repo"
+  },
+  "rank": 4
+ },
+ {
+  "id": "n:mediause",
+  "name": "media-use",
+  "url": "https://skills.sh/heygen-com/hyperframes/media-use",
+  "kind": "skill",
+  "category": "Video, clips & images",
+  "what": "Fetches music, sound effects, images, logos and voice for a HyperFrames project.",
+  "open_source": "public code",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
+  "vs": null,
+  "installs": 753721,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 1,
+  "score": 12.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "hyperframes",
+   "match": "repo"
+  },
+  "rank": 5
  },
  {
   "id": "gh:addyosmani/agent-skills",
@@ -1402,7 +1764,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 8
+  "anthropic": null,
+  "rank": 9
  },
  {
   "id": "gh:mutonby/openshorts",
@@ -1462,7 +1825,106 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 4
+  "anthropic": null,
+  "rank": 6
+ },
+ {
+  "id": "n:copywriting",
+  "name": "copywriting",
+  "url": "https://skills.sh/coreyhaines31/marketingskills/copywriting",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Writes or improves marketing copy for web pages.",
+  "open_source": "public code",
+  "repo": "https://github.com/coreyhaines31/marketingskills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 219116,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 1,
+  "score": 11.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "community",
+   "plugin": "coreyhaines31",
+   "match": "repo"
+  },
+  "rank": 2
+ },
+ {
+  "id": "n:seoaudit",
+  "name": "seo-audit",
+  "url": "https://skills.sh/coreyhaines31/marketingskills/seo-audit",
+  "kind": "skill",
+  "category": "Marketing, sales & SEO",
+  "what": "Audits a site for technical and on-page SEO problems.",
+  "open_source": "public code",
+  "repo": "https://github.com/coreyhaines31/marketingskills",
+  "cost": null,
+  "for_charlie": 1,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "installs": 222971,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 1,
+  "score": 11.3,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "community",
+   "plugin": "coreyhaines31",
+   "match": "repo"
+  },
+  "rank": 3
  },
  {
   "id": "n:creativeclaw",
@@ -1521,51 +1983,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
- },
- {
-  "id": "n:grillwithdocs",
-  "name": "grill-with-docs",
-  "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
-  "kind": "skill",
-  "category": "Claude Code skills & plugins",
-  "what": "Same grilling interview, but also writes decision records and a glossary as it goes.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 1124863,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 1,
-  "score": 11,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 9
  },
  {
   "id": "n:grokbot",
@@ -1672,6 +2091,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 4
  },
  {
@@ -1757,6 +2177,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 2
  },
  {
@@ -1839,183 +2260,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
- },
- {
-  "id": "n:prototype",
-  "name": "prototype",
-  "url": "https://skills.sh/mattpocock/skills/prototype",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Builds a throwaway prototype to answer a design question.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 906480,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 1,
-  "score": 11.0,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 2
- },
- {
-  "id": "n:domainmodeling",
-  "name": "domain-modeling",
-  "url": "https://skills.sh/mattpocock/skills/domain-modeling",
-  "kind": "skill",
-  "category": "Knowledge & second brain",
-  "what": "Builds a project's glossary and decision records.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 783607,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 1,
-  "score": 10.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 1
- },
- {
-  "id": "n:hyperframesregistry",
-  "name": "hyperframes-registry",
-  "url": "https://skills.sh/heygen-com/hyperframes/hyperframes-registry",
-  "kind": "skill",
-  "category": "Video, clips & images",
-  "what": "Searches and installs ready-made blocks and components for HyperFrames videos.",
-  "open_source": "public code",
-  "repo": "https://github.com/heygen-com/hyperframes",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
-  "vs": null,
-  "installs": 755261,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 1,
-  "score": 10.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 5
- },
- {
-  "id": "n:mediause",
-  "name": "media-use",
-  "url": "https://skills.sh/heygen-com/hyperframes/media-use",
-  "kind": "skill",
-  "category": "Video, clips & images",
-  "what": "Fetches music, sound effects, images, logos and voice for a HyperFrames project.",
-  "open_source": "public code",
-  "repo": "https://github.com/heygen-com/hyperframes",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "HeyGen's own repo; HyperFrames needs local tools (Node); read before installing. MCP route is separate.",
-  "vs": null,
-  "installs": 753721,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 1,
-  "score": 10.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 6
  },
  {
   "id": "n:redditautomation",
@@ -2059,95 +2305,57 @@
   "have": false,
   "shown": false,
   "tried": null,
-  "rank": 2
- },
- {
-  "id": "n:copywriting",
-  "name": "copywriting",
-  "url": "https://skills.sh/coreyhaines31/marketingskills/copywriting",
-  "kind": "skill",
-  "category": "Marketing, sales & SEO",
-  "what": "Writes or improves marketing copy for web pages.",
-  "open_source": "public code",
-  "repo": "https://github.com/coreyhaines31/marketingskills",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "installs": 219116,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 1,
-  "score": 10.3,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 3
- },
- {
-  "id": "n:seoaudit",
-  "name": "seo-audit",
-  "url": "https://skills.sh/coreyhaines31/marketingskills/seo-audit",
-  "kind": "skill",
-  "category": "Marketing, sales & SEO",
-  "what": "Audits a site for technical and on-page SEO problems.",
-  "open_source": "public code",
-  "repo": "https://github.com/coreyhaines31/marketingskills",
-  "cost": null,
-  "for_charlie": 1,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "installs": 222971,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 1,
-  "score": 10.3,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
+  "anthropic": null,
   "rank": 4
+ },
+ {
+  "id": "n:improvecodebasearchitecture",
+  "name": "improve-codebase-architecture",
+  "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Scans a codebase for tidy-up opportunities and shows them as an HTML report.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1073339,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 0,
+  "score": 10,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 3
  },
  {
   "id": "n:obsidianmarkdown",
@@ -2191,7 +2399,155 @@
   "have": false,
   "shown": false,
   "tried": null,
+  "anthropic": null,
   "rank": 2
+ },
+ {
+  "id": "n:tdd",
+  "name": "tdd",
+  "url": "https://skills.sh/mattpocock/skills/tdd",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Builds features test-first (red, green, refactor).",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 1046160,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 0,
+  "score": 10,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 4
+ },
+ {
+  "id": "n:triage",
+  "name": "triage",
+  "url": "https://skills.sh/mattpocock/skills/triage",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Moves issues and external pull requests through triage roles and writes agent-ready briefs.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 910765,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 0,
+  "score": 10.0,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 5
+ },
+ {
+  "id": "n:codebasedesign",
+  "name": "codebase-design",
+  "url": "https://skills.sh/mattpocock/skills/codebase-design",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Shared vocabulary for designing deep, simple code modules.",
+  "open_source": "public code",
+  "repo": "https://github.com/mattpocock/skills",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
+  "vs": null,
+  "installs": 760424,
+  "weeks": [
+   "2026-W41"
+  ],
+  "first": "2026-W41",
+  "last": "2026-W41",
+  "mentions": 1,
+  "need": null,
+  "relevance": 0,
+  "score": 9.9,
+  "replaced_by": null,
+  "status": "new",
+  "ours": false,
+  "have": false,
+  "shown": false,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
+  "rank": 6
  },
  {
   "id": "n:vercelreactbestpractices",
@@ -2261,7 +2617,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 3
+  "anthropic": null,
+  "rank": 7
  },
  {
   "id": "gh:ace-step/ace-step-1.5",
@@ -2317,6 +2674,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 2
  },
  {
@@ -2376,6 +2734,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 2
  },
  {
@@ -2430,7 +2789,130 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 2
+ },
+ {
+  "id": "gh:alirezarezvani/claude-skills",
+  "name": "Claude Skills",
+  "url": "https://github.com/alirezarezvani/claude-skills",
+  "kind": "repo",
+  "category": "Claude Code skills & plugins",
+  "what": "Repo of 388 job-specific skill playbooks and personas.",
+  "open_source": "yes",
+  "repo": "https://github.com/alirezarezvani/claude-skills",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "source": "The Next New Thing",
+    "video": "CQhWqUOouYM",
+    "t": "18:48",
+    "shown": "Showed the repo; hosts joked about too many skills.",
+    "quote": "Your AI assistant is going to get 388 job-specific playbooks",
+    "opinion": {
+     "stance": "mixed",
+     "who": "co-host",
+     "why": "Calls himself the negative skill guy but likes the persona idea over loose skills.",
+     "quote": "I'm the negative skill guy, but let me tell you the thing I like about this one.",
+     "t": "18:48"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "agree",
+     "why": "388 playbooks is bloat. Rule 34: one job per skill, built from a real run. Rule 4: always-loaded context is for expertise only."
+    }
+   }
+  ],
+  "check": "Downloaded skills need checking before install (the show warns about plugins).",
+  "vs": null,
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 1,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "community",
+   "plugin": "playwright-pro",
+   "match": "repo"
+  },
+  "rank": 10
+ },
+ {
+  "id": "gh:mksglu/context-mode",
+  "name": "Context Mode",
+  "url": "https://github.com/mksglu/context-mode",
+  "kind": "repo",
+  "category": "Cost & tokens",
+  "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
+  "open_source": "public code",
+  "repo": "https://github.com/mksglu/context-mode",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "11:49",
+    "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
+    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "Adam",
+     "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
+     "quote": "",
+     "t": "11:17"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Keeping long sessions short if context fills up",
+     "agree": "n/a",
+     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
+    }
+   }
+  ],
+  "check": "Official source checked 2026-10-09: source-available Elastic License 2.0, not an unrestricted open-source licence. Savings not measured on our tasks. https://github.com/mksglu/context-mode",
+  "vs": {
+   "tool": "FreeLLMAPI",
+   "verdict": "different job",
+   "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "community",
+   "plugin": "context-mode",
+   "match": "repo"
+  },
+  "rank": 3
  },
  {
   "id": "gh:dyad-sh/dyad",
@@ -2486,6 +2968,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 3
  },
  {
@@ -2571,6 +3054,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 5
  },
  {
@@ -2627,6 +3111,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 7
  },
  {
@@ -2681,7 +3166,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 10
+  "anthropic": null,
+  "rank": 11
  },
  {
   "id": "gh:odysseus-dev/odysseus",
@@ -2737,6 +3223,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 3
  },
  {
@@ -2819,7 +3306,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 4
+  "anthropic": null,
+  "rank": 8
  },
  {
   "id": "gh:foundationagents/openmanus",
@@ -2875,6 +3363,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 6
  },
  {
@@ -2931,6 +3420,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 8
  },
  {
@@ -2987,6 +3477,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
  },
  {
@@ -3067,6 +3558,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 3
  },
  {
@@ -3126,6 +3618,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 2
  },
  {
@@ -3185,6 +3678,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 1
  },
  {
@@ -3244,6 +3738,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 5
  },
  {
@@ -3300,61 +3795,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 3
- },
- {
-  "id": "gh:alirezarezvani/claude-skills",
-  "name": "Claude Skills",
-  "url": "https://github.com/alirezarezvani/claude-skills",
-  "kind": "repo",
-  "category": "Claude Code skills & plugins",
-  "what": "Repo of 388 job-specific skill playbooks and personas.",
-  "open_source": "yes",
-  "repo": "https://github.com/alirezarezvani/claude-skills",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W40",
-    "source": "The Next New Thing",
-    "video": "CQhWqUOouYM",
-    "t": "18:48",
-    "shown": "Showed the repo; hosts joked about too many skills.",
-    "quote": "Your AI assistant is going to get 388 job-specific playbooks",
-    "opinion": {
-     "stance": "mixed",
-     "who": "co-host",
-     "why": "Calls himself the negative skill guy but likes the persona idea over loose skills.",
-     "quote": "I'm the negative skill guy, but let me tell you the thing I like about this one.",
-     "t": "18:48"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "agree",
-     "why": "388 playbooks is bloat. Rule 34: one job per skill, built from a real run. Rule 4: always-loaded context is for expertise only."
-    }
-   }
-  ],
-  "check": "Downloaded skills need checking before install (the show warns about plugins).",
-  "vs": null,
-  "weeks": [
-   "2026-W40"
-  ],
-  "first": "2026-W40",
-  "last": "2026-W40",
-  "mentions": 1,
-  "need": "no",
-  "relevance": 1,
-  "score": 8,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 11
  },
  {
   "id": "n:claudeslidesdocs",
@@ -3412,6 +3854,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 2
  },
  {
@@ -3466,64 +3909,7 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 3
- },
- {
-  "id": "gh:mksglu/context-mode",
-  "name": "Context Mode",
-  "url": "https://github.com/mksglu/context-mode",
-  "kind": "repo",
-  "category": "Cost & tokens",
-  "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
-  "open_source": "public code",
-  "repo": "https://github.com/mksglu/context-mode",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "11:49",
-    "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
-    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
-    "opinion": {
-     "stance": "no opinion",
-     "who": "Adam",
-     "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
-     "quote": "",
-     "t": "11:17"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Keeping long sessions short if context fills up",
-     "agree": "n/a",
-     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
-    }
-   }
-  ],
-  "check": "Official source checked 2026-10-09: source-available Elastic License 2.0, not an unrestricted open-source licence. Savings not measured on our tasks. https://github.com/mksglu/context-mode",
-  "vs": {
-   "tool": "FreeLLMAPI",
-   "verdict": "different job",
-   "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
-  },
-  "weeks": [
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W38",
-  "mentions": 1,
-  "need": "maybe",
-  "relevance": 2,
-  "score": 8,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
+  "anthropic": null,
   "rank": 3
  },
  {
@@ -3578,51 +3964,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 4
- },
- {
-  "id": "n:improvecodebasearchitecture",
-  "name": "improve-codebase-architecture",
-  "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Scans a codebase for tidy-up opportunities and shows them as an HTML report.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 1073339,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 0,
-  "score": 8,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 5
  },
  {
   "id": "n:pexo",
@@ -3676,6 +4019,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 9
  },
  {
@@ -3735,139 +4079,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 12
- },
- {
-  "id": "n:tdd",
-  "name": "tdd",
-  "url": "https://skills.sh/mattpocock/skills/tdd",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Builds features test-first (red, green, refactor).",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 1046160,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 0,
-  "score": 8,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 6
- },
- {
-  "id": "n:triage",
-  "name": "triage",
-  "url": "https://skills.sh/mattpocock/skills/triage",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Moves issues and external pull requests through triage roles and writes agent-ready briefs.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 910765,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 0,
-  "score": 8.0,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 7
- },
- {
-  "id": "n:codebasedesign",
-  "name": "codebase-design",
-  "url": "https://skills.sh/mattpocock/skills/codebase-design",
-  "kind": "skill",
-  "category": "Coding agents & IDEs",
-  "what": "Shared vocabulary for designing deep, simple code modules.",
-  "open_source": "public code",
-  "repo": "https://github.com/mattpocock/skills",
-  "cost": null,
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
-   }
-  ],
-  "check": "Matt Pocock's skills repo (7+ entries in this list), counts may be bundled installs.",
-  "vs": null,
-  "installs": 760424,
-  "weeks": [
-   "2026-W41"
-  ],
-  "first": "2026-W41",
-  "last": "2026-W41",
-  "mentions": 1,
-  "need": null,
-  "relevance": 0,
-  "score": 7.9,
-  "replaced_by": null,
-  "status": "new",
-  "ours": false,
-  "have": false,
-  "shown": false,
-  "tried": null,
-  "rank": 8
  },
  {
   "id": "gh:anthropics/financial-services",
@@ -3943,6 +4156,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 13
  },
  {
@@ -3997,6 +4211,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 4
  },
  {
@@ -4051,6 +4266,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 6
  },
  {
@@ -4107,6 +4323,66 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
+  "rank": 7
+ },
+ {
+  "id": "gh:posthog/posthog",
+  "name": "PostHog",
+  "url": "https://github.com/PostHog/posthog",
+  "kind": "repo",
+  "category": "Marketing, sales & SEO",
+  "what": "Self-hosted product analytics: funnels, retention, session replays, experiments.",
+  "open_source": "yes",
+  "repo": "https://github.com/posthog/posthog",
+  "cost": null,
+  "for_charlie": 0,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W40",
+    "source": "The Next New Thing",
+    "video": "kMPyFWFqX5I",
+    "t": "1:01",
+    "shown": "Explained uses for a business; no live demo.",
+    "quote": "PostHog is free, but it's really, really good",
+    "opinion": {
+     "stance": "would use",
+     "who": "host",
+     "why": "Free, self-hosted and well loved; recommends installing it to see where customers quit.",
+     "quote": "So, PostHog is free, but it's really, really good.",
+     "t": "1:01"
+    },
+    "our_view": {
+     "need": "no",
+     "for_what": "",
+     "agree": "disagree",
+     "why": "Charlie has no shop or site with customers (Rule 39, real pain only). Self-hosting is also beyond Rule 42's lowest rung."
+    }
+   }
+  ],
+  "check": "",
+  "vs": null,
+  "weeks": [
+   "2026-W40"
+  ],
+  "first": "2026-W40",
+  "last": "2026-W40",
+  "mentions": 1,
+  "need": "no",
+  "relevance": 0,
+  "score": 7,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "posthog",
+   "match": "name"
+  },
   "rank": 7
  },
  {
@@ -4165,6 +4441,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 8
  },
  {
@@ -4219,6 +4496,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 3
  },
  {
@@ -4277,6 +4555,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 9
  },
  {
@@ -4333,6 +4612,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 10
  },
  {
@@ -4391,6 +4671,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 10
  },
  {
@@ -4449,6 +4730,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 14
  },
  {
@@ -4507,6 +4789,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 4
  },
  {
@@ -4565,6 +4848,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 4
  },
  {
@@ -4623,6 +4907,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 11
  },
  {
@@ -4677,7 +4962,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 1
+  "anthropic": null,
+  "rank": 2
  },
  {
   "id": "gh:chatwoot/chatwoot",
@@ -4733,7 +5019,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 7
+  "anthropic": null,
+  "rank": 8
  },
  {
   "id": "gh:frappe/crm",
@@ -4789,7 +5076,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 2
+  "anthropic": null,
+  "rank": 3
  },
  {
   "id": "n:hark",
@@ -4843,6 +5131,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 9
  },
  {
@@ -4899,7 +5188,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 3
+  "anthropic": null,
+  "rank": 4
  },
  {
   "id": "n:isagentic",
@@ -4957,7 +5247,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 8
+  "anthropic": null,
+  "rank": 9
  },
  {
   "id": "gh:mautic/mautic",
@@ -5013,7 +5304,8 @@
   "have": false,
   "shown": true,
   "tried": null,
-  "rank": 9
+  "anthropic": null,
+  "rank": 10
  },
  {
   "id": "gh:vercel/next.js",
@@ -5067,6 +5359,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 5
  },
  {
@@ -5125,61 +5418,8 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 15
- },
- {
-  "id": "gh:posthog/posthog",
-  "name": "PostHog",
-  "url": "https://github.com/PostHog/posthog",
-  "kind": "repo",
-  "category": "Marketing, sales & SEO",
-  "what": "Self-hosted product analytics: funnels, retention, session replays, experiments.",
-  "open_source": "yes",
-  "repo": "https://github.com/posthog/posthog",
-  "cost": null,
-  "for_charlie": 0,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W40",
-    "source": "The Next New Thing",
-    "video": "kMPyFWFqX5I",
-    "t": "1:01",
-    "shown": "Explained uses for a business; no live demo.",
-    "quote": "PostHog is free, but it's really, really good",
-    "opinion": {
-     "stance": "would use",
-     "who": "host",
-     "why": "Free, self-hosted and well loved; recommends installing it to see where customers quit.",
-     "quote": "So, PostHog is free, but it's really, really good.",
-     "t": "1:01"
-    },
-    "our_view": {
-     "need": "no",
-     "for_what": "",
-     "agree": "disagree",
-     "why": "Charlie has no shop or site with customers (Rule 39, real pain only). Self-hosting is also beyond Rule 42's lowest rung."
-    }
-   }
-  ],
-  "check": "",
-  "vs": null,
-  "weeks": [
-   "2026-W40"
-  ],
-  "first": "2026-W40",
-  "last": "2026-W40",
-  "mentions": 1,
-  "need": "no",
-  "relevance": 0,
-  "score": 5,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 10
  },
  {
   "id": "n:spiraai",
@@ -5238,6 +5478,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 11
  },
  {
@@ -5292,6 +5533,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 12
  },
  {
@@ -5348,6 +5590,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 13
  },
  {
@@ -5411,6 +5654,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 6
  },
  {
@@ -5465,6 +5709,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 3
  },
  {
@@ -5524,6 +5769,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 10
  },
  {
@@ -5583,6 +5829,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 4
  },
  {
@@ -5637,6 +5884,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 4
  },
  {
@@ -5691,6 +5939,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 12
  },
  {
@@ -5749,6 +5998,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 5
  },
  {
@@ -5807,6 +6057,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 2
  },
  {
@@ -5865,6 +6116,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 6
  },
  {
@@ -5919,6 +6171,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 5
  },
  {
@@ -5973,6 +6226,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 6
  },
  {
@@ -6032,6 +6286,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 4
  },
  {
@@ -6095,6 +6350,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 11
  },
  {
@@ -6153,6 +6409,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 7
  },
  {
@@ -6211,6 +6468,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 7
  },
  {
@@ -6269,6 +6527,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 5
  },
  {
@@ -6327,6 +6586,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 7
  },
  {
@@ -6385,6 +6645,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 8
  },
  {
@@ -6497,6 +6758,7 @@
    "verdict": "drop",
    "why": "Charlie agreed 2026-10-09: ideas only. A 293-skill coding kit with hooks on 7 events breaks smallest context; its done-when check, READY/NOT READY report and scored lessons are now in our rules (review: research/hands/reviews/ecc-2026-10-09.md)."
   },
+  "anthropic": null,
   "rank": 16
  },
  {
@@ -6560,13 +6822,18 @@
   "mentions": 2,
   "need": "yes",
   "relevance": 3,
-  "score": 19,
+  "score": 21,
   "replaced_by": null,
   "status": "rising",
   "ours": true,
   "have": true,
   "shown": true,
   "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
   "rank": null
  },
  {
@@ -6604,13 +6871,18 @@
   "mentions": 1,
   "need": null,
   "relevance": 3,
-  "score": 16.6,
+  "score": 18.6,
   "replaced_by": null,
   "status": "new",
   "ours": false,
   "have": true,
   "shown": false,
   "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "skill-creator",
+   "match": "name"
+  },
   "rank": null
  },
  {
@@ -6674,13 +6946,18 @@
   "mentions": 2,
   "need": "yes",
   "relevance": 2,
-  "score": 15.9,
+  "score": 17.9,
   "replaced_by": null,
   "status": "rising",
   "ours": true,
   "have": true,
   "shown": true,
   "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "mattpocock-skills",
+   "match": "repo"
+  },
   "rank": null
  },
  {
@@ -6751,6 +7028,7 @@
   "have": true,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": null
  },
  {
@@ -6795,6 +7073,7 @@
   "have": true,
   "shown": false,
   "tried": null,
+  "anthropic": null,
   "rank": null
  },
  {
@@ -6839,6 +7118,7 @@
   "have": true,
   "shown": false,
   "tried": null,
+  "anthropic": null,
   "rank": null
  },
  {
@@ -6897,6 +7177,7 @@
   "have": true,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": null
  },
  {
@@ -6956,6 +7237,7 @@
   "have": false,
   "shown": true,
   "tried": null,
+  "anthropic": null,
   "rank": 6
  }
 ]

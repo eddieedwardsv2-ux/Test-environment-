@@ -8,7 +8,12 @@ description: Feeds the Hands Brain (tools, skills, plugins, MCPs, repos) from a 
 The Hands Brain (`research/hands/`) learns and teaches the tools people use
 with AI. Sources: The Next New Thing (weekly round-ups) and the skills.sh leaderboard
 (`python3 research/hands/skills_sh.py`, one snapshot a week, classified into
-`weeks/<YYYY-Www>-skills-sh.json` with `"source": "skills.sh"` and each skill's `installs`). Same idea as
+`weeks/<YYYY-Www>-skills-sh.json` with `"source": "skills.sh"` and each skill's `installs`), plus
+Anthropic's plugin catalogs as a **trust layer** (`python3 research/hands/anthropic_market.py`
+every run, before the rebuild: it refreshes `sources/anthropic-market/latest.json`, and the
+build gives listed tools a gold "✓ Anthropic" badge and +1, or +2 if in the official list).
+A notable Anthropic plugin goes in `weeks/<YYYY-Www>-anthropic.json` with `"plugin": "<its
+catalog name>"`. Same idea as
 `brain-ingest`, but the unit is a **tool**, and newer tools can replace older ones.
 
 ## Order (Charlie, 2026-10-09)

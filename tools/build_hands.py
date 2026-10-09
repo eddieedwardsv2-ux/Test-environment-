@@ -49,6 +49,7 @@ for w in weeks:
         if e["open_source"] == "unknown": e["open_source"] = t.get("open_source", "unknown")
         e["repo"] = e["repo"] or t.get("repo", "")
         if t.get("vs") and not e["vs"]: e["vs"] = t["vs"]
+        if t.get("plugin"): e["plugin"] = t["plugin"]          # its exact name in an Anthropic catalog
         if t.get("installs"): e["installs"] = max(e.get("installs", 0), int(t["installs"]))
         e["sightings"].append({"week": w["week"], "source": w.get("source", "The Next New Thing"), "video": t.get("video"), "t": t.get("t", ""),
                                "shown": t.get("shown", ""), "quote": t.get("quote", ""),
@@ -92,6 +93,26 @@ for e in tools.values():                                  # Charlie's own trials
     t = tried.get(norm(e["name"]))
     e["tried"] = t
     if t and t["verdict"] == "keep": e["score"] = round(e["score"] + 5, 1)
+# Trust layer (Charlie, 2026-10-09): listed in one of Anthropic's plugin catalogs means it
+# passed Anthropic's checks (community: automated security scan + approval; official: Anthropic's
+# own list). No ratings exist there, so it is a small bonus, not a verdict. Source 3:
+# research/hands/anthropic_market.py. Match on the tool's GitHub repo, else its exact name.
+CATALOG_REPOS = {"anthropics/claude-plugins-official", "anthropics/claude-plugins-community", "anthropics/knowledge-work-plugins"}
+mk = opt_market = json.loads((HANDS / "sources/anthropic-market/latest.json").read_text()) if (HANDS / "sources/anthropic-market/latest.json").exists() else {"plugins": []}
+RANK_M = {"official": 0, "knowledge-work": 1, "community": 2}
+by_repo, by_name = {}, {}
+for p in sorted(mk["plugins"], key=lambda p: RANK_M[p["market"]]):
+    if p["repo"] and p["repo"] not in CATALOG_REPOS: by_repo.setdefault(p["repo"], p)
+    by_name.setdefault(norm(p["name"]), p)
+def repo_key(url):
+    m = re.search(r"github\.com/([\w.-]+/[\w.-]+?)(?:\.git)?/?$", url or "")
+    return m.group(1).lower() if m else None
+for e in tools.values():
+    p, how = by_repo.get(repo_key(e["repo"])), "repo"   # its repo (or part of it) is listed
+    if not p and e.get("plugin"): p, how = by_name.get(norm(e["plugin"])), "plugin"   # named in the week file
+    if not p and len(norm(e["name"])) >= 5: p, how = by_name.get(norm(e["name"])), "name"   # a plugin of the same name is listed
+    e["anthropic"] = {"market": p["market"], "plugin": p["name"], "match": how} if p else None
+    if p: e["score"] = round(e["score"] + (2 if p["market"] == "official" else 1), 1)
 dropped = lambda e: bool(e["tried"]) and e["tried"]["verdict"] == "drop"
 ranked = sorted(tools.values(), key=lambda e: (e["status"] == "replaced", e["have"], dropped(e), -e["score"], e["name"].lower()))
 for c in CATEGORIES:                                      # what you already have gets no rank: each #1 is new to you
@@ -114,7 +135,8 @@ def opt(name, empty):
 data = {"tools": ranked, "concepts": concepts, "enate": opt("enate-links.json", {}),
         "nate": opt("nate-mentions.json", []), "weeks": [{"week": wk, "summary": " ".join(w.get("summary", "") for w in weeks if w["week"] == wk),
                    "videos": [v for w in weeks if w["week"] == wk for v in w.get("videos", [])]} for wk in order],
-        "videos": videos, "categories": CATEGORIES}
+        "videos": videos, "categories": CATEGORIES,
+        "market": {"date": mk.get("date"), "counts": mk.get("counts", {})}}
 tpl = (HANDS / "site/template.html").read_text()
 (HANDS / "site/hands.html").write_text(tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
 print(f"{len(ranked)} tools from {len(weeks)} weeks ({', '.join(order)}); "

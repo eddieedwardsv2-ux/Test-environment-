@@ -16,7 +16,6 @@ deleting them (history stays in `decisions.md`).
 2. [ ] Model comparisons on real work before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
 3. [ ] Journey video: improve the Mix style (chosen 9 Oct), then a proper video file with voice-over
 4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker")
-5. [ ] Anthropic's plugin marketplace as the Hands Brain's next source
 6. [ ] Set-up kit (paused): first friend or family set-up from plan v0.4
 7. [ ] First YouTube short
 

@@ -7,8 +7,10 @@ always on top. Started 2026-10-08 (Charlie). Site: see `system/pages.md`.
 **Latest check:** `audits/2026-10-09-usage-hands-check.md`.
 
 **Sources:** The Next New Thing (weekly round-ups), newest week first, and the
-skills.sh leaderboard (most-installed agent skills; `skills_sh.py`). More later
-(e.g. the Anthropic community marketplace), same pipeline.
+skills.sh leaderboard (most-installed agent skills; `skills_sh.py`), and
+Anthropic's three plugin catalogs as a trust layer (`anthropic_market.py`: official
+315, community 2,284, knowledge-work 123 on 2026-10-09). Listed means security-scanned
+and approved, not rated: the catalogs have no ratings or reviews.
 
 | File | What |
 |---|---|
@@ -27,7 +29,8 @@ with its link and chapter time, so the tool list costs nothing and isn't
 rate-limited. Transcripts (free, slower) are only needed for what each video
 actually *shows*, and they download in the background while earlier weeks are
 classified. Ranking: Charlie's relevance × 3, mentions × 2, recency, price, and for skills.sh
-skills up to 3 points for installs (10k = 1, 100k = 2, 1M+ = 3).
+skills up to 3 points for installs (10k = 1, 100k = 2, 1M+ = 3); +1 if listed in an
+Anthropic catalog, +2 if in the official one.
 Ask it questions with the `quartermaster` agent.
 
 ## Decisions from the map and ranked review
@@ -68,4 +71,5 @@ no Claude ArtifactData/publishing tools. Local mocked tests are not live proof. 
 ## Reviews (one tool, researched in depth)
 `reviews/`: ECC (`ecc-2026-10-09.md`, not installed, 3 ideas adopted), FreeLLMAPI
 (`freellmapi-2026-10-09.md`, optional Mac-day trial), NVIDIA Switchyard
-(`switchyard-2026-10-09.md`, a model router: watch, don't install).
+(`switchyard-2026-10-09.md`, a model router: watch, don't install), Anthropic's
+marketplaces and Small Business plugin (`anthropic-marketplaces-2026-10-09.md`).

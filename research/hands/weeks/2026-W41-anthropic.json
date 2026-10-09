@@ -1,0 +1,28 @@
+{
+ "week": "2026-W41",
+ "source": "Anthropic marketplaces",
+ "videos": [],
+ "summary": "Anthropic's own catalogs (2,722 plugins: 315 official, 2,284 community, 123 knowledge-work) are now a trust layer: any tool listed there gets a gold badge and a small bonus. Added Anthropic's Small Business plugin (44 skills, v1.35.1), which Charlie spotted. Review: research/hands/reviews/anthropic-marketplaces-2026-10-09.md.",
+ "tools": [
+  {
+   "name": "Claude for Small Business",
+   "url": "https://claude.com/plugins/small-business",
+   "kind": "plugin",
+   "plugin": "small-business",
+   "category": "Business & finance",
+   "what": "Anthropic's plugin of 44 small-business skills: quotes from job photos, chasing invoices, review replies, a social posting calendar, a Monday cash brief. Works in GBP; asks before anything touches money or customers.",
+   "shown": "",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": null,
+   "t": "",
+   "quote": "Pre-built small business workflows to help you run and grow your business. Supports a majority of the tools you already use. You approve every step that touches money or customers.",
+   "check": "Anthropic-made (knowledge-work-plugins, Apache 2.0, last commit 7 Oct 2026). UK tax isn't covered: tax-prep only builds a packet for your accountant. Desktop app (Cowork) or Claude Code; not confirmed on claude.ai web.",
+   "opinion": null,
+   "our_view": {"need": "maybe", "for_what": "The decorating business (parked) and friends' set-ups in the set-up kit: proposal-builder, invoice-chase, review-reputation, social-content-engine", "agree": "n/a", "why": "The decorating business is parked and the kit hasn't had its first set-up yet. Strong candidate to offer a small-business owner in the kit once it's tried with try-tool."},
+   "open_source": "yes",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "cost": {"model": "free", "amount": "included with a paid Claude plan (Pro and up)"}
+  }
+ ]
+}
