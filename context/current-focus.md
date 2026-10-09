@@ -18,6 +18,8 @@ recorded (with their consent) for the YouTube channel. Project:
 paused until then (back 11 Oct).** Loops to close and prove, in `context/todo.md`: the Desk wake
 (press Send, a session wakes), the audit hole on merges, the frontend-design verdict, Higgsfield
 sign-in and the Katana draft (Mac), Codex's browser plan, plugins switched on.
+On 11 Oct the Guardian is back: its first run must cover the commits made while paused
+(from `e210980` on), or the audit fails again.
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
