@@ -53,7 +53,7 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
 | Every dashboard Charlie opens (links, sources, rebuild steps) | `system/pages.md` |
 | Past decisions | `decisions.md` (new ones at the top, dated) |
 | Projects | `projects/<name>/` |
-| Creator research, transcripts, commands | `research/README.md` |
+| Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |
 | Tools the OS can reach | `connections.md` (API guides in `references/`) |
 | Nate's kit licence | `THIRD-PARTY-NOTICES.md` |
 | ChatGPT copy of these rules | `exports/chatgpt-instructions.md` (update when this file or working-rules change) |
