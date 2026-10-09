@@ -24,7 +24,12 @@ note); fixes 2-5 stay open in that report. Next to build, in order: real model
 comparisons under `system/model-usage.md` (no cheaper route is promoted yet), then
 the journey video (Mix style). Full list: `context/todo.md`. Nate's six-phrases DM
 is ingested (concept 44, Rule 44: finish with VERIFIED / NOT VERIFIED).
-GitHub first; Notion replaces Drive (see `AGENTS.md`). Nothing is waiting on the Desk.
+Later the same day: model comparisons 1-2 done (9/9 each), so `architect` and
+`quartermaster` run on Sonnet with a weekly spot-check in the Friday audit; new `connect`
+skill (Canva connected and proven); Small Business's 44 skills mapped in the Quartermaster
+(not installed). **Next:** check the 5 plugins Charlie ticked are enabled
+(`ListPlugins`), test each once with `try-tool`; then the journey video (Mix style).
+GitHub first; Notion replaces Drive (see `AGENTS.md`).
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
 the base is decided (Nate's kit plus our three additions). Next: test it on the
