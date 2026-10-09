@@ -1,4 +1,28 @@
-# Hands Brain
+# Hands Brain (the Quartermaster's kit list)
+
+## Mini-router: the Quartermaster
+Up: `AGENTS.md` (rules that always apply, not repeated here). Priority: `context/current-focus.md`.
+Now: `tools.json` (ranked), `tried.json` (Charlie's verdicts), "Latest check" below.
+History: `weeks/` (evidence by week), `decisions.md` (repo-wide).
+
+| Need | Look in |
+|---|---|
+| One tool's rank, cost, `have`, `replaced_by` | `tools.json`: grep that tool's entry (about 280 KB; never load it whole) |
+| What a video actually showed | `weeks/<YYYY-Www>.json` (schema in `hands-ingest`), then the transcript at its timestamp |
+| Charlie's past verdicts (keep / drop) | `tried.json` (written by `try-tool`) |
+| Earlier deep reviews | `reviews/` (one file per tool) |
+| Charlie's orders on a tool (Search / Check / Implement) | the Hands page's `tool_actions` collection (section below) |
+| Video list and links | `pipeline.py` → `sources/<creator>/videos.json` |
+| Nate's links and quotes | `enate-links.json`, `nate-mentions.json` |
+| Presenters' opinions vs ours | `voices/<show>.md` |
+| Suggested improvements | `improvement-plan.md` |
+| The site | `site/template.html` → `site/hands.html` (`python3 tools/build_hands.py`) |
+
+Loads when running: this table, `try-tool`'s SKILL.md, that tool's entry, the capability
+map's "Already available". Never: all of `weeks/`, `site/`, whole transcripts.
+Across: Architect if a tool changes the OS (new skill, hook, router line) · `guardian` checks
+big finished work · Teacher parked (`teach`).
+Reuses: `try-tool`, `hands-ingest`, `find-skills`, `connect`, `tools/build_hands.py`, `tools/screenshot.py`, `decide`.
 
 The OS's "hands": every tool, skill, plugin, MCP server and repo worth
 knowing, learned week by week and ranked so the best one to use **now** is
@@ -11,18 +35,6 @@ skills.sh leaderboard (most-installed agent skills; `skills_sh.py`), and
 Anthropic's three plugin catalogs as a trust layer (`anthropic_market.py`: official
 315, community 2,284, knowledge-work 123 on 2026-10-09). Listed means security-scanned
 and approved, not rated: the catalogs have no ratings or reviews.
-
-| File | What |
-|---|---|
-| `pipeline.py` | Step 1: video list + descriptions (free; the show lists its own links and chapters) |
-| `sources/<creator>/videos.json` | One entry per video: date, ISO week, links, chapters, transcript path |
-| `weeks/<YYYY-Www>.json` | One helper's classification of that week (schema in `.claude/skills/hands-ingest/SKILL.md`) |
-| `tools.json` | Built: every tool merged, ranked per category, replaced ones marked |
-| `enate-links.json`, `nate-mentions.json` | Each tool's links to ENATE concepts; tools Nate himself uses (verbatim quotes) |
-| `improvement-plan.md` | Suggested improvements and skills (2026-10-09), chosen on the Decision Desk |
-| `voices/<show>.md` | What the presenters value and whether they'd use each tool, vs our view (pilot; `research/council-plan.md`) |
-| `tried.json` | Charlie's own trials (the `try-tool` skill): task, result, keep / drop verdict |
-| `site/` | `template.html` + built `hands.html` (`python3 tools/build_hands.py`) |
 
 **Why this is the efficient route:** the descriptions already name every tool
 with its link and chapter time, so the tool list costs nothing and isn't

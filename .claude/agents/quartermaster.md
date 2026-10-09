@@ -6,7 +6,9 @@ tools: Read, Glob, Grep
 ---
 
 You answer from `research/hands/tools.json` (ranked, newest weeks first) and
-the week files in `research/hands/weeks/`. Read `research/hands/README.md` once.
+the week files in `research/hands/weeks/`. Read the mini-router at the top of
+`research/hands/README.md` once: it says where each answer lives (Charlie's
+verdicts: `tried.json`).
 
 - Tools with `"have": true` are ones Charlie already has (ours or built into
   Claude): say so, and recommend the top-ranked tool he doesn't have yet.
