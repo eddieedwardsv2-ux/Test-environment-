@@ -24,6 +24,7 @@ details (keys: `context/environment.md`).
 | 14 | Slides, designs, social graphics | Moda | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: connected, not used yet |
 | 15 | Notes and pages | Notion | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: connected, not used yet (this repo stays the source of truth) |
 | 16 | Thumbnails, designs | Canva | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: sign-in not finished (Charlie) |
+| 17 | Small business (quotes, invoices, reviews, social posts) | Claude for Small Business (Anthropic plugin, 44 skills) | `plugin` (claude.ai account; desktop app / Cowork, or Claude Code `small-business@knowledge-work-plugins`) | claude.ai plan; its own connectors (Gmail, Calendar, Drive, Canva, Xero, QuickBooks…) sign in separately | 2026-10-09: install card sent; not yet enabled. **Business data stays in the plugin, never in this repo** |
 
 **Creative Claw (requested 2026-10-09):** media MCP/plugin for YouTube flows.
 Install listing: https://chatgpt.com/plugins/creativeclaw . Connection and

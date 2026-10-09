@@ -43,6 +43,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | YouTube media production and Shorts | Creative Claw preflight in `projects/youtube-channel/README.md` | media assets after connection and cost approval | first real trial; not yet connected/tested |
 | Choose a model and handle failed cheaper outputs | `system/model-usage.md`, existing `try-tool` | task-specific comparison and bounded escalation | saved input/output/check receipts; no unmeasured savings |
 | Test Hands decision state handling | `node tools/test_hands_actions.cjs` | adapter test results | real artifact round-trip still required |
+| Small-business work: a costed quote from notes or job photos, chase an invoice, reply to reviews, a social posting calendar, a Monday cash brief | **Claude for Small Business** plugin (Anthropic; `proposal-builder`, `invoice-chase`, `review-reputation`, `social-content-engine`, `monday-brief`; start with `smb-onboard`). Review: `research/hands/reviews/anthropic-marketplaces-2026-10-09.md` | drafts Charlie approves before anything is sent or paid | `connections.md` row 17; first real use logged with `try-tool` |
 | A deliverable (e.g. a video plan) | `projects/<name>/` | project files | the project's own done-when |
 
 ## Already available, nothing to build (check at session start)

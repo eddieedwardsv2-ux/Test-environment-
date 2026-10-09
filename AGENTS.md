@@ -71,6 +71,8 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 
 ## Skills and agents (`.claude/skills/`, `.claude/agents/`; Codex via `.agents/skills`)
 - `decide`: any question for Charlie; reading his answers.
+- Small-business jobs (quotes, invoices, reviews, social posts): Anthropic's **Small
+  Business** plugin (`system/capability-map.md`); its business data never comes into this repo.
 - `audit`: weekly Four Cs score (reports in `audits/`), and its content
   check after a wrong answer, a big change or **a switch to a new model**.
 - `i-have-adhd` (Charlie types it: action-first replies until "stop adhd mode";
