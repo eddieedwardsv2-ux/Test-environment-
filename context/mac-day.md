@@ -16,6 +16,8 @@ sign-up or payment. Tick items off here and log each one in `decisions.md`.
 3. **Nate's `3d-brain` skill** (from his AIS-OS kit; local 3D view of the
    knowledge, like his "Herk Brain").
 4. **Plugins:** context7 and superpowers; test the watch-video plugin.
-5. **Codex check** (audit finding AIOS-b9f5-05): confirm Codex lists the 10
-   skills through `.agents/skills`.
+5. **Codex check** (audit finding AIOS-b9f5-05; test plan `audits/evidence/2026-10-09-parity-test.md`):
+   confirm Codex lists every skill through `.agents/skills`, answers the 5
+   rulebook questions from test 1, and follows the three Codex fallbacks
+   (agent file by hand, `tools/audit.py` before finishing, "Waiting on Charlie"). Also check what Codex blocks instead of our deny list.
 - **Optional: FreeLLMAPI trial** (only if Claude limits have started stopping sessions): one small public task on free models vs the Sonnet helper, with `try-tool`. Review: `research/hands/reviews/freellmapi-2026-10-09.md`.

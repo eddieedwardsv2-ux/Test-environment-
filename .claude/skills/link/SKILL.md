@@ -1,7 +1,6 @@
 ---
 name: link
 description: Use when someone asks to link a project, file, folder, or important context into AGENTS.md or their AIOS routing, or says "link this into my AIOS" or "add this to my routing".
-disable-model-invocation: true
 argument-hint: "<file, folder, URL, or context> [when to use it]"
 ---
 

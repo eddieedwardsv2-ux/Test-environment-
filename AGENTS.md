@@ -38,6 +38,10 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   Brain, ENATE and the Hands Brain (`system/pages.md`).
 - **Prove what you report** (done, saved, pushed). `tools/audit.py` runs on
   every push and before an agent finishes.
+- **Same routes in Codex** (no helpers, hooks or Desk there): open the agent
+  file in `.claude/agents/` and follow it yourself; run `python3 tools/audit.py`
+  before you finish; put any question for Charlie under "Waiting on Charlie" in
+  `context/current-focus.md` (the next Claude session moves it to the Desk).
 - **This repo is public:** never write private, health, financial or client
   information here. Other people's details, AI OSs and session recordings
   go only in private repos; nothing goes on YouTube without their consent.

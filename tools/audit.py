@@ -216,6 +216,16 @@ cc = subprocess.run([sys.executable, str(ROOT / "tools/context_check.py")], capt
 for line in cc.split("Warnings:")[1].splitlines() if "Warnings:" in cc else []:
     if line.strip().startswith("- "): warn("context: " + line.strip()[2:])
 
+# 8. Claude/Codex parity: a skill the router expects agents to use must not be
+#    user-only (disable-model-invocation hides it from Claude; found 2026-10-09
+#    with `link`). Skills only Charlie starts are listed here on purpose.
+USER_ONLY = {"i-have-adhd"}
+for cap in ROOT.glob(".claude/skills/*/SKILL.md"):
+    if re.search(r"^disable-model-invocation:\s*true", cap.read_text(), re.M) and cap.parent.name not in USER_ONLY:
+        err(f"{cap.relative_to(ROOT)} is hidden from Claude (disable-model-invocation); remove it or add it to USER_ONLY in tools/audit.py")
+if not (ROOT / ".agents/skills").resolve() == (ROOT / ".claude/skills").resolve():
+    err(".agents/skills no longer points at .claude/skills: Codex would see different skills")
+
 for w in warns:
     print("WARN ", w)
 for e in errors:
