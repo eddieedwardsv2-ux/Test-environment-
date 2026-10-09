@@ -1,5 +1,23 @@
 # Decision log
 
+## 2026-10-09 — Quality-first usage and actionable Hands review
+Charlie asked to continue implementation after the connected GitHub write
+route succeeded. Added Search / Check / Implement and notes to the Hands
+review panel, preserving decision history with unique request IDs, visible
+status and a labelled device-only export fallback. Shared owner permissions,
+visual QA and publication remain a Claude-side check, not claimed complete.
+
+Replaced the blanket cheaper-helper rule with system/model-usage.md: define
+quality first, trial candidates, escalate rejected outputs, count total work,
+and one lead integrates bounded independent helpers. Active Claude agents
+inherit the main model by default; no cheaper production route is promoted.
+One isolated extraction fixture matched its nine expected fields on both
+small and strong comparator models; costs and broader reliability unmeasured.
+Updated FreeLLMAPI review for the reported limit stop and current source
+limitations. No external provider installed, paid calls made or credentials
+collected. Source corrections: Context Mode licence; startup-offer capacity.
+Report and receipts: audits/2026-10-09-usage-hands-check.md.
+
 ## 2026-10-09 — Include Creative Claw in YouTube production
 Charlie requested finding and adding Creative Claw for future YouTube flows.
 Matched the existing Hands Brain entry to CreativeClawCo; added connection

@@ -2359,7 +2359,7 @@
     }
    }
   ],
-  "check": "Eligibility (company 5 years or younger, or funded in last 2 years) as stated; check the page.",
+  "check": "Official FAQ checked 2026-10-09: free Team/$1,000 credit offers currently over capacity. Eligibility, approval and usable credits are unverified; do not present as immediately available. https://claude.com/programs/startups",
   "vs": null,
   "weeks": [
    "2026-W41"
@@ -2431,64 +2431,6 @@
   "shown": true,
   "tried": null,
   "rank": 2
- },
- {
-  "id": "gh:mksglu/context-mode",
-  "name": "Context Mode",
-  "url": "https://github.com/mksglu/context-mode",
-  "kind": "repo",
-  "category": "Cost & tokens",
-  "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
-  "open_source": "yes",
-  "repo": "https://github.com/mksglu/context-mode",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "11:49",
-    "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
-    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
-    "opinion": {
-     "stance": "no opinion",
-     "who": "Adam",
-     "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
-     "quote": "",
-     "t": "11:17"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Keeping long sessions short if context fills up",
-     "agree": "n/a",
-     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
-    }
-   }
-  ],
-  "check": "Token-saving figures not shown on screen.",
-  "vs": {
-   "tool": "FreeLLMAPI",
-   "verdict": "different job",
-   "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
-  },
-  "weeks": [
-   "2026-W38"
-  ],
-  "first": "2026-W38",
-  "last": "2026-W38",
-  "mentions": 1,
-  "need": "maybe",
-  "relevance": 2,
-  "score": 9,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "rank": 3
  },
  {
   "id": "gh:dyad-sh/dyad",
@@ -3517,6 +3459,64 @@
   "mentions": 1,
   "need": "no",
   "relevance": 1,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "rank": 3
+ },
+ {
+  "id": "gh:mksglu/context-mode",
+  "name": "Context Mode",
+  "url": "https://github.com/mksglu/context-mode",
+  "kind": "repo",
+  "category": "Cost & tokens",
+  "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
+  "open_source": "public code",
+  "repo": "https://github.com/mksglu/context-mode",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "11:49",
+    "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
+    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "Adam",
+     "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
+     "quote": "",
+     "t": "11:17"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Keeping long sessions short if context fills up",
+     "agree": "n/a",
+     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
+    }
+   }
+  ],
+  "check": "Official source checked 2026-10-09: source-available Elastic License 2.0, not an unrestricted open-source licence. Savings not measured on our tasks. https://github.com/mksglu/context-mode",
+  "vs": {
+   "tool": "FreeLLMAPI",
+   "verdict": "different job",
+   "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": "maybe",
+  "relevance": 2,
   "score": 8,
   "replaced_by": null,
   "status": "steady",

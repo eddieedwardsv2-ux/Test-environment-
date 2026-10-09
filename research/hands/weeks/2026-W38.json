@@ -322,7 +322,7 @@
    "video": "1fHsIveXRa8",
    "t": "11:49",
    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
-   "check": "Token-saving figures not shown on screen.",
+   "check": "Official source checked 2026-10-09: source-available Elastic License 2.0, not an unrestricted open-source licence. Savings not measured on our tasks. https://github.com/mksglu/context-mode",
    "vs": {
     "tool": "FreeLLMAPI",
     "verdict": "different job",
@@ -341,7 +341,7 @@
     "agree": "n/a",
     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
    },
-   "open_source": "yes",
+   "open_source": "public code",
    "repo": "https://github.com/mksglu/context-mode",
    "cost": null
   },

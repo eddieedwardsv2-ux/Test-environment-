@@ -38,6 +38,8 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Compare our OS with a Nate-first version of it | Nate-first map (see `AGENTS.md`); built by `tools/build_merge_map.py` | whole repo + Nate's kit | page source in `system/merge-map/` |
 | Draw any set of files as a connected map | `tools/graph_lib.py` (files, links, degrees), plus a `template.html` with `__DATA__` filled in by a small builder | nodes + links JSON | screenshot both screen sizes |
 | YouTube media production and Shorts | Creative Claw preflight in `projects/youtube-channel/README.md` | media assets after connection and cost approval | first real trial; not yet connected/tested |
+| Choose a model and handle failed cheaper outputs | `system/model-usage.md`, existing `try-tool` | task-specific comparison and bounded escalation | saved input/output/check receipts; no unmeasured savings |
+| Test Hands decision state handling | `node tools/test_hands_actions.cjs` | adapter test results | real artifact round-trip still required |
 | A deliverable (e.g. a video plan) | `projects/<name>/` | project files | the project's own done-when |
 
 ## Already available, nothing to build (check at session start)

@@ -1,7 +1,7 @@
 ---
 name: video-tutor
 description: Turns saved YouTube transcripts into a plain-English lesson for Charlie. Use when a creator's transcripts are in research/<creator>/ and Charlie wants them explained, checked and applied to his own setup.
-model: sonnet
+model: inherit
 tools: Read, Glob, Grep, Write, WebSearch, WebFetch
 ---
 

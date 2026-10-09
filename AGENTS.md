@@ -26,14 +26,14 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   questions. Ask once; an open card is never re-asked.
 - **Session start:** read `context/current-focus.md` (the only place the
   priority lives; don't start parked work) and the Decision Desk's answers.
-  Before a session ends, update its **Next step**.
+  Read Hands decisions (`research/hands/README.md`); update **Next step** before stopping.
 - **Never stop at "can't".** Try 3 methods, then say what's blocked and the workaround.
 - **Backtrack every miss:** where you looked, why you missed it, fix the route.
 - **Reuse before building:** `system/capability-map.md` first.
 - **Current beats history:** this router, current-focus and brain index.md
   files are "now"; `decisions.md` and log.md files are history.
 - **Parallel only where safe:** one integration step edits shared files;
-  helpers run on `model: sonnet`.
+  model choices follow `context/working-rules.md` (quality before savings).
 - **Main pages stay current:** after every run, rebuild and republish Charlie's
   Brain, ENATE and the Hands Brain (`system/pages.md`).
 - **Prove what you report** (done, saved, pushed). `tools/audit.py` runs on

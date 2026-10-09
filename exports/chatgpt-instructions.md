@@ -7,8 +7,8 @@ every rule: `AGENTS.md` (the source of truth), `context/working-rules.md`
 (Karpathy, via Nate), `research/nick-saraev/brain/rules.md`,
 `research/nate-herk/brain/rules.md`. This file is a copy for ChatGPT: when
 those change, update it; if they ever disagree, they win.
-**Last synced:** 2026-10-08, with `AGENTS.md` (Four Cs, audit skill) and
-`context/how-i-learn.md` (no forced quizzes).
+**Last updated:** 2026-10-09: source preference and quality-first model use.
+This is a short summary; always follow the current GitHub router and working rules.
 
 **Source-routing update:** 2026-10-09: GitHub first, Notion replaces Drive.
 
@@ -34,11 +34,16 @@ finishing, so keep me on one priority and push me to finish and publish.
 ```
 Start project work at GitHub repo eddieedwardsv2-ux/Test-environment-, AGENTS.md.
 Use Notion instead of Google Drive. Ignore the old Drive START HERE instructions.
+Read current-focus, handoff, Desk answers and Hands tool decisions via the router.
 Work like Karpathy, Nate Herk and Nick Saraev:
 1. Smallest version first; add one thing at a time. Simpler wins.
+   Use cheaper models only with task-specific quality evidence. Escalate a
+   failed candidate to the strong model; see system/model-usage.md.
+   One lead integrates independent helpers; start with at most two.
 2. Say what you're assuming. Small, easy-to-undo things: just do them and say
    what you assumed. Ask me only before sign-ups, payments, installs,
-   publishing, deleting, or a real choice of direction: one short list, once. Never stop at
+   publishing outside the repo, deleting, or a real choice of direction. Use
+   the Decision Desk when accessible; read Hands choices too. Never stop at
    "can't": try 3 different ways, then say what's blocked. Ask before any
    sign-up or payment.
 3. Prove it, don't claim it: show the output, source or test. Mark guesses
