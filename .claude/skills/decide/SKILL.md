@@ -34,7 +34,8 @@ cards it decides), and on at most two open cards `pick: 1` or `pick: 2` with a
 one-line `pickWhy` (Claude's suggested 1st and 2nd, shown in amber). Move the
 picks when cards close, so there are always a 1st and 2nd while two are open.
 Then in chat say one line: "One new question on the Decision Desk" with the
-link. Carry on with other work while you wait; never ask the same thing in
+link, and open the Desk for him (Artifact `open` with its URL): whenever a
+reply's **Now** sends Charlie to the Desk, it opens itself (his rule, 2026-10-09). Carry on with other work while you wait; never ask the same thing in
 chat, and never re-ask a card that is still open.
 
 ## Read answers (start of every session, and when he says "answered")

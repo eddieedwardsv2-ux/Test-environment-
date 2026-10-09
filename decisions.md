@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: the Desk opens itself
+Charlie: when **Now** / **Done when** sends him to the Chief's Desk, Claude opens it for him (Artifact `open`) so he never has to find it. Router line and `decide` skill updated.
+
 ## 2026-10-09: Desk answers: Elder pilot go, two desks kept, Bitcoin newsletter a side project
 - `elder-pilot-go` → **go with all recommended answers** (plan section 6): Quartermaster first; step 0 (mini-router at the top of `research/hands/README.md`) then step 1 (one plugin trial through the council and the `guardian`) start next session.
 - `elder-two-desks` → **keep both**: the Quartermaster's Search / Check / Implement buttons stay as orders; the Chief's Desk stays for questions.
