@@ -67,6 +67,10 @@ Comparison 1 (2026-10-09, `audits/evidence/2026-10-09-model-compare/`): 7 repo
 look-up questions with a key written first; main model and Sonnet both 7/7, similar
 tokens (64.6k vs 66.7k), Sonnet twice as fast. Passed, not promoted: no failed-tool or
 synthesis case yet (comparison 2 adds both).
+Comparison 2 (same folder, `result-2.md`): a missing-file case and a "pick 3 tools" synthesis;
+both 2/2, both caught a stale pick. Together 9/9 each, no critical failure: the candidate meets
+this file's bar for read-only look-up and picks questions only. Switching `architect` and
+`quartermaster` is Charlie's call (Desk card "promote-sonnet"); until then they stay `inherit`.
 
 Next use `try-tool` on held-out real extraction/retrieval jobs against the
 strong baseline. FreeLLMAPI needs a separate explicit-provider trial, current

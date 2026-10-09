@@ -1041,66 +1041,6 @@
   "rank": 2
  },
  {
-  "id": "gh:anthropics/claude-code",
-  "name": "Claude Code agents.md support",
-  "url": "https://github.com/anthropics/claude-code",
-  "kind": "app",
-  "category": "Coding agents & IDEs",
-  "what": "Claude Code now reads the shared agents.md instruction file, so one file serves Claude and Codex.",
-  "open_source": "public code",
-  "repo": "https://github.com/anthropics/claude-code",
-  "cost": {
-   "model": "free",
-   "amount": "",
-   "source": "earlier week-file price",
-   "date": "2026-10-09"
-  },
-  "for_charlie": 3,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "hlOk-EFUITQ",
-    "t": "12:19",
-    "shown": "Explained why one shared instruction file ends the claude.md versus agents.md mismatch; no demo.",
-    "quote": "typically they're looking at an agents.md file that's in your project folder",
-    "opinion": {
-     "stance": "would use",
-     "who": "Adam",
-     "why": "Calls the shared instruction file a small win that ends the claude.md versus agents.md mess.",
-     "quote": "the fact that they're going to use the same file that everyone else is using means that the mess just goes away.",
-     "t": "13:20"
-    },
-    "our_view": {
-     "need": "yes",
-     "for_what": "Keep AGENTS.md as the one instruction file for Claude Code and Codex",
-     "agree": "agree",
-     "why": "Already how this OS works: CLAUDE.md imports AGENTS.md. Rule 3 (one current source per fact). Check the Claude Code docs before dropping the import, as the hosts do not demo it."
-    }
-   }
-  ],
-  "check": "Skills are still not shared between Claude and Codex, per the hosts; check Claude Code docs for the exact behaviour.",
-  "vs": null,
-  "weeks": [
-   "2026-W39"
-  ],
-  "first": "2026-W39",
-  "last": "2026-W39",
-  "mentions": 1,
-  "need": "yes",
-  "relevance": 3,
-  "score": 13,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "anthropic": null,
-  "rank": 1
- },
- {
   "id": "gh:davila7/claude-code-templates",
   "name": "Claude Code Templates",
   "url": "https://github.com/davila7/claude-code-templates",
@@ -1490,7 +1430,7 @@
    "plugin": "mattpocock-skills",
    "match": "repo"
   },
-  "rank": 2
+  "rank": 1
  },
  {
   "id": "n:domainmodeling",
@@ -2355,7 +2295,7 @@
    "plugin": "mattpocock-skills",
    "match": "repo"
   },
-  "rank": 3
+  "rank": 2
  },
  {
   "id": "n:obsidianmarkdown",
@@ -2449,7 +2389,7 @@
    "plugin": "mattpocock-skills",
    "match": "repo"
   },
-  "rank": 4
+  "rank": 3
  },
  {
   "id": "n:triage",
@@ -2498,7 +2438,7 @@
    "plugin": "mattpocock-skills",
    "match": "repo"
   },
-  "rank": 5
+  "rank": 4
  },
  {
   "id": "n:codebasedesign",
@@ -2547,7 +2487,7 @@
    "plugin": "mattpocock-skills",
    "match": "repo"
   },
-  "rank": 6
+  "rank": 5
  },
  {
   "id": "n:vercelreactbestpractices",
@@ -2618,7 +2558,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 7
+  "rank": 6
  },
  {
   "id": "gh:ace-step/ace-step-1.5",
@@ -3307,7 +3247,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 8
+  "rank": 7
  },
  {
   "id": "gh:foundationagents/openmanus",
@@ -5132,7 +5072,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 9
+  "rank": 8
  },
  {
   "id": "gh:invoiceninja/invoiceninja",
@@ -5770,7 +5710,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 10
+  "rank": 9
  },
  {
   "id": "gh:yoheinakajima/glance-speedlab",
@@ -6351,7 +6291,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 11
+  "rank": 10
  },
  {
   "id": "n:aesty",
@@ -6958,6 +6898,66 @@
    "plugin": "mattpocock-skills",
    "match": "repo"
   },
+  "rank": null
+ },
+ {
+  "id": "gh:anthropics/claude-code",
+  "name": "Claude Code agents.md support",
+  "url": "https://github.com/anthropics/claude-code",
+  "kind": "app",
+  "category": "Coding agents & IDEs",
+  "what": "Claude Code now reads the shared agents.md instruction file, so one file serves Claude and Codex.",
+  "open_source": "public code",
+  "repo": "https://github.com/anthropics/claude-code",
+  "cost": {
+   "model": "free",
+   "amount": "",
+   "source": "earlier week-file price",
+   "date": "2026-10-09"
+  },
+  "for_charlie": 3,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "hlOk-EFUITQ",
+    "t": "12:19",
+    "shown": "Explained why one shared instruction file ends the claude.md versus agents.md mismatch; no demo.",
+    "quote": "typically they're looking at an agents.md file that's in your project folder",
+    "opinion": {
+     "stance": "would use",
+     "who": "Adam",
+     "why": "Calls the shared instruction file a small win that ends the claude.md versus agents.md mess.",
+     "quote": "the fact that they're going to use the same file that everyone else is using means that the mess just goes away.",
+     "t": "13:20"
+    },
+    "our_view": {
+     "need": "yes",
+     "for_what": "Keep AGENTS.md as the one instruction file for Claude Code and Codex",
+     "agree": "agree",
+     "why": "Already how this OS works: CLAUDE.md imports AGENTS.md. Rule 3 (one current source per fact). Check the Claude Code docs before dropping the import, as the hosts do not demo it."
+    }
+   }
+  ],
+  "check": "Skills are still not shared between Claude and Codex, per the hosts; check Claude Code docs for the exact behaviour.",
+  "vs": null,
+  "weeks": [
+   "2026-W39"
+  ],
+  "first": "2026-W39",
+  "last": "2026-W39",
+  "mentions": 1,
+  "need": "yes",
+  "relevance": 3,
+  "score": 13,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": true,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
   "rank": null
  },
  {

@@ -84,9 +84,11 @@ for e in tools.values():
 ours = {p.parent.name for p in ROOT.glob(".claude/skills/*/SKILL.md")} | {p.parent.name for p in ROOT.glob("references/parked-skills/*/SKILL.md")}
 # Built into Claude already (Anthropic's own skills): nothing to install, so they leave the ranking too.
 BUILTIN = {"pptx", "pdf", "docx", "xlsx", "skill-creator", "deep-research", "docs", "code-review", "security-review", "simplify", "dataviz"}   # see system/capability-map.md
+# Features this OS already runs on (found stale by model comparison 2, 2026-10-09).
+IN_USE = {"Claude Code agents.md support"}   # CLAUDE.md imports @AGENTS.md
 for e in tools.values():
     e["ours"] = norm(e["name"]) in {norm(o) for o in ours}   # we already have a skill by this name
-    e["have"] = e["ours"] or norm(e["name"]) in {norm(b) for b in BUILTIN}
+    e["have"] = e["ours"] or norm(e["name"]) in {norm(b) for b in BUILTIN} or e["name"] in IN_USE
     e["shown"] = any(s["video"] for s in e["sightings"])     # False = skills.sh only, never shown in a video
 tried = {norm(t["name"]): t for t in (json.loads((HANDS / "tried.json").read_text()) if (HANDS / "tried.json").exists() else [])}
 for e in tools.values():                                  # Charlie's own trials (the try-tool skill)
