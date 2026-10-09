@@ -1,9 +1,8 @@
 # Charlie's AI OS — router
 
-For any AI agent in this repo (Codex reads it directly; Claude Code imports it
-from CLAUDE.md). It loads with every message, so it holds only who you're
-helping, how to work and where things live; detail sits in the files it
-points to. Keep it short (Nate's smallest-context rule, `research/nate-herk/lesson-smallest-context.md`).
+For any AI agent here (Codex reads it; Claude Code imports it from CLAUDE.md). It loads
+every message: who you're helping, how to work, where things live. Keep it short
+(smallest context, `research/nate-herk/lesson-smallest-context.md`).
 
 You're helping Charlie, a UK beginner learning Claude Code and Codex while
 building a YouTube channel about it. Plain UK English, one next step at a
@@ -26,28 +25,29 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   questions. Ask once; an open card is never re-asked.
 - **Session start:** read `context/current-focus.md` (the only place the
   priority lives; don't start parked work) and the Decision Desk's answers.
-  Before a session ends, update its **Next step**.
+  Read Hands decisions (`research/hands/README.md`); update **Next step** before stopping.
 - **Never stop at "can't".** Try 3 methods, then say what's blocked and the workaround.
 - **Backtrack every miss:** where you looked, why you missed it, fix the route.
 - **Reuse before building:** `system/capability-map.md` first.
 - **Current beats history:** this router, current-focus and brain index.md
   files are "now"; `decisions.md` and log.md files are history.
 - **Parallel only where safe:** one integration step edits shared files;
-  helpers run on `model: sonnet`.
+  model choices follow `context/working-rules.md` (quality before savings).
 - **Main pages stay current:** after every run, rebuild and republish Charlie's
   Brain, ENATE and the Hands Brain (`system/pages.md`).
 - **Prove what you report** (done, saved, pushed). `tools/audit.py` runs on
   every push and before an agent finishes.
-- **Same routes in Codex** (no helpers, hooks or Desk there): open the agent
-  file in `.claude/agents/` and follow it yourself; run `python3 tools/audit.py`
-  before you finish; put any question for Charlie under "Waiting on Charlie" in
-  `context/current-focus.md` (the next Claude session moves it to the Desk).
+- **Codex** (no helpers, hooks or Desk): follow `.claude/agents/` files yourself,
+  run `tools/audit.py` before finishing, questions to "Waiting on Charlie" in current-focus.
 - **This repo is public:** never write private, health, financial or client
   information here. Other people's details, AI OSs and session recordings
   go only in private repos; nothing goes on YouTube without their consent.
 - API keys and secrets: `.env` locally, environment secrets in the cloud
   (`context/environment.md`). Never in files or chat. Blocked commands:
   deny list in `.claude/settings.json`.
+
+**Source preference (2026-10-09):** GitHub first. Use Notion instead of
+Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 
 ## Where things live
 | Need | Look in |

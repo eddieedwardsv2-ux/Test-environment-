@@ -37,6 +37,9 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | See and review both brains (graph + review cards) | Brain dashboard app + `flags` database (see `AGENTS.md`); built by `tools/build_brain_map.py` | every .md in the repo + concepts.md, rules.md | marks read back with ArtifactData |
 | Compare our OS with a Nate-first version of it | Nate-first map (see `AGENTS.md`); built by `tools/build_merge_map.py` | whole repo + Nate's kit | page source in `system/merge-map/` |
 | Draw any set of files as a connected map | `tools/graph_lib.py` (files, links, degrees), plus a `template.html` with `__DATA__` filled in by a small builder | nodes + links JSON | screenshot both screen sizes |
+| YouTube media production and Shorts | Creative Claw preflight in `projects/youtube-channel/README.md` | media assets after connection and cost approval | first real trial; not yet connected/tested |
+| Choose a model and handle failed cheaper outputs | `system/model-usage.md`, existing `try-tool` | task-specific comparison and bounded escalation | saved input/output/check receipts; no unmeasured savings |
+| Test Hands decision state handling | `node tools/test_hands_actions.cjs` | adapter test results | real artifact round-trip still required |
 | A deliverable (e.g. a video plan) | `projects/<name>/` | project files | the project's own done-when |
 
 ## Already available, nothing to build (check at session start)
@@ -47,9 +50,14 @@ list (`/skills`, or `/skill-doctor`). Update this table when they change.
 
 | Kind | What's there (2026-10-09) | Use for |
 |---|---|---|
-| claude.ai connectors (connected) | GitHub, Gmail, Google Calendar, Google Docs, Google Drive, HyperFrames by HeyGen, Moda (slides and designs), Notion, vidIQ | email, calendar, docs, video projects, designs, notes, YouTube research |
+| claude.ai connectors (connected) | GitHub, Gmail, Google Calendar, Google Docs, HyperFrames by HeyGen, Moda (slides and designs), Notion, vidIQ | email, calendar, docs, video projects, designs, notes, YouTube research |
 | claude.ai connectors (not finished) | Canva (sign-in incomplete), Higgsfield (not added yet) | thumbnails, images |
 | claude.ai skills | docs, deep-research, skill-creator, google-workspace; pdf, pptx, docx, xlsx (Charlie switching these off; weekly audit checks if missed) | documents, research reports, building skills, Office files |
 | Claude Code built-in skills | artifact-design, dataviz, code-review, security-review, simplify, loop, run, update-config | pages, charts, reviews, recurring jobs, settings |
 | Routines (scheduled) | "Weekly AI OS audit" (Fri 8:59 UK), "Weekly Hands Brain update" (Sat 8:47 UK), "Flashcard check" (daily, parked feature) | things that run without Charlie |
 | Tried, kept out of the repo | HyperFrames skills (`research/hands/tried.json`) | channel videos, installed in scratch when needed |
+
+**Override (Charlie, 2026-10-09):** use Notion instead of Google Drive;
+start project work from GitHub. The table above records Claude connections
+from that session, not verified availability in every host. ChatGPT reports
+Drive not installed; Notion tools are exposed, with content access untested.

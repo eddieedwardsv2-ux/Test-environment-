@@ -8,6 +8,29 @@ ChatGPT) reads this first and updates it before stopping.
 **Updated:** 2026-10-09, about 05:29 UK, by the session that ran the 5 Desk answers (sections 3-5).
 Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoughts.md`.
 
+## Latest steering (2026-10-09, ChatGPT)
+- Hands map/ranked review now has Search / Check / Implement controls in
+  source, with 14 adapter tests passing; backed by the artifact tool_actions collection with device-only
+  fallback/export. Republish Hands and test a real save/read/close round trip
+  before calling it live; session pickup route: `research/hands/README.md`.
+- Creative Claw requested for the next YouTube production session; route and
+  first trial in `projects/youtube-channel/README.md`. Installation/sign-in
+  remains incomplete; no credits spent or output tested.
+- GitHub first; ignore the old Google Drive START HERE instructions. Use
+  Notion for work previously routed to Drive. ChatGPT removal reported Drive
+  not installed; this does not revoke a separate Claude connection.
+- Scoped system check and source review are in `audits/2026-10-09-usage-hands-check.md`.
+  `system/model-usage.md` now defines evidence gates, bounded escalation and
+  fan-out/fan-in; active Claude helpers default to inherit. One fixed-input
+  comparison passed 9/9 fields on both gpt-6-luna and gpt-6-astra. This is a
+  synthetic smoke test, not production promotion or proven cost savings.
+- Next: in a signed-in Claude session republish Hands and validate one real
+  owner save/read/close round-trip, then run held-out real model comparisons.
+  Check the Friday audit routine: no new report appeared on main by the
+  11:13 UK continuation; execution itself is unverified, not proven failed.
+- GitHub writes work through the connected integration; see environment.md.
+  Command-line push lacks credentials. The private Claude session needs sign-in.
+
 ## 1. Charlie's thinking (the big picture)
 1. **Learn the most streamlined way.** Claude works faster than watching videos;
    save usage for when there's more to spare.
@@ -61,8 +84,9 @@ Charlie's own words for everything below: `brainstorms/2026-10-09-charlies-thoug
 - **Not yet proven:** both weekly routines (first runs Fri 9 Oct 8:59, Sat 10 Oct
   8:47), **Codex** (not installed in the cloud; repeat the test on the Mac:
   command in the report), the ChatGPT side, the Voice Gym, `try-tool`, the set-up kit on a real person.
-- **Theory only:** the middle, the council, model routing. The test found one
-  gap for that talk: no written rule for stepping up to a stronger model.
+- **Still unproven:** the middle and council. Model routing now has a written
+  quality/step-up policy and one narrow smoke test (latest steering above);
+  production equivalence and savings remain unmeasured.
 - **Known gap:** a non-Claude session changed `AGENTS.md` at 04:04 on 9 Oct with
   no log entry (item 8). Also: another Claude session was pushing to main at the
   same time as this one (journey video drafts); pull before every push.

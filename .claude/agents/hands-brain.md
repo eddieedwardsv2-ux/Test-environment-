@@ -1,7 +1,7 @@
 ---
 name: hands-brain
 description: Advisor on which AI tool, skill, plugin, MCP or repo to use for a job, from the Hands Brain's ranked, sourced list. Use for "what's the best tool for X", "is there something newer than Y", "what should I try this week".
-model: sonnet
+model: inherit
 tools: Read, Glob, Grep
 ---
 

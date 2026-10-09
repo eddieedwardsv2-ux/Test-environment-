@@ -51,7 +51,8 @@ h2{font:800 20px var(--display);margin:0 0 4px}
 .row .best span{color:var(--muted);font-size:13px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row .more{font:12px var(--mono);color:var(--muted);white-space:nowrap}
 .rank{list-style:none;margin:0;padding:0 14px 12px;display:grid;gap:4px}
-.rank li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:6px 0;border-top:1px solid var(--line);cursor:pointer}
+.rank li{list-style:none}
+.rank-item{width:100%;background:transparent;color:inherit;font:inherit;text-align:left;border:0;display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:6px 0;border-top:1px solid var(--line);cursor:pointer}
 .rank .n{font:12px var(--mono);color:var(--muted)}
 .rank .gone{color:var(--muted);text-decoration:line-through}
 .weeks{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
@@ -101,6 +102,13 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 .msearch{position:absolute;right:16px;top:14px;width:min(260px,calc(100% - 32px))}
 .msearch input{width:100%;background:var(--panel);border:1px solid var(--line-strong);border-radius:10px;color:var(--text);font:14px var(--font);padding:8px 10px}
 @media (max-width:640px){.msearch{top:auto;bottom:14px;right:64px;width:calc(100% - 96px)}.legend{bottom:64px;max-height:30%}.over h1{font-size:24px}}
+
+.actionbox{border:1px solid var(--line-strong);border-radius:12px;padding:14px;display:grid;gap:10px}
+.actionbox select,.actionbox textarea{width:100%;padding:10px;background:var(--bg);color:var(--text);border:1px solid var(--line-strong);border-radius:8px;font:inherit}
+.actionbox button,.queue button{padding:9px 12px;border:1px solid var(--line-strong);border-radius:8px;background:var(--panel-solid);color:var(--text);cursor:pointer}
+.actionbox button:disabled{opacity:.5;cursor:default}
+.queue{margin:16px 0;padding:14px;border:1px solid var(--line-strong);border-radius:12px}
+.queue ul{padding-left:20px}.queue li{margin:8px 0}
 </style>
 
 <div class="top"><span class="brand"><i></i>Hands Brain</span><div class="seg" role="group" aria-label="View"><button id="v-map" aria-pressed="true">Map</button><button id="v-list" aria-pressed="false">Ranked list</button></div></div>
@@ -144,6 +152,7 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
     <div id="week"></div>
   </section>
 
+  <section class="queue"><h2>Your tool decisions</h2><p id="queue-connection" role="status">Connecting…</p><div id="action-queue"></div><button id="export-actions">Download decisions</button></section>
   <footer>Source: The Next New Thing (YouTube), descriptions and transcripts. Titles are often clickbait, so tools are judged on what the videos show. Scores: your relevance × 3, mentions × 2, recency and price. Rebuild: <code>python3 tools/build_hands.py</code>.</footer>
 </div>
 
@@ -160,6 +169,78 @@ let kind = "all", q = "", wk = D.weeks[0]?.week;
 const byId = Object.fromEntries(D.tools.map(t => [t.id, t]));
 const secs = t => (t || "").split(":").reduce((a, b) => a * 60 + (+b || 0), 0);
 
+// Hands actions use this artifact's database, not the Desk's separate database.
+let actionDb = null, actionRows = {}, actionBusy = false, actionReady = false;
+let actionMode = "Connecting…", actionTool = null;
+const ACTIONS = {search:"Search", check:"Check", implement:"Implement"};
+const actionKey = id => encodeURIComponent(id);
+const sharedMessage = "Shared decisions: read at the start of the next connected session.";
+function latestAction(id){
+  return Object.values(actionRows).filter(r=>r.item===id)
+    .sort((a,b)=>String(b.createdAt || b.updatedAt).localeCompare(String(a.createdAt || a.updatedAt)))[0];
+}
+function validActions(rows){
+  if(!rows || typeof rows!=="object" || Array.isArray(rows)) throw Error("Invalid saved decisions");
+  return Object.fromEntries(Object.entries(rows).filter(([id,r])=>r && typeof r.item==="string" && typeof r.title==="string" && Object.hasOwn(ACTIONS,r.action)));
+}
+function syncActionButton(){
+  const b=document.getElementById("send-action");
+  if(b) b.disabled=actionBusy || !actionReady || latestAction(actionTool)?.status==="in_progress";
+}
+function renderActions(){
+  document.getElementById("queue-connection").textContent = actionMode;
+  const rows = Object.values(actionRows).sort((a,b)=>String(b.createdAt || b.updatedAt).localeCompare(String(a.createdAt || a.updatedAt)));
+  document.getElementById("action-queue").innerHTML = rows.length ? `<ul>${rows.map(r=>`<li><button data-id="${esc(r.item)}">${esc(r.title)}</button> · ${esc(ACTIONS[r.action])} · ${esc(r.status === "answered" ? "Queued" : r.status)}${r.outcome ? `<br>${esc(r.outcome)}` : ""}</li>`).join("")}</ul>` : `<p class="hint">Open a tool from the map or ranked list to choose Search, Check or Implement.</p>`;
+  syncActionButton();
+}
+function actionPanel(t){
+  actionTool=t.id;
+  const r=latestAction(t.id);
+  return `<div class="actionbox"><h4 style="margin:0">What should we do with this?</h4>
+    <label for="tool-action">Next action</label><select id="tool-action">${Object.entries(ACTIONS).map(([k,v])=>`<option value="${k}" ${r?.action===k?"selected":""}>${v}</option>`).join("")}</select>
+    <p class="hint">Search: find current sources. Check: assess fit, cost and risks. Implement: carry out the checked setup. Payments and sign-ins are handled separately. Saving adds a decision; previous decisions stay in the queue.</p>
+    <label for="tool-note">Your note (optional)</label><textarea id="tool-note" rows="3" maxlength="2000">${esc(r?.note || "")}</textarea>
+    <button id="send-action" ${!actionReady || actionBusy || r?.status==="in_progress" ? "disabled" : ""}>Save decision</button>
+    <p id="action-status" role="status">${esc(r ? (r.status==="answered" ? "Queued" : r.status) : actionMode)}${r?.outcome ? ": "+esc(r.outcome) : ""}</p></div>`;
+}
+async function saveAction(t){
+  if(actionBusy || !actionReady || latestAction(t.id)?.status==="in_progress") return;
+  const status=document.getElementById("action-status");
+  const action=document.getElementById("tool-action").value;
+  if(!Object.hasOwn(ACTIONS,action)) return;
+  const note=document.getElementById("tool-note").value.trim().slice(0,2000);
+  const previous=latestAction(t.id);
+  if(previous?.status==="answered" && previous.action===action && previous.note===note){status.textContent="Already queued — no duplicate added.";return;}
+  const now=new Date().toISOString(), requestId=crypto.randomUUID();
+  const row={item:t.id,title:t.name,url:t.url,action,note,status:"answered",source:"hands",createdAt:now,updatedAt:now,requestId};
+  const id=actionKey(t.id)+"--"+requestId;
+  actionBusy=true;syncActionButton();status.textContent="Saving…";
+  try{
+    if(actionDb){await actionDb.collection("tool_actions").doc(id).set(row);status.textContent="Saved — queued for the next session.";}
+    else{const next={...actionRows,[id]:row};localStorage.setItem("hands-actions",JSON.stringify(next));status.textContent="Saved on this device only. Download decisions and share them with your next session.";}
+    if(!actionRows[id])actionRows[id]=row;
+    renderActions();
+  }catch(e){status.textContent="Not saved. Keep your note and try again.";}
+  finally{actionBusy=false;syncActionButton();}
+}
+function loadDeviceActions(){
+  try{actionRows=validActions(JSON.parse(localStorage.getItem("hands-actions") || "{}"));actionReady=true;actionMode="Saved on this device only. Download decisions to share them with an AI session.";}
+  catch(e){actionReady=false;actionMode="Could not read saved device decisions. Saving is disabled to protect them.";}
+}
+async function connectActions(){
+  actionReady=false;
+  try{
+    actionDb=window.claude?.use ? await window.claude.use("db") : null;
+    if(actionDb){
+      actionDb.collection("tool_actions").onSnapshot(snap=>{
+        try{actionRows=validActions(Object.fromEntries(snap.docs.map(d=>[d.id,d.data()])));actionReady=true;actionMode=sharedMessage;}
+        catch(e){actionReady=false;actionMode="Could not read shared decisions. Reload before saving.";}
+        renderActions();
+      },()=>{actionReady=false;actionMode="Could not load shared decisions. Reload before saving.";renderActions();});
+    }else loadDeviceActions();
+  }catch(e){actionDb=null;loadDeviceActions();if(actionReady)actionMode="Shared connection unavailable. Saved on this device only; download decisions to share.";}
+  renderActions();
+}
 function match(t){
   if (kind !== "all" && t.kind !== kind) return false;
   if (!q) return true;
@@ -183,7 +264,7 @@ function render(){
     const top = list.find(t => !t.have) || list[0];
     return `<details class="row" style="--c:${color(c)}"><summary><span class="cname">${esc(c)}</span>
       <span class="best"><b>${esc(top.name)}</b><span>${esc(top.what)}</span></span><span class="more">${list.length > 1 ? "+" + (list.length - 1) + " more" : "only one"}</span></summary>
-      <ol class="rank">${list.map((t, i) => `<li data-id="${esc(t.id)}"><span class="n">${t.have ? "✓" : t.rank ?? i + 1}</span><span class="${t.status === "replaced" ? "gone" : ""}">${esc(t.name)}${t.replaced_by ? ` <small>replaced by ${esc(t.replaced_by)}</small>` : ""}</span><span class="st ${t.status}">${t.status}</span></li>`).join("")}</ol></details>`;
+      <ol class="rank">${list.map((t, i) => `<li><button class="rank-item" data-id="${esc(t.id)}"><span class="n">${t.have ? "✓" : t.rank ?? i + 1}</span><span class="${t.status === "replaced" ? "gone" : ""}">${esc(t.name)}${t.replaced_by ? ` <small>replaced by ${esc(t.replaced_by)}</small>` : ""}</span><span class="st ${t.status}">${t.status}</span></button></li>`).join("")}</ol></details>`;
   }).join("") || `<div class="empty">No tools match.</div>`;
   document.getElementById("weektabs").innerHTML = D.weeks.map(w =>
     `<button class="chip" data-wk="${esc(w.week)}" aria-pressed="${w.week === wk}">${esc(w.week)}</button>`).join("");
@@ -211,7 +292,8 @@ function open(id){
     ${t.check ? `<p><span class="k">Check before trusting</span><br>${esc(t.check)}</p>` : ""}
     ${t.vs ? `<p><span class="k">Head-to-head with ${esc(t.vs.tool)}</span><br>${esc(t.vs.verdict)}${t.vs.gap ? ". Still to learn: " + esc(t.vs.gap) : ""}</p>` : ""}
     ${t.url ? `<p><a href="${esc(t.url)}">Open ${esc(t.name)}</a></p>` : ""}
-    <p class="k">Where it came up</p>${sight}`;
+    ${actionPanel(t)}<p class="k">Where it came up</p>${sight}`;
+  document.getElementById("send-action").onclick = () => saveAction(t);
   document.getElementById("x").onclick = () => sheet.close();
   sheet.showModal();
 }
@@ -220,7 +302,12 @@ sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); })
 document.addEventListener("click", e => {
   const id = e.target.closest("[data-id]")?.dataset.id; if (id){ open(id); return; }
   const w = e.target.closest("[data-wk]")?.dataset.wk; if (w){ wk = w; render(); return; }
-  const k = e.target.closest("[data-kind]")?.dataset.kind; if (k){ kind = k; drawKinds(); render(); }
+  const k = e.target.closest("[data-kind]")?.dataset.kind; if (k){ kind = k; drawKinds(); render();
+connectActions();
+document.getElementById("export-actions").onclick=()=>{
+  const blob=new Blob([JSON.stringify({source:"hands",actions:Object.values(actionRows)},null,2)],{type:"application/json"});
+  const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="hands-decisions.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}; }
 });
 document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
 function drawKinds(){ document.getElementById("kinds").innerHTML = KINDS.map(([k, l]) => `<button class="chip" data-kind="${k}" aria-pressed="${k === kind}">${l}</button>`).join(" "); }
@@ -228,15 +315,20 @@ drawKinds(); render();
 
 // ---------- map view ----------
 const views = {map: document.getElementById("mapview"), list: document.getElementById("listview")};
+let resizeMap=null;
 function show(v){
   views.map.hidden = v !== "map"; views.list.hidden = v !== "list";
   document.getElementById("v-map").setAttribute("aria-pressed", v === "map");
   document.getElementById("v-list").setAttribute("aria-pressed", v === "list");
   try { localStorage.setItem("hands-view", v); } catch(e) {}
-  if (v === "map") resize();
+  if (v === "map" && resizeMap) resizeMap();
 }
 document.getElementById("v-map").onclick = () => show("map");
 document.getElementById("v-list").onclick = () => show("list");
+if(typeof d3 === "undefined"){
+  show("list");document.getElementById("v-map").disabled=true;
+  document.getElementById("v-map").title="Map library unavailable; use the ranked review.";
+}else{
 const cv = document.getElementById("cv"), cx = cv.getContext("2d");
 const N = [], L = [], byKey = {};
 const node = (k, o) => (byKey[k] = byKey[k] || (N.push(Object.assign({k}, o)), N[N.length - 1]));
@@ -364,6 +456,9 @@ document.getElementById("mq").addEventListener("input", e => { find = e.target.v
 document.getElementById("nums").innerHTML = `<span>${D.tools.length}<small>tools</small></span><span>${D.weeks.length}<small>weeks</small></span><span>${linkedConcepts.size}<small>ENATE links</small></span><span>${D.nate.length}<small>Nate uses</small></span>`;
 let legendOpen = window.innerWidth > 640;
 drawLegend();
+resizeMap=resize;
 let start = "map"; try { start = localStorage.getItem("hands-view") || "map"; } catch(e) {}
 show(start); fit();
+}
+
 </script>

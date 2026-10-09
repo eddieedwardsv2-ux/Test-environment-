@@ -1,6 +1,21 @@
-# Environment facts (cloud sessions)
+# Environment facts (check the current host)
 
-Tested 2026-10-07. Re-test anything older than a few months before relying on it.
+## ChatGPT Work session, checked 2026-10-09
+- GitHub reads and writes work through the connected GitHub integration.
+  Command-line clone/fetch work, but push lacked HTTPS credentials. Do not
+  ask for a password: use create_tree/create_commit/update_ref with an
+  expected-head guard and verify remote content. Successful reference commit:
+  3955b69405f442e176e0c0158bce0dee9efdeca0. Never force overwrite concurrent work.
+- Claude session/artifact access is separate: browser reached sign-in; no
+  ArtifactData or artifact publishing tools are exposed here. A GitHub push
+  does not republish a Claude artifact. Report that boundary explicitly.
+- Node Playwright package exists but its browser executable was missing.
+  Mocked tests do not count as screenshots or a live persistence round-trip.
+- Notion tools are exposed; no content read was performed in this session.
+  Drive removal returned not installed. Start at GitHub and use Notion instead.
+
+## Earlier Claude cloud session (historical, tested 2026-10-07)
+Re-test on the current host before relying on these facts.
 
 ## YouTube
 - YouTube blocks this cloud server's IP. These all FAILED for transcripts:

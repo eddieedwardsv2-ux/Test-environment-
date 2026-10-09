@@ -11,7 +11,7 @@ recommendation is in bold.
 
 ## Charlie's decisions (2026-10-08, applied the same day)
 - **Added:** A11 secret scan (in `tools/audit.py`); A10 cheaper models for
-  helper agents (`model: sonnet`); A5 a "what this folder is for" README in
+  helper agents (quality-gated model choice, `system/model-usage.md`); A5 a "what this folder is for" README in
   every folder Charlie uses (not AI-only folders like `.claude/`, `tools/`);
   A7 quarterly refresh date in `context/current-focus.md` (audit warns when
   it passes).

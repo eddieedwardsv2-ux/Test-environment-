@@ -6,3 +6,6 @@ new audit reads the last report first to see what's fixed, still open or back.
 `evidence/<run-id>/` holds each run's receipts: the commands it ran with their real output (`commands.md`) and screenshots of any page it checked. Every score in a report points to one.
 
 **Reviews of the audit itself:** `2026-10-09-audit-review.md` (what each layer checks, the two "doctors", gaps found and fixed). Backtests of a build go in `evidence/<date>-backtest/`.
+
+**Scoped continuation check:** `2026-10-09-usage-hands-check.md` — Hands
+decision controls, model quality gate, connection boundaries; unscored.

@@ -43,9 +43,13 @@ Anything not backed by a source is labelled **(inferring)**.
   agents get the router as it was at session start: if it changed since, tell
   them to re-read `AGENTS.md` from disk. Nate: don't overuse sub-agents, and
   agent teams are expensive (`system/standard-ai-os-v1.md` S16-S17).
-  Helper agents run on a cheaper model: `model: sonnet` for reading and
-  advising (the brain agents, `video-tutor`), Haiku for simple lookups; the
-  main session keeps the main model (Charlie's choice, 2026-10-08).
+  **Quality-first model use (Charlie, 2026-10-09):** `system/model-usage.md`
+  replaces the blanket Sonnet/Haiku rule. Active helpers inherit the main
+  model until a cheaper route passes task-specific comparisons. Trial a
+  candidate once, escalate a quality failure to the strong model, validate
+  again. Start with no helpers, or at most two independent ones when useful;
+  one lead integrates. Keep the user's main model. Never claim savings or
+  equivalence from an unmeasured or single easy example.
 - **Check in proportion to risk.** Always verify anything you tell Charlie is
   done (file exists, pushed) and every agent's quotes and links. Git steps in
   skills (branch, push, merge) are the preferred path, not proof: if a push or

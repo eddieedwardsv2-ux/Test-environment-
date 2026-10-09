@@ -16,7 +16,15 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Now (2026-10-09, Charlie):** the Hands Brain is done back to W38 (21 videos, 117 tools,
+**Next step (latest request, 2026-10-09):** publish the tested Hands review
+controls to the existing Claude artifact and prove one owner save/read/close
+round-trip. Then run held-out real model comparisons under `system/model-usage.md`.
+The scoped repository check and one synthetic model smoke test are recorded
+in `audits/2026-10-09-usage-hands-check.md`; no cheaper route is promoted yet.
+GitHub first; Notion replaces Drive (see `AGENTS.md`). The older Desk item
+below remains pending; no answer is assumed.
+
+**Previous status (2026-10-09, Charlie):** the Hands Brain is done back to W38 (21 videos, 117 tools,
 presenters' opinions on each; new videos come in through the Saturday routine). The
 end-to-end test passed in Claude (`audits/evidence/2026-10-09-end-to-end/`; Codex waits for
 the Mac). **Next step (2026-10-09):** Charlie answers "middle-go" on the Decision Desk (one
