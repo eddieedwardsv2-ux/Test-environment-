@@ -29,7 +29,7 @@ missing and close the gap in knowing how to use it.
 2. **Transcripts** (to know what they actually *show*): `python3 research/get_transcript.py <creator> <id>`
    in a background loop with pauses; failures go in `research/transcript-queue.txt`.
    A week can be classified once its transcripts are in.
-3. **One helper per week** (`model: sonnet`, parallel; each writes only its
+3. **One helper per week** (model per `system/model-usage.md`, parallel; each writes only its
    own `research/hands/weeks/<YYYY-Www>.json`, schema below). It reads that
    week's descriptions, chapters and transcripts. Work newest week first.
 4. **Merge, rank, build:** `python3 tools/build_hands.py` merges every week

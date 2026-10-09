@@ -302,13 +302,22 @@ sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); })
 document.addEventListener("click", e => {
   const id = e.target.closest("[data-id]")?.dataset.id; if (id){ open(id); return; }
   const w = e.target.closest("[data-wk]")?.dataset.wk; if (w){ wk = w; render(); return; }
-  const k = e.target.closest("[data-kind]")?.dataset.kind; if (k){ kind = k; drawKinds(); render();
-connectActions();
-document.getElementById("export-actions").onclick=()=>{
-  const blob=new Blob([JSON.stringify({source:"hands",actions:Object.values(actionRows)},null,2)],{type:"application/json"});
-  const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="hands-decisions.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
-}; }
+  const k = e.target.closest("[data-kind]")?.dataset.kind; if (k){ kind = k; drawKinds(); render(); }
 });
+// Connect saving once, on load (it used to run only after a filter chip was tapped).
+connectActions();
+// Artifact pages block plain download links, so export through the downloads
+// capability, and fall back to showing the JSON to copy.
+document.getElementById("export-actions").onclick = async () => {
+  const data = JSON.stringify({source: "hands", actions: Object.values(actionRows)}, null, 2);
+  const st = document.getElementById("action-status");
+  try {
+    const dl = window.claude?.use ? await window.claude.use("downloads") : null;
+    if (dl){ await dl.save({filename: "hands-decisions.json", data}); if (st) st.textContent = "Decisions file offered to save."; return; }
+  } catch(e) {}
+  try { await navigator.clipboard.writeText(data); if (st) st.textContent = "Decisions copied: paste them into your next session."; }
+  catch(e) { if (st) st.textContent = "Couldn't save or copy here. Open the page in claude.ai to save decisions."; }
+};
 document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
 function drawKinds(){ document.getElementById("kinds").innerHTML = KINDS.map(([k, l]) => `<button class="chip" data-kind="${k}" aria-pressed="${k === kind}">${l}</button>`).join(" "); }
 drawKinds(); render();

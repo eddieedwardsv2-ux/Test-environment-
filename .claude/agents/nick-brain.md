@@ -1,7 +1,7 @@
 ---
 name: nick-brain
 description: Answers as Nick Saraev's saved public content suggests he would. Use for "what would Nick say", a second opinion on a plan, or a critique in Nick's style.
-model: sonnet
+model: inherit
 tools: Read, Glob, Grep
 ---
 

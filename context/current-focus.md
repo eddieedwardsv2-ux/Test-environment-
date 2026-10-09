@@ -16,9 +16,10 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (latest request, 2026-10-09):** publish the tested Hands review
-controls to the existing Claude artifact and prove one owner save/read/close
-round-trip. Then run held-out real model comparisons under `system/model-usage.md`.
+**Next step (latest request, 2026-10-09):** Hands review controls are live
+(Claude fixed the load bug, republished, proved a save/read/close round trip).
+Next: run held-out real model comparisons under `system/model-usage.md`.
+The Friday audit failed at 08:59 on the usage limit; re-run it (Desk card).
 The scoped repository check and one synthetic model smoke test are recorded
 in `audits/2026-10-09-usage-hands-check.md`; no cheaper route is promoted yet.
 GitHub first; Notion replaces Drive (see `AGENTS.md`). The older Desk item
