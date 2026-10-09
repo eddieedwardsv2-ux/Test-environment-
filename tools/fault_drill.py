@@ -23,6 +23,19 @@ def big_unchecked_commit():
     for n in range(5): (work / f"context/drill-{n}.md").write_text("drill\n")
     g("add", "-A"); g("commit", "-q", "-m", "a big change, self-declared done")
 
+def merge_hides_unchecked():
+    # Codex's 975420c (9 Oct): a big unchecked commit on one side of a merge, a genuine Guardian
+    # check on the other. The check isn't an ancestor of the unchecked commit, so it mustn't clear it.
+    g = lambda *a: subprocess.run(["git", "-c", "user.name=drill", "-c", "user.email=drill@example.com", *a], cwd=work, check=True, capture_output=True)
+    g("init", "-q", "-b", "main"); g("add", "-A"); g("commit", "-q", "-m", "base")
+    g("checkout", "-q", "-b", "side")
+    for n in range(5): (work / f"context/side-{n}.md").write_text("side\n")
+    g("add", "-A"); g("commit", "-q", "-m", "big side change", "--date=@1791600000")
+    g("checkout", "-q", "main")
+    (work / "audits/guardian/drill-check.md").write_text("**READY**\n")
+    g("add", "-A"); g("commit", "-q", "-m", "checked\n\nChecked-by: guardian (READY) audits/guardian/drill-check.md", "--date=@1791700000")
+    g("merge", "-q", "--no-ff", "side", "-m", "merge side")
+
 def first_quoted(d):
     return next(t for t in d["tools"] if t.get("quote") and t.get("video"))
 
@@ -50,6 +63,7 @@ FAULTS = [
  ("a bad line in the transcript queue", lambda: edit("research/transcript-queue.txt", lambda t: t + "\nthis is not a valid line\n"), "malformed"),
  ("the 3-month focus review missed", lambda: edit("context/current-focus.md", lambda t: re.sub(r"(Refresh by:\*?\*?\s*)\d{4}-\d{2}-\d{2}", r"\g<1>2020-01-01", t, count=1)), "refresh date"),
  ("a big commit nobody checked (Guardian)", lambda: big_unchecked_commit(), "no guardian check"),
+ ("a Guardian check clearing the other side of a merge", lambda: merge_hides_unchecked(), "no guardian check"),
  ("a helper agent forced back onto Sonnet", lambda: edit(".claude/agents/video-tutor.md", lambda t: t.replace("model: inherit", "model: sonnet")), "model"),
     ("a note points at a file that isn't there", lambda: edit("context/todo.md", lambda s: s + "\n- see `system/no-such-page.md`\n"), "broken link context/todo.md"),
     ("a rule links a concept that doesn't link back", lambda: edit("research/nate-herk/brain/rules.md", lambda s: s.replace("(Concept 1: clash)", "(Concept 1: clash) (Concept 20)", 1)), "concept 20's 'Used by' doesn't name Rule 3"),

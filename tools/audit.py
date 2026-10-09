@@ -257,7 +257,8 @@ if not (ROOT / ".agents/skills").resolve() == (ROOT / ".claude/skills").resolve(
 #    "Checked-by: guardian (READY) audits/guardian/<report>.md" (or NOT READY), in it or in a
 #    later commit. The report must be added (not edited) by the commit that cites it, live
 #    in audits/guardian/, and have the cited verdict as its first line in that commit.
-#    A later genuine check clears an earlier miss (history is never rewritten).
+#    A later genuine check clears the misses it descends from (history is never rewritten);
+#    a check on one side of a merge doesn't clear the other side (Codex's 975420c, 9 Oct).
 #    Commits after GUARD_BASE count, by ancestry, so dates can't hide one. A merge counts
 #    only files it changed against every parent (its own additions or conflict fixes).
 #    Limits: shallow clones (GitHub Actions) and copies without Git skip this; it proves a
@@ -276,30 +277,30 @@ _log = _git("log", "-n", "0") if _shallow else _git("log", f"{GUARD_BASE}..HEAD"
     else _git("log", f"--since-as-filter=@{GUARD_FROM}", _fmt)  # e.g. the fault drill's fresh history
 def _changed(sha, merge, *extra):
     return _git("diff-tree", "--no-commit-id", "--name-only", "-r", *(["--cc"] if merge else []), *extra, sha).stdout.split()
-checked_later = False
-for entry in (_log.stdout.split("\x1e") if _log.returncode == 0 else []):
-    if "\x00" not in entry:
-        continue
-    sha, parents, body = entry.strip("\n").split("\x00", 2)
-    merge = len(parents.split()) > 1
-    m = TRAILER.search(body)
-    if m:
-        path = m.group(2)
-        shown = _git("show", f"{sha}:{path}")
-        first = next((l.strip() for l in shown.stdout.splitlines() if l.strip()), "") if shown.returncode == 0 else ""
-        problem = (f"cites Guardian report {path}, which isn't a file in audits/guardian/"
-                   if not path.startswith("audits/guardian/") or shown.returncode != 0
-                   else f"cites {path} but didn't add it: each check needs its own new report"
-                   if path not in _changed(sha, merge, "--diff-filter=A")
-                   else f"says Guardian {m.group(1)}, but {path} doesn't open with that verdict"
-                   if first != f"**{m.group(1)}**" else "")
-        if problem and not checked_later:
+_entries = [e.strip("\n").split("\x00", 2) for e in (_log.stdout.split("\x1e") if _log.returncode == 0 else []) if "\x00" in e]
+def _problem(sha, merge, m):
+    path = m.group(2)
+    shown = _git("show", f"{sha}:{path}")
+    first = next((l.strip() for l in shown.stdout.splitlines() if l.strip()), "") if shown.returncode == 0 else ""
+    return (f"cites Guardian report {path}, which isn't a file in audits/guardian/"
+            if not path.startswith("audits/guardian/") or shown.returncode != 0
+            else f"cites {path} but didn't add it: each check needs its own new report"
+            if path not in _changed(sha, merge, "--diff-filter=A")
+            else f"says Guardian {m.group(1)}, but {path} doesn't open with that verdict"
+            if first != f"**{m.group(1)}**" else "")
+_checks = {sha: (m, _problem(sha, len(parents.split()) > 1, m)) for sha, parents, body in _entries if (m := TRAILER.search(body))}
+_good = [sha for sha, (m, problem) in _checks.items() if not problem]
+# Cleared = every ancestor of a genuine check (itself included), never a sibling branch.
+cleared = set(_git("rev-list", *_good).stdout.split()) if _good else set()
+for sha, parents, body in _entries:
+    if sha in _checks:
+        problem = _checks[sha][1]
+        if problem and sha not in cleared:
             guard_flag(f"commit {sha[:7]} {problem}")
-        checked_later = checked_later or not problem
         continue
-    if checked_later:
+    if sha in cleared:
         continue
-    hand = [f for f in _changed(sha, merge) if not GENERATED.search(f)]
+    hand = [f for f in _changed(sha, len(parents.split()) > 1) if not GENERATED.search(f)]
     if len(hand) >= GUARD_FILES:
         guard_flag(f"commit {sha[:7]} changes {len(hand)} files with no Guardian check: run the guardian agent, "
             f"save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'")
