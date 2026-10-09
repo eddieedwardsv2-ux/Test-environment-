@@ -46,6 +46,7 @@ deleting them (history stays in `decisions.md`).
 - [ ] `/doctor` on the Mac; optional FreeLLMAPI trial only if limits keep stopping sessions
 
 ## Small tidy-ups (Claude can do these; offered, not yet agreed)
+- [ ] Next session: test the real `quartermaster` and `architect` once each (their edited files load then): a tool question should get an "Architect:" line, and a design question a "Quartermaster:" line
 - [ ] Use what we already have (Quartermaster, 9 Oct): improve one of our skills with `skill-creator` (its test step); run `security-review` once over the repo before a push; read `writing-great-skills` once (no install)
 - [ ] One home page linking every page
 - [ ] Refresh the Watch Path and the two oldest lessons (they still name `MISSION.md`, `NOTES.md`)

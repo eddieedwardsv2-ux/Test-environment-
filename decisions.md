@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-09: Nate's toolkit feeds the Quartermaster; router steps measured
+Charlie asked whether the Architect and Quartermaster work together, for relations between Nate's knowledge of skills and which to use, and to see the router's steps. Nate's 30 tools (nate-mentions.json) were almost absent from the Quartermaster (2 of 30): now source 4 of `tools/build_hands.py`, 25 added (162 to 187 tools), sighting dated to the oldest week so it never counts as news. New `tools/route_depth.py`: 85 of 99 current notes within 2 steps of the router, 0 unreachable (2 fixed); the audit warns on unreachable notes. Report: `audits/2026-10-09-advisors-and-router.md` (in the Reading Room).
+
 ## 2026-10-09: Guardian paused until the end of 10 Oct
 Charlie: pause the Guardian until tomorrow, to complete the broken loops and prove the system works before relying on it. `tools/audit.py` now warns (not fails) on Guardian problems until 2026-10-10 inclusive and goes back to failing by itself on 11 Oct (`GUARD_PAUSED_UNTIL`). The check that was running on the advisor-link change was stopped; that change is committed without a Guardian line (its round-1 findings were already fixed).
 

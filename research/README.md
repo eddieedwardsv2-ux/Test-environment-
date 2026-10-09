@@ -22,3 +22,5 @@ advisor agent reads; raw evidence stays in the transcripts). Anything not from a
 - Transcript: `python3 research/get_transcript.py <creator-folder> <url>` (a few at a time; rate-limited). If UNAVAILABLE, add `<creator-folder> <video-id>` to `transcript-queue.txt` (GitHub fetches hourly).
 - X posts: `python3 research/get_x_posts.py <creator-folder> <handle>`.
 - Then the `video-tutor` agent for a lesson, or the `brain-ingest` skill for a brain.
+
+Older: a 4-hour watch plan across Karpathy, Nate and Nick (7 Oct, from titles only): [watch-plan-4h.md](watch-plan-4h.md).

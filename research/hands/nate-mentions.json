@@ -12,7 +12,7 @@
    22,
    32
   ],
-  "in_hands": null
+  "in_hands": "n:skillcreator"
  },
  {
   "name": "Superpowers",
@@ -70,7 +70,7 @@
    39,
    29
   ],
-  "in_hands": null
+  "in_hands": "gh:mksglu/context-mode"
  },
  {
   "name": "Claude-Mem",
@@ -99,7 +99,7 @@
    21,
    14
   ],
-  "in_hands": null
+  "in_hands": "n:frontenddesign"
  },
  {
   "name": "Claude Design",

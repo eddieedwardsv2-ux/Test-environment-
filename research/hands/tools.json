@@ -124,22 +124,41 @@
      "agree": "agree",
      "why": "Worth a single trial on one of our own pages (Rule 43), not a blind install."
     }
+   },
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "eRS3CmvrOvA",
+    "t": "11:37",
+    "shown": "Nate uses it himself",
+    "quote": "h website design or, you know, building out slide decks and whatnot, bonus skill number seven is the official front-end design skill from Anthropic. You just install it using the command on screen and I would go ahead and just install",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Same skill name also published under anthropics/claude-code and pbakaus/impeccable; this is Anthropic's skills repo copy.",
   "vs": null,
   "relates": [],
   "installs": 964997,
+  "nate": {
+   "quote": "h website design or, you know, building out slide decks and whatnot, bonus skill number seven is the official front-end design skill from Anthropic. You just install it using the command on screen and I would go ahead and just install",
+   "video": "eRS3CmvrOvA",
+   "t": "11:37",
+   "concepts": [
+    21,
+    14
+   ]
+  },
   "weeks": [
    "2026-W41",
    "2026-W38"
   ],
   "first": "2026-W38",
   "last": "2026-W41",
-  "mentions": 2,
+  "mentions": 3,
   "need": "maybe",
   "relevance": 2,
-  "score": 18.0,
+  "score": 20.0,
   "replaced_by": null,
   "status": "rising",
   "ours": false,
@@ -2620,6 +2639,164 @@
   "rank": 9
  },
  {
+  "id": "n:claudeopus55",
+  "name": "Claude Opus 5.5",
+  "url": "https://www.anthropic.com/claude-opus-5-5",
+  "kind": "model",
+  "category": "Models & LLMs",
+  "what": "New Claude model praised for writing, visual design and animation.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W39",
+    "source": "The Next New Thing",
+    "video": "ZodAaTH-6_E",
+    "t": "13:55",
+    "shown": "Showed community examples including a music video animation and a walkable shop built with it.",
+    "quote": "it just is the best feeling model we've we've had in a long time.",
+    "opinion": {
+     "stance": "would use",
+     "who": "",
+     "why": "Says it is the best-feeling model in a long time, best for writing and visual design.",
+     "quote": "it just is the best feeling model we've we've had in a long time.",
+     "t": "13:55"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Scripts, titles and descriptions for the channel, and running the OS",
+     "agree": "agree",
+     "why": "Likely worth it, but it is a feeling, not a test. Rule 43 (same prompt, own work) and Rule 41 (prune after every new model); run the audit content check after switching."
+    }
+   },
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "7jHXoPGnA4c",
+    "t": "0:01",
+    "shown": "Nate uses it himself",
+    "quote": "th AI models editing videos for me for a long time. Super powerful models like Fable 5.1 and GBD6 Astra. But, Opus 5.5 is giving me some of the best outputs ever. Take a look at this example, which was just one prompt. Not only does this",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Opinion only; no benchmarks or pricing given.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "th AI models editing videos for me for a long time. Super powerful models like Fable 5.1 and GBD6 Astra. But, Opus 5.5 is giving me some of the best outputs ever. Take a look at this example, which was just one prompt. Not only does this",
+   "video": "7jHXoPGnA4c",
+   "t": "0:01",
+   "concepts": [
+    40
+   ]
+  },
+  "weeks": [
+   "2026-W39",
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W39",
+  "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 11,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 1
+ },
+ {
+  "id": "gh:mksglu/context-mode",
+  "name": "Context Mode",
+  "url": "https://github.com/mksglu/context-mode",
+  "kind": "repo",
+  "category": "Cost & tokens",
+  "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
+  "open_source": "public code",
+  "repo": "https://github.com/mksglu/context-mode",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "The Next New Thing",
+    "video": "1fHsIveXRa8",
+    "t": "11:49",
+    "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
+    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
+    "opinion": {
+     "stance": "no opinion",
+     "who": "Adam",
+     "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
+     "quote": "",
+     "t": "11:17"
+    },
+    "our_view": {
+     "need": "maybe",
+     "for_what": "Keeping long sessions short if context fills up",
+     "agree": "n/a",
+     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
+    }
+   },
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "eRS3CmvrOvA",
+    "t": "7:34",
+    "shown": "Nate uses it himself",
+    "quote": "ter, just type /review or /ultra review in your terminal, and it should work. All right, this fifth plugin is context mode. So, here is",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Official source checked 2026-10-09: source-available Elastic License 2.0, not an unrestricted open-source licence. Savings not measured on our tasks. https://github.com/mksglu/context-mode",
+  "vs": {
+   "tool": "FreeLLMAPI",
+   "verdict": "different job",
+   "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
+  },
+  "relates": [],
+  "nate": {
+   "quote": "ter, just type /review or /ultra review in your terminal, and it should work. All right, this fifth plugin is context mode. So, here is",
+   "video": "eRS3CmvrOvA",
+   "t": "7:34",
+   "concepts": [
+    39,
+    29
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 2,
+  "need": "maybe",
+  "relevance": 2,
+  "score": 11,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "community",
+   "plugin": "context-mode",
+   "match": "repo"
+  },
+  "rank": 2
+ },
+ {
   "id": "n:creativeclaw",
   "name": "CreativeClaw",
   "url": "https://creativeclaw.co/#pricing",
@@ -2958,7 +3135,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 1
+  "rank": 2
  },
  {
   "id": "n:redditautomation",
@@ -3005,6 +3182,64 @@
   "tried": null,
   "anthropic": null,
   "rank": 10
+ },
+ {
+  "id": "n:firecrawl",
+  "name": "Firecrawl",
+  "url": "https://www.youtube.com/watch?v=3GAxd90fEE4",
+  "kind": "mcp",
+  "category": "Research & search",
+  "what": "Web scraping and crawling tool Claude Code can drive to collect data from sites.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "3GAxd90fEE4",
+    "t": "9:38",
+    "shown": "Nate uses it himself",
+    "quote": "d, and then put it into an Excel sheet for us. And for this, we're going to be using a tool called Firecrawl. Firecrawl lets us do tons of different actions, and it lets us basically take a website like McDonald's right here. I can drop",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "d, and then put it into an Excel sheet for us. And for this, we're going to be using a tool called Firecrawl. Firecrawl lets us do tons of different actions, and it lets us basically take a website like McDonald's right here. I can drop",
+   "video": "3GAxd90fEE4",
+   "t": "9:38",
+   "concepts": [
+    25,
+    42
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 10,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "firecrawl",
+   "match": "name"
+  },
+  "rank": 1
  },
  {
   "id": "n:improvecodebasearchitecture",
@@ -4966,6 +5201,65 @@
   "rank": 9
  },
  {
+  "id": "n:superpowers",
+  "name": "Superpowers",
+  "url": "https://www.youtube.com/watch?v=eRS3CmvrOvA",
+  "kind": "plugin",
+  "category": "Claude Code skills & plugins",
+  "what": "Plugin that makes Claude plan, test and review like a senior developer instead of skipping steps.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "eRS3CmvrOvA",
+    "t": "2:31",
+    "shown": "Nate uses it himself",
+    "quote": "ory, it's that each one of these makes Claude noticeably better at its job. Anyways, the next skill is called superpowers, and this one literally gives Claude superpowers. It's a great name. It forces Claude to work the way that",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "ory, it's that each one of these makes Claude noticeably better at its job. Anyways, the next skill is called superpowers, and this one literally gives Claude superpowers. It's a great name. It forces Claude to work the way that",
+   "video": "eRS3CmvrOvA",
+   "t": "2:31",
+   "concepts": [
+    30,
+    22,
+    31
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 10,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "superpowers",
+   "match": "name"
+  },
+  "rank": 10
+ },
+ {
   "id": "n:tdd",
   "name": "tdd",
   "url": "https://skills.sh/mattpocock/skills/tdd",
@@ -5304,63 +5598,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 2
- },
- {
-  "id": "n:claudeopus55",
-  "name": "Claude Opus 5.5",
-  "url": "https://www.anthropic.com/claude-opus-5-5",
-  "kind": "model",
-  "category": "Models & LLMs",
-  "what": "New Claude model praised for writing, visual design and animation.",
-  "open_source": "unknown",
-  "repo": "",
-  "cost": null,
-  "for_charlie": 2,
-  "replaces": [],
-  "sightings": [
-   {
-    "week": "2026-W39",
-    "source": "The Next New Thing",
-    "video": "ZodAaTH-6_E",
-    "t": "13:55",
-    "shown": "Showed community examples including a music video animation and a walkable shop built with it.",
-    "quote": "it just is the best feeling model we've we've had in a long time.",
-    "opinion": {
-     "stance": "would use",
-     "who": "",
-     "why": "Says it is the best-feeling model in a long time, best for writing and visual design.",
-     "quote": "it just is the best feeling model we've we've had in a long time.",
-     "t": "13:55"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Scripts, titles and descriptions for the channel, and running the OS",
-     "agree": "agree",
-     "why": "Likely worth it, but it is a feeling, not a test. Rule 43 (same prompt, own work) and Rule 41 (prune after every new model); run the audit content check after switching."
-    }
-   }
-  ],
-  "check": "Opinion only; no benchmarks or pricing given.",
-  "vs": null,
-  "relates": [],
-  "weeks": [
-   "2026-W39"
-  ],
-  "first": "2026-W39",
-  "last": "2026-W39",
-  "mentions": 1,
-  "need": "maybe",
-  "relevance": 2,
-  "score": 9,
-  "replaced_by": null,
-  "status": "steady",
-  "ours": false,
-  "have": false,
-  "shown": true,
-  "tried": null,
-  "anthropic": null,
-  "rank": 2
+  "rank": 3
  },
  {
   "id": "gh:alirezarezvani/claude-skills",
@@ -5420,57 +5658,52 @@
    "plugin": "playwright-pro",
    "match": "repo"
   },
-  "rank": 10
+  "rank": 11
  },
  {
-  "id": "gh:mksglu/context-mode",
-  "name": "Context Mode",
-  "url": "https://github.com/mksglu/context-mode",
-  "kind": "repo",
-  "category": "Cost & tokens",
-  "what": "Runs side work in a sandbox and hands only the answer back so the main session stays short and saves tokens.",
-  "open_source": "public code",
-  "repo": "https://github.com/mksglu/context-mode",
+  "id": "n:claudemem",
+  "name": "Claude-Mem",
+  "url": "https://www.youtube.com/watch?v=eRS3CmvrOvA",
+  "kind": "plugin",
+  "category": "Knowledge & second brain",
+  "what": "Plugin that compresses past sessions into a local database and re-injects the relevant parts.",
+  "open_source": "unknown",
+  "repo": "",
   "cost": null,
   "for_charlie": 2,
   "replaces": [],
   "sightings": [
    {
     "week": "2026-W38",
-    "source": "The Next New Thing",
-    "video": "1fHsIveXRa8",
-    "t": "11:49",
-    "shown": "Explained on the README; the clips of someone measuring token savings were skipped as too long.",
-    "quote": "makes the focus of your main conversation stay on the work instead of all the side work",
-    "opinion": {
-     "stance": "no opinion",
-     "who": "Adam",
-     "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
-     "quote": "",
-     "t": "11:17"
-    },
-    "our_view": {
-     "need": "maybe",
-     "for_what": "Keeping long sessions short if context fills up",
-     "agree": "n/a",
-     "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
-    }
+    "source": "Nate Herk (Architect)",
+    "video": "eRS3CmvrOvA",
+    "t": "9:36",
+    "shown": "Nate uses it himself",
+    "quote": "nstalls the MCP server, the hooks, and the routing instructions. All right, and now this last skill is called ClaudeMem. And if Context Mode keeps your current session clean, then ClaudeMem is what carries knowledge across all of your",
+    "opinion": null,
+    "our_view": null
    }
   ],
-  "check": "Official source checked 2026-10-09: source-available Elastic License 2.0, not an unrestricted open-source licence. Savings not measured on our tasks. https://github.com/mksglu/context-mode",
-  "vs": {
-   "tool": "FreeLLMAPI",
-   "verdict": "different job",
-   "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
-  },
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
   "relates": [],
+  "nate": {
+   "quote": "nstalls the MCP server, the hooks, and the routing instructions. All right, and now this last skill is called ClaudeMem. And if Context Mode keeps your current session clean, then ClaudeMem is what carries knowledge across all of your",
+   "video": "eRS3CmvrOvA",
+   "t": "9:36",
+   "concepts": [
+    20,
+    27,
+    39
+   ]
+  },
   "weeks": [
    "2026-W38"
   ],
   "first": "2026-W38",
   "last": "2026-W38",
   "mentions": 1,
-  "need": "maybe",
+  "need": null,
   "relevance": 2,
   "score": 9,
   "replaced_by": null,
@@ -5481,8 +5714,8 @@
   "tried": null,
   "anthropic": {
    "market": "community",
-   "plugin": "context-mode",
-   "match": "repo"
+   "plugin": "claude-mem",
+   "match": "name"
   },
   "rank": 3
  },
@@ -5743,7 +5976,66 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 11
+  "rank": 12
+ },
+ {
+  "id": "n:obsidian",
+  "name": "Obsidian",
+  "url": "https://www.youtube.com/watch?v=sboNwYmH3AY",
+  "kind": "app",
+  "category": "Knowledge & second brain",
+  "what": "Free note app that shows a markdown wiki visually; a good window onto a second brain.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "sboNwYmH3AY",
+    "t": "6:06",
+    "shown": "Nate uses it himself",
+    "quote": "relationships, is we're going to go to Obsidian and download it. So, if you just go to obsidian.md, you can see this is the completely free tool and you're going to go ahead and",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "relationships, is we're going to go to Obsidian and download it. So, if you just go to obsidian.md, you can see this is the completely free tool and you're going to go ahead and",
+   "video": "sboNwYmH3AY",
+   "t": "6:06",
+   "concepts": [
+    20,
+    10,
+    13
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 9,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "community",
+   "plugin": "obsidian",
+   "match": "name"
+  },
+  "rank": 4
  },
  {
   "id": "gh:odysseus-dev/odysseus",
@@ -6059,7 +6351,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 1
+  "rank": 2
  },
  {
   "id": "gh:tencent/weknora",
@@ -6141,7 +6433,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 3
+  "rank": 5
  },
  {
   "id": "n:omnisendmcp",
@@ -6205,6 +6497,60 @@
   "rank": 3
  },
  {
+  "id": "n:ultrareview",
+  "name": "/ultra review",
+  "url": "https://www.youtube.com/watch?v=eRS3CmvrOvA",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Built-in cloud code review that sends parallel reviewer agents at your branch; not free.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "eRS3CmvrOvA",
+    "t": "6:03",
+    "shown": "Nate uses it himself",
+    "quote": "into ClaudeCode, and most people just aren't using it. It's the /review command and its more powerful cousin /ultra review. So, when you finish writing code and you type /review, Claude does a structured code review on what you just",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "into ClaudeCode, and most people just aren't using it. It's the /review command and its more powerful cousin /ultra review. So, when you finish writing code and you type /review, Claude does a structured code review on what you just",
+   "video": "eRS3CmvrOvA",
+   "t": "6:03",
+   "concepts": [
+    31,
+    15
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 8
+ },
+ {
   "id": "gh:rohitg00/ai-engineering-from-scratch",
   "name": "AI Engineering From Scratch",
   "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
@@ -6264,6 +6610,60 @@
   "tried": null,
   "anthropic": null,
   "rank": 1
+ },
+ {
+  "id": "n:apify",
+  "name": "Apify",
+  "url": "https://www.youtube.com/watch?v=35WuZxbAY68",
+  "kind": "app",
+  "category": "Research & search",
+  "what": "Platform of ready-made scraper 'actors' an agent can call.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "35WuZxbAY68",
+    "t": "3:32",
+    "shown": "Nate uses it himself",
+    "quote": "e I'll have an automation or every once in a while I want my Hermes agent to grab something and it has to use Apify and a certain actor within Apify. We also have things like GBT image 2, which I've been loving lately, and",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "e I'll have an automation or every once in a while I want my Hermes agent to grab something and it has to use Apify and a certain actor within Apify. We also have things like GBT image 2, which I've been loving lately, and",
+   "video": "35WuZxbAY68",
+   "t": "3:32",
+   "concepts": [
+    25,
+    42
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 3
  },
  {
   "id": "n:boringfunnels",
@@ -6385,6 +6785,113 @@
   "rank": 10
  },
  {
+  "id": "n:cavemanplugin",
+  "name": "Caveman plugin",
+  "url": "https://www.youtube.com/watch?v=_qZvORxGqI0",
+  "kind": "plugin",
+  "category": "Cost & tokens",
+  "what": "Plugin that makes Claude reply tersely to save output tokens.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "_qZvORxGqI0",
+    "t": "15:21",
+    "shown": "Nate uses it himself",
+    "quote": "out you even really seeing in your files and things like that. So, you know, there might be I I saw this this caveman plugin that people have been using. I actually saw someone do an experiment and tested how much",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "out you even really seeing in your files and things like that. So, you know, there might be I I saw this this caveman plugin that people have been using. I actually saw someone do an experiment and tested how much",
+   "video": "_qZvORxGqI0",
+   "t": "15:21",
+   "concepts": [
+    39,
+    29
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 4
+ },
+ {
+  "id": "n:claudedesign",
+  "name": "Claude Design",
+  "url": "https://www.youtube.com/watch?v=eRS3CmvrOvA",
+  "kind": "app",
+  "category": "Design & websites",
+  "what": "Anthropic Labs product for designing with Claude; projects can come back into Claude Code.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "eRS3CmvrOvA",
+    "t": "12:07",
+    "shown": "Nate uses it himself",
+    "quote": "ront-end design skill. Now, this type of stuff also is natively baked into Anthropic Labs' new product called Claude Design. But if you do bring that project back into Claude Code, you're going to want to use this skill. Okay. So, now",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "ront-end design skill. Now, this type of stuff also is natively baked into Anthropic Labs' new product called Claude Design. But if you do bring that project back into Claude Code, you're going to want to use this skill. Okay. So, now",
+   "video": "eRS3CmvrOvA",
+   "t": "12:07",
+   "concepts": [
+    14
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 6
+ },
+ {
   "id": "n:claudeslidesdocs",
   "name": "Claude Slides & Docs",
   "url": "https://claude.com/blog/cowork-is-now-claude/",
@@ -6501,6 +7008,332 @@
   "rank": 4
  },
  {
+  "id": "n:codex",
+  "name": "Codex",
+  "url": "https://www.youtube.com/watch?v=7WZ6XldxX0U",
+  "kind": "app",
+  "category": "Coding agents & IDEs",
+  "what": "OpenAI's coding agent; reads the same AGENTS.md style files as Claude Code.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "7WZ6XldxX0U",
+    "t": "2:04",
+    "shown": "Nate uses it himself",
+    "quote": "e it's really just folders and markdown files and instructions. Whether you want to run that on Cloud Code or Codex or Hermes or whatever comes out next month, it all just transfers over. And if for some reason your setup doesn't, then",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "e it's really just folders and markdown files and instructions. Whether you want to run that on Cloud Code or Codex or Hermes or whatever comes out next month, it all just transfers over. And if for some reason your setup doesn't, then",
+   "video": "7WZ6XldxX0U",
+   "t": "2:04",
+   "concepts": [
+    28,
+    40
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 9
+ },
+ {
+  "id": "n:context7mcp",
+  "name": "Context 7 MCP",
+  "url": "https://www.youtube.com/watch?v=jqoFP9QapXI",
+  "kind": "mcp",
+  "category": "MCP & connectors",
+  "what": "MCP server that fetches current documentation so Claude stops guessing old APIs.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "jqoFP9QapXI",
+    "t": "14:37",
+    "shown": "Nate uses it himself",
+    "quote": "d they do run longer, but they will give you a much more cohesive output for a big project. Hack number 32 is Context 7 MCP. This one's",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "d they do run longer, but they will give you a much more cohesive output for a big project. Hack number 32 is Context 7 MCP. This one's",
+   "video": "jqoFP9QapXI",
+   "t": "14:37",
+   "concepts": [
+    39,
+    37
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 5
+ },
+ {
+  "id": "n:excalidrawdiagramskill",
+  "name": "Excalidraw diagram skill",
+  "url": "https://www.youtube.com/watch?v=RzLV8sfFdMM",
+  "kind": "skill",
+  "category": "Design & websites",
+  "what": "Skill that draws a diagram and renders a PNG to check it.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "RzLV8sfFdMM",
+    "t": "13:14",
+    "shown": "Nate uses it himself",
+    "quote": "gram. &gt;&gt; I had a feeling you did, yeah. &gt;&gt; Yeah, yeah, yeah. So, I have I have a skill. It's like Excalidraw",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "gram. &gt;&gt; I had a feeling you did, yeah. &gt;&gt; Yeah, yeah, yeah. So, I have I have a skill. It's like Excalidraw",
+   "video": "RzLV8sfFdMM",
+   "t": "13:14",
+   "concepts": [
+    14,
+    32,
+    31
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 7
+ },
+ {
+  "id": "n:gbraingstack",
+  "name": "GBrain / GStack",
+  "url": "https://www.youtube.com/watch?v=jdbOVepEtUE",
+  "kind": "repo",
+  "category": "Knowledge & second brain",
+  "what": "Gary Tan's always-on brain OS and its companion agent kit.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "jdbOVepEtUE",
+    "t": "4:18:10",
+    "shown": "Nate uses it himself",
+    "quote": "ething like a knowledge graph. And then level five, we have more of the always on brain OS and something like Gbrain. Gary Tan, CEO of",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "ething like a knowledge graph. And then level five, we have more of the always on brain OS and something like Gbrain. Gary Tan, CEO of",
+   "video": "jdbOVepEtUE",
+   "t": "4:18:10",
+   "concepts": [
+    20,
+    13
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 6
+ },
+ {
+  "id": "n:gsdgetshitdone",
+  "name": "GSD (Get Shit Done)",
+  "url": "https://www.youtube.com/watch?v=eRS3CmvrOvA",
+  "kind": "plugin",
+  "category": "Claude Code skills & plugins",
+  "what": "Plugin that gives each task a fresh sub-agent with clean context to stop context rot.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "eRS3CmvrOvA",
+    "t": "4:32",
+    "shown": "Nate uses it himself",
+    "quote": "ns that it actually spends. So, you can check that out right up here. All right, skill number three is called GSD, which stands for get done. And if Superpowers is about how Claude writes code, then GSD is about the environment that",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "ns that it actually spends. So, you can check that out right up here. All right, skill number three is called GSD, which stands for get done. And if Superpowers is about how Claude writes code, then GSD is about the environment that",
+   "video": "eRS3CmvrOvA",
+   "t": "4:32",
+   "concepts": [
+    29,
+    23,
+    27
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 13
+ },
+ {
+  "id": "n:hermesagent",
+  "name": "Hermes agent",
+  "url": "https://www.youtube.com/watch?v=7WZ6XldxX0U",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "Open agent framework that can run the same markdown OS as Claude Code.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "7WZ6XldxX0U",
+    "t": "2:04",
+    "shown": "Nate uses it himself",
+    "quote": "ally just folders and markdown files and instructions. Whether you want to run that on Cloud Code or Codex or Hermes or whatever comes out next month, it all just transfers over. And if for some reason your setup doesn't, then just make",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "ally just folders and markdown files and instructions. Whether you want to run that on Cloud Code or Codex or Hermes or whatever comes out next month, it all just transfers over. And if for some reason your setup doesn't, then just make",
+   "video": "7WZ6XldxX0U",
+   "t": "2:04",
+   "concepts": [
+    28,
+    33
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 7
+ },
+ {
   "id": "gh:vectorize-io/hindsight",
   "name": "Hindsight",
   "url": "https://github.com/vectorize-io/hindsight",
@@ -6554,7 +7387,223 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 4
+  "rank": 7
+ },
+ {
+  "id": "n:lightrag",
+  "name": "LightRAG",
+  "url": "https://www.youtube.com/watch?v=jdbOVepEtUE",
+  "kind": "repo",
+  "category": "Knowledge & second brain",
+  "what": "Knowledge-graph retrieval tool for when plain wikis stop being enough.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "jdbOVepEtUE",
+    "t": "3:52:53",
+    "shown": "Nate uses it himself",
+    "quote": "something like standard semantic search or knowledger graph or light rag or whatever other tool is out there for that. So here you can see if you have hundreds of pages with good indexes,",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "something like standard semantic search or knowledger graph or light rag or whatever other tool is out there for that. So here you can see if you have hundreds of pages with good indexes,",
+   "video": "jdbOVepEtUE",
+   "t": "3:52:53",
+   "concepts": [
+    20,
+    13
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 8
+ },
+ {
+  "id": "n:n8n",
+  "name": "n8n",
+  "url": "https://www.youtube.com/watch?v=7WZ6XldxX0U",
+  "kind": "app",
+  "category": "Automation & workflows",
+  "what": "No-code automation tool that was Nate's main tool before Claude Code.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "7WZ6XldxX0U",
+    "t": "1:33",
+    "shown": "Nate uses it himself",
+    "quote": "e who built basically his entire YouTube channel on one or two tools. For the longest time, my main thing was n8n, and it's what a lot of you guys probably know me from. But these days, my main tool is Cloud Code. But the point I'm trying",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "e who built basically his entire YouTube channel on one or two tools. For the longest time, my main thing was n8n, and it's what a lot of you guys probably know me from. But these days, my main tool is Cloud Code. But the point I'm trying",
+   "video": "7WZ6XldxX0U",
+   "t": "1:33",
+   "concepts": [
+    42,
+    33
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 11
+ },
+ {
+  "id": "n:nanobanana",
+  "name": "Nano Banana",
+  "url": "https://www.youtube.com/watch?v=sboNwYmH3AY",
+  "kind": "model",
+  "category": "Video, clips & images",
+  "what": "Google's image model Nate uses for diagrams and thumbnails.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "sboNwYmH3AY",
+    "t": "0:32",
+    "shown": "Nate uses it himself",
+    "quote": "laude Code, there's a backlink for all these different tools I mentioned like Perplexity, Visual Studio Code, Nano Banana, and N and it also has techniques like the WAT framework or bypass permissions mode or human review checkpoint. So,",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "laude Code, there's a backlink for all these different tools I mentioned like Perplexity, Visual Studio Code, Nano Banana, and N and it also has techniques like the WAT framework or bypass permissions mode or human review checkpoint. So,",
+   "video": "sboNwYmH3AY",
+   "t": "0:32",
+   "concepts": [
+    25,
+    37
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 9
+ },
+ {
+  "id": "n:openclaw",
+  "name": "OpenClaw",
+  "url": "https://www.youtube.com/watch?v=bCljOfCH8Ms",
+  "kind": "app",
+  "category": "Agent orchestration & teams",
+  "what": "Always-on personal agent framework; can host your AI OS from a GitHub repo.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "bCljOfCH8Ms",
+    "t": "1:37:11",
+    "shown": "Nate uses it himself",
+    "quote": "d thing you can do on top of that is you can actually use that GitHub repo with Cloud Code on the cloud or an OpenClaw agent or a Hermes agent or whatever of these other agent frameworks that you want to use, a codeex even.",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "d thing you can do on top of that is you can actually use that GitHub repo with Cloud Code on the cloud or an OpenClaw agent or a Hermes agent or whatever of these other agent frameworks that you want to use, a codeex even.",
+   "video": "bCljOfCH8Ms",
+   "t": "1:37:11",
+   "concepts": [
+    33,
+    28
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 8
  },
  {
   "id": "n:pexo",
@@ -6610,7 +7659,170 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 9
+  "rank": 10
+ },
+ {
+  "id": "n:playwrightcli",
+  "name": "Playwright CLI",
+  "url": "https://www.youtube.com/watch?v=ehg4fhydTgs",
+  "kind": "app",
+  "category": "Automation & workflows",
+  "what": "Browser automation Nate uses for sites that have no public API.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "ehg4fhydTgs",
+    "t": "6:07",
+    "shown": "Nate uses it himself",
+    "quote": "some automations here, which basically opens up a browser using Playwright CLI, and it does some stuff in my school community, because there's no publicly accessible API. We've kind of figured",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "some automations here, which basically opens up a browser using Playwright CLI, and it does some stuff in my school community, because there's no publicly accessible API. We've kind of figured",
+   "video": "ehg4fhydTgs",
+   "t": "6:07",
+   "concepts": [
+    42,
+    33
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 12
+ },
+ {
+  "id": "n:puppeteer",
+  "name": "Puppeteer",
+  "url": "https://www.youtube.com/watch?v=jdbOVepEtUE",
+  "kind": "app",
+  "category": "Automation & workflows",
+  "what": "Browser tool for screenshot workflows that Claude Code can set up for you.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "jdbOVepEtUE",
+    "t": "2:58:31",
+    "shown": "Nate uses it himself",
+    "quote": "he cloudMD file, you can see that I've got a section for screenshot workflow. And we're just doing this using",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "he cloudMD file, you can see that I've got a section for screenshot workflow. And we're just doing this using",
+   "video": "jdbOVepEtUE",
+   "t": "2:58:31",
+   "concepts": [
+    31,
+    15
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 13
+ },
+ {
+  "id": "n:ralphwiggumloop",
+  "name": "Ralph Wiggum loop",
+  "url": "https://www.youtube.com/watch?v=AO5aW01DKHo",
+  "kind": "plugin",
+  "category": "Automation & workflows",
+  "what": "Plugin that keeps looping a task until success conditions are met.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "AO5aW01DKHo",
+    "t": "16:11",
+    "shown": "Nate uses it himself",
+    "quote": "to see techniques that solve [music] this. So, one of those is continuous loops. So, there's a plugin called Ralph Wiggum for Claude Code that keeps looping tasks back to the agent until certain success conditions are met. It adds guard",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "to see techniques that solve [music] this. So, one of those is continuous loops. So, there's a plugin called Ralph Wiggum for Claude Code that keeps looping tasks back to the agent until certain success conditions are met. It adds guard",
+   "video": "AO5aW01DKHo",
+   "t": "16:11",
+   "concepts": [
+    42,
+    31,
+    33
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 14
  },
  {
   "id": "n:skillry",
@@ -6671,7 +7883,114 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 12
+  "rank": 14
+ },
+ {
+  "id": "n:ultraplan",
+  "name": "Ultra plan",
+  "url": "https://www.youtube.com/watch?v=_qZvORxGqI0",
+  "kind": "skill",
+  "category": "Coding agents & IDEs",
+  "what": "Claude Code planning mode Nate uses before building.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "_qZvORxGqI0",
+    "t": "14:18",
+    "shown": "Nate uses it himself",
+    "quote": "ementation because it understands what it needs to do and it understands what you want. So, I use things like ultra plan all the time or superpowers all the time. And I will link videos that I made about both of those right up here. I",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "ementation because it understands what it needs to do and it understands what you want. So, I use things like ultra plan all the time or superpowers all the time. And I will link videos that I made about both of those right up here. I",
+   "video": "_qZvORxGqI0",
+   "t": "14:18",
+   "concepts": [
+    30
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 10
+ },
+ {
+  "id": "n:whisper",
+  "name": "Whisper",
+  "url": "https://www.youtube.com/watch?v=7jHXoPGnA4c",
+  "kind": "model",
+  "category": "Voice & audio",
+  "what": "Free local model that transcribes audio and video, a bit slower.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "7jHXoPGnA4c",
+    "t": "2:02",
+    "shown": "Nate uses it himself",
+    "quote": "Whisper, which is more of a local model that can run and transcribe videos, but 11 Labs is a little bit quicker. So, 11 Labs you",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "Whisper, which is more of a local model that can run and transcribe videos, but 11 Labs is a little bit quicker. So, 11 Labs you",
+   "video": "7jHXoPGnA4c",
+   "t": "2:02",
+   "concepts": [
+    25,
+    40
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": null,
+  "status": "steady",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 3
  },
  {
   "id": "gh:anthropics/financial-services",
@@ -6749,7 +8068,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 13
+  "rank": 15
  },
  {
   "id": "gh:cactus-compute/needle",
@@ -6919,7 +8238,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 7
+  "rank": 9
  },
  {
   "id": "gh:posthog/posthog",
@@ -7039,7 +8358,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 8
+  "rank": 10
  },
  {
   "id": "n:chatgptvoice",
@@ -7095,7 +8414,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 3
+  "rank": 4
  },
  {
   "id": "gh:jonimmswordpressdev/claude-dashboard",
@@ -7155,7 +8474,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 9
+  "rank": 11
  },
  {
   "id": "n:clueso",
@@ -7213,7 +8532,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 10
+  "rank": 11
  },
  {
   "id": "gh:superlogicai/logic-loop",
@@ -7273,7 +8592,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 10
+  "rank": 12
  },
  {
   "id": "gh:openai/plugins",
@@ -7333,7 +8652,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 14
+  "rank": 16
  },
  {
   "id": "gh:captainasic/reckoner",
@@ -7393,7 +8712,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 4
+  "rank": 5
  },
  {
   "id": "gh:vercel-labs/agent-skills",
@@ -7453,7 +8772,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 6
+  "rank": 8
  },
  {
   "id": "gh:max-sixty/worktrunk",
@@ -7513,7 +8832,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 11
+  "rank": 13
  },
  {
   "id": "gh:useautumn/autumn",
@@ -7741,7 +9060,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 8
+  "rank": 11
  },
  {
   "id": "gh:invoiceninja/invoiceninja",
@@ -7973,7 +9292,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 7
+  "rank": 9
  },
  {
   "id": "n:notionskillslibrary",
@@ -8033,7 +9352,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 15
+  "rank": 17
  },
  {
   "id": "n:spiraai",
@@ -8273,7 +9592,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 8
+  "rank": 10
  },
  {
   "id": "n:vibecodeing",
@@ -8390,7 +9709,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 9
+  "rank": 12
  },
  {
   "id": "gh:yoheinakajima/glance-speedlab",
@@ -8507,7 +9826,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 11
+  "rank": 15
  },
  {
   "id": "gh:tencentcloud/octop",
@@ -8563,7 +9882,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 12
+  "rank": 14
  },
  {
   "id": "gh:codpal-limited/deckgauge",
@@ -8623,7 +9942,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 12
+  "rank": 16
  },
  {
   "id": "gh:bilawalsidhu/gods-eye-view",
@@ -8683,7 +10002,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 2
+  "rank": 4
  },
  {
   "id": "gh:larksuite/cli",
@@ -8743,7 +10062,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 13
+  "rank": 17
  },
  {
   "id": "n:sideromni",
@@ -8916,7 +10235,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 4
+  "rank": 5
  },
  {
   "id": "n:modaal",
@@ -8981,7 +10300,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 10
+  "rank": 13
  },
  {
   "id": "n:aesty",
@@ -9101,7 +10420,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 14
+  "rank": 18
  },
  {
   "id": "n:elevenlabsreception",
@@ -9161,7 +10480,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 5
+  "rank": 6
  },
  {
   "id": "n:wpvibe",
@@ -9221,7 +10540,7 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 9
+  "rank": 11
  },
  {
   "id": "n:yourpersonaband",
@@ -9395,7 +10714,7 @@
    "why": "Charlie agreed 2026-10-09: ideas only. A 293-skill coding kit with hooks on 7 events breaks smallest context; its done-when check, READY/NOT READY report and scored lessons are now in our rules (review: research/hands/reviews/ecc-2026-10-09.md)."
   },
   "anthropic": null,
-  "rank": 16
+  "rank": 18
  },
  {
   "id": "n:grillme",
@@ -9495,26 +10814,47 @@
     "quote": "",
     "opinion": null,
     "our_view": null
+   },
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "eRS3CmvrOvA",
+    "t": "0:31",
+    "shown": "Nate uses it himself",
+    "quote": "first skill. So, the first skill that I install is the one that builds every other skill, and it's called the skill creator. It's one of the official skills from Anthropic. You basically just describe what you want in plain English,",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "",
   "vs": null,
   "relates": [],
   "installs": 400669,
+  "nate": {
+   "quote": "first skill. So, the first skill that I install is the one that builds every other skill, and it's called the skill creator. It's one of the official skills from Anthropic. You basically just describe what you want in plain English,",
+   "video": "eRS3CmvrOvA",
+   "t": "0:31",
+   "concepts": [
+    21,
+    22,
+    32
+   ]
+  },
   "weeks": [
-   "2026-W41"
+   "2026-W41",
+   "2026-W38"
   ],
-  "first": "2026-W41",
+  "first": "2026-W38",
   "last": "2026-W41",
-  "mentions": 1,
+  "mentions": 2,
   "need": null,
   "relevance": 3,
-  "score": 18.6,
+  "score": 20.6,
   "replaced_by": null,
-  "status": "new",
+  "status": "rising",
   "ours": false,
   "have": true,
-  "shown": false,
+  "shown": true,
   "tried": null,
   "anthropic": {
    "market": "official",
@@ -9885,6 +11225,64 @@
   "rank": null
  },
  {
+  "id": "n:lovable",
+  "name": "Lovable",
+  "url": "https://www.youtube.com/watch?v=jZgcWCzxh1I",
+  "kind": "app",
+  "category": "Design & websites",
+  "what": "Prompt-to-website builder with one-click publishing; a sponsor of that video.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "jZgcWCzxh1I",
+    "t": "3:34",
+    "shown": "Nate uses it himself",
+    "quote": "ck for a message from today's sponsor. I wanted to take a quick moment to thank the sponsor of today's video,",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "ck for a message from today's sponsor. I wanted to take a quick moment to thank the sponsor of today's video,",
+   "video": "jZgcWCzxh1I",
+   "t": "3:34",
+   "concepts": [
+    37,
+    43
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 10,
+  "replaced_by": "Dyad",
+  "status": "replaced",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": {
+   "market": "official",
+   "plugin": "lovable",
+   "match": "name"
+  },
+  "rank": 12
+ },
+ {
   "id": "n:elevenlabs",
   "name": "ElevenLabs",
   "url": "https://elevenlabs.io/",
@@ -9922,20 +11320,39 @@
      "agree": "n/a",
      "why": "Phone sales is not Charlie's job. A cloned voice for videos is a later question, and Rule 37 says check before anything goes public."
     }
+   },
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "7jHXoPGnA4c",
+    "t": "2:02",
+    "shown": "Nate uses it himself",
+    "quote": "Whisper, which is more of a local model that can run and transcribe videos, but 11 Labs is a little bit quicker. So, 11 Labs you pay per usage, and Whisper is going to be free, but it's just a little slower.",
+    "opinion": null,
+    "our_view": null
    }
   ],
   "check": "Pricing not stated.",
   "vs": null,
   "relates": [],
+  "nate": {
+   "quote": "Whisper, which is more of a local model that can run and transcribe videos, but 11 Labs is a little bit quicker. So, 11 Labs you pay per usage, and Whisper is going to be free, but it's just a little slower.",
+   "video": "7jHXoPGnA4c",
+   "t": "2:02",
+   "concepts": [
+    25
+   ]
+  },
   "weeks": [
-   "2026-W39"
+   "2026-W39",
+   "2026-W38"
   ],
-  "first": "2026-W39",
+  "first": "2026-W38",
   "last": "2026-W39",
-  "mentions": 1,
+  "mentions": 2,
   "need": "no",
   "relevance": 1,
-  "score": 6,
+  "score": 8,
   "replaced_by": "VoiceStudio",
   "status": "replaced",
   "ours": false,
@@ -9943,6 +11360,60 @@
   "shown": true,
   "tried": null,
   "anthropic": null,
-  "rank": 6
+  "rank": 7
+ },
+ {
+  "id": "n:perplexity",
+  "name": "Perplexity",
+  "url": "https://www.youtube.com/watch?v=sboNwYmH3AY",
+  "kind": "app",
+  "category": "Research & search",
+  "what": "AI search tool Nate pairs with Claude for research.",
+  "open_source": "unknown",
+  "repo": "",
+  "cost": null,
+  "for_charlie": 2,
+  "replaces": [],
+  "sightings": [
+   {
+    "week": "2026-W38",
+    "source": "Nate Herk (Architect)",
+    "video": "sboNwYmH3AY",
+    "t": "0:32",
+    "shown": "Nate uses it himself",
+    "quote": "mework, there's a backlink for Claude Code, there's a backlink for all these different tools I mentioned like Perplexity, Visual Studio Code, Nano Banana, and N and it also has techniques like the WAT framework or bypass permissions mode",
+    "opinion": null,
+    "our_view": null
+   }
+  ],
+  "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.",
+  "vs": null,
+  "relates": [],
+  "nate": {
+   "quote": "mework, there's a backlink for Claude Code, there's a backlink for all these different tools I mentioned like Perplexity, Visual Studio Code, Nano Banana, and N and it also has techniques like the WAT framework or bypass permissions mode",
+   "video": "sboNwYmH3AY",
+   "t": "0:32",
+   "concepts": [
+    25,
+    37
+   ]
+  },
+  "weeks": [
+   "2026-W38"
+  ],
+  "first": "2026-W38",
+  "last": "2026-W38",
+  "mentions": 1,
+  "need": null,
+  "relevance": 2,
+  "score": 8,
+  "replaced_by": "Vane",
+  "status": "replaced",
+  "ours": false,
+  "have": false,
+  "shown": true,
+  "tried": null,
+  "anthropic": null,
+  "rank": 5
  }
 ]

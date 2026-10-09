@@ -314,6 +314,11 @@ _re, _rw = check_links.brain_relations()
 for x in _re: err(f"research/nate-herk/brain: {x}")
 for x in _rw: warn(f"research/nate-herk/brain: {x}")
 
+#     ...and every current note can be reached from the router (tools/route_depth.py).
+import route_depth
+_d, _p, _cur = route_depth.route()
+for _n in _cur:
+    if _n not in _d: warn(f"{_n.relative_to(ROOT)} can't be reached from AGENTS.md (no current file points to it)")
 #     ...and no published page is behind its source (age alone is fine; changed-but-not-republished isn't).
 import pages_status
 for src, page in pages_status.stale(): warn(f"page {page} is behind {src}: republish it, then `python3 tools/pages_status.py --mark {src}`")

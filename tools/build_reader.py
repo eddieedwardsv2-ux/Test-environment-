@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DESK = "https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx"
 DOCS = [  # (file, short label, Desk card it feeds or None)
+    ("audits/2026-10-09-advisors-and-router.md", "Architect, Quartermaster, router steps", None),
     ("audits/audit-2026-10-09-112239-a7c3.md", "Audit 9 Oct: 64/100", "audit-fixes-2026-10-09"),
     ("brainstorms/2026-10-09-elder-councils-plan.md", "Elder councils plan", "elder-pilot-go"),
     ("brainstorms/2026-10-09-middle-plans.md", "The middle: two plans", "middle-go"),
@@ -16,6 +17,11 @@ DOCS = [  # (file, short label, Desk card it feeds or None)
     ("system/model-usage.md", "How we choose models", None),
 ]
 SUMMARY = {  # plain-English "in short" box shown above a document
+    "audits/2026-10-09-advisors-and-router.md": [
+        "They didn't really work together: Nate's own 30 tools were almost missing from the Quartermaster (2 of 30). Now all 30 are in, with his quotes and gold rings.",
+        "Each advisor now reads the other's notes; live from the next session.",
+        "The router is fine: 85 of 99 notes are 2 steps or fewer away, none unreachable. What was wrong was disconnected knowledge and too much checking per small change.",
+    ],
     "brainstorms/2026-10-09-elder-councils-plan.md": [
         "Each Elder gets a council of experts (one is always a contrarian) and a separate guardian who checks the work without seeing the makers' reasoning.",
         "New (3b): each Elder gets a mini-router (its own \"where things live\", links up and across) and a mini-desk (what it settles, what comes to you, same card shape).",

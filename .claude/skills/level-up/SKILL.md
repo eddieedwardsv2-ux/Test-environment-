@@ -5,7 +5,7 @@ description: Use when someone asks to level up their AIOS, close an audit gap, f
 
 > *Adapted from The Three Ms of AI™. © 2026 Nate Herk. All rights reserved.*
 
-One interview = one artifact. Mindset phase always runs first. Background and checks: reference.md. Framework: `references/3ms-framework.md`.
+One interview = one artifact. Mindset phase always runs first. Background and checks: `reference.md`. Framework: `references/3ms-framework.md`.
 
 ## Inputs
 Resolve paths via `AGENTS.md` (see the last block). Read priorities, about-me (top pain), `connections.md`, the decisions log, skill frontmatter and any recent `audits/` report. Ask only for what those lack.

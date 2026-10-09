@@ -56,6 +56,22 @@ for w in weeks:
                                "shown": t.get("shown", ""), "quote": t.get("quote", ""),
                                "opinion": t.get("opinion"), "our_view": t.get("our_view")})
 
+# Source 4 (Charlie, 2026-10-09): the tools Nate Herk himself uses, from the Architect's
+# brain (nate-mentions.json: exact quote, timestamp, concept numbers). Each adds one sighting
+# "Nate Herk (Architect)" dated to the OLDEST week in the window, so it counts as a mention
+# but never as news (his video dates aren't recorded). Tools not yet in the list are added.
+NATE_SRC = "Nate Herk (Architect)"
+for m in (json.loads((HANDS / "nate-mentions.json").read_text()) if (HANDS / "nate-mentions.json").exists() else []):
+    k = m.get("in_hands") or "n:" + norm(m["name"])
+    e = tools.setdefault(k, {"id": k, "name": m["name"], "url": f"https://www.youtube.com/watch?v={m['video']}",
+                             "kind": m.get("kind", ""), "category": m.get("category") if m.get("category") in CATEGORIES else "Other",
+                             "what": m.get("what", ""), "open_source": "unknown", "repo": "", "cost": None,
+                             "for_charlie": 2, "replaces": set(), "sightings": [], "check": "Added from Nate's own toolkit; not yet seen on the weekly show or skills.sh.", "vs": None})
+    e.setdefault("relates", [])
+    e["nate"] = {"quote": m.get("quote", ""), "video": m["video"], "t": m.get("t", ""), "concepts": m.get("concepts", [])}
+    if order:
+        e["sightings"].append({"week": order[-1], "source": NATE_SRC, "video": m["video"], "t": m.get("t", ""),
+                               "shown": "Nate uses it himself", "quote": m.get("quote", ""), "opinion": None, "our_view": None})
 latest = order[0] if order else None
 names = {}
 for e in tools.values(): names.setdefault(norm(e["name"]), e)
@@ -136,7 +152,7 @@ def opt(name, empty):
     f = HANDS / name
     return json.loads(f.read_text()) if f.exists() else empty
 data = {"tools": ranked, "concepts": concepts, "enate": opt("enate-links.json", {}),
-        "nate": opt("nate-mentions.json", []), "weeks": [{"week": wk, "summary": " ".join(w.get("summary", "") for w in weeks if w["week"] == wk),
+        "nate": [dict(m, in_hands=m.get("in_hands") or "n:" + norm(m["name"])) for m in opt("nate-mentions.json", [])], "weeks": [{"week": wk, "summary": " ".join(w.get("summary", "") for w in weeks if w["week"] == wk),
                    "videos": [v for w in weeks if w["week"] == wk for v in w.get("videos", [])]} for wk in order],
         "videos": videos, "categories": CATEGORIES,
         "market": {"date": mk.get("date"), "counts": mk.get("counts", {})}}
