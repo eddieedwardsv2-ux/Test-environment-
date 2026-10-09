@@ -15,6 +15,7 @@ skills.sh leaderboard (most-installed agent skills; `skills_sh.py`). More later
 | `weeks/<YYYY-Www>.json` | One helper's classification of that week (schema in `.claude/skills/hands-ingest/SKILL.md`) |
 | `tools.json` | Built: every tool merged, ranked per category, replaced ones marked |
 | `enate-links.json`, `nate-mentions.json` | Each tool's links to ENATE concepts; tools Nate himself uses (verbatim quotes) |
+| `improvement-plan.md` | Suggested improvements and skills (2026-10-09), chosen on the Decision Desk |
 | `site/` | `template.html` + built `hands.html` (`python3 tools/build_hands.py`) |
 
 **Why this is the efficient route:** the descriptions already name every tool
