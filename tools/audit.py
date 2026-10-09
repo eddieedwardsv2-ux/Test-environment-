@@ -209,7 +209,9 @@ if hands.exists():
             err(f"research/hands/nate-mentions.json: {m.get('name')} quote not found in {m.get('video')}")
     _skills = {p.parent.name for p in ROOT.glob(".claude/skills/*/SKILL.md")}
     for wf in sorted((hands / "weeks").glob("*.json")):
-        for tl in json.loads(wf.read_text()).get("tools", []):
+        try: _tl = json.loads(wf.read_text()).get("tools", [])
+        except ValueError: continue   # already reported as not valid JSON above
+        for tl in _tl:
             for sk in tl.get("relates") or []:
                 if sk not in _skills: err(f"{wf.relative_to(ROOT)}: {tl['name']} relates to missing skill {sk!r}")
     n_concepts = len(re.findall(r"^\*\*\d+\. ", (ROOT / "research/nate-herk/brain/concepts.md").read_text(), re.M))
