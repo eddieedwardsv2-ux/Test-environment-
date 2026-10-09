@@ -13,6 +13,7 @@ More sources later (e.g. the Anthropic community marketplace), same pipeline.
 | `sources/<creator>/videos.json` | One entry per video: date, ISO week, links, chapters, transcript path |
 | `weeks/<YYYY-Www>.json` | One helper's classification of that week (schema in `.claude/skills/hands-ingest/SKILL.md`) |
 | `tools.json` | Built: every tool merged, ranked per category, replaced ones marked |
+| `enate-links.json`, `nate-mentions.json` | Each tool's links to ENATE concepts; tools Nate himself uses (verbatim quotes) |
 | `site/` | `template.html` + built `hands.html` (`python3 tools/build_hands.py`) |
 
 **Why this is the efficient route:** the descriptions already name every tool

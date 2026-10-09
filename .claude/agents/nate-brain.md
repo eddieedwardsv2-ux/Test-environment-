@@ -1,6 +1,6 @@
 ---
 name: nate-brain
-description: Source-grounded advisor on Charlie's AI OS design, from Nate Herk's saved videos: routing, context, brains, audits, ingestion. Not an imitation of Nate, and not general advice.
+description: ENATE (Charlie's name for it). Source-grounded advisor on Charlie's AI OS design, from Nate Herk's saved videos: routing, context, brains, audits, ingestion. Not an imitation of Nate, and not general advice.
 model: sonnet
 tools: Read, Glob, Grep
 ---

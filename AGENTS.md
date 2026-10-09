@@ -73,8 +73,9 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
 - `hands-ingest`: the **Hands Brain** (`research/hands/`), every tool, skill,
   plugin and repo from The Next New Thing, week by week, ranked. Ask it with
   the `hands-brain` agent.
-- `nate-brain` agent (Nate's view on organising the OS; knowledge in
-  `research/nate-herk/brain/`), `nick-brain` agent (Nick Saraev's view; parked).
+- `nate-brain` agent = **ENATE** (Charlie's name for Nate's brain; "Nate" means
+  the real person and his new videos): his method for organising the OS, in
+  `research/nate-herk/brain/`, `nick-brain` agent (Nick Saraev's view; parked).
 
 When a file moves, a folder is added or a project starts, update this router
 (and that folder's README) in the same turn. A stale pointer is worse than none.

@@ -76,9 +76,43 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 button:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
 @media (max-width:640px){.row summary{grid-template-columns:minmax(0,1fr) auto}.row .cname{grid-column:1/-1}.twocol{grid-template-columns:1fr}}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:8;display:flex;gap:12px;align-items:center;padding:10px 16px;background:rgba(5,7,13,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.brand{font:800 17px var(--display);display:flex;gap:8px;align-items:center;white-space:nowrap}
+.brand i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.seg{display:flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px}
+.seg button{font:600 13px var(--font);background:transparent;color:var(--muted);border:0;border-radius:999px;padding:6px 14px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--text);color:var(--bg)}
+#mapview{position:relative;height:calc(100vh - 58px);height:calc(100dvh - 58px);min-height:420px;overflow:hidden}
+#mapview canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
+.over{position:absolute;left:16px;top:14px;max-width:min(300px,calc(100% - 32px));display:grid;gap:10px;pointer-events:none}
+.over > *{pointer-events:auto}
+.over h1{font-size:clamp(26px,5vw,38px)}
+.nums{display:flex;gap:16px;font:600 18px var(--mono)}
+.nums small{display:block;font:500 10px var(--mono);letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.legend{position:absolute;left:16px;bottom:14px;width:min(280px,calc(100% - 32px));max-height:42%;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:10px 12px}
+.legend h4{font:600 11px var(--mono);letter-spacing:.12em;color:var(--muted);margin:0 0 6px;text-transform:uppercase}
+.legend button{display:grid;grid-template-columns:10px 1fr auto;gap:8px;align-items:center;width:100%;background:transparent;border:0;color:var(--text);font:13px var(--font);padding:3px 0;cursor:pointer;text-align:left}
+.legend button.off{opacity:.35}
+.legend i{width:9px;height:9px;border-radius:50%}
+.legend span:last-child{font:12px var(--mono);color:var(--muted)}
+.zoom{position:absolute;right:16px;bottom:14px;display:grid;gap:6px}
+.zoom button{width:38px;height:38px;border-radius:10px;border:1px solid var(--line-strong);background:var(--panel);color:var(--text);font:600 18px var(--mono);cursor:pointer}
+.msearch{position:absolute;right:16px;top:14px;width:min(260px,calc(100% - 32px))}
+.msearch input{width:100%;background:var(--panel);border:1px solid var(--line-strong);border-radius:10px;color:var(--text);font:14px var(--font);padding:8px 10px}
+@media (max-width:640px){.msearch{top:auto;bottom:14px;right:64px;width:calc(100% - 96px)}.legend{bottom:64px;max-height:30%}.over h1{font-size:24px}}
 </style>
 
-<div class="wrap">
+<div class="top"><span class="brand"><i></i>Hands Brain</span><div class="seg" role="group" aria-label="View"><button id="v-map" aria-pressed="true">Map</button><button id="v-list" aria-pressed="false">Ranked list</button></div></div>
+<div id="mapview">
+  <canvas id="cv" aria-label="Map of tools, categories and ENATE ideas"></canvas>
+  <div class="over"><div class="eyebrow">Tools · skills · plugins</div><h1>Every tool.<br><span style="color:var(--muted)">Ranked.</span></h1>
+    <div class="nums" id="nums"></div><p class="hint" style="margin:0">Big dots are categories. White dots are ENATE ideas (Nate's brain). Gold rings: tools Nate himself uses. Tap any dot.</p></div>
+  <div class="msearch"><input id="mq" type="search" placeholder="Find a tool" aria-label="Find a tool on the map"></div>
+  <div class="legend" id="legend"></div>
+  <div class="zoom"><button id="zi" aria-label="Zoom in">+</button><button id="zo" aria-label="Zoom out">−</button><button id="zr" aria-label="Reset view">⟲</button></div>
+</div>
+<div class="wrap" id="listview" hidden>
   <header>
     <div class="eyebrow">Charlie's AI OS · Hands Brain</div>
     <h1>The best tools to use now</h1>
@@ -115,6 +149,7 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 
 <dialog id="sheet"><div class="sheet" id="sheetbody"></div></dialog>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
 const D = __DATA__;
 const PAL = ["#38bdf8","#a78bfa","#34d399","#f472b6","#fbbf24","#fb923c","#67e8f9","#fda4af","#6ee7b7","#c4b5fd","#fcd34d","#93c5fd","#f9a8d4","#86efac","#8b94a8"];
@@ -187,4 +222,145 @@ document.addEventListener("click", e => {
 document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
 function drawKinds(){ document.getElementById("kinds").innerHTML = KINDS.map(([k, l]) => `<button class="chip" data-kind="${k}" aria-pressed="${k === kind}">${l}</button>`).join(" "); }
 drawKinds(); render();
+
+// ---------- map view ----------
+const views = {map: document.getElementById("mapview"), list: document.getElementById("listview")};
+function show(v){
+  views.map.hidden = v !== "map"; views.list.hidden = v !== "list";
+  document.getElementById("v-map").setAttribute("aria-pressed", v === "map");
+  document.getElementById("v-list").setAttribute("aria-pressed", v === "list");
+  try { localStorage.setItem("hands-view", v); } catch(e) {}
+  if (v === "map") resize();
+}
+document.getElementById("v-map").onclick = () => show("map");
+document.getElementById("v-list").onclick = () => show("list");
+const cv = document.getElementById("cv"), cx = cv.getContext("2d");
+const N = [], L = [], byKey = {};
+const node = (k, o) => (byKey[k] = byKey[k] || (N.push(Object.assign({k}, o)), N[N.length - 1]));
+const usedCats = D.categories.filter(c => D.tools.some(t => t.category === c) || D.nate.some(m => m.category === c));
+usedCats.forEach(c => node("c:" + c, {type: "cat", label: c, cat: c, r: 13}));
+D.tools.forEach(t => { node("t:" + t.id, {type: "tool", label: t.name, cat: t.category, id: t.id, r: 3.5 + t.score / 4, gone: t.status === "replaced", score: t.score}); L.push(["t:" + t.id, "c:" + t.category, 1]); });
+const linkedConcepts = new Set();
+Object.entries(D.enate).forEach(([k, arr]) => (arr || []).forEach(x => linkedConcepts.add(x.concept)));
+D.nate.forEach(m => (m.concepts || []).forEach(n => linkedConcepts.add(n)));
+D.concepts.filter(c => linkedConcepts.has(c.n)).forEach(c => node("e:" + c.n, {type: "enate", label: "ENATE " + c.n + ": " + c.title, n: c.n, r: 6}));
+Object.entries(D.enate).forEach(([k, arr]) => {
+  const src = k.startsWith("skill:") ? node("s:" + k.slice(6), {type: "ours", label: k.slice(6) + " (our skill)", r: 6}).k : "t:" + k;
+  if (!byKey[src]) return;
+  (arr || []).forEach(x => byKey["e:" + x.concept] && L.push([src, "e:" + x.concept, 0.4]));
+});
+D.nate.forEach((m, i) => {
+  if (m.in_hands && byKey["t:" + m.in_hands]) { byKey["t:" + m.in_hands].nate = m; }
+  else { node("n:" + i, {type: "nate", label: m.name, cat: m.category, m, r: 5}); if (byKey["c:" + m.category]) L.push(["n:" + i, "c:" + m.category, 0.6]); }
+  const k = m.in_hands && byKey["t:" + m.in_hands] ? "t:" + m.in_hands : "n:" + i;
+  (m.concepts || []).forEach(n => byKey["e:" + n] && L.push([k, "e:" + n, 0.4]));
+});
+D.tools.forEach(t => { if (t.replaced_by){ const r = D.tools.find(x => x.name === t.replaced_by); if (r) L.push(["t:" + t.id, "t:" + r.id, 0.8]); } });
+const links = L.filter(([a, b]) => byKey[a] && byKey[b]).map(([a, b, s]) => ({source: byKey[a], target: byKey[b], s}));
+const off = new Set();
+let W = 0, H = 0, tr = d3.zoomIdentity, hover = null, find = "";
+const sim = d3.forceSimulation(N)
+  .force("link", d3.forceLink(links).distance(l => l.target.type === "cat" ? 46 : 80).strength(l => 0.25 * l.s))
+  .force("charge", d3.forceManyBody().strength(n => n.type === "cat" ? -260 : -40))
+  .force("collide", d3.forceCollide(n => n.r + 3))
+  .force("x", d3.forceX(0).strength(0.04)).force("y", d3.forceY(0).strength(0.05))
+  .on("tick", draw);
+const colorOf = n => n.type === "enate" ? "#f8fafc" : n.type === "ours" ? "#3ddc97" : color(n.cat);
+function visible(n){ return !(n.cat && off.has(n.cat)); }
+function draw(){
+  cx.save(); cx.clearRect(0, 0, W, H); cx.translate(W / 2 + tr.x, H / 2 + tr.y); cx.scale(tr.k, tr.k);
+  const near = hover ? new Set(links.filter(l => l.source === hover || l.target === hover).flatMap(l => [l.source, l.target])) : null;
+  for (const l of links){
+    if (!visible(l.source) || !visible(l.target)) continue;
+    const hot = near && (l.source === hover || l.target === hover);
+    cx.strokeStyle = hot ? "rgba(255,255,255,.55)" : l.target.type === "enate" ? "rgba(248,250,252,.13)" : "rgba(255,255,255,.07)";
+    cx.lineWidth = hot ? 1.4 / tr.k : 0.8 / tr.k;
+    cx.beginPath(); cx.moveTo(l.source.x, l.source.y); cx.lineTo(l.target.x, l.target.y); cx.stroke();
+  }
+  const labels = [];
+  for (const n of N){
+    if (!visible(n)) continue;
+    const dim = (near && !near.has(n)) || (find && !n.label.toLowerCase().includes(find));
+    cx.globalAlpha = dim ? 0.18 : n.gone ? 0.4 : 1;
+    cx.fillStyle = colorOf(n);
+    cx.beginPath(); cx.arc(n.x, n.y, n.r, 0, 6.283); cx.fill();
+    if (n.type === "cat"){ cx.strokeStyle = "rgba(255,255,255,.25)"; cx.lineWidth = 1.5 / tr.k; cx.stroke(); }
+    if (n.type === "nate" || n.nate){ cx.strokeStyle = "#fbbf24"; cx.lineWidth = 2 / tr.k; cx.beginPath(); cx.arc(n.x, n.y, n.r + 2.5, 0, 6.283); cx.stroke(); }
+    if (n.gone){ cx.strokeStyle = "#fb7185"; cx.lineWidth = 1.5 / tr.k; cx.beginPath(); cx.moveTo(n.x - n.r - 2, n.y); cx.lineTo(n.x + n.r + 2, n.y); cx.stroke(); }
+    if (!dim && (n.type === "cat" || n === hover || (find && n.label.toLowerCase().includes(find)) || (n.type === "tool" && n.score >= 14) || tr.k > 1.8)) labels.push(n);
+  }
+  cx.globalAlpha = 1; cx.font = `${n2px(11)}px "JetBrains Mono", monospace`; cx.textBaseline = "middle";
+  const boxes = [];
+  labels.sort((a, b) => (b === hover) - (a === hover) || (b.type === "cat") - (a.type === "cat") || b.r - a.r);
+  for (const n of labels){
+    const txt = n.label.length > 34 ? n.label.slice(0, 33) + "…" : n.label, w = cx.measureText(txt).width, h = n2px(14);
+    const x = n.x + n.r + n2px(5), y = n.y;
+    if (n !== hover && boxes.some(b => x < b[2] && x + w > b[0] && y - h / 2 < b[3] && y + h / 2 > b[1])) continue;
+    boxes.push([x, y - h / 2, x + w, y + h / 2]);
+    cx.fillStyle = "rgba(5,7,13,.75)"; cx.fillRect(x - 3 / tr.k, y - h / 2, w + 6 / tr.k, h);
+    cx.fillStyle = n.type === "cat" ? colorOf(n) : "#e8ecf4"; cx.fillText(txt, x, y);
+  }
+  cx.restore();
+}
+const n2px = px => px / tr.k;
+function resize(){
+  const r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+  W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; cx.setTransform(dpr, 0, 0, dpr, 0, 0); draw();
+}
+window.addEventListener("resize", resize);
+const zoom = d3.zoom().scaleExtent([0.3, 6]).on("zoom", e => { tr = e.transform; draw(); });
+const sel = d3.select(cv).call(zoom);
+function fit(){ sel.call(zoom.transform, d3.zoomIdentity.scale(Math.min(1, Math.min(W, H) / 760))); }
+document.getElementById("zi").onclick = () => sel.transition().call(zoom.scaleBy, 1.4);
+document.getElementById("zo").onclick = () => sel.transition().call(zoom.scaleBy, 1 / 1.4);
+document.getElementById("zr").onclick = fit;
+function pick(ev){
+  const r = cv.getBoundingClientRect(), x = (ev.clientX - r.left - W / 2 - tr.x) / tr.k, y = (ev.clientY - r.top - H / 2 - tr.y) / tr.k;
+  let best = null, bd = 1e9;
+  for (const n of N){ if (!visible(n)) continue; const d = Math.hypot(n.x - x, n.y - y); if (d < n.r + 8 / tr.k && d < bd){ bd = d; best = n; } }
+  return best;
+}
+cv.addEventListener("mousemove", e => { const n = pick(e); if (n !== hover){ hover = n; cv.style.cursor = n ? "pointer" : "grab"; draw(); } });
+cv.addEventListener("click", e => {
+  const n = pick(e); if (!n) return;
+  if (n.type === "tool") return open(n.id);
+  if (n.type === "cat"){ off.clear(); D.categories.forEach(c => c !== n.cat && off.add(c)); drawLegend(); draw(); return; }
+  sheetFor(n);
+});
+function sheetFor(n){
+  let h = `<button class="close" id="x">Close</button>`;
+  if (n.type === "enate"){
+    const c = D.concepts.find(c => c.n === n.n);
+    const tools = Object.entries(D.enate).filter(([k, a]) => (a || []).some(x => x.concept === n.n)).map(([k, a]) => [k, a.find(x => x.concept === n.n).why]);
+    h += `<p class="k">ENATE · Nate's brain, concept ${n.n}</p><h3>${esc(c.title)}</h3><p class="k">Tools and skills linked to it</p>` +
+      tools.map(([k, why]) => `<p><b>${esc(k.startsWith("skill:") ? k.slice(6) + " (our skill)" : byId[k]?.name || k)}</b>: ${esc(why)}</p>`).join("") +
+      D.nate.filter(m => (m.concepts || []).includes(n.n)).map(m => `<p><b>${esc(m.name)}</b> (Nate uses it): ${esc(m.what)}</p>`).join("");
+  } else if (n.type === "nate"){
+    const m = n.m;
+    h += `<p class="k">Nate uses it · not in the weekly shows yet</p><h3>${esc(m.name)}</h3><p>${esc(m.what)}</p>` +
+      (m.quote ? `<blockquote>“${esc(m.quote)}”</blockquote>` : "") +
+      `<p><a href="https://www.youtube.com/watch?v=${esc(m.video)}&t=${secs(m.t)}s">Watch Nate at ${esc(m.t)}</a></p>`;
+  } else { h += `<h3>${esc(n.label)}</h3><p class="hint">One of our own skills. Its ENATE links are the faint white lines.</p>`; }
+  document.getElementById("sheetbody").innerHTML = h;
+  document.getElementById("x").onclick = () => sheet.close(); sheet.showModal();
+}
+function drawLegend(){
+  const lg = document.getElementById("legend");
+  lg.innerHTML = `<button data-cat="#" style="grid-template-columns:1fr auto"><span><b style="font:600 11px var(--mono);letter-spacing:.12em;color:var(--muted)">KEY ${legendOpen ? "(TAP A COLOUR TO HIDE IT)" : ""}</b></span><span>${legendOpen ? "−" : "+"}</span></button>` + (legendOpen ? usedCats.map(c =>
+    `<button data-cat="${esc(c)}" class="${off.has(c) ? "off" : ""}"><i style="background:${color(c)}"></i><span>${esc(c)}</span><span>${D.tools.filter(t => t.category === c).length}</span></button>`).join("") +
+    `<button data-cat="*"><i style="background:#f8fafc"></i><span>ENATE ideas linked</span><span>${linkedConcepts.size}</span></button>` +
+    (off.size ? `<button data-cat="!"><i></i><span><u>Show all</u></span><span></span></button>` : "") : "");
+}
+document.getElementById("legend").addEventListener("click", e => {
+  const c = e.target.closest("[data-cat]")?.dataset.cat; if (!c || c === "*") return;
+  if (c === "#"){ legendOpen = !legendOpen; drawLegend(); return; }
+  if (c === "!") off.clear(); else off.has(c) ? off.delete(c) : off.add(c);
+  drawLegend(); draw();
+});
+document.getElementById("mq").addEventListener("input", e => { find = e.target.value.trim().toLowerCase(); draw(); });
+document.getElementById("nums").innerHTML = `<span>${D.tools.length}<small>tools</small></span><span>${D.weeks.length}<small>weeks</small></span><span>${linkedConcepts.size}<small>ENATE links</small></span><span>${D.nate.length}<small>Nate uses</small></span>`;
+let legendOpen = window.innerWidth > 640;
+drawLegend();
+let start = "map"; try { start = localStorage.getItem("hands-view") || "map"; } catch(e) {}
+show(start); fit();
 </script>

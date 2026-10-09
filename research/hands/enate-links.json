@@ -1,0 +1,540 @@
+{
+ "gh:affaan-m/ecc": [
+  {
+   "concept": 21,
+   "why": "A pack of skills; each loads only when its description fits."
+  },
+  {
+   "concept": 22,
+   "why": "Skills should start small and earn autonomy, so adopt a few not all."
+  },
+  {
+   "concept": 35,
+   "why": "Vet third-party plugins before installing."
+  }
+ ],
+ "gh:davila7/claude-code-templates": [
+  {
+   "concept": 21,
+   "why": "One-command installs of skills and commands."
+  },
+  {
+   "concept": 35,
+   "why": "Check what a template installs before trusting it."
+  },
+  {
+   "concept": 37,
+   "why": "Adopt tools only for real pain."
+  }
+ ],
+ "gh:addyosmani/agent-skills": [
+  {
+   "concept": 21,
+   "why": "Workflow skills triggered by their descriptions."
+  },
+  {
+   "concept": 30,
+   "why": "Stops shortcuts by forcing plan-then-build steps."
+  },
+  {
+   "concept": 31,
+   "why": "Pushes a separate check before calling work done."
+  }
+ ],
+ "gh:alirezarezvani/claude-skills": [
+  {
+   "concept": 21,
+   "why": "Hundreds of skills show why descriptions are the trigger."
+  },
+  {
+   "concept": 32,
+   "why": "Skills should do one job and be retired when unused."
+  },
+  {
+   "concept": 35,
+   "why": "Vet a big pack before installing."
+  }
+ ],
+ "gh:anthropics/knowledge-work-plugins": [
+  {
+   "concept": 21,
+   "why": "Role-based skills packaged as plugins."
+  },
+  {
+   "concept": 35,
+   "why": "Plugin vetting applies before install."
+  }
+ ],
+ "gh:anthropics/financial-services": [
+  {
+   "concept": 21,
+   "why": "Skill files that make an agent act in a role."
+  },
+  {
+   "concept": 43,
+   "why": "Finance output needs care matched to its stakes."
+  }
+ ],
+ "gh:pbakaus/impeccable": [
+  {
+   "concept": 14,
+   "why": "A design-specialist skill pack."
+  },
+  {
+   "concept": 21,
+   "why": "Skills carry the designer's procedure, loaded when needed."
+  }
+ ],
+ "gh:tashfeenahmed/freellmapi": [
+  {
+   "concept": 29,
+   "why": "Free providers cut the money cost of context."
+  },
+  {
+   "concept": 40,
+   "why": "Free models still need testing on your own work."
+  },
+  {
+   "concept": 25,
+   "why": "Provider keys belong in .env."
+  }
+ ],
+ "gh:anthropics/claude-code": [
+  {
+   "concept": 28,
+   "why": "agents.md support means one set of files for Claude Code and Codex."
+  },
+  {
+   "concept": 3,
+   "why": "The root file stays a short router."
+  }
+ ],
+ "gh:vectorize-io/hindsight": [
+  {
+   "concept": 20,
+   "why": "A memory layer is a higher second-brain level; move up only when it hurts."
+  },
+  {
+   "concept": 27,
+   "why": "Persistent memory reduces session handoff pain."
+  },
+  {
+   "concept": 39,
+   "why": "Keep memory lean to keep context small."
+  }
+ ],
+ "gh:tencent/weknora": [
+  {
+   "concept": 13,
+   "why": "Links files into a searchable knowledge system."
+  },
+  {
+   "concept": 20,
+   "why": "A heavier level of second brain."
+  },
+  {
+   "concept": 5,
+   "why": "Segments growing knowledge."
+  }
+ ],
+ "gh:itzcrazykns/vane": [
+  {
+   "concept": 10,
+   "why": "Research output is raw evidence until distilled into a brain."
+  },
+  {
+   "concept": 12,
+   "why": "Numbered sources help provenance labels."
+  }
+ ],
+ "gh:alibaba/open-code-review": [
+  {
+   "concept": 31,
+   "why": "A separate reviewer decides done."
+  },
+  {
+   "concept": 15,
+   "why": "A gate that enforces verification."
+  }
+ ],
+ "gh:paperclipai/paperclip": [
+  {
+   "concept": 14,
+   "why": "Gives agents roles like specialists."
+  },
+  {
+   "concept": 34,
+   "why": "Per-agent permissions in layers."
+  },
+  {
+   "concept": 37,
+   "why": "Cap parallel agents."
+  }
+ ],
+ "gh:stablyai/orca": [
+  {
+   "concept": 37,
+   "why": "Cap parallel sessions."
+  },
+  {
+   "concept": 23,
+   "why": "Several agents side by side need clear jobs."
+  }
+ ],
+ "n:hyperagent": [
+  {
+   "concept": 14,
+   "why": "Several specialist agents in shared rooms."
+  },
+  {
+   "concept": 34,
+   "why": "Permissions per agent."
+  }
+ ],
+ "n:grokbot": [
+  {
+   "concept": 33,
+   "why": "Unattended agent runs need bounds."
+  },
+  {
+   "concept": 34,
+   "why": "Local file access needs layered permissions."
+  }
+ ],
+ "n:creativeclaw": [
+  {
+   "concept": 25,
+   "why": "Own keys travel; connectors need care."
+  },
+  {
+   "concept": 42,
+   "why": "A fixed generation step is better as a tool than an agent loop."
+  }
+ ],
+ "n:omnisendmcp": [
+  {
+   "concept": 35,
+   "why": "Untrusted connector content and sending need checks."
+  },
+  {
+   "concept": 34,
+   "why": "Start read-only and drafts first."
+  }
+ ],
+ "gh:hkuds/cli-anything": [
+  {
+   "concept": 42,
+   "why": "Turning apps into CLIs makes fixed flows scriptable."
+  },
+  {
+   "concept": 34,
+   "why": "Drive-able apps need permissions."
+  }
+ ],
+ "gh:cactus-compute/needle": [
+  {
+   "concept": 42,
+   "why": "Small deterministic models suit fixed steps."
+  },
+  {
+   "concept": 29,
+   "why": "Cheap on-device model saves cost."
+  }
+ ],
+ "n:jev": [
+  {
+   "concept": 42,
+   "why": "A tiny decision model fits fixed choices."
+  },
+  {
+   "concept": 29,
+   "why": "Cheap and fast, cutting cost."
+  }
+ ],
+ "n:claudeopus55": [
+  {
+   "concept": 40,
+   "why": "Test a new model on your own work before switching."
+  },
+  {
+   "concept": 39,
+   "why": "Prune the OS after every new model."
+  }
+ ],
+ "gh:odysseus-dev/odysseus": [
+  {
+   "concept": 40,
+   "why": "Local models need testing on your own work."
+  },
+  {
+   "concept": 29,
+   "why": "Free local models avoid token cost."
+  }
+ ],
+ "n:claudeforstartups": [
+  {
+   "concept": 29,
+   "why": "Credits change the cost side of context."
+  }
+ ],
+ "gh:foundationagents/openmanus": [
+  {
+   "concept": 33,
+   "why": "General agent running unattended needs bounds."
+  },
+  {
+   "concept": 31,
+   "why": "Needs a separate checker."
+  }
+ ],
+ "gh:dyad-sh/dyad": [
+  {
+   "concept": 37,
+   "why": "Adopt app builders only for real pain."
+  },
+  {
+   "concept": 43,
+   "why": "Match care to who will use the app."
+  }
+ ],
+ "gh:rohitg00/ai-engineering-from-scratch": [
+  {
+   "concept": 17,
+   "why": "Human understanding is the finish line."
+  }
+ ],
+ "n:boringfunnels": [
+  {
+   "concept": 37,
+   "why": "Copy-able prompts for Claude Code are operator habits."
+  }
+ ],
+ "n:skillry": [
+  {
+   "concept": 21,
+   "why": "Directory of skills."
+  },
+  {
+   "concept": 35,
+   "why": "Paid skills need vetting before install."
+  }
+ ],
+ "gh:elvisun/newsjack": [
+  {
+   "concept": 21,
+   "why": "Agent skills for research."
+  },
+  {
+   "concept": 35,
+   "why": "Check what it publishes before it goes public."
+  }
+ ],
+ "n:vmpal": [
+  {
+   "concept": 34,
+   "why": "An isolated VM limits what an agent can touch."
+  },
+  {
+   "concept": 35,
+   "why": "Safe place to test untrusted tools."
+  }
+ ],
+ "n:hark": [
+  {
+   "concept": 37,
+   "why": "New agent app; adopt only for real pain."
+  }
+ ],
+ "n:instinct": [
+  {
+   "concept": 33,
+   "why": "Always-on agent in iMessage needs bounds."
+  }
+ ],
+ "n:metamuse": [
+  {
+   "concept": 33,
+   "why": "Daily-brief agent is a scheduled unattended run."
+  },
+  {
+   "concept": 6,
+   "why": "Cadence: data that arrives on a schedule."
+  }
+ ],
+ "n:granola": [
+  {
+   "concept": 6,
+   "why": "Meeting notes arrive on a schedule and feed tasks."
+  },
+  {
+   "concept": 13,
+   "why": "Notes can be ingested into a brain."
+  }
+ ],
+ "gh:calcom/cal.diy": [
+  {
+   "concept": 42,
+   "why": "A fixed booking flow belongs in code."
+  }
+ ],
+ "gh:posthog/posthog": [
+  {
+   "concept": 38,
+   "why": "Analytics data feeds an audit score over time."
+  }
+ ],
+ "n:chatgptdots": [
+  {
+   "concept": 37,
+   "why": "Managing several threads is an operator habit."
+  },
+  {
+   "concept": 27,
+   "why": "Session hygiene across threads."
+  }
+ ],
+ "n:twilio": [
+  {
+   "concept": 25,
+   "why": "Account keys stay in .env."
+  },
+  {
+   "concept": 33,
+   "why": "Phone agents run unattended."
+  }
+ ],
+ "n:elevenlabs": [
+  {
+   "concept": 25,
+   "why": "Own API key goes in .env."
+  },
+  {
+   "concept": 33,
+   "why": "Voice agent runs unattended."
+  }
+ ],
+ "skill:audit": [
+  {
+   "concept": 7,
+   "why": "Checks indexes against reality."
+  },
+  {
+   "concept": 38,
+   "why": "Scores each part per audit."
+  },
+  {
+   "concept": 8,
+   "why": "Includes freshness check."
+  }
+ ],
+ "skill:brain-ingest": [
+  {
+   "concept": 13,
+   "why": "Relational ingestion into the brain."
+  },
+  {
+   "concept": 11,
+   "why": "Updates index, log and concept pages."
+  },
+  {
+   "concept": 12,
+   "why": "Keeps provenance labels."
+  }
+ ],
+ "skill:decide": [
+  {
+   "concept": 17,
+   "why": "Charlie stays the one who understands and chooses."
+  },
+  {
+   "concept": 43,
+   "why": "Asks before higher-stakes steps."
+  },
+  {
+   "concept": 37,
+   "why": "Operator habit: one place for questions."
+  }
+ ],
+ "skill:find-skills": [
+  {
+   "concept": 35,
+   "why": "Vets plugins before install."
+  },
+  {
+   "concept": 37,
+   "why": "Adopt tools only for real pain."
+  },
+  {
+   "concept": 21,
+   "why": "Finds skills by description."
+  }
+ ],
+ "skill:grill-me": [
+  {
+   "concept": 26,
+   "why": "Interview the knowledge out of your head."
+  }
+ ],
+ "skill:hands-ingest": [
+  {
+   "concept": 6,
+   "why": "Cadence: weekly intake on a schedule."
+  },
+  {
+   "concept": 13,
+   "why": "Relational ingestion of tools."
+  },
+  {
+   "concept": 33,
+   "why": "Fixed repeatable steps."
+  }
+ ],
+ "skill:level-up": [
+  {
+   "concept": 19,
+   "why": "Closes the four C's gap in order."
+  },
+  {
+   "concept": 33,
+   "why": "Picks the next automation."
+  },
+  {
+   "concept": 37,
+   "why": "Adopt tools only for real pain."
+  }
+ ],
+ "skill:link": [
+  {
+   "concept": 3,
+   "why": "Keeps the router short with pointers."
+  },
+  {
+   "concept": 18,
+   "why": "Router stays under 200 lines."
+  },
+  {
+   "concept": 9,
+   "why": "Fixes retrieval routes."
+  }
+ ],
+ "skill:research-creator": [
+  {
+   "concept": 10,
+   "why": "Raw evidence kept apart from derived brain."
+  },
+  {
+   "concept": 13,
+   "why": "Ingests a creator end to end."
+  },
+  {
+   "concept": 16,
+   "why": "Real-world testing with transcripts."
+  }
+ ],
+ "skill:teach": [
+  {
+   "concept": 17,
+   "why": "Human understanding is the finish line."
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 ---
 name: hands-ingest
-description: Feeds the Hands Brain (tools, skills, plugins, MCPs, repos) from a YouTube channel week by week, newest first, then ranks what's best to use now and rebuilds its site. Use for "update the Hands Brain", "what's new this week", "add <channel> to Hands".
+description: Feeds the Hands Brain (tools, skills, plugins, MCPs, repos) from a YouTube channel week by week, newest first, then ranks what's best to use now and rebuilds its site. Use for "update the Hands Brain", "update the tools list", "what's new this week", "add <channel> to Hands".
 ---
 
 # Hands ingest (week by week, newest first)

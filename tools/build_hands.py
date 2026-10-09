@@ -66,7 +66,14 @@ for c in CATEGORIES:
     for i, e in enumerate([e for e in ranked if e["category"] == c], 1): e["rank"] = i
 
 (HANDS / "tools.json").write_text(json.dumps(ranked, indent=1, ensure_ascii=False))
-data = {"tools": ranked, "weeks": [{"week": w["week"], "summary": w.get("summary", ""), "videos": w.get("videos", [])} for w in weeks],
+# ENATE (Nate's brain) concepts, and links from tools to them (written by a helper; optional).
+concepts = [{"n": int(m.group(1)), "title": m.group(2)} for m in
+            re.finditer(r"^\*\*(\d+)\. (.+?)\*\*$", (ROOT / "research/nate-herk/brain/concepts.md").read_text(), re.M)]
+def opt(name, empty):
+    f = HANDS / name
+    return json.loads(f.read_text()) if f.exists() else empty
+data = {"tools": ranked, "concepts": concepts, "enate": opt("enate-links.json", {}),
+        "nate": opt("nate-mentions.json", []), "weeks": [{"week": w["week"], "summary": w.get("summary", ""), "videos": w.get("videos", [])} for w in weeks],
         "videos": videos, "categories": CATEGORIES}
 tpl = (HANDS / "site/template.html").read_text()
 (HANDS / "site/hands.html").write_text(tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
