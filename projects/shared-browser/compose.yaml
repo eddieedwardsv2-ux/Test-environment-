@@ -1,0 +1,39 @@
+services:
+  browser:
+    build: .
+    restart: unless-stopped
+    hostname: charlie-browser
+    stop_grace_period: 30s
+    shm_size: 1gb
+    security_opt:
+      - seccomp=./chrome-seccomp.json
+    environment:
+      TRUST_PROXY: '1'
+      APP_ORIGIN: https://${BROWSER_DOMAIN:?Set BROWSER_DOMAIN in .env}
+    volumes:
+      - browser-data:/data
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:8787/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  https:
+    image: caddy:2-alpine@sha256:d8542f48d34a9cf4e4c11a478865229840e87e4c96ea3f439101f31a5d35f75f
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+      - '443:443/udp'
+    environment:
+      BROWSER_DOMAIN: ${BROWSER_DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      browser:
+        condition: service_healthy
+volumes:
+  browser-data:
+  caddy-data:
+  caddy-config:

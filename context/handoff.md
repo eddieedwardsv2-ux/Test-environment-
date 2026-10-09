@@ -1,11 +1,13 @@
 # Session hand-off
 
 Overwritten by `session-handoff`; history stays in `decisions.md` and Git.
-**Written:** 2026-10-09, 17:00 EDT, by Codex; Charlie requested `/session-handoff`.
+**Written:** 2026-10-09, 17:54 EDT, by Codex; updated after Charlie’s app/hosting request.
 
 ## Working on
 Charlie's latest request is a smoother browser shared by him and the AI, fitted
-to iPhone 16 Plus, with fewer repeated logins. Design proposed; not approved or built.
+to iPhone 16 Plus, with fewer repeated logins. App and deployment package built
+and tested. External hosting remains blocked: no account/server connected and
+this cloud blocks Cloudflare tunnel provisioning.
 The original Higgsfield/Katana AI OS map promo remains open behind this connection work.
 
 ## Summary points
@@ -16,11 +18,16 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 - Higgsfield MCP returned HTTP 401; its Clerk OAuth metadata returned HTTP 200. Direct Codex MCP login discovered OAuth and displayed its secure sign-in flow; cancelled without account authorisation or token creation.
 - This cloud's Codex connector configuration is platform-managed/read-only. A separate CLI connection would not automatically add tools to this chat.
 - Intelligent UI and TinyFish control tools were not exposed here; no access to Charlie's signed-in screen. Re-check actual tools next session rather than assuming account-wide absence.
-- Researched TinyFish saved profiles and mobile alternatives. Recommended private home-screen web app reusing LinuxServer Chromium/Selkies; no app code, deployment, paid calls or video generated.
+- Created `projects/shared-browser/`: paired iPhone PWA, live noVNC touch/keyboard, saved Chromium profile, reconnect, human/AI handoff and private Codex API/CLI. Selkies image filled the disk and was removed; noVNC reused a much smaller runtime.
+- Verified 14/14 tests and full live test exit0: real touch, phone typing, same-tab AI action, takeover, reconnect and cookie retention. Full service restart retained the approved device and browser test cookie. External Example Domain loaded with normal TLS verification.
+- Independent code review found/rechecked takeover fixes; production Chromium sandbox enabled. Signed apt/npm checks preserved; trusted proxy CA imported normally. Caddy/Compose validated. No external HTTPS deployment, actual iPhone, Higgsfield login, paid call or video verified.
+- Hosting attempt: direct quick-tunnel connection refused, verified HTTPS proxy request returned403. Asked once for existing hosting provider; no secret values requested.
+- Cloud install/start scripts tested and draft save confirmed, preserving Higgsfield setup. Environment settings Review/Save and Publish still required; fresh-task restoration unverified.
 - Hand-off rebuild completed: Quartermaster, Reading Room, Brain dashboard and Nate-first map need live republishing. Pre-commit audit: 0 errors/4 warnings; after commit `975420c`: 1 missing-Guardian error/4 publication warnings. Review remains outstanding.
 
 ## Key files
 - `context/handoff.md`, `context/current-focus.md`, `context/todo.md`, `decisions.md`.
+- `projects/shared-browser/README.md`, `verification.md`, `cloud-install.sh`, `cloud-start.sh`, Docker Compose/Caddy files and tests. Private development container `charlie-stack-test`; profile/device data in its Docker volume, never the public repo. Use `docker exec charlie-stack-test node agent.mjs status`; no public phone URL exists.
 - `references/higgsfield-api.md` and `system/system-map/system-map.html` (the promo's real map reference).
 - `/workspace/higgsfield-tools/setup.sh` is current-instance setup outside the checkout; saved environment scripts are the reproduction route if that file is absent.
 
@@ -29,25 +36,26 @@ The original Higgsfield/Katana AI OS map promo remains open behind this connecti
 - Chief's Desk and published dashboards: `system/pages.md`; neither Desk answers nor live pages were read in this Codex session.
 - Last scored audit remains `audits/audit-2026-10-09-112239-a7c3.md` (64/100, fixes 2-5 open).
 - TinyFish [profiles](https://docs.tinyfish.ai/key-concepts/browser-context-profiles) save login data for later Agent runs; ordinary [Live Preview](https://docs.tinyfish.ai/live-preview) is read-only. Its documented [15-minute default](https://docs.tinyfish.ai/browser-api/index) concerns inactivity/account limits, not proof of every active session resetting.
-- [LinuxServer Chromium](https://docs.linuxserver.io/images/docker-chromium/) supports persistent storage and Chromium flags; [Selkies mobile controls](https://docs.linuxserver.io/selkies/user-guide/web-client/) include touch and device keyboard. Same-browser Codex control and device performance still need implementation/testing.
+- Initial LinuxServer/Selkies design replaced with Chromium/noVNC after the image exhausted disk. Same-tab Codex control/touch/keyboard verified in `projects/shared-browser/test/live.mjs`; actual iPhone/network performance remains unverified.
 - Browserbase [Live View](https://docs.browserbase.com/platform/browser/observability/session-live-view) is interactive, but mobile keyboards are not officially supported. Its paid keep-alive and persistent contexts are an alternative; neither service was connected.
-- Docker daemon is available here (28.4.0); this task workspace is not established as durable public hosting. Browser profiles/credentials must stay private and outside this public repo. Websites can expire their own logins.
+- Docker daemon is available here (28.4.0); sandboxed browser development container tested, but this task workspace is not durable public hosting. Browser profiles/credentials must stay private and outside this public repo. Websites can expire their own logins.
 
 ## Decisions made
 - Stay in Codex; do not send Charlie to Claude for the browser/Higgsfield workflow.
 - Promo: cinematic glowing map, intended for Instagram and X. Proposed 20 seconds: signal enters, routes to an Elder, Guardian/Chief's Desk, network reveal and "follow the build". Style approved; full storyboard/cost not approved.
 - Browser must be shared by Charlie and the AI. Proposed first version: phone-sized home-screen web app, large controls/keyboard, saved browser profile, reconnect, and My turn / AI's turn takeover.
-- Browser design approval is still pending. Then write/review the spec and implementation plan before coding; consult the brainstorming skill. Hosting and spend require a concrete proposal first.
+- Charlie explicitly asked to create the app and complete hosting: build and deployment authorised; paid hosting/sign-up requires a concrete proposal. Spec/plan saved in the project. No public endpoint created.
 
 ## Open decisions
-- Approve/change that first browser design (also under "Waiting on Charlie" in current-focus).
+- Existing hosting provider/server and secure deployment access are needed (asked once asynchronously); do not request passwords/keys in chat. Actual device pairing and public HTTPS verification follow deployment.
 - Secure Higgsfield sign-in and a supported persistent connector/browser route; Katana availability and exact credit cost unverified. Never ask for tokens or OAuth callback URLs in chat.
 - Claude Guardian review and live page republishing will remain outstanding after this hand-off commit; current-focus records the commit once saved.
 - Branch review: `claude/nate-brain-wip` has 1 unmerged commit including `research/nate-herk/brain/x-themes.md` (unverified); `elder-councils-plan` has 3; `nate-watch-path` has 2. The Elder plan and Watch Path source are already on main. Historical branches also contain old renamed files; no branches merged/deleted.
 
 ## Pick up here
-1. Read this hand-off and current-focus; re-check exposed browser/UI tools. Resolve the pending browser design approval, then write its spec for review. Do not claim an app already exists.
-2. Prototype the approved shared browser locally; test phone sizing, keyboard, takeover and reconnect before quoting/approving private always-on hosting. Measure performance and real login retention.
+1. Read this hand-off/current-focus and `projects/shared-browser/verification.md`. Preserve saved profiles and device records. Do not restart browser trials while someone is entering credentials.
+2. Resolve the already asked hosting-provider question, securely connect that host, deploy Docker Compose/Caddy behind real HTTPS, and pair the exact phone code Charlie identifies. Verify actual iPhone performance and longer login retention. This cloud's private loopback port is not a phone link.
+
 3. Resume Higgsfield in Codex once secure access works: verify Katana/catalog access, obtain an exact credit quote, then seek approval for one 5-second trial before the full promo.
 
 ## Carried forward / dropped

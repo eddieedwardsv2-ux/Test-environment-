@@ -6,7 +6,7 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
-- [ ] Approve/change the proposed shared iPhone browser design (`context/handoff.md`): private home-screen web app, phone controls/keyboard, saved profile, reconnect, human/AI takeover. Then spec review and build plan; no app built or hosting chosen.
+- [ ] Deploy and pair the shared iPhone browser (`projects/shared-browser/README.md`): creation/hosting authorised, app built and tested in cloud; external host/account still missing and quick tunnel blocked. Verify actual iPhone, external HTTPS and long-term login retention after deployment.
 - [ ] Complete secure Higgsfield access from Codex and verify Katana/catalog access and exact trial cost; current CLI installed and OAuth discovery works, but no account connected. Map promo style: cinematic glowing network for Instagram and X; no render yet. Keep the older parked journey video separate.
 - [ ] Plugins ticked 9 Oct (Marketing, context7, Superpowers, watch-video, claude-patterns) not yet showing as enabled on his account (`ListPlugins` empty): check they installed; a new session loads them; then one `try-tool` test each
 - [ ] claude.ai settings: switch off 9 unused built-in skills (built-in-browser, chrome-browser, computer-use, import-memory, morning, docx, xlsx, pptx, pdf)

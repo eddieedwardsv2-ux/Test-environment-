@@ -6,6 +6,7 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 
 | I need to… | Use | It produces | Checked by |
 |---|---|---|---|
+| Browse together on iPhone / Codex | `projects/shared-browser/README.md` | paired PWA, persistent Chromium, private AI bridge; hosting pending | gateway tests + live browser test; device/external HTTPS still open |
 | Find where something lives | `AGENTS.md` | the right path | following it |
 | Ask Charlie a question; read his answers | `decide` skill, Decision Desk (`system/pages.md`) | a card he answers by tapping | `ArtifactData` list at session start |
 | Open any dashboard, rebuild it | `system/pages.md` | link, source, rebuild command | `tools/screenshot.py` |

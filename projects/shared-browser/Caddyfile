@@ -1,0 +1,6 @@
+{$BROWSER_DOMAIN} {
+    reverse_proxy browser:8787 {
+        stream_close_delay 5m
+        header_up X-Real-IP {remote_host}
+    }
+}

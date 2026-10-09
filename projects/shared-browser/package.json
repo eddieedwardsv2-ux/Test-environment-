@@ -1,0 +1,20 @@
+{
+  "name": "charlies-shared-browser",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "build": "esbuild public/app-source.js --bundle --format=esm --minify --outfile=public/app.js",
+    "test:live": "node test/live.mjs"
+  },
+  "dependencies": {
+    "@novnc/novnc": "1.5.0",
+    "playwright-core": "1.56.1",
+    "ws": "8.22.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.11"
+  }
+}

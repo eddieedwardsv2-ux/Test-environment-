@@ -16,10 +16,12 @@ recorded (with their consent) for the YouTube channel. Project:
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (latest Codex request, 2026-10-09):** resolve the proposed shared
-iPhone browser design approval, then write its build spec for review; the
-Higgsfield/Katana map promo remains open. Read `context/handoff.md`; no app or
-video has been built. The 90-day priority above remains unchanged.
+**Next step (latest Codex request, 2026-10-09):** deploy the shared iPhone browser
+from `projects/shared-browser/` to Charlie's external host. He authorised creation
+and hosting; no hosting account is connected and this cloud blocks Cloudflare
+quick-tunnel provisioning. App/deployment built: 14/14 tests, live touch/keyboard/AI/reconnect and full
+service restart passed. Actual iPhone and external hosting are not verified.
+The Higgsfield/Katana map promo remains open. The 90-day priority is unchanged.
 
 **OS backlog status (2026-10-09, after the re-run audit):** both middle plans are built
 (one `youtube-ingest` skill; elders named by job: Architect, Quartermaster,
@@ -63,10 +65,10 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
-- Approve/change the proposed first browser version: a private iPhone-sized
-  home-screen web app shared with Codex, using Chromium/Selkies, a saved browser
-  profile, keyboard/touch controls, reconnect and My turn / AI's turn takeover.
-  Approval permits writing the spec; no hosting/payment or implementation approved yet.
+- Name an existing hosting provider/server and connect it securely for the shared
+  iPhone app. Missing host access is the deployment blocker; don't ask for keys
+  or passwords in chat. Creation/deployment authorised; sign-up/payment still
+  needs a concrete proposal. See `projects/shared-browser/verification.md`.
 - Secure Higgsfield account sign-in and a supported writable connector route;
   re-check Intelligent UI/browser tool availability in the next session. Keep this
   workflow in Codex. Katana access and credits are still unverified.

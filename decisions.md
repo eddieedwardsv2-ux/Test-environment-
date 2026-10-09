@@ -1,5 +1,15 @@
 # Decision log
 
+## 2026-10-09 — Create the shared iPhone browser in Codex
+Charlie asked to create the app and complete hosting urgently. Proceed with the
+agreed human/AI shared browser, touch/keyboard, saved profile and reconnect.
+Built `projects/shared-browser/` using Chromium, noVNC and a private gateway;
+the proposed Selkies image exhausted the disk and was removed before use.
+No payment/sign-up made. Cloudflare direct tunnel connections failed; HTTPS
+proxy provisioning returned 403. External hosting access is required. Codex
+asked once for an existing provider, with no secret values requested in chat.
+The Higgsfield promo and older paused/parked projects remain open separately.
+
 ## 2026-10-09: Codex browser and Higgsfield map promo
 - Charlie asked to keep the Higgsfield work in Codex and chose a cinematic glowing map for a promotional short on Instagram and X. Katana access and generation remain unverified; no credits spent.
 - Charlie chose a browser shared by him and the AI, fitted to iPhone 16 Plus, after reporting slow TinyFish use and repeated logins. A private home-screen web app using Chromium/Selkies was proposed; design approval, spec, implementation and hosting are still pending.
