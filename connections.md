@@ -23,7 +23,7 @@ details (keys: `context/environment.md`).
 | 13 | Video and motion graphics | HyperFrames by HeyGen | `mcp` (claude.ai connector: read tools only from Claude Code; making videos needs its local skills, see `research/hands/tried.json`) | connector sign-in | 2026-10-09: connected; local trial rendered a title card |
 | 14 | Slides, designs, social graphics | Moda | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: connected, not used yet |
 | 15 | Notes and pages | Notion | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: connected, not used yet (this repo stays the source of truth) |
-| 16 | Thumbnails, designs | Canva | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: installed, sign-in not finished (`ListConnectors`: connect_incomplete); Desk card "connect-canva" |
+| 16 | Thumbnails, designs | Canva | `mcp` (claude.ai connector) | connector sign-in | 2026-10-09: connected, real read of 3 designs (`connect` test); guide `references/canva.md` |
 | 17 | Small business (quotes, invoices, reviews, social posts) | Claude for Small Business (Anthropic plugin, 44 skills) | `plugin` (claude.ai account; desktop app / Cowork, or Claude Code `small-business@knowledge-work-plugins`) | claude.ai plan; its own connectors (Gmail, Calendar, Drive, Canva, Xero, QuickBooks…) sign in separately | 2026-10-09: waits for Mac day and Charlie's Pro upgrade (his decision, 9 Oct); not installed. **Business data stays in the plugin, never in this repo** |
 
 **Creative Claw (requested 2026-10-09):** media MCP/plugin for YouTube flows.

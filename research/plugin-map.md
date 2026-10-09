@@ -25,6 +25,14 @@ Shorts so I can share clips." Claude searches the catalogue (`find-skills`,
 or `.claude-plugin/marketplace.json` in anthropics/claude-plugins-community),
 reads the shortlist, and installs only what you approve.
 
+## Shortlist sent to the Desk (2026-10-09, card "plugins-to-add")
+Charlie found how to install plugins from his phone. All of these are in Anthropic's
+checked directory (claude.ai plugin search): **Marketing** (Anthropic; uses the Canva
+connection), **context7** (partner), **Superpowers** (partner; trial only, its start-up
+instructions may clash with ours), **watch-video** and **claude-patterns** (community;
+better on the Mac), **Small Business** (Anthropic; after Pro). Not in his directory:
+`build-loud`, `youtube-transcriber`. Each one installed gets one real test (`try-tool`).
+
 ## Charlie's watchlist (checked against current work, 2026-10-07)
 Nothing installed yet; read each plugin before installing. Memory plugins save
 to the computer they run on, so they only pay off on the Mac (cloud sessions
