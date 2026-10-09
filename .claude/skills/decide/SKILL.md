@@ -48,6 +48,9 @@ connector; his settings blocked it, so it was dropped.)
   Desk must be first; if the limit is hit, stop watching another page with `ArtifactComments` `watch` `on: false`).
 - A wake saying the Desk was republished elsewhere is that signal: read the `answered`
   cards (the cards are the record; the wake is only a nudge) and act on them as below.
+- Send retries the poke by itself (10 Oct); the button shows only if every try fails. A watch
+  "restored after restart, not re-verified" missed a real poke on 10 Oct: at session start,
+  stop and re-start the Desk watch (`on: false`, then `watch`) so it's freshly registered.
 - Codex can't watch the Desk: when only Codex is working, nothing is woken, and the next
   Claude session picks the answers up at its start.
 

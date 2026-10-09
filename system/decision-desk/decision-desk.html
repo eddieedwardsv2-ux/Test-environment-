@@ -82,7 +82,7 @@ button:focus-visible,.tab:focus-visible,.opt:focus-within,textarea:focus-visible
 
 <div class="wrap">
   <h1>Chief's Desk</h1>
-  <p class="lede">Every question Claude needs you to answer. Tap any question on the map to answer it, in any order. Bigger tiles decide other questions; the amber ones are Claude's suggested 1st and 2nd. Press Send and, while a Claude session is open, Claude is told straight away: no need to come back and say "done". If it can't be told, a <b>Tell Claude now</b> button appears.</p>
+  <p class="lede">Every question Claude needs you to answer. Tap any question on the map to answer it, in any order. Bigger tiles decide other questions; the amber ones are Claude's suggested 1st and 2nd. Press Send and, while a Claude session is open, Claude is told straight away: no need to come back and say "done". It tries a few times by itself; only if that fails does a <b>Tell Claude now</b> button appear.</p>
   <div class="tabs" role="group" aria-label="Show">
     <button class="tab" id="t-open" data-f="open" aria-pressed="true">Waiting for you<span class="n" id="n-open"></span></button>
     <button class="tab" id="t-answered" data-f="answered" aria-pressed="false">Answered<span class="n" id="n-answered"></span></button>
@@ -168,20 +168,29 @@ function say(text, id){
 }
 async function tellClaude(id){
   const d = docs.find(x => x.id === id) || {};
-  if (!art){ say("Sent and saved, but Claude wasn't told: " + (artWhy || "this page can't tell Claude here yet."), id); return; }
   say("Sent. Telling Claude…");
-  try {
-    await art.publish({"poke.json": JSON.stringify({card: id, q: d.short || d.q || id, at: new Date().toISOString()})});
-    say("Sent. The Desk pinged any open Claude session; if none is open, the next one reads it.");
-  } catch(err){
-    const c = err?.code;
-    say("Sent and saved, but Claude wasn't told: " + (
-      c === "conflict" ? "the Desk was updating at that moment. Press Tell Claude now again."
-      : c === "not_writer" || c === "not_granted" ? "this view of the Desk can't tell Claude. Open it signed in as you."
-      : c === "rate_limited" ? "too many in a row. Wait a minute, then press Tell Claude now."
-      : c === "capability_disabled" ? "this app can't do it here. Open the Desk at claude.ai in a browser and press Tell Claude now."
-      : "Claude couldn't be reached just now (" + (c || "no reason given") + ")."), ["not_writer","not_granted","capability_disabled","capability_removed","not_declared"].includes(c) ? null : id);
+  // Send alone must be enough (Charlie, 10 Oct): wait for the page's publish ability to load,
+  // and retry busy moments (the answer's own save can collide with the poke) before showing a button.
+  for (let i = 0; !art && !artWhy && i < 20; i++) await new Promise(r => setTimeout(r, 250));
+  if (!art){ say("Sent and saved, but Claude wasn't told: " + (artWhy || "this page can't tell Claude here yet."), id); return; }
+  let c;
+  for (let attempt = 0; attempt < 4; attempt++){
+    if (attempt) await new Promise(r => setTimeout(r, 1500 * 2 ** attempt));
+    try {
+      await art.publish({"poke.json": JSON.stringify({card: id, q: d.short || d.q || id, at: new Date().toISOString()})});
+      say("Sent. Claude has been told; nothing else to do.");
+      return;
+    } catch(err){
+      c = err?.code;
+      if (!["conflict", "rate_limited", undefined, "unavailable", "network"].includes(c)) break;
+    }
   }
+  say("Sent and saved, but Claude wasn't told: " + (
+    c === "conflict" ? "the Desk was busy updating. Press Tell Claude now."
+    : c === "not_writer" || c === "not_granted" ? "this view of the Desk can't tell Claude. Open it signed in as you."
+    : c === "rate_limited" ? "too many in a row. Wait a minute, then press Tell Claude now."
+    : c === "capability_disabled" ? "this app can't do it here. Open the Desk at claude.ai in a browser and press Tell Claude now."
+    : "Claude couldn't be reached just now (" + (c || "no reason given") + ")."), ["not_writer","not_granted","capability_disabled","capability_removed","not_declared"].includes(c) ? null : id);
 }
 function draftFrom(id){
   const el = list.querySelector(`[data-id="${CSS.escape(id)}"]`);
