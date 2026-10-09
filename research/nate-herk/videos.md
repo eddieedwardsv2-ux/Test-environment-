@@ -79,7 +79,7 @@
 | 73 | ★ [Fable 5 + Karpathy’s LLM Wiki is Basically Cheating](https://www.youtube.com/watch?v=hQvwMj7IJe4) | 96,000 | 14:35 | ✅ [transcript](fable-5-karpathy-s-llm-wiki-is-basically-cheating--hQvwMj7IJe4-transcript.md) |
 | 74 | [How Claude is Creating a New Generation of Millionaires](https://www.youtube.com/watch?v=pbrln2TVeh4) | 132,000 | 9:36 | – |
 | 75 | [How Anthropic Engineers Actually Prompt Fable 5](https://www.youtube.com/watch?v=vcU85OrwuV0) | 70,000 | 10:45 | – |
-| 76 | [Stanford's Method Turns Claude Into a PHD Level Research Team](https://www.youtube.com/watch?v=Tj3018n5MVg) | 71,000 | 12:06 | – |
+| 76 | [Stanford's Method Turns Claude Into a PHD Level Research Team](https://www.youtube.com/watch?v=Tj3018n5MVg) | 71,000 | 12:06 | ✅ [transcript](stanfords-method-turns-claude-into-a-phd-level-research-team--Tj3018n5MVg-transcript.md) |
 | 77 | [I asked Claude Code to make me as much money as possible](https://www.youtube.com/watch?v=iTY8Q449YNQ) | 214,000 | 28:13 | ✅ [transcript](i-asked-claude-code-to-make-me-as-much-money-as-possible--iTY8Q449YNQ-transcript.md) |
 | 78 | [Why Watching AI Videos Isn't Enough](https://www.youtube.com/watch?v=S2ME69hra-k) | 9,400 | 2:36 | – |
 | 79 | [I Battle Tested Sakana Fugu's Fable Killer](https://www.youtube.com/watch?v=GpSqBjW6hR4) | 115,000 | 12:16 | – |
@@ -110,12 +110,12 @@
 | 104 | [What Karpathy Joining Anthropic Actually Means For Claude](https://www.youtube.com/watch?v=brB-hSiV2iU) | 140,000 | 16:24 | ✅ [transcript](what-karpathy-joining-anthropic-actually-means-for-claude--brB-hSiV2iU-transcript.md) |
 | 105 | [How to Use Your Claude Code Projects in Codex in 5 Mins](https://www.youtube.com/watch?v=kB9iMD0EjT8) | 72,000 | 8:39 | ✅ [transcript](how-to-use-your-claude-code-projects-in-codex-in-5-mins--kB9iMD0EjT8-transcript.md) |
 | 106 | [The AI Career Opportunity Nobody is Talking About in 2026](https://www.youtube.com/watch?v=iIfOprq2kCM) | 91,000 | 19:13 | – |
-| 107 | [How to Deploy Your Claude Automations (3 Methods)](https://www.youtube.com/watch?v=xJ5oz63mIec) | 50,000 | 21:48 | – |
+| 107 | [How to Deploy Your Claude Automations (3 Methods)](https://www.youtube.com/watch?v=xJ5oz63mIec) | 50,000 | 21:48 | ✅ [transcript](how-to-deploy-your-claude-automations-3-methods--xJ5oz63mIec-transcript.md) |
 | 108 | [Anthropic Just Dethroned OpenAI. Here's What Happens Next.](https://www.youtube.com/watch?v=-nG-9vlSkho) | 90,000 | 7:44 | – |
 | 109 | [Every Level of Claude Explained in 21 Minutes](https://www.youtube.com/watch?v=ZRb7D6R64hM) | 310,000 | 21:43 | ✅ [transcript](every-level-of-claude-explained-in-21-minutes--ZRb7D6R64hM-transcript.md) |
 | 110 | [Claude Code Just Got an Agent Dashboard](https://www.youtube.com/watch?v=ZAaxx3qyT8g) | 132,000 | 7:36 | – |
 | 111 | [Hermes Agent: Zero to Personal AI Assistant (1 Hour Course)](https://www.youtube.com/watch?v=gb5TlGw6Uks) | 394,000 | 58:23 | – |
-| 112 | [This is The Most Powerful Tool to Give to Claude Code](https://www.youtube.com/watch?v=YHk45NEpspE) | 108,000 | 14:46 | – |
+| 112 | [This is The Most Powerful Tool to Give to Claude Code](https://www.youtube.com/watch?v=YHk45NEpspE) | 108,000 | 14:46 | ✅ [transcript](this-is-the-most-powerful-tool-to-give-to-claude-code--YHk45NEpspE-transcript.md) |
 | 113 | [Overwhelmed By AI? Just Copy My Tech Stack](https://www.youtube.com/watch?v=35WuZxbAY68) | 55,000 | 17:13 | ✅ [transcript](overwhelmed-by-ai-just-copy-my-tech-stack--35WuZxbAY68-transcript.md) |
 | 114 | [Claude Just Solved Session Limits](https://www.youtube.com/watch?v=3QclAjmu5Tw) | 110,000 | 10:22 | – |
 | 115 | [Master 97% of Codex in 1 Hour (full course)](https://www.youtube.com/watch?v=3TdD8Qv5Tk8) | 213,000 | 1h00 | – |
@@ -254,7 +254,7 @@
 | 248 | [Turn Your AI Agent Into a Voice Assistant in Minutes (n8n & ElevenLabs)](https://www.youtube.com/watch?v=qJRFu88HUio) | 105,000 | 20:36 | – |
 | 249 | [I Built 204 AI Automations, Here’s What Actually Matters](https://www.youtube.com/watch?v=wq001sxDTWw) | 43,000 | 22:37 | ✅ [transcript](i-built-204-ai-automations-here-s-what-actually-matters--wq001sxDTWw-transcript.md) |
 | 250 | [Building an AI Agent Swarm in n8n Just Got So Easy](https://www.youtube.com/watch?v=vpyllOeLhs4) | 97,000 | 25:39 | – |
-| 251 | [Beginner’s Guide to Metadata: Make Your RAG Agents Smarter](https://www.youtube.com/watch?v=lnm0PMi-4mE) | 41,000 | 15:14 | – |
+| 251 | [Beginner’s Guide to Metadata: Make Your RAG Agents Smarter](https://www.youtube.com/watch?v=lnm0PMi-4mE) | 41,000 | 15:14 | ✅ [transcript](beginner-s-guide-to-metadata-make-your-rag-agents-smarter--lnm0PMi-4mE-transcript.md) |
 | 252 | [From Zero to RAG Agent: Full Beginner's Course (no code)](https://www.youtube.com/watch?v=cCD303XsUjI) | 169,000 | 22:40 | – |
 | 253 | [n8n Webhook Security: Learn This Before It’s Too Late](https://www.youtube.com/watch?v=3FfCRbq3XMs) | 67,000 | 8:32 | – |
 | 254 | [Unlock the Next Evolution of Agents with Human-like Memory (n8n + zep)](https://www.youtube.com/watch?v=kNsX2qu8jHY) | 118,000 | 16:21 | – |
