@@ -1,0 +1,237 @@
+<title>Charlie's AI OS Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one council diagram (Chief's Desk in the middle, elders round it, head above, hands below), then health, then pages by job. Same dark brand as the Quartermaster. */
+:root{
+  --bg:#05070d; --panel:#0b1020; --line:rgba(255,255,255,.10); --line-strong:rgba(255,255,255,.22);
+  --text:#e8ecf4; --muted:#8b94a8; --accent:#38bdf8; --gold:#f5c76b;
+  --good:#34d399; --warn:#fbbf24; --bad:#fb7185;
+  --display:'Archivo','DM Sans',system-ui,sans-serif; --font:'DM Sans',system-ui,-apple-system,sans-serif; --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--text);font:15px/1.55 var(--font)}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:16px;padding-block:28px 56px;display:grid;gap:36px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.01em}
+h2{font-size:20px;font-weight:600}
+.lede{color:var(--muted);max-width:68ch;margin:6px 0 0}
+.eyebrow{font:600 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.diagram{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:radial-gradient(ellipse at 50% 48%,rgba(56,189,248,.10),transparent 60%),var(--panel)}
+.diagram svg{display:block;width:100%;min-width:760px;height:auto}
+svg text{font-family:var(--font);fill:var(--text)}
+svg .t-display{font-family:var(--display);font-weight:800}
+svg .t-mono{font-family:var(--mono)}
+svg .muted{fill:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:13px;padding:12px 16px;border-top:1px solid var(--line)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.sw{width:22px;height:0;border-top:2px solid}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px}
+.card{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:18px 18px 16px;display:grid;gap:12px;min-width:0}
+.score{display:grid;grid-template-columns:110px 1fr 54px;gap:10px;align-items:center;font-size:14px}
+.bar{height:10px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:6px}
+.num{font:600 13px var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.total{font:800 34px var(--display)}
+.total small{font:400 14px var(--font);color:var(--muted)}
+ol.work{margin:0;padding-left:20px;display:grid;gap:10px}
+ol.work b{font-weight:600}
+ol.work .why{color:var(--muted);font-size:14px;display:block}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.02)}
+tr:last-child td{border-bottom:0}
+td.job{font:600 12px var(--mono);color:var(--accent);white-space:nowrap}
+a{color:var(--accent);text-decoration:none}
+a:hover,a:focus-visible{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.pill{display:inline-block;font:600 11px/1 var(--mono);padding:5px 8px;border-radius:999px;border:1px solid;white-space:nowrap}
+.p-good{color:var(--good);border-color:rgba(52,211,153,.4)}
+.p-warn{color:var(--warn);border-color:rgba(251,191,36,.4)}
+.p-bad{color:var(--bad);border-color:rgba(251,113,133,.4)}
+.p-mute{color:var(--muted);border-color:var(--line-strong)}
+.foot{color:var(--muted);font-size:13px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Charlie's AI OS · 9 October 2026</div>
+    <h1>The Chief's Desk and the council</h1>
+    <p class="lede">You are the Chief. The router (the head) loads with every message. The elders advise from their own brains, every real choice lands on your Desk, and the skills and routines (the hands) do the work. The coloured rings show what's live and what still needs building.</p>
+  </header>
+
+  <section class="diagram" aria-label="Diagram of the AI OS">
+    <svg viewBox="0 0 1100 870" role="img" aria-labelledby="dt">
+      <title id="dt">Chief's Desk in the centre, six elders around it, the router above and skills below, with the pages each one uses</title>
+      <defs>
+        <radialGradient id="desk" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#3a2f12"/><stop offset="1" stop-color="#151107"/></radialGradient>
+      </defs>
+      <!-- council ring -->
+      <ellipse cx="550" cy="430" rx="300" ry="205" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="1.5" stroke-dasharray="2 6"/>
+      <!-- spokes -->
+      <g stroke-width="2" fill="none">
+        <line x1="550" y1="110" x2="550" y2="335" stroke="#38bdf8"/>
+        <line x1="550" y1="525" x2="550" y2="760" stroke="#38bdf8"/>
+        <line x1="470" y1="380" x2="380" y2="280" stroke="#34d399"/>
+        <line x1="630" y1="380" x2="720" y2="280" stroke="#34d399"/>
+        <line x1="455" y1="430" x2="306" y2="430" stroke="#fbbf24" stroke-dasharray="6 5"/>
+        <line x1="645" y1="430" x2="794" y2="430" stroke="#8b94a8" stroke-dasharray="6 5"/>
+        <line x1="470" y1="480" x2="380" y2="580" stroke="#8b94a8" stroke-dasharray="2 5"/>
+        <line x1="630" y1="480" x2="720" y2="580" stroke="#8b94a8" stroke-dasharray="2 5"/>
+      </g>
+
+      <!-- head -->
+      <rect x="320" y="30" width="460" height="80" rx="14" fill="#0e1830" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="550" y="60" text-anchor="middle" class="t-mono" font-size="11" fill="#38bdf8" letter-spacing="2">HEAD</text>
+      <text x="550" y="84" text-anchor="middle" class="t-display" font-size="19">The router: AGENTS.md</text>
+      <text x="550" y="102" text-anchor="middle" class="muted" font-size="12">loads every message · who you are, the rules, where things live</text>
+
+      <!-- desk -->
+      <circle cx="550" cy="430" r="96" fill="url(#desk)" stroke="#f5c76b" stroke-width="3"/>
+      <text x="550" y="404" text-anchor="middle" class="t-mono" font-size="11" fill="#f5c76b" letter-spacing="2">THE CHIEF</text>
+      <text x="550" y="432" text-anchor="middle" class="t-display" font-size="22">Chief's Desk</text>
+      <text x="550" y="454" text-anchor="middle" class="muted" font-size="12">you decide here</text>
+      <text x="550" y="472" text-anchor="middle" class="muted" font-size="12">nothing is asked in chat</text>
+
+      <!-- elders -->
+      <g>
+        <circle cx="330" cy="250" r="60" fill="#0b1a16" stroke="#34d399" stroke-width="2.5"/>
+        <text x="330" y="246" text-anchor="middle" class="t-display" font-size="16">Architect</text>
+        <text x="330" y="265" text-anchor="middle" class="muted" font-size="11">was ENATE · Nate</text>
+        <text x="330" y="282" text-anchor="middle" font-size="10" fill="#34d399" class="t-mono">LIVE</text>
+
+        <circle cx="770" cy="250" r="60" fill="#0b1a16" stroke="#34d399" stroke-width="2.5"/>
+        <text x="770" y="246" text-anchor="middle" class="t-display" font-size="15">Quartermaster</text>
+        <text x="770" y="265" text-anchor="middle" class="muted" font-size="11">tools · was Hands</text>
+        <text x="770" y="282" text-anchor="middle" font-size="10" fill="#34d399" class="t-mono">LIVE</text>
+
+        <circle cx="250" cy="430" r="56" fill="#1d1708" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="7 4"/>
+        <text x="250" y="426" text-anchor="middle" class="t-display" font-size="16">Guardian</text>
+        <text x="250" y="445" text-anchor="middle" class="muted" font-size="11">true · safe</text>
+        <text x="250" y="462" text-anchor="middle" font-size="10" fill="#fbbf24" class="t-mono">PART-BUILT</text>
+
+        <circle cx="850" cy="430" r="56" fill="#0d1120" stroke="#8b94a8" stroke-width="2" stroke-dasharray="7 4"/>
+        <text x="850" y="426" text-anchor="middle" class="t-display" font-size="16">Maker</text>
+        <text x="850" y="445" text-anchor="middle" class="muted" font-size="11">Boris Cherny</text>
+        <text x="850" y="462" text-anchor="middle" font-size="10" fill="#8b94a8" class="t-mono">PLANNED</text>
+
+        <circle cx="330" cy="610" r="56" fill="#0d1120" stroke="#8b94a8" stroke-width="2" stroke-dasharray="2 4" opacity=".8"/>
+        <text x="330" y="606" text-anchor="middle" class="t-display" font-size="16">Teacher</text>
+        <text x="330" y="625" text-anchor="middle" class="muted" font-size="11">Karpathy</text>
+        <text x="330" y="642" text-anchor="middle" font-size="10" fill="#8b94a8" class="t-mono">PARKED</text>
+
+        <circle cx="770" cy="610" r="56" fill="#0d1120" stroke="#8b94a8" stroke-width="2" stroke-dasharray="2 4" opacity=".8"/>
+        <text x="770" y="606" text-anchor="middle" class="t-display" font-size="16">Builder</text>
+        <text x="770" y="625" text-anchor="middle" class="muted" font-size="11">Nick Saraev</text>
+        <text x="770" y="642" text-anchor="middle" font-size="10" fill="#8b94a8" class="t-mono">PARKED</text>
+      </g>
+
+      <!-- page chips: left column -->
+      <g font-size="12">
+        <g stroke="rgba(56,189,248,.35)" stroke-width="1"><line x1="180" y1="213" x2="276" y2="232"/><line x1="180" y1="247" x2="270" y2="250"/><line x1="180" y1="281" x2="276" y2="268"/></g>
+        <rect x="20" y="200" width="160" height="26" rx="13" fill="#0e1830" stroke="rgba(56,189,248,.5)"/><text x="100" y="217" text-anchor="middle">Architect map</text>
+        <rect x="20" y="234" width="160" height="26" rx="13" fill="#0e1830" stroke="rgba(56,189,248,.5)"/><text x="100" y="251" text-anchor="middle">Nate-first map</text>
+        <rect x="20" y="268" width="160" height="26" rx="13" fill="#0e1830" stroke="rgba(56,189,248,.5)"/><text x="100" y="285" text-anchor="middle">Kit Compare</text>
+
+        <g stroke="rgba(251,191,36,.35)" stroke-width="1"><line x1="180" y1="413" x2="196" y2="420"/><line x1="180" y1="447" x2="196" y2="440"/></g>
+        <rect x="20" y="400" width="160" height="26" rx="13" fill="#1d1708" stroke="rgba(251,191,36,.5)"/><text x="100" y="417" text-anchor="middle">Weekly audit reports</text>
+        <rect x="20" y="434" width="160" height="26" rx="13" fill="#1d1708" stroke="rgba(251,191,36,.5)"/><text x="100" y="451" text-anchor="middle">Fault drill (23 faults)</text>
+
+        <g stroke="rgba(139,148,168,.35)" stroke-width="1"><line x1="180" y1="593" x2="276" y2="600"/><line x1="180" y1="627" x2="274" y2="618"/><line x1="180" y1="661" x2="282" y2="636"/></g>
+        <rect x="20" y="580" width="160" height="26" rx="13" fill="#0e1830" stroke="rgba(56,189,248,.5)"/><text x="100" y="597" text-anchor="middle">Lesson slides</text>
+        <rect x="20" y="614" width="160" height="26" rx="13" fill="#0e1830" stroke="rgba(56,189,248,.5)"/><text x="100" y="631" text-anchor="middle">OS Guide</text>
+        <rect x="20" y="648" width="160" height="26" rx="13" fill="#0d1120" stroke="rgba(139,148,168,.4)"/><text x="100" y="665" text-anchor="middle" class="muted">Flashcards (parked)</text>
+      </g>
+
+      <!-- page chips: right column -->
+      <g font-size="12">
+        <line x1="920" y1="249" x2="830" y2="250" stroke="rgba(56,189,248,.35)"/>
+        <rect x="920" y="236" width="160" height="26" rx="13" fill="#0e1830" stroke="rgba(56,189,248,.5)"/><text x="1000" y="253" text-anchor="middle">Quartermaster page</text>
+        <line x1="920" y1="429" x2="906" y2="430" stroke="rgba(139,148,168,.35)"/>
+        <rect x="920" y="416" width="160" height="26" rx="13" fill="#0d1120" stroke="rgba(139,148,168,.4)"/><text x="1000" y="433" text-anchor="middle" class="muted">no page yet</text>
+        <line x1="920" y1="609" x2="826" y2="610" stroke="rgba(139,148,168,.35)"/>
+        <rect x="920" y="596" width="160" height="26" rx="13" fill="#0d1120" stroke="rgba(139,148,168,.4)"/><text x="1000" y="613" text-anchor="middle" class="muted">Nick's brain (parked)</text>
+      </g>
+
+      <!-- desk chips -->
+      <g font-size="12">
+        <rect x="470" y="548" width="160" height="26" rx="13" fill="#1d1708" stroke="rgba(245,199,107,.6)"/><text x="550" y="565" text-anchor="middle">Chief's Desk page</text>
+        <rect x="470" y="582" width="160" height="26" rx="13" fill="#1d1708" stroke="rgba(245,199,107,.6)"/><text x="550" y="599" text-anchor="middle">Reading Room</text>
+        <rect x="470" y="616" width="160" height="26" rx="13" fill="#1d1708" stroke="rgba(245,199,107,.6)"/><text x="550" y="633" text-anchor="middle">Charlie's Brain</text>
+      </g>
+
+      <!-- hands -->
+      <rect x="270" y="760" width="560" height="84" rx="14" fill="#0e1830" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="550" y="789" text-anchor="middle" class="t-mono" font-size="11" fill="#38bdf8" letter-spacing="2">HANDS</text>
+      <text x="550" y="813" text-anchor="middle" class="t-display" font-size="18">13 skills · 4 helper agents · scripts</text>
+      <text x="550" y="833" text-anchor="middle" class="muted" font-size="12">decide · audit · youtube-ingest · hands-ingest · try-tool · teach · grill-me …</text>
+
+      <!-- cadence + channel -->
+      <g font-size="12">
+        <text x="100" y="775" text-anchor="middle" class="t-mono muted" font-size="10" letter-spacing="1.5">RUNS BY ITSELF</text>
+        <rect x="20" y="784" width="160" height="26" rx="13" fill="#0b1a16" stroke="rgba(52,211,153,.5)"/><text x="100" y="801" text-anchor="middle">Fri 08:59 audit</text>
+        <rect x="20" y="818" width="160" height="26" rx="13" fill="#0b1a16" stroke="rgba(52,211,153,.5)"/><text x="100" y="835" text-anchor="middle">Sat 08:47 tools update</text>
+        <line x1="180" y1="814" x2="270" y2="802" stroke="rgba(52,211,153,.35)"/>
+
+        <text x="1000" y="775" text-anchor="middle" class="t-mono muted" font-size="10" letter-spacing="1.5">YOUTUBE CHANNEL</text>
+        <rect x="920" y="784" width="160" height="26" rx="13" fill="#1d1708" stroke="rgba(251,191,36,.5)"/><text x="1000" y="801" text-anchor="middle">Journey video drafts</text>
+        <rect x="920" y="818" width="160" height="26" rx="13" fill="#1d1708" stroke="rgba(251,191,36,.5)"/><text x="1000" y="835" text-anchor="middle">Voice Gym</text>
+        <line x1="920" y1="814" x2="830" y2="802" stroke="rgba(251,191,36,.35)"/>
+      </g>
+    </svg>
+    <div class="legend">
+      <span><i class="sw" style="border-color:var(--good)"></i>live and working</span>
+      <span><i class="sw" style="border-color:var(--warn);border-top-style:dashed"></i>part-built or needs your input</span>
+      <span><i class="sw" style="border-color:var(--muted);border-top-style:dashed"></i>planned</span>
+      <span><i class="sw" style="border-color:var(--muted);border-top-style:dotted"></i>parked by choice</span>
+      <span><i class="sw" style="border-color:var(--gold)"></i>your pages (the Desk)</span>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="eyebrow">Health · audit of 9 Oct</div>
+      <div class="total">64<small> / 100 · working, with gaps (was 49)</small></div>
+      <div class="score"><span>Context</span><span class="bar"><i style="width:84%;background:var(--good)"></i></span><span class="num">21/25</span></div>
+      <div class="score"><span>Cadence</span><span class="bar"><i style="width:68%;background:var(--warn)"></i></span><span class="num">17/25</span></div>
+      <div class="score"><span>Capabilities</span><span class="bar"><i style="width:60%;background:var(--warn)"></i></span><span class="num">15/25</span></div>
+      <div class="score"><span>Connections</span><span class="bar"><i style="width:44%;background:var(--bad)"></i></span><span class="num">11/25</span></div>
+      <p class="foot">Nate's Four Cs, scored by the audit skill. Connections is the weakest area, and it holds the whole score down: while it's under 15, the total can't go above 69.</p>
+    </div>
+    <div class="card">
+      <div class="eyebrow">Needs work, most important first</div>
+      <ol class="work">
+        <li><b>Connections (11/25)</b><span class="why">No short how-to-read guides for Calendar, Gmail or Notion; connections.md still says "not checked"; Higgsfield and Canva aren't connected.</span></li>
+        <li><b>The council is 2 of 6</b><span class="why">Only the Architect and the Quartermaster are live. The Guardian exists as the audit, not as an elder; the Maker needs Boris Cherny research first.</span></li>
+        <li><b>Capabilities (15/25)</b><span class="why">The set-up kit (your 90-day priority) hasn't been used on a real person yet.</span></li>
+        <li><b>Cadence (17/25)</b><span class="why">The weekly runs have their first real test this Saturday and Friday; nothing stops two transcript jobs overlapping.</span></li>
+        <li><b>Untested routes</b><span class="why">Model comparisons not run yet; Codex not checked (waits for the Mac).</span></li>
+        <li><b>Old pages</b><span class="why">The lesson slides and the two oldest lessons still use old names; the flashcard routine still runs daily although flashcards are parked.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section style="display:grid;gap:14px">
+    <h2>Your pages, by what you use them for</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Job</th><th>Page</th><th>What you do there</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td class="job">Decide</td><td><a href="https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx">Chief's Desk</a></td><td>Answer every question the OS has for you</td><td><span class="pill p-good">1 card open</span></td></tr>
+          <tr><td class="job">Read</td><td><a href="https://claude.ai/artifact/E5Skrh9G7ey8DpAUDGXbds">Reading Room</a></td><td>Plans, audits and the to-do list, with an "in short" box</td><td><span class="pill p-good">current</span></td></tr>
+          <tr><td class="job">See it all</td><td><a href="https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf">Charlie's Brain</a></td><td>The whole OS and Nate's brain as one map</td><td><span class="pill p-good">current</span></td></tr>
+          <tr><td class="job">Advise</td><td><a href="https://claude.ai/artifact/7zEayuFD7i4FNrMqzoM7KJ">Architect map</a></td><td>Nate's 44 concepts and 44 rules, each with its video</td><td><span class="pill p-good">current</span></td></tr>
+          <tr><td class="job">Advise</td><td><a href="https://claude.ai/artifact/QVni63FtP7cG1z9UrajfCL">Quartermaster</a></td><td>Best tools to use now, ranked; mark keep, later or drop</td><td><span class="pill p-warn">marketplace layer in progress</span></td></tr>
+          <tr><td class="job">Compare</td><td><a href="https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky">Nate-first map</a> · <a href="https://claude.ai/artifact/62wSZBDKYTLCAq6yfcF1qR">Kit Compare</a></td><td>Our OS against Nate's starter kit</td><td><span class="pill p-good">current</span></td></tr>
+          <tr><td class="job">Learn</td><td><a href="https://claude.ai/artifact/UMdY5JYymKneEhi9ZLhewa">OS Guide</a></td><td>Plain-English guide to what we built and why</td><td><span class="pill p-good">current</span></td></tr>
+          <tr><td class="job">Learn</td><td><a href="https://claude.ai/artifact/NC9J9KZkE5Wb1vDKgntoGq">Lesson slides</a></td><td>14 slides on the new findings</td><td><span class="pill p-warn">old names</span></td></tr>
+          <tr><td class="job">Channel</td><td><a href="https://claude.ai/artifact/83pyWDYaEvNmEx8oXP4dX2">Journey video drafts</a></td><td>Watch the styles, leave notes (you chose Mix)</td><td><span class="pill p-warn">improve Mix next</span></td></tr>
+          <tr><td class="job">Channel</td><td><a href="https://claude.ai/artifact/VftqKWwvitMR2RF2mvQT76">Voice Gym</a></td><td>Rewrite AI-sounding messages in your own voice</td><td><span class="pill p-warn">waiting on you</span></td></tr>
+          <tr><td class="job">Practise</td><td><a href="https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144">Flashcards</a></td><td>Review cards</td><td><span class="pill p-mute">parked</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="foot">Source: system/pages.md, the 9 Oct audit (audits/audit-2026-10-09-112239-a7c3.md) and the elder plan (brainstorms/2026-10-09-middle-plans.md). Rebuild by editing system/system-map/system-map.html.</p>
+  </section>
+</div>
