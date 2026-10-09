@@ -68,10 +68,23 @@ for e in tools.values():
                    else "rising" if e["mentions"] >= 2 and order.index(e["last"]) <= 1 else "steady")
     e["replaces"] = sorted(e["replaces"])
 ours = {p.parent.name for p in ROOT.glob(".claude/skills/*/SKILL.md")} | {p.parent.name for p in ROOT.glob("references/parked-skills/*/SKILL.md")}
-for e in tools.values(): e["ours"] = norm(e["name"]) in {norm(o) for o in ours}   # we already have a skill by this name
-ranked = sorted(tools.values(), key=lambda e: (e["status"] == "replaced", -e["score"], e["name"].lower()))
-for c in CATEGORIES:
-    for i, e in enumerate([e for e in ranked if e["category"] == c], 1): e["rank"] = i
+# Built into Claude already (Anthropic's own skills): nothing to install, so they leave the ranking too.
+BUILTIN = {"pptx", "pdf", "docx", "xlsx", "skill-creator"}
+for e in tools.values():
+    e["ours"] = norm(e["name"]) in {norm(o) for o in ours}   # we already have a skill by this name
+    e["have"] = e["ours"] or norm(e["name"]) in {norm(b) for b in BUILTIN}
+    e["shown"] = any(s["video"] for s in e["sightings"])     # False = skills.sh only, never shown in a video
+tried = {norm(t["name"]): t for t in (json.loads((HANDS / "tried.json").read_text()) if (HANDS / "tried.json").exists() else [])}
+for e in tools.values():                                  # Charlie's own trials (the try-tool skill)
+    t = tried.get(norm(e["name"]))
+    e["tried"] = t
+    if t and t["verdict"] == "keep": e["score"] = round(e["score"] + 5, 1)
+dropped = lambda e: bool(e["tried"]) and e["tried"]["verdict"] == "drop"
+ranked = sorted(tools.values(), key=lambda e: (e["status"] == "replaced", e["have"], dropped(e), -e["score"], e["name"].lower()))
+for c in CATEGORIES:                                      # what you already have gets no rank: each #1 is new to you
+    for i, e in enumerate([e for e in ranked if e["category"] == c and not e["have"]], 1): e["rank"] = i
+for e in ranked:
+    if e["have"]: e["rank"] = None
 
 import sys
 new_json = json.dumps(ranked, indent=1, ensure_ascii=False)

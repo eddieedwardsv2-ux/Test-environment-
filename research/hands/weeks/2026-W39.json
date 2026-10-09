@@ -25,7 +25,20 @@
    "video": "pxaMzr7al3I",
    "t": "0:01",
    "quote": "It's not a chatbot. It can't even write a sentence.",
-   "check": "Pricing not stated; waitlist said to be gone and also available via OpenRouter; not for high-stakes predictions (trading) per the video."
+   "check": "Pricing not stated; waitlist said to be gone and also available via OpenRouter; not for high-stakes predictions (trading) per the video.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Calls it worthwhile and wants it for sorting email and finding his own video clips.",
+    "quote": "I think it's great and it's worthwhile.",
+    "t": "2:31"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Sorting a pile of comments or emails if the channel ever gets one",
+    "agree": "disagree",
+    "why": "Charlie has no 500-email pile yet, so no real pain. Rule 39 (adopt tools only for real pain); Rule 42 (lowest rung first). Any API key goes in .env (Rule 26)."
+   }
   },
   {
    "name": "Jev",
@@ -40,7 +53,20 @@
    "video": "ZodAaTH-6_E",
    "t": "2:05",
    "quote": "Here's the thing about uh Jev, it now no longer has a waitlist.",
-   "check": "Mac app claim; pricing not stated."
+   "check": "Mac app claim; pricing not stated.",
+   "opinion": {
+    "stance": "would use",
+    "who": "",
+    "why": "Wants the talk-to-your-Mac demo for himself but says no download exists.",
+    "quote": "this is something I would love to have.",
+    "t": "2:36"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "A Mac-only app nobody has published, so nothing to adopt. Rule 39."
+   }
   },
   {
    "name": "Meta Muse",
@@ -55,7 +81,20 @@
    "video": "ZodAaTH-6_E",
    "t": "0:02",
    "quote": "People are banking money with Muse, the free AI agent from Facebook.",
-   "check": "Savings claims ($3,500 cheaper insurance etc.) are social-media anecdotes, unverified."
+   "check": "Savings claims ($3,500 cheaper insurance etc.) are social-media anecdotes, unverified.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew",
+    "why": "Likes the savings stories but says any agent could do them.",
+    "quote": "I think this is great. I don't think it's unique to Muse though.",
+    "t": "0:33"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Insurance, receipts and money owed are private finance, which never goes in this public repo. Rule 36 (read-only first) and Rule 39 (no pain, no tool)."
+   }
   },
   {
    "name": "Clueso",
@@ -72,7 +111,20 @@
    "video": "ZodAaTH-6_E",
    "t": "4:11",
    "quote": "this in my mind is like Screen Studio, but easier to use",
-   "check": "Pricing not stated; auto-caption spells it Cluso."
+   "check": "Pricing not stated; auto-caption spells it Cluso.",
+   "opinion": {
+    "stance": "would use",
+    "who": "",
+    "why": "Sees it as an easier Screen Studio for polished demo, training or SOP videos.",
+    "quote": "this in my mind is like Screen Studio, but easier to use",
+    "t": "4:11"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Polishing screen recordings of Claude Code builds for the channel",
+    "agree": "agree",
+    "why": "Fits the channel, but price is unknown. Rule 43 (measure on your own work first): try it on one real recording."
+   }
   },
   {
    "name": "NewsJack",
@@ -87,7 +139,20 @@
    "video": "ZodAaTH-6_E",
    "t": "5:13",
    "quote": "It's a free GitHub repo and these skills basically turn your agent into a PR team.",
-   "check": "Claimed 8-15k a month PR cost comparison not verified."
+   "check": "Claimed 8-15k a month PR cost comparison not verified.",
+   "opinion": {
+    "stance": "no opinion",
+    "who": "",
+    "why": "Calls it a cool skill suite, but nobody says they would use it.",
+    "quote": "",
+    "t": "5:13"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Pitching journalists is a business job, not an AI OS or channel-building job yet. Rule 39."
+   }
   },
   {
    "name": "ChatGPT Voice",
@@ -102,7 +167,20 @@
    "video": "ZodAaTH-6_E",
    "t": "7:46",
    "quote": "connector access, it's going to make it a hundred times more useful.",
-   "check": "Which plan gets connectors not stated."
+   "check": "Which plan gets connectors not stated.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Wants voice mode to read and reply to email while driving.",
+    "quote": "so looking forward to driving and then replying to email",
+    "t": "8:16"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Voice with email and calendar access is exactly the broad access Rule 36 says to start read-only; he also could not get it working. Rule 39."
+   }
   },
   {
    "name": "Sider Omni",
@@ -110,14 +188,27 @@
    "kind": "app",
    "category": "Other",
    "what": "AI sidebar that sits on top of almost any app so you can ask about what is on screen.",
-   "shown": "Showed a demo with Apple Mail; Andrew said he would not use it.",
+   "shown": "Showed a demo with Apple Mail; The co-host said he would not use it.",
    "price": "unknown",
    "for_charlie": 0,
    "replaces": [],
    "video": "ZodAaTH-6_E",
    "t": "9:50",
    "quote": "It adds it to just about any app you have.",
-   "check": "Pricing not stated."
+   "check": "Pricing not stated.",
+   "opinion": {
+    "stance": "wouldn't use",
+    "who": "",
+    "why": "Says it is a habit tool and not his habit, though fine for people who already do it.",
+    "quote": "this isn't a tool that I would necessarily find myself using",
+    "t": "10:20"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Claude Code already sits where Charlie works; a sidebar adds nothing. Rule 39."
+   }
   },
   {
    "name": "Camera Bench",
@@ -132,7 +223,20 @@
    "video": "ZodAaTH-6_E",
    "t": "10:50",
    "quote": "it's a free GitHub repo for AI to essentially watch your camera, right?",
-   "check": "Link list names the repo Glance Speedlab; URL taken from there."
+   "check": "Link list names the repo Glance Speedlab; URL taken from there.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "",
+    "why": "A cool technical feat, but he struggled to find a real use for it.",
+    "quote": "we were kind of struggling to come up with like an actual use case",
+    "t": "11:20"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "A demo with no use. Rule 39 (adopt tools only for real pain)."
+   }
   },
   {
    "name": "Claude Opus 5.5",
@@ -147,7 +251,20 @@
    "video": "ZodAaTH-6_E",
    "t": "13:55",
    "quote": "it just is the best feeling model we've we've had in a long time.",
-   "check": "Opinion only; no benchmarks or pricing given."
+   "check": "Opinion only; no benchmarks or pricing given.",
+   "opinion": {
+    "stance": "would use",
+    "who": "",
+    "why": "Says it is the best-feeling model in a long time, best for writing and visual design.",
+    "quote": "it just is the best feeling model we've we've had in a long time.",
+    "t": "13:55"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Scripts, titles and descriptions for the channel, and running the OS",
+    "agree": "agree",
+    "why": "Likely worth it, but it is a feeling, not a test. Rule 43 (same prompt, own work) and Rule 41 (prune after every new model); run the audit content check after switching."
+   }
   },
   {
    "name": "Systo Commerce",
@@ -162,7 +279,20 @@
    "video": "ZodAaTH-6_E",
    "t": "12:52",
    "quote": "you can walk into different stores",
-   "check": "Built with Claude Opus 5.5; demo only."
+   "check": "Built with Claude Opus 5.5; demo only.",
+   "opinion": {
+    "stance": "no opinion",
+    "who": "",
+    "why": "Calls it a cool demo, nothing about using it.",
+    "quote": "",
+    "t": "12:52"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "A demo mall, not a tool for Charlie. Rule 39."
+   }
   },
   {
    "name": "Needle",
@@ -177,7 +307,20 @@
    "video": "tsWOiibaaxA",
    "t": "0:02",
    "quote": "There's a free LLM that works like Jev, so it will make no mistakes.",
-   "check": "'No mistakes' is a marketing line; the guest says reliability depends on tightly scoped tools and confidence scores. Title says better than Jev, not shown."
+   "check": "'No mistakes' is a marketing line; the guest says reliability depends on tightly scoped tools and confidence scores. Title says better than Jev, not shown.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Tells software builders to put it in when they want a free LLM inside their own app.",
+    "quote": "yes, you should absolutely put Needle in if what you want is this LLM that's self-contained and free and part of your software",
+    "t": "6:09"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie is not shipping software with a model inside. The guest also says quality depends on how tools are scoped, so 'no mistakes' needs testing first (Rule 17)."
+   }
   },
   {
    "name": "GrokBot",
@@ -192,7 +335,20 @@
    "video": "WPUAZm5rnGc",
    "t": "8:41",
    "quote": "I would think of Grok Bot as the as the orchestrator agent.",
-   "check": "Name per auto-captions and description; $16,000 booked revenue is the guest's claim."
+   "check": "Name per auto-captions and description; $16,000 booked revenue is the guest's claim.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Uses it daily and loves how quick and easy it is.",
+    "quote": "I've been loving it. It's so easy, so quick",
+    "t": "11:13"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "He admits other agents can do the same, and Charlie already has Claude Code and Codex. Rule 39; Rule 43 before switching."
+   }
   },
   {
    "name": "ElevenLabs",
@@ -207,7 +363,20 @@
    "video": "WPUAZm5rnGc",
    "t": "6:08",
    "quote": "you go ahead and add 11 Labs",
-   "check": "Pricing not stated."
+   "check": "Pricing not stated.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Achit",
+    "why": "The guest cloned his own voice so callers hear someone like them.",
+    "quote": "They want somebody that talks like them and sounds like them when they get on the phone.",
+    "t": "6:39"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Phone sales is not Charlie's job. A cloned voice for videos is a later question, and Rule 37 says check before anything goes public."
+   }
   },
   {
    "name": "Twilio",
@@ -222,7 +391,20 @@
    "video": "WPUAZm5rnGc",
    "t": "7:09",
    "quote": "The telephone number from Twilio.",
-   "check": "Pricing not stated."
+   "check": "Pricing not stated.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Achit",
+    "why": "Says buying and registering the number was easy.",
+    "quote": "It was nothing.",
+    "t": "7:09"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Only needed for phone calls. Paid and UK number rules apply. Rule 39."
+   }
   },
   {
    "name": "Open Code Review",
@@ -239,7 +421,20 @@
    "video": "hlOk-EFUITQ",
    "t": "9:43",
    "quote": "Alibaba's code reviewer now leaves the terminal.",
-   "check": "Hosts say open-source versions let you use existing subscriptions instead of paid tools."
+   "check": "Hosts say open-source versions let you use existing subscriptions instead of paid tools.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Likes open versions that let his firm use its existing subscriptions instead of paid reviewers.",
+    "quote": "more and more of these open-source versions are coming out that just let us use our existing cloud subscriptions or tokens or whatever",
+    "t": "10:14"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Their firm ships code at scale; Charlie's checks are tools/audit.py and the audit skill. Rule 33 says a separate checker is wanted, and we have one."
+   }
   },
   {
    "name": "OpenSEO",
@@ -256,7 +451,20 @@
    "video": "hlOk-EFUITQ",
    "t": "2:33",
    "quote": "Semrush rival that you basically pay peanuts for",
-   "check": "Hosted price of 10 dollars a month is as spoken."
+   "check": "Hosted price of 10 dollars a month is as spoken.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "A paying customer who calls it a great tool and a wrapper he has no problem with.",
+    "quote": "I think it's a great tool.",
+    "t": "4:06"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Web SEO tool; Charlie has no website, and YouTube search is covered by vidIQ. Rule 39."
+   }
   },
   {
    "name": "Paperclip",
@@ -271,7 +479,20 @@
    "video": "hlOk-EFUITQ",
    "t": "5:37",
    "quote": "allows you to manage your agents like their employees",
-   "check": "Works with OpenClaw and Hermes; pitched at more advanced agents."
+   "check": "Works with OpenClaw and Hermes; pitched at more advanced agents.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew",
+    "why": "Thinks an agent manager is useful but is not sure this is the right one.",
+    "quote": "I think this is the kind of thing that's useful. I don't know if this is the right project for it",
+    "t": "6:07"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "One person with a few agents does not need an org chart. Rule 24 (sub-agents not overused) and Rule 39 (cap parallel sessions)."
+   }
   },
   {
    "name": "Anthropic Financial Services",
@@ -286,7 +507,20 @@
    "video": "hlOk-EFUITQ",
    "t": "7:26",
    "quote": "financial company sitting there and analyzing stocks for you.",
-   "check": "Finance output should not be trusted blindly."
+   "check": "Finance output should not be trusted blindly.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew",
+    "why": "Says most listeners will not need it, then admits a lawyer gets real value from similar skills.",
+    "quote": "most people who are listening are not going to need this",
+    "t": "7:40"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Finance and know-your-customer work is not Charlie's, and finance details stay out of this public repo. Rule 39."
+   }
   },
   {
    "name": "Claude Code agents.md support",
@@ -301,7 +535,20 @@
    "video": "hlOk-EFUITQ",
    "t": "12:19",
    "quote": "typically they're looking at an agents.md file that's in your project folder",
-   "check": "Skills are still not shared between Claude and Codex, per the hosts; check Claude Code docs for the exact behaviour."
+   "check": "Skills are still not shared between Claude and Codex, per the hosts; check Claude Code docs for the exact behaviour.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Calls the shared instruction file a small win that ends the claude.md versus agents.md mess.",
+    "quote": "the fact that they're going to use the same file that everyone else is using means that the mess just goes away.",
+    "t": "13:20"
+   },
+   "our_view": {
+    "need": "yes",
+    "for_what": "Keep AGENTS.md as the one instruction file for Claude Code and Codex",
+    "agree": "agree",
+    "why": "Already how this OS works: CLAUDE.md imports AGENTS.md. Rule 3 (one current source per fact). Check the Claude Code docs before dropping the import, as the hosts do not demo it."
+   }
   },
   {
    "name": "ECC",
@@ -316,7 +563,20 @@
    "video": "hlOk-EFUITQ",
    "t": "17:26",
    "quote": "You get all that experience baked into your cloud for free.",
-   "check": "Hosts call it a lot for a beginner; Agent Skills is easier to start."
+   "check": "Hosts call it a lot for a beginner; Agent Skills is easier to start.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Adam",
+    "why": "Great for power users, overwhelming for a new user.",
+    "quote": "If you're if you're a new user, it's a little overwhelming.",
+    "t": "21:33"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Borrow the remember-and-improve idea; install none of its 292 skills",
+    "agree": "agree",
+    "why": "Matches Rule 41 (smallest context) and Rule 34 (skills built from a real run). Rule 37: vet any plugin before installing, and ask on the Decision Desk."
+   }
   },
   {
    "name": "WeKnora",
@@ -331,7 +591,20 @@
    "video": "hlOk-EFUITQ",
    "t": "18:58",
    "quote": "Obsidian plus rag plus a graph database plus some extra integrations",
-   "check": "Auto-caption mishears the name as Nora."
+   "check": "Auto-caption mishears the name as Nora.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Likes that it links files and builds the structure for him; he never had the patience to do it by hand.",
+    "quote": "you could just point this at your computer and all your files and it will build those relationships automatically.",
+    "t": "18:58"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie's OS is organised by hand so he can find things without search (Rule 6) and raw sources stay untouched (Rule 12). Pointing it at all your files also breaks Rule 36 for a public repo."
+   }
   },
   {
    "name": "Agent Skills",
@@ -348,7 +621,20 @@
    "video": "hlOk-EFUITQ",
    "t": "22:03",
    "quote": "So maybe agent skills is easier if you're just getting into this",
-   "check": "Hosts frame it as easier, not better; ECC has far more skills."
+   "check": "Hosts frame it as easier, not better; ECC has far more skills.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Recommends it over ECC for someone just getting into this.",
+    "quote": "So maybe agent skills is easier if you're just getting into this",
+    "t": "22:03"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Read its 25 skills for ideas on spec, plan and review steps",
+    "agree": "agree",
+    "why": "Easier than ECC is fair. Rule 34 (one job, built from a real run) and Rule 37 (vet before install); install nothing without the Decision Desk."
+   }
   },
   {
    "name": "Knowledge Work Plugins",
@@ -363,7 +649,20 @@
    "video": "hlOk-EFUITQ",
    "t": "23:35",
    "quote": "This is for uh knowledge workers. It's a collection of skills like how to do finance, human resources, legal, marketing, operations.",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Thinks the plugins are a good way for a non-expert to level up in areas like marketing.",
+    "quote": "this is probably a great spot for for the everyman to level up",
+    "t": "23:35"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Read the marketing plugin to learn how a good plugin is built",
+    "agree": "agree",
+    "why": "Learning its structure is cheap and safe. Rule 37 (plugin vetting) before installing; check research/plugin-map.md first."
+   }
   },
   {
    "name": "Orca",
@@ -380,7 +679,20 @@
    "video": "hlOk-EFUITQ",
    "t": "25:07",
    "quote": "Run five coding agents at once. Keep the best.",
-   "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion."
+   "check": "77,000 stars claim as spoken; hosts say tools like this will replace traditional IDEs, an opinion.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Calls it awesome and a new kind of editor designed around agents, not code.",
+    "quote": "I would call this the new era of VS Code",
+    "t": "26:40"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Several agents at once is the opposite of one next step at a time. Rule 24 and Rule 39 (cap parallel sessions)."
+   }
   },
   {
    "name": "Octop",
@@ -395,7 +707,20 @@
    "video": "hlOk-EFUITQ",
    "t": "28:15",
    "quote": "This is their opensource version of Grockbot",
-   "check": "Integrations target apps popular in Asia, not the UK."
+   "check": "Integrations target apps popular in Asia, not the UK.",
+   "opinion": {
+    "stance": "wouldn't use",
+    "who": "Adam",
+    "why": "Aimed at chat apps popular in Asia, not the West.",
+    "quote": "right now this looks like it's targeted more for Asia",
+    "t": "29:15"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Telegram and QQ style apps; Charlie is in the UK and needs nothing like it. Rule 39."
+   }
   },
   {
    "name": "Claude Code Templates",
@@ -410,7 +735,25 @@
    "video": "hlOk-EFUITQ",
    "t": "29:46",
    "quote": "This is a collection of Claude Code add-ons.",
-   "check": "Counts are as spoken; check each add-on before installing."
+   "check": "Counts are as spoken; check each add-on before installing.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Says it is worth a bookmark as a browsable place to find skills and plugins.",
+    "quote": "this would be a a worthy of a bookmark",
+    "t": "30:48"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Browse for ideas, not for installing",
+    "agree": "agree",
+    "why": "Fine to browse. Being 'curated' is not vetting, so Rule 37 still applies before any install."
+   },
+   "vs": {
+    "tool": "ECC",
+    "verdict": "different job",
+    "gap": "A catalogue you pick single skills from, where ECC is one big pack; we don't know which of its skills are worth adding for a beginner."
+   }
   }
  ]
 }

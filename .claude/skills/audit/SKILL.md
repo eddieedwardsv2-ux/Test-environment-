@@ -107,6 +107,10 @@ The audit is read-only toward inspected systems: no repairs, file moves, install
 - **Parts the script can't see** (check them by hand each weekly run, receipts in `commands.md`):
   - Decision Desk (`decide` skill): list its `decisions` cards; flag any "answered" card not yet closed, and any card open over 7 days.
   - Every link in `system/pages.md` opens (Artifact `read` or `list`), and each page was rebuilt after its data last changed.
+  - Skills Charlie turned off on claude.ai (2026-10-09: built-in-browser, chrome-browser,
+    computer-use, import-memory, morning, docx, xlsx, pptx, pdf): scan the week's commits,
+    `decisions.md` and Desk cards for a job one of them would have done (a Word, Excel,
+    PowerPoint or PDF file; a browser task). Any hit: one Desk card to switch it back on.
   - The model: write the model this run used at the top of the report; if it differs from the last report, also run the content check (Rule 41).
 - **Content check** (four failure modes, stale facts, duplicates, backtrack after a miss): read `content-check.md` in this folder. Use it alone after a wrong answer or a model switch, or inside the weekly run.
 - Adapted from Nate Herk's AIS-OS kit (MIT, see `THIRD-PARTY-NOTICES.md`).

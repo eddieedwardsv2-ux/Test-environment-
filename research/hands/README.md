@@ -17,6 +17,7 @@ skills.sh leaderboard (most-installed agent skills; `skills_sh.py`). More later
 | `enate-links.json`, `nate-mentions.json` | Each tool's links to ENATE concepts; tools Nate himself uses (verbatim quotes) |
 | `improvement-plan.md` | Suggested improvements and skills (2026-10-09), chosen on the Decision Desk |
 | `voices/<show>.md` | What the presenters value and whether they'd use each tool, vs our view (pilot; `research/council-plan.md`) |
+| `tried.json` | Charlie's own trials (the `try-tool` skill): task, result, keep / drop verdict |
 | `site/` | `template.html` + built `hands.html` (`python3 tools/build_hands.py`) |
 
 **Why this is the efficient route:** the descriptions already name every tool

@@ -165,23 +165,23 @@ function match(t){
   if (!q) return true;
   return (t.name + " " + t.what + " " + t.category).toLowerCase().includes(q);
 }
-const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span><span class="price">${esc(t.price)}</span>${t.ours ? `<span class="st rising">you have one</span>` : ""}</div>`;
+const tags = t => `<div class="tags"><span class="cat" style="--c:${color(t.category)}">${esc(t.category)}</span><span class="st ${t.status}">${t.status}</span><span class="price">${esc(t.price)}</span>${t.have ? `<span class="st rising">✓ you have it</span>` : ""}${t.tried ? `<span class="st new">tried: ${esc(t.tried.verdict)}</span>` : ""}${t.shown === false ? `<span class="st steady">skills.sh only, not shown</span>` : ""}</div>`;
 
 function render(){
   const live = D.tools.filter(match);
   document.getElementById("stats").innerHTML =
     `<span><b>${D.tools.length}</b> tools</span><span><b>${D.weeks.length}</b> week${D.weeks.length === 1 ? "" : "s"}</span><span><b>${D.weeks.reduce((n, w) => n + w.videos.length, 0)}</b> videos</span><span>newest week <b>${esc(D.weeks[0]?.week || "–")}</b></span>`;
-  const picks = live.filter(t => t.status !== "replaced" && t.for_charlie >= 2).slice(0, 6);
+  const picks = live.filter(t => t.status !== "replaced" && !t.have && t.for_charlie >= 2).slice(0, 6);
   document.getElementById("picks").innerHTML = picks.length ? picks.map(t =>
     `<button class="card" data-id="${esc(t.id)}"><span class="name">${esc(t.name)}</span><p>${esc(t.what)}</p>${tags(t)}</button>`).join("")
     : `<div class="empty">No tools match. Clear the search to see them all.</div>`;
   document.getElementById("cats").innerHTML = D.categories.map(c => {
     const list = live.filter(t => t.category === c);
     if (!list.length) return "";
-    const top = list[0];
+    const top = list.find(t => !t.have) || list[0];
     return `<details class="row" style="--c:${color(c)}"><summary><span class="cname">${esc(c)}</span>
       <span class="best"><b>${esc(top.name)}</b><span>${esc(top.what)}</span></span><span class="more">${list.length > 1 ? "+" + (list.length - 1) + " more" : "only one"}</span></summary>
-      <ol class="rank">${list.map((t, i) => `<li data-id="${esc(t.id)}"><span class="n">${i + 1}</span><span class="${t.status === "replaced" ? "gone" : ""}">${esc(t.name)}${t.replaced_by ? ` <small>replaced by ${esc(t.replaced_by)}</small>` : ""}</span><span class="st ${t.status}">${t.status}</span></li>`).join("")}</ol></details>`;
+      <ol class="rank">${list.map((t, i) => `<li data-id="${esc(t.id)}"><span class="n">${t.have ? "✓" : t.rank ?? i + 1}</span><span class="${t.status === "replaced" ? "gone" : ""}">${esc(t.name)}${t.replaced_by ? ` <small>replaced by ${esc(t.replaced_by)}</small>` : ""}</span><span class="st ${t.status}">${t.status}</span></li>`).join("")}</ol></details>`;
   }).join("") || `<div class="empty">No tools match.</div>`;
   document.getElementById("weektabs").innerHTML = D.weeks.map(w =>
     `<button class="chip" data-wk="${esc(w.week)}" aria-pressed="${w.week === wk}">${esc(w.week)}</button>`).join("");
@@ -203,7 +203,7 @@ function open(id){
   }).join("");
   document.getElementById("sheetbody").innerHTML = `<button class="close" id="x">Close</button><h3>${esc(t.name)}</h3>${tags(t)}
     <p>${esc(t.what)}</p>
-    <p class="k">Rank ${t.rank} in ${esc(t.category)} · score ${t.score} · seen in ${t.mentions} source${t.mentions > 1 ? "s" : ""}${t.installs ? " · " + t.installs.toLocaleString("en-GB") + " installs on skills.sh" : ""}</p>
+    <p class="k">${t.have ? "You already have this" : "Rank " + t.rank} in ${esc(t.category)} · score ${t.score} · seen in ${t.mentions} source${t.mentions > 1 ? "s" : ""}${t.installs ? " · " + t.installs.toLocaleString("en-GB") + " installs on skills.sh" : ""}</p>${t.tried ? `<p><b>Charlie tried it (${esc(t.tried.date)}):</b> ${esc(t.tried.task)}. ${esc(t.tried.result)}. Verdict: <b>${esc(t.tried.verdict)}</b>${t.tried.why ? " (" + esc(t.tried.why) + ")" : ""}.</p>` : ""}
     ${t.replaced_by ? `<p><b>Replaced by ${esc(t.replaced_by)}.</b></p>` : ""}
     ${t.replaces.length ? `<p><span class="k">Replaces</span><br>${esc(t.replaces.join(", "))}</p>` : ""}
     ${t.check ? `<p><span class="k">Check before trusting</span><br>${esc(t.check)}</p>` : ""}

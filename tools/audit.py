@@ -149,7 +149,7 @@ for rel in files:
 # 5. Poisoning: every quote in a requirements doc is verbatim at its timestamp.
 sys.path.insert(0, str(ROOT / "tools"))
 from check_quotes import check, check_linked
-for doc in [ROOT / "system/standard-ai-os-v1.md"]:
+for doc in [ROOT / "system/standard-ai-os-v1.md", *sorted(ROOT.glob("research/hands/voices/**/*.md"))]:   # + the presenters' voice files
     if doc.exists():
         for f in check(doc)[1]:
             err(f)

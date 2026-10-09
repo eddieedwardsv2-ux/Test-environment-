@@ -1,0 +1,13 @@
+[
+ {
+  "name": "hyperframes",
+  "date": "2026-10-09",
+  "task": "10-second title card for Charlie's YouTube channel (\"Charlie's AI OS\")",
+  "result": "Worked: its checker caught a layout overlap, fixed in one edit; rendered a 1920x1080, 30fps, 10.0s MP4 (328 KB) at draft quality",
+  "time": "about 5 minutes, render 14 seconds",
+  "cost": "free (open source, renders locally)",
+  "adds": "21 skills, 19 MB, about 6,000 characters of skill descriptions every message if kept in the repo; its CLI also put 10 skills in ~/.claude/skills on the cloud machine (wiped when the session ends)",
+  "verdict": "pending",
+  "why": "Charlie decides on the Decision Desk (card: hyperframes-verdict)"
+ }
+]

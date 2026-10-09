@@ -48,6 +48,9 @@ missing and close the gap in knowing how to use it.
 "quote": "verbatim line from the transcript that supports 'what' or 'shown', or ''",
 "check": "claims to verify (money, 'free', benchmark numbers), or ''",
 "vs": {"tool": "current #1 in its category in research/hands/tools.json", "verdict": "newer wins | leader stays | different job", "gap": "what we still don't know about using it, one line"} or null}]}`
+**skills.sh-only tools:** before naming a new tool, check `tools.json` for one
+with `"shown": false` and the same name or link; reuse its exact name and
+url so the merge joins them and the grey "not shown" tag drops off.
 Rules: titles are clickbait ("make money"), so judge on what is shown.
 Sponsors and the show's own links are not tools. Quotes must be verbatim.
 One entry per tool per video; the merge step joins repeats.

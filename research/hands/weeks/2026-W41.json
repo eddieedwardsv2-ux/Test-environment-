@@ -357,7 +357,20 @@
    "video": "uWnQLASl95U",
    "t": "1:48",
    "quote": "Based on the best performing email campaigns, I want you to use Omnisend MCP to create an email campaign",
-   "check": "Sponsor link with 30% off; pricing and free tier not stated. Image upload through Claude failed in demo."
+   "check": "Sponsor link with 30% off; pricing and free tier not stated. Image upload through Claude failed in demo.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew (host)",
+    "why": "Would drive campaigns and segments from his agent, but keeps multi-step automations inside Omnisend.",
+    "quote": "I know that it's faster to be inside on this end, but I still think I would use my agent.",
+    "t": "15:21"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Needs an Omnisend store and a mailing list; Charlie has neither. Sponsor link in the video. Rule 39: adopt a tool only for real pain."
+   }
   },
   {
    "name": "VoiceStudio",
@@ -374,7 +387,20 @@
    "video": "GZtLsvklYBI",
    "t": "0:27",
    "quote": "There is no credit counter, so you can redo a line 50 times and it's going to cost you nothing.",
-   "check": "Default model is non-commercial only; Pro is $99 a month."
+   "check": "Default model is non-commercial only; Pro is $99 a month.",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Free, no credit meter, so retries cost nothing; a little nervous about copying voices.",
+    "quote": "There is no credit counter, so you can redo a line 50 times and it's going to cost you nothing. That's why I'm so excited about this.",
+    "t": "1:32"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Free voiceover for channel videos, if Charlie ever wants a voice other than his own",
+    "agree": "disagree",
+    "why": "His excitement is about saving credits Charlie does not pay for. Rule 39 (real pain only); Rule 37: no cloning anyone's voice, and this repo is public."
+   }
   },
   {
    "name": "Odysseus",
@@ -391,7 +417,20 @@
    "video": "GZtLsvklYBI",
    "t": "2:42",
    "quote": "you're going to get chat, you're going to get deep research, you're going to get memory",
-   "check": "Host says it is not as good as ChatGPT."
+   "check": "Host says it is not as good as ChatGPT.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Private and free, but he says plainly it is no ChatGPT replacement.",
+    "quote": "I'm also going to tell you it's really not as good as Chat GPT.",
+    "t": "5:07"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie already has Claude Code and Codex; a weaker local chat adds a tool without removing a pain. Rule 42: lowest rung that works."
+   }
   },
   {
    "name": "FreeLLMAPI",
@@ -408,7 +447,20 @@
    "video": "GZtLsvklYBI",
    "t": "5:51",
    "quote": "string together all these freebies",
-   "check": "Does not include Claude or frontier models; optional $19 a year add-on. Host frames it as replacing Claude Code for some people."
+   "check": "Does not include Claude or frontier models; optional $19 a year add-on. Host frames it as replacing Claude Code for some people.",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Easiest install on the list; he says it was one of the first things he did when limits bit.",
+    "quote": "this is the easiest install probably on the list",
+    "t": "8:09"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "A fallback if Claude Code usage limits stop a session",
+    "agree": "disagree",
+    "why": "He is a heavy user who hits caps; Charlie may not. It sends code to free third-party providers and excludes Claude, so Rule 43 (test on his own work) and Rule 26 (keys stay in .env) come first."
+   }
   },
   {
    "name": "Vane",
@@ -425,7 +477,20 @@
    "video": "GZtLsvklYBI",
    "t": "9:27",
    "quote": "You type a question. It searches the web. It writes the answer. It gives you numbered sources.",
-   "check": "Host says it is not as strong as Perplexity; needs a model (Ollama or free Gemini key)."
+   "check": "Host says it is not as strong as Perplexity; needs a model (Ollama or free Gemini key).",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Free, cited answers, but he doubts it matches Perplexity.",
+    "quote": "I don't think it's nearly as strong as Perplexity for many people.",
+    "t": "11:14"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Claude Code already searches the web with sources; a self-hosted search app needs a model and setup. Rule 42."
+   }
   },
   {
    "name": "InvokeAI",
@@ -442,7 +507,20 @@
    "video": "GZtLsvklYBI",
    "t": "11:51",
    "quote": "It's the AI image studio that you can run yourself.",
-   "check": "Needs a strong GPU or recent Mac."
+   "check": "Needs a strong GPU or recent Mac.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Calls it phenomenal but warns it needs a gaming graphics card or a recent Mac.",
+    "quote": "This thing is phenomenal.",
+    "t": "13:17"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Strong hardware needed and no image pain today. Thumbnails can start with the simplest route first (Rule 42)."
+   }
   },
   {
    "name": "ACE-Step",
@@ -459,7 +537,20 @@
    "video": "GZtLsvklYBI",
    "t": "13:57",
    "quote": "unlimited songs hosted by you for free.",
-   "check": "Quality below Suno per host."
+   "check": "Quality below Suno per host.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Free and unlimited, but he tried it and was underwhelmed against Suno.",
+    "quote": "I don't think it's anything to write home about.",
+    "t": "16:18"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Free background music for channel videos",
+    "agree": "agree",
+    "why": "His own test was weak, so try the hosted version on one real video before any install (Rule 43)."
+   }
   },
   {
    "name": "OpenShorts",
@@ -476,7 +567,25 @@
    "video": "GZtLsvklYBI",
    "t": "19:30",
    "quote": "This is a free clip maker that you can host yourself or you can go to their website and use for free.",
-   "check": "Hosted free tier is 20 minutes a month with watermark; self-hosting slow without GPU."
+   "check": "Hosted free tier is 20 minutes a month with watermark; self-hosting slow without GPU.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Free hosted clip maker, but his test clip was badly framed and needed manual fixing.",
+    "quote": "I have to go into edit framing and then I go and I reframe it.",
+    "t": "21:54"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Cutting Shorts from Charlie's own videos once the channel has long videos",
+    "agree": "agree",
+    "why": "Try the free hosted tier (20 minutes a month, watermark) on one real video first; do not self-host. Rules 42 and 43."
+   },
+   "vs": {
+    "tool": "hyperframes",
+    "verdict": "different job",
+    "gap": "Cuts long videos into vertical clips, where HyperFrames makes new motion graphics; untested until Charlie has a long video to cut."
+   }
   },
   {
    "name": "Dyad",
@@ -493,7 +602,20 @@
    "video": "GZtLsvklYBI",
    "t": "23:51",
    "quote": "You just describe what you want in plain English and you get it.",
-   "check": "Model cost depends on what you plug in; free Gemini key possible."
+   "check": "Model cost depends on what you plug in; free Gemini key possible.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Describes it, then doubts it will last because Claude Code does the same job.",
+    "quote": "maybe even this is uh is a tool whose days are numbered because we're seeing more and more that claude code can do this stuff on its own.",
+    "t": "24:59"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie already builds in Claude Code, so a second app builder is a duplicate. Rule 42; reuse before building (capability map)."
+   }
   },
   {
    "name": "OpenManus",
@@ -510,7 +632,20 @@
    "video": "GZtLsvklYBI",
    "t": "26:15",
    "quote": "You type what you want, the goal in English, and it plans the steps itself.",
-   "check": "Needs a paid API key or limited free tier."
+   "check": "Needs a paid API key or limited free tier.",
+   "opinion": {
+    "stance": "no opinion",
+    "who": "host",
+    "why": "Describes it and flags the paid model cost; never says he would use it.",
+    "quote": "",
+    "t": "28:33"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Needs a paid API key, and Claude Code plus Codex already plan and act on goals. Rule 39."
+   }
   },
   {
    "name": "Upscayl",
@@ -527,7 +662,20 @@
    "video": "GZtLsvklYBI",
    "t": "29:06",
    "quote": "It runs on your computer so your photos never leave",
-   "check": "Needs a Vulkan-capable GPU."
+   "check": "Needs a Vulkan-capable GPU.",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Recommends it for old, low-res photo folders; likes that photos stay on the computer.",
+    "quote": "this is the tool for you.",
+    "t": "31:09"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "His case is a folder of old photos; Charlie has none to rescue. Rule 39."
+   }
   },
   {
    "name": "ECC",
@@ -542,7 +690,20 @@
    "video": "BcNAQynKUk4",
    "t": "0:33",
    "quote": "we're going to give it a task and build a product. So, it's going to use ECC skills",
-   "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials."
+   "check": "Star count (271k) and exit claims are the guest's; X DM step needs private context and credentials.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Affan (guest, ECC's creator)",
+    "why": "Runs it himself and now mostly lets it run unwatched.",
+    "quote": "most of the time I am very hands-off now um with the way I code",
+    "t": "5:38"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Borrow its plan and test-first skills for the OS, not the outreach",
+    "agree": "disagree",
+    "why": "He is hands-off and had it DM real people from his accounts; Rule 36 says drafts first with a human approving outward actions, Rule 33 a separate checker, Rule 37 check before anything goes public."
+   }
   }
  ]
 }

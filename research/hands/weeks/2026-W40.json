@@ -22,7 +22,20 @@
    "video": "CQhWqUOouYM",
    "t": "0:01",
    "quote": "your agents get an org chart to work together",
-   "check": "95,000+ stars claimed; not tested."
+   "check": "95,000+ stars claimed; not tested.",
+   "opinion": {
+    "stance": "no opinion",
+    "who": "host",
+    "why": "Demoed the creator's agent-to-agent task hand-off; no verdict of his own.",
+    "quote": "",
+    "t": ""
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Later, if Charlie runs several Claude Code agents at once",
+    "agree": "n/a",
+    "why": "Not needed yet. Rule 24 says sub-agents only for bulky output, and Rule 42 says start at the lowest rung."
+   }
   },
   {
    "name": "Hindsight",
@@ -37,7 +50,20 @@
    "video": "CQhWqUOouYM",
    "t": "4:03",
    "quote": "remembers you across your sessions",
-   "check": "Star count may be inflated; unverified."
+   "check": "Star count may be inflated; unverified.",
+   "opinion": {
+    "stance": "would use",
+    "who": "co-host",
+    "why": "Prefers a memory tool backed by a real company, so it keeps up with new models.",
+    "quote": "this is actually brought to you like by a real business.",
+    "t": "4:34"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Our memory is plain files in this repo (Rule 3, one current source per fact), and cloud memory is wiped each session anyway."
+   }
   },
   {
    "name": "VoiceStudio",
@@ -54,7 +80,20 @@
    "video": "CQhWqUOouYM",
    "t": "5:35",
    "quote": "This is for people who want to clone their voices, but not pay a service like 11 Labs to host it.",
-   "check": "Voice quality not demonstrated."
+   "check": "Voice quality not demonstrated.",
+   "opinion": {
+    "stance": "would use",
+    "who": "co-host",
+    "why": "Likes free local voices so he can try many before paying for a hosted one.",
+    "quote": "what I appreciate about these local models is is you get to explore without the concern",
+    "t": "6:37"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "A free narration voice for channel videos, using only Charlie's own voice",
+    "agree": "agree",
+    "why": "Free and local beats a paid host (Rule 39), but test on one real video first (Rule 43) and never clone anyone else's voice without consent."
+   }
   },
   {
    "name": "AI Engineering From Scratch",
@@ -69,7 +108,20 @@
    "video": "CQhWqUOouYM",
    "t": "8:08",
    "quote": "This is a free course",
-   "check": "Hacker News reaction was negative."
+   "check": "Hacker News reaction was negative.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Host does not trust an AI-made course yet; co-host likes the step-by-step structure.",
+    "quote": "a vibe generated course to be great yet.",
+    "t": "9:38"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie is learning through the teach skill on his own projects, not an engineering course (Rule 39, real pain only)."
+   }
   },
   {
    "name": "Anthropic Financial Services",
@@ -84,7 +136,20 @@
    "video": "CQhWqUOouYM",
    "t": "9:38",
    "quote": "I think it's just 10 skill files",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Looks decent, but co-host says it is really for finance professionals.",
+    "quote": "Okay, pretty decent. I I kind of like it.",
+    "t": "11:42"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Finance work is not Charlie's pain (Rule 39), and finance details stay out of this public repo."
+   }
   },
   {
    "name": "Next.js",
@@ -99,7 +164,20 @@
    "video": "CQhWqUOouYM",
    "t": "11:42",
    "quote": "They had eight security fixes in eight days",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "wouldn't use",
+    "who": "co-host",
+    "why": "Most people do not need to care about it unless they build web apps.",
+    "quote": "So, for most folks, you just don't have to care.",
+    "t": "13:15"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie builds with Claude Code, not by choosing web frameworks (Rule 39)."
+   }
   },
   {
    "name": "Impeccable",
@@ -114,7 +192,25 @@
    "video": "CQhWqUOouYM",
    "t": "14:15",
    "quote": "give your coding agent a designer's eye",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Gives his agent a designer's eye; he restyled a whole presentation with it.",
+    "quote": "I think these are so useful to just take the URL of the repo, give it to your agent",
+    "t": "14:46"
+   },
+   "our_view": {
+    "need": "yes",
+    "for_what": "Make Charlie's dashboards, slides and thumbnails look less generic",
+    "agree": "agree",
+    "why": "A real pain for the dashboards. Rule 27: look at the screenshot before calling it done, and try it on one page first (Rule 43)."
+   },
+   "vs": {
+    "tool": "frontend-design",
+    "verdict": "leader stays",
+    "gap": "Both give pages a designer's eye; Claude's built-in artifact-design already covers our pages, so it is only worth a trial if a page looks generic."
+   }
   },
   {
    "name": "CLI-Anything",
@@ -129,7 +225,20 @@
    "video": "CQhWqUOouYM",
    "t": "16:16",
    "quote": "turn any app into a command line, your agent can drive",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "no opinion",
+    "who": "co-host",
+    "why": "Explained what a command-line wrapper does; no verdict.",
+    "quote": "",
+    "t": ""
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Charlie has no desktop app he needs an agent to drive (Rule 39)."
+   }
   },
   {
    "name": "Claude Skills",
@@ -144,7 +253,20 @@
    "video": "CQhWqUOouYM",
    "t": "18:48",
    "quote": "Your AI assistant is going to get 388 job-specific playbooks",
-   "check": "Downloaded skills need checking before install (the show warns about plugins)."
+   "check": "Downloaded skills need checking before install (the show warns about plugins).",
+   "opinion": {
+    "stance": "mixed",
+    "who": "co-host",
+    "why": "Calls himself the negative skill guy but likes the persona idea over loose skills.",
+    "quote": "I'm the negative skill guy, but let me tell you the thing I like about this one.",
+    "t": "18:48"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "388 playbooks is bloat. Rule 34: one job per skill, built from a real run. Rule 4: always-loaded context is for expertise only."
+   }
   },
   {
    "name": "Claude Code Templates",
@@ -159,7 +281,25 @@
    "video": "CQhWqUOouYM",
    "t": "20:21",
    "quote": "You kit out Claude code with one install command",
-   "check": "Review anything before installing."
+   "check": "Review anything before installing.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "co-host",
+    "why": "Likes a curated pack but warns plugins run with full permission on your computer.",
+    "quote": "if you're downloading plugins that aren't trusted, please be careful at what's running on your computer.",
+    "t": "20:52"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Browse for ideas for Charlie's own skills; install nothing from it",
+    "agree": "agree",
+    "why": "Rule 37: vet plugins before use. Any install goes through the Decision Desk first."
+   },
+   "vs": {
+    "tool": "ECC",
+    "verdict": "different job",
+    "gap": "A catalogue you pick single skills from, where ECC is one big pack; we don't know which of its skills are worth adding for a beginner."
+   }
   },
   {
    "name": "PostHog",
@@ -174,7 +314,20 @@
    "video": "kMPyFWFqX5I",
    "t": "1:01",
    "quote": "PostHog is free, but it's really, really good",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Free, self-hosted and well loved; recommends installing it to see where customers quit.",
+    "quote": "So, PostHog is free, but it's really, really good.",
+    "t": "1:01"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie has no shop or site with customers (Rule 39, real pain only). Self-hosting is also beyond Rule 42's lowest rung."
+   }
   },
   {
    "name": "OpenSEO",
@@ -191,7 +344,20 @@
    "video": "kMPyFWFqX5I",
    "t": "2:31",
    "quote": "open-source SEO that you can run yourself",
-   "check": "Semrush price claim is the host's."
+   "check": "Semrush price claim is the host's.",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Not an inferior product, just more customisable and cheaper than the paid tools.",
+    "quote": "not looking at an inferior product, you're looking at a more customizable product",
+    "t": "4:02"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Keyword research only if the channel gets its own website",
+    "agree": "disagree",
+    "why": "They say hand your SEO to the agent now. Charlie has no site yet, and vidIQ already covers YouTube keywords (Rule 39)."
+   }
   },
   {
    "name": "Invoice Ninja",
@@ -208,7 +374,20 @@
    "video": "kMPyFWFqX5I",
    "t": "6:02",
    "quote": "why go for a very expensive paid plan from someone else when you could just host this yourself",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Recommends it as invoicing software your agent can manage, cheaper than FreshBooks.",
+    "quote": "Invoice Ninja will be the one for you.",
+    "t": "7:03"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie has no clients to bill. Money and client details must stay out of this public repo (Rule 39)."
+   }
   },
   {
    "name": "Cal.diy",
@@ -225,7 +404,20 @@
    "video": "kMPyFWFqX5I",
    "t": "11:34",
    "quote": "they also put it on GitHub for free for you to use",
-   "check": "Calendly $12 a seat claimed by host."
+   "check": "Calendly $12 a seat claimed by host.",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Says it is really well done, with payment before booking and no per-seat fee.",
+    "quote": "It's really well done.",
+    "t": "11:34"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie takes no bookings. A free calendar link is enough until he does (Rule 42, lowest rung)."
+   }
   },
   {
    "name": "Autumn",
@@ -240,7 +432,20 @@
    "video": "kMPyFWFqX5I",
    "t": "14:08",
    "quote": "This is going to allow you to charge your users.",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Likes that it can charge per token or per request, and that it is free to try.",
+    "quote": "And that's the beauty of this project.",
+    "t": "14:38"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie has no software to charge for (Rule 39, real pain only)."
+   }
   },
   {
    "name": "Typebot",
@@ -257,7 +462,20 @@
    "video": "kMPyFWFqX5I",
    "t": "16:39",
    "quote": "I don't love how closely their name is to the name Typeform",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Likes the branching forms and WhatsApp, but dislikes the Typeform-lookalike name.",
+    "quote": "I don't love how closely their name is to the name Typeform",
+    "t": "16:39"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "No forms to run yet (Rule 39); a self-hosted tool is more upkeep than a beginner needs (Rule 42)."
+   }
   },
   {
    "name": "Frappe CRM",
@@ -274,7 +492,20 @@
    "video": "kMPyFWFqX5I",
    "t": "20:46",
    "quote": "It's more like a Pipedrive.",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Says it is the CRM that works as you would expect, and you can edit it freely.",
+    "quote": "If you need a CRM that works like you'd expect it to, this is the one",
+    "t": "20:16"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie has no leads or deals, and contact details must stay out of this public repo (Rule 39)."
+   }
   },
   {
    "name": "Mautic",
@@ -291,7 +522,20 @@
    "video": "kMPyFWFqX5I",
    "t": "22:19",
    "quote": "This is the competitor to GoHighLevel.",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "More control than GoHighLevel, but admits it does not match it feature for feature.",
+    "quote": "I don't think it matches uh GoHighLevel feature for feature",
+    "t": "22:50"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Heavy to self-host for a beginner with no email list yet (Rule 42, lowest rung)."
+   }
   },
   {
    "name": "Chatwoot",
@@ -308,7 +552,20 @@
    "video": "kMPyFWFqX5I",
    "t": "25:22",
    "quote": "you don't have to pay per seat, you can bring your own OpenAI key",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Likes no per-seat fee and bringing your own AI key for support replies.",
+    "quote": "The nice thing about Chatwoot is you don't have to pay per seat",
+    "t": "25:22"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie has no customer inbox. An AI key would also need handling under Rule 26 (secrets in .env only)."
+   }
   },
   {
    "name": "GrokBot",
@@ -323,7 +580,20 @@
    "video": "o7Rm5FvA7hU",
    "t": "4:05",
    "quote": "they can access local files",
-   "check": "Price and availability not stated."
+   "check": "Price and availability not stated.",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Calls it the best and easiest agent, and runs a whole bot team on it daily.",
+    "quote": "Grockbot is the best and easiest to use agent out there",
+    "t": "0:02"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie already has Claude Code and Codex (Rule 39). Even the host paid $265 extra in two days, so we want bounded runs (Rule 35)."
+   }
   },
   {
    "name": "Granola",
@@ -338,7 +608,20 @@
    "video": "o7Rm5FvA7hU",
    "t": "0:32",
    "quote": "he's using Granola as a meeting notetaker",
-   "check": ""
+   "check": "",
+   "opinion": {
+    "stance": "no opinion",
+    "who": "host",
+    "why": "Shown only as the meeting-notes source feeding GrokBot; no verdict on it.",
+    "quote": "",
+    "t": ""
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Charlie has no meetings to transcribe (Rule 39)."
+   }
   },
   {
    "name": "Meta Muse",
@@ -353,7 +636,20 @@
    "video": "dfFKE7EetoA",
    "t": "0:02",
    "quote": "making Muse free for a huge number of tokens",
-   "check": "Free-token offer is Meta's claim."
+   "check": "Free-token offer is Meta's claim.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Free and fine for newcomers, but it keeps asking him to confirm each step.",
+    "quote": "you're no longer my employee. Now, you're my boss.",
+    "t": "24:01"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "He wants agents that never check in. We keep the confirm step: Rule 36 says start strict, drafts and read-only first, and ask before outside actions."
+   }
   },
   {
    "name": "Hyperagent",
@@ -368,7 +664,20 @@
    "video": "bTbyRKO0hxs",
    "t": "13:16",
    "quote": "sign in with Chat GPT and use the subscription you already pay for",
-   "check": "$100 bonus credits claimed."
+   "check": "$100 bonus credits claimed.",
+   "opinion": {
+    "stance": "would use",
+    "who": "host",
+    "why": "Calls it the best tool he has seen for teams, with shared rooms and co-owners.",
+    "quote": "this is the best tool I think hyper agent is for teams.",
+    "t": "14:20"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "It is built for teams; Charlie works alone (Rule 39, real pain only)."
+   }
   },
   {
    "name": "ChatGPT Dots",
@@ -383,7 +692,20 @@
    "video": "bTbyRKO0hxs",
    "t": "14:20",
    "quote": "what it looks like if I were to use dot directly from them",
-   "check": "Price not stated."
+   "check": "Price not stated.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "host",
+    "why": "Easy to connect to Slack, but too personal to share with a team.",
+    "quote": "it's it's a little too personal, I think, for work.",
+    "t": "17:23"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Rule 36: least access first. A personal agent holding private data does not belong in shared spaces, and this repo is public."
+   }
   }
  ]
 }

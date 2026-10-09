@@ -74,7 +74,8 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   into a creator brain), `video-tutor` agent (transcripts into a lesson).
 - `hands-ingest`: the **Hands Brain** (`research/hands/`), every tool, skill,
   plugin and repo from The Next New Thing, week by week, ranked. Ask it with
-  the `hands-brain` agent.
+  the `hands-brain` agent. `try-tool`: one real trial of a tool; his keep or
+  drop verdict (`research/hands/tried.json`) changes its rank.
 - `nate-brain` agent = **ENATE** (Charlie's name for Nate's brain; "Nate" means
   the real person and his new videos): his method for organising the OS, in
   `research/nate-herk/brain/`, `nick-brain` agent (Nick Saraev's view; parked).

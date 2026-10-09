@@ -1,6 +1,32 @@
 # The Next New Thing: the show's voice
 
-**Pilot: 1 video (c5ZkPhzaLdA)**, 2026-10-08. Two hosts speak: the main host and Corey (named in the transcript). Captions don't label speakers, so "host" is the main host, judged from who is asked a question.
+**Now covers 4 weeks (W38 to W41, 18 videos, 103 tools with an opinion), 2026-10-09.**
+Week by week evidence, every point with a verbatim quote and timestamp: [W41](notes/2026-W41.md) · [W40](notes/2026-W40.md) · [W39](notes/2026-W39.md) · [W38](notes/2026-W38.md).
+The per-tool opinions live in `../weeks/<week>.json` (`opinion`, `our_view`); this page is the summary.
+
+## Across all four weeks
+| | Count |
+|---|---|
+| Presenters would use | 53 |
+| Mixed | 34 |
+| No opinion | 11 |
+| Wouldn't use | 5 |
+| We agree with them | 56 |
+| We disagree | 28 |
+| Nothing to compare | 19 |
+
+- **Their lens moves week to week.** W41's newest show is money first ("make you money", "no-brainer").
+  W40 and W39 lean to cost-cutting, self-hosting and replacing subscriptions; W38 to "which agent do I trust",
+  with guests who split on 13 of 29 tools. See each week's notes for the quotes.
+- **Red flags that recur:** credit burn and surprise bills, lock-in, bot-only support, nagging agents.
+- **How they decide:** they sign up on first sight and judge on the demo; star counts and audience votes count as proof.
+- **Where we differ, every week:** they want agents that act without checking in (Meta Muse, ECC sending real DMs);
+  we keep drafts first and a human approving anything outward (ENATE Rules 33, 36, 37). Their "can I earn from it"
+  against our "do I have the pain" (Rule 39) is the other steady gap.
+
+## Pilot detail: newest video only (c5ZkPhzaLdA)
+
+2026-10-08. Two hosts speak: the main host and Corey (named in the transcript). Captions don't label speakers, so "host" is the main host, judged from who is asked a question.
 
 | Code | Transcript |
 |---|---|

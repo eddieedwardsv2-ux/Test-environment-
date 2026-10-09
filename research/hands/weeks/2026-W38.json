@@ -3,9 +3,11 @@
  "videos": [
   "6IxiArssGvg",
   "1fHsIveXRa8",
-  "6xi2KL_NujU"
+  "6xi2KL_NujU",
+  "ehab5PtgRo8",
+  "pkwnJcETgfE",
+  "ANJTdT0Ggrw"
  ],
- "partial": "3 of 6 W38 videos; ehab5PtgRo8, pkwnJcETgfE, ANJTdT0Ggrw still to do",
  "summary": "New personal agents head to head (Instinct, GrokBot, Muse), a trending repos round-up (code review, skill packs, worktrees, context saving) and new releases (Claude Slides, Notion skills, Vercel tools). Best for Charlie: Agent Skills, I Have ADHD, hyperframes.",
  "tools": [
   {
@@ -26,6 +28,19 @@
     "tool": "agent-browser",
     "verdict": "different job",
     "gap": "Not tested for our jobs (Claude Code, AI OS, YouTube); unknown whether it can run repeatable tasks or touch files."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Michael",
+    "why": "Fine as a toy, but he doesn't trust it as a daily tool because he can't see what it does.",
+    "quote": "not having control of the browser or seeing how it's doing things makes me trust it less",
+    "t": "13:25"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Invite-only, and a user said it kept his email data after cancelling. Rule 36: start read-only; this repo is public so nothing private goes near it."
    }
   },
   {
@@ -46,6 +61,19 @@
     "tool": "ChatGPT Dots",
     "verdict": "different job",
     "gap": "Unknown how its shareable skills compare with Claude Code skills, or whether it is worth paying for when we already have Claude Code."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Michael",
+    "why": "Likes its shareable personas and step-by-step processes, but the cheap plan runs out fast.",
+    "quote": "So I like Grockbot for that.",
+    "t": "13:25"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "They would pay for it; Charlie already keeps skills in this repo. Rule 39: adopt a tool only for real pain."
    }
   },
   {
@@ -66,6 +94,19 @@
     "tool": "ChatGPT Dots",
     "verdict": "different job",
     "gap": "Not tested for building or running an AI OS; unknown how custom connectors work or what it costs after the free tier."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Michael",
+    "why": "Best layout, fastest replies, and it opened the Airbnb app where he was already logged in.",
+    "quote": "I ended up um liking the experience better on Muse.",
+    "t": "5:15"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Their win is quick trip searches; Charlie has no such pain. Rule 39. Free now, but it charges more the more you use it."
    }
   },
   {
@@ -86,6 +127,19 @@
     "tool": "ChatGPT Dots",
     "verdict": "different job",
     "gap": "Not shown here; we don't know its price or whether it suits a one-person channel."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "The one he uses at his company, because the others don't handle a team of people.",
+    "quote": "Hyper Agent I find to be really good at that.",
+    "t": "19:01"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "He recommends it only for teams; Charlie is solo. Rule 39."
    }
   },
   {
@@ -106,6 +160,19 @@
     "tool": "Claude Code agents.md support",
     "verdict": "different job",
     "gap": "Not run by us; unknown how to wire it to a git hook for this repo or whether it adds value for non-code files."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Automatic checking is the baseline for anyone who vibe codes.",
+    "quote": "and even better run automatically is is table stakes. I think everybody should be doing this.",
+    "t": "1:34"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Scan this public repo for leaked keys or plain-text passwords before pushing",
+    "agree": "agree",
+    "why": "Rule 37: check before anything goes public. Try it once on this repo (Rule 43), don't build a git hook yet (Rule 42)."
    }
   },
   {
@@ -126,6 +193,19 @@
     "tool": "find-skills",
     "verdict": "different job",
     "gap": "Not tried in Charlie's own sessions; unknown if it clashes with the plain UK English and Now/Done when rules in AGENTS.md."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Makes the AI answer short and scannable, which he sees as the reason it keeps growing.",
+    "quote": "I like this one and I could see why it continues to grow.",
+    "t": "2:36"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Shorter answers in Claude Code sessions",
+    "agree": "agree",
+    "why": "Rule 41: smallest context that works. Test it against our Now/Done-when format first (Rule 43)."
    }
   },
   {
@@ -146,6 +226,19 @@
     "tool": "Vane",
     "verdict": "different job",
     "gap": "Fun demo only; no link to Charlie's jobs and not tried."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew",
+    "why": "Fun to look at and he can see it being useful, but no real use is named.",
+    "quote": "Um, it's kind of fun. I could see this being useful.",
+    "t": "4:10"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "A map of public traffic and CCTV is a toy for Charlie's jobs. Rule 39."
    }
   },
   {
@@ -166,6 +259,19 @@
     "tool": "find-skills",
     "verdict": "different job",
     "gap": "Unknown how heavy it is to install and whether a beginner needs a pack this big next to Agent Skills."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Adam",
+    "why": "Great for weaker models; a strong model already knows test-driven development.",
+    "quote": "You don't need a skill, but a lot of these other ones, you need to encourage it",
+    "t": "9:47"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "261,000 stars is not a reason. Rule 34: skills do one job and are built from a real run; a huge pack adds context (Rule 41)."
    }
   },
   {
@@ -186,6 +292,19 @@
     "tool": "FreeLLMAPI",
     "verdict": "different job",
     "gap": "Savings are unproven; we don't know the real token saving or whether it works with Claude Code hooks here."
+   },
+   "opinion": {
+    "stance": "no opinion",
+    "who": "Adam",
+    "why": "Explains how the sandbox keeps the main session short; no verdict on using it.",
+    "quote": "",
+    "t": "11:17"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Keeping long sessions short if context fills up",
+    "agree": "n/a",
+    "why": "Savings unproven. Rule 31: act at about half the window; we already hand off and clear."
    }
   },
   {
@@ -206,6 +325,19 @@
     "tool": "domain-modeling",
     "verdict": "different job",
     "gap": "Unknown setup effort and whether it beats the plain markdown brain files we already use."
+   },
+   "opinion": {
+    "stance": "no opinion",
+    "who": "Adam",
+    "why": "Describes it as Obsidian plus RAG plus a graph database; no verdict.",
+    "quote": "",
+    "t": "13:52"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "We already find things by plain markdown index (Rule 6). Rule 42: start at the lowest rung."
    }
   },
   {
@@ -226,6 +358,19 @@
     "tool": "find-skills",
     "verdict": "different job",
     "gap": "Unknown whether a Codex plugin works unchanged in Claude Code; we install plugins only with Charlie's OK."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Adam",
+    "why": "Useful, but plugins run code, so only install from sources you trust.",
+    "quote": "if you don't trust where you installed them, things can get pretty bad pretty quick.",
+    "t": "16:23"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Rule 37: vet plugins. Plugin installs go on the Decision Desk with Charlie's OK."
    }
   },
   {
@@ -246,6 +391,19 @@
     "tool": "ChatGPT Dots",
     "verdict": "different job",
     "gap": "Not tried; unknown if it helps one-at-a-time work like Charlie's, and git worktrees are an advanced topic."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Gives each AI agent its own copy of the project so they don't overwrite each other.",
+    "quote": "man, this is going to change your life.",
+    "t": "17:24"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie works one session at a time. Rule 39: cap parallel sessions; Rule 24: sub-agents not overused."
    }
   },
   {
@@ -266,6 +424,19 @@
     "tool": "find-skills",
     "verdict": "different job",
     "gap": "Unknown which of the 25 skills are worth installing first for a beginner and how they fit our own skills."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "The order spec, plan, build, test, review, ship is how a professional engineer works.",
+    "quote": "this is exactly how a professional software engineer would would develop something too.",
+    "t": "19:27"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Borrow the plan, test and review habit for our own builds; pick 2 or 3 of the 25 skills, not all",
+    "agree": "agree",
+    "why": "Rule 32: plan and attack the plan before building; Rule 33: a separate checker decides done."
    }
   },
   {
@@ -286,6 +457,19 @@
     "tool": "ChatGPT Dots",
     "verdict": "different job",
     "gap": "Not tried; unknown if it is stable or useful with just one agent."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Adam",
+    "why": "Likes the project-first way round, but nobody has tried it.",
+    "quote": "So it makes sense to open up a project workspace",
+    "t": "23:00"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie uses one agent at a time. Rule 39."
    }
   },
   {
@@ -306,6 +490,19 @@
     "tool": "ChatGPT Dots",
     "verdict": "different job",
     "gap": "Not tried; cloud sessions here run elsewhere, so unknown if it helps Charlie."
+   },
+   "opinion": {
+    "stance": "no opinion",
+    "who": "Andrew",
+    "why": "Only praises the README screenshot.",
+    "quote": "",
+    "t": "23:30"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Our cloud sessions run elsewhere, so it can't see them. Rule 39."
    }
   },
   {
@@ -326,6 +523,19 @@
     "tool": "agent-browser",
     "verdict": "different job",
     "gap": "Not tried; no obvious fit with Charlie's jobs."
+   },
+   "opinion": {
+    "stance": "no opinion",
+    "who": "Andrew",
+    "why": "Says the creator made a good case; no verdict on the tool.",
+    "quote": "",
+    "t": "24:00"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Charlie has no team task board. Rule 39."
    }
   },
   {
@@ -346,6 +556,19 @@
     "tool": "ChatGPT Dots",
     "verdict": "different job",
     "gap": "Not tried; unknown how it compares with our own AI OS build."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Adam",
+    "why": "Likes the idea of memory that compounds as agents learn; untried.",
+    "quote": "I like the idea of the compounding memory, too",
+    "t": "25:00"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "We are building our own OS from Nate's kit. Rule 42: don't add a second one."
    }
   },
   {
@@ -366,6 +589,19 @@
     "tool": "FreeLLMAPI",
     "verdict": "different job",
     "gap": "Not tried; unknown if it reads Claude and ChatGPT usage without extra keys."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew",
+    "why": "Likes that a spend dashboard works remotely on an iPad; hasn't used it himself.",
+    "quote": "I like that this is something that is usable remotely like that.",
+    "t": "26:01"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Seeing credits left across Claude and ChatGPT",
+    "agree": "agree",
+    "why": "Rule 31: context costs money. Only if a bill ever surprises Charlie (Rule 39)."
    }
   },
   {
@@ -386,6 +622,19 @@
     "tool": "Claude Code agents.md support",
     "verdict": "different job",
     "gap": "Not tried; a mobile app builder is outside Charlie's current jobs."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew",
+    "why": "Says it's worth paying for, but won't make an app himself.",
+    "quote": "I don't want it because I don't want more distraction in my life for the things that I make.",
+    "t": "2:04"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie isn't building phone apps. Rule 42: start at the lowest rung."
    }
   },
   {
@@ -406,6 +655,19 @@
     "tool": "pptx",
     "verdict": "leader stays",
     "gap": "Not compared against the pptx skill on the same input, so we don't know which looks better."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew",
+    "why": "Built in and editable by chat, but needs more work to look good.",
+    "quote": "this is going to need a lot more work from the user to get it to look good.",
+    "t": "4:08"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Turning a research markdown file into a deck for a video",
+    "agree": "agree",
+    "why": "Rule 43: run it against the pptx skill on the same file before switching."
    }
   },
   {
@@ -426,6 +688,19 @@
     "tool": "pptx",
     "verdict": "different job",
     "gap": "Hardware; not relevant to Charlie's jobs now."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew likes, Matt doubts",
+    "why": "Andrew likes the wristband idea; Matt doesn't think this is the winning form.",
+    "quote": "But is is it this? I don't think it's this.",
+    "t": "5:39"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Hardware with no price or date. Rule 39."
    }
   },
   {
@@ -446,6 +721,19 @@
     "tool": "frontend-design",
     "verdict": "different job",
     "gap": "Not tried; only useful if Charlie uses WordPress."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Glad it exists; it lets him keep his WordPress site and talk to it.",
+    "quote": "I'm glad that Saeed has come up with this thing.",
+    "t": "9:15"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Only matters if you own a WordPress site; Charlie doesn't."
    }
   },
   {
@@ -466,6 +754,19 @@
     "tool": "find-skills",
     "verdict": "different job",
     "gap": "Unknown whether skills sync both ways with GitHub or just copy; we already keep skills in this repo."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew for, Matt unconvinced",
+    "why": "Andrew wants teammates off GitHub; Matt keeps skills on GitHub and doesn't use Notion's agents.",
+    "quote": "I think everyone should go and use it and install it.",
+    "t": "10:47"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Skills already live in this repo. Rule 3: one current source per fact; a Notion copy would drift."
    }
   },
   {
@@ -486,6 +787,19 @@
     "tool": "agent-browser",
     "verdict": "leader stays",
     "gap": "Not tried; the hosts said there is not much for it to stand on."
+   },
+   "opinion": {
+    "stance": "wouldn't use",
+    "who": "Matt",
+    "why": "Competes with browsers already built into ChatGPT and Claude.",
+    "quote": "There's not much for them to stand on",
+    "t": "14:25"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Same reading. Rule 42: use the built-in browser first."
    }
   },
   {
@@ -506,6 +820,19 @@
     "tool": "pptx",
     "verdict": "different job",
     "gap": "Not relevant to Charlie's jobs."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Wants help choosing clothes from his photo album.",
+    "quote": "I like this a lot. I want more help with my clothes.",
+    "t": "15:58"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Needs photo-album access; this repo is public. Rule 37."
    }
   },
   {
@@ -526,6 +853,19 @@
     "tool": "OpenSEO",
     "verdict": "different job",
     "gap": "Not run on Charlie's pages; unknown if the score matters for a YouTube channel site."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Matt",
+    "why": "Will add it to his launch checklist and aim for over 90.",
+    "quote": "this is something that I'll probably add to my workflows whenever I launch a new webpage",
+    "t": "18:02"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Checking a channel website once one exists",
+    "agree": "agree",
+    "why": "Rule 39: only when Charlie has a site to launch."
    }
   },
   {
@@ -546,6 +886,19 @@
     "tool": "frontend-design",
     "verdict": "different job",
     "gap": "Not used by us; unknown if Charlie needs a domain yet."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Matt",
+    "why": "One place to find a domain, buy it and host the page.",
+    "quote": "I can buy a domain very quickly. I I love this site.",
+    "t": "20:05"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "A domain for the channel later",
+    "agree": "agree",
+    "why": "Buying is a payment, so it goes on the Decision Desk. Prices shown in dollars; check UK pricing."
    }
   },
   {
@@ -566,6 +919,19 @@
     "tool": "VoiceStudio",
     "verdict": "different job",
     "gap": "Business phone tool; not relevant to Charlie's jobs."
+   },
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew mixed, Matt keen",
+    "why": "Andrew likes the idea but invested in a rival; Matt thinks it's awesome.",
+    "quote": "I have mixed feelings about this",
+    "t": "20:36"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "A business phone tool; Charlie has no callers. Rule 39."
    }
   },
   {
@@ -582,7 +948,404 @@
    "t": "3:38",
    "quote": "using hyperframes to create a high-quality",
    "check": "",
-   "vs": null
+   "vs": null,
+   "opinion": {
+    "stance": "would use",
+    "who": "Matt",
+    "why": "His best answer for agent slides: make a short video and drop it into Keynote.",
+    "quote": "my answer is actually Keynote, which is not agentic, and hyperframes.",
+    "t": "3:38"
+   },
+   "our_view": {
+    "need": "yes",
+    "for_what": "Short intro and explainer videos for the YouTube channel, made from HTML",
+    "agree": "agree",
+    "why": "Rule 42: start at the lowest rung with one 30-second clip; Rule 43: judge it on our own footage. Install via the Decision Desk."
+   }
+  },
+  {
+   "name": "find-skills",
+   "url": "https://skills.sh/vercel-labs/skills/find-skills",
+   "kind": "skill",
+   "category": "Claude Code skills & plugins",
+   "what": "Vercel skill that works like an app store: ask your agent to find a skill for a task and it finds and installs one.",
+   "shown": "Showed the skill file and the idea of asking an agent to find a skill for writing tests; no live install.",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "0:27",
+   "quote": "So, what you do is you go into your agent and you say, \"Find a skill for writing tests.\"",
+   "check": "Most-installed skill on Vercel's list; only finds skills, so vet what it suggests before installing.",
+   "vs": {
+    "tool": "ECC",
+    "verdict": "different job",
+    "gap": "We already have it; unknown how well it ranks or vets results compared with the find-skills skill we use."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Calls it a simple way to install a skill and the most-installed one.",
+    "quote": "Simple way to install it.",
+    "t": "0:32"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Already installed here (`find-skills`). Rule 36: vet each plugin before it is installed, which this skill does not do."
+   }
+  },
+  {
+   "name": "grill-me",
+   "url": "https://skills.sh/mattpocock/skills/grill-me",
+   "kind": "skill",
+   "category": "Claude Code skills & plugins",
+   "what": "Matt Pocock skill that makes the AI quiz you before building, so the plan is more thought out.",
+   "shown": "Showed the one-line skill that calls grilling; the guest said its first question was what he was trying to convince listeners of.",
+   "price": "open-source",
+   "for_charlie": 3,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "1:03",
+   "quote": "all it is is invoking another skill called grilling.",
+   "check": "Most-starred skill pack claim is the host's; not checked.",
+   "vs": {
+    "tool": "ECC",
+    "verdict": "different job",
+    "gap": "We already use it; unknown whether grilling on its own would do the same job without the Grill Me wrapper."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Robbie",
+    "why": "Used it to prepare for the episode and liked the end-game question it asked.",
+    "quote": "Even preparing for this, you know, I used the grill me function",
+    "t": "1:05"
+   },
+   "our_view": {
+    "need": "yes",
+    "for_what": "Interviewing Charlie about plans before building anything",
+    "agree": "agree",
+    "why": "Already in this repo as `grill-me`; the grilling habit suits a beginner who is still deciding what to build."
+   }
+  },
+  {
+   "name": "frontend-design",
+   "url": "https://skills.sh/anthropics/skills/frontend-design",
+   "kind": "skill",
+   "category": "Design & websites",
+   "what": "Anthropic skill that pushes Claude to make more distinctive web designs instead of the usual cream, AI-looking page.",
+   "shown": "Showed a website before (cream background, generic) and after the skill (different colours, more design, links at the top).",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "2:15",
+   "quote": "The whole idea behind this is to eliminate that and create better designs.",
+   "check": "Before-and-after is one site; taste is subjective.",
+   "vs": null,
+   "opinion": {
+    "stance": "would use",
+    "who": "Robbie",
+    "why": "The after version felt like it had a purpose, more than just making it look nice.",
+    "quote": "It's more than just make this look nice.",
+    "t": "2:38"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Dashboards and any page Charlie builds for the channel",
+    "agree": "agree",
+    "why": "Worth a single trial on one of our own pages (Rule 43), not a blind install."
+   }
+  },
+  {
+   "name": "agent-browser",
+   "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
+   "kind": "skill",
+   "category": "Automation & workflows",
+   "what": "Vercel skill that lets an agent control a web browser from the command line, with no visible window.",
+   "shown": "Showed the skill file and example tasks (log in and screenshot a billing page; sign up as a test user); no live run.",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "3:54",
+   "quote": "This agent is headless, meaning that it does everything like under the under the covers.",
+   "check": "You cannot watch the mouse move; a different video's guest said that makes him trust it less.",
+   "vs": null,
+   "opinion": {
+    "stance": "would use",
+    "who": "Robbie",
+    "why": "Calls it super powerful because it screenshots pages without the browser ever opening.",
+    "quote": "It's a I mean it is a su- it is a super powerful tool.",
+    "t": "5:11"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Checking our own dashboards render, and screenshots for lessons",
+    "agree": "agree",
+    "why": "Rule 36: read-only first, never give it logins; Rule 43: try on one public page."
+   }
+  },
+  {
+   "name": "setup-matt-pocock-skills",
+   "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
+   "kind": "skill",
+   "category": "Claude Code skills & plugins",
+   "what": "One-time skill that sets up Matt Pocock's engineering skills in a repo: issue tracker, triage labels and domain docs.",
+   "shown": "Read out what it scaffolds (issue tracker, triage labels, domain docs); no live run.",
+   "price": "open-source",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "5:33",
+   "quote": "It's a one-time setup that that wires his engineering skills into your repo.",
+   "check": "Adds a whole skill set to a repo; check size before installing.",
+   "vs": {
+    "tool": "ECC",
+    "verdict": "different job",
+    "gap": "Unknown how many skills it adds or whether it clashes with our own router and skills."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Robbie",
+    "why": "Compares it to hiring Matt for 60 days to set up best practices, ready for AI agents.",
+    "quote": "so this is a way to set up those skills right at bat but it's also ready for AI agents",
+    "t": "5:41"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Rule 34: skills do one job; this adds a pack. Borrow the habits, not the install."
+   }
+  },
+  {
+   "name": "vercel-react-best-practices",
+   "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
+   "kind": "skill",
+   "category": "Coding agents & IDEs",
+   "what": "Vercel's 70 React and Next.js performance rules packaged as a skill so an agent follows them.",
+   "shown": "Showed the skill and explained it; no live run.",
+   "price": "open-source",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "6:27",
+   "quote": "this is their 70 react and next JS performance rules applied as agent rights",
+   "check": "",
+   "vs": {
+    "tool": "Claude Code agents.md support",
+    "verdict": "different job",
+    "gap": "Only matters if we build React or Next.js apps, which we do not."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Robbie",
+    "why": "Trusted source, so you avoid mistakes even if you do not understand every rule.",
+    "quote": "you just avoid mistakes that you know this best practices will help you avoid.",
+    "t": "6:44"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie is not building React apps; no pain here (Rule 39)."
+   }
+  },
+  {
+   "name": "grilling",
+   "url": "https://skills.sh/mattpocock/skills/grilling",
+   "kind": "skill",
+   "category": "Claude Code skills & plugins",
+   "what": "The engine behind Grill Me: the file that shows the agent how to structure questions and handle your answers.",
+   "shown": "Showed the file that Grill Me points to; no live run.",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "7:39",
+   "quote": "this is now the actual file that the other Grill Me skill refers to",
+   "check": "The 'second most starred skill set' claim is the host's; not checked.",
+   "vs": {
+    "tool": "ECC",
+    "verdict": "different job",
+    "gap": "Unknown what it adds over plain grill-me for our use; Matt says he split it out so other skills can reuse it."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Robbie",
+    "why": "Likes grilling as the engine with Grill Me as its first use.",
+    "quote": "I I think it's great.",
+    "t": "8:20"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "A reusable interview step inside other skills",
+    "agree": "agree",
+    "why": "Worth reading before we rewrite our own `grill-me`; no install needed."
+   }
+  },
+  {
+   "name": "lark-doc",
+   "url": "https://github.com/larksuite/cli/blob/main/skills/lark-doc/SKILL.md",
+   "kind": "skill",
+   "category": "Automation & workflows",
+   "what": "ByteDance skill for working with Lark, its workplace tool (contacts, messenger, sheets, calendar, wiki).",
+   "shown": "Described only; the hosts said most users are building on the platform for the Chinese market.",
+   "price": "open-source",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "8:42",
+   "quote": "a skill built by ByteDance, which is the TikTok company.",
+   "check": "",
+   "vs": {
+    "tool": "agent-browser",
+    "verdict": "different job",
+    "gap": "Only useful if we used Lark, which we do not."
+   },
+   "opinion": {
+    "stance": "wouldn't use",
+    "who": "Andrew",
+    "why": "Says almost everyone watching will not use it.",
+    "quote": "is one that most people watching this, almost everyone, will not use.",
+    "t": "8:20"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "We do not use Lark or Feishu."
+   }
+  },
+  {
+   "name": "teach",
+   "url": "https://skills.sh/mattpocock/skills/teach",
+   "kind": "skill",
+   "category": "Claude Code skills & plugins",
+   "what": "Matt Pocock skill that turns your agent into a tutor, building HTML lessons session after session and remembering what you learned.",
+   "shown": "Showed a Rubik's Cube example from Matt's video: lessons stored as numbered HTML files, building on earlier ones.",
+   "price": "open-source",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "9:36",
+   "quote": "This turns your agent into a tutor that builds you lessons session after session after session.",
+   "check": "",
+   "vs": {
+    "tool": "ECC",
+    "verdict": "different job",
+    "gap": "We already have our own `teach` skill; unknown whether Matt's numbered HTML lessons would improve ours."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Liked that it remembers where you stopped and builds on it.",
+    "quote": "remembered where he was so it could build on it",
+    "t": "10:23"
+   },
+   "our_view": {
+    "need": "yes",
+    "for_what": "Teaching Charlie new topics with lessons that remember progress",
+    "agree": "agree",
+    "why": "We already have a `teach` skill; the HTML lesson-per-session idea is worth borrowing."
+   }
+  },
+  {
+   "name": "web-design-guidelines",
+   "url": "https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md",
+   "kind": "skill",
+   "category": "Design & websites",
+   "what": "Vercel skill that reviews a page against web guidelines for accessibility, forms, typography and animation.",
+   "shown": "Showed the guidelines file and a review of a checkout page that found a missing label on an icon button and missing autocomplete.",
+   "price": "open-source",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "ehab5PtgRo8",
+   "t": "10:48",
+   "quote": "the icon button has no aerial label.",
+   "check": "",
+   "vs": {
+    "tool": "frontend-design",
+    "verdict": "different job",
+    "gap": "Reviews rather than designs; unknown how it behaves when it conflicts with frontend-design's flourishes."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Likes skills because they are plain English you can read.",
+    "quote": "I like skills because they're so easy to read",
+    "t": "10:53"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Accessibility check on any page Charlie publishes",
+    "agree": "agree",
+    "why": "Cheap check once we have a page worth reviewing; try on one page first."
+   }
+  },
+  {
+   "name": "Meta Muse",
+   "url": "https://www.muse.ai/",
+   "kind": "service",
+   "category": "Agent orchestration & teams",
+   "what": "Meta's free personal agent with its own cloud computer, tied into Instagram, Facebook and WhatsApp.",
+   "shown": "Exported Instagram followers to Excel, showed approval before every message, side chats, connectors, a live browser it lets you take over, and connectors built on the fly.",
+   "price": "freemium",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "pkwnJcETgfE",
+   "t": "0:02",
+   "quote": "The company behind Facebook, Instagram, and WhatsApp is about to give you a free AI agent.",
+   "check": "Free to try; the guest says it has limits (Instagram export stopped at 749, Costco failed) and did not say what paid use costs.",
+   "vs": {
+    "tool": "ChatGPT Dots",
+    "verdict": "different job",
+    "gap": "Not tested for building or running an AI OS; unknown what it costs after the free tier."
+   },
+   "opinion": {
+    "stance": "would use",
+    "who": "Michael",
+    "why": "Amazing if your work touches Meta apps, and he thinks it will be the main way people talk to agents in 2027, though Costco failed.",
+    "quote": "if you work in any capacity with the meta ecosystem, it's amazing.",
+    "t": "13:26"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie has no Meta-app pain; Rule 39. Fine to try free, but no private accounts near it."
+   }
+  },
+  {
+   "name": "FreeLLMAPI",
+   "url": "https://github.com/tashfeenahmed/freellmapi",
+   "kind": "repo",
+   "category": "Cost & tokens",
+   "what": "One API and key that routes coding agents across 45 free model providers, with automatic failover.",
+   "shown": "Showed its analytics page (2.8 billion tokens, over $500 free), the model ranking table, the agents tab with one-command setup for Claude Code and OpenCode, and the Mac app.",
+   "price": "open-source",
+   "for_charlie": 3,
+   "replaces": [],
+   "video": "ANJTdT0Ggrw",
+   "t": "0:27",
+   "quote": "This is the analytics portal of free LLM API where I have used about like more than $500 of free tokens.",
+   "check": "Some providers discourage free quotas in production; the maker says use it for prototyping only. Free models, not Claude.",
+   "vs": null,
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Amazed at how simple the setup is.",
+    "quote": "That's unreal. You make it so freaking simple.",
+    "t": "4:07"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Cheap experiments with open coding agents, not instead of Claude Code",
+    "agree": "agree",
+    "why": "Matches the W41 sighting: free models only, and keys stay in `.env` (Rule 36); trial on one small task."
+   }
   }
  ]
 }
