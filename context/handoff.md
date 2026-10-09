@@ -49,13 +49,19 @@ view, ENATE links), the OS Guide, the lesson slides, the audit review, and the
 Friday audit routine ("Weekly AI OS audit", 8:59 UK time). All links:
 `system/pages.md`. History: `decisions.md`.
 
-**First thing:** run the `decide` skill's "read answers" step. Open card:
-"enate-merge" (merge ENATE's overlapping rules; see
-`research/nate-herk/brain/overlap-review.md`).
+**Backtested 2026-10-09** (`audits/evidence/2026-10-09-new-session-backtest.md`):
+fresh-session test 10/10, "enate-merge" answered and done (clashes only).
+
+**First thing:** run the `decide` skill's "read answers" step.
 
 **Waiting on Charlie:** add Higgsfield as a custom connector
 (`https://mcp.higgsfield.ai/mcp`, guide `references/higgsfield-api.md`);
-finish the Canva sign-in. Connectors load only when a session starts.
+finish the Canva sign-in. Both were still not done on 2026-10-09 01:50. Check
+`ListConnectors` first: if Higgsfield isn't listed, it hasn't been added yet,
+so don't promise it will appear in a new session.
+
+**After 09:00 Friday 9 Oct:** check the first "Weekly AI OS audit" run left a
+new dated report in `audits/`.
 
 **Suggestions offered, not yet chosen:** one home page for all pages; refresh
 the Watch Path and the two oldest lessons; mark Kit Compare as decided; a

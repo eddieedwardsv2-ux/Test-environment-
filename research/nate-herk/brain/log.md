@@ -2,6 +2,9 @@
 
 **This is history.** It records what was added and when; it may be out of date about what the brain holds now. The current state is in [index.md](index.md). Newest first.
 
+## 2026-10-09: clashes fixed (Charlie's choice: no merge)
+**Pages changed:** `rules.md` Rule 19 marked replaced by Rule 41 (a "Newer wins" line; quotes kept); `concepts.md` concept 18 marked replaced by concept 39, concept 3's length pointer moved to 39; `overlap-review.md` records the choice. Nothing else merged.
+
 ## 2026-10-08: +13 newest transcripts (all of them, Charlie's choice)
 **Ingested:** l8ywUsEJ2XQ (guest Dave of Glido, 1h09), pY5_Ux_YJjo, 7eo-11K2e3c, BvvfZKKz4Yo, eg_1NXDcoPk, 7jHXoPGnA4c, QCkHIyEPIYo, GmLcJVzkxPA, eF3yeJuifoQ, ymgH8jS6Wb8, QDsenEcAJIk, oWCcN6hSFjA, FqnNL8fnUWo, each read in full. Brain now covers all 69 saved transcripts.
 **Pages changed:** `concepts.md` +4 concepts (40 test a model on your own work, 41 evals and AI judges, 42 fixed flows in code vs agent loop, 43 stakes ladder), "Also" lines on concepts 15, 16, 25, 31, 32, 33, 35, 37, 39, a planning clash and a model-results note under limits, concept 20's "Used by"; `rules.md` +2 rules (42, 43) and "Also" lines on Rules 17, 26, 33, 35, 37, 39, 41; `index.md` counts (43 concepts, 43 rules), sources, question table, coverage; `../README.md` coverage line.

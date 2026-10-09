@@ -1,8 +1,9 @@
 # ENATE overlap review (2026-10-09)
 
 Read-only review of the 43 concepts and 43 rules, after the smallest-context
-work (concept 39, Rule 41). Nothing has been changed yet; the merge is a
-Decision Desk card ("enate-merge").
+work (concept 39, Rule 41). Charlie chose "only fix the clashes" on the Decision Desk (2026-10-09):
+Rule 19 and concept 18 are now marked as replaced by Rule 41 and concept 39.
+The rest of the merge was not done.
 
 ## The biggest redundancy is by design
 Each concept (an idea, with quotes) has a matching rule (what to do, with

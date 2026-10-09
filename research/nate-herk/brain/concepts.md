@@ -40,7 +40,7 @@ His main CLAUDE.md says who the agent is in a line or two and is otherwise a rou
 > "a bunch of files and folders, which means you can plug in Hermes, you can plug in codecs" [15:19](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=919s)
 Also: he shows the routing table at [13:17](https://www.youtube.com/watch?v=Ek1NBfnnTH0&t=797s). Source: AI OS ([transcript][os]).
 *Supporting:* the same idea in [Every Level of a Claude Second Brain](../every-level-of-a-claude-second-brain-explained--DTCyvo6cC54-transcript.md), "the claw.md is kind of treated as a router" [4:34](https://www.youtube.com/watch?v=DTCyvo6cC54&t=274s), and in [I Turned Claude Into the Ultimate Second Brain](../i-turned-claude-into-the-ultimate-second-brain--8QQ_INxAhRs-transcript.md), "I think of my Claude and MD file as my router" [5:09](https://www.youtube.com/watch?v=8QQ_INxAhRs&t=309s).
-Also: "I go into a routing map and that's the majority of my agents.mmd" [yys 6:07](https://www.youtube.com/watch?v=yysILVsfLFM&t=367s); new skills get registered in it [bCl 1:30:08](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=5408s); "cloudmd is the rules. Memory is, you know, learned facts." [jdb 2:04:50](https://www.youtube.com/watch?v=jdbOVepEtUE&t=7490s). Length limit: concept 18.
+Also: "I go into a routing map and that's the majority of my agents.mmd" [yys 6:07](https://www.youtube.com/watch?v=yysILVsfLFM&t=367s); new skills get registered in it [bCl 1:30:08](https://www.youtube.com/watch?v=bCljOfCH8Ms&t=5408s); "cloudmd is the rules. Memory is, you know, learned facts." [jdb 2:04:50](https://www.youtube.com/watch?v=jdbOVepEtUE&t=7490s). Length: concept 39 (concept 18's 200 lines is only the ceiling).
 **Used by:** Rule 5, Rule 20 ([rules.md](rules.md)).
 
 **4. No single right layout; the test is whether you (and the agent) can find things**
@@ -181,11 +181,12 @@ Also: "Never accept AI output without asking why" [bCl 6:37](https://www.youtube
 ## G. From the wider course and newer videos
 
 **18. The router is re-read every message, so keep it under 200 lines**
+*Replaced by concept 39 (2026-10-09):* the newer idea is the smallest context that works, not a fixed length; 200 lines is only the hard ceiling. The facts below (re-read every message, edits apply next session) still hold.
 CLAUDE.md is loaded as system context at the start of every chat, so every extra line costs on every turn. Edits to it only take effect in a new session.
 > "Claude auto reads it at the start of every single chat as system context. So keep it under 200 lines." [jdb 5:36:27](https://www.youtube.com/watch?v=jdbOVepEtUE&t=20187s)
 > "the edit actually doesn't apply until you restart that session." [jdb 5:55:15](https://www.youtube.com/watch?v=jdbOVepEtUE&t=21315s)
 Also: keep decisions, not chat history, in it: "Save decisions, not conversations." [jdb 5:44:05](https://www.youtube.com/watch?v=jdbOVepEtUE&t=20645s).
-**Used by:** Rule 19 ([rules.md](rules.md)).
+**Used by:** Rule 19, now replaced by Rule 41 ([rules.md](rules.md)).
 
 **19. The four C's, built in order: context, connections, capabilities, cadence**
 Context is what the AI knows about you; connections are the live data it can reach; capabilities are the skills that make it useful; cadence is when it acts on its own. The first two are the second brain. Each layer needs the one before it.
