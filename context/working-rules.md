@@ -88,9 +88,13 @@ Anything not backed by a source is labelled **(inferring)**.
 - **Nate's end process for big jobs** (iTY8Q449YNQ 22:25-25:27, his `/goal`
   run): (1) an objective finish line first (files exist and aren't empty,
   counts, a command's output), not "make it good"; (2) one helper per
-  independent piece, each writing its own file; (3) one integration step that
-  reads everything and fixes what's thin or generic; (4) the Guardian judges.
-  It separates the worker from the judge. Not checked here yet: whether this
+  independent piece, each writing its own file; (3) "run a verification pass
+  yourself… fix anything thin or generic before you declare yourself done"
+  (24:26), done by one integration step; (4) a separate judge decides "done"
+  (his is `/goal`'s evaluator model; ours is the Guardian). "it literally
+  separates the worker from the judge" (22:55). Our Guardian is a fresh context
+  and persona on the same model, not a different model as Nate describes.
+  Nothing forces it to run yet: the worker chooses to call it. Not checked here yet: whether this
   environment has Claude Code's own `/goal` command; the steps work without it.
 - **Don't just please Charlie** (Charlie, 2026-10-09; Nate iTY 0:32-2:36: Claude
   is "tuned to make you feel productive", and gets more agreeable the more it

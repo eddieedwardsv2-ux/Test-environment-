@@ -19,6 +19,7 @@ deleting them (history stays in `decisions.md`).
 
 ## Next to build (in order, after the Desk answers)
 2. [ ] Model comparisons on real work (comparisons 1-2 done 9 Oct: both 9/9; Desk card "promote-sonnet" for the two advisors) before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
+2b. [ ] Make the Guardian enforced, not optional (its own 9 Oct finding): e.g. `tools/audit.py` warns when a commit touching many files has no "Checked-by: guardian" line; optionally try it on a different model (Nate says a different model judges)
 3. [ ] Journey video: Mix improved 9 Oct evening (scene 3 cut, growing-brain background; `brainstorms/2026-10-09-journey-video-thesis.md`). Next: Charlie's notes on it, then a proper video file with voice-over; later film the real brain growing in Obsidian (Mac)
 4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker")
 6. [ ] Set-up kit (paused): first friend or family set-up from plan v0.4

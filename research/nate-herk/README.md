@@ -18,7 +18,7 @@ Its checking-your-work steps are already in our system (`guardian` agent,
 `context/working-rules.md`); the rest is for later:
 - **Test the idea before building** ("roast" council: contrarian, expansionist,
   first-principles, researcher, the buyer, then one verdict and the cheapest
-  48-hour test): [3:07](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=187s) to [6:42](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=402s). Plain Claude gave a vaguer answer.
+  48-hour test): [2:36](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=156s) to [6:42](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=402s). Plain Claude gave a vaguer answer.
 - **Build and verify a landing page** (screenshots at both screen sizes, try
   odd inputs, fix, re-check): [9:43](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=583s) to [15:18](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=918s). Prompt:
   [Upgrade 2 landing-page prompt](prompt-upgrade2-landing-page.md). It passed every

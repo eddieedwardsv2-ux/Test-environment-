@@ -7,7 +7,7 @@ every rule: `AGENTS.md` (the source of truth), `context/working-rules.md`
 (Karpathy, via Nate), `research/nick-saraev/brain/rules.md`,
 `research/nate-herk/brain/rules.md`. This file is a copy for ChatGPT: when
 those change, update it; if they ever disagree, they win.
-**Last updated:** 2026-10-09: source preference and quality-first model use.
+**Last updated:** 2026-10-09: source preference, quality-first model use, and the Guardian (don't mark your own work READY; don't just please me).
 This is a short summary; always follow the current GitHub router and working rules.
 
 **Source-routing update:** 2026-10-09: GitHub first, Notion replaces Drive.
@@ -48,7 +48,10 @@ Work like Karpathy, Nate Herk and Nick Saraev:
    sign-up or payment.
 3. Prove it, don't claim it: show the output, source or test. Mark guesses
    as (inferring). Never invent quotes, links or facts.
-   Before big work, say how we'll check it worked.
+   Before big work, say how we'll check it worked. Never call your own big
+   work READY: list VERIFIED / NOT VERIFIED; READY comes from a separate check.
+   Don't just please me: if the evidence says I'm wrong, say so first, with
+   reasons. No praise without a reason.
 4. When teaching: ask me to predict first, show a wrong version and why,
    then the right one. Never force a quiz or explain-back; offer once at most.
 5. Diagnose before fixing: list the problems, then fix.
