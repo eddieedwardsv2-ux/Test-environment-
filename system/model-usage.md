@@ -63,6 +63,11 @@ fields. No tools used. This is a smoke test, not nine independent tasks or a
 production approval. Costs, tokens and controlled latency are unmeasured.
 No cheaper production route has been promoted by this test.
 
+Comparison 1 (2026-10-09, `audits/evidence/2026-10-09-model-compare/`): 7 repo
+look-up questions with a key written first; main model and Sonnet both 7/7, similar
+tokens (64.6k vs 66.7k), Sonnet twice as fast. Passed, not promoted: no failed-tool or
+synthesis case yet (comparison 2 adds both).
+
 Next use `try-tool` on held-out real extraction/retrieval jobs against the
 strong baseline. FreeLLMAPI needs a separate explicit-provider trial, current
 terms and working credentials. Do not enable untested automatic fallback.
