@@ -54,6 +54,8 @@ connector; his settings blocked it, so it was dropped.)
   Only in a turn Charlie typed: a re-watch in any other turn (a wake, a task notice, a
   continued session) is refused, and the Desk stays unwatched until his next message
   (10 Oct). Free a slot first (stop another page's watch), then restart the Desk's.
+  A restart can drop the Desk watch (10 Oct, 07:06): on every turn Charlie types, list the
+  watches (`watch` with no URL) and re-watch the Desk if it's missing.
 - Codex can't watch the Desk: when only Codex is working, nothing is woken, and the next
   Claude session picks the answers up at its start.
 
