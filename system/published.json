@@ -32,8 +32,8 @@
  "research/nate-herk/brain/map/enate.html": {
   "page": "Architect (Nate)",
   "url": "https://claude.ai/artifact/7zEayuFD7i4FNrMqzoM7KJ",
-  "sha256": "3551f22dea6bb42e",
-  "published": "2026-10-09"
+  "sha256": "ac4a63a855bd81fd",
+  "published": "2026-10-10"
  },
  "system/journey-video/journey-video.html": {
   "page": "Journey video drafts",
@@ -44,20 +44,20 @@
  "system/reader/reader.html": {
   "page": "Reading Room",
   "url": "https://claude.ai/artifact/E5Skrh9G7ey8DpAUDGXbds",
-  "sha256": "9c1e63781495a500",
-  "published": "2026-10-09"
+  "sha256": "695a43989093a5b6",
+  "published": "2026-10-10"
  },
  "research/nate-herk/brain/map/brain-map.html": {
   "page": "Brain dashboard",
   "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
-  "sha256": "5e7b1605f926ca87",
-  "published": "2026-10-09"
+  "sha256": "652bd90eb710e9d9",
+  "published": "2026-10-10"
  },
  "system/merge-map/merge-map.html": {
   "page": "Nate-first map",
   "url": "https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky",
-  "sha256": "98daab732f84aeba",
-  "published": "2026-10-09"
+  "sha256": "f8b80e93335d6be9",
+  "published": "2026-10-10"
  },
  "projects/ai-os-setup-kit/compare/kit-compare.html": {
   "page": "Kit Compare",

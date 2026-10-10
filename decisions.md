@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-10: backtrack: a stale hand-off sent me to done work
+Resuming from the 9 Oct hand-off, I started on the audit hole and the live helper tests, which another session had already finished at 23:00 (c990e2d). Where I looked: `context/handoff.md` only. Why I missed it: the hand-off is a snapshot, and later commits didn't rewrite it. Fix the route: the router's session-start line now says to read `git log` since the hand-off first, and later commits win. Second miss: I stopped the Desk watch to re-register it in a turn Charlie didn't type, and the restart was refused; the `decide` skill now says to restart it only in a turn he typed.
+
 ## 2026-10-10: Standard AI-OS v1 page frozen as the 8 Oct snapshot
 Charlie's Desk choice (`standard-v1-future`: freeze). `system/standard-ai-os-v1.md` now opens with a history banner and is not kept up to date; it stays as the source list of Nate's requirements and the video code table the Architect's brain cites. `system/architecture.md` is the only current "how it's built" (new "shape today" line: router → Desk → elders → knowledge → pages); the router row points only there; `system/README.md` and the `architect` agent label the standard as history. Nothing deleted. Card closed with the outcome.
 
