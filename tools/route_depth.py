@@ -33,7 +33,7 @@ def route():
         # History is a record, not a route (Charlie, 10 Oct: "not very efficient when looking at
         # paths"): a note reachable only through decisions.md or a brainstorm has no real route.
         if n != start and cl.HISTORY.search(n.relative_to(ROOT).as_posix()): continue
-        for r in refs(n):
+        for r in sorted(refs(n)):  # sorted: ties resolve the same way every run (pages stay stable)
             if r not in depth: depth[r] = depth[n] + 1; parent[r] = n; q.append(r)
     cur = [p.resolve() for p in ROOT.rglob("*.md") if ".git" not in p.parts and "templates" not in p.parts
            and not cl.SKIP_NAME.search(p.name) and not cl.HISTORY.search(p.relative_to(ROOT).as_posix())]
