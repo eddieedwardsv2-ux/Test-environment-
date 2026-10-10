@@ -4,9 +4,10 @@
   "c5ZkPhzaLdA",
   "uWnQLASl95U",
   "GZtLsvklYBI",
-  "BcNAQynKUk4"
+  "BcNAQynKUk4",
+  "Wsru44p-J14"
  ],
- "summary": "Launch-week mix. Mostly open-source swaps for paid tools (voice, chat, search, images, clips), plus Omnisend's MCP, the ECC skills toolkit and small AI-product launches. Free coding routing (FreeLLMAPI) and ECC are the most useful for Claude Code.",
+ "summary": "Launch-week mix. Mostly open-source swaps for paid tools (voice, chat, search, images, clips), plus Omnisend's MCP, the ECC skills toolkit and small AI-product launches; Friday's repo round-up adds Agent Reach, OpenRig, HyperFrames and CLI Proxy API. Free coding routing (FreeLLMAPI), ECC and Agent Reach are the most useful for Claude Code.",
  "tools": [
   {
    "name": "Pexo",
@@ -792,6 +793,534 @@
    "open_source": "yes",
    "repo": "https://github.com/affaan-m/ecc",
    "cost": null
+  },
+  {
+   "name": "Agent Reach",
+   "url": "https://github.com/Panniantong/Agent-Reach",
+   "kind": "repo",
+   "category": "Research & search",
+   "what": "Lets an agent read X, Reddit, YouTube and LinkedIn, swapping to another method when one gets blocked.",
+   "shown": "Hosts walked through the repo and its fallback example; no live run.",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "11:24",
+   "quote": "it was blocked uh where Billy Billy blocked this YouTube downloader tool and it and agent reach just switch to another tool.",
+   "check": "X and LinkedIn search use your login cookie: account-ban risk. 94,000 stars is the host's figure.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "His own scrapers break all the time; this one swaps methods for him.",
+    "quote": "I've built some custom scrapers for these things. I've used some of the other off-the-shelf stuff and man, they just break all the time.",
+    "t": "12:18"
+   },
+   "our_view": {
+    "need": "maybe",
+    "for_what": "Getting YouTube transcripts and X posts when our free routes are rate-limited",
+    "agree": "agree",
+    "why": "Our real pain: YouTube blocks the cloud IP and the free transcript service limits us (context/environment.md). Rule 43: one trial on a blocked video before relying on it."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/Panniantong/Agent-Reach",
+   "cost": null,
+   "vs": {
+    "tool": "Firecrawl",
+    "verdict": "different job",
+    "gap": "Firecrawl scrapes any website; Agent Reach targets X, Reddit and YouTube with fallbacks. Unknown whether it gets past YouTube's block on cloud servers."
+   }
+  },
+  {
+   "name": "OpenRig",
+   "url": "https://github.com/mvschwarz/openrig",
+   "kind": "repo",
+   "category": "Agent orchestration & teams",
+   "what": "Runs Codex, Claude, Cursor and other coding agents as one team of named specialists in a workflow.",
+   "shown": "Hosts explained it against Paperclip; no live run.",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "2:06",
+   "quote": "Think of it maybe as like a techy paperclip that's designed around building rather than arbitrary kind of executive assistant agents.",
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "They use several coding agents and lack one place to orchestrate them.",
+    "quote": "what we lack is a great interface to orchestrate all of them together.",
+    "t": "2:35"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Charlie runs Claude Code and Codex one at a time and our council already names specialist agents (.claude/agents/). Rule 39: adopt only for real pain; Rule 42: overlap."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/mvschwarz/openrig",
+   "cost": null,
+   "vs": {
+    "tool": "Meta Muse",
+    "verdict": "different job",
+    "gap": "Built for coding agents, not assistants; no one has shown it running, so setup effort is unknown."
+   }
+  },
+  {
+   "name": "hyperframes",
+   "url": "https://skills.sh/heygen-com/hyperframes/hyperframes",
+   "kind": "skill",
+   "category": "Video, clips & images",
+   "what": "Agent writes HTML animations and renders them to MP4; edit the code instead of regenerating frames.",
+   "shown": "Showed the repo and sample renders.",
+   "for_charlie": 3,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "3:31",
+   "quote": "Agents can now write HTML and render MP4s.",
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Cheaper than generating video; small edits only change the code.",
+    "quote": "I I like it a lot. I could see why this is doing so well.",
+    "t": "4:09"
+   },
+   "our_view": {
+    "need": "yes",
+    "for_what": "Short intro and explainer clips for the YouTube channel",
+    "agree": "agree",
+    "why": "Already our #1 for video. Note: the HyperFrames connector here disables compose from Claude Code and points to the local skills instead."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/heygen-com/hyperframes",
+   "cost": null,
+   "vs": null
+  },
+  {
+   "name": "Claude-Mem",
+   "url": "https://github.com/thedotmack/claude-mem",
+   "kind": "plugin",
+   "category": "Knowledge & second brain",
+   "what": "Logs each day's agent actions into memory files the agent can pull up later; works with GrokBot and OpenClaw.",
+   "shown": "Hosts explained it via GrokBot's memory folder; no live run.",
+   "for_charlie": 2,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "7:55",
+   "quote": "this allows you to store your daily actions and um and let's Grockbot pull it up.",
+   "check": "",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Adam",
+    "why": "Useful, but thinks GrokBot hype, not the tool, made it trend.",
+    "quote": "I think it's the Grockbot connection that made it take off this week. It's hard to tell.",
+    "t": "8:45"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Cloud sessions wipe local memory, so our memory lives in this repo (CLAUDE.md). Worth a look only on the Mac."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/thedotmack/claude-mem",
+   "cost": null,
+   "vs": {
+    "tool": "domain-modeling",
+    "verdict": "different job",
+    "gap": "How it behaves with Claude Code on the Mac (Nate uses it) is untested."
+   }
+  },
+  {
+   "name": "grill-me",
+   "url": "https://skills.sh/mattpocock/skills/grill-me",
+   "kind": "skill",
+   "category": "Claude Code skills & plugins",
+   "what": "Matt Pocock's simple skill pack; grill-me interviews you before a project starts.",
+   "shown": "Showed the repo; hosts recommended grill-me as the top skill.",
+   "for_charlie": 3,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "9:09",
+   "quote": "the grill me skill there is the like killer top skill that is the one if you haven't tried it yet go try",
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Vetted by the community, simple, not too in the weeds.",
+    "quote": "I like the credibility and I like the simplicity of this one.",
+    "t": "10:16"
+   },
+   "our_view": {
+    "need": "yes",
+    "for_what": "Interviewing Charlie before he builds",
+    "agree": "agree",
+    "why": "Already in this repo as `grill-me`. Their warning fits: one user got 200 questions, so keep it one question at a time."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/mattpocock/skills",
+   "cost": null,
+   "vs": {
+    "tool": "grilling",
+    "verdict": "leader stays",
+    "gap": "grill-me just calls grilling; nothing new to learn."
+   }
+  },
+  {
+   "name": "CLI Proxy API",
+   "url": "",
+   "kind": "repo",
+   "category": "Cost & tokens",
+   "what": "Sits between Claude Code or Codex and their APIs: re-logs you in automatically and balances several subscriptions across computers.",
+   "shown": "Adam described his own three-computer setup; showed the repo.",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "20:41",
+   "quote": "it will automatically relog me back in.",
+   "check": "Repo link not in the description; name from captions. Account-sharing and ban-avoidance claims: check terms.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "His daily driver; no logins for a week and a half.",
+    "quote": "this is the biggest one that I'm I've been using and I love it.",
+    "t": "20:41"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Sharing accounts across machines and routing through a home IP 'so you're less likely to get banned' is likely against the providers' terms. Charlie has one subscription and no login pain."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null,
+   "vs": {
+    "tool": "FreeLLMAPI",
+    "verdict": "different job",
+    "gap": "FreeLLMAPI routes to free models; this pools paid logins. Repo link not given in the description."
+   }
+  },
+  {
+   "name": "Cursor Plugins",
+   "url": "https://github.com/cursor/plugins",
+   "kind": "repo",
+   "category": "Coding agents & IDEs",
+   "what": "The Cursor team's own connectors and workflows, published so you can copy how they work.",
+   "shown": "Showed the repo and the developers on X.",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "6:30",
+   "quote": "we can also see their workflows to understand how they are personally working.",
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Likes seeing real developers' workflows in a vetted public place.",
+    "quote": "I appreciate that that these are starting to pop up in like a vetted public way.",
+    "t": "7:42"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Charlie uses Claude Code and Codex, not Cursor. Useful only as reading for how pros set up agents."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/cursor/plugins",
+   "cost": null,
+   "vs": {
+    "tool": "prototype",
+    "verdict": "different job",
+    "gap": "Whether any Cursor plugin ports to Claude Code is unknown."
+   }
+  },
+  {
+   "name": "AnyPS5",
+   "url": "https://github.com/boykopovar/AnyPS5",
+   "kind": "repo",
+   "category": "Other",
+   "what": "Uses AI to rewrite a PS5 game's files to run natively on a PC (one game so far).",
+   "shown": "Showed the repo and Hacker News reaction.",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "0:28",
+   "quote": "this isn't an emulator.",
+   "check": "Needs a disc decryption exploit; likely takedown.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Adam",
+    "why": "Clever, but needs a decryption exploit and will likely be taken down.",
+    "quote": "I don't know that that it'll last that long, though.",
+    "t": "1:33"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Not about Charlie's AI OS or channel; legal risk."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/boykopovar/AnyPS5",
+   "cost": null,
+   "vs": null
+  },
+  {
+   "name": "Rad Debugger",
+   "url": "https://github.com/EpicGames/raddebugger",
+   "kind": "repo",
+   "category": "Coding agents & IDEs",
+   "what": "Epic Games' open debugger and performance profiler that a coding agent can be told to use for games.",
+   "shown": "Showed the repo; no use.",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "5:08",
+   "quote": "this is coming out of Epic Games.",
+   "check": "Alpha software.",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Adam",
+    "why": "Not for Andrew; great for anyone building games with AI.",
+    "quote": "Is this something that I would ever use? Nope.",
+    "t": "5:10"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Charlie isn't building games."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/EpicGames/raddebugger",
+   "cost": null,
+   "vs": {
+    "tool": "prototype",
+    "verdict": "different job",
+    "gap": "Alpha; game-only."
+   }
+  },
+  {
+   "name": "Text to CAD",
+   "url": "https://github.com/earthtojake/text-to-cad",
+   "kind": "repo",
+   "category": "Other",
+   "what": "Describe a part and get a printable 3D model.",
+   "shown": "Adam showed a three-part enclosure he designed with an agent and printed.",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "13:00",
+   "quote": "You describe a part that you want and you get a real 3D model.",
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Uses AI for CAD on his 3D printer more than ever.",
+    "quote": "I bought the thing 14 years ago and I've never used it more than in the last year.",
+    "t": "14:22"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "No 3D printer in Charlie's work."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/earthtojake/text-to-cad",
+   "cost": null,
+   "vs": null
+  },
+  {
+   "name": "OpenGym",
+   "url": "https://github.com/DuarteSantos8/openGym",
+   "kind": "repo",
+   "category": "Other",
+   "what": "Self-hosted workout tracker that keeps your data on your own machine.",
+   "shown": "Showed the site and Android version.",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "14:40",
+   "quote": "this is my data on my computer on my machine",
+   "check": "",
+   "opinion": {
+    "stance": "mixed",
+    "who": "Andrew",
+    "why": "Likes owning the data; dislikes self-hosting and no iOS app.",
+    "quote": "I would still need to self-host and then I have to self-host it on my own computer. I don't want to do that anymore.",
+    "t": "15:22"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Not about the AI OS."
+   },
+   "open_source": "public code",
+   "repo": "https://github.com/DuarteSantos8/openGym",
+   "cost": null,
+   "vs": null
+  },
+  {
+   "name": "Silo",
+   "url": "",
+   "kind": "repo",
+   "category": "Agent orchestration & teams",
+   "what": "Test an AI agent in a simulated world before it goes live (viewer submission).",
+   "shown": "Showed the repo briefly.",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "16:30",
+   "quote": "This is a way for you to test your AI agent in a simulation before it goes live.",
+   "check": "No link in the description.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Agentic software is hard to test; a world simulator helps.",
+    "quote": "It's like agents on agents on agents. Uh I'm a big fan",
+    "t": "17:23"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Charlie isn't shipping agents to customers."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null,
+   "vs": null
+  },
+  {
+   "name": "Herder Voice",
+   "url": "",
+   "kind": "plugin",
+   "category": "Voice & audio",
+   "what": "Mac plugin adding real-time voice to Herder, a terminal orchestrator for coding agents (viewer submission).",
+   "shown": "Showed Herder briefly.",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "17:28",
+   "quote": "it's a Mac plugin for herder. You speak and you get real time voice.",
+   "check": "No link in the description; name from captions.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Loves voice in everything; starred it live.",
+    "quote": "I love having voice integrated into everything.",
+    "t": "17:28"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Charlie doesn't use Herder."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null,
+   "vs": {
+    "tool": "VoiceStudio",
+    "verdict": "different job",
+    "gap": "Voice control for agents, not voice generation."
+   }
+  },
+  {
+   "name": "Costa Score",
+   "url": "",
+   "kind": "repo",
+   "category": "Other",
+   "what": "Checks every action an agent takes against policy (data leaks, prompt injection, risky calls) and keeps a tamper-evident log (viewer submission).",
+   "shown": "Read out the repo description.",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "18:09",
+   "quote": "Open source governance later before your agent acts.",
+   "check": "Name from captions (may be misheard); no link in the description.",
+   "opinion": {
+    "stance": "would use",
+    "who": "Adam",
+    "why": "Anyone handling sensitive data should have a layer like this.",
+    "quote": "if you're dealing with sensitive data uh and you're not you don't have a layer like this installed, get it installed.",
+    "t": "18:24"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "agree",
+    "why": "Right idea, but our deny list in .claude/settings.json and the audit already cover Charlie's risk; no sensitive data here (the repo is public)."
+   },
+   "open_source": "yes",
+   "repo": "",
+   "cost": null,
+   "vs": null
+  },
+  {
+   "name": "Free Roam",
+   "url": "",
+   "kind": "app",
+   "category": "Other",
+   "what": "Walk through Google Street View with WASD keys like a video game (viewer submission).",
+   "shown": "Showed it moving through Street View.",
+   "for_charlie": 0,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "19:49",
+   "quote": "W to move forward, S to move back, A and D to go left and right.",
+   "check": "No link in the description.",
+   "opinion": {
+    "stance": "no opinion",
+    "who": "host",
+    "why": "A fun demo; no verdict.",
+    "quote": "",
+    "t": ""
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "n/a",
+    "why": "Not about the AI OS."
+   },
+   "open_source": "unknown",
+   "repo": "",
+   "cost": null,
+   "vs": null
+  },
+  {
+   "name": "GrokBot",
+   "url": "https://thenextnewthing.ai/l/grokbot-reaction-oct3",
+   "kind": "app",
+   "category": "Agent orchestration & teams",
+   "what": "Personal agent with local file access, sub-agents, webhooks and email.",
+   "shown": "Andrew described talking to it by voice on his commute to run his inbox.",
+   "for_charlie": 1,
+   "replaces": [],
+   "video": "Wsru44p-J14",
+   "t": "22:27",
+   "quote": "I am now talking with Grockbot on my way into work every day.",
+   "check": "",
+   "opinion": {
+    "stance": "would use",
+    "who": "Andrew",
+    "why": "Faster now, and has access to his data; tells it to work in the background.",
+    "quote": "tell it always do the thing in the background",
+    "t": "22:58"
+   },
+   "our_view": {
+    "need": "no",
+    "for_what": "",
+    "agree": "disagree",
+    "why": "Same as earlier weeks: Charlie has Claude Code and Codex (Rule 39). The 'work in the background, give me the next thing' tip is worth keeping."
+   },
+   "open_source": "public code",
+   "repo": "",
+   "cost": null,
+   "vs": null
   }
  ]
 }

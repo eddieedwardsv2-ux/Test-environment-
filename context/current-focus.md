@@ -55,6 +55,8 @@ every Saturday 8:47, each inside its own runner session that has the repo attach
 ("Weekly AI OS audit (runner)", "Weekly Hands Brain update (runner)"; fixed 2026-10-09:
 the first routines had no repo and failed).
 
+**Quartermaster weekly run (10 Oct):** 1 new video (Wsru44p-J14, 9 Oct) in W41, 16 tools; best new: Agent Reach (Desk card `qm-agent-reach`). Next run Saturday 17 Oct.
+
 **Hands Brain window (2026-10-09, Desk):** 4 weeks of history (W38 to W41)
 and stop; new videos only, through the Saturday routine.
 

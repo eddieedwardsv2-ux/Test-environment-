@@ -1,5 +1,139 @@
 [
  {
+  "id": "Wsru44p-J14",
+  "title": "This week’s repos: PS5 game on a PC! Turn agents into employees. AI video maker.",
+  "duration": 1427,
+  "views": 9273,
+  "date": "2026-10-09",
+  "desc": "Link to Resource: https://thenextnewthing.ai/l/github-repos-oct9\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Adam break down 10 trending GitHub repositories, from running PS5 games on PC to coordinating AI coding agents, generating videos with code, and building custom 3D models with AI.\n\nDiscover the open-source tools developers are using to build faster, manage AI agent workflows, customize their coding environments, and create powerful applications. This episode also explores community-submitted projects for testing AI agents, adding voice interfaces, enforcing security policies, and navigating Google Street View like a video game. Adam wraps up by sharing how CLI Proxy API helps manage multiple AI coding subscriptions across accounts and computers.\n\nRepos featured:\n\n- AnyPS5: https://github.com/boykopovar/AnyPS5\n- OpenRig: https://github.com/mvschwarz/openrig\n- HyperFrames: https://github.com/heygen-com/hyperframes\n- Rad Debugger: https://github.com/EpicGames/raddebugger\n- Cursor Plugins: https://github.com/cursor/plugins\n- Claude Mem: https://github.com/thedotmack/claude-mem\n- Matt Pocock’s Skills: https://github.com/mattpocock/skills\n- Agent Reach: https://github.com/Panniantong/Agent-Reach\n- Text to CAD: https://github.com/earthtojake/text-to-cad\n- OpenGym: https://github.com/DuarteSantos8/openGym\n\n00:00 - GitHub Repos: Explore this week's hottest tools\n00:28 - AnyPS5: Run PlayStation games on PC\n02:06 - OpenRig: Orchestrate multiple AI coding agents\n03:31 - HyperFrames: Generate videos using code\n04:32 - Zapier: Connect agents to your favorite tools\n05:08 - Rad Debugger: Build and debug video games\n06:30 - Cursor Plugins: Explore real developer workflows\n07:55 - Claude Mem: Give AI agents persistent memory\n09:09 - Matt Pocock's Skills: Improve your coding workflow\n11:06 - Grill Me: Refine ideas before starting projects\n11:24 - Agent Reach: Search X, Reddit, and YouTube\n13:00 - Text to CAD: Create printable 3D models with AI\n14:40 - OpenGym: Track workouts with your own data\n16:30 - Silo: Test AI agents in simulated environments\n17:28 - Herder Voice: Add voice to coding agents\n18:09 - Costa Score: Enforce policies on agent actions\n18:50 - Agent Updates: Discover emerging open-source tools\n19:49 - Free Roam: Navigate Street View like a game\n20:41 - CLI Proxy API: Manage multiple coding subscriptions\n22:24 - GrokBot: Delegate tasks while working in the background\n\n👉 Send us your AI builds: hi@thenextnewthing.ai\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W41",
+  "links": [
+   {
+    "name": "AnyPS5",
+    "url": "https://github.com/boykopovar/AnyPS5"
+   },
+   {
+    "name": "OpenRig",
+    "url": "https://github.com/mvschwarz/openrig"
+   },
+   {
+    "name": "HyperFrames",
+    "url": "https://github.com/heygen-com/hyperframes"
+   },
+   {
+    "name": "Rad Debugger",
+    "url": "https://github.com/EpicGames/raddebugger"
+   },
+   {
+    "name": "Cursor Plugins",
+    "url": "https://github.com/cursor/plugins"
+   },
+   {
+    "name": "Claude Mem",
+    "url": "https://github.com/thedotmack/claude-mem"
+   },
+   {
+    "name": "Matt Pocock’s Skills",
+    "url": "https://github.com/mattpocock/skills"
+   },
+   {
+    "name": "Agent Reach",
+    "url": "https://github.com/Panniantong/Agent-Reach"
+   },
+   {
+    "name": "Text to CAD",
+    "url": "https://github.com/earthtojake/text-to-cad"
+   },
+   {
+    "name": "OpenGym",
+    "url": "https://github.com/DuarteSantos8/openGym"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- GitHub Repos: Explore this week's hottest tools"
+   },
+   {
+    "t": "00:28",
+    "title": "- AnyPS5: Run PlayStation games on PC"
+   },
+   {
+    "t": "02:06",
+    "title": "- OpenRig: Orchestrate multiple AI coding agents"
+   },
+   {
+    "t": "03:31",
+    "title": "- HyperFrames: Generate videos using code"
+   },
+   {
+    "t": "04:32",
+    "title": "- Zapier: Connect agents to your favorite tools"
+   },
+   {
+    "t": "05:08",
+    "title": "- Rad Debugger: Build and debug video games"
+   },
+   {
+    "t": "06:30",
+    "title": "- Cursor Plugins: Explore real developer workflows"
+   },
+   {
+    "t": "07:55",
+    "title": "- Claude Mem: Give AI agents persistent memory"
+   },
+   {
+    "t": "09:09",
+    "title": "- Matt Pocock's Skills: Improve your coding workflow"
+   },
+   {
+    "t": "11:06",
+    "title": "- Grill Me: Refine ideas before starting projects"
+   },
+   {
+    "t": "11:24",
+    "title": "- Agent Reach: Search X, Reddit, and YouTube"
+   },
+   {
+    "t": "13:00",
+    "title": "- Text to CAD: Create printable 3D models with AI"
+   },
+   {
+    "t": "14:40",
+    "title": "- OpenGym: Track workouts with your own data"
+   },
+   {
+    "t": "16:30",
+    "title": "- Silo: Test AI agents in simulated environments"
+   },
+   {
+    "t": "17:28",
+    "title": "- Herder Voice: Add voice to coding agents"
+   },
+   {
+    "t": "18:09",
+    "title": "- Costa Score: Enforce policies on agent actions"
+   },
+   {
+    "t": "18:50",
+    "title": "- Agent Updates: Discover emerging open-source tools"
+   },
+   {
+    "t": "19:49",
+    "title": "- Free Roam: Navigate Street View like a game"
+   },
+   {
+    "t": "20:41",
+    "title": "- CLI Proxy API: Manage multiple coding subscriptions"
+   },
+   {
+    "t": "22:24",
+    "title": "- GrokBot: Delegate tasks while working in the background"
+   }
+  ],
+  "transcript": null
+ },
+ {
   "id": "c5ZkPhzaLdA",
   "title": "AI video maker, AI influencer, free claude code and more ai releases",
   "duration": 1213,

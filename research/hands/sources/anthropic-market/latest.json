@@ -1,5 +1,5 @@
 {
-"date": "2026-10-09",
+"date": "2026-10-10",
 "counts": {
 "official": 315,
 "community": 2284,
@@ -808,7 +808,7 @@
 "name": "hostinger",
 "market": "official",
 "repo": "hostinger/claude-plugin",
-"what": "Deploy, manage and monitor Hostinger services — Websites, Domains, Ecommerce, Email Marketing, Subscriptions & Payments, and VPS. Authenticate via browser (OAut"
+"what": "Deploy, manage and monitor your Hostinger services directly from Claude Code. The plugin connects Claude to Hostinger's remote MCP server, so you can ship sites"
 },
 {
 "name": "huggingface-skills",
