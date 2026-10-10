@@ -1,9 +1,16 @@
 # How the AI OS is built
 
 `AGENTS.md` is the only router. This file explains the design; it doesn't
-route. Source: Nate Herk's videos; the full requirement list with quotes
-and status is `system/standard-ai-os-v1.md`. Folder guide: `system/README.md`;
+route. This is the only current "how it's built". Source: Nate Herk's videos; his
+requirement list with quotes is `system/standard-ai-os-v1.md` (8 Oct snapshot, history). Folder guide: `system/README.md`;
 the repo's front page for visitors: [README.md](../README.md).
+
+## The shape today (one line per part)
+router (`AGENTS.md`) → **Chief's Desk** (questions for Charlie, his answers; `decide` skill)
+→ **elders** (Architect = Nate's method, Quartermaster = which tool, Guardian = READY / NOT READY;
+`.claude/agents/`) → **knowledge** (`context/`, `research/`, brains) → **pages** Charlie opens
+(`system/pages.md`, kept current by `tools/pages_status.py`). Hand-off between sessions:
+`context/handoff.md` (`session-handoff` skill).
 
 ## Layers (top loads first)
 | Layer | Where | What goes there |

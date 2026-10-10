@@ -1,5 +1,9 @@
 # Standard AI-OS v1: Nate's requirements and how this repo meets them
 
+> **History: the 8 Oct 2026 snapshot (frozen, Charlie's Desk choice 10 Oct).** Not kept up to date.
+> How the OS is built now: [architecture.md](architecture.md). Still valid as the source list
+> of Nate's requirements and the video code table the Architect's brain cites.
+
 What a basic, working AI OS needs according to Nate Herk, with no personal
 content. The blank copy is `templates/standard-ai-os-v1/`; this repo is that
 standard plus Charlie's personal details. Decision: `decisions.md`, 2026-10-07.

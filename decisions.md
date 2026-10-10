@@ -1,5 +1,8 @@
 # Decision log
 
+## 2026-10-10: Standard AI-OS v1 page frozen as the 8 Oct snapshot
+Charlie's Desk choice (`standard-v1-future`: freeze). `system/standard-ai-os-v1.md` now opens with a history banner and is not kept up to date; it stays as the source list of Nate's requirements and the video code table the Architect's brain cites. `system/architecture.md` is the only current "how it's built" (new "shape today" line: router → Desk → elders → knowledge → pages); the router row points only there; `system/README.md` and the `architect` agent label the standard as history. Nothing deleted. Card closed with the outcome.
+
 ## 2026-10-09: frontend-design: Later
 Charlie compared the preview with the live Guide and chose Later on the Desk. Recorded in `tried.json`; nothing kept; the live Guide and the preview page stay as they are.
 
