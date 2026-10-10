@@ -48,3 +48,13 @@ he meant by "router chief". If not, it's a one-word change on the page.
   edge, through the router, out to an Elder.
 - Facts updated (195 saves, 15 skills); the Hands Brain is called the Quartermaster.
 - Parked by Charlie 2026-10-09. When un-parked: Charlie watches it and leaves notes; then a real video file with voice-over.
+
+
+## 2026-10-10 — production-method upgrade from Nate's video-editing workflow
+The journey-video story and Mix visual direction stay unchanged. The next actual video render should now be built through Nate's five-stage loop rather than jumping directly from HTML concept to final edit:
+
+`timed transcript/voice-over → cut → beat plan → reusable branded motion skill/assembly → render-and-inspect verification loop`
+
+This matters because the draft already answers **what story to tell** and broadly **what it should look like**. The missing proof is whether our production system can turn that into a polished, repeatable Short while preserving Charlie's chosen voice and the router/Elders/Chief mental model.
+
+This Short is also the real Quartermaster benchmark for HyperFrames/Creative Claw or any replacement: choose tools per stage, keep the workflow fixed, record rework/cost/quality, and do not promote a default tool until Charlie can watch the finished render and the final post-edit version passes the project quality gate.

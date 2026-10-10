@@ -6,8 +6,8 @@ The knowledge base behind the `architect` advisor (`.claude/agents/architect.md`
 
 | File | What's in it |
 |---|---|
-| [rules.md](rules.md) | **44 operating rules**, each with a confidence (stated / demonstrated / inference) and a check the agent asks. 1 is inference only (rule 3, clash: no video gives a fix). |
-| [concepts.md](concepts.md) | **45 concepts** in ten groups: why an OS gives wrong answers, organising it, keeping it true, building an expert brain, turning knowledge into behaviour, human understanding, (G) the wider course and newer videos, (H) the full-channel audit, (I) the newest videos, and (J) other formats such as Instagram DMs. Each with exact quotes and timestamp links. Plus limits, videos that disagree (newer wins) and promotion to ignore. |
+| [rules.md](rules.md) | **45 operating rules**, each with a confidence (stated / demonstrated / inference) and a check the agent asks. 1 is inference only (rule 3, clash: no video gives a fix). |
+| [concepts.md](concepts.md) | **46 concepts** in ten groups: why an OS gives wrong answers, organising it, keeping it true, building an expert brain, turning knowledge into behaviour, human understanding, (G) the wider course and newer videos, (H) the full-channel audit, (I) the newest videos, and (J) other formats such as Instagram DMs. Each with exact quotes and timestamp links. Plus limits, videos that disagree (newer wins) and promotion to ignore. |
 | [log.md](log.md) | History of what was added. |
 | [../README.md](../README.md) | Nate's video list and which are transcribed. |
 
@@ -41,6 +41,7 @@ The knowledge base behind the `architect` advisor (`.claude/agents/architect.md`
 | scheduled or triggered automations, agent loop or fixed code, who will use it | Fqn, l8y; concepts 42-43, Rule 42 |
 | parallel helpers, a written finish line, `/goal`, worker vs judge | iTY8Q449YNQ 21:23-25:27; concept 45 (with 23, 31) |
 | how to prompt a real task: interview, spec, verify, skill, sub-agents, automate; VERIFIED / NOT VERIFIED | `../six-phrases-instagram-source.md`; concept 44, Rule 44 |
+| video editing, motion design, Shorts, branded reels, reusable media skills, rendered-output verification | 7jHXoPGnA4c; [segmented notes](../opus-5-5-video-editing-workflow--7jHXoPGnA4c-notes.md); concept 46, Rule 45 |
 | everything, as a checklist with status in this repo | `system/standard-ai-os-v1.md` |
 
 ## Coverage and gaps (2026-10-08)

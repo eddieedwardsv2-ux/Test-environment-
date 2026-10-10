@@ -1,5 +1,13 @@
 # Nate's brain: log
 
+## 2026-10-10: 7jHXoPGnA4c re-ingestion — media-production method promoted
+**Why:** the transcript was already saved and read in full on 2026-10-08, but the batch ingestion kept mainly the broader model/testing lessons. Charlie pasted the video's five-stage editing section and identified it as important context for the OS and Quartermaster. This exposed an extraction gap: “source ingested” did not mean every durable method had its own route.
+**Source:** existing full timestamped transcript `../opus-5-5-just-changed-video-editing-forever-free-skills--7jHXoPGnA4c-transcript.md`; no duplicate transcript created.
+**Added:** segmented derived notes for the full video; concept 46; Rule 45; routing from the brain index; Quartermaster media-selection guidance; YouTube/journey-Short proof gate.
+**Method promoted:** transcribe → cut → plan beats → reusable/refined skill → inspect rendered artifact and iterate.
+**Tool stance:** HyperFrames/Opus/ElevenLabs/Kling/Kie.ai remain examples, not permanent defaults. Quartermaster chooses tools inside the method.
+**Proof status:** VERIFIED that the full source and method are captured. NOT VERIFIED end-to-end on Charlie's own work until the journey Short is rendered, watched and passes its brand/audio/framing checks.
+
 **This is history.** It records what was added and when; it may be out of date about what the brain holds now. The current state is in [index.md](index.md). Newest first.
 
 ## 2026-10-10: iTY8Q449YNQ upgrade 4 (missed part of an ingested video)
