@@ -275,6 +275,13 @@ Before building, name the strongest check you actually have and what it would no
 > Also: "The verifier is "I reviewed the code." That's not a verifier." [six phrases, what breaks](../six-phrases-instagram-source.md); "Let it read broadly and write to exactly one place." [six phrases, 6](../six-phrases-instagram-source.md)
 **Agent check:** *Did the report show what was run and what it returned, and say plainly what wasn't checked? Did the plan name files and the calls Charlie might disagree with?* (Concepts 44, 31)
 
+
+**Rule 45: For repeatable media, transcribe → cut → plan beats → skill → verify the render** (stated, demonstrated)
+A media workflow is not done when the generation command succeeds. Anchor timing to a transcript, remove obvious mistakes/dead space, define the story beats and brand constraints, reuse/refine a small skill for repeated preferences, then inspect the actual rendered video and iterate until the quality gate is met. Tool choice stays replaceable; the workflow is the durable part. Before promoting a new editor or motion skill, prove it on Charlie's own real video.
+> “If you ever find yourself repeating something, just throw it in the skill.” [7jH 18:18](https://www.youtube.com/watch?v=7jHXoPGnA4c&t=1098s)
+> “the fifth one, probably the most important one, is the verification loop.” [7jH 18:18](https://www.youtube.com/watch?v=7jHXoPGnA4c&t=1098s)
+**Agent check:** *Is timing grounded in the spoken source? Are the beats and brand criteria explicit? Was the final render actually watched/inspected after the last change? Has the toolchain been tested on Charlie's real Short before being promoted?* (Concept 46)
+
 ---
 
 ## Inferring
