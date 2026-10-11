@@ -53,6 +53,8 @@ Full `tools/audit.py` baseline: 10 errors, 0 warnings after new routing links we
 
 `tools/pages_status.py --build` ran once in an isolated copy to protect unrelated/generated files: all builders completed; five stale pages (Quartermaster, Architect/Nate, Reading Room, Brain dashboard, Nate-first map). This environment has no Artifact publishing connector, so those were not republished or marked current.
 
+Post-source-save audit: production commit `1bb636f9806eb9d8cd2247ca98ce109974d6bf49`, 31 changed files, saved through authenticated GitHub connector with expected-head guard. Fetched remote tree matches staged source tree exactly (`71e0b23d7997dbeaba50d87178ae078fafde2ddc`). Full audit now returns **11 errors, 0 warnings**: 10 pre-existing findings plus this production commit's missing independent Guardian review. User's two unrelated local symlink deletions remain unstaged and were not published.
+
 ## Further pre-delivery findings
 
 - r2 full-size decoded frames exposed legacy fallback typography; font names alone did not supply the expected font bytes. Actual JetBrains Mono / DM Sans assets were added and natively verified. r3's first shaped render failed on the decorative arrow glyph; that failed attempt was not delivered. The status label was changed to plain `FAULT TEST: CAUGHT`.

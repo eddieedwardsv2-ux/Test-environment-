@@ -42,6 +42,8 @@ Final MP4 and representative frames are in this project folder and in the review
 
 The next Claude session must run its independent Guardian on the production commit named under Waiting on Charlie, resolve the full audit findings through that workflow, and republish the five pages reported stale. Do not tick G16 merely because the video looks good.
 
+Production source saved and fetched back: commit `1bb636f9806eb9d8cd2247ca98ce109974d6bf49`, branch `chatgpt/nate-video-editing-ingest-2026-10-10`; source tree equality confirmed. Post-commit full audit: **11 errors / 0 warnings**, including this task's required independent review. Local unrelated symlink deletions were preserved, not committed.
+
 ### VERIFIED
 - Produced Charlie's real eight-scene Mix journey Short with a standard synthetic UK narrator, not Charlie's cloned voice.
 - Exact final local file: `/workspace/scratch/212ca4fc0828/repo/projects/youtube-channel/videos/ai-os-journey-short/charlie-ai-os-journey-short-final.mp4`; project-relative path `projects/youtube-channel/videos/ai-os-journey-short/charlie-ai-os-journey-short-final.mp4`.
