@@ -1,0 +1,998 @@
+{
+  "model": "faster-whisper small / cpu int8",
+  "elapsed_seconds": 11.560322547999931,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.04,
+      "text": " I started with a phone and a lot of questions."
+    },
+    {
+      "start": 3.14,
+      "end": 5.72,
+      "text": " Could I build my own AI operating system without coding?"
+    },
+    {
+      "start": 6.16,
+      "end": 11.56,
+      "text": " First, I learned the parts, a model to think, tools to act, skills to guide it, and saved"
+    },
+    {
+      "start": 11.56,
+      "end": 12.08,
+      "text": " context."
+    },
+    {
+      "start": 12.56,
+      "end": 13.48,
+      "text": " Then I built a router."
+    },
+    {
+      "start": 14.6,
+      "end": 16.56,
+      "text": " New information goes to the right specialist."
+    },
+    {
+      "start": 17.52,
+      "end": 19.58,
+      "text": " I call these specialists my elders."
+    },
+    {
+      "start": 20.08,
+      "end": 21.24,
+      "text": " The router points the way."
+    },
+    {
+      "start": 22.28,
+      "end": 26.36,
+      "text": " It loads the useful context instead of dumping every note into every answer."
+    },
+    {
+      "start": 26.76,
+      "end": 27.58,
+      "text": " I stay the chief."
+    },
+    {
+      "start": 27.58,
+      "end": 34.58,
+      "text": " small reversible jobs can move ahead real choices come to my desk where I"
+    },
+    {
+      "start": 34.58,
+      "end": 40.02,
+      "text": " decide the quartermaster helps pick the tools the architect helps organize the"
+    },
+    {
+      "start": 40.02,
+      "end": 45.06,
+      "text": " system their work becomes something I can use but a confident answer isn't"
+    },
+    {
+      "start": 45.06,
+      "end": 50.24,
+      "text": " proof we plant faults and check the result I'm still proving the"
+    },
+    {
+      "start": 50.24,
+      "end": 54.62,
+      "text": " foundation's work next help a friend build their own system and document"
+    },
+    {
+      "start": 55.5,
+      "end": 57.36,
+      "text": " One useful step at a time."
+    }
+  ],
+  "words": [
+    {
+      "start": 0.0,
+      "end": 0.14,
+      "text": "I",
+      "probability": 0.870728075504303
+    },
+    {
+      "start": 0.14,
+      "end": 0.48,
+      "text": "started",
+      "probability": 0.9768049120903015
+    },
+    {
+      "start": 0.48,
+      "end": 0.68,
+      "text": "with",
+      "probability": 0.9980989098548889
+    },
+    {
+      "start": 0.68,
+      "end": 0.8,
+      "text": "a",
+      "probability": 0.9731186628341675
+    },
+    {
+      "start": 0.8,
+      "end": 1.08,
+      "text": "phone",
+      "probability": 0.9965205192565918
+    },
+    {
+      "start": 1.08,
+      "end": 1.22,
+      "text": "and",
+      "probability": 0.977853000164032
+    },
+    {
+      "start": 1.22,
+      "end": 1.34,
+      "text": "a",
+      "probability": 0.991259753704071
+    },
+    {
+      "start": 1.34,
+      "end": 1.5,
+      "text": "lot",
+      "probability": 0.9986497759819031
+    },
+    {
+      "start": 1.5,
+      "end": 1.6,
+      "text": "of",
+      "probability": 0.9984782338142395
+    },
+    {
+      "start": 1.6,
+      "end": 2.04,
+      "text": "questions.",
+      "probability": 0.997859537601471
+    },
+    {
+      "start": 3.14,
+      "end": 3.38,
+      "text": "Could",
+      "probability": 0.8564396500587463
+    },
+    {
+      "start": 3.38,
+      "end": 3.5,
+      "text": "I",
+      "probability": 0.9939802885055542
+    },
+    {
+      "start": 3.5,
+      "end": 3.68,
+      "text": "build",
+      "probability": 0.9936603903770447
+    },
+    {
+      "start": 3.68,
+      "end": 3.9,
+      "text": "my",
+      "probability": 0.9978127479553223
+    },
+    {
+      "start": 3.9,
+      "end": 4.1,
+      "text": "own",
+      "probability": 0.9973416924476624
+    },
+    {
+      "start": 4.1,
+      "end": 4.28,
+      "text": "AI",
+      "probability": 0.9809738993644714
+    },
+    {
+      "start": 4.28,
+      "end": 4.6,
+      "text": "operating",
+      "probability": 0.9498351812362671
+    },
+    {
+      "start": 4.6,
+      "end": 5.06,
+      "text": "system",
+      "probability": 0.9977849721908569
+    },
+    {
+      "start": 5.06,
+      "end": 5.34,
+      "text": "without",
+      "probability": 0.995006799697876
+    },
+    {
+      "start": 5.34,
+      "end": 5.72,
+      "text": "coding?",
+      "probability": 0.9967820644378662
+    },
+    {
+      "start": 6.16,
+      "end": 6.44,
+      "text": "First,",
+      "probability": 0.987177848815918
+    },
+    {
+      "start": 6.86,
+      "end": 7.0,
+      "text": "I",
+      "probability": 0.9967246651649475
+    },
+    {
+      "start": 7.0,
+      "end": 7.24,
+      "text": "learned",
+      "probability": 0.9084890484809875
+    },
+    {
+      "start": 7.24,
+      "end": 7.38,
+      "text": "the",
+      "probability": 0.9972231388092041
+    },
+    {
+      "start": 7.38,
+      "end": 7.68,
+      "text": "parts,",
+      "probability": 0.9742451310157776
+    },
+    {
+      "start": 8.0,
+      "end": 8.08,
+      "text": "a",
+      "probability": 0.9849882125854492
+    },
+    {
+      "start": 8.08,
+      "end": 8.28,
+      "text": "model",
+      "probability": 0.9937962293624878
+    },
+    {
+      "start": 8.28,
+      "end": 8.46,
+      "text": "to",
+      "probability": 0.9794766306877136
+    },
+    {
+      "start": 8.46,
+      "end": 8.68,
+      "text": "think,",
+      "probability": 0.9976359605789185
+    },
+    {
+      "start": 9.02,
+      "end": 9.26,
+      "text": "tools",
+      "probability": 0.9948714971542358
+    },
+    {
+      "start": 9.26,
+      "end": 9.48,
+      "text": "to",
+      "probability": 0.9988827109336853
+    },
+    {
+      "start": 9.48,
+      "end": 9.7,
+      "text": "act,",
+      "probability": 0.9974172115325928
+    },
+    {
+      "start": 10.0,
+      "end": 10.22,
+      "text": "skills",
+      "probability": 0.9946178793907166
+    },
+    {
+      "start": 10.22,
+      "end": 10.44,
+      "text": "to",
+      "probability": 0.9995912909507751
+    },
+    {
+      "start": 10.44,
+      "end": 10.7,
+      "text": "guide",
+      "probability": 0.9920489192008972
+    },
+    {
+      "start": 10.7,
+      "end": 10.94,
+      "text": "it,",
+      "probability": 0.997867226600647
+    },
+    {
+      "start": 11.12,
+      "end": 11.22,
+      "text": "and",
+      "probability": 0.9960786700248718
+    },
+    {
+      "start": 11.22,
+      "end": 11.56,
+      "text": "saved",
+      "probability": 0.9892725944519043
+    },
+    {
+      "start": 11.56,
+      "end": 12.08,
+      "text": "context.",
+      "probability": 0.9772952795028687
+    },
+    {
+      "start": 12.56,
+      "end": 12.7,
+      "text": "Then",
+      "probability": 0.9853608012199402
+    },
+    {
+      "start": 12.7,
+      "end": 12.84,
+      "text": "I",
+      "probability": 0.95346599817276
+    },
+    {
+      "start": 12.84,
+      "end": 13.08,
+      "text": "built",
+      "probability": 0.9887973666191101
+    },
+    {
+      "start": 13.08,
+      "end": 13.22,
+      "text": "a",
+      "probability": 0.9984561204910278
+    },
+    {
+      "start": 13.22,
+      "end": 13.48,
+      "text": "router.",
+      "probability": 0.9251195788383484
+    },
+    {
+      "start": 14.6,
+      "end": 14.84,
+      "text": "New",
+      "probability": 0.9816873669624329
+    },
+    {
+      "start": 14.84,
+      "end": 15.22,
+      "text": "information",
+      "probability": 0.9928444027900696
+    },
+    {
+      "start": 15.22,
+      "end": 15.64,
+      "text": "goes",
+      "probability": 0.9989742040634155
+    },
+    {
+      "start": 15.64,
+      "end": 15.84,
+      "text": "to",
+      "probability": 0.9985571503639221
+    },
+    {
+      "start": 15.84,
+      "end": 15.96,
+      "text": "the",
+      "probability": 0.9965513944625854
+    },
+    {
+      "start": 15.96,
+      "end": 16.18,
+      "text": "right",
+      "probability": 0.970186710357666
+    },
+    {
+      "start": 16.18,
+      "end": 16.56,
+      "text": "specialist.",
+      "probability": 0.980585515499115
+    },
+    {
+      "start": 17.52,
+      "end": 17.96,
+      "text": "I",
+      "probability": 0.9924333095550537
+    },
+    {
+      "start": 17.96,
+      "end": 18.16,
+      "text": "call",
+      "probability": 0.991890549659729
+    },
+    {
+      "start": 18.16,
+      "end": 18.42,
+      "text": "these",
+      "probability": 0.9905492663383484
+    },
+    {
+      "start": 18.42,
+      "end": 18.96,
+      "text": "specialists",
+      "probability": 0.9271701574325562
+    },
+    {
+      "start": 18.96,
+      "end": 19.26,
+      "text": "my",
+      "probability": 0.7103257179260254
+    },
+    {
+      "start": 19.26,
+      "end": 19.58,
+      "text": "elders.",
+      "probability": 0.9475741982460022
+    },
+    {
+      "start": 20.08,
+      "end": 20.2,
+      "text": "The",
+      "probability": 0.9850307106971741
+    },
+    {
+      "start": 20.2,
+      "end": 20.42,
+      "text": "router",
+      "probability": 0.9884695410728455
+    },
+    {
+      "start": 20.42,
+      "end": 20.78,
+      "text": "points",
+      "probability": 0.9954421520233154
+    },
+    {
+      "start": 20.78,
+      "end": 20.96,
+      "text": "the",
+      "probability": 0.9954130053520203
+    },
+    {
+      "start": 20.96,
+      "end": 21.24,
+      "text": "way.",
+      "probability": 0.9987810254096985
+    },
+    {
+      "start": 22.28,
+      "end": 22.44,
+      "text": "It",
+      "probability": 0.9932470321655273
+    },
+    {
+      "start": 22.44,
+      "end": 22.72,
+      "text": "loads",
+      "probability": 0.9942571520805359
+    },
+    {
+      "start": 22.72,
+      "end": 22.92,
+      "text": "the",
+      "probability": 0.9969189167022705
+    },
+    {
+      "start": 22.92,
+      "end": 23.18,
+      "text": "useful",
+      "probability": 0.9967799782752991
+    },
+    {
+      "start": 23.18,
+      "end": 23.84,
+      "text": "context",
+      "probability": 0.9966478943824768
+    },
+    {
+      "start": 23.84,
+      "end": 24.38,
+      "text": "instead",
+      "probability": 0.7384210228919983
+    },
+    {
+      "start": 24.38,
+      "end": 24.58,
+      "text": "of",
+      "probability": 0.999433696269989
+    },
+    {
+      "start": 24.58,
+      "end": 24.82,
+      "text": "dumping",
+      "probability": 0.9939517378807068
+    },
+    {
+      "start": 24.82,
+      "end": 25.16,
+      "text": "every",
+      "probability": 0.9964237809181213
+    },
+    {
+      "start": 25.16,
+      "end": 25.48,
+      "text": "note",
+      "probability": 0.9784225821495056
+    },
+    {
+      "start": 25.48,
+      "end": 25.72,
+      "text": "into",
+      "probability": 0.9920136332511902
+    },
+    {
+      "start": 25.72,
+      "end": 26.0,
+      "text": "every",
+      "probability": 0.9980975985527039
+    },
+    {
+      "start": 26.0,
+      "end": 26.36,
+      "text": "answer.",
+      "probability": 0.9983454942703247
+    },
+    {
+      "start": 26.76,
+      "end": 26.92,
+      "text": "I",
+      "probability": 0.9972991347312927
+    },
+    {
+      "start": 26.92,
+      "end": 27.12,
+      "text": "stay",
+      "probability": 0.9886137247085571
+    },
+    {
+      "start": 27.12,
+      "end": 27.28,
+      "text": "the",
+      "probability": 0.9966239929199219
+    },
+    {
+      "start": 27.28,
+      "end": 27.58,
+      "text": "chief.",
+      "probability": 0.8995311260223389
+    },
+    {
+      "start": 27.58,
+      "end": 29.0,
+      "text": "small",
+      "probability": 0.13173547387123108
+    },
+    {
+      "start": 29.0,
+      "end": 29.7,
+      "text": "reversible",
+      "probability": 0.3140042722225189
+    },
+    {
+      "start": 29.7,
+      "end": 30.24,
+      "text": "jobs",
+      "probability": 0.9930011034011841
+    },
+    {
+      "start": 30.24,
+      "end": 30.46,
+      "text": "can",
+      "probability": 0.9917812943458557
+    },
+    {
+      "start": 30.46,
+      "end": 30.7,
+      "text": "move",
+      "probability": 0.9970589876174927
+    },
+    {
+      "start": 30.7,
+      "end": 31.06,
+      "text": "ahead",
+      "probability": 0.987804651260376
+    },
+    {
+      "start": 31.06,
+      "end": 32.46,
+      "text": "real",
+      "probability": 0.6879905462265015
+    },
+    {
+      "start": 32.46,
+      "end": 32.86,
+      "text": "choices",
+      "probability": 0.9715521931648254
+    },
+    {
+      "start": 32.86,
+      "end": 33.18,
+      "text": "come",
+      "probability": 0.976253092288971
+    },
+    {
+      "start": 33.18,
+      "end": 33.32,
+      "text": "to",
+      "probability": 0.9967472553253174
+    },
+    {
+      "start": 33.32,
+      "end": 33.5,
+      "text": "my",
+      "probability": 0.9956747889518738
+    },
+    {
+      "start": 33.5,
+      "end": 33.9,
+      "text": "desk",
+      "probability": 0.9974254965782166
+    },
+    {
+      "start": 33.9,
+      "end": 34.4,
+      "text": "where",
+      "probability": 0.9347133040428162
+    },
+    {
+      "start": 34.4,
+      "end": 34.58,
+      "text": "I",
+      "probability": 0.969775915145874
+    },
+    {
+      "start": 34.58,
+      "end": 35.0,
+      "text": "decide",
+      "probability": 0.9923697710037231
+    },
+    {
+      "start": 35.0,
+      "end": 35.66,
+      "text": "the",
+      "probability": 0.8802796006202698
+    },
+    {
+      "start": 35.66,
+      "end": 36.1,
+      "text": "quartermaster",
+      "probability": 0.8515114188194275
+    },
+    {
+      "start": 36.1,
+      "end": 36.52,
+      "text": "helps",
+      "probability": 0.9343764185905457
+    },
+    {
+      "start": 36.52,
+      "end": 36.78,
+      "text": "pick",
+      "probability": 0.9804192185401917
+    },
+    {
+      "start": 36.78,
+      "end": 36.92,
+      "text": "the",
+      "probability": 0.998514711856842
+    },
+    {
+      "start": 36.92,
+      "end": 37.28,
+      "text": "tools",
+      "probability": 0.9970349073410034
+    },
+    {
+      "start": 37.28,
+      "end": 38.5,
+      "text": "the",
+      "probability": 0.9012037515640259
+    },
+    {
+      "start": 38.5,
+      "end": 38.82,
+      "text": "architect",
+      "probability": 0.9714788198471069
+    },
+    {
+      "start": 38.82,
+      "end": 39.32,
+      "text": "helps",
+      "probability": 0.9823007583618164
+    },
+    {
+      "start": 39.32,
+      "end": 39.7,
+      "text": "organize",
+      "probability": 0.9105952978134155
+    },
+    {
+      "start": 39.7,
+      "end": 40.02,
+      "text": "the",
+      "probability": 0.9986978769302368
+    },
+    {
+      "start": 40.02,
+      "end": 40.44,
+      "text": "system",
+      "probability": 0.9983966946601868
+    },
+    {
+      "start": 40.44,
+      "end": 41.6,
+      "text": "their",
+      "probability": 0.8588540554046631
+    },
+    {
+      "start": 41.6,
+      "end": 41.82,
+      "text": "work",
+      "probability": 0.9983378648757935
+    },
+    {
+      "start": 41.82,
+      "end": 42.2,
+      "text": "becomes",
+      "probability": 0.792248010635376
+    },
+    {
+      "start": 42.2,
+      "end": 42.58,
+      "text": "something",
+      "probability": 0.9982126951217651
+    },
+    {
+      "start": 42.58,
+      "end": 42.78,
+      "text": "I",
+      "probability": 0.9723215699195862
+    },
+    {
+      "start": 42.78,
+      "end": 42.94,
+      "text": "can",
+      "probability": 0.9980480670928955
+    },
+    {
+      "start": 42.94,
+      "end": 43.36,
+      "text": "use",
+      "probability": 0.9979142546653748
+    },
+    {
+      "start": 43.36,
+      "end": 43.86,
+      "text": "but",
+      "probability": 0.9180459380149841
+    },
+    {
+      "start": 43.86,
+      "end": 44.0,
+      "text": "a",
+      "probability": 0.9957268238067627
+    },
+    {
+      "start": 44.0,
+      "end": 44.28,
+      "text": "confident",
+      "probability": 0.981342613697052
+    },
+    {
+      "start": 44.28,
+      "end": 44.74,
+      "text": "answer",
+      "probability": 0.9927048087120056
+    },
+    {
+      "start": 44.74,
+      "end": 45.06,
+      "text": "isn't",
+      "probability": 0.9908144474029541
+    },
+    {
+      "start": 45.06,
+      "end": 45.42,
+      "text": "proof",
+      "probability": 0.9916741251945496
+    },
+    {
+      "start": 45.42,
+      "end": 46.64,
+      "text": "we",
+      "probability": 0.851102352142334
+    },
+    {
+      "start": 46.64,
+      "end": 46.96,
+      "text": "plant",
+      "probability": 0.9440528154373169
+    },
+    {
+      "start": 46.96,
+      "end": 47.24,
+      "text": "faults",
+      "probability": 0.9307226538658142
+    },
+    {
+      "start": 47.24,
+      "end": 47.52,
+      "text": "and",
+      "probability": 0.99782395362854
+    },
+    {
+      "start": 47.52,
+      "end": 47.76,
+      "text": "check",
+      "probability": 0.9978629946708679
+    },
+    {
+      "start": 47.76,
+      "end": 47.9,
+      "text": "the",
+      "probability": 0.9996399879455566
+    },
+    {
+      "start": 47.9,
+      "end": 48.28,
+      "text": "result",
+      "probability": 0.979009211063385
+    },
+    {
+      "start": 48.28,
+      "end": 49.52,
+      "text": "I'm",
+      "probability": 0.9104381799697876
+    },
+    {
+      "start": 49.52,
+      "end": 49.74,
+      "text": "still",
+      "probability": 0.9988011121749878
+    },
+    {
+      "start": 49.74,
+      "end": 50.06,
+      "text": "proving",
+      "probability": 0.9960123300552368
+    },
+    {
+      "start": 50.06,
+      "end": 50.24,
+      "text": "the",
+      "probability": 0.996073842048645
+    },
+    {
+      "start": 50.24,
+      "end": 50.94,
+      "text": "foundation's",
+      "probability": 0.7910573184490204
+    },
+    {
+      "start": 50.94,
+      "end": 51.18,
+      "text": "work",
+      "probability": 0.9982337951660156
+    },
+    {
+      "start": 51.18,
+      "end": 51.92,
+      "text": "next",
+      "probability": 0.7157403826713562
+    },
+    {
+      "start": 51.92,
+      "end": 52.44,
+      "text": "help",
+      "probability": 0.9361133575439453
+    },
+    {
+      "start": 52.44,
+      "end": 52.58,
+      "text": "a",
+      "probability": 0.9941520094871521
+    },
+    {
+      "start": 52.58,
+      "end": 52.8,
+      "text": "friend",
+      "probability": 0.9972615242004395
+    },
+    {
+      "start": 52.8,
+      "end": 53.04,
+      "text": "build",
+      "probability": 0.9920063614845276
+    },
+    {
+      "start": 53.04,
+      "end": 53.3,
+      "text": "their",
+      "probability": 0.9989410042762756
+    },
+    {
+      "start": 53.3,
+      "end": 53.5,
+      "text": "own",
+      "probability": 0.9984014630317688
+    },
+    {
+      "start": 53.5,
+      "end": 53.86,
+      "text": "system",
+      "probability": 0.9986094236373901
+    },
+    {
+      "start": 53.86,
+      "end": 54.26,
+      "text": "and",
+      "probability": 0.9954572916030884
+    },
+    {
+      "start": 54.26,
+      "end": 54.62,
+      "text": "document",
+      "probability": 0.9900879263877869
+    },
+    {
+      "start": 55.5,
+      "end": 56.1,
+      "text": "One",
+      "probability": 0.5078674554824829
+    },
+    {
+      "start": 56.1,
+      "end": 56.5,
+      "text": "useful",
+      "probability": 0.973349928855896
+    },
+    {
+      "start": 56.5,
+      "end": 56.78,
+      "text": "step",
+      "probability": 0.9972798824310303
+    },
+    {
+      "start": 56.78,
+      "end": 56.96,
+      "text": "at",
+      "probability": 0.9988223910331726
+    },
+    {
+      "start": 56.96,
+      "end": 57.02,
+      "text": "a",
+      "probability": 0.9977684020996094
+    },
+    {
+      "start": 57.02,
+      "end": 57.36,
+      "text": "time.",
+      "probability": 0.9998323917388916
+    }
+  ],
+  "expected_words": 149,
+  "asr_words": 148,
+  "similarity": 0.98989898989899,
+  "differences": [
+    {
+      "kind": "replace",
+      "expected": [
+        "organise"
+      ],
+      "heard": [
+        "organize"
+      ]
+    },
+    {
+      "kind": "delete",
+      "expected": [
+        "it"
+      ],
+      "heard": []
+    }
+  ],
+  "audio_file": "final-audio.wav"
+}

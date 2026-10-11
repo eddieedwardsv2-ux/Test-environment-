@@ -1,0 +1,9 @@
+{
+  "samples_compared": 2771200,
+  "source_seconds": 57.733333333333334,
+  "export_seconds": 57.733333333333334,
+  "zero_lag_correlation": 0.9999156234129849,
+  "snr_db": 37.66585159301758,
+  "export_clipped_samples": 0,
+  "export_peak_dbfs": -1.359931468963623
+}

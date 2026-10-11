@@ -72,6 +72,7 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
+- Journey Short production proof (11 Oct, Charlie's explicit /goal): reviewable 57.7 s portrait MP4 and evidence in [the production folder](../projects/youtube-channel/videos/ai-os-journey-short/README.md). Production commit `1bb636f9806eb9d8cd2247ca98ce109974d6bf49` on `chatgpt/nate-video-editing-ingest-2026-10-10` requires the next Claude session's independent Guardian; `result.md` is NOT VERIFIED. Full audit: 11 errors / 0 warnings (10 baseline plus this commit's review). This does not reorder the foundation plan or unpark other work.
 - Answered 9 Oct late evening: both browser routes (Claude's own browser on Mac day; Codex
   writes its shared phone-browser plan next), TinyFish removed, Higgsfield sign-in moved to
   Mac day (Charlie couldn't find a way from the phone). Open: `qm-frontend-design` (preview page to compare).

@@ -1,0 +1,1618 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "synthetic": true,
+  "stage_order": [
+    "transcribe/timing",
+    "cut"
+  ],
+  "elapsed_seconds": 13.881,
+  "duration": 57.733333333333334,
+  "words": [
+    {
+      "text": "I",
+      "start": 0.0,
+      "end": 0.14
+    },
+    {
+      "text": "started",
+      "start": 0.14,
+      "end": 0.48
+    },
+    {
+      "text": "with",
+      "start": 0.48,
+      "end": 0.68
+    },
+    {
+      "text": "a",
+      "start": 0.68,
+      "end": 0.8
+    },
+    {
+      "text": "phone",
+      "start": 0.8,
+      "end": 1.08
+    },
+    {
+      "text": "and",
+      "start": 1.08,
+      "end": 1.22
+    },
+    {
+      "text": "a",
+      "start": 1.22,
+      "end": 1.34
+    },
+    {
+      "text": "lot",
+      "start": 1.34,
+      "end": 1.5
+    },
+    {
+      "text": "of",
+      "start": 1.5,
+      "end": 1.6
+    },
+    {
+      "text": "questions.",
+      "start": 1.6,
+      "end": 2.04
+    },
+    {
+      "text": "Could",
+      "start": 3.14,
+      "end": 3.38
+    },
+    {
+      "text": "I",
+      "start": 3.38,
+      "end": 3.5
+    },
+    {
+      "text": "build",
+      "start": 3.5,
+      "end": 3.68
+    },
+    {
+      "text": "my",
+      "start": 3.68,
+      "end": 3.9
+    },
+    {
+      "text": "own",
+      "start": 3.9,
+      "end": 4.1
+    },
+    {
+      "text": "AI",
+      "start": 4.1,
+      "end": 4.28
+    },
+    {
+      "text": "operating",
+      "start": 4.28,
+      "end": 4.6
+    },
+    {
+      "text": "system",
+      "start": 4.6,
+      "end": 5.06
+    },
+    {
+      "text": "without",
+      "start": 5.06,
+      "end": 5.34
+    },
+    {
+      "text": "coding?",
+      "start": 5.34,
+      "end": 5.72
+    },
+    {
+      "text": "First,",
+      "start": 6.16,
+      "end": 6.44
+    },
+    {
+      "text": "I",
+      "start": 6.86,
+      "end": 7.0
+    },
+    {
+      "text": "learned",
+      "start": 7.0,
+      "end": 7.24
+    },
+    {
+      "text": "the",
+      "start": 7.24,
+      "end": 7.38
+    },
+    {
+      "text": "parts:",
+      "start": 7.38,
+      "end": 7.68
+    },
+    {
+      "text": "a",
+      "start": 8.0,
+      "end": 8.08
+    },
+    {
+      "text": "model",
+      "start": 8.08,
+      "end": 8.28
+    },
+    {
+      "text": "to",
+      "start": 8.28,
+      "end": 8.46
+    },
+    {
+      "text": "think,",
+      "start": 8.46,
+      "end": 8.68
+    },
+    {
+      "text": "tools",
+      "start": 9.02,
+      "end": 9.24
+    },
+    {
+      "text": "to",
+      "start": 9.24,
+      "end": 9.48
+    },
+    {
+      "text": "act,",
+      "start": 9.48,
+      "end": 9.72
+    },
+    {
+      "text": "skills",
+      "start": 10.0,
+      "end": 10.22
+    },
+    {
+      "text": "to",
+      "start": 10.22,
+      "end": 10.44
+    },
+    {
+      "text": "guide",
+      "start": 10.44,
+      "end": 10.7
+    },
+    {
+      "text": "it,",
+      "start": 10.7,
+      "end": 10.94
+    },
+    {
+      "text": "and",
+      "start": 11.12,
+      "end": 11.22
+    },
+    {
+      "text": "saved",
+      "start": 11.22,
+      "end": 11.56
+    },
+    {
+      "text": "context.",
+      "start": 11.56,
+      "end": 12.06
+    },
+    {
+      "text": "Then",
+      "start": 12.56,
+      "end": 12.7
+    },
+    {
+      "text": "I",
+      "start": 12.7,
+      "end": 12.84
+    },
+    {
+      "text": "built",
+      "start": 12.84,
+      "end": 13.08
+    },
+    {
+      "text": "a",
+      "start": 13.08,
+      "end": 13.2
+    },
+    {
+      "text": "Router.",
+      "start": 13.2,
+      "end": 13.46
+    },
+    {
+      "text": "New",
+      "start": 14.6,
+      "end": 14.84
+    },
+    {
+      "text": "information",
+      "start": 14.84,
+      "end": 15.22
+    },
+    {
+      "text": "goes",
+      "start": 15.22,
+      "end": 15.64
+    },
+    {
+      "text": "to",
+      "start": 15.64,
+      "end": 15.84
+    },
+    {
+      "text": "the",
+      "start": 15.84,
+      "end": 15.94
+    },
+    {
+      "text": "right",
+      "start": 15.94,
+      "end": 16.18
+    },
+    {
+      "text": "specialist.",
+      "start": 16.18,
+      "end": 16.56
+    },
+    {
+      "text": "I",
+      "start": 17.56,
+      "end": 17.96
+    },
+    {
+      "text": "call",
+      "start": 17.96,
+      "end": 18.16
+    },
+    {
+      "text": "these",
+      "start": 18.16,
+      "end": 18.42
+    },
+    {
+      "text": "specialists",
+      "start": 18.42,
+      "end": 18.96
+    },
+    {
+      "text": "my",
+      "start": 18.96,
+      "end": 19.26
+    },
+    {
+      "text": "Elders.",
+      "start": 19.26,
+      "end": 19.58
+    },
+    {
+      "text": "The",
+      "start": 20.08,
+      "end": 20.2
+    },
+    {
+      "text": "Router",
+      "start": 20.2,
+      "end": 20.42
+    },
+    {
+      "text": "points",
+      "start": 20.42,
+      "end": 20.76
+    },
+    {
+      "text": "the",
+      "start": 20.76,
+      "end": 20.96
+    },
+    {
+      "text": "way.",
+      "start": 20.96,
+      "end": 21.24
+    },
+    {
+      "text": "It",
+      "start": 22.28,
+      "end": 22.44
+    },
+    {
+      "text": "loads",
+      "start": 22.44,
+      "end": 22.72
+    },
+    {
+      "text": "the",
+      "start": 22.72,
+      "end": 22.92
+    },
+    {
+      "text": "useful",
+      "start": 22.92,
+      "end": 23.18
+    },
+    {
+      "text": "context,",
+      "start": 23.18,
+      "end": 23.82
+    },
+    {
+      "text": "instead",
+      "start": 23.82,
+      "end": 24.38
+    },
+    {
+      "text": "of",
+      "start": 24.38,
+      "end": 24.58
+    },
+    {
+      "text": "dumping",
+      "start": 24.58,
+      "end": 24.82
+    },
+    {
+      "text": "every",
+      "start": 24.82,
+      "end": 25.16
+    },
+    {
+      "text": "note",
+      "start": 25.16,
+      "end": 25.48
+    },
+    {
+      "text": "into",
+      "start": 25.48,
+      "end": 25.72
+    },
+    {
+      "text": "every",
+      "start": 25.72,
+      "end": 26.0
+    },
+    {
+      "text": "answer.",
+      "start": 26.0,
+      "end": 26.36
+    },
+    {
+      "text": "I",
+      "start": 26.766667,
+      "end": 26.92
+    },
+    {
+      "text": "stay",
+      "start": 26.92,
+      "end": 27.12
+    },
+    {
+      "text": "the",
+      "start": 27.12,
+      "end": 27.28
+    },
+    {
+      "text": "Chief.",
+      "start": 27.28,
+      "end": 27.58
+    },
+    {
+      "text": "Small,",
+      "start": 28.36,
+      "end": 29.0
+    },
+    {
+      "text": "reversible",
+      "start": 29.36,
+      "end": 29.74
+    },
+    {
+      "text": "jobs",
+      "start": 29.74,
+      "end": 30.24
+    },
+    {
+      "text": "can",
+      "start": 30.24,
+      "end": 30.46
+    },
+    {
+      "text": "move",
+      "start": 30.46,
+      "end": 30.72
+    },
+    {
+      "text": "ahead.",
+      "start": 30.72,
+      "end": 31.06
+    },
+    {
+      "text": "Real",
+      "start": 32.0,
+      "end": 32.46
+    },
+    {
+      "text": "choices",
+      "start": 32.46,
+      "end": 32.86
+    },
+    {
+      "text": "come",
+      "start": 32.86,
+      "end": 33.18
+    },
+    {
+      "text": "to",
+      "start": 33.18,
+      "end": 33.32
+    },
+    {
+      "text": "my",
+      "start": 33.32,
+      "end": 33.5
+    },
+    {
+      "text": "Desk,",
+      "start": 33.5,
+      "end": 33.9
+    },
+    {
+      "text": "where",
+      "start": 34.2,
+      "end": 34.4
+    },
+    {
+      "text": "I",
+      "start": 34.4,
+      "end": 34.6
+    },
+    {
+      "text": "decide.",
+      "start": 34.6,
+      "end": 35.0
+    },
+    {
+      "text": "The",
+      "start": 35.58,
+      "end": 35.66
+    },
+    {
+      "text": "Quartermaster",
+      "start": 35.66,
+      "end": 36.12
+    },
+    {
+      "text": "helps",
+      "start": 36.12,
+      "end": 36.5
+    },
+    {
+      "text": "pick",
+      "start": 36.5,
+      "end": 36.78
+    },
+    {
+      "text": "the",
+      "start": 36.78,
+      "end": 36.92
+    },
+    {
+      "text": "tools.",
+      "start": 36.92,
+      "end": 37.26
+    },
+    {
+      "text": "The",
+      "start": 38.36,
+      "end": 38.5
+    },
+    {
+      "text": "Architect",
+      "start": 38.5,
+      "end": 38.82
+    },
+    {
+      "text": "helps",
+      "start": 38.82,
+      "end": 39.3
+    },
+    {
+      "text": "organise",
+      "start": 39.3,
+      "end": 39.7
+    },
+    {
+      "text": "the",
+      "start": 39.7,
+      "end": 40.0
+    },
+    {
+      "text": "system.",
+      "start": 40.0,
+      "end": 40.34
+    },
+    {
+      "text": "Their",
+      "start": 41.4,
+      "end": 41.6
+    },
+    {
+      "text": "work",
+      "start": 41.6,
+      "end": 41.82
+    },
+    {
+      "text": "becomes",
+      "start": 41.82,
+      "end": 42.12
+    },
+    {
+      "text": "something",
+      "start": 42.12,
+      "end": 42.56
+    },
+    {
+      "text": "I",
+      "start": 42.56,
+      "end": 42.78
+    },
+    {
+      "text": "can",
+      "start": 42.78,
+      "end": 42.94
+    },
+    {
+      "text": "use.",
+      "start": 42.94,
+      "end": 43.36
+    },
+    {
+      "text": "But",
+      "start": 43.733333,
+      "end": 43.86
+    },
+    {
+      "text": "a",
+      "start": 43.86,
+      "end": 44.0
+    },
+    {
+      "text": "confident",
+      "start": 44.0,
+      "end": 44.28
+    },
+    {
+      "text": "answer",
+      "start": 44.28,
+      "end": 44.74
+    },
+    {
+      "text": "isn't",
+      "start": 44.74,
+      "end": 45.06
+    },
+    {
+      "text": "proof.",
+      "start": 45.06,
+      "end": 45.38
+    },
+    {
+      "text": "We",
+      "start": 46.34,
+      "end": 46.66
+    },
+    {
+      "text": "plant",
+      "start": 46.66,
+      "end": 46.96
+    },
+    {
+      "text": "faults",
+      "start": 46.96,
+      "end": 47.24
+    },
+    {
+      "text": "and",
+      "start": 47.24,
+      "end": 47.52
+    },
+    {
+      "text": "check",
+      "start": 47.52,
+      "end": 47.76
+    },
+    {
+      "text": "the",
+      "start": 47.76,
+      "end": 47.9
+    },
+    {
+      "text": "result.",
+      "start": 47.9,
+      "end": 48.28
+    },
+    {
+      "text": "I'm",
+      "start": 49.16,
+      "end": 49.52
+    },
+    {
+      "text": "still",
+      "start": 49.52,
+      "end": 49.74
+    },
+    {
+      "text": "proving",
+      "start": 49.74,
+      "end": 50.06
+    },
+    {
+      "text": "the",
+      "start": 50.06,
+      "end": 50.24
+    },
+    {
+      "text": "foundations",
+      "start": 50.24,
+      "end": 50.94
+    },
+    {
+      "text": "work.",
+      "start": 50.94,
+      "end": 51.18
+    },
+    {
+      "text": "Next,",
+      "start": 51.62,
+      "end": 51.9
+    },
+    {
+      "text": "help",
+      "start": 52.3,
+      "end": 52.46
+    },
+    {
+      "text": "a",
+      "start": 52.46,
+      "end": 52.58
+    },
+    {
+      "text": "friend",
+      "start": 52.58,
+      "end": 52.8
+    },
+    {
+      "text": "build",
+      "start": 52.8,
+      "end": 53.04
+    },
+    {
+      "text": "their",
+      "start": 53.04,
+      "end": 53.3
+    },
+    {
+      "text": "own",
+      "start": 53.3,
+      "end": 53.48
+    },
+    {
+      "text": "system,",
+      "start": 53.48,
+      "end": 53.88
+    },
+    {
+      "text": "and",
+      "start": 53.88,
+      "end": 54.24
+    },
+    {
+      "text": "document",
+      "start": 54.24,
+      "end": 54.62
+    },
+    {
+      "text": "it.",
+      "start": 54.62,
+      "end": 54.94
+    },
+    {
+      "text": "One",
+      "start": 54.94,
+      "end": 56.12
+    },
+    {
+      "text": "useful",
+      "start": 56.12,
+      "end": 56.52
+    },
+    {
+      "text": "step",
+      "start": 56.52,
+      "end": 56.78
+    },
+    {
+      "text": "at",
+      "start": 56.78,
+      "end": 56.96
+    },
+    {
+      "text": "a",
+      "start": 56.96,
+      "end": 57.04
+    },
+    {
+      "text": "time.",
+      "start": 57.04,
+      "end": 57.36
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "line": "I started with a phone and a lot of questions. Could I build my own AI operating system without coding?",
+      "start": 0.0,
+      "duration": 6.133333333333334,
+      "end": 6.133333,
+      "raw_duration": 6.936,
+      "trim_start": 0.166708,
+      "trim_end": 6.1744200000000005,
+      "removed_seconds": 0.9282879999999993,
+      "words": [
+        {
+          "text": "I",
+          "start": 0.0,
+          "end": 0.14
+        },
+        {
+          "text": "started",
+          "start": 0.14,
+          "end": 0.48
+        },
+        {
+          "text": "with",
+          "start": 0.48,
+          "end": 0.68
+        },
+        {
+          "text": "a",
+          "start": 0.68,
+          "end": 0.8
+        },
+        {
+          "text": "phone",
+          "start": 0.8,
+          "end": 1.08
+        },
+        {
+          "text": "and",
+          "start": 1.08,
+          "end": 1.22
+        },
+        {
+          "text": "a",
+          "start": 1.22,
+          "end": 1.34
+        },
+        {
+          "text": "lot",
+          "start": 1.34,
+          "end": 1.5
+        },
+        {
+          "text": "of",
+          "start": 1.5,
+          "end": 1.6
+        },
+        {
+          "text": "questions.",
+          "start": 1.6,
+          "end": 2.04
+        },
+        {
+          "text": "Could",
+          "start": 3.14,
+          "end": 3.38
+        },
+        {
+          "text": "I",
+          "start": 3.38,
+          "end": 3.5
+        },
+        {
+          "text": "build",
+          "start": 3.5,
+          "end": 3.68
+        },
+        {
+          "text": "my",
+          "start": 3.68,
+          "end": 3.9
+        },
+        {
+          "text": "own",
+          "start": 3.9,
+          "end": 4.1
+        },
+        {
+          "text": "AI",
+          "start": 4.1,
+          "end": 4.28
+        },
+        {
+          "text": "operating",
+          "start": 4.28,
+          "end": 4.6
+        },
+        {
+          "text": "system",
+          "start": 4.6,
+          "end": 5.06
+        },
+        {
+          "text": "without",
+          "start": 5.06,
+          "end": 5.34
+        },
+        {
+          "text": "coding?",
+          "start": 5.34,
+          "end": 5.72
+        }
+      ],
+      "silence_log": "[mp3 @ 0x55c92e910dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-01.mp3':\n  Duration: 00:00:06.94, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x55c92e926740] silence_start: 0\n[silencedetect @ 0x55c92e926740] silence_end: 0.226708 | silence_duration: 0.226708\n[silencedetect @ 0x55c92e926740] silence_start: 2.46271\n[silencedetect @ 0x55c92e926740] silence_end: 3.45421 | silence_duration: 0.9915\n[silencedetect @ 0x55c92e926740] silence_start: 6.05442\nsize=N/A time=00:00:06.93 bitrate=N/A speed= 700x    \nvideo:0kB audio:325kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x55c92e926740] silence_end: 6.936 | silence_duration: 0.881583\n"
+    },
+    {
+      "scene": 2,
+      "line": "First, I learned the parts: a model to think, tools to act, skills to guide it, and saved context.",
+      "start": 6.133333,
+      "duration": 6.4,
+      "end": 12.533333,
+      "raw_duration": 7.2,
+      "trim_start": 0.176958,
+      "trim_end": 6.4448300000000005,
+      "removed_seconds": 0.9321279999999996,
+      "words": [
+        {
+          "text": "First,",
+          "start": 6.16,
+          "end": 6.44
+        },
+        {
+          "text": "I",
+          "start": 6.86,
+          "end": 7.0
+        },
+        {
+          "text": "learned",
+          "start": 7.0,
+          "end": 7.24
+        },
+        {
+          "text": "the",
+          "start": 7.24,
+          "end": 7.38
+        },
+        {
+          "text": "parts:",
+          "start": 7.38,
+          "end": 7.68
+        },
+        {
+          "text": "a",
+          "start": 8.0,
+          "end": 8.08
+        },
+        {
+          "text": "model",
+          "start": 8.08,
+          "end": 8.28
+        },
+        {
+          "text": "to",
+          "start": 8.28,
+          "end": 8.46
+        },
+        {
+          "text": "think,",
+          "start": 8.46,
+          "end": 8.68
+        },
+        {
+          "text": "tools",
+          "start": 9.02,
+          "end": 9.24
+        },
+        {
+          "text": "to",
+          "start": 9.24,
+          "end": 9.48
+        },
+        {
+          "text": "act,",
+          "start": 9.48,
+          "end": 9.72
+        },
+        {
+          "text": "skills",
+          "start": 10.0,
+          "end": 10.22
+        },
+        {
+          "text": "to",
+          "start": 10.22,
+          "end": 10.44
+        },
+        {
+          "text": "guide",
+          "start": 10.44,
+          "end": 10.7
+        },
+        {
+          "text": "it,",
+          "start": 10.7,
+          "end": 10.94
+        },
+        {
+          "text": "and",
+          "start": 11.12,
+          "end": 11.22
+        },
+        {
+          "text": "saved",
+          "start": 11.22,
+          "end": 11.56
+        },
+        {
+          "text": "context.",
+          "start": 11.56,
+          "end": 12.06
+        }
+      ],
+      "silence_log": "[mp3 @ 0x55a385900dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-02.mp3':\n  Duration: 00:00:07.20, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x55a385916740] silence_start: 0\n[silencedetect @ 0x55a385916740] silence_end: 0.236958 | silence_duration: 0.236958\n[silencedetect @ 0x55a385916740] silence_start: 0.687833\n[silencedetect @ 0x55a385916740] silence_end: 0.918042 | silence_duration: 0.230208\n[silencedetect @ 0x55a385916740] silence_start: 1.85013\n[silencedetect @ 0x55a385916740] silence_end: 2.03487 | silence_duration: 0.18475\n[silencedetect @ 0x55a385916740] silence_start: 2.86204\n[silencedetect @ 0x55a385916740] silence_end: 3.10487 | silence_duration: 0.242833\n[silencedetect @ 0x55a385916740] silence_start: 3.81921\n[silencedetect @ 0x55a385916740] silence_end: 4.00158 | silence_duration: 0.182375\n[silencedetect @ 0x55a385916740] silence_start: 4.95358\n[silencedetect @ 0x55a385916740] silence_end: 5.14738 | silence_duration: 0.193792\n[silencedetect @ 0x55a385916740] silence_start: 6.32483\nsize=N/A time=00:00:07.20 bitrate=N/A speed= 867x    \nvideo:0kB audio:338kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x55a385916740] silence_end: 7.2 | silence_duration: 0.875167\n"
+    },
+    {
+      "scene": 3,
+      "line": "Then I built a Router. New information goes to the right specialist. I call these specialists my Elders.",
+      "start": 12.533333,
+      "duration": 7.533333333333333,
+      "end": 20.066667,
+      "raw_duration": 8.304,
+      "trim_start": 0.161167,
+      "trim_end": 7.55562,
+      "removed_seconds": 0.9095469999999999,
+      "words": [
+        {
+          "text": "Then",
+          "start": 12.56,
+          "end": 12.7
+        },
+        {
+          "text": "I",
+          "start": 12.7,
+          "end": 12.84
+        },
+        {
+          "text": "built",
+          "start": 12.84,
+          "end": 13.08
+        },
+        {
+          "text": "a",
+          "start": 13.08,
+          "end": 13.2
+        },
+        {
+          "text": "Router.",
+          "start": 13.2,
+          "end": 13.46
+        },
+        {
+          "text": "New",
+          "start": 14.6,
+          "end": 14.84
+        },
+        {
+          "text": "information",
+          "start": 14.84,
+          "end": 15.22
+        },
+        {
+          "text": "goes",
+          "start": 15.22,
+          "end": 15.64
+        },
+        {
+          "text": "to",
+          "start": 15.64,
+          "end": 15.84
+        },
+        {
+          "text": "the",
+          "start": 15.84,
+          "end": 15.94
+        },
+        {
+          "text": "right",
+          "start": 15.94,
+          "end": 16.18
+        },
+        {
+          "text": "specialist.",
+          "start": 16.18,
+          "end": 16.56
+        },
+        {
+          "text": "I",
+          "start": 17.56,
+          "end": 17.96
+        },
+        {
+          "text": "call",
+          "start": 17.96,
+          "end": 18.16
+        },
+        {
+          "text": "these",
+          "start": 18.16,
+          "end": 18.42
+        },
+        {
+          "text": "specialists",
+          "start": 18.42,
+          "end": 18.96
+        },
+        {
+          "text": "my",
+          "start": 18.96,
+          "end": 19.26
+        },
+        {
+          "text": "Elders.",
+          "start": 19.26,
+          "end": 19.58
+        }
+      ],
+      "silence_log": "[mp3 @ 0x55fbef9a6dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-03.mp3':\n  Duration: 00:00:08.30, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x55fbef9bc740] silence_start: 0\n[silencedetect @ 0x55fbef9bc740] silence_end: 0.221167 | silence_duration: 0.221167\n[silencedetect @ 0x55fbef9bc740] silence_start: 1.291\n[silencedetect @ 0x55fbef9bc740] silence_end: 2.26392 | silence_duration: 0.972917\n[mp3float @ 0x55fbef9c53c0] overread, skip -7 enddists: -3 -3\n[silencedetect @ 0x55fbef9bc740] silence_start: 4.52013\n[silencedetect @ 0x55fbef9bc740] silence_end: 5.52292 | silence_duration: 1.00279\n[silencedetect @ 0x55fbef9bc740] silence_start: 7.43562\nsize=N/A time=00:00:08.30 bitrate=N/A speed= 778x    \nvideo:0kB audio:389kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x55fbef9bc740] silence_end: 8.304 | silence_duration: 0.868375\n"
+    },
+    {
+      "scene": 4,
+      "line": "The Router points the way. It loads the useful context, instead of dumping every note into every answer.",
+      "start": 20.066667,
+      "duration": 6.7,
+      "end": 26.766667,
+      "raw_duration": 7.488,
+      "trim_start": 0.18425,
+      "trim_end": 6.7384200000000005,
+      "removed_seconds": 0.9338299999999995,
+      "words": [
+        {
+          "text": "The",
+          "start": 20.08,
+          "end": 20.2
+        },
+        {
+          "text": "Router",
+          "start": 20.2,
+          "end": 20.42
+        },
+        {
+          "text": "points",
+          "start": 20.42,
+          "end": 20.76
+        },
+        {
+          "text": "the",
+          "start": 20.76,
+          "end": 20.96
+        },
+        {
+          "text": "way.",
+          "start": 20.96,
+          "end": 21.24
+        },
+        {
+          "text": "It",
+          "start": 22.28,
+          "end": 22.44
+        },
+        {
+          "text": "loads",
+          "start": 22.44,
+          "end": 22.72
+        },
+        {
+          "text": "the",
+          "start": 22.72,
+          "end": 22.92
+        },
+        {
+          "text": "useful",
+          "start": 22.92,
+          "end": 23.18
+        },
+        {
+          "text": "context,",
+          "start": 23.18,
+          "end": 23.82
+        },
+        {
+          "text": "instead",
+          "start": 23.82,
+          "end": 24.38
+        },
+        {
+          "text": "of",
+          "start": 24.38,
+          "end": 24.58
+        },
+        {
+          "text": "dumping",
+          "start": 24.58,
+          "end": 24.82
+        },
+        {
+          "text": "every",
+          "start": 24.82,
+          "end": 25.16
+        },
+        {
+          "text": "note",
+          "start": 25.16,
+          "end": 25.48
+        },
+        {
+          "text": "into",
+          "start": 25.48,
+          "end": 25.72
+        },
+        {
+          "text": "every",
+          "start": 25.72,
+          "end": 26.0
+        },
+        {
+          "text": "answer.",
+          "start": 26.0,
+          "end": 26.36
+        }
+      ],
+      "silence_log": "[mp3 @ 0x5652aa0e9dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-04.mp3':\n  Duration: 00:00:07.49, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x5652aa0ff740] silence_start: 0\n[silencedetect @ 0x5652aa0ff740] silence_end: 0.24425 | silence_duration: 0.24425\n[silencedetect @ 0x5652aa0ff740] silence_start: 1.48862\n[silencedetect @ 0x5652aa0ff740] silence_end: 2.46679 | silence_duration: 0.978167\n[silencedetect @ 0x5652aa0ff740] silence_start: 4.05804\n[silencedetect @ 0x5652aa0ff740] silence_end: 4.28142 | silence_duration: 0.223375\n[silencedetect @ 0x5652aa0ff740] silence_start: 6.61842\nsize=N/A time=00:00:07.48 bitrate=N/A speed= 835x    \nvideo:0kB audio:351kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x5652aa0ff740] silence_end: 7.488 | silence_duration: 0.869583\n"
+    },
+    {
+      "scene": 5,
+      "line": "I stay the Chief. Small, reversible jobs can move ahead. Real choices come to my Desk, where I decide.",
+      "start": 26.766667,
+      "duration": 8.733333333333333,
+      "end": 35.5,
+      "raw_duration": 9.504,
+      "trim_start": 0.17366700000000002,
+      "trim_end": 8.762289999999998,
+      "removed_seconds": 0.9153770000000012,
+      "words": [
+        {
+          "text": "I",
+          "start": 26.766667,
+          "end": 26.92
+        },
+        {
+          "text": "stay",
+          "start": 26.92,
+          "end": 27.12
+        },
+        {
+          "text": "the",
+          "start": 27.12,
+          "end": 27.28
+        },
+        {
+          "text": "Chief.",
+          "start": 27.28,
+          "end": 27.58
+        },
+        {
+          "text": "Small,",
+          "start": 28.36,
+          "end": 29.0
+        },
+        {
+          "text": "reversible",
+          "start": 29.36,
+          "end": 29.74
+        },
+        {
+          "text": "jobs",
+          "start": 29.74,
+          "end": 30.24
+        },
+        {
+          "text": "can",
+          "start": 30.24,
+          "end": 30.46
+        },
+        {
+          "text": "move",
+          "start": 30.46,
+          "end": 30.72
+        },
+        {
+          "text": "ahead.",
+          "start": 30.72,
+          "end": 31.06
+        },
+        {
+          "text": "Real",
+          "start": 32.0,
+          "end": 32.46
+        },
+        {
+          "text": "choices",
+          "start": 32.46,
+          "end": 32.86
+        },
+        {
+          "text": "come",
+          "start": 32.86,
+          "end": 33.18
+        },
+        {
+          "text": "to",
+          "start": 33.18,
+          "end": 33.32
+        },
+        {
+          "text": "my",
+          "start": 33.32,
+          "end": 33.5
+        },
+        {
+          "text": "Desk,",
+          "start": 33.5,
+          "end": 33.9
+        },
+        {
+          "text": "where",
+          "start": 34.2,
+          "end": 34.4
+        },
+        {
+          "text": "I",
+          "start": 34.4,
+          "end": 34.6
+        },
+        {
+          "text": "decide.",
+          "start": 34.6,
+          "end": 35.0
+        }
+      ],
+      "silence_log": "[mp3 @ 0x557c0bb74dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-05.mp3':\n  Duration: 00:00:09.50, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=2.4e+04x    \n[silencedetect @ 0x557c0bb8a740] silence_start: 0\n[silencedetect @ 0x557c0bb8a740] silence_end: 0.233667 | silence_duration: 0.233667\n[silencedetect @ 0x557c0bb8a740] silence_start: 1.14979\n[silencedetect @ 0x557c0bb8a740] silence_end: 2.15496 | silence_duration: 1.00517\n[silencedetect @ 0x557c0bb8a740] silence_start: 2.60625\n[silencedetect @ 0x557c0bb8a740] silence_end: 2.77754 | silence_duration: 0.171292\n[silencedetect @ 0x557c0bb8a740] silence_start: 4.5875\n[silencedetect @ 0x557c0bb8a740] silence_end: 5.59317 | silence_duration: 1.00567\n[silencedetect @ 0x557c0bb8a740] silence_start: 7.399\n[silencedetect @ 0x557c0bb8a740] silence_end: 7.63767 | silence_duration: 0.238667\n[silencedetect @ 0x557c0bb8a740] silence_start: 8.64229\nsize=N/A time=00:00:09.50 bitrate=N/A speed=1.23e+03x    \nvideo:0kB audio:446kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x557c0bb8a740] silence_end: 9.504 | silence_duration: 0.861708\n"
+    },
+    {
+      "scene": 6,
+      "line": "The Quartermaster helps pick the tools. The Architect helps organise the system. Their work becomes something I can use.",
+      "start": 35.5,
+      "duration": 8.233333333333333,
+      "end": 43.733333,
+      "raw_duration": 9.024,
+      "trim_start": 0.181417,
+      "trim_end": 8.269169999999999,
+      "removed_seconds": 0.9362469999999998,
+      "words": [
+        {
+          "text": "The",
+          "start": 35.58,
+          "end": 35.66
+        },
+        {
+          "text": "Quartermaster",
+          "start": 35.66,
+          "end": 36.12
+        },
+        {
+          "text": "helps",
+          "start": 36.12,
+          "end": 36.5
+        },
+        {
+          "text": "pick",
+          "start": 36.5,
+          "end": 36.78
+        },
+        {
+          "text": "the",
+          "start": 36.78,
+          "end": 36.92
+        },
+        {
+          "text": "tools.",
+          "start": 36.92,
+          "end": 37.26
+        },
+        {
+          "text": "The",
+          "start": 38.36,
+          "end": 38.5
+        },
+        {
+          "text": "Architect",
+          "start": 38.5,
+          "end": 38.82
+        },
+        {
+          "text": "helps",
+          "start": 38.82,
+          "end": 39.3
+        },
+        {
+          "text": "organise",
+          "start": 39.3,
+          "end": 39.7
+        },
+        {
+          "text": "the",
+          "start": 39.7,
+          "end": 40.0
+        },
+        {
+          "text": "system.",
+          "start": 40.0,
+          "end": 40.34
+        },
+        {
+          "text": "Their",
+          "start": 41.4,
+          "end": 41.6
+        },
+        {
+          "text": "work",
+          "start": 41.6,
+          "end": 41.82
+        },
+        {
+          "text": "becomes",
+          "start": 41.82,
+          "end": 42.12
+        },
+        {
+          "text": "something",
+          "start": 42.12,
+          "end": 42.56
+        },
+        {
+          "text": "I",
+          "start": 42.56,
+          "end": 42.78
+        },
+        {
+          "text": "can",
+          "start": 42.78,
+          "end": 42.94
+        },
+        {
+          "text": "use.",
+          "start": 42.94,
+          "end": 43.36
+        }
+      ],
+      "silence_log": "[mp3 @ 0x558a7e14ddc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-06.mp3':\n  Duration: 00:00:09.02, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x558a7e163740] silence_start: 0\n[silencedetect @ 0x558a7e163740] silence_end: 0.241417 | silence_duration: 0.241417\n[silencedetect @ 0x558a7e163740] silence_start: 2.11496\n[silencedetect @ 0x558a7e163740] silence_end: 3.10917 | silence_duration: 0.994208\n[silencedetect @ 0x558a7e163740] silence_start: 5.12117\n[silencedetect @ 0x558a7e163740] silence_end: 6.14104 | silence_duration: 1.01987\n[silencedetect @ 0x558a7e163740] silence_start: 8.14917\nsize=N/A time=00:00:09.02 bitrate=N/A speed=1.15e+03x    \nvideo:0kB audio:423kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x558a7e163740] silence_end: 9.024 | silence_duration: 0.874833\n"
+    },
+    {
+      "scene": 7,
+      "line": "But a confident answer isn't proof. We plant faults and check the result. I'm still proving the foundations work.",
+      "start": 43.733333,
+      "duration": 7.866666666666666,
+      "end": 51.6,
+      "raw_duration": 8.664,
+      "trim_start": 0.18525,
+      "trim_end": 7.92475,
+      "removed_seconds": 0.9244999999999992,
+      "words": [
+        {
+          "text": "But",
+          "start": 43.733333,
+          "end": 43.86
+        },
+        {
+          "text": "a",
+          "start": 43.86,
+          "end": 44.0
+        },
+        {
+          "text": "confident",
+          "start": 44.0,
+          "end": 44.28
+        },
+        {
+          "text": "answer",
+          "start": 44.28,
+          "end": 44.74
+        },
+        {
+          "text": "isn't",
+          "start": 44.74,
+          "end": 45.06
+        },
+        {
+          "text": "proof.",
+          "start": 45.06,
+          "end": 45.38
+        },
+        {
+          "text": "We",
+          "start": 46.34,
+          "end": 46.66
+        },
+        {
+          "text": "plant",
+          "start": 46.66,
+          "end": 46.96
+        },
+        {
+          "text": "faults",
+          "start": 46.96,
+          "end": 47.24
+        },
+        {
+          "text": "and",
+          "start": 47.24,
+          "end": 47.52
+        },
+        {
+          "text": "check",
+          "start": 47.52,
+          "end": 47.76
+        },
+        {
+          "text": "the",
+          "start": 47.76,
+          "end": 47.9
+        },
+        {
+          "text": "result.",
+          "start": 47.9,
+          "end": 48.28
+        },
+        {
+          "text": "I'm",
+          "start": 49.16,
+          "end": 49.52
+        },
+        {
+          "text": "still",
+          "start": 49.52,
+          "end": 49.74
+        },
+        {
+          "text": "proving",
+          "start": 49.74,
+          "end": 50.06
+        },
+        {
+          "text": "the",
+          "start": 50.06,
+          "end": 50.24
+        },
+        {
+          "text": "foundations",
+          "start": 50.24,
+          "end": 50.94
+        },
+        {
+          "text": "work.",
+          "start": 50.94,
+          "end": 51.18
+        }
+      ],
+      "silence_log": "[mp3 @ 0x563949e28dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-07.mp3':\n  Duration: 00:00:08.66, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=2.4e+04x    \n[silencedetect @ 0x563949e3e740] silence_start: 0\n[silencedetect @ 0x563949e3e740] silence_end: 0.24525 | silence_duration: 0.24525\n[silencedetect @ 0x563949e3e740] silence_start: 2.00479\n[silencedetect @ 0x563949e3e740] silence_end: 2.98875 | silence_duration: 0.983958\n[silencedetect @ 0x563949e3e740] silence_start: 4.86058\n[silencedetect @ 0x563949e3e740] silence_end: 5.84692 | silence_duration: 0.986333\n[silencedetect @ 0x563949e3e740] silence_start: 7.80475\nsize=N/A time=00:00:08.66 bitrate=N/A speed=1.12e+03x    \nvideo:0kB audio:406kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x563949e3e740] silence_end: 8.664 | silence_duration: 0.85925\n"
+    },
+    {
+      "scene": 8,
+      "line": "Next, help a friend build their own system, and document it. One useful step at a time.",
+      "start": 51.6,
+      "duration": 6.133333333333334,
+      "end": 57.733333,
+      "raw_duration": 6.936,
+      "trim_start": 0.178917,
+      "trim_end": 6.15954,
+      "removed_seconds": 0.9553770000000004,
+      "words": [
+        {
+          "text": "Next,",
+          "start": 51.62,
+          "end": 51.9
+        },
+        {
+          "text": "help",
+          "start": 52.3,
+          "end": 52.46
+        },
+        {
+          "text": "a",
+          "start": 52.46,
+          "end": 52.58
+        },
+        {
+          "text": "friend",
+          "start": 52.58,
+          "end": 52.8
+        },
+        {
+          "text": "build",
+          "start": 52.8,
+          "end": 53.04
+        },
+        {
+          "text": "their",
+          "start": 53.04,
+          "end": 53.3
+        },
+        {
+          "text": "own",
+          "start": 53.3,
+          "end": 53.48
+        },
+        {
+          "text": "system,",
+          "start": 53.48,
+          "end": 53.88
+        },
+        {
+          "text": "and",
+          "start": 53.88,
+          "end": 54.24
+        },
+        {
+          "text": "document",
+          "start": 54.24,
+          "end": 54.62
+        },
+        {
+          "text": "it.",
+          "start": 54.62,
+          "end": 54.94
+        },
+        {
+          "text": "One",
+          "start": 54.94,
+          "end": 56.12
+        },
+        {
+          "text": "useful",
+          "start": 56.12,
+          "end": 56.52
+        },
+        {
+          "text": "step",
+          "start": 56.52,
+          "end": 56.78
+        },
+        {
+          "text": "at",
+          "start": 56.78,
+          "end": 56.96
+        },
+        {
+          "text": "a",
+          "start": 56.96,
+          "end": 57.04
+        },
+        {
+          "text": "time.",
+          "start": 57.04,
+          "end": 57.36
+        }
+      ],
+      "silence_log": "[mp3 @ 0x55aa18352dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-08.mp3':\n  Duration: 00:00:06.94, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x55aa18368740] silence_start: 0\n[silencedetect @ 0x55aa18368740] silence_end: 0.238917 | silence_duration: 0.238917\n[silencedetect @ 0x55aa18368740] silence_start: 0.637083\n[silencedetect @ 0x55aa18368740] silence_end: 0.8855 | silence_duration: 0.248417\n[silencedetect @ 0x55aa18368740] silence_start: 2.57275\n[silencedetect @ 0x55aa18368740] silence_end: 2.69979 | silence_duration: 0.127042\n[silencedetect @ 0x55aa18368740] silence_start: 3.5555\n[silencedetect @ 0x55aa18368740] silence_end: 4.55321 | silence_duration: 0.997708\n[silencedetect @ 0x55aa18368740] silence_start: 6.03954\nsize=N/A time=00:00:06.93 bitrate=N/A speed=1.14e+03x    \nvideo:0kB audio:325kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x55aa18368740] silence_end: 6.936 | silence_duration: 0.896458\n"
+    }
+  ],
+  "caption_clock": "faster-whisper small on final cut narration",
+  "caption_word_count": 149
+}

@@ -427,6 +427,16 @@ Also: the "over 90%" figure is Nate retelling Anthropic's research-agent test [i
 Checked 2026-10-10 in Claude Code's docs (https://code.claude.com/docs/en/goal): `/goal <condition>` is real; after each turn a small fast model judges "met / not yet / impossible", but it has no tools, so it only judges what Claude has shown in the chat. Write the finish line so the proof gets printed (file counts, test output). One goal per session; `/goal clear` stops it.
 **Used by:** no rule yet (Rules 33 and 44 cover the judge and the proof).
 *Source:* iTY8Q449YNQ, 21:23-25:27 (upgrade 4). The video was already ingested for upgrades 1-2 (concepts 30-31); this part was missed and added 2026-10-10 after Charlie pasted it.
+
+**46. Treat repeatable media production as a timed, skill-backed verification loop**
+For video, the durable workflow is not “give an editor one big prompt.” Start from a time-aligned transcript, remove mistakes/dead space, plan the visual beats and quality criteria, reuse a small skill for repeated style decisions, then inspect the rendered artifact and iterate before handoff. Branding belongs in the brief and reusable skill: real assets, typography, colours, motion language, pacing and the emotional effect the piece should create. Specific tools in the demo can change; the production contract should not.
+> “If you ever find yourself repeating something, just throw it in the skill.” [7jH 18:18](https://www.youtube.com/watch?v=7jHXoPGnA4c&t=1098s)
+> “the fifth one, probably the most important one, is the verification loop.” [7jH 18:18](https://www.youtube.com/watch?v=7jHXoPGnA4c&t=1098s)
+
+This extends concepts 14 (skills), 31/41 (independent checking/evals), 39 (smallest useful context) and 40 (test on your own work). For Charlie, the first proof case is the AI-OS journey Short: the method is adopted, but the media toolchain is not promoted until the rendered Short passes its real visual/audio/brand checks.
+**Segmented source:** [video-editing workflow notes](../opus-5-5-video-editing-workflow--7jHXoPGnA4c-notes.md).
+**Used by:** Rule 45 ([rules.md](rules.md)).
+
 ## Limits and things to treat carefully
 - **Karpathy's 7 teaching rules** (build it, first-order term first, predict-run-compare, and so on, [5:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=334s)–[6:34](https://www.youtube.com/watch?v=bvGptCLDhyo&t=394s)) are Karpathy's, relayed by Nate. They live in `context/working-rules.md`, not in Nate's rules here.
 - **Counting slip:** he says "four steps" but also "six prompts" ([2:33](https://www.youtube.com/watch?v=bvGptCLDhyo&t=153s), [10:08](https://www.youtube.com/watch?v=bvGptCLDhyo&t=608s)). The method matters, not the count.

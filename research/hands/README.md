@@ -30,6 +30,8 @@ always on top. Started 2026-10-08 (Charlie). Site: see `system/pages.md`.
 
 **Latest check:** `audits/2026-10-09-usage-hands-check.md`.
 
+**Next step (11 Oct):** review the actual [journey Short proof](../../projects/youtube-channel/videos/ai-os-journey-short/README.md), then have Claude's independent Guardian check the production commit. HyperFrames remains `later`; Creative Claw remains untested. No tool promotion from this task.
+
 **Sources:** The Next New Thing (weekly round-ups), newest week first, and the
 skills.sh leaderboard (most-installed agent skills; `skills_sh.py`), and
 Anthropic's three plugin catalogs as a trust layer (`anthropic_market.py`: official

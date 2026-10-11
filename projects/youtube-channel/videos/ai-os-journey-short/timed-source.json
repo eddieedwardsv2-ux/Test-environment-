@@ -1,0 +1,1616 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "synthetic": true,
+  "stage_order": [
+    "transcribe/timing",
+    "cut"
+  ],
+  "elapsed_seconds": 13.881,
+  "duration": 57.733333333333334,
+  "words": [
+    {
+      "text": "I",
+      "start": 0.0,
+      "end": 0.09579200000000002
+    },
+    {
+      "text": "started",
+      "start": 0.10829200000000003,
+      "end": 0.520792
+    },
+    {
+      "text": "with",
+      "start": 0.533292,
+      "end": 0.645792
+    },
+    {
+      "text": "a",
+      "start": 0.658292,
+      "end": 0.708292
+    },
+    {
+      "text": "phone",
+      "start": 0.720792,
+      "end": 1.058292
+    },
+    {
+      "text": "and",
+      "start": 1.070792,
+      "end": 1.1707919999999998
+    },
+    {
+      "text": "a",
+      "start": 1.183292,
+      "end": 1.2207919999999999
+    },
+    {
+      "text": "lot",
+      "start": 1.2332919999999998,
+      "end": 1.458292
+    },
+    {
+      "text": "of",
+      "start": 1.4707919999999999,
+      "end": 1.5457919999999998
+    },
+    {
+      "text": "questions",
+      "start": 1.558292,
+      "end": 2.295792
+    },
+    {
+      "text": "Could",
+      "start": 3.1582920000000003,
+      "end": 3.3457920000000003
+    },
+    {
+      "text": "I",
+      "start": 3.358292,
+      "end": 3.4332920000000002
+    },
+    {
+      "text": "build",
+      "start": 3.445792,
+      "end": 3.695792
+    },
+    {
+      "text": "my",
+      "start": 3.708292,
+      "end": 3.870792
+    },
+    {
+      "text": "own",
+      "start": 3.883292,
+      "end": 4.095792
+    },
+    {
+      "text": "AI",
+      "start": 4.1082920000000005,
+      "end": 4.308292
+    },
+    {
+      "text": "operating",
+      "start": 4.320792,
+      "end": 4.7332920000000005
+    },
+    {
+      "text": "system",
+      "start": 4.745792,
+      "end": 5.083292
+    },
+    {
+      "text": "without",
+      "start": 5.095792,
+      "end": 5.395792
+    },
+    {
+      "text": "coding",
+      "start": 5.408292,
+      "end": 5.908292
+    },
+    {
+      "text": "First",
+      "start": 6.133333333333334,
+      "end": 6.606375333333334
+    },
+    {
+      "text": "I",
+      "start": 6.843875333333334,
+      "end": 6.906375333333334
+    },
+    {
+      "text": "learned",
+      "start": 6.918875333333334,
+      "end": 7.243875333333334
+    },
+    {
+      "text": "the",
+      "start": 7.256375333333334,
+      "end": 7.318875333333334
+    },
+    {
+      "text": "parts",
+      "start": 7.331375333333334,
+      "end": 7.756375333333334
+    },
+    {
+      "text": "a",
+      "start": 7.943875333333334,
+      "end": 8.006375333333333
+    },
+    {
+      "text": "model",
+      "start": 8.018875333333332,
+      "end": 8.293875333333332
+    },
+    {
+      "text": "to",
+      "start": 8.306375333333333,
+      "end": 8.393875333333332
+    },
+    {
+      "text": "think",
+      "start": 8.406375333333333,
+      "end": 8.756375333333333
+    },
+    {
+      "text": "tools",
+      "start": 8.981375333333332,
+      "end": 9.306375333333333
+    },
+    {
+      "text": "to",
+      "start": 9.318875333333333,
+      "end": 9.406375333333333
+    },
+    {
+      "text": "act",
+      "start": 9.418875333333332,
+      "end": 9.731375333333332
+    },
+    {
+      "text": "skills",
+      "start": 9.906375333333333,
+      "end": 10.256375333333333
+    },
+    {
+      "text": "to",
+      "start": 10.268875333333332,
+      "end": 10.368875333333333
+    },
+    {
+      "text": "guide",
+      "start": 10.381375333333333,
+      "end": 10.693875333333333
+    },
+    {
+      "text": "it",
+      "start": 10.706375333333332,
+      "end": 10.881375333333333
+    },
+    {
+      "text": "and",
+      "start": 11.056375333333333,
+      "end": 11.168875333333334
+    },
+    {
+      "text": "saved",
+      "start": 11.181375333333333,
+      "end": 11.556375333333333
+    },
+    {
+      "text": "context",
+      "start": 11.568875333333333,
+      "end": 12.281375333333333
+    },
+    {
+      "text": "Then",
+      "start": 12.533333333333335,
+      "end": 12.672166333333335
+    },
+    {
+      "text": "I",
+      "start": 12.684666333333334,
+      "end": 12.747166333333334
+    },
+    {
+      "text": "built",
+      "start": 12.759666333333334,
+      "end": 13.072166333333334
+    },
+    {
+      "text": "a",
+      "start": 13.084666333333335,
+      "end": 13.147166333333335
+    },
+    {
+      "text": "Router",
+      "start": 13.159666333333334,
+      "end": 13.634666333333334
+    },
+    {
+      "text": "New",
+      "start": 14.497166333333334,
+      "end": 14.822166333333334
+    },
+    {
+      "text": "information",
+      "start": 14.834666333333335,
+      "end": 15.372166333333334
+    },
+    {
+      "text": "goes",
+      "start": 15.384666333333334,
+      "end": 15.684666333333334
+    },
+    {
+      "text": "to",
+      "start": 15.697166333333334,
+      "end": 15.784666333333334
+    },
+    {
+      "text": "the",
+      "start": 15.797166333333335,
+      "end": 15.897166333333333
+    },
+    {
+      "text": "right",
+      "start": 15.909666333333336,
+      "end": 16.184666333333336
+    },
+    {
+      "text": "specialist",
+      "start": 16.197166333333335,
+      "end": 16.909666333333334
+    },
+    {
+      "text": "I",
+      "start": 17.772166333333338,
+      "end": 17.909666333333334
+    },
+    {
+      "text": "call",
+      "start": 17.922166333333337,
+      "end": 18.184666333333336
+    },
+    {
+      "text": "these",
+      "start": 18.197166333333335,
+      "end": 18.422166333333337
+    },
+    {
+      "text": "specialists",
+      "start": 18.434666333333336,
+      "end": 19.022166333333338
+    },
+    {
+      "text": "my",
+      "start": 19.034666333333334,
+      "end": 19.247166333333336
+    },
+    {
+      "text": "Elders",
+      "start": 19.259666333333335,
+      "end": 19.797166333333337
+    },
+    {
+      "text": "The",
+      "start": 20.06666666666667,
+      "end": 20.14491666666667
+    },
+    {
+      "text": "Router",
+      "start": 20.15741666666667,
+      "end": 20.45741666666667
+    },
+    {
+      "text": "points",
+      "start": 20.46991666666667,
+      "end": 20.807416666666672
+    },
+    {
+      "text": "the",
+      "start": 20.81991666666667,
+      "end": 20.90741666666667
+    },
+    {
+      "text": "way",
+      "start": 20.919916666666673,
+      "end": 21.357416666666673
+    },
+    {
+      "text": "It",
+      "start": 22.21991666666667,
+      "end": 22.419916666666673
+    },
+    {
+      "text": "loads",
+      "start": 22.432416666666672,
+      "end": 22.75741666666667
+    },
+    {
+      "text": "the",
+      "start": 22.76991666666667,
+      "end": 22.84491666666667
+    },
+    {
+      "text": "useful",
+      "start": 22.857416666666673,
+      "end": 23.294916666666673
+    },
+    {
+      "text": "context",
+      "start": 23.307416666666672,
+      "end": 23.89491666666667
+    },
+    {
+      "text": "instead",
+      "start": 24.107416666666673,
+      "end": 24.419916666666673
+    },
+    {
+      "text": "of",
+      "start": 24.432416666666672,
+      "end": 24.544916666666673
+    },
+    {
+      "text": "dumping",
+      "start": 24.557416666666672,
+      "end": 24.94491666666667
+    },
+    {
+      "text": "every",
+      "start": 24.95741666666667,
+      "end": 25.169916666666673
+    },
+    {
+      "text": "note",
+      "start": 25.182416666666672,
+      "end": 25.482416666666673
+    },
+    {
+      "text": "into",
+      "start": 25.494916666666672,
+      "end": 25.732416666666673
+    },
+    {
+      "text": "every",
+      "start": 25.744916666666672,
+      "end": 26.00741666666667
+    },
+    {
+      "text": "answer",
+      "start": 26.01991666666667,
+      "end": 26.494916666666672
+    },
+    {
+      "text": "I",
+      "start": 26.76666666666667,
+      "end": 26.86799966666667
+    },
+    {
+      "text": "stay",
+      "start": 26.880499666666672,
+      "end": 27.105499666666667
+    },
+    {
+      "text": "the",
+      "start": 27.11799966666667,
+      "end": 27.21799966666667
+    },
+    {
+      "text": "Chief",
+      "start": 27.230499666666667,
+      "end": 27.755499666666672
+    },
+    {
+      "text": "Small",
+      "start": 28.61799966666667,
+      "end": 29.130499666666672
+    },
+    {
+      "text": "reversible",
+      "start": 29.330499666666668,
+      "end": 29.90549966666667
+    },
+    {
+      "text": "jobs",
+      "start": 29.917999666666667,
+      "end": 30.255499666666672
+    },
+    {
+      "text": "can",
+      "start": 30.267999666666668,
+      "end": 30.43049966666667
+    },
+    {
+      "text": "move",
+      "start": 30.442999666666672,
+      "end": 30.705499666666668
+    },
+    {
+      "text": "ahead",
+      "start": 30.71799966666667,
+      "end": 31.18049966666667
+    },
+    {
+      "text": "Real",
+      "start": 32.04299966666667,
+      "end": 32.467999666666664
+    },
+    {
+      "text": "choices",
+      "start": 32.48049966666667,
+      "end": 32.942999666666665
+    },
+    {
+      "text": "come",
+      "start": 32.95549966666667,
+      "end": 33.155499666666664
+    },
+    {
+      "text": "to",
+      "start": 33.16799966666667,
+      "end": 33.255499666666665
+    },
+    {
+      "text": "my",
+      "start": 33.26799966666667,
+      "end": 33.442999666666665
+    },
+    {
+      "text": "Desk",
+      "start": 33.45549966666667,
+      "end": 33.95549966666667
+    },
+    {
+      "text": "where",
+      "start": 34.16799966666667,
+      "end": 34.342999666666664
+    },
+    {
+      "text": "I",
+      "start": 34.35549966666667,
+      "end": 34.51799966666667
+    },
+    {
+      "text": "decide",
+      "start": 34.530499666666664,
+      "end": 35.23049966666667
+    },
+    {
+      "text": "The",
+      "start": 35.5,
+      "end": 35.568583
+    },
+    {
+      "text": "Quartermaster",
+      "start": 35.581083,
+      "end": 36.231083
+    },
+    {
+      "text": "helps",
+      "start": 36.243582999999994,
+      "end": 36.543583
+    },
+    {
+      "text": "pick",
+      "start": 36.556082999999994,
+      "end": 36.768583
+    },
+    {
+      "text": "the",
+      "start": 36.781082999999995,
+      "end": 36.856083
+    },
+    {
+      "text": "tools",
+      "start": 36.868582999999994,
+      "end": 37.431082999999994
+    },
+    {
+      "text": "The",
+      "start": 38.293583,
+      "end": 38.456083
+    },
+    {
+      "text": "Architect",
+      "start": 38.468582999999995,
+      "end": 38.993582999999994
+    },
+    {
+      "text": "helps",
+      "start": 39.006083,
+      "end": 39.318583
+    },
+    {
+      "text": "organise",
+      "start": 39.331083,
+      "end": 39.843582999999995
+    },
+    {
+      "text": "the",
+      "start": 39.856083,
+      "end": 39.943583
+    },
+    {
+      "text": "system",
+      "start": 39.956083,
+      "end": 40.468582999999995
+    },
+    {
+      "text": "Their",
+      "start": 41.331083,
+      "end": 41.543583
+    },
+    {
+      "text": "work",
+      "start": 41.556082999999994,
+      "end": 41.856083
+    },
+    {
+      "text": "becomes",
+      "start": 41.868582999999994,
+      "end": 42.243582999999994
+    },
+    {
+      "text": "something",
+      "start": 42.256083,
+      "end": 42.631083
+    },
+    {
+      "text": "I",
+      "start": 42.643583,
+      "end": 42.706083
+    },
+    {
+      "text": "can",
+      "start": 42.718582999999995,
+      "end": 42.893583
+    },
+    {
+      "text": "use",
+      "start": 42.906082999999995,
+      "end": 43.468582999999995
+    },
+    {
+      "text": "But",
+      "start": 43.733333333333334,
+      "end": 43.82308333333333
+    },
+    {
+      "text": "a",
+      "start": 43.83558333333333,
+      "end": 43.88558333333333
+    },
+    {
+      "text": "confident",
+      "start": 43.89808333333333,
+      "end": 44.39808333333333
+    },
+    {
+      "text": "answer",
+      "start": 44.41058333333333,
+      "end": 44.76058333333333
+    },
+    {
+      "text": "isn't",
+      "start": 44.77308333333333,
+      "end": 45.04808333333333
+    },
+    {
+      "text": "proof",
+      "start": 45.060583333333334,
+      "end": 45.54808333333333
+    },
+    {
+      "text": "We",
+      "start": 46.41058333333333,
+      "end": 46.59808333333333
+    },
+    {
+      "text": "plant",
+      "start": 46.61058333333333,
+      "end": 46.935583333333334
+    },
+    {
+      "text": "faults",
+      "start": 46.94808333333333,
+      "end": 47.33558333333333
+    },
+    {
+      "text": "and",
+      "start": 47.34808333333333,
+      "end": 47.48558333333333
+    },
+    {
+      "text": "check",
+      "start": 47.498083333333334,
+      "end": 47.76058333333333
+    },
+    {
+      "text": "the",
+      "start": 47.77308333333333,
+      "end": 47.84808333333333
+    },
+    {
+      "text": "result",
+      "start": 47.86058333333333,
+      "end": 48.41058333333333
+    },
+    {
+      "text": "I'm",
+      "start": 49.27308333333333,
+      "end": 49.46058333333333
+    },
+    {
+      "text": "still",
+      "start": 49.47308333333333,
+      "end": 49.76058333333333
+    },
+    {
+      "text": "proving",
+      "start": 49.77308333333333,
+      "end": 50.07308333333333
+    },
+    {
+      "text": "the",
+      "start": 50.08558333333333,
+      "end": 50.14808333333333
+    },
+    {
+      "text": "foundations",
+      "start": 50.16058333333333,
+      "end": 50.873083333333334
+    },
+    {
+      "text": "work",
+      "start": 50.88558333333333,
+      "end": 51.34808333333333
+    },
+    {
+      "text": "Next",
+      "start": 51.6,
+      "end": 52.008583
+    },
+    {
+      "text": "help",
+      "start": 52.271083000000004,
+      "end": 52.446083
+    },
+    {
+      "text": "a",
+      "start": 52.458583000000004,
+      "end": 52.508583
+    },
+    {
+      "text": "friend",
+      "start": 52.521083000000004,
+      "end": 52.821083
+    },
+    {
+      "text": "build",
+      "start": 52.833583000000004,
+      "end": 53.071083
+    },
+    {
+      "text": "their",
+      "start": 53.083583000000004,
+      "end": 53.208583000000004
+    },
+    {
+      "text": "own",
+      "start": 53.221083,
+      "end": 53.496083000000006
+    },
+    {
+      "text": "system",
+      "start": 53.508583,
+      "end": 53.946083
+    },
+    {
+      "text": "and",
+      "start": 54.083583000000004,
+      "end": 54.196083
+    },
+    {
+      "text": "document",
+      "start": 54.208583000000004,
+      "end": 54.708583000000004
+    },
+    {
+      "text": "it",
+      "start": 54.721083,
+      "end": 54.971083
+    },
+    {
+      "text": "One",
+      "start": 55.833583000000004,
+      "end": 56.133583
+    },
+    {
+      "text": "useful",
+      "start": 56.146083000000004,
+      "end": 56.546083
+    },
+    {
+      "text": "step",
+      "start": 56.558583000000006,
+      "end": 56.796083
+    },
+    {
+      "text": "at",
+      "start": 56.808583000000006,
+      "end": 56.896083000000004
+    },
+    {
+      "text": "a",
+      "start": 56.908583,
+      "end": 56.971083
+    },
+    {
+      "text": "time",
+      "start": 56.983583,
+      "end": 57.496083000000006
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "line": "I started with a phone and a lot of questions. Could I build my own AI operating system without coding?",
+      "start": 0.0,
+      "duration": 6.133333333333334,
+      "end": 6.133333,
+      "raw_duration": 6.936,
+      "trim_start": 0.166708,
+      "trim_end": 6.1744200000000005,
+      "removed_seconds": 0.9282879999999993,
+      "words": [
+        {
+          "text": "I",
+          "start": 0.0,
+          "end": 0.09579200000000002
+        },
+        {
+          "text": "started",
+          "start": 0.10829200000000003,
+          "end": 0.520792
+        },
+        {
+          "text": "with",
+          "start": 0.533292,
+          "end": 0.645792
+        },
+        {
+          "text": "a",
+          "start": 0.658292,
+          "end": 0.708292
+        },
+        {
+          "text": "phone",
+          "start": 0.720792,
+          "end": 1.058292
+        },
+        {
+          "text": "and",
+          "start": 1.070792,
+          "end": 1.1707919999999998
+        },
+        {
+          "text": "a",
+          "start": 1.183292,
+          "end": 1.2207919999999999
+        },
+        {
+          "text": "lot",
+          "start": 1.2332919999999998,
+          "end": 1.458292
+        },
+        {
+          "text": "of",
+          "start": 1.4707919999999999,
+          "end": 1.5457919999999998
+        },
+        {
+          "text": "questions",
+          "start": 1.558292,
+          "end": 2.295792
+        },
+        {
+          "text": "Could",
+          "start": 3.1582920000000003,
+          "end": 3.3457920000000003
+        },
+        {
+          "text": "I",
+          "start": 3.358292,
+          "end": 3.4332920000000002
+        },
+        {
+          "text": "build",
+          "start": 3.445792,
+          "end": 3.695792
+        },
+        {
+          "text": "my",
+          "start": 3.708292,
+          "end": 3.870792
+        },
+        {
+          "text": "own",
+          "start": 3.883292,
+          "end": 4.095792
+        },
+        {
+          "text": "AI",
+          "start": 4.1082920000000005,
+          "end": 4.308292
+        },
+        {
+          "text": "operating",
+          "start": 4.320792,
+          "end": 4.7332920000000005
+        },
+        {
+          "text": "system",
+          "start": 4.745792,
+          "end": 5.083292
+        },
+        {
+          "text": "without",
+          "start": 5.095792,
+          "end": 5.395792
+        },
+        {
+          "text": "coding",
+          "start": 5.408292,
+          "end": 5.908292
+        }
+      ],
+      "silence_log": "[mp3 @ 0x55c92e910dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-01.mp3':\n  Duration: 00:00:06.94, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x55c92e926740] silence_start: 0\n[silencedetect @ 0x55c92e926740] silence_end: 0.226708 | silence_duration: 0.226708\n[silencedetect @ 0x55c92e926740] silence_start: 2.46271\n[silencedetect @ 0x55c92e926740] silence_end: 3.45421 | silence_duration: 0.9915\n[silencedetect @ 0x55c92e926740] silence_start: 6.05442\nsize=N/A time=00:00:06.93 bitrate=N/A speed= 700x    \nvideo:0kB audio:325kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x55c92e926740] silence_end: 6.936 | silence_duration: 0.881583\n"
+    },
+    {
+      "scene": 2,
+      "line": "First, I learned the parts: a model to think, tools to act, skills to guide it, and saved context.",
+      "start": 6.133333,
+      "duration": 6.4,
+      "end": 12.533333,
+      "raw_duration": 7.2,
+      "trim_start": 0.176958,
+      "trim_end": 6.4448300000000005,
+      "removed_seconds": 0.9321279999999996,
+      "words": [
+        {
+          "text": "First",
+          "start": 6.133333333333334,
+          "end": 6.606375333333334
+        },
+        {
+          "text": "I",
+          "start": 6.843875333333334,
+          "end": 6.906375333333334
+        },
+        {
+          "text": "learned",
+          "start": 6.918875333333334,
+          "end": 7.243875333333334
+        },
+        {
+          "text": "the",
+          "start": 7.256375333333334,
+          "end": 7.318875333333334
+        },
+        {
+          "text": "parts",
+          "start": 7.331375333333334,
+          "end": 7.756375333333334
+        },
+        {
+          "text": "a",
+          "start": 7.943875333333334,
+          "end": 8.006375333333333
+        },
+        {
+          "text": "model",
+          "start": 8.018875333333332,
+          "end": 8.293875333333332
+        },
+        {
+          "text": "to",
+          "start": 8.306375333333333,
+          "end": 8.393875333333332
+        },
+        {
+          "text": "think",
+          "start": 8.406375333333333,
+          "end": 8.756375333333333
+        },
+        {
+          "text": "tools",
+          "start": 8.981375333333332,
+          "end": 9.306375333333333
+        },
+        {
+          "text": "to",
+          "start": 9.318875333333333,
+          "end": 9.406375333333333
+        },
+        {
+          "text": "act",
+          "start": 9.418875333333332,
+          "end": 9.731375333333332
+        },
+        {
+          "text": "skills",
+          "start": 9.906375333333333,
+          "end": 10.256375333333333
+        },
+        {
+          "text": "to",
+          "start": 10.268875333333332,
+          "end": 10.368875333333333
+        },
+        {
+          "text": "guide",
+          "start": 10.381375333333333,
+          "end": 10.693875333333333
+        },
+        {
+          "text": "it",
+          "start": 10.706375333333332,
+          "end": 10.881375333333333
+        },
+        {
+          "text": "and",
+          "start": 11.056375333333333,
+          "end": 11.168875333333334
+        },
+        {
+          "text": "saved",
+          "start": 11.181375333333333,
+          "end": 11.556375333333333
+        },
+        {
+          "text": "context",
+          "start": 11.568875333333333,
+          "end": 12.281375333333333
+        }
+      ],
+      "silence_log": "[mp3 @ 0x55a385900dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-02.mp3':\n  Duration: 00:00:07.20, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x55a385916740] silence_start: 0\n[silencedetect @ 0x55a385916740] silence_end: 0.236958 | silence_duration: 0.236958\n[silencedetect @ 0x55a385916740] silence_start: 0.687833\n[silencedetect @ 0x55a385916740] silence_end: 0.918042 | silence_duration: 0.230208\n[silencedetect @ 0x55a385916740] silence_start: 1.85013\n[silencedetect @ 0x55a385916740] silence_end: 2.03487 | silence_duration: 0.18475\n[silencedetect @ 0x55a385916740] silence_start: 2.86204\n[silencedetect @ 0x55a385916740] silence_end: 3.10487 | silence_duration: 0.242833\n[silencedetect @ 0x55a385916740] silence_start: 3.81921\n[silencedetect @ 0x55a385916740] silence_end: 4.00158 | silence_duration: 0.182375\n[silencedetect @ 0x55a385916740] silence_start: 4.95358\n[silencedetect @ 0x55a385916740] silence_end: 5.14738 | silence_duration: 0.193792\n[silencedetect @ 0x55a385916740] silence_start: 6.32483\nsize=N/A time=00:00:07.20 bitrate=N/A speed= 867x    \nvideo:0kB audio:338kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x55a385916740] silence_end: 7.2 | silence_duration: 0.875167\n"
+    },
+    {
+      "scene": 3,
+      "line": "Then I built a Router. New information goes to the right specialist. I call these specialists my Elders.",
+      "start": 12.533333,
+      "duration": 7.533333333333333,
+      "end": 20.066667,
+      "raw_duration": 8.304,
+      "trim_start": 0.161167,
+      "trim_end": 7.55562,
+      "removed_seconds": 0.9095469999999999,
+      "words": [
+        {
+          "text": "Then",
+          "start": 12.533333333333335,
+          "end": 12.672166333333335
+        },
+        {
+          "text": "I",
+          "start": 12.684666333333334,
+          "end": 12.747166333333334
+        },
+        {
+          "text": "built",
+          "start": 12.759666333333334,
+          "end": 13.072166333333334
+        },
+        {
+          "text": "a",
+          "start": 13.084666333333335,
+          "end": 13.147166333333335
+        },
+        {
+          "text": "Router",
+          "start": 13.159666333333334,
+          "end": 13.634666333333334
+        },
+        {
+          "text": "New",
+          "start": 14.497166333333334,
+          "end": 14.822166333333334
+        },
+        {
+          "text": "information",
+          "start": 14.834666333333335,
+          "end": 15.372166333333334
+        },
+        {
+          "text": "goes",
+          "start": 15.384666333333334,
+          "end": 15.684666333333334
+        },
+        {
+          "text": "to",
+          "start": 15.697166333333334,
+          "end": 15.784666333333334
+        },
+        {
+          "text": "the",
+          "start": 15.797166333333335,
+          "end": 15.897166333333333
+        },
+        {
+          "text": "right",
+          "start": 15.909666333333336,
+          "end": 16.184666333333336
+        },
+        {
+          "text": "specialist",
+          "start": 16.197166333333335,
+          "end": 16.909666333333334
+        },
+        {
+          "text": "I",
+          "start": 17.772166333333338,
+          "end": 17.909666333333334
+        },
+        {
+          "text": "call",
+          "start": 17.922166333333337,
+          "end": 18.184666333333336
+        },
+        {
+          "text": "these",
+          "start": 18.197166333333335,
+          "end": 18.422166333333337
+        },
+        {
+          "text": "specialists",
+          "start": 18.434666333333336,
+          "end": 19.022166333333338
+        },
+        {
+          "text": "my",
+          "start": 19.034666333333334,
+          "end": 19.247166333333336
+        },
+        {
+          "text": "Elders",
+          "start": 19.259666333333335,
+          "end": 19.797166333333337
+        }
+      ],
+      "silence_log": "[mp3 @ 0x55fbef9a6dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-03.mp3':\n  Duration: 00:00:08.30, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x55fbef9bc740] silence_start: 0\n[silencedetect @ 0x55fbef9bc740] silence_end: 0.221167 | silence_duration: 0.221167\n[silencedetect @ 0x55fbef9bc740] silence_start: 1.291\n[silencedetect @ 0x55fbef9bc740] silence_end: 2.26392 | silence_duration: 0.972917\n[mp3float @ 0x55fbef9c53c0] overread, skip -7 enddists: -3 -3\n[silencedetect @ 0x55fbef9bc740] silence_start: 4.52013\n[silencedetect @ 0x55fbef9bc740] silence_end: 5.52292 | silence_duration: 1.00279\n[silencedetect @ 0x55fbef9bc740] silence_start: 7.43562\nsize=N/A time=00:00:08.30 bitrate=N/A speed= 778x    \nvideo:0kB audio:389kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x55fbef9bc740] silence_end: 8.304 | silence_duration: 0.868375\n"
+    },
+    {
+      "scene": 4,
+      "line": "The Router points the way. It loads the useful context, instead of dumping every note into every answer.",
+      "start": 20.066667,
+      "duration": 6.7,
+      "end": 26.766667,
+      "raw_duration": 7.488,
+      "trim_start": 0.18425,
+      "trim_end": 6.7384200000000005,
+      "removed_seconds": 0.9338299999999995,
+      "words": [
+        {
+          "text": "The",
+          "start": 20.06666666666667,
+          "end": 20.14491666666667
+        },
+        {
+          "text": "Router",
+          "start": 20.15741666666667,
+          "end": 20.45741666666667
+        },
+        {
+          "text": "points",
+          "start": 20.46991666666667,
+          "end": 20.807416666666672
+        },
+        {
+          "text": "the",
+          "start": 20.81991666666667,
+          "end": 20.90741666666667
+        },
+        {
+          "text": "way",
+          "start": 20.919916666666673,
+          "end": 21.357416666666673
+        },
+        {
+          "text": "It",
+          "start": 22.21991666666667,
+          "end": 22.419916666666673
+        },
+        {
+          "text": "loads",
+          "start": 22.432416666666672,
+          "end": 22.75741666666667
+        },
+        {
+          "text": "the",
+          "start": 22.76991666666667,
+          "end": 22.84491666666667
+        },
+        {
+          "text": "useful",
+          "start": 22.857416666666673,
+          "end": 23.294916666666673
+        },
+        {
+          "text": "context",
+          "start": 23.307416666666672,
+          "end": 23.89491666666667
+        },
+        {
+          "text": "instead",
+          "start": 24.107416666666673,
+          "end": 24.419916666666673
+        },
+        {
+          "text": "of",
+          "start": 24.432416666666672,
+          "end": 24.544916666666673
+        },
+        {
+          "text": "dumping",
+          "start": 24.557416666666672,
+          "end": 24.94491666666667
+        },
+        {
+          "text": "every",
+          "start": 24.95741666666667,
+          "end": 25.169916666666673
+        },
+        {
+          "text": "note",
+          "start": 25.182416666666672,
+          "end": 25.482416666666673
+        },
+        {
+          "text": "into",
+          "start": 25.494916666666672,
+          "end": 25.732416666666673
+        },
+        {
+          "text": "every",
+          "start": 25.744916666666672,
+          "end": 26.00741666666667
+        },
+        {
+          "text": "answer",
+          "start": 26.01991666666667,
+          "end": 26.494916666666672
+        }
+      ],
+      "silence_log": "[mp3 @ 0x5652aa0e9dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-04.mp3':\n  Duration: 00:00:07.49, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x5652aa0ff740] silence_start: 0\n[silencedetect @ 0x5652aa0ff740] silence_end: 0.24425 | silence_duration: 0.24425\n[silencedetect @ 0x5652aa0ff740] silence_start: 1.48862\n[silencedetect @ 0x5652aa0ff740] silence_end: 2.46679 | silence_duration: 0.978167\n[silencedetect @ 0x5652aa0ff740] silence_start: 4.05804\n[silencedetect @ 0x5652aa0ff740] silence_end: 4.28142 | silence_duration: 0.223375\n[silencedetect @ 0x5652aa0ff740] silence_start: 6.61842\nsize=N/A time=00:00:07.48 bitrate=N/A speed= 835x    \nvideo:0kB audio:351kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x5652aa0ff740] silence_end: 7.488 | silence_duration: 0.869583\n"
+    },
+    {
+      "scene": 5,
+      "line": "I stay the Chief. Small, reversible jobs can move ahead. Real choices come to my Desk, where I decide.",
+      "start": 26.766667,
+      "duration": 8.733333333333333,
+      "end": 35.5,
+      "raw_duration": 9.504,
+      "trim_start": 0.17366700000000002,
+      "trim_end": 8.762289999999998,
+      "removed_seconds": 0.9153770000000012,
+      "words": [
+        {
+          "text": "I",
+          "start": 26.76666666666667,
+          "end": 26.86799966666667
+        },
+        {
+          "text": "stay",
+          "start": 26.880499666666672,
+          "end": 27.105499666666667
+        },
+        {
+          "text": "the",
+          "start": 27.11799966666667,
+          "end": 27.21799966666667
+        },
+        {
+          "text": "Chief",
+          "start": 27.230499666666667,
+          "end": 27.755499666666672
+        },
+        {
+          "text": "Small",
+          "start": 28.61799966666667,
+          "end": 29.130499666666672
+        },
+        {
+          "text": "reversible",
+          "start": 29.330499666666668,
+          "end": 29.90549966666667
+        },
+        {
+          "text": "jobs",
+          "start": 29.917999666666667,
+          "end": 30.255499666666672
+        },
+        {
+          "text": "can",
+          "start": 30.267999666666668,
+          "end": 30.43049966666667
+        },
+        {
+          "text": "move",
+          "start": 30.442999666666672,
+          "end": 30.705499666666668
+        },
+        {
+          "text": "ahead",
+          "start": 30.71799966666667,
+          "end": 31.18049966666667
+        },
+        {
+          "text": "Real",
+          "start": 32.04299966666667,
+          "end": 32.467999666666664
+        },
+        {
+          "text": "choices",
+          "start": 32.48049966666667,
+          "end": 32.942999666666665
+        },
+        {
+          "text": "come",
+          "start": 32.95549966666667,
+          "end": 33.155499666666664
+        },
+        {
+          "text": "to",
+          "start": 33.16799966666667,
+          "end": 33.255499666666665
+        },
+        {
+          "text": "my",
+          "start": 33.26799966666667,
+          "end": 33.442999666666665
+        },
+        {
+          "text": "Desk",
+          "start": 33.45549966666667,
+          "end": 33.95549966666667
+        },
+        {
+          "text": "where",
+          "start": 34.16799966666667,
+          "end": 34.342999666666664
+        },
+        {
+          "text": "I",
+          "start": 34.35549966666667,
+          "end": 34.51799966666667
+        },
+        {
+          "text": "decide",
+          "start": 34.530499666666664,
+          "end": 35.23049966666667
+        }
+      ],
+      "silence_log": "[mp3 @ 0x557c0bb74dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-05.mp3':\n  Duration: 00:00:09.50, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=2.4e+04x    \n[silencedetect @ 0x557c0bb8a740] silence_start: 0\n[silencedetect @ 0x557c0bb8a740] silence_end: 0.233667 | silence_duration: 0.233667\n[silencedetect @ 0x557c0bb8a740] silence_start: 1.14979\n[silencedetect @ 0x557c0bb8a740] silence_end: 2.15496 | silence_duration: 1.00517\n[silencedetect @ 0x557c0bb8a740] silence_start: 2.60625\n[silencedetect @ 0x557c0bb8a740] silence_end: 2.77754 | silence_duration: 0.171292\n[silencedetect @ 0x557c0bb8a740] silence_start: 4.5875\n[silencedetect @ 0x557c0bb8a740] silence_end: 5.59317 | silence_duration: 1.00567\n[silencedetect @ 0x557c0bb8a740] silence_start: 7.399\n[silencedetect @ 0x557c0bb8a740] silence_end: 7.63767 | silence_duration: 0.238667\n[silencedetect @ 0x557c0bb8a740] silence_start: 8.64229\nsize=N/A time=00:00:09.50 bitrate=N/A speed=1.23e+03x    \nvideo:0kB audio:446kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x557c0bb8a740] silence_end: 9.504 | silence_duration: 0.861708\n"
+    },
+    {
+      "scene": 6,
+      "line": "The Quartermaster helps pick the tools. The Architect helps organise the system. Their work becomes something I can use.",
+      "start": 35.5,
+      "duration": 8.233333333333333,
+      "end": 43.733333,
+      "raw_duration": 9.024,
+      "trim_start": 0.181417,
+      "trim_end": 8.269169999999999,
+      "removed_seconds": 0.9362469999999998,
+      "words": [
+        {
+          "text": "The",
+          "start": 35.5,
+          "end": 35.568583
+        },
+        {
+          "text": "Quartermaster",
+          "start": 35.581083,
+          "end": 36.231083
+        },
+        {
+          "text": "helps",
+          "start": 36.243582999999994,
+          "end": 36.543583
+        },
+        {
+          "text": "pick",
+          "start": 36.556082999999994,
+          "end": 36.768583
+        },
+        {
+          "text": "the",
+          "start": 36.781082999999995,
+          "end": 36.856083
+        },
+        {
+          "text": "tools",
+          "start": 36.868582999999994,
+          "end": 37.431082999999994
+        },
+        {
+          "text": "The",
+          "start": 38.293583,
+          "end": 38.456083
+        },
+        {
+          "text": "Architect",
+          "start": 38.468582999999995,
+          "end": 38.993582999999994
+        },
+        {
+          "text": "helps",
+          "start": 39.006083,
+          "end": 39.318583
+        },
+        {
+          "text": "organise",
+          "start": 39.331083,
+          "end": 39.843582999999995
+        },
+        {
+          "text": "the",
+          "start": 39.856083,
+          "end": 39.943583
+        },
+        {
+          "text": "system",
+          "start": 39.956083,
+          "end": 40.468582999999995
+        },
+        {
+          "text": "Their",
+          "start": 41.331083,
+          "end": 41.543583
+        },
+        {
+          "text": "work",
+          "start": 41.556082999999994,
+          "end": 41.856083
+        },
+        {
+          "text": "becomes",
+          "start": 41.868582999999994,
+          "end": 42.243582999999994
+        },
+        {
+          "text": "something",
+          "start": 42.256083,
+          "end": 42.631083
+        },
+        {
+          "text": "I",
+          "start": 42.643583,
+          "end": 42.706083
+        },
+        {
+          "text": "can",
+          "start": 42.718582999999995,
+          "end": 42.893583
+        },
+        {
+          "text": "use",
+          "start": 42.906082999999995,
+          "end": 43.468582999999995
+        }
+      ],
+      "silence_log": "[mp3 @ 0x558a7e14ddc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-06.mp3':\n  Duration: 00:00:09.02, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x558a7e163740] silence_start: 0\n[silencedetect @ 0x558a7e163740] silence_end: 0.241417 | silence_duration: 0.241417\n[silencedetect @ 0x558a7e163740] silence_start: 2.11496\n[silencedetect @ 0x558a7e163740] silence_end: 3.10917 | silence_duration: 0.994208\n[silencedetect @ 0x558a7e163740] silence_start: 5.12117\n[silencedetect @ 0x558a7e163740] silence_end: 6.14104 | silence_duration: 1.01987\n[silencedetect @ 0x558a7e163740] silence_start: 8.14917\nsize=N/A time=00:00:09.02 bitrate=N/A speed=1.15e+03x    \nvideo:0kB audio:423kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x558a7e163740] silence_end: 9.024 | silence_duration: 0.874833\n"
+    },
+    {
+      "scene": 7,
+      "line": "But a confident answer isn't proof. We plant faults and check the result. I'm still proving the foundations work.",
+      "start": 43.733333,
+      "duration": 7.866666666666666,
+      "end": 51.6,
+      "raw_duration": 8.664,
+      "trim_start": 0.18525,
+      "trim_end": 7.92475,
+      "removed_seconds": 0.9244999999999992,
+      "words": [
+        {
+          "text": "But",
+          "start": 43.733333333333334,
+          "end": 43.82308333333333
+        },
+        {
+          "text": "a",
+          "start": 43.83558333333333,
+          "end": 43.88558333333333
+        },
+        {
+          "text": "confident",
+          "start": 43.89808333333333,
+          "end": 44.39808333333333
+        },
+        {
+          "text": "answer",
+          "start": 44.41058333333333,
+          "end": 44.76058333333333
+        },
+        {
+          "text": "isn't",
+          "start": 44.77308333333333,
+          "end": 45.04808333333333
+        },
+        {
+          "text": "proof",
+          "start": 45.060583333333334,
+          "end": 45.54808333333333
+        },
+        {
+          "text": "We",
+          "start": 46.41058333333333,
+          "end": 46.59808333333333
+        },
+        {
+          "text": "plant",
+          "start": 46.61058333333333,
+          "end": 46.935583333333334
+        },
+        {
+          "text": "faults",
+          "start": 46.94808333333333,
+          "end": 47.33558333333333
+        },
+        {
+          "text": "and",
+          "start": 47.34808333333333,
+          "end": 47.48558333333333
+        },
+        {
+          "text": "check",
+          "start": 47.498083333333334,
+          "end": 47.76058333333333
+        },
+        {
+          "text": "the",
+          "start": 47.77308333333333,
+          "end": 47.84808333333333
+        },
+        {
+          "text": "result",
+          "start": 47.86058333333333,
+          "end": 48.41058333333333
+        },
+        {
+          "text": "I'm",
+          "start": 49.27308333333333,
+          "end": 49.46058333333333
+        },
+        {
+          "text": "still",
+          "start": 49.47308333333333,
+          "end": 49.76058333333333
+        },
+        {
+          "text": "proving",
+          "start": 49.77308333333333,
+          "end": 50.07308333333333
+        },
+        {
+          "text": "the",
+          "start": 50.08558333333333,
+          "end": 50.14808333333333
+        },
+        {
+          "text": "foundations",
+          "start": 50.16058333333333,
+          "end": 50.873083333333334
+        },
+        {
+          "text": "work",
+          "start": 50.88558333333333,
+          "end": 51.34808333333333
+        }
+      ],
+      "silence_log": "[mp3 @ 0x563949e28dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-07.mp3':\n  Duration: 00:00:08.66, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=2.4e+04x    \n[silencedetect @ 0x563949e3e740] silence_start: 0\n[silencedetect @ 0x563949e3e740] silence_end: 0.24525 | silence_duration: 0.24525\n[silencedetect @ 0x563949e3e740] silence_start: 2.00479\n[silencedetect @ 0x563949e3e740] silence_end: 2.98875 | silence_duration: 0.983958\n[silencedetect @ 0x563949e3e740] silence_start: 4.86058\n[silencedetect @ 0x563949e3e740] silence_end: 5.84692 | silence_duration: 0.986333\n[silencedetect @ 0x563949e3e740] silence_start: 7.80475\nsize=N/A time=00:00:08.66 bitrate=N/A speed=1.12e+03x    \nvideo:0kB audio:406kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x563949e3e740] silence_end: 8.664 | silence_duration: 0.85925\n"
+    },
+    {
+      "scene": 8,
+      "line": "Next, help a friend build their own system, and document it. One useful step at a time.",
+      "start": 51.6,
+      "duration": 6.133333333333334,
+      "end": 57.733333,
+      "raw_duration": 6.936,
+      "trim_start": 0.178917,
+      "trim_end": 6.15954,
+      "removed_seconds": 0.9553770000000004,
+      "words": [
+        {
+          "text": "Next",
+          "start": 51.6,
+          "end": 52.008583
+        },
+        {
+          "text": "help",
+          "start": 52.271083000000004,
+          "end": 52.446083
+        },
+        {
+          "text": "a",
+          "start": 52.458583000000004,
+          "end": 52.508583
+        },
+        {
+          "text": "friend",
+          "start": 52.521083000000004,
+          "end": 52.821083
+        },
+        {
+          "text": "build",
+          "start": 52.833583000000004,
+          "end": 53.071083
+        },
+        {
+          "text": "their",
+          "start": 53.083583000000004,
+          "end": 53.208583000000004
+        },
+        {
+          "text": "own",
+          "start": 53.221083,
+          "end": 53.496083000000006
+        },
+        {
+          "text": "system",
+          "start": 53.508583,
+          "end": 53.946083
+        },
+        {
+          "text": "and",
+          "start": 54.083583000000004,
+          "end": 54.196083
+        },
+        {
+          "text": "document",
+          "start": 54.208583000000004,
+          "end": 54.708583000000004
+        },
+        {
+          "text": "it",
+          "start": 54.721083,
+          "end": 54.971083
+        },
+        {
+          "text": "One",
+          "start": 55.833583000000004,
+          "end": 56.133583
+        },
+        {
+          "text": "useful",
+          "start": 56.146083000000004,
+          "end": 56.546083
+        },
+        {
+          "text": "step",
+          "start": 56.558583000000006,
+          "end": 56.796083
+        },
+        {
+          "text": "at",
+          "start": 56.808583000000006,
+          "end": 56.896083000000004
+        },
+        {
+          "text": "a",
+          "start": 56.908583,
+          "end": 56.971083
+        },
+        {
+          "text": "time",
+          "start": 56.983583,
+          "end": 57.496083000000006
+        }
+      ],
+      "silence_log": "[mp3 @ 0x55aa18352dc0] Estimating duration from bitrate, this may be inaccurate\nInput #0, mp3, from '/home/user/journey/audio/take-08.mp3':\n  Duration: 00:00:06.94, start: 0.000000, bitrate: 48 kb/s\n  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 48 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    encoder         : Lavf59.27.100\n  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s\n    Metadata:\n      encoder         : Lavc59.37.100 pcm_s16le\nsize=N/A time=00:00:00.02 bitrate=N/A speed=N/A    \n[silencedetect @ 0x55aa18368740] silence_start: 0\n[silencedetect @ 0x55aa18368740] silence_end: 0.238917 | silence_duration: 0.238917\n[silencedetect @ 0x55aa18368740] silence_start: 0.637083\n[silencedetect @ 0x55aa18368740] silence_end: 0.8855 | silence_duration: 0.248417\n[silencedetect @ 0x55aa18368740] silence_start: 2.57275\n[silencedetect @ 0x55aa18368740] silence_end: 2.69979 | silence_duration: 0.127042\n[silencedetect @ 0x55aa18368740] silence_start: 3.5555\n[silencedetect @ 0x55aa18368740] silence_end: 4.55321 | silence_duration: 0.997708\n[silencedetect @ 0x55aa18368740] silence_start: 6.03954\nsize=N/A time=00:00:06.93 bitrate=N/A speed=1.14e+03x    \nvideo:0kB audio:325kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[silencedetect @ 0x55aa18368740] silence_end: 6.936 | silence_duration: 0.896458\n"
+    }
+  ]
+}

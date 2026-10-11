@@ -38,3 +38,14 @@ text loaded every message):
    (Rule 41 smallest context; reuse before building; test on your own work).
 3. Add a line **"Architect:"** naming "concept N" and "Rule N" separately and what they say
    about this tool (fits / clashes / no rule). If they and the ranking disagree, say so.
+
+
+## Media-production decisions (Charlie, 2026-10-10)
+For YouTube videos, Shorts, reels, motion design or branded media, do not choose a tool first. Read:
+1. `system/capability-map.md` for what is already available and actually tested.
+2. Nate concept 46 / Rule 45 in `research/nate-herk/brain/`.
+3. `projects/youtube-channel/README.md` for the current production proof gate.
+
+Route candidate tools into the durable production stages: **transcribe → cut → plan beats → reusable/refined skill → verify the rendered artifact**. Asset-generation/assembly tools may sit inside stage 4, but they do not replace the workflow.
+
+Separate method from product claims. HyperFrames is already tested only at draft-title-card level and remains “later”; Creative Claw is routed but not yet connected/tested. A new media tool is not promoted because a demo looks impressive. Prefer an existing capability, define the visual/audio/brand quality check first, run it on Charlie's real journey Short, then compare quality, cost, latency and rework. Require an end-to-end watched render after the last change before calling the media path verified.
