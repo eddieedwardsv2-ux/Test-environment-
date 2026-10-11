@@ -1,0 +1,7 @@
+# Final binaries are delivered in the review package, not committed as caches.
+*.mp4
+*.wav
+fontkit/
+evidence/*.jpg
+evidence/*.png
+evidence/audio-analysis.txt

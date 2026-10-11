@@ -73,6 +73,8 @@ routing investigation. No render or paid trial has been performed.
 
 ## Nate media-production proof gate — journey Short (2026-10-10)
 
+Execution: [journey Short goal](journey-short-goal.md) and [dedicated production folder](videos/ai-os-journey-short/README.md). Charlie's `/goal` resumes this specific video; unrelated parked work and the 90-day priority remain unchanged.
+
 Source method: Nate Herk, **“Opus 5.5 Just Changed Video Editing Forever (free skills)”** (`7jHXoPGnA4c`). Full timestamped transcript is saved in `research/nate-herk/`; segmented derived notes are `research/nate-herk/opus-5-5-video-editing-workflow--7jHXoPGnA4c-notes.md`.
 
 Use this as the default production order for the first real Short:

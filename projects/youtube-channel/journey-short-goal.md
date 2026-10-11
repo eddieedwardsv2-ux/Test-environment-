@@ -124,22 +124,24 @@ Do not commit huge temporary render caches or source assets unnecessarily.
 
 The goal is met only if ALL are true:
 
-- [ ] A real MP4 exists and can be opened/reviewed.
-- [ ] Aspect ratio is 9:16 vertical.
-- [ ] The final video is appropriate for YouTube Shorts / Instagram Reels.
-- [ ] A newcomer can understand the Router → Elder → Chief relationship without repo knowledge.
-- [ ] Charlie is clearly the Chief; the Router is not presented as the Chief.
-- [ ] Visual changes align intentionally with the spoken/timed beats.
-- [ ] Text is readable at phone size.
-- [ ] Typography, colour, motion and asset choices feel like one brand system rather than unrelated templates.
-- [ ] No obvious dead air, accidental pauses, broken cuts, clipped audio or framing defects remain.
-- [ ] The actual final render was watched/inspected end to end after the last edit.
-- [ ] `verification.md` shows what defects were found and what changed.
-- [ ] The chosen toolchain is recorded with actual quality/rework/time/cost evidence where measurable.
-- [ ] HyperFrames / Creative Claw / another tool is not promoted as the default without evidence from this real task.
-- [ ] Existing project/repo priorities were not silently rewritten to finish the video.
-- [ ] No publishing action happened automatically.
+- [x] A real MP4 exists and can be opened/reviewed.
+- [x] Aspect ratio is 9:16 vertical.
+- [x] The final video is appropriate for YouTube Shorts / Instagram Reels.
+- [x] A newcomer can understand the Router → Elder → Chief relationship without repo knowledge.
+- [x] Charlie is clearly the Chief; the Router is not presented as the Chief.
+- [x] Visual changes align intentionally with the spoken/timed beats.
+- [x] Text is readable at phone size.
+- [x] Typography, colour, motion and asset choices feel like one brand system rather than unrelated templates.
+- [x] No obvious dead air, accidental pauses, broken cuts, clipped audio or framing defects remain.
+- [x] The actual final render was watched/inspected end to end after the last edit.
+- [x] `verification.md` shows what defects were found and what changed.
+- [x] The chosen toolchain is recorded with actual quality/rework/time/cost evidence where measurable.
+- [x] HyperFrames / Creative Claw / another tool is not promoted as the default without evidence from this real task.
+- [x] Existing project/repo priorities were not silently rewritten to finish the video.
+- [x] No publishing action happened automatically.
 - [ ] Structural repo checks relevant to changed files pass.
+
+11 October evidence: [result and G01–G16 mapping](videos/ai-os-journey-short/result.md), [render/fix log](videos/ai-os-journey-short/verification.md). Checked design items are rendered-frame/content assessments, not human audience or iPhone playback tests. G16 remains open: links/scripts/diff checks pass, but full audit and independent Guardian review do not. Therefore the /goal remains **NOT MET / NOT VERIFIED**. No social publishing occurred; review-output hosting is delivery, not a channel post.
 
 ## Tool comparison
 

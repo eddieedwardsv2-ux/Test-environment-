@@ -1,0 +1,20 @@
+{
+  "final_revision": 5,
+  "video": {
+    "media_id": "dffd7316-62cf-4bff-a84c-f79f681c2838",
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3K9wQeq4aB3QYM19Ka031HDY4DB/dffd7316-62cf-4bff-a84c-f79f681c2838.mp4",
+    "sha256": "4916c510a4f8dc156d096f78c18fcbfcdf2f164c555d9a2fff3d204bda88dc4f",
+    "size_bytes": 6618133,
+    "upload_http": 200,
+    "confirmed": true
+  },
+  "render_evidence": {
+    "media_id": "3ebb9540-243f-4501-8bae-602ec20931b9",
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3K9wQeq4aB3QYM19Ka031HDY4DB/3ebb9540-243f-4501-8bae-602ec20931b9.zip",
+    "upload_http": 200,
+    "confirmed": true
+  },
+  "social_publishing": false,
+  "overall_verdict": "NOT VERIFIED",
+  "limitation": "Independent Guardian / full repo audit remains open. Hosting these review outputs is not social publishing."
+}

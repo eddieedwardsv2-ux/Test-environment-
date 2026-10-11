@@ -73,6 +73,7 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 | Everything unfinished (one list) | `context/todo.md` |
 | Past decisions | `decisions.md` (new ones at the top, dated) |
 | Projects | `projects/<name>/` (list in `projects/README.md`) |
+| AI-OS journey Short production proof | `projects/youtube-channel/journey-short-goal.md` → `projects/youtube-channel/videos/ai-os-journey-short/README.md` (timed beats, actual video receipt, revisions and verdict) |
 | Flashcards and lessons (parked) | `learning/` |
 | BTC technical-analysis newsletter | `projects/bitcoin-newsletter/README.md` (issues and editorial checks) |
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |

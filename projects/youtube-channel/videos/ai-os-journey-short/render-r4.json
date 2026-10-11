@@ -1,0 +1,13 @@
+{
+  "revision": 4,
+  "elapsed_seconds": 92.039,
+  "report": {
+    "ok": true,
+    "path": "/home/user/journey/draft-r4.mp4",
+    "frames": 1732,
+    "durationSeconds": 57.733333333333334,
+    "diagnostics": [],
+    "fallbacks": [],
+    "backend": "cpu"
+  }
+}
