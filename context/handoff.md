@@ -2,12 +2,25 @@
 
 Overwritten by `session-handoff`; history stays in `decisions.md` and Git.
 
+## Latest update — audit run and three test topics, 12 October 2026
+
+- Normal workspace access succeeded; no usage-limit bypass used. Fresh full clone at main `b782566` was clean before checks.
+- `audits/2026-10-12-workspace-audit-brand-drafts.md` (adb7616): first audit exit 1, 11 errors/0 warnings. All 11 were existing missing independent Guardian reviews. After page rebuild, second audit exit 1, same 11 errors plus 5 stale-page warnings. No review gate disabled or fabricated.
+- `brainstorms/2026-10-12-style-guide-test-topics.md` (4ee1067): three fixed fictional packets, each with answer keys: finding the current saved policy; drafting a decorating quote (£285 illustrative subtotal, unknowns require review); evaluating a simulated AI success claim.
+- Every topic goes through all three styles: nine articles and nine scripts planned, with factual checks and blind beginner comparison. Topics prepared; outputs and audience tests not yet run.
+- Five generated pages were rebuilt only in the isolated checkout. No Claude artifact publishing capability here; no publication mark changed or generated page committed.
+
+### Pick up here
+Start with Topic 1's fixed packet and generate its three matched styles. Check factual consistency before reader testing. Continue Topics 2 and 3 with the same protocol. Independent Guardian reviews and page publication remain separate blockers. Existing browser/media/research continuations below remain preserved.
+
+---
+
 ## Current continuation — brand style-guide drafts, 12 October 2026
 
 Research and three reviewable briefs are now saved:
 - `brainstorms/2026-10-12-brand-engagement-sample.json` (commit 133ce9e): seven brands, ten listed full-length videos each, 70 rows. Five brands have ten matched public-interaction records; Nate/Matt missing. Same count/format, different age ranges/snapshots; title/date matching without video IDs is provisional. No exhaustive biggest-brand or causal claim.
 - `brainstorms/2026-10-12-brand-style-guides.md` (commit 7557c42): practical teacher, visual explainer, evidence-led analyst. Each includes audience, voice, structure, proposed visuals, format adaptations, sample opening, reusable instruction and quality checks.
-- Remote contents fetched back exactly; JS checks: 7 channels, 70 rows, each ten, no flagged Shorts, cutoff held, 50 interaction rows, rates within 0–1. Full transcript/visual review and repo audit were not completed. No independent Guardian verdict; NOT VERIFIED for ranking, causal benefit and runtime guide quality.
+- Remote contents fetched back exactly; JS checks: 7 channels, 70 rows, each ten, no flagged Shorts, cutoff held, 50 interaction rows, rates within 0–1. Full transcript/visual review is incomplete. The workspace audit has since run; its current result is recorded above. No independent Guardian verdict; NOT VERIFIED for ranking, causal benefit and runtime guide quality.
 - AI/education remains Charlie's choice. No guide selected or activated. Existing browser/media/research tasks below preserved.
 
 ### Pick up here
