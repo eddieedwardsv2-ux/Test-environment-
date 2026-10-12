@@ -23,7 +23,7 @@ On 11 Oct the Guardian is back: its first run must cover the commits made while 
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (brand style-guide request, 2026-10-12):** resume the latest brand-engagement handoff at the top of `context/handoff.md`. Charlie selected AI/education references. Complete a comparable engagement sample, inspect selected content, then present three concrete guide briefs. Research is preliminary; no guide draft exists. Existing browser/video reconciliation remains below in the handoff, and the 90-day priority is unchanged.
+**Next step (brand style-guide request, 2026-10-12):** three briefs and a 70-upload exploratory sample now exist in `brainstorms/2026-10-12-brand-style-guides.md` and `brainstorms/2026-10-12-brand-engagement-sample.json`. Follow the current continuation at the top of `context/handoff.md` for a same-topic output/understanding test. No guide activated; rankings and causal benefits unverified. Existing browser/video work and the 90-day priority are preserved.
 
 **OS backlog status (2026-10-09, after the re-run audit):** both middle plans are built
 (one `youtube-ingest` skill; elders named by job: Architect, Quartermaster,
@@ -69,6 +69,7 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
+- Brand style-guide draft commits `133ce9e` and `7557c42` await independent review. Files saved and read back; full audit, visual-brand inspection and runtime output tests not run. They are proposals, not an activated voice or validated engagement ranking.
 - Shared browser: branch `codex/shared-iphone-browser` at `ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb`
   contains the prototype. Its recorded 16/16 tests and workspace live checks
   are not fresh checks in this session. Independent Claude Guardian review,
