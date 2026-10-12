@@ -1,0 +1,142 @@
+{
+  "checks": [
+    {
+      "topic": 1,
+      "style": "Practical teacher",
+      "format": "article",
+      "words": 243,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 1,
+      "style": "Practical teacher",
+      "format": "script",
+      "words": 111,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 1,
+      "style": "Visual explainer",
+      "format": "article",
+      "words": 253,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 1,
+      "style": "Visual explainer",
+      "format": "script",
+      "words": 112,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 1,
+      "style": "Evidence-led analyst",
+      "format": "article",
+      "words": 244,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 1,
+      "style": "Evidence-led analyst",
+      "format": "script",
+      "words": 107,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 2,
+      "style": "Practical teacher",
+      "format": "article",
+      "words": 247,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 2,
+      "style": "Practical teacher",
+      "format": "script",
+      "words": 110,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 2,
+      "style": "Visual explainer",
+      "format": "article",
+      "words": 249,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 2,
+      "style": "Visual explainer",
+      "format": "script",
+      "words": 108,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 2,
+      "style": "Evidence-led analyst",
+      "format": "article",
+      "words": 250,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 2,
+      "style": "Evidence-led analyst",
+      "format": "script",
+      "words": 109,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 3,
+      "style": "Practical teacher",
+      "format": "article",
+      "words": 253,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 3,
+      "style": "Practical teacher",
+      "format": "script",
+      "words": 111,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 3,
+      "style": "Visual explainer",
+      "format": "article",
+      "words": 247,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 3,
+      "style": "Visual explainer",
+      "format": "script",
+      "words": 110,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 3,
+      "style": "Evidence-led analyst",
+      "format": "article",
+      "words": 252,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    },
+    {
+      "topic": 3,
+      "style": "Evidence-led analyst",
+      "format": "script",
+      "words": 112,
+      "status": "selected literal facts and lengths passed; meaning reviewed separately"
+    }
+  ],
+  "arithmetic": "20 * 12 + 45 = 285",
+  "semantic_review": "Author checked all 18 outputs against fixed packets: current/archived dates and review requirement; illustrative subtotal, exclusions, unknowns and approval before sending; citation presence versus correctness; overall failure, affected rechecks and narrow conclusions. This is not independent Guardian or audience acceptance.",
+  "validation_correction": "Initial phrase checks rejected equivalent wording (before it is sent; does not prove accuracy; reliable on every task). No draft was changed to game those checks. Literal checks cover fixed inputs; semantic requirements reviewed separately.",
+  "reader_responses": 0,
+  "recorded_duration": "not recorded",
+  "status": "NOT VERIFIED for beginner understanding",
+  "workspace_audit": {
+    "exit_code": 1,
+    "errors": 11,
+    "warnings": 5,
+    "scope": "Local full clone at b782566 after page rebuild; no new Guardian verdict or page publication."
+  }
+}
