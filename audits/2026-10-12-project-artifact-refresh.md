@@ -50,3 +50,18 @@ runtime then lost its retained tab binding, so sign-in success is unknown;
 automated credential entry stopped. No original Claude page was republished.
 The published private Artifact Desk and saved GitHub updates were completed
 before this request. Do not repeat the long sign-in request automatically.
+
+## Recovery diagnosis — 12 October, 19:33 UK
+
+Charlie explicitly requested diagnosis and retry. The prior login tab was no
+longer present. A fresh original-artifact tab opened normally but showed
+'Sign in to view this page'. The login form rendered normally with Google,
+Apple, email and SSO choices. This confirms missing authentication, not a
+site-reported account rejection, CAPTCHA or bot block. The observed failure
+is the browserAuth request timeout; the underlying reason for that request
+not completing is not exposed. The lost tab is a later session symptom.
+
+Use the supported manual browser sign-in handoff instead of repeating the
+stalled credential request. Verify a positive signed-in signal before any
+artifact update; no passwords or codes in chat. All nine original-page
+publications remain pending. Earlier delivered dashboard/source updates stand.
