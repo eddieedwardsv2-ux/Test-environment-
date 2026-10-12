@@ -109,6 +109,9 @@ decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
   with historical/renamed paths are not automatically unfinished work.
 
 ## Brand engagement and style-guide planning (direct request, 2026-10-12)
-- [x] Confirm AI/education focus; gather seven brand candidates and initial public sources. Preliminary evidence and user choice saved in context/handoff.md.
-- [ ] Complete matched YouTube engagement sample; separate audience size/reach from engagement, format, age and private retention metrics.
-- [ ] Inspect selected source content and propose three style-guide briefs with matched examples: practical teaching, visual explanation, evidence-led analysis. No finished guides or validated engagement ranking yet.
+- [x] Confirm AI/education focus and gather seven candidates.
+- [x] Save a 70-upload exploratory sample and three concrete guide briefs with matched examples: `brainstorms/2026-10-12-brand-style-guides.md`. Remote contents read back exactly.
+- [ ] Resolve video IDs, missing Nate/Matt public-interaction data and age-matched measurement before calling the engagement ranking verified. Current sample controls count/format, not all confounders.
+- [ ] Inspect actual visual content and complete missing creator caption review. Draft visual rules are proposals.
+- [ ] Test one same-topic article and short script per guide with beginners; choose/activate a guide only after useful results.
+- [ ] Independent review and repo audit/page update when tools permit; no Guardian verdict fabricated.
