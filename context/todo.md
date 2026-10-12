@@ -113,5 +113,6 @@ decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
 - [x] Save a 70-upload exploratory sample and three concrete guide briefs with matched examples: `brainstorms/2026-10-12-brand-style-guides.md`. Remote contents read back exactly.
 - [ ] Resolve video IDs, missing Nate/Matt public-interaction data and age-matched measurement before calling the engagement ranking verified. Current sample controls count/format, not all confounders.
 - [ ] Inspect actual visual content and complete missing creator caption review. Draft visual rules are proposals.
-- [ ] Test one same-topic article and short script per guide with beginners; choose/activate a guide only after useful results.
+- [x] Write all three topics in all three styles: nine articles and nine short scripts (`brainstorms/2026-10-12-style-guide-test-drafts.md`); ranges and fixed inputs checked, author semantic review recorded.
+- [ ] Collect real beginner answers with the fixed answer keys and blind style comparison. No responses yet; understanding, duration and independent review remain NOT VERIFIED. Choose/activate a guide only after useful results.
 - [ ] Independent review and repo audit/page update when tools permit; no Guardian verdict fabricated.
