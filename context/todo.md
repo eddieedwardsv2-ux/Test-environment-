@@ -6,7 +6,7 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
-- [ ] Apply the completed policy/plugin changes to main after explicit PR #4 merge approval. Draft PR #4 is saved and mergeable; all five plugins are installed/enabled here. Handoff: `context/handoff.md` on `codex/tool-policy-cleanup-2026-10-12`. Existing installs need no repeat approval.
+- [x] PR #4 explicitly approved by Charlie and merged on 12 October 2026 (`4f5aa1c`). Removed policies and five-plugin configuration are on main; fresh main audit/doctor passed. Mac loading and external page publication remain separate checks.
 - [ ] Shared iPhone browser: prototype exists on `codex/shared-iphone-browser`
   (`ff94d38`), not main. Read branch [browser verification](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb/projects/shared-browser/verification.md)
   and `progress.md`; integrate source after relevant functionality checks without overwriting newer main context. Finish existing-host deployment,

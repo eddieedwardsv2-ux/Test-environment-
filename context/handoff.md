@@ -1,4 +1,25 @@
 # Session hand-off
+
+## Latest continuation — PR #4 merged, 12 October 2026
+
+Charlie explicitly approved merging PR #4. It was marked ready and merged
+with the expected head `f545801`; merge commit `4f5aa1c6e0859de4429141f0abe9cc919ccdf8e9`.
+The PR is closed and merged. The removed tool/reviewer/simplicity gates and
+five-plugin configuration are now on main. Pending-merge statements below
+are historical and superseded. No branch deleted.
+
+Fresh main structural audit: 0 errors, 8 external-page publication warnings;
+context doctor: 123 router lines, no warnings. Pre-merge fault drill caught
+25/25; implementation is unchanged by the merge. Earlier-host plugin use
+receipts stand; this resumed host lacks the Claude Code CLI.
+
+**Pick up here:** use approved tools directly for authorised work. On a
+Claude/Mac host replay `tools/install_approved_plugins.sh` and confirm actual
+load. Republish the eight stale Claude pages on a publishing-capable host.
+Preserve the setup-kit priority and all project continuations below. No
+further PR #4 merge approval is needed.
+
+---
 **Written:** 12 October 2026, 18:29 UK, by ChatGPT/Codex; Charlie requested session-handoff.
 
 ## Working on

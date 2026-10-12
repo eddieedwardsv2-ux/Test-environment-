@@ -22,7 +22,7 @@ Plugin activation and practical-use receipts: `audits/2026-10-12-tool-policy-and
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (handoff, 2026-10-12):** read the latest `context/handoff.md` on `codex/tool-policy-cleanup-2026-10-12`. Requested policy changes and five-plugin setup are saved in draft PR #4, not merged. Await explicit merge approval; use approved tools directly for authorised work. Actual Mac/account load remains untested.
+**Next step (merge completed, 2026-10-12):** Charlie approved PR #4; merged as `4f5aa1c`. Removed policies and approved-plugin configuration are now on main. Fresh main audit: 0 errors, 8 page-publication warnings; doctor: no warnings. Use approved tools directly. Actual Mac/plugin load and eight external page publications remain open; see `context/handoff.md`.
 
 **Continuation (style-guide trials, 2026-10-12):** all nine articles and nine scripts are saved in `brainstorms/2026-10-12-style-guide-test-drafts.md` with fact packets and checks alongside. Collect real beginner answers and compare understanding separately from preference. Draft checks are author review, not audience or independent approval. Current continuation: `context/handoff.md`. Existing browser/video work and the 90-day priority remain unchanged.
 
@@ -67,7 +67,6 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
-- PR #4 merge approval: https://github.com/eddieedwardsv2-ux/Test-environment-/pull/4 . The reviewed branch holds the completed requested changes; main still has the old rules. Doctor/handoff requests are not merge approval. Automatic approval review rejected the earlier direct-main push; no merge has been attempted.
 - Brand style-guide draft commits `133ce9e` and `7557c42` are saved proposals. Files saved and read back; full audit, visual-brand inspection and runtime output tests not run. They are proposals, not an activated voice or validated engagement ranking.
 - Shared browser: branch `codex/shared-iphone-browser` at `ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb`
   contains the prototype. Its recorded 16/16 tests and workspace live checks
