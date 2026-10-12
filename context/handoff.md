@@ -1,3 +1,29 @@
+# Session hand-off — Whisper installation and free AI tool research, 12 October 2026
+
+## Working on
+Charlie investigated whether whisper.cpp can run genuinely free for transcription from Test-environment-. He requested /session-handoff. No installation has been verified.
+
+## What is done
+- Research report: `research/free-ai-tools-experiment-1-2026-10-12.md` (commit `8b216701`).
+- Runtime follow-up: `research/free-ai-tools-experiment-1-2026-10-12-runtime.md` (commit `a2b0c8b`), with licence notes and reported synthetic FFmpeg checks (five 320×568 two-second MP4s). Test fixture outputs were created in a previous session workspace; verify afresh before making new runtime claims.
+- Official upstream: https://github.com/ggml-org/whisper.cpp . MIT-licensed implementation, local inference without paid OpenAI transcription API once installed and model obtained. Hardware, electricity and potential hosted-compute costs still exist.
+- Prior attempt to acquire whisper.cpp through shell reported DNS resolution failure for github.com. The CLI/model were not installed; 0/3 transcription accuracy tests. Distinguish shell DNS from GitHub connector access: GitHub connector successfully fetches repository material, but that does NOT install binaries into a compute runtime.
+- Humanizer writing preference added to `AGENTS.md` and `.claude/skills/humanizer/SKILL.md` (blader/humanizer); ChatGPT export updated. Native Codex path installation conflicted with an existing .agents/skills path. Repo-wide default style instructions exist, not account-wide ChatGPT activation.
+
+## Decision / question just discussed
+Charlie asked if Test-environment cannot use Whisper because it needs a computer. Explained that a GitHub repository holds code/workflows; execution must happen on a machine/runner. Options: personal Mac, Codex cloud with tools, or GitHub Actions runners. Suggested **research GitHub Actions first**, subject to monthly allowance, network access, model download, security and actual runner test. **Do not describe GitHub Actions as unlimited or permanently free** without verified plan and usage costs.
+
+## Pick up here
+1. Start at `AGENTS.md`, `context/current-focus.md` and this handoff; active TRADEFLOW quote demo remains primary priority, unless Charlie directs otherwise.
+2. For Whisper follow-up, review current official whisper.cpp README/build/model instructions and GitHub Actions pricing/limits. Choose a genuinely permitted free path; repo/code edits only with relevant need, avoid new AI-OS architecture.
+3. Run a real end-to-end transcription of three authorized audio samples with ground truth, measure word error rate, processing cost/time and audio-to-SRT, then FFmpeg five 9:16 clips with timed captions and visual/playback checks. Do not count existing synthetic FFmpeg clips as completed full workflow.
+4. Write execution receipts and remaining limitations to research, preserve other continuations.
+
+## Verification
+Free source licence and documented local operation: supported. Installation on user's Mac, any runner, GitHub Actions free execution, or full transcription/video pipeline: **NOT VERIFIED**.
+
+---
+
 # Latest research continuation — five-week X ingestion, 12 October 2026
 
 Charlie requested posts/articles from poteto, Andrej Karpathy and Boris Cherny and comparison with existing scripts. Available timelines traversed 27 pages: 445 timeline memberships (205 own posts, 240 reposts); deduplication and individual reply supplements yield 448 source records. Five attached X article bodies retrieved. Twenty associated/supporting reading records carry separate access labels. Inventory is in [Eddie-Ed source inventory](https://github.com/eddieedwardsv2-ux/eddie-ed/tree/main/social/x/2026-09-07--2026-10-12); analytical notes in `research/x-five-weeks/`. Durable retention is metadata, short excerpts, body hashes and summaries, not full-text copies.
