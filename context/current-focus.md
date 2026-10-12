@@ -14,16 +14,17 @@ recorded (with their consent) for the YouTube channel. Project:
 **Done:** Standard AI-OS v1 (2026-10-08): router confirmed, standard
 `system/standard-ai-os-v1.md`, blank copy `templates/standard-ai-os-v1/`.
 
-**10 Oct (Charlie, 9 Oct late): close the broken loops and prove the system works; Guardian
-paused until then (back 11 Oct).** Loops to close and prove, in `context/todo.md`: the Desk wake
-(press Send, a session wakes), the audit hole on merges, the frontend-design verdict, Higgsfield
-sign-in and the Katana draft (Mac), Codex's browser plan, plugins switched on.
-On 11 Oct the Guardian is back: its first run must cover the commits made while paused
-(from `e210980` on), or the audit fails again.
+**Current policy (Charlie, 12 Oct):** mandatory tool trials, smallest-version /
+simpler-wins policies and the Guardian agent/review gate are removed. Verify
+results directly; unavailable Claude-only review controls do not block Codex.
+Historical statuses below are superseded where they mention those gates.
+Plugin activation and practical-use receipts: `audits/2026-10-12-tool-policy-and-plugins.md`.
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (style-guide trials, 2026-10-12):** all nine articles and nine scripts are saved in `brainstorms/2026-10-12-style-guide-test-drafts.md` with fact packets and checks alongside. Collect real beginner answers and compare understanding separately from preference. Draft checks are author review, not audience or independent approval. Current continuation: `context/handoff.md`. Existing browser/video work and the 90-day priority remain unchanged.
+**Next step (handoff, 2026-10-12):** read the latest `context/handoff.md` on `codex/tool-policy-cleanup-2026-10-12`. Requested policy changes and five-plugin setup are saved in draft PR #4, not merged. Await explicit merge approval; use approved tools directly for authorised work. Actual Mac/account load remains untested.
+
+**Continuation (style-guide trials, 2026-10-12):** all nine articles and nine scripts are saved in `brainstorms/2026-10-12-style-guide-test-drafts.md` with fact packets and checks alongside. Collect real beginner answers and compare understanding separately from preference. Draft checks are author review, not audience or independent approval. Current continuation: `context/handoff.md`. Existing browser/video work and the 90-day priority remain unchanged.
 
 **OS backlog status (2026-10-09, after the re-run audit):** both middle plans are built
 (one `youtube-ingest` skill; elders named by job: Architect, Quartermaster,
@@ -36,13 +37,10 @@ is ingested (concept 44, Rule 44: finish with VERIFIED / NOT VERIFIED).
 Later the same day: model comparisons 1-2 done (9/9 each), so `architect` and
 `quartermaster` run on Sonnet with a weekly spot-check in the Friday audit; new `connect`
 skill (Canva connected and proven); Small Business's 44 skills mapped in the Quartermaster
-(not installed). **Next:** check the 5 plugins Charlie ticked are enabled
-(`ListPlugins`), test each once with `try-tool`. 9 Oct evening: the Guardian built and its report
-required for big commits (`context/working-rules.md`); journey video parked 9 Oct (see Parking Lot).
-Desk answers 9 Oct evening: **Elder pilot go** (next session: step 0 mini-router, then the
-first plugin trial through the council and the `guardian`; plan section 5); Quartermaster
-buttons and the Desk stay separate; Bitcoin newsletter is a side project (only when asked).
-GitHub first; Notion replaces Drive (see `AGENTS.md`).
+(not installed). **Approved plugins:** Marketing, Context7, Superpowers, watch-video and
+claude-patterns. Project configuration and current-host checks are recorded in
+`audits/2026-10-12-tool-policy-and-plugins.md`; approvals do not need repeating.
+GitHub first; Notion replaces Drive. The setup-kit priority remains unchanged.
 
 **Next step (set-up kit, paused):** `projects/ai-os-setup-kit/plan.md` is at v0.4;
 the base is decided (Nate's kit plus our three additions). Next: test it on the
@@ -69,20 +67,21 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
-- Brand style-guide draft commits `133ce9e` and `7557c42` await independent review. Files saved and read back; full audit, visual-brand inspection and runtime output tests not run. They are proposals, not an activated voice or validated engagement ranking.
+- PR #4 merge approval: https://github.com/eddieedwardsv2-ux/Test-environment-/pull/4 . The reviewed branch holds the completed requested changes; main still has the old rules. Doctor/handoff requests are not merge approval. Automatic approval review rejected the earlier direct-main push; no merge has been attempted.
+- Brand style-guide draft commits `133ce9e` and `7557c42` are saved proposals. Files saved and read back; full audit, visual-brand inspection and runtime output tests not run. They are proposals, not an activated voice or validated engagement ranking.
 - Shared browser: branch `codex/shared-iphone-browser` at `ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb`
   contains the prototype. Its recorded 16/16 tests and workspace live checks
-  are not fresh checks in this session. Independent Claude Guardian review,
+  are not fresh checks in this session.
   existing-host access, real external HTTPS/iPhone login and fresh-environment
   restoration remain open. No public phone URL exists.
 - Journey Short: branch `chatgpt/nate-video-editing-ingest-2026-10-10` at
   `9fdc528a5ed5faa204f9ca2fd864aec2b8781daa`, open PR #3, contains production
-  source/evidence. Review production commit `1bb636f9806eb9d8cd2247ca98ce109974d6bf49`
-  with the independent Guardian, resolve audit gate G16 and republish stale
-  pages. Result is NOT VERIFIED overall; a 57.736-second r5 MP4 is recorded in
+  source/evidence. Check production commit `1bb636f9806eb9d8cd2247ca98ce109974d6bf49`
+  against its remaining actual media gates and republish stale pages. The
+  separate-reviewer prerequisite is withdrawn. Result is NOT VERIFIED overall; a 57.736-second r5 MP4 is recorded in
   its [branch delivery record](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/9fdc528a5ed5faa204f9ca2fd864aec2b8781daa/projects/youtube-channel/videos/ai-os-journey-short/delivery.json).
-- Official reference/reading-efficiency commit `9f84dc96d7c6d11b43e5d6c5dcb4c78981c2e29b` needs the repo’s next Guardian review. Three selective retrieval trials passed; full corpus ingestion and all-runtime reading compliance remain NOT VERIFIED. No new payment or account decision is needed.
-- AI Impact ingestion commit `06acbb112e4a5b182aa31c1fdb4e87edbe1b7156` needs the repo’s next Guardian review. Caption-derived corpus is saved; slides remain blocked and result is NOT VERIFIED. No payment or account decision is needed.
+- Official reference/reading-efficiency commit `9f84dc96d7c6d11b43e5d6c5dcb4c78981c2e29b` has no outstanding mandatory separate-reviewer requirement. Three selective retrieval trials passed; full corpus ingestion and all-runtime reading compliance remain NOT VERIFIED. No new payment or account decision is needed.
+- AI Impact ingestion commit `06acbb112e4a5b182aa31c1fdb4e87edbe1b7156` has no outstanding mandatory separate-reviewer requirement. Caption-derived corpus is saved; slides remain blocked and result is NOT VERIFIED. No payment or account decision is needed.
 - Answered 9 Oct late evening: both browser routes (Claude's own browser on Mac day; Codex
   writes its shared phone-browser plan next), TinyFish removed, Higgsfield sign-in moved to
   Mac day (Charlie couldn't find a way from the phone). Open: `qm-frontend-design` (preview page to compare).

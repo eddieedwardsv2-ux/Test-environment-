@@ -252,58 +252,8 @@ for cap in ROOT.glob(".claude/skills/*/SKILL.md"):
 if not (ROOT / ".agents/skills").resolve() == (ROOT / ".claude/skills").resolve():
     err(".agents/skills no longer points at .claude/skills: Codex would see different skills")
 
-# 9. The Guardian (Charlie, 2026-10-09; Nate iTY8Q449YNQ 22:25: "Claude doesn't get to
-#    declare itself done"). A big commit (GUARD_FILES+ hand-written files) needs a line
-#    "Checked-by: guardian (READY) audits/guardian/<report>.md" (or NOT READY), in it or in a
-#    later commit. The report must be added (not edited) by the commit that cites it, live
-#    in audits/guardian/, and have the cited verdict as its first line in that commit.
-#    A later genuine check clears the misses it descends from (history is never rewritten);
-#    a check on one side of a merge doesn't clear the other side (Codex's 975420c, 9 Oct).
-#    Commits after GUARD_BASE count, by ancestry, so dates can't hide one. A merge counts
-#    only files it changed against every parent (its own additions or conflict fixes).
-#    Limits: shallow clones (GitHub Actions) and copies without Git skip this; it proves a
-#    report was filed, not that the Guardian wrote it.
-GUARD_BASE, GUARD_FROM, GUARD_FILES = "0696628b090127431a86dfbb011f5fcadca50a37", 1791565228, 4
-# Paused by Charlie (2026-10-09) until the end of 10 Oct to close broken loops and prove the
-# system works first: Guardian problems warn instead of fail. Back on by itself on 11 Oct.
-GUARD_PAUSED_UNTIL = date(2026, 10, 10)
-guard_flag = warn if date.today() <= GUARD_PAUSED_UNTIL else err
-GENERATED = re.compile(r"(brain/map/|system/reader/reader\.html|research/hands/site/|research/hands/tools\.json|audits/guardian/)")
-TRAILER = re.compile(r"^Checked-by: guardian \((READY|NOT READY)\) (\S+)", re.M)
-def _git(*a): return subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True)
-_fmt = "--format=%H%x00%P%x00%B%x1e"
-_shallow = _git("rev-parse", "--is-shallow-repository").stdout.strip() == "true"  # GitHub's checkout: history missing, skip
-_log = _git("log", "-n", "0") if _shallow else _git("log", f"{GUARD_BASE}..HEAD", _fmt) if _git("cat-file", "-e", GUARD_BASE + "^{commit}").returncode == 0 \
-    else _git("log", f"--since-as-filter=@{GUARD_FROM}", _fmt)  # e.g. the fault drill's fresh history
-def _changed(sha, merge, *extra):
-    return _git("diff-tree", "--no-commit-id", "--name-only", "-r", *(["--cc"] if merge else []), *extra, sha).stdout.split()
-_entries = [e.strip("\n").split("\x00", 2) for e in (_log.stdout.split("\x1e") if _log.returncode == 0 else []) if "\x00" in e]
-def _problem(sha, merge, m):
-    path = m.group(2)
-    shown = _git("show", f"{sha}:{path}")
-    first = next((l.strip() for l in shown.stdout.splitlines() if l.strip()), "") if shown.returncode == 0 else ""
-    return (f"cites Guardian report {path}, which isn't a file in audits/guardian/"
-            if not path.startswith("audits/guardian/") or shown.returncode != 0
-            else f"cites {path} but didn't add it: each check needs its own new report"
-            if path not in _changed(sha, merge, "--diff-filter=A")
-            else f"says Guardian {m.group(1)}, but {path} doesn't open with that verdict"
-            if first != f"**{m.group(1)}**" else "")
-_checks = {sha: (m, _problem(sha, len(parents.split()) > 1, m)) for sha, parents, body in _entries if (m := TRAILER.search(body))}
-_good = [sha for sha, (m, problem) in _checks.items() if not problem]
-# Cleared = every ancestor of a genuine check (itself included), never a sibling branch.
-cleared = set(_git("rev-list", *_good).stdout.split()) if _good else set()
-for sha, parents, body in _entries:
-    if sha in _checks:
-        problem = _checks[sha][1]
-        if problem and sha not in cleared:
-            guard_flag(f"commit {sha[:7]} {problem}")
-        continue
-    if sha in cleared:
-        continue
-    hand = [f for f in _changed(sha, len(parents.split()) > 1) if not GENERATED.search(f)]
-    if len(hand) >= GUARD_FILES:
-        guard_flag(f"commit {sha[:7]} changes {len(hand)} files with no Guardian check: run the guardian agent, "
-            f"save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'")
+# 9. The former independent-review commit gate was removed by Charlie on 2026-10-12.
+# Structure, secrets, quotes, routes and evidence checks below remain active.
 
 # 10. Relation links (Charlie, 2026-10-09: "scan our systems and check for relation links").
 #     Every file path a current note names exists; the Architect's rules and concepts link

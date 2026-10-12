@@ -46,7 +46,7 @@ three-ms-attribution: |
 ---
 ```
 
-Machine principles: Lego (smallest steps, zero-AI first), Validation Chain (test each step), Iteration (ship the proof of concept, expand from use).
+Machine principles: Lego (clear inputs and outputs), Validation Chain (test each step), Iteration (ship the proof of concept, expand from use).
 
 ### When the job was just done in this chat (from Anthropic's `build-agent`)
 Turning a repeated job into a skill (Nate: build it the second time, Rule 44):

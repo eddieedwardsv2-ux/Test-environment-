@@ -108,7 +108,7 @@ for e in tools.values():
     e["have"] = e["ours"] or norm(e["name"]) in {norm(b) for b in BUILTIN} or e["name"] in IN_USE
     e["shown"] = any(s["video"] for s in e["sightings"])     # False = skills.sh only, never shown in a video
 tried = {norm(t["name"]): t for t in (json.loads((HANDS / "tried.json").read_text()) if (HANDS / "tried.json").exists() else [])}
-for e in tools.values():                                  # Charlie's own trials (the try-tool skill)
+for e in tools.values():                                  # Charlie's historical tool receipts
     t = tried.get(norm(e["name"]))
     e["tried"] = t
     if t and t["verdict"] == "keep": e["score"] = round(e["score"] + 5, 1)

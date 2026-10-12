@@ -43,10 +43,20 @@ and to `AGENTS.md`; `tools/audit.py` fails if a skill or agent isn't routed).
 | Compare our OS with a Nate-first version of it | Nate-first map (see `AGENTS.md`); built by `tools/build_merge_map.py` | whole repo + Nate's kit | page source in `system/merge-map/` |
 | Draw any set of files as a connected map | `tools/graph_lib.py` (files, links, degrees), plus a `template.html` with `__DATA__` filled in by a small builder | nodes + links JSON | screenshot both screen sizes |
 | YouTube media production and Shorts | Creative Claw preflight in `projects/youtube-channel/README.md` | media assets after connection and cost approval | first real trial; not yet connected/tested |
-| Choose a model and handle failed cheaper outputs | `system/model-usage.md`, existing `try-tool` | task-specific comparison and bounded escalation | saved input/output/check receipts; no unmeasured savings |
+| Choose a model and handle failed cheaper outputs | `system/model-usage.md` | task-specific comparison and bounded escalation | saved input/output/check receipts; no unmeasured savings |
 | Test Hands decision state handling | `node tools/test_hands_actions.cjs` | adapter test results | real artifact round-trip still required |
-| Small-business work: a costed quote from notes or job photos, chase an invoice, reply to reviews, a social posting calendar, a Monday cash brief | **Claude for Small Business** plugin (Anthropic; `proposal-builder`, `invoice-chase`, `review-reputation`, `social-content-engine`, `monday-brief`; start with `smb-onboard`). Review: `research/hands/reviews/anthropic-marketplaces-2026-10-09.md` | drafts Charlie approves before anything is sent or paid | `connections.md` row 17; first real use logged with `try-tool` |
+| Small-business work: a costed quote from notes or job photos, chase an invoice, reply to reviews, a social posting calendar, a Monday cash brief | **Claude for Small Business** plugin (Anthropic; `proposal-builder`, `invoice-chase`, `review-reputation`, `social-content-engine`, `monday-brief`; start with `smb-onboard`). Review: `research/hands/reviews/anthropic-marketplaces-2026-10-09.md` | drafts Charlie approves before anything is sent or paid | `connections.md` row 17; real use and limitations recorded in the project |
 | A deliverable (e.g. a video plan) | `projects/<name>/` | project files | the project's own done-when |
+
+## Approved plugin capabilities — current host, 12 October 2026
+All five approved plugins are installed/enabled at project scope here. Marketing
+provides brand/content review, Context7 retrieves live library docs, Superpowers
+provides development workflows, watch-video extracts video evidence, and
+claude-patterns finds recurring workflow issues. Use these directly where
+relevant; no trial/keep or separate-reviewer gate. Setup/use evidence:
+`audits/2026-10-12-tool-policy-and-plugins.md`.
+New Claude host setup: `tools/install_approved_plugins.sh`. Optional external
+accounts and actual Mac runtime are separate access checks.
 
 ## Already available, nothing to build (check at session start)
 Added 2026-10-09 after a miss: this map only listed our own skills, so tools

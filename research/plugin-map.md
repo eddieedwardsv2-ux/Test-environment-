@@ -1,5 +1,13 @@
 # Plugin map: the 2,284 community plugins in 9 families
 
+
+**Current override, 12 October 2026:** the five approved plugins (Marketing,
+Context7, Superpowers, watch-video, claude-patterns) are installed/enabled on
+the current Codex host at project scope. Context7 is connected in ChatGPT.
+Use/use-limits and install evidence: `audits/2026-10-12-tool-policy-and-plugins.md`.
+The older “nothing installed” and trial requirements below are history.
+No mandatory trial/keep workflow remains.
+
 Source: Anthropic's community marketplace catalogue (`claude-community`,
 connected in `.claude/settings.json`), sorted 2026-10-07 by each plugin's name
 and first sentence. Shares are rough: a hand check of 30 random plugins put
@@ -31,7 +39,7 @@ checked directory (claude.ai plugin search): **Marketing** (Anthropic; uses the 
 connection), **context7** (partner), **Superpowers** (partner; trial only, its start-up
 instructions may clash with ours), **watch-video** and **claude-patterns** (community;
 better on the Mac), **Small Business** (Anthropic; after Pro). Not in his directory:
-`build-loud`, `youtube-transcriber`. Each one installed gets one real test (`try-tool`).
+`build-loud`, `youtube-transcriber`. Installation and relevant use are recorded directly; no mandatory trial workflow.
 
 ## Charlie's watchlist (checked against current work, 2026-10-07)
 Nothing installed yet; read each plugin before installing. Memory plugins save

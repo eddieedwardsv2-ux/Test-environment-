@@ -1,0 +1,13 @@
+WARN  research/hands/tools.json is out of date with the week files: run python3 tools/build_hands.py, then republish the Hands Brain
+ERROR commit 9f84dc9 changes 25 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit 06acbb1 changes 62 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit 7689378 changes 11 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit d88753a changes 6 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit efe8126 changes 6 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit cdff9b5 changes 5 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit e0a4734 changes 5 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit ba1645d changes 6 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit 30ff0c2 changes 11 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit 55e5725 changes 12 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+ERROR commit e210980 changes 10 files with no Guardian check: run the guardian agent, save its report in audits/guardian/, and commit with 'Checked-by: guardian (READY|NOT READY) <report>'
+audit: 11 errors, 1 warnings

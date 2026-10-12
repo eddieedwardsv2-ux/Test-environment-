@@ -1,5 +1,14 @@
 # Decision log
 
+## 2026-10-12 — remove adoption and separate-reviewer gates
+Charlie: "Delete try-tool and smallest/simpler wins delete guardian complete what we need to clear the backlog of 3."
+Removed the active trial skill and reviewer agent, mandatory review commit
+check, associated fault cases and the two simplicity policies. Historical
+source evidence and reports stay historical. Existing approvals for Marketing,
+Context7, Superpowers, watch-video and claude-patterns carry forward. Check
+current host access and use them directly; test claims still require evidence.
+Receipts: `audits/2026-10-12-tool-policy-and-plugins.md`.
+
 ## 2026-10-10: backtrack: a stale hand-off sent me to done work
 Resuming from the 9 Oct hand-off, I started on the audit hole and the live helper tests, which another session had already finished at 23:00 (c990e2d). Where I looked: `context/handoff.md` only. Why I missed it: the hand-off is a snapshot, and later commits didn't rewrite it. Fix the route: the router's session-start line now says to read `git log` since the hand-off first, and later commits win. Second miss: I stopped the Desk watch to re-register it in a turn Charlie didn't type, and the restart was refused; the `decide` skill now says to restart it only in a turn he typed.
 

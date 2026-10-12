@@ -23,7 +23,7 @@ SUMMARY = {  # plain-English "in short" box shown above a document
         "The router is fine: 85 of 99 notes are 2 steps or fewer away, none unreachable. What was wrong was disconnected knowledge and too much checking per small change.",
     ],
     "brainstorms/2026-10-09-elder-councils-plan.md": [
-        "Each Elder gets a council of experts (one is always a contrarian) and a separate guardian who checks the work without seeing the makers' reasoning.",
+        "Specialists contribute when useful; the lead verifies the result against the requested outcome.",
         "New (3b): each Elder gets a mini-router (its own \"where things live\", links up and across) and a mini-desk (what it settles, what comes to you, same card shape).",
         "Built in so it doesn't just please you: drop is a normal verdict, NOT VERIFIED is never empty, disagreement is said first with reasons. You still decide.",
     ],

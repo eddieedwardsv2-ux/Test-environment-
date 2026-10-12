@@ -5,13 +5,23 @@
   "url": "https://skills.sh/heygen-com/hyperframes/hyperframes",
   "kind": "skill",
   "category": "Video, clips & images",
-  "what": "Agent writes HTML animations and renders them to MP4; edit the code instead of regenerating frames.",
+  "what": "Entry-point skill for making videos, animations and motion graphics from HTML with HeyGen's HyperFrames.",
   "open_source": "public code",
   "repo": "https://github.com/heygen-com/hyperframes",
   "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "",
+    "opinion": null,
+    "our_view": null
+   },
    {
     "week": "2026-W41",
     "source": "The Next New Thing",
@@ -32,16 +42,6 @@
      "agree": "agree",
      "why": "Already our #1 for video. Note: the HyperFrames connector here disables compose from Claude Code and points to the local skills instead."
     }
-   },
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "",
-    "opinion": null,
-    "our_view": null
    },
    {
     "week": "2026-W38",
@@ -11487,13 +11487,23 @@
   "url": "https://skills.sh/mattpocock/skills/grill-me",
   "kind": "skill",
   "category": "Claude Code skills & plugins",
-  "what": "Matt Pocock's simple skill pack; grill-me interviews you before a project starts.",
+  "what": "Interviews you relentlessly about a plan until it is sharp.",
   "open_source": "public code",
   "repo": "https://github.com/mattpocock/skills",
   "cost": null,
   "for_charlie": 3,
   "replaces": [],
   "sightings": [
+   {
+    "week": "2026-W41",
+    "source": "skills.sh",
+    "video": null,
+    "t": "",
+    "shown": "",
+    "quote": "A relentless interview to sharpen a plan or design.",
+    "opinion": null,
+    "our_view": null
+   },
    {
     "week": "2026-W41",
     "source": "The Next New Thing",
@@ -11514,16 +11524,6 @@
      "agree": "agree",
      "why": "Already in this repo as `grill-me`. Their warning fits: one user got 200 questions, so keep it one question at a time."
     }
-   },
-   {
-    "week": "2026-W41",
-    "source": "skills.sh",
-    "video": null,
-    "t": "",
-    "shown": "",
-    "quote": "A relentless interview to sharpen a plan or design.",
-    "opinion": null,
-    "our_view": null
    },
    {
     "week": "2026-W38",

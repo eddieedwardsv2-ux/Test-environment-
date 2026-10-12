@@ -1,0 +1,9 @@
+STALE System map: system/system-map/system-map.html changed since it was last published
+STALE Quartermaster: research/hands/site/hands.html changed since it was last published
+STALE OS Guide: system/guide/guide.html changed since it was last published
+STALE Architect (Nate): research/nate-herk/brain/map/enate.html changed since it was last published
+STALE Reading Room: system/reader/reader.html changed since it was last published
+STALE Brain dashboard: research/nate-herk/brain/map/brain-map.html changed since it was last published
+STALE Nate-first map: system/merge-map/merge-map.html changed since it was last published
+STALE OS Guide, new look: system/guide-preview/guide-preview.html changed since it was last published
+pages: 8 behind their source

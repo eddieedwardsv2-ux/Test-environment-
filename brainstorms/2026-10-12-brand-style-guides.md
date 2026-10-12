@@ -48,7 +48,7 @@ Visuals must explain a relationship, process or result. No decorative node cloud
 
 **Voice:** warm, direct and specific. Speak as a capable colleague. Brief explanation, then show what to do and how to check it. One light aside is enough; do not make the learner the joke.
 
-**Structure:** the problem and desired result → smallest useful example → steps and reasons → actual check → next action. Show a failure only when it teaches the mechanism.
+**Structure:** the problem and desired result → worked example → steps and reasons → actual check → next action. Show a failure only when it teaches the mechanism.
 
 **Visual proposal:** light warm background, near-black text and one blue accent. Clear numbered steps, one screenshot crop per step, highlight the exact control or changed result. Prefer a human-readable file path over a crowded architecture map.
 
@@ -58,7 +58,7 @@ Visuals must explain a relationship, process or result. No decorative node cloud
 > If your AI keeps missing notes you've already saved, start by checking where it looked. A short index can point it towards the right project, but the test is whether a new session finds the correct note and shows its source. Pick one question with a known answer, run it, and record what it reads.
 
 **Reusable instruction:**
-Write for a beginner completing [task]. Explain the useful result, demonstrate the smallest example, give the necessary steps and show how to check success. Use plain UK English and connected prose. Separate actual results from suggested tests. Finish with one next action.
+Write for a beginner completing [task]. Explain the useful result, demonstrate a worked example, give the necessary steps and show how to check success. Use plain UK English and connected prose. Separate actual results from suggested tests. Finish with one next action.
 
 **Review:** can the reader act without guessing a missing step? Does the check measure the outcome rather than repeat the instructions? Is any time/cost promise evidenced?
 

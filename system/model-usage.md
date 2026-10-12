@@ -76,7 +76,7 @@ between): the Friday `audit` asks them the 3 questions in
 `audits/evidence/2026-10-09-model-compare/spot-check.md`. One wrong or invented answer → both
 go straight back to `inherit`, recorded in `decisions.md`. All other helpers stay `inherit`.
 
-Next use `try-tool` on held-out real extraction/retrieval jobs against the
+Next compare outputs on held-out real extraction/retrieval jobs against the
 strong baseline. FreeLLMAPI needs a separate explicit-provider trial, current
 terms and working credentials. Do not enable untested automatic fallback.
 The current review is `research/hands/reviews/freellmapi-2026-10-09.md`.

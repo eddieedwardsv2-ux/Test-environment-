@@ -23,8 +23,8 @@ Reuse already-read unchanged material within the session. Give helpers the task,
 ## How to answer
 - Diagnose first: name which rules apply (and, for wrong answers, which of the
   four failure modes) before proposing any change.
-- Prefer the smallest change that fixes a real problem; reuse an existing
-  file, skill or agent before suggesting a new one.
+- Recommend the approach that meets the task’s outcome and acceptance checks;
+  reuse existing work when it fits. Do not impose a smallest/simpler-wins gate.
 - Back each key point with a short exact quote and its timestamp link. Say
   whether the source is primary or supporting, and whether the rule is stated,
   demonstrated or inference.

@@ -6,14 +6,14 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
+- [ ] Apply the completed policy/plugin changes to main after explicit PR #4 merge approval. Draft PR #4 is saved and mergeable; all five plugins are installed/enabled here. Handoff: `context/handoff.md` on `codex/tool-policy-cleanup-2026-10-12`. Existing installs need no repeat approval.
 - [ ] Shared iPhone browser: prototype exists on `codex/shared-iphone-browser`
   (`ff94d38`), not main. Read branch [browser verification](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb/projects/shared-browser/verification.md)
-  and `progress.md`; obtain independent Guardian review and integrate reviewed
-  source without overwriting newer main context. Finish existing-host deployment,
+  and `progress.md`; integrate source after relevant functionality checks without overwriting newer main context. Finish existing-host deployment,
   externally reachable HTTPS, actual iPhone/login and fresh-task restoration
   checks. No public phone URL; no signup/payment authorised by this status update.
   Claude's separate Mac browser route remains a Mac-day task.
-- [ ] Plugins ticked 9 Oct (Marketing, context7, Superpowers, watch-video, claude-patterns) not yet showing as enabled on his account (`ListPlugins` empty): check they installed; a new session loads them; then one `try-tool` test each
+- [x] Approved five-plugin activation completed on this host: all five installed/enabled at project scope; live Context7 and watch-video use, plus skill applications, recorded in `audits/2026-10-12-tool-policy-and-plugins.md`. Mac/account-specific Claude runtime still needs its own load check.
 - [ ] claude.ai settings: switch off 6 unused built-in skills (import-memory, morning, docx, xlsx, pptx, pdf). Keep built-in-browser, chrome-browser and computer-use: they are the browser that keeps him signed in (9 Oct)
 - [ ] Higgsfield Katana draft for the AI OS map promo (cinematic glowing network for Instagram and X; started in Codex, half done; Codex installed the Higgsfield CLI, no account connected): sign in on the Mac (`context/mac-day.md`; Charlie couldn't find a way from the phone), then check Katana access and get an exact credit quote before any spend. Keep the parked journey video separate.
 - [ ] Voice Gym: rewrite 5 or more messages; then Claude writes his voice notes into `aios-intake.md` Q2
@@ -23,20 +23,18 @@ deleting them (history stays in `decisions.md`).
 - [ ] `aios-intake.md` Q2, Q5 and half of Q7 still unanswered
 
 ## Reminders for Claude
-- After any Codex session: run the Guardian on its commits and republish the pages `tools/pages_status.py --build` flags (Codex can do neither).
+- After any session: run relevant output checks and the structural audit. Refresh pages whose sources changed.
 - When Charlie asks how leftover decisions and parked tasks could fit into the set-up kit: go through all of them (this list, the Parking Lot, parked projects), including the Bitcoin newsletter (side project since 9 Oct; his note on the Desk)
 
 ## Next to build (in order, after the Desk answers)
 0. [ ] Desk wake not proven (10 Oct, two tests; third try set up 10 Oct: watch slots were all 10 full, 3 freed; the Desk watch was stopped and its restart refused because the turn wasn't typed by Charlie, so Charlie's next message re-arms it, then card `wake-test`; his 04:11 Send saved the poke fine but the watch was off, so try 2 is set; try 2 (04:13) came before the re-watch; try 3 (07:05) saved the poke but the Desk watch registered at 04:14 was **gone** after the session restarted (older page watches survived), so no wake; re-watched 07:06, try 4 set. Documented fallback if try 4 fails: a Desk comment sent to Claude wakes a watching session): Send saves poke.json (22:11 and 22:13, after the retry fix) but no watching session woke, even with a freshly registered watch. Next: find out whether a page saving itself counts as a republish that wakes watchers, or find another connector-free route; never ask Charlie to press anything extra
 0. [ ] Try `/goal` once on a real job with a printed, countable finish line (concept 45; docs: code.claude.com/docs/en/goal; its judge only reads the chat, so the proof must be printed)
-0. [x] (done 10 Oct: a check now clears only its own ancestors; fault drill 27 of 27, new merge fault added) Fix a hole in `tools/audit.py`: a Guardian line on one side of a merge clears unchecked commits on the other side (Codex's `975420c` passed this way, 9 Oct; it has since been checked). A Guardian line should only clear its own ancestors
-1. [ ] Elder pilot (Desk: go, 9 Oct): step 0 done (mini-router); step 1 done 9 Oct: first trial, frontend-design, through the council and the `guardian` (`research/hands/reviews/frontend-design-2026-10-09.md`; Charlie's verdict on Desk card `qm-frontend-design`). Next: step 2, plant two faults in copies of that review and check the guardian catches both (plan section 5)
 2. [ ] Model comparisons on real work (comparisons 1-2 done 9 Oct: both 9/9; Desk card "promote-sonnet" for the two advisors) before any helper goes back to a cheaper model (`system/model-usage.md`); add the missing "step up to the stronger model" rule
-2b. [x] Guardian report required (9 Oct): `tools/audit.py` errors on a 4+ file commit with no newly added, matching Guardian report; fault drill 24/24. Limits: it runs locally and in the Stop hook only (any shallow clone, e.g. GitHub's, skips it); the hook sends a turn back once, and only after the commit exists; it proves a fresh report with a matching verdict was filed, not that the Guardian wrote it. Ended NOT READY after the last fix round (`audits/guardian/2026-10-09-guardian-enforced.md`); the shallow-clone fix made after it was then checked: READY (`audits/guardian/2026-10-09-shallow-fix.md`). Open: (a) a commit message quoting the rule as an example is read as a citation; (b) file names with spaces are over-counted; (c) Codex route also belongs in this list: Codex commits, leaves the error, notes it under "Waiting on Charlie"; (d) try the Guardian on a different model (Nate says a different model judges)
 4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker")
 6. [ ] Set-up kit (paused): first friend or family set-up from plan v0.4
 7. [ ] First YouTube Short: r5 journey MP4 produced on the media branch, open
-   PR #3. Independent Guardian/full audit G16 and page republishing remain open;
+   PR #3. Actual remaining media checks and page republishing remain open; the
+   separate-reviewer gate is withdrawn;
    source/evidence and review delivery are in the branch project folder.
 
 ## Found 2026-10-09 (session review: dropped from the 9 Oct hand-off rewrite)
@@ -52,7 +50,7 @@ deleting them (history stays in `decisions.md`).
 ## Waiting for the Mac (`context/mac-day.md`, starts when Charlie says "I'm on Mac")
 - [ ] Clone the repo; Obsidian; Nate's 3D brain; context7 and superpowers plugins
 - [ ] **Codex test**: same 5 rulebook questions, every skill listed, the three Codex fallbacks, what Codex blocks
-- [ ] Small Business plugin (after Charlie's Pro upgrade): install in the desktop app, `smb-onboard`, one `try-tool` trial
+- [ ] Small Business plugin (after Charlie's Pro upgrade): install in the desktop app, `smb-onboard`, a relevant real task
 - [ ] `/doctor` on the Mac; optional FreeLLMAPI trial only if limits keep stopping sessions
 
 ## Small tidy-ups (Claude can do these; offered, not yet agreed)
@@ -98,10 +96,8 @@ decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
 ## Session reconciliation (2026-10-12)
 - [x] Main handoff/focus/todo now identify the unmerged browser prototype and
   rendered Short. Existing priority and other open tasks preserved.
-- [ ] Main baseline audit: 11 missing-Guardian errors, 0 warnings on 12 Oct.
-  Independent Claude review must cover the outstanding commits; reading their
-  reports or recording branch results is not approval. No Guardian verdict was
-  fabricated in this reconciliation.
+- [x] Mandatory separate-reviewer backlog retired by Charlie, 12 Oct. This closes a policy requirement, not untested output checks.
+
 - [ ] Remaining branch residue: `claude/nate-brain-wip` retains an unverified
   [unverified X themes](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/314fb9c973e2104da2baba422303c8fa58a1ebff/research/nate-herk/brain/x-themes.md); preserve it until reviewed. Older
   council/watch-path branch commits need targeted comparison before declaring
@@ -115,4 +111,4 @@ decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
 - [ ] Inspect actual visual content and complete missing creator caption review. Draft visual rules are proposals.
 - [x] Write all three topics in all three styles: nine articles and nine short scripts (`brainstorms/2026-10-12-style-guide-test-drafts.md`); ranges and fixed inputs checked, author semantic review recorded.
 - [ ] Collect real beginner answers with the fixed answer keys and blind style comparison. No responses yet; understanding, duration and independent review remain NOT VERIFIED. Choose/activate a guide only after useful results.
-- [ ] Independent review and repo audit/page update when tools permit; no Guardian verdict fabricated.
+- [ ] Complete the outstanding factual/visual/reader checks and page updates; no mandatory separate-reviewer verdict.

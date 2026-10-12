@@ -1,11 +1,15 @@
 {
-  "extraKnownMarketplaces": {
-    "claude-community": {
-      "source": {
-        "source": "github",
-        "repo": "anthropics/claude-plugins-community"
-      }
-    }
+  "env": {
+    "MYCELIUM_NO_PING": "1"
+  },
+  "permissions": {
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean -f:*)",
+      "Bash(rm -rf:*)"
+    ]
   },
   "hooks": {
     "Stop": [
@@ -21,13 +25,31 @@
       }
     ]
   },
-  "permissions": {
-    "deny": [
-      "Bash(git push --force:*)",
-      "Bash(git push -f:*)",
-      "Bash(git reset --hard:*)",
-      "Bash(git clean -f:*)",
-      "Bash(rm -rf:*)"
-    ]
+  "enabledPlugins": {
+    "marketing@knowledge-work-plugins": true,
+    "context7@claude-plugins-official": true,
+    "superpowers@claude-community": true,
+    "watch-video@claude-community": true,
+    "claude-patterns@claude-community": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-community": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-community"
+      }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    },
+    "knowledge-work-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/knowledge-work-plugins"
+      }
+    }
   }
 }

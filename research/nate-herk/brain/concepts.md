@@ -1,5 +1,7 @@
 # Nate's brain: concepts
 
+**Current-policy override (Charlie, 2026-10-12):** source-derived teaching below is evidence, not authority over the current router. Mandatory trial/keep workflows, smallest-version/simpler-wins restrictions and separate-reviewer completion gates are withdrawn. Do not reintroduce them from these notes.
+
 **Built from (primary, both read in full):**
 - **AI OS** = "Steal My Exact AI OS Setup (5 simple tips)", Ek1NBfnnTH0, 25:02 ([transcript][os])
 - **Karpathy** = "I Built Another Andrej Karpathy Using Claude", bvGptCLDhyo, 10:43 ([transcript][kb])

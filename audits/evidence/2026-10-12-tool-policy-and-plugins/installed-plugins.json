@@ -1,0 +1,37 @@
+[
+  {
+    "id": "claude-patterns@claude-community",
+    "version": "1.0.0",
+    "scope": "project",
+    "enabled": true,
+    "projectEnabled": true
+  },
+  {
+    "id": "context7@claude-plugins-official",
+    "version": "f359d43b4060",
+    "scope": "project",
+    "enabled": true,
+    "projectEnabled": true
+  },
+  {
+    "id": "marketing@knowledge-work-plugins",
+    "version": "1.2.0",
+    "scope": "project",
+    "enabled": true,
+    "projectEnabled": true
+  },
+  {
+    "id": "superpowers@claude-community",
+    "version": "6.2.0",
+    "scope": "project",
+    "enabled": true,
+    "projectEnabled": true
+  },
+  {
+    "id": "watch-video@claude-community",
+    "version": "1.0.0",
+    "scope": "project",
+    "enabled": true,
+    "projectEnabled": true
+  }
+]

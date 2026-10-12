@@ -146,7 +146,7 @@ You've got the thinking (Mindset) and the decisions (Method). Now you build and 
 
 #### 1. The Lego Principle
 
-Smallest possible steps. One input, one output per block. Output of block 1 becomes input of block 2.
+Steps with clear inputs and outputs. One input, one output per block. Output of block 1 becomes input of block 2.
 
 Start with **zero-AI steps first**. Get the deterministic pieces working — data fetching, formatting, routing. Then layer in AI where actually needed.
 
