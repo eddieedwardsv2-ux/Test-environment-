@@ -23,10 +23,12 @@ On 11 Oct the Guardian is back: its first run must cover the commits made while 
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (latest Codex request, 2026-10-09):** resolve the proposed shared
-iPhone browser design approval, then write its build spec for review; the
-Higgsfield/Katana map promo remains open. Read `context/handoff.md`; no app or
-video has been built. The 90-day priority above remains unchanged.
+**Next step (session reconciliation, 2026-10-12):** resume from the current
+reconciliation at the top of `context/handoff.md`. The shared iPhone browser
+prototype and rendered journey Short exist on separate branches; main's older
+"not built" / "parked" descriptions do not describe those deliverables. Both
+retain independent-review blockers; browser hosting is also pending. The
+90-day priority above remains unchanged.
 
 **OS backlog status (2026-10-09, after the re-run audit):** both middle plans are built
 (one `youtube-ingest` skill; elders named by job: Architect, Quartermaster,
@@ -34,7 +36,7 @@ Chief's Desk), and every Desk card is answered or closed. The re-run audit score
 64/100 (`audits/audit-2026-10-09-112239-a7c3.md`); Charlie chose fix 1 only (this
 note); fixes 2-5 stay open in that report. Next to build, in order: real model
 comparisons under `system/model-usage.md` (no cheaper route is promoted yet); the
-journey video is parked. Full list: `context/todo.md`. Nate's six-phrases DM
+journey video was parked at that time (newer production status below). Full list: `context/todo.md`. Nate's six-phrases DM
 is ingested (concept 44, Rule 44: finish with VERIFIED / NOT VERIFIED).
 Later the same day: model comparisons 1-2 done (9/9 each), so `architect` and
 `quartermaster` run on Sonnet with a weekly spot-check in the Friday audit; new `connect`
@@ -72,6 +74,17 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
+- Shared browser: branch `codex/shared-iphone-browser` at `ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb`
+  contains the prototype. Its recorded 16/16 tests and workspace live checks
+  are not fresh checks in this session. Independent Claude Guardian review,
+  existing-host access, real external HTTPS/iPhone login and fresh-environment
+  restoration remain open. No public phone URL exists.
+- Journey Short: branch `chatgpt/nate-video-editing-ingest-2026-10-10` at
+  `9fdc528a5ed5faa204f9ca2fd864aec2b8781daa`, open PR #3, contains production
+  source/evidence. Review production commit `1bb636f9806eb9d8cd2247ca98ce109974d6bf49`
+  with the independent Guardian, resolve audit gate G16 and republish stale
+  pages. Result is NOT VERIFIED overall; a 57.736-second r5 MP4 is recorded in
+  its [branch delivery record](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/9fdc528a5ed5faa204f9ca2fd864aec2b8781daa/projects/youtube-channel/videos/ai-os-journey-short/delivery.json).
 - Official reference/reading-efficiency commit `9f84dc96d7c6d11b43e5d6c5dcb4c78981c2e29b` needs the repo’s next Guardian review. Three selective retrieval trials passed; full corpus ingestion and all-runtime reading compliance remain NOT VERIFIED. No new payment or account decision is needed.
 - AI Impact ingestion commit `06acbb112e4a5b182aa31c1fdb4e87edbe1b7156` needs the repo’s next Guardian review. Caption-derived corpus is saved; slides remain blocked and result is NOT VERIFIED. No payment or account decision is needed.
 - Answered 9 Oct late evening: both browser routes (Claude's own browser on Mac day; Codex
@@ -82,9 +95,10 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
   `audits/guardian/2026-10-09-codex-handoff-merge.md`) and the pages republished.
 
 ## Parking Lot
-- Journey video (parked by Charlie 2026-10-09): Mix draft with the growing brain is
-  ready for his notes (`system/pages.md`, thesis `brainstorms/2026-10-09-journey-video-thesis.md`);
-  then a video file with voice-over, and later Obsidian footage on the Mac
+- Journey video: the 9 Oct parking decision is history. Charlie's subsequent
+  production request yielded an r5 MP4 on the media branch (11 Oct), still
+  NOT VERIFIED overall. Review/integration remains open; Obsidian filming stays
+  a later Mac task. See the current handoff for exact branch and result paths.
 - Nick Saraev: build/ship lessons, brain-ingest of his 4 courses, his advice
   as a teaching programme (parked 2026-10-07; still parked for the set-up kit)
 - Flashcards (app, new cards, review): came from Nick's teaching; parked

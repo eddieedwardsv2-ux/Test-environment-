@@ -6,7 +6,13 @@ ChatGPT's hand-off and the battle test. The priority still lives only in
 deleting them (history stays in `decisions.md`).
 
 ## Needs Charlie (Decision Desk or a setting only he can change)
-- [ ] A browser that keeps him signed in, two routes, both chosen 9 Oct (TinyFish removed): (a) Claude's own browser pane / Claude in Chrome on the Mac (Claude sessions; Mac needed); (b) Codex's planned shared iPhone browser (private home-screen web app, saved profile, takeover), which is still the only route for **Codex** and for the **iPhone**. Neither built yet. After the plan is approved: prototype locally and test phone sizing, keyboard, takeover, reconnect and real login retention before any always-on hosting.
+- [ ] Shared iPhone browser: prototype exists on `codex/shared-iphone-browser`
+  (`ff94d38`), not main. Read branch [browser verification](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb/projects/shared-browser/verification.md)
+  and `progress.md`; obtain independent Guardian review and integrate reviewed
+  source without overwriting newer main context. Finish existing-host deployment,
+  externally reachable HTTPS, actual iPhone/login and fresh-task restoration
+  checks. No public phone URL; no signup/payment authorised by this status update.
+  Claude's separate Mac browser route remains a Mac-day task.
 - [ ] Plugins ticked 9 Oct (Marketing, context7, Superpowers, watch-video, claude-patterns) not yet showing as enabled on his account (`ListPlugins` empty): check they installed; a new session loads them; then one `try-tool` test each
 - [ ] claude.ai settings: switch off 6 unused built-in skills (import-memory, morning, docx, xlsx, pptx, pdf). Keep built-in-browser, chrome-browser and computer-use: they are the browser that keeps him signed in (9 Oct)
 - [ ] Higgsfield Katana draft for the AI OS map promo (cinematic glowing network for Instagram and X; started in Codex, half done; Codex installed the Higgsfield CLI, no account connected): sign in on the Mac (`context/mac-day.md`; Charlie couldn't find a way from the phone), then check Katana access and get an exact credit quote before any spend. Keep the parked journey video separate.
@@ -29,7 +35,9 @@ deleting them (history stays in `decisions.md`).
 2b. [x] Guardian report required (9 Oct): `tools/audit.py` errors on a 4+ file commit with no newly added, matching Guardian report; fault drill 24/24. Limits: it runs locally and in the Stop hook only (any shallow clone, e.g. GitHub's, skips it); the hook sends a turn back once, and only after the commit exists; it proves a fresh report with a matching verdict was filed, not that the Guardian wrote it. Ended NOT READY after the last fix round (`audits/guardian/2026-10-09-guardian-enforced.md`); the shallow-clone fix made after it was then checked: READY (`audits/guardian/2026-10-09-shallow-fix.md`). Open: (a) a commit message quoting the rule as an example is read as a citation; (b) file names with spaces are over-counted; (c) Codex route also belongs in this list: Codex commits, leaves the error, notes it under "Waiting on Charlie"; (d) try the Guardian on a different model (Nate says a different model judges)
 4. [ ] The council (Nate's voice first; research Boris Cherny as "the Maker")
 6. [ ] Set-up kit (paused): first friend or family set-up from plan v0.4
-7. [ ] First YouTube short
+7. [ ] First YouTube Short: r5 journey MP4 produced on the media branch, open
+   PR #3. Independent Guardian/full audit G16 and page republishing remain open;
+   source/evidence and review delivery are in the branch project folder.
 
 ## Found 2026-10-09 (session review: dropped from the 9 Oct hand-off rewrite)
 - [ ] ChatGPT's model-routing prompt saved, not started (`brainstorms/2026-10-09-model-routing-handoff.md`); triage the Grok Bot video first
@@ -67,7 +75,9 @@ deleting them (history stays in `decisions.md`).
 - [ ] NVIDIA Switchyard (model router): watch only; look again if a routine moves to pay-per-use API keys (`research/hands/reviews/switchyard-2026-10-09.md`)
 
 ## Parked by choice (don't start without Charlie)
-- [ ] Journey video (parked by Charlie 9 Oct, not next): Mix improved 9 Oct evening (scene 3 cut, growing-brain background; `brainstorms/2026-10-09-journey-video-thesis.md`). When un-parked: Charlie's notes on it, then a proper video file with voice-over; later film the real brain growing in Obsidian (Mac)
+- Journey video's 9 Oct parking entry is superseded by the later production
+  request and branch result (11 Oct); remaining review/integration is listed
+  above. Later Obsidian filming remains a Mac task.
 Nick Saraev work; flashcards; Karpathy brain; Dan Martell; the decorators'
 Facebook post and an unlisted test video; vidIQ (after 5 videos) and Canva
 thumbnails (after 3); the decorating business; Nate-channel audit's 8 older
@@ -84,3 +94,16 @@ decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
 ## Task-specific reading verification (2026-10-12)
 - [x] Repair Architect full-file default; add compact topic routes; independently test three questions.
 - [ ] Verify fresh Claude Code/Codex runtime behaviour on broader topics and conflicting evidence; actual account usage totals not available here. See `audits/2026-10-12-selective-reading.md`.
+
+## Session reconciliation (2026-10-12)
+- [x] Main handoff/focus/todo now identify the unmerged browser prototype and
+  rendered Short. Existing priority and other open tasks preserved.
+- [ ] Main baseline audit: 11 missing-Guardian errors, 0 warnings on 12 Oct.
+  Independent Claude review must cover the outstanding commits; reading their
+  reports or recording branch results is not approval. No Guardian verdict was
+  fabricated in this reconciliation.
+- [ ] Remaining branch residue: `claude/nate-brain-wip` retains an unverified
+  [unverified X themes](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/314fb9c973e2104da2baba422303c8fa58a1ebff/research/nate-herk/brain/x-themes.md); preserve it until reviewed. Older
+  council/watch-path branch commits need targeted comparison before declaring
+  them missing: their current files already exist on main. Ancestor branches
+  with historical/renamed paths are not automatically unfinished work.

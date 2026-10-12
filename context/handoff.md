@@ -1,6 +1,64 @@
 # Session hand-off
 
 Overwritten by `session-handoff`; history stays in `decisions.md` and Git.
+
+## Current reconciliation — 12 October 2026, ChatGPT
+This section supersedes stale status statements in the historical 9 Oct handoff
+below. Checked main `c0f2437`, remote branch tips and PR #3; no implementation
+branches merged, no hosting or social publishing performed.
+
+### Pick up here
+1. Independent Claude Guardian: cover main's outstanding commits from `e210980`
+   onwards (baseline audit 11 missing-review errors / 0 warnings), then review
+   browser/media branch work against their recorded gates. Do not claim approval
+   from the worker's test receipts.
+2. Browser branch `codex/shared-iphone-browser`, tip
+   `ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb`: prototype exists. Read its
+   [browser README](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/ff94d389b8dc5cd09eb58aa9cd69ae86c51d86bb/projects/shared-browser/README.md), `progress.md`, `verification.md`.
+   Recorded 16/16 tests and live workspace checks; not rerun here. External
+   hosting, actual iPhone/third-party login, fresh-task restoration and Guardian
+   remain unverified. No public phone URL. Existing-host access is the deployment
+   blocker; preserve user control and request no passwords in chat.
+3. Media branch `chatgpt/nate-video-editing-ingest-2026-10-10`, tip
+   `9fdc528a5ed5faa204f9ca2fd864aec2b8781daa`, open
+   [PR #3](https://github.com/eddieedwardsv2-ux/Test-environment-/pull/3): real r5
+   1080×1920, 57.736-second MP4 recorded. Read branch
+   [branch result](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/9fdc528a5ed5faa204f9ca2fd864aec2b8781daa/projects/youtube-channel/videos/ai-os-journey-short/result.md) and
+   `delivery.json`; production commit `1bb636f9806eb9d8cd2247ca98ce109974d6bf49`.
+   G16/full audit and independent Guardian remain open, as does page republishing.
+   No social publishing. Review and integrate deliberately: both branches diverge
+   from main, so copying their old context files would discard later research.
+
+### Other live continuations
+- AI Impact: 49 caption sources / 342 derived records; zero verified slides.
+  Continue visual capture from `research/ai-impact/HANDOFF.md`.
+- Official sources: 1,959 URLs / 117 model references / 20 teaching records;
+  no complete durable original-text mirror. Missing lessons/reference content
+  and semantic review in `research/official-docs/HANDOFF.md`.
+- Selective reading: three trials passed; fresh Claude/Codex runtime behaviour
+  and billing savings unverified. `audits/2026-10-12-selective-reading.md`.
+- Desk wake and tool-action live round-trip remain open; current Claude artifact
+  answers were inaccessible here. Never infer present decisions from 9 Oct's
+  "none open" snapshot. Setup kit v0.4 remains the 90-day priority.
+- WIP `x-themes.md` remains on `claude/nate-brain-wip`. No branch deleted.
+- Latest Actions commit `c0f2437` changed AI Impact's research-table count to 0
+  while the creator's derived 49-caption corpus remains saved. Use its creator README/HANDOFF for actual coverage.
+
+### Verification of this reconciliation
+- `git diff --check` passed; all three documentation files reviewed against
+  the branch results. Implementation tests and media playback were not rerun.
+- `tools/pages_status.py --build` rebuilt five stale pages locally. No Claude
+  artifact publishing tools are available here; no publication mark changed.
+  Only the three session records are saved in this documentation commit.
+- Main's baseline audit has 11 existing missing-Guardian errors. Generated
+  page staleness is recorded above; independent review remains outstanding.
+
+### Carried forward / dropped
+No open item dropped. The historical handoff and later research additions are
+retained below; `context/todo.md` keeps Mac tasks, plugins, parked projects,
+Elder fault trials, model routing and the remaining tool/session loops.
+
+## Historical handoff — 9 October 2026
 **Written:** 2026-10-09, about 22:55 UK, by Claude; Charlie ran `/session-handoff` to end the day.
 
 ## Working on
@@ -37,7 +95,7 @@ Guardian paused until then (`context/current-focus.md`, top).
 - Desk: none open (checked about 22:50).
 - Higgsfield sign-in (Mac day; Charlie couldn't find a way from his phone); Katana access and exact credit cost unverified; never ask for tokens in chat.
 - Codex's browser plan: written plan only, for Charlie's approval.
-- Branch `claude/nate-brain-wip` keeps one unverified file (`research/nate-herk/brain/x-themes.md`).
+- Branch `claude/nate-brain-wip` keeps one unverified file ([unverified X themes](https://github.com/eddieedwardsv2-ux/Test-environment-/blob/314fb9c973e2104da2baba422303c8fa58a1ebff/research/nate-herk/brain/x-themes.md)).
 
 ## Pick up here
 1. Claude: watch the Desk, then test the loop: Charlie presses Send on a test card and the session wakes; then test the real `quartermaster` and `architect` once each (todo).
