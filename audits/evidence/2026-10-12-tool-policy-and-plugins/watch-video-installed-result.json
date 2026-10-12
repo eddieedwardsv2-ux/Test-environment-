@@ -1,0 +1,40 @@
+{
+  "probe": {
+    "path": "/workspace/scratch/fb8ba7c5c82e/journey-r5.mp4",
+    "duration": 57.735352,
+    "size_bytes": 6618133,
+    "bit_rate": 917030,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "h264",
+    "has_audio": true,
+    "audio_codec": "aac",
+    "audio_channels": 2,
+    "audio_sample_rate": 48000,
+    "mean_volume_db": -19.7,
+    "is_silent": false
+  },
+  "frames": {
+    "frames_dir": "/workspace/scratch/fb8ba7c5c82e/watch-journey-installed/frames",
+    "frame_count": 8,
+    "mode": "uniform",
+    "resolution": 960,
+    "window_start": null,
+    "window_end": null,
+    "window_seconds": 57.735,
+    "timestamps_by_frame": {
+      "t_001.jpg": 0.0,
+      "t_002.jpg": 7.194,
+      "t_003.jpg": 14.388,
+      "t_004.jpg": 21.583,
+      "t_005.jpg": 28.777,
+      "t_006.jpg": 35.971,
+      "t_007.jpg": 43.165,
+      "t_008.jpg": 50.36
+    },
+    "dedup_dropped": null,
+    "scene_threshold": null
+  },
+  "skipped_audio_reason": "disabled via --no-audio",
+  "elapsed_seconds": 1.87
+}

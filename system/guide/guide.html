@@ -103,11 +103,11 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
       <div class="card"><h3>8. The council of elders (started)</h3>
         <div class="trio"><div><span class="k">What it is</span><p>Each brain gets a voice: ENATE, The Next New Thing, you, and later Nick and Karpathy. Ask one question and see where they agree and where they don't.</p></div>
         <div><span class="k">Why</span><p>One expert can be wrong. Seeing several side by side, each quoting its own sources, makes your decision clearer.</p></div>
-        <div><span class="k">How you use it</span><p>Three are live: the Architect, the Quartermaster and the Guardian. The Elder pilot has started: the Quartermaster runs one real tool trial with its expert council, then the Guardian checks it. Plan: <code>brainstorms/2026-10-09-elder-councils-plan.md</code>.</p></div></div></div>
-      <div class="card"><h3>9. The Guardian and the hand-off</h3>
-        <div class="trio"><div><span class="k">What it is</span><p>A separate checker that reads finished work cold and says READY or NOT READY. And <code>/session-handoff</code>: one message that carries everything into a fresh chat.</p></div>
-        <div><span class="k">Why</span><p>Nate: Claude doesn't get to mark its own homework. And long chats get slow and forgetful, so you clear them without losing anything.</p></div>
-        <div><span class="k">How you use it</span><p>The Guardian runs by itself on big changes. Before you clear a chat, type <code>/session-handoff</code>, copy the block, <code>/clear</code>, paste.</p></div></div></div>
+        <div><span class="k">How you use it</span><p>The Architect and Quartermaster advise when relevant. Use available or approved tools directly and check their actual output; no trial verdict or separate reviewer is required.</p></div></div></div>
+      <div class="card"><h3>9. Checks and the hand-off</h3>
+        <div class="trio"><div><span class="k">What it is</span><p>Run the checks that prove the requested result. <code>/session-handoff</code> carries the current state into a fresh chat.</p></div>
+        <div><span class="k">Why</span><p>Checks show which claims are supported; a handoff preserves unfinished work when the session changes.</p></div>
+        <div><span class="k">How you use it</span><p>Verify the output directly. Before you clear a chat, type <code>/session-handoff</code>, copy the block, <code>/clear</code>, paste.</p></div></div></div>
     </div>
     <p class="src" style="margin-top:14px">All links: <code>system/pages.md</code> in the repo.</p>
   </section>
@@ -128,12 +128,10 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
         <div class="skill"><b>brain-ingest</b><span>"Add this video to ENATE": updates the ideas and rules, checks every quote.</span></div>
         <div class="skill"><b>youtube-ingest</b><span>"Get the new videos from…": lists, picks and fetches videos for any brain.</span></div>
         <div class="skill"><b>hands-ingest</b><span>"Update the tools list": this week's tools, ranked (runs every Saturday).</span></div>
-        <div class="skill"><b>try-tool</b><span>"Try &lt;tool&gt;": one real trial on your own work; your keep or drop changes its rank.</span></div>
         <div class="skill"><b>connect</b><span>"Connect to X": reaches a new tool or account safely, tested on real data.</span></div>
         <div class="skill"><b>architect (ENATE), quartermaster</b><span>Advisors: "what would Nate's method say?", "best tool for…?"</span></div></div>
       <div class="card group"><span class="k">Keeping the OS healthy</span>
         <div class="skill"><b>audit</b><span>"Audit": weekly score and the clutter check.</span></div>
-        <div class="skill"><b>guardian (helper agent)</b><span>Checks big finished work cold: READY or NOT READY. Runs by itself.</span></div>
         <div class="skill"><b>link</b><span>Makes a new note findable so nothing gets lost.</span></div>
         <div class="skill"><b>level-up</b><span>"What should we automate next?" One improvement at a time.</span></div></div>
       <div class="card group"><span class="k">Finding new skills</span>
@@ -149,7 +147,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
       <div class="nx"><div><b>Superpowers</b> <span class="src">plugin · Nate uses it · on your Mac-day list</span><p>Makes Claude plan, test and review like a senior developer.</p></div></div>
       <div class="nx"><div><b>Context 7</b> <span class="src">MCP · Nate uses it · on your Mac-day list</span><p>Gives Claude up-to-date instructions for tools, so it stops guessing from old knowledge.</p></div></div>
       <div class="nx"><div><b>Claude Code Templates</b> <span class="src">Hands rank 2 · seen twice</span><p>A catalogue of skills and settings you add with one command. Good for browsing.</p></div></div>
-      <div class="nx"><div><b>ECC</b> <span class="src">Hands rank 1 · seen twice</span><p>A big all-in-one skills pack. Powerful, but large: try it after the smaller ones (smallest context first).</p></div></div>
+      <div class="nx"><div><b>ECC</b> <span class="src">Hands rank 1 · seen twice</span><p>A big all-in-one skills pack. Use it when its capabilities fit the task.</p></div></div>
     </div>
 
     <h2>The 15 tool groups the Hands Brain uses</h2>

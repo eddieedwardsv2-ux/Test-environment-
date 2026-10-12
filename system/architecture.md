@@ -7,7 +7,7 @@ the repo's front page for visitors: [README.md](../README.md).
 
 ## The shape today (one line per part)
 router (`AGENTS.md`) → **Chief's Desk** (questions for Charlie, his answers; `decide` skill)
-→ **elders** (Architect = Nate's method, Quartermaster = which tool, Guardian = READY / NOT READY;
+→ **elders** (Architect = Nate's method, Quartermaster = which tool;
 `.claude/agents/`) → **knowledge** (`context/`, `research/`, brains) → **pages** Charlie opens
 (`system/pages.md`, kept current by `tools/pages_status.py`). Hand-off between sessions:
 `context/handoff.md` (`session-handoff` skill).
@@ -43,6 +43,6 @@ raw evidence (transcript) → coverage index (README ticks) → derived brain
 (concepts, rules, with timestamps) → advisor agent or skill → real task →
 check → audit → backtrack any miss → fix the route, knowledge or tool.
 
-## Keep it at the lowest level that works
-Level 1-2 (router + markdown wiki). No vector database, embeddings, graphs or
-memory layers until a measured retrieval problem needs them.
+## Tool selection
+Choose tools by the requested outcome, live availability and relevant evidence.
+There is no smallest-version, simplicity, trial/keep or separate-reviewer gate.

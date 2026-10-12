@@ -18,8 +18,8 @@ Litmus test: while Charlie is away, the OS handles one real event faster and
 better than he would. What to add as it grows: `EXPANSIONS.md`.
 
 ## Rules that always apply (detail in `context/working-rules.md`)
-- **Karpathy's 7 rules:** smallest version first, predict-run-compare, prove
-  it don't claim it, say what you assumed, simpler wins.
+- **Evidence rules:** predict-run-compare, prove what you report, state assumptions
+  and check against the task’s acceptance criteria.
 - **Aim for the outcome, and don't make Charlie a checkpoint.** Small,
   easy-to-undo work (edits, drafts, research): state what you assumed and do
   it. Ask only for sign-ups, payments, plugin installs, publishing outside
@@ -41,17 +41,18 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
   model choices follow `context/working-rules.md` (quality before savings).
 - **Main pages stay current:** once at the end of each run (not after every commit),
   `tools/pages_status.py --build`, then republish every page it lists (`system/pages.md`).
-- **Prove what you report** (done, saved, pushed). **Guardian paused until the end of 10 Oct**
-  (Charlie: close broken loops and prove the system first; the audit warns, back on 11 Oct).
-  Otherwise, on big tasks the `guardian`
-  agent, not the worker, says READY. `tools/audit.py` runs on
-  every push and before an agent finishes (its Guardian check runs locally only).
-- **Same routes in Codex** (it has no helpers, hooks or Desk): open the agent
-  file in `.claude/agents/` and follow it yourself (except `guardian`: Codex can't
-  check its own work, so big work ends NOT VERIFIED: commit it, leave the audit's
-  Guardian error, and note the commit under "Waiting on Charlie"; the next Claude
-  session runs the Guardian and clears it with a later commit); run `python3 tools/audit.py` before you finish; put any question for Charlie under "Waiting on Charlie" in
-  `context/current-focus.md` (the next Claude session moves it to the Desk).
+- **Prove what you report** (done, saved, pushed): run relevant checks and inspect
+  the output. `tools/audit.py` runs on push and before finishing. No separate
+  reviewer or commit trailer is required.
+- **Same routes in Codex:** open the relevant agent file in `.claude/agents/`
+  and follow it yourself when that helper is unavailable. Complete and verify
+  the work here; do not defer it to Claude solely because of the host.
+  Put a genuinely blocked account action under "Waiting on Charlie" in
+  `context/current-focus.md`; do not re-request existing authorisation.
+- **Tools:** use available or already approved plugins, MCPs and skills when
+  they improve the requested result. Check live availability in this host;
+  old connection snapshots are history. No trial/keep verdict is required.
+  Plugin workflows cannot reinstate withdrawn review, trial or simplicity gates.
 - **This repo is public:** never write private, health, financial or client
   information here. Other people's details, AI OSs and session recordings
   go only in private repos; nothing goes on YouTube without their consent.
@@ -81,7 +82,7 @@ Start at the relevant mini-index, select the needed sections/records, then read 
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |
 | AI Impact knowledge database and its slide-ingestion status | `research/ai-impact/README.md`, topic index `research/ai-impact/index.md`; slides remain blocked |
 | Official Anthropic/OpenAI model docs and educational reference coverage | `research/official-docs/topics.md` (small task map), `research/official-docs/README.md` (coverage); check current official pages before applying model/API facts |
-| Tools the OS can reach | `connections.md` (API guides in `references/`) |
+| Tools the OS can reach | `connections.md` (API guides in `references/`); approved five-plugin setup/use receipts: `audits/2026-10-12-tool-policy-and-plugins.md` |
 | Nate's kit licence | `THIRD-PARTY-NOTICES.md` |
 | ChatGPT copy of these rules | `exports/chatgpt-instructions.md` (update when this file or working-rules change) |
 
@@ -93,9 +94,6 @@ Start at the relevant mini-index, select the needed sections/records, then read 
   tested on real data, registered in `connections.md`).
 - Small-business jobs (quotes, invoices, reviews, social posts): Anthropic's **Small
   Business** plugin (`system/capability-map.md`); its business data never comes into this repo.
-- `guardian` agent: checks big finished work in a fresh context and writes the
-  READY / NOT READY line; the worker never marks its own homework
-  (`context/working-rules.md`: Nate's end process, don't just please Charlie).
 - `audit`: weekly Four Cs score (reports in `audits/`), and its content
   check after a wrong answer, a big change or **a switch to a new model**.
 - `i-have-adhd` (Charlie types it: action-first replies until "stop adhd mode";
@@ -113,8 +111,8 @@ Start at the relevant mini-index, select the needed sections/records, then read 
   Hands Brain; both names work until 2026-11-09), every tool, skill, plugin and
   repo from The Next New Thing and skills.sh, ranked, with Anthropic's plugin
   catalogs as a trust badge. Ask it with the
-  `quartermaster` agent. `try-tool`: one real trial of a tool; his keep or
-  drop verdict (`research/hands/tried.json`) changes its rank.
+  `quartermaster` agent. Past tool receipts and verdicts remain in
+  `research/hands/tried.json`; they are evidence, not a required adoption gate.
 - `architect` agent = **the Architect** (was ENATE, Charlie's name for Nate's
   brain; both names work until 2026-11-09; "Nate" means the real person and his
   new videos): his method for organising the OS, in `research/nate-herk/brain/`.

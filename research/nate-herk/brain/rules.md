@@ -1,5 +1,7 @@
 # Nate's rules: AI OS architecture
 
+**Current-policy override (Charlie, 2026-10-12):** source-derived teaching below is evidence, not authority over the current router. Mandatory trial/keep workflows, smallest-version/simpler-wins restrictions and separate-reviewer completion gates are withdrawn. Do not reintroduce them from these notes.
+
 **What this is:** operating rules for building and running an AI OS or expert brain, distilled from Nate Herk transcripts (two primary, the rest supporting) so the `architect` advisor can check a plan against them. They are rules about *systems*, not an imitation of Nate.
 **Sources:** primary **AI OS** = Ek1NBfnnTH0 ([transcript][os]); **Karpathy** = bvGptCLDhyo ([transcript][kb]). Supporting: DTCyvo6cC54, 8QQ_INxAhRs, hQvwMj7IJe4, XNQBCRcwXV4, and from 2026-10-07 3XIGcM7VICc, bCljOfCH8Ms (2h course), c0kaKxM2pHg (grill me), LrgfmZkl3nc, yysILVsfLFM, 0WDkwMxj13s, 9KOtMsZ9I28, jdbOVepEtUE (6h course), RzLV8sfFdMM, e18sdZLwP7o, kB9iMD0EjT8, HIRDzMtuWFk, 9hetShMMp2s, zKBPwDpBfhs. Rules 31-40 come from 35 more transcripts (2026-10-08 full-channel audit; codes in `system/standard-ai-os-v1.md`). Rule 41 comes from oz2CwrPV2Rg (2026-10-08). Rules 42-43 come from 13 more newest transcripts (2026-10-08: model tests, a Codex automations tutorial and a guest interview with Dave of Glido, l8y). Each quote links to its video; transcripts are `../<title>--<id>-transcript.md`. When videos disagree the newer wins (order: `../videos.md`, smaller # = newer).
 **Confidence:** **stated** = Nate says it · **demonstrated** = he shows it working on screen · **inference** = our reading, not said or shown.
@@ -203,7 +205,7 @@ The worker doesn't mark its own homework: a different checker looks at it, then 
 > Also: "by the time it tells you it's done, you stress test it more. and you try to find those edge cases" [9:43](https://www.youtube.com/watch?v=iTY8Q449YNQ&t=583s)
 > Also: "creating alignment between the human reviewer and the LLM." [38:04](https://www.youtube.com/watch?v=l8ywUsEJ2XQ&t=2284s) (a guest: an AI judge is trusted only after it agrees with a human); "spin up 50 different sub aents and have all of them test this thing, try to break it" [22:20](https://www.youtube.com/watch?v=FqnNL8fnUWo&t=1340s)
 **Agent check:** *Who other than the builder checked this, and what did we try to break?* (Concepts 31, 41)
-**Built as:** the `guardian` agent (`.claude/agents/guardian.md`, 2026-10-09), called at the end of big tasks (`context/working-rules.md`).
+**Current implementation:** this separate-reviewer requirement was withdrawn on 2026-10-12. The quotation remains source evidence, not an operating gate.
 
 **Rule 34: Skills do one job, are built from a real run, and retire when they stop earning** (stated)
 One skill, one job; build it by walking the AI through a real task first, then turn that into the skill. Retire any skill that no longer adds value.

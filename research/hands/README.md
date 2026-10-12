@@ -9,7 +9,7 @@ History: `weeks/` (evidence by week), `decisions.md` (repo-wide).
 |---|---|
 | One tool's rank, cost, `have`, `replaced_by` | `tools.json`: grep that tool's entry (about 280 KB; never load it whole) |
 | What a video actually showed | `weeks/<YYYY-Www>.json` (schema in `hands-ingest`), then the transcript at its timestamp |
-| Charlie's past verdicts (keep / drop) | `tried.json` (written by `try-tool`) |
+| Charlie's past verdicts (keep / drop) | `tried.json` (historical receipts; optional future records) |
 | Earlier deep reviews | `reviews/` (one file per tool) |
 | Charlie's orders on a tool (Search / Check / Implement) | the Hands page's `tool_actions` collection (section below) |
 | Video list and links | `pipeline.py` → `sources/<creator>/videos.json` |
@@ -18,11 +18,10 @@ History: `weeks/` (evidence by week), `decisions.md` (repo-wide).
 | Suggested improvements | `improvement-plan.md` |
 | The site | `site/template.html` → `site/hands.html` (`python3 tools/build_hands.py`) |
 
-Loads when running: this table, `try-tool`'s SKILL.md, that tool's entry, the capability
+Loads when running: this table, the relevant tool’s instructions, that tool's entry, the capability
 map's "Already available". Never: all of `weeks/`, `site/`, whole transcripts.
-Across: Architect if a tool changes the OS (new skill, hook, router line) · `guardian` checks
-big finished work · Teacher parked (`teach`).
-Reuses: `try-tool`, `hands-ingest`, `find-skills`, `connect`, `tools/build_hands.py`, `tools/screenshot.py`, `decide`.
+Across: Architect if a tool changes the OS (new skill, hook, router line) · verify output against the project’s acceptance checks · Teacher parked (`teach`).
+Reuses: `hands-ingest`, `find-skills`, `connect`, `tools/build_hands.py`, `tools/screenshot.py`, `decide`.
 
 The OS's "hands": every tool, skill, plugin, MCP server and repo worth
 knowing, learned week by week and ranked so the best one to use **now** is

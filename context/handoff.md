@@ -1,5 +1,20 @@
 # Session hand-off
 
+## Current continuation — tool-policy removal and approved plugins, 12 October 2026
+
+Charlie explicitly removed the trial/keep skill, smallest/simpler-wins policies
+and Guardian agent/gate. Active rules, exports, advice and audit code now follow
+that direction. No prior output was relabelled verified merely by removing a gate.
+Current receipts and remaining runtime limitations:
+`audits/2026-10-12-tool-policy-and-plugins.md`. The five approved plugins are
+installed and enabled at project scope on this host; use verified available capabilities without
+re-requesting approval. Preserve the existing style-guide, browser, video and
+knowledge-ingestion continuations below; their separate-reviewer prerequisites
+are superseded, their real output checks remain.
+
+---
+
+
 Overwritten by `session-handoff`; history stays in `decisions.md` and Git.
 
 ## Current continuation — all style-test drafts written, 12 October 2026

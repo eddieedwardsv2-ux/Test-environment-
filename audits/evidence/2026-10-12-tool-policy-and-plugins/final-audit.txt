@@ -1,0 +1,9 @@
+WARN  page System map is behind system/system-map/system-map.html: republish it, then `python3 tools/pages_status.py --mark system/system-map/system-map.html`
+WARN  page Quartermaster is behind research/hands/site/hands.html: republish it, then `python3 tools/pages_status.py --mark research/hands/site/hands.html`
+WARN  page OS Guide is behind system/guide/guide.html: republish it, then `python3 tools/pages_status.py --mark system/guide/guide.html`
+WARN  page Architect (Nate) is behind research/nate-herk/brain/map/enate.html: republish it, then `python3 tools/pages_status.py --mark research/nate-herk/brain/map/enate.html`
+WARN  page Reading Room is behind system/reader/reader.html: republish it, then `python3 tools/pages_status.py --mark system/reader/reader.html`
+WARN  page Brain dashboard is behind research/nate-herk/brain/map/brain-map.html: republish it, then `python3 tools/pages_status.py --mark research/nate-herk/brain/map/brain-map.html`
+WARN  page Nate-first map is behind system/merge-map/merge-map.html: republish it, then `python3 tools/pages_status.py --mark system/merge-map/merge-map.html`
+WARN  page OS Guide, new look is behind system/guide-preview/guide-preview.html: republish it, then `python3 tools/pages_status.py --mark system/guide-preview/guide-preview.html`
+audit: 0 errors, 8 warnings

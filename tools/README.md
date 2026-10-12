@@ -19,3 +19,8 @@ first lines.
 | `screenshot.py` | Phone and desktop screenshots of a page |
 | `run_gate.sh` | The Stop hook: blocks finishing while the audit fails |
 | `test_hands_actions.cjs` | Tests for the Quartermaster page's Search / Check / Implement buttons (Node) |
+
+## Approved plugins
+`install_approved_plugins.sh` installs the five already-approved marketplace
+plugins at project scope on a Claude Code host. It reports a missing CLI and
+never claims that configuration alone proves installation.

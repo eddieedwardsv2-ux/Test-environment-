@@ -1,0 +1,27 @@
+CAUGHT  router points to a missing file  ->  ERROR AGENTS.md routes to missing path: context/no-such-file.md
+CAUGHT  CLAUDE.md stops importing the rulebook  ->  ERROR CLAUDE.md no longer imports @AGENTS.md
+CAUGHT  a new skill nobody routes to  ->  ERROR .claude/skills/orphan-skill/SKILL.md is not named in AGENTS.md (nothing routes to it)
+CAUGHT  a skill hidden from Claude  ->  ERROR .claude/skills/link/SKILL.md is hidden from Claude (disable-model-invocation); remove it or add it to US
+CAUGHT  Codex loses the shared skills  ->  ERROR .agents/skills no longer points at .claude/skills: Codex would see different skills
+CAUGHT  skill front matter broken  ->  ERROR .claude/skills/teach/SKILL.md: front matter missing or not closed with ---
+CAUGHT  rulebook past 200 lines  ->  ERROR AGENTS.md is 243 lines; Nate's limit is 200
+CAUGHT  a secret pasted into a file  ->  ERROR context/about-me.md: looks like a secret (sk-ant-a…); remove it and rotate the key
+CAUGHT  a brain loses its log  ->  ERROR research/nate-herk/brain is missing log.md
+CAUGHT  ENATE quote that Nate never said  ->  ERROR research/nate-herk/brain/rules.md: quote not found at Ek1NBfnnTH0 1:34: "this sentence was never said by
+CAUGHT  Hands quote not in the transcript  ->  ERROR research/hands/weeks/2026-W40.json: Paperclip quote not in transcript CQhWqUOouYM: "this sentence was ne
+CAUGHT  Hands tool in a made-up category  ->  ERROR research/hands/weeks/2026-W40.json: Paperclip has unknown category 'Made up group'
+CAUGHT  show sponsor listed as a tool  ->  WARN  research/hands/weeks/2026-W40.json: Zapier MCP is a show sponsor, not a tool (hands-ingest rule)
+CAUGHT  Hands list not rebuilt after a change  ->  WARN  research/hands/tools.json is out of date with the week files: run python3 tools/build_hands.py, then rep
+CAUGHT  ENATE link to a concept that doesn't exist  ->  ERROR research/hands/enate-links.json: probe links to concept 999, which doesn't exist
+CAUGHT  transcript count wrong in a creator README  ->  ERROR research/the-next-new-thing/README.md says 29 transcribed, folder has 24
+CAUGHT  router names a skill that was deleted  ->  WARN  broken link THIRD-PARTY-NOTICES.md:48: .claude/skills/connect/SKILL.md
+CAUGHT  a broken link inside a note  ->  WARN  broken link context/how-i-learn.md:31: no-such-note.md
+CAUGHT  a dashboard's source file deleted  ->  WARN  broken link system/pages.md:23: system/guide/guide.html
+CAUGHT  a Hands week file corrupted  ->  ERROR research/hands/weeks/2026-W39.json: not valid JSON (Expecting property name enclosed in double quotes: l
+CAUGHT  a bad line in the transcript queue  ->  ERROR transcript-queue.txt line 4 is malformed: 'this is not a valid line'
+CAUGHT  the 3-month focus review missed  ->  WARN  context/current-focus.md refresh date 2020-01-01 has passed: review priorities with Charlie, then move t
+CAUGHT  a helper agent forced back onto Sonnet  ->  WARN  .claude/agents/video-tutor.md uses model sonnet without a passed comparison in system/model-usage.md
+CAUGHT  a note points at a file that isn't there  ->  WARN  broken link context/todo.md:115: system/no-such-page.md
+CAUGHT  a rule links a concept that doesn't link back  ->  ERROR research/nate-herk/brain: Rule 3 links concept 20, but concept 20's 'Used by' doesn't name Rule 3
+
+fault drill: 25 of 25 caught

@@ -6,6 +6,21 @@ freshness. "Last checked" means a successful read on that date, not just
 "configured". Public repo: tool names and status only, never keys or account
 details (keys: `context/environment.md`).
 
+
+## Current host override — 12 October 2026
+Five approved plugins installed and enabled at project scope on this Codex host:
+Marketing, Context7, Superpowers, watch-video and claude-patterns. Context7 is
+also connected in ChatGPT and returned live documentation. Superpowers skills
+are available here. Media frame extraction ran through watch-video's CLI.
+Marketing and patterns were applied by reading their actual skill instructions.
+Receipts: `audits/2026-10-12-tool-policy-and-plugins.md`.
+
+This does not connect the plugin's optional Slack, CRM, email or other accounts,
+or prove installation on Charlie's Mac. New hosts can replay the already
+authorised setup with `tools/install_approved_plugins.sh`. Earlier connection
+rows below are dated snapshots, not a reason to disregard live exposed tools.
+
+
 | # | Domain | Tool | Mechanism | Auth | Last checked |
 |---|---|---|---|---|---|
 | 1 | Revenue / Financials | — | not applicable yet (no revenue; channel and set-up kit are pre-launch) | — | — |
