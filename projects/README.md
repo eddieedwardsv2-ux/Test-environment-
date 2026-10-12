@@ -7,5 +7,9 @@ Deliverables live here.
 | Project | State |
 |---|---|
 | `ai-os-setup-kit/` | the 90-day priority (paused until the first friend set-up) |
-| `youtube-channel/` | channel plans; the journey video is parked |
+| `youtube-channel/` | real r5 journey Short produced on media branch / PR #3; remaining checks and integration open |
 | `bitcoin-newsletter/` | side project, only when Charlie asks |
+
+Current cross-project evidence and next actions: [status review, 12 October](status-review-2026-10-12.md).
+The shared iPhone browser exists on its own branch, not in this checkout.
+Research and style-guide continuations are included in the review; parked work stays parked.

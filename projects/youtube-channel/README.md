@@ -61,10 +61,22 @@ Fan out independent assets only after the script, style and budget are set;
 use one integration step for continuity and the final edit. Do not spend
 credits, buy a plan or publish merely because the plugin was requested.
 
-**First trial:** one small asset from a real channel brief. Define the quality
-check first; compare with the existing route using quality, actual cost,
-latency and rework. No quality or savings claim until measured. Record the
-result through `try-tool`, leaving the existing tools as fallback.
+**Current use policy (12 October):** use relevant available or already-approved
+Creative Claw capabilities directly. The `try-tool` skill and mandatory trial
+gate were removed. Verify the actual output, cost and any comparison before
+claiming quality or savings. The connection paragraph above is a 9 October
+snapshot; live Creative Claw tools are exposed in this ChatGPT host, which does
+not prove generation, account credits or sign-in on another host.
+
+## Journey Short — current continuation, 12 October
+
+A real r5 1080×1920, 57.736-second MP4 was produced on
+`chatgpt/nate-video-editing-ingest-2026-10-10`; [PR #3](https://github.com/eddieedwardsv2-ux/Test-environment-/pull/3)
+remains open and unmerged. The earlier parking entry is superseded.
+Read the branch's delivery, result and verification records before resuming.
+The old Guardian prerequisite is withdrawn; remaining actual output checks,
+media-branch integration and page publication must retain accurate status.
+This project review does not rerun playback or mark the video goal complete.
 
 Sources checked 2026-10-09: official repository and ChatGPT plugin listing.
 Generation/editing are credit-based; this is separate from the free-LLM

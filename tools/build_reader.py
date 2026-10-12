@@ -8,6 +8,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DESK = "https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx"
 DOCS = [  # (file, short label, Desk card it feeds or None)
+    ("projects/status-review-2026-10-12.md", "Projects: current status and next actions", None),
+    ("context/current-focus.md", "Current priority", None),
+    ("audits/2026-10-12-tool-policy-and-plugins.md", "Approved tools and PR #4 merge", None),
+    ("brainstorms/2026-10-12-brand-style-guides.md", "Three style guides", None),
+    ("brainstorms/2026-10-12-style-guide-test-drafts.md", "All nine style tests", None),
     ("audits/2026-10-09-advisors-and-router.md", "Architect, Quartermaster, router steps", None),
     ("audits/audit-2026-10-09-112239-a7c3.md", "Audit 9 Oct: 64/100", "audit-fixes-2026-10-09"),
     ("brainstorms/2026-10-09-elder-councils-plan.md", "Elder councils plan", "elder-pilot-go"),
