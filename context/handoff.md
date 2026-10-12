@@ -1,4 +1,57 @@
 # Session hand-off
+**Written:** 12 October 2026, 18:29 UK, by ChatGPT/Codex; Charlie requested session-handoff.
+
+## Working on
+Remove tool-adoption restrictions and activate the five approved plugins.
+Implementation is complete on the review branch, not main.
+
+## Summary points
+- PR #4: codex/tool-policy-cleanup-2026-10-12, head 515f763c1038f8ebf2679ab51a54fca938ff6f7d before this handoff update.
+- Deleted the trial skill and Guardian agent/review gate; removed smallest-version-first and simpler-wins policies from active instructions.
+- Marketing, Context7, Superpowers, watch-video and claude-patterns installed/enabled at project scope on this host.
+- Context7 returned live docs; installed watch-video extracted eight frames from the real journey r5 MP4. Marketing/patterns instructions were applied to saved work; Superpowers planning/verification skills used.
+- Fresh doctor: router 123 lines, no context warnings; structural audit 0 errors, 8 external-page publication warnings. Earlier remaining fault drill 25/25; links 0 broken.
+- Direct push to main was rejected by automatic approval review for the size/default-branch risk. Git feature upload then failed credentials. GitHub connector saved the tested tree on the review branch exactly; draft PR #4 exists.
+- PR freshly checked: open, draft, not merged, mergeable=true. This means no detected merge conflict, not permission to merge.
+- Local implementation commit 27a54f3 and remote 515f763 have different commit metadata but identical tested tree e85578501125643135adb2a06766d65188665c16.
+
+## Key files
+AGENTS.md; context/working-rules.md; .claude/settings.json;
+tools/audit.py; tools/fault_drill.py; tools/install_approved_plugins.sh;
+audits/2026-10-12-tool-policy-and-plugins.md and its evidence directory.
+
+## Where the information lives
+GitHub repo eddieedwardsv2-ux/Test-environment-.
+PR: https://github.com/eddieedwardsv2-ux/Test-environment-/pull/4
+Working changes: codex/tool-policy-cleanup-2026-10-12.
+Actual plugin installation and use limits: audits/2026-10-12-tool-policy-and-plugins.md.
+Priority and other unfinished work: context/current-focus.md and context/todo.md.
+Desk/Hands live decisions were not accessible here; do not infer their current state.
+
+## Decisions made
+Charlie explicitly requested deletion of the trial skill, smallest/simpler-wins policies and Guardian, plus completion of the approved plugin backlog.
+Do not re-request those approvals or recreate the withdrawn gates.
+GitHub first; Notion instead of Drive. Setup-kit priority unchanged.
+Removing a review requirement does not verify an untested deliverable.
+
+## Open decisions
+Charlie has not approved merging PR #4. Doctor and handoff commands are not merge approval.
+Main still contains the old policies until the PR is merged.
+Actual Mac/fresh-Claude plugin load, optional external accounts and eight external page publications remain unverified.
+Browser hosting/iPhone login, media quality checks, AI Impact slides, official-source completeness and real beginner responses remain open in the continuations below.
+
+## Pick up here
+1. Read PR #4's latest head, this handoff and current-focus from the review branch; check newer commits and PR state.
+2. If Charlie explicitly approves PR #4's merge, check current head/CI, mark ready as needed, merge using an expected-head check and verify main. Otherwise continue authorised work on the branch.
+3. Use the approved tools directly for relevant tasks. On a new Claude host, replay tools/install_approved_plugins.sh and confirm actual load; preserve all existing project continuations.
+
+## Carried forward / dropped
+No project, raw research, historical report or open output check dropped.
+The withdrawn trial/reviewer/simplicity requirements are retired by Charlie's instruction, not marked tested.
+Previous continuations are retained below; their mandatory reviewer/trial instructions are superseded.
+
+---
+
 
 ## Current continuation — tool-policy removal and approved plugins, 12 October 2026
 
