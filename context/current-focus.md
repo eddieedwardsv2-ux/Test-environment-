@@ -1,5 +1,17 @@
 # Current focus
 
+## Active task — TRADEFLOW quote demo (Charlie, 12 October 2026)
+
+Charlie selected the quote demo as the immediate working focus and explicitly parked other projects until it is finished. This temporarily supersedes earlier Next step and latest-request continuations below; the 90-day setup-kit goal is retained. All existing project records, research, branches and unfinished checks remain preserved. Do not resume other projects during this task unless Charlie changes direction.
+
+Reuse the existing private TRADEFLOW Quote Lab, Site project `appgprj_6acbdc07af888191a35c7676697c58ce`, live URL https://tradeflow-quote-lab.vocalox3.chatgpt.site . Sites metadata checked 12 October: active, version 1, custom access. Existing intake demo is not proof of pricing, persistence or external integrations. Supporting plan: Library file TRADEFLOW-Website-Demo-Playbook.md (`libfile_8dbd397ba3588191a20074870e6f151a`).
+
+**Next step:** inspect the existing source and relevant TRADEFLOW Airtable research, choose a supported trade example, and extend enquiry -> missing details -> itemised draft quote -> owner approval -> follow-up draft. Use explicitly illustrative rates until business-approved pricing is available. Preserve existing private access and do not send customer messages.
+
+**Skills/plugins checked:** Impeccable and scroll-craft instructions are available; use Impeccable for the operating screens and scroll-craft for the introduction where useful. Airtable and Context7 confirmed installed through current plugin-directory results; runtime tools exposed. Sites and GitHub tools are available. Use direct functional/browser verification. Small Business/proposal-builder appears in historical repo research, but current upstream availability was not verified; do not make it a prerequisite. CRM alternatives were discovered but none installed or recommended as necessary for this demo.
+
+**Done when:** a reviewable private demo completes the sample enquiry, identifies missing required details, produces correct itemised calculations from labelled sample rates, supports owner edits/approval, and prepares a follow-up draft. Test phone/desktop, keyboard/error states, arithmetic and revision handling; save accurate evidence and limitations. No live pricing, customer delivery or business integration is claimed without proof.
+
 **Refresh by:** 2027-01-08. Every 3 months, re-read this file with Charlie,
 update it, then move this date on 3 months (`tools/audit.py` warns once it passes).
 
