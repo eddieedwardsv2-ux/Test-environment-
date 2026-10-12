@@ -23,7 +23,7 @@ On 11 Oct the Guardian is back: its first run must cover the commits made while 
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (brand style-guide request, 2026-10-12):** three briefs and a 70-upload exploratory sample now exist in `brainstorms/2026-10-12-brand-style-guides.md` and `brainstorms/2026-10-12-brand-engagement-sample.json`. Follow the current continuation at the top of `context/handoff.md` for a same-topic output/understanding test. No guide activated; rankings and causal benefits unverified. Existing browser/video work and the 90-day priority are preserved.
+**Next step (style-guide trials, 2026-10-12):** all nine articles and nine scripts are saved in `brainstorms/2026-10-12-style-guide-test-drafts.md` with fact packets and checks alongside. Collect real beginner answers and compare understanding separately from preference. Draft checks are author review, not audience or independent approval. Current continuation: `context/handoff.md`. Existing browser/video work and the 90-day priority remain unchanged.
 
 **OS backlog status (2026-10-09, after the re-run audit):** both middle plans are built
 (one `youtube-ingest` skill; elders named by job: Architect, Quartermaster,
