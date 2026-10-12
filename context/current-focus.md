@@ -23,12 +23,7 @@ On 11 Oct the Guardian is back: its first run must cover the commits made while 
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (session reconciliation, 2026-10-12):** resume from the current
-reconciliation at the top of `context/handoff.md`. The shared iPhone browser
-prototype and rendered journey Short exist on separate branches; main's older
-"not built" / "parked" descriptions do not describe those deliverables. Both
-retain independent-review blockers; browser hosting is also pending. The
-90-day priority above remains unchanged.
+**Next step (brand style-guide request, 2026-10-12):** resume the latest brand-engagement handoff at the top of `context/handoff.md`. Charlie selected AI/education references. Complete a comparable engagement sample, inspect selected content, then present three concrete guide briefs. Research is preliminary; no guide draft exists. Existing browser/video reconciliation remains below in the handoff, and the 90-day priority is unchanged.
 
 **OS backlog status (2026-10-09, after the re-run audit):** both middle plans are built
 (one `youtube-ingest` skill; elders named by job: Architect, Quartermaster,
