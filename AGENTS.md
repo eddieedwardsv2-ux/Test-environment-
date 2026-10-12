@@ -18,7 +18,7 @@ Litmus test: while Charlie is away, the OS handles one real event faster and
 better than he would. What to add as it grows: `EXPANSIONS.md`.
 
 ## Rules that always apply (detail in `context/working-rules.md`)
-- **Default reply style — Humanizer:** For every user-facing reply, apply the writing principles in `.claude/skills/humanizer/SKILL.md` (Codex: `.agents/skills/humanizer/SKILL.md`) before finalising: natural UK English, meaningful sentences, no AI-sounding filler, repetitive contrasts, artificial emphasis or robotic bullet lists. Preserve facts, citations, important detail and requested formatting; do not sacrifice accuracy or accessibility. `/humanizer` remains available for explicit rewrites. This rule governs this repository's agents, not the ChatGPT account-wide settings.
+- **Default reply style — Humanizer:** For every user-facing reply, apply the writing principles in `.claude/skills/humanizer/SKILL.md` (Codex should read the same Claude skill path until native placement is available) before finalising: natural UK English, meaningful sentences, no AI-sounding filler, repetitive contrasts, artificial emphasis or robotic bullet lists. Preserve facts, citations, important detail and requested formatting; do not sacrifice accuracy or accessibility. `/humanizer` remains available for explicit rewrites. This rule governs this repository's agents, not the ChatGPT account-wide settings.
 - **Evidence rules:** predict-run-compare, prove what you report, state assumptions
   and check against the task’s acceptance criteria.
 - **Aim for the outcome, and don't make Charlie a checkpoint.** Small,
