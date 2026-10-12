@@ -2,7 +2,23 @@
 
 Overwritten by `session-handoff`; history stays in `decisions.md` and Git.
 
-## Latest update — audit run and three test topics, 12 October 2026
+## Current continuation — all style-test drafts written, 12 October 2026
+
+- Nine articles and nine scripts exist: `brainstorms/2026-10-12-style-guide-test-drafts.md` and `brainstorms/2026-10-12-style-guide-test-drafts.json`. All three topics appear in all three styles.
+- `brainstorms/2026-10-12-style-guide-draft-checks.json`: 9 unique combinations, 18 outputs; articles 243–253 words, scripts 107–112 words. Fixed inputs/word ranges checked and author semantic review completed. Early literal-word checks rejected equivalent wording; these checks were corrected without altering drafts to game them.
+- Topics remain invented teaching fixtures. Dates/source selection, £285 illustrative subtotal/scope/unknowns/approval, and overall failure despite citation/draft passes are preserved. No actual customer information or successful live test was claimed.
+- Workspace audit rerun: exit 1, 11 existing independent-review errors plus 5 page-publication warnings. No Guardian verdict or page publication claimed.
+- Chat comparison view produced with topic/format/version controls, hidden style labels, reader questions and response copy. JS syntax/static queried IDs checked; actual browser rendering not tested. The inline view is response content, not a hosted website or a durable response database.
+- **Reader responses: 0.** Recorded script duration, independent semantic review and beginner understanding remain NOT VERIFIED. Word count does not verify recording time.
+
+### Pick up here
+Collect real beginner answers using the three-topic answer keys in `brainstorms/2026-10-12-style-guide-test-topics.md`. Compare comprehension separately from preference; rotate exposure order and note repeat-reading effects. Do not infer reader success from AI self-review. Do not activate a default or claim audience validation until evidence exists.
+
+Earlier continuations remain below; their statements that outputs have not been written are superseded here. No browser/media/research work dropped.
+
+---
+
+## Earlier update — audit run and three test topics, 12 October 2026
 
 - Normal workspace access succeeded; no usage-limit bypass used. Fresh full clone at main `b782566` was clean before checks.
 - `audits/2026-10-12-workspace-audit-brand-drafts.md` (adb7616): first audit exit 1, 11 errors/0 warnings. All 11 were existing missing independent Guardian reviews. After page rebuild, second audit exit 1, same 11 errors plus 5 stale-page warnings. No review gate disabled or fabricated.
