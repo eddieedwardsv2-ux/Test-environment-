@@ -106,3 +106,26 @@ account connections, audio transcription, real beginner understanding, full
 Short quality gates, external browser hosting and external page publication.
 No payment or new account was used. These are separate output/access checks,
 not reasons to restore the removed policy gates.
+
+## Resumed-session verification — 12 October 2026
+
+Fresh branch checkout at `972ad1f9cc8ec315cce15787c253489b95956b59`.
+PR #4 checked live: open, draft, unmerged, mergeable; GitHub audit check
+completed successfully at this head. The three commits after `515f763`
+change only handoff, current-focus and todo; implementation is unchanged.
+The legacy combined-status endpoint has no statuses and says pending; that
+is not a failed check and does not replace the successful audit check run.
+
+Fresh commands completed: context doctor (123 router lines, no warnings),
+structural audit (0 errors, 8 publication warnings), fault drill (25/25 caught,
+no skips), link/brain-relation checks (0 broken, 0 errors/warnings), installer
+shell syntax and whitespace checks. Page builders completed; eight external
+Claude pages still need actual republication. Rebuilt files are local previews;
+no publication fingerprint changed and no external publication is claimed.
+
+This resumed host has no `claude` executable. Five-plugin installation/load
+on the earlier host remains a dated receipt, not a fresh runtime claim here.
+No Mac loading, new account connection or merge attempted. Existing approvals
+carry forward; removed gates remain removed. Next: merge only following
+Charlie's explicit approval and a fresh current-head/check review; on a Claude
+host replay the approved installer and verify actual plugin load.
