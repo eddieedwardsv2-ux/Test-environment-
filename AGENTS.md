@@ -62,6 +62,9 @@ better than he would. What to add as it grows: `EXPANSIONS.md`.
 **Source preference (2026-10-09):** GitHub first. Use Notion instead of
 Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 
+## Task-specific reading
+Start at the relevant mini-index, select the needed sections/records, then read enough source context to verify them. Never load a whole research folder, rules/concepts file, catalogue or database merely because it exists. Reuse unchanged material already read in this session; after compaction or a new session, re-establish the small relevant state. Broad ingestion and full audits can require broader reading. A script scanning file bytes is different from sending those bytes to the model.
+
 ## Where things live
 | Need | Look in |
 |---|---|
@@ -77,6 +80,7 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 | BTC technical-analysis newsletter | `projects/bitcoin-newsletter/README.md` (issues and editorial checks) |
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |
 | AI Impact knowledge database and its slide-ingestion status | `research/ai-impact/README.md`, topic index `research/ai-impact/index.md`; slides remain blocked |
+| Official Anthropic/OpenAI model docs and educational reference coverage | `research/official-docs/topics.md` (small task map), `research/official-docs/README.md` (coverage); check current official pages before applying model/API facts |
 | Tools the OS can reach | `connections.md` (API guides in `references/`) |
 | Nate's kit licence | `THIRD-PARTY-NOTICES.md` |
 | ChatGPT copy of these rules | `exports/chatgpt-instructions.md` (update when this file or working-rules change) |

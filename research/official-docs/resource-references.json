@@ -1,0 +1,308 @@
+[
+  {
+    "title": "Agents SDK — Python",
+    "url": "https://github.com/openai/openai-agents-python",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Agents SDK — TypeScript",
+    "url": "https://github.com/openai/openai-agents-js",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Agents SDK quickstart",
+    "url": "https://openai.github.io/openai-agents-python/quickstart/",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "ChatKit advanced samples",
+    "url": "https://github.com/openai/openai-chatkit-advanced-samples",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "ChatKit starter app",
+    "url": "https://github.com/openai/openai-chatkit-starter-app",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Computer Use API — starter app",
+    "url": "https://github.com/openai/openai-cua-sample-app",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "CS agents demo",
+    "url": "https://github.com/openai/openai-cs-agents-demo",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Frontend testing demo",
+    "url": "https://github.com/openai/openai-testing-agent-demo",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "openai.fm",
+    "url": "https://github.com/openai/openai-fm",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Plugin UI examples",
+    "url": "https://github.com/openai/openai-apps-sdk-examples",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Realtime & Twilio starter app",
+    "url": "https://github.com/openai/openai-realtime-twilio-demo",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Realtime agents starter app",
+    "url": "https://github.com/openai/openai-realtime-agents",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Realtime console",
+    "url": "https://github.com/openai/openai-realtime-console",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Realtime solar system",
+    "url": "https://github.com/openai/openai-realtime-solar-system",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Responses starter app",
+    "url": "https://github.com/openai/openai-responses-starter-app",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Sora starter app",
+    "url": "https://github.com/openai/openai-sora-sample-app",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Structured outputs samples",
+    "url": "https://github.com/openai/openai-structured-outputs-samples",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Support agent demo",
+    "url": "https://github.com/openai/openai-support-agent-demo",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Agents SDK quickstart",
+    "url": "https://openai.github.io/openai-agents-python/quickstart/",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Building guardrails for agents",
+    "url": "https://openai.github.io/openai-agents-python/guardrails/",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Orchestrating multiple agents",
+    "url": "https://openai.github.io/openai-agents-python/multi_agent/",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Realtime tool delegation guide",
+    "url": "https://openai.github.io/openai-agents-js/guides/voice-agents/build/#delegation-through-tools",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Tools overview guide",
+    "url": "https://openai.github.io/openai-agents-js/guides/voice-agents/build/#delegation-through-tools",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Tracing module",
+    "url": "https://openai.github.io/openai-agents-python/tracing/",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "4o image generation intro",
+    "url": "https://www.youtube.com/watch?v=2f3K43FHRKo",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Balance accuracy, latency, and cost",
+    "url": "https://www.youtube.com/watch?v=Bx6sUDRMx-8",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Build beautiful frontends with OpenAI Codex",
+    "url": "https://www.youtube.com/watch?v=fK_bm84N7bs",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Build hour — agentic tool calling",
+    "url": "https://webinar.openai.com/on-demand/d1a99ac5-8de8-43c5-b209-21903d76b5b2",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Build hour — built-in tools",
+    "url": "https://webinar.openai.com/on-demand/c17a0484-d32c-4359-b5ee-d318dad51586",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Building with Open Models",
+    "url": "https://www.youtube.com/watch?v=1HL2YHRj270",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Codex code review",
+    "url": "https://www.youtube.com/watch?v=HwbSWVg5Ln4",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Codex for (almost) everything",
+    "url": "https://www.youtube.com/watch?v=Lm7-yFZ5fZQ",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Codex in JetBrains IDEs",
+    "url": "https://www.youtube.com/watch?v=1XkVsE9-ZK4",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Codex intro",
+    "url": "https://www.youtube.com/watch?v=hhdpnbfH6NU",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Context Engineering & Coding Agents with Cursor",
+    "url": "https://www.youtube.com/watch?v=3KAI__5dUn0",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "DevDay — distillation breakout",
+    "url": "https://www.youtube.com/watch?v=CqWpJFK-hOo",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "DevDay — optimization breakout",
+    "url": "https://www.youtube.com/watch?v=Bx6sUDRMx-8",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "DevDay — realtime breakout",
+    "url": "https://www.youtube.com/watch?v=mM8KhTxwPgs",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "DevDay — structured outputs breakout",
+    "url": "https://www.youtube.com/watch?v=kE4BkATIl9c",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Introducing the Codex app",
+    "url": "https://www.youtube.com/watch?v=HFM3se4lNiw",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Launch apps with evaluations",
+    "url": "https://vimeo.com/1105244173",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Live Demo Showcase: Tools That 10x Your Codebase",
+    "url": "https://www.youtube.com/watch?v=-l0OqapibAA",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "MCP intro",
+    "url": "https://vimeo.com/1105243308",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "New audio models intro",
+    "url": "https://www.youtube.com/watch?v=lXb0L16ISAc",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "OpenAI Codex in your code editor",
+    "url": "https://www.youtube.com/watch?v=sd21Igx4HtA",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Realtime agent demo",
+    "url": "https://vimeo.com/1105243382",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Responses API — tools and features",
+    "url": "https://vimeo.com/1105245596",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Shipping with Codex",
+    "url": "https://www.youtube.com/watch?v=Gr41tYOzE20",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Sora, ImageGen, and Codex: The Next Wave of Creative Production",
+    "url": "https://www.youtube.com/watch?v=70ush8Vknx8",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Unlock agentic power — Agents SDK",
+    "url": "https://vimeo.com/1105245234",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  },
+  {
+    "title": "Using OpenAI Codex CLI with GPT-5-Codex",
+    "url": "https://www.youtube.com/watch?v=iqNzfK4_meQ",
+    "status": "reference_only_content_not_ingested",
+    "publisher": "OpenAI curated resource index"
+  }
+]

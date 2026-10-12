@@ -76,3 +76,11 @@ decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
 ## AI Impact channel ingestion (direct request, 2026-10-12)
 - [x] Inventory 49 public videos and retrieve all 49 caption sources; derive 342 evidence-linked knowledge records (`research/ai-impact/README.md`).
 - [ ] Capture and visually verify slides from every video; video/media access is blocked on this host. Start with the 45 visual cues, then inspect the complete videos. Full request NOT VERIFIED; source and continuation in `research/ai-impact/HANDOFF.md`.
+
+## Official model/education references (direct request, 2026-10-12)
+- [x] Build official source catalogue, 117 model-reference extracts and 20 selected teaching records (`research/official-docs/README.md`).
+- [ ] Finish exact-source/full-content retention decision, empty reference/training pages, actual public course/video content and comprehensive semantic review. Catalogue counts do not prove full ingestion; see `research/official-docs/HANDOFF.md`.
+
+## Task-specific reading verification (2026-10-12)
+- [x] Repair Architect full-file default; add compact topic routes; independently test three questions.
+- [ ] Verify fresh Claude Code/Codex runtime behaviour on broader topics and conflicting evidence; actual account usage totals not available here. See `audits/2026-10-12-selective-reading.md`.

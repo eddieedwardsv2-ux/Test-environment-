@@ -1,0 +1,891 @@
+{
+  "snapshot_date": "2026-10-12",
+  "source_pages": 1959,
+  "model_pages": 117,
+  "source_words_processed": 7727408,
+  "collections": {
+    "anthropic-academy": 4,
+    "anthropic-engineering": 26,
+    "claude-code": 230,
+    "claude-platform": 760,
+    "api-reference": 210,
+    "chatgpt-codex": 186,
+    "cookbook": 53,
+    "developer-blog": 30,
+    "learning-resources": 76,
+    "openai-academy": 8,
+    "openai-api": 234,
+    "openai-models": 101,
+    "openai-training": 11,
+    "plugins": 30
+  },
+  "reference_only_resources": 51,
+  "blocked_individual_urls": [],
+  "empty_captures": [
+    "https://developers.openai.com/training/hands-on/codex",
+    "https://developers.openai.com/training/hands-on/work"
+  ],
+  "landing_only_pages": [
+    "https://developers.openai.com/api/reference/resources/audio",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/speech/methods/create",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/methods/create",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/streaming-events",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/translations/methods/create",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/create",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/delete",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/list",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/update",
+    "https://developers.openai.com/api/reference/resources/audio/subresources/voices/methods/create",
+    "https://developers.openai.com/api/reference/resources/batches",
+    "https://developers.openai.com/api/reference/resources/batches/methods/cancel",
+    "https://developers.openai.com/api/reference/resources/batches/methods/create",
+    "https://developers.openai.com/api/reference/resources/batches/methods/list",
+    "https://developers.openai.com/api/reference/resources/batches/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/streaming-events",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/sessions",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/threads",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/streaming-events",
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/websocket-events",
+    "https://developers.openai.com/api/reference/resources/chat",
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions/streaming-events",
+    "https://developers.openai.com/api/reference/resources/completions",
+    "https://developers.openai.com/api/reference/resources/completions/methods/create",
+    "https://developers.openai.com/api/reference/resources/containers",
+    "https://developers.openai.com/api/reference/resources/containers/methods/create",
+    "https://developers.openai.com/api/reference/resources/containers/methods/delete",
+    "https://developers.openai.com/api/reference/resources/containers/methods/list",
+    "https://developers.openai.com/api/reference/resources/containers/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/containers/subresources/files",
+    "https://developers.openai.com/api/reference/resources/containers/subresources/files/methods/create",
+    "https://developers.openai.com/api/reference/resources/containers/subresources/files/methods/delete",
+    "https://developers.openai.com/api/reference/resources/containers/subresources/files/methods/list",
+    "https://developers.openai.com/api/reference/resources/containers/subresources/files/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/conversations",
+    "https://developers.openai.com/api/reference/resources/conversations/methods/create",
+    "https://developers.openai.com/api/reference/resources/conversations/methods/delete",
+    "https://developers.openai.com/api/reference/resources/conversations/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/conversations/methods/update",
+    "https://developers.openai.com/api/reference/resources/conversations/subresources/items/methods/list",
+    "https://developers.openai.com/api/reference/resources/embeddings",
+    "https://developers.openai.com/api/reference/resources/embeddings/methods/create",
+    "https://developers.openai.com/api/reference/resources/evals",
+    "https://developers.openai.com/api/reference/resources/evals/methods/create",
+    "https://developers.openai.com/api/reference/resources/evals/methods/delete",
+    "https://developers.openai.com/api/reference/resources/evals/methods/list",
+    "https://developers.openai.com/api/reference/resources/evals/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/evals/methods/update",
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs/methods/cancel",
+    "https://developers.openai.com/api/reference/resources/files",
+    "https://developers.openai.com/api/reference/resources/files/methods/create",
+    "https://developers.openai.com/api/reference/resources/files/methods/delete",
+    "https://developers.openai.com/api/reference/resources/files/methods/list",
+    "https://developers.openai.com/api/reference/resources/files/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/fine_tuning",
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create",
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete",
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/list",
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list",
+    "https://developers.openai.com/api/reference/resources/graders",
+    "https://developers.openai.com/api/reference/resources/images",
+    "https://developers.openai.com/api/reference/resources/images/edit-streaming-events",
+    "https://developers.openai.com/api/reference/resources/images/generation-streaming-events",
+    "https://developers.openai.com/api/reference/resources/images/methods/create_variation",
+    "https://developers.openai.com/api/reference/resources/live/fork-websocket",
+    "https://developers.openai.com/api/reference/resources/live/primary-websocket",
+    "https://developers.openai.com/api/reference/resources/live/sideband-websocket",
+    "https://developers.openai.com/api/reference/resources/models",
+    "https://developers.openai.com/api/reference/resources/models/methods/delete",
+    "https://developers.openai.com/api/reference/resources/models/methods/list",
+    "https://developers.openai.com/api/reference/resources/models/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/moderations",
+    "https://developers.openai.com/api/reference/resources/moderations/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/subresources/usage",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups/methods/update",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups/subresources/users",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups/subresources/users/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups/subresources/users/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/groups/subresources/users/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/invites",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/invites/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/invites/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/invites/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/invites/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/methods/update",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/api_keys",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/groups",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/groups/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/groups/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/rate_limits",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/service_accounts",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/users",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/users/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/users/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/users/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/users/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/users/methods/update",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/roles",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/roles/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/roles/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/roles/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/roles/methods/update",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/users",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/users/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/users/methods/list",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/users/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/users/methods/update",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/users/subresources/roles/methods/create",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/users/subresources/roles/methods/delete",
+    "https://developers.openai.com/api/reference/resources/organization/subresources/users/subresources/roles/methods/list",
+    "https://developers.openai.com/api/reference/resources/projects",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/groups",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/groups/subresources/roles/methods/create",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/groups/subresources/roles/methods/delete",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/groups/subresources/roles/methods/list",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/roles/methods/create",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/roles/methods/delete",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/roles/methods/list",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/roles/methods/update",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/users",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/users/subresources/roles/methods/create",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/users/subresources/roles/methods/delete",
+    "https://developers.openai.com/api/reference/resources/projects/subresources/users/subresources/roles/methods/list",
+    "https://developers.openai.com/api/reference/resources/realtime",
+    "https://developers.openai.com/api/reference/resources/realtime/client-events",
+    "https://developers.openai.com/api/reference/resources/realtime/server-events",
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/calls",
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/accept",
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/create",
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/hangup",
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/refer",
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/reject",
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/client_secrets",
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/client_secrets/methods/create",
+    "https://developers.openai.com/api/reference/resources/realtime/translation-client-events",
+    "https://developers.openai.com/api/reference/resources/realtime/translation-server-events",
+    "https://developers.openai.com/api/reference/resources/responses",
+    "https://developers.openai.com/api/reference/resources/responses/methods/cancel",
+    "https://developers.openai.com/api/reference/resources/responses/methods/compact",
+    "https://developers.openai.com/api/reference/resources/responses/methods/create",
+    "https://developers.openai.com/api/reference/resources/responses/methods/delete",
+    "https://developers.openai.com/api/reference/resources/responses/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/responses/streaming-events",
+    "https://developers.openai.com/api/reference/resources/responses/subresources/input_items/methods/list",
+    "https://developers.openai.com/api/reference/resources/responses/subresources/input_tokens",
+    "https://developers.openai.com/api/reference/resources/responses/websocket-events",
+    "https://developers.openai.com/api/reference/resources/uploads",
+    "https://developers.openai.com/api/reference/resources/uploads/methods/cancel",
+    "https://developers.openai.com/api/reference/resources/uploads/methods/create",
+    "https://developers.openai.com/api/reference/resources/uploads/subresources/parts/methods/create",
+    "https://developers.openai.com/api/reference/resources/vector_stores",
+    "https://developers.openai.com/api/reference/resources/vector_stores/methods/create",
+    "https://developers.openai.com/api/reference/resources/vector_stores/methods/delete",
+    "https://developers.openai.com/api/reference/resources/vector_stores/methods/list",
+    "https://developers.openai.com/api/reference/resources/vector_stores/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/vector_stores/methods/search",
+    "https://developers.openai.com/api/reference/resources/vector_stores/methods/update",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches/methods/cancel",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches/methods/create",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches/methods/list_files",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/content",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/create",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/delete",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/list",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/retrieve",
+    "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/update",
+    "https://developers.openai.com/api/reference/resources/webhooks",
+    "https://learn.chatgpt.com/docs",
+    "https://learn.chatgpt.com/docs/administration",
+    "https://learn.chatgpt.com/docs/configuration",
+    "https://learn.chatgpt.com/docs/developers",
+    "https://learn.chatgpt.com/docs/features",
+    "https://learn.chatgpt.com/docs/glossary",
+    "https://learn.chatgpt.com/docs/security-administration",
+    "https://learn.chatgpt.com/resources",
+    "https://learn.chatgpt.com/videos"
+  ],
+  "mapping_issues_recorded": [
+    {
+      "collection": "openai-api",
+      "title": "Computer use",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use.md",
+        "https://developers.openai.com/api/docs/guides/tools-computer-use.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Computer use",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use.md",
+        "https://developers.openai.com/api/docs/guides/tools-computer-use.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Cost optimization",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/cost-optimization.md",
+        "https://developers.openai.com/api/docs/guides/voice-latency-cost.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Cost optimization",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/cost-optimization.md",
+        "https://developers.openai.com/api/docs/guides/voice-latency-cost.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Image generation",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/image-generation.md",
+        "https://developers.openai.com/api/docs/guides/tools-image-generation.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Image generation",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/image-generation.md",
+        "https://developers.openai.com/api/docs/guides/tools-image-generation.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Multi-agent",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/agents-api/multi-agent.md",
+        "https://developers.openai.com/api/docs/guides/responses-multi-agent.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Multi-agent",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/agents-api/multi-agent.md",
+        "https://developers.openai.com/api/docs/guides/responses-multi-agent.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Web search",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/agents-api/tools/web-search.md",
+        "https://developers.openai.com/api/docs/guides/tools-web-search.md"
+      ]
+    },
+    {
+      "collection": "openai-api",
+      "title": "Web search",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/api/docs/guides/agents-api/tools/web-search.md",
+        "https://developers.openai.com/api/docs/guides/tools-web-search.md"
+      ]
+    },
+    {
+      "collection": "chatgpt-codex",
+      "title": "ChatGPT desktop app for Windows",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://learn.chatgpt.com/docs/windows/windows-app.md",
+        "https://learn.chatgpt.com/docs/windows/windows-app.md"
+      ]
+    },
+    {
+      "collection": "chatgpt-codex",
+      "title": "Recent Code Bugfix",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/developer-commands.md?surface=cli",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "chatgpt-codex",
+        "chatgpt-codex"
+      ]
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/developer-commands.md?surface=ide",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "chatgpt-codex",
+        "chatgpt-codex"
+      ]
+    },
+    {
+      "collection": "chatgpt-codex",
+      "title": "Permissions",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://learn.chatgpt.com/docs/permission-modes.md",
+        "https://learn.chatgpt.com/docs/permissions.md"
+      ]
+    },
+    {
+      "collection": "chatgpt-codex",
+      "title": "Permissions",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://learn.chatgpt.com/docs/permission-modes.md",
+        "https://learn.chatgpt.com/docs/permissions.md"
+      ]
+    },
+    {
+      "collection": "chatgpt-codex",
+      "title": "ChatGPT desktop app for Windows",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://learn.chatgpt.com/docs/windows/windows-app.md",
+        "https://learn.chatgpt.com/docs/windows/windows-app.md"
+      ]
+    },
+    {
+      "collection": "cookbook",
+      "title": "**Build your own content fact-checker with OpenAI gpt-oss-120B, Cerebras, and Parallel**",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "Fine-tuning a Multilingual Reasoner with Hugging Face",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "How to run gpt-oss with Hugging Face Transformers",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "Automating Code Quality and Security Fixes with Codex CLI in GitLab",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "**ChatGPT Enterprise: Practical prompt engineering for everyday work**",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "Build an AI agent that can pay for APIs using AgentCore Payments",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "GPT-5 Prompt Migration and Improvement using the new prompt optimizer",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "OpenAI Completions Usage API Extended Example",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "Shaping your agent\u2019s personality",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "AWS Lambda MicroVMs",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "CSV Insights Skill",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "1. Executive Summary",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "cookbook",
+      "title": "Using Goals in Codex: Persistent Objectives for Long-Running Work",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Agents SDK \u2014 Python",
+      "url": "https://github.com/openai/openai-agents-python",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Agents SDK \u2014 TypeScript",
+      "url": "https://github.com/openai/openai-agents-js",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Agents SDK quickstart",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://openai.github.io/openai-agents-python/quickstart/",
+        "https://openai.github.io/openai-agents-python/quickstart/"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "ChatKit advanced samples",
+      "url": "https://github.com/openai/openai-chatkit-advanced-samples",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "ChatKit starter app",
+      "url": "https://github.com/openai/openai-chatkit-starter-app",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Computer Use API \u2014 starter app",
+      "url": "https://github.com/openai/openai-cua-sample-app",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "CS agents demo",
+      "url": "https://github.com/openai/openai-cs-agents-demo",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Frontend testing demo",
+      "url": "https://github.com/openai/openai-testing-agent-demo",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "openai.fm",
+      "url": "https://github.com/openai/openai-fm",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Plugin UI examples",
+      "url": "https://github.com/openai/openai-apps-sdk-examples",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Realtime & Twilio starter app",
+      "url": "https://github.com/openai/openai-realtime-twilio-demo",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Realtime agents starter app",
+      "url": "https://github.com/openai/openai-realtime-agents",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Realtime console",
+      "url": "https://github.com/openai/openai-realtime-console",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Realtime solar system",
+      "url": "https://github.com/openai/openai-realtime-solar-system",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Responses starter app",
+      "url": "https://github.com/openai/openai-responses-starter-app",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Sora starter app",
+      "url": "https://github.com/openai/openai-sora-sample-app",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Structured outputs samples",
+      "url": "https://github.com/openai/openai-structured-outputs-samples",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Support agent demo",
+      "url": "https://github.com/openai/openai-support-agent-demo",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "url": "https://developers.openai.com/cookbook/examples/gpt-5/codex_prompting_guide",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "cookbook",
+        "learning-resources"
+      ]
+    },
+    {
+      "url": "https://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "cookbook",
+        "learning-resources"
+      ]
+    },
+    {
+      "url": "https://developers.openai.com/cookbook/examples/codex/code_modernization",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "cookbook",
+        "learning-resources"
+      ]
+    },
+    {
+      "url": "https://developers.openai.com/cookbook/articles/gpt-oss/verifying-implementations",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "cookbook",
+        "learning-resources"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Docs MCP",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/learn/docs-mcp.md",
+        "https://developers.openai.com/learn/docs-mcp"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "OpenAI Developers plugin",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/learn/developers-codex-plugin.md",
+        "https://developers.openai.com/learn/developers-codex-plugin"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Agents SDK quickstart",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://openai.github.io/openai-agents-python/quickstart/",
+        "https://openai.github.io/openai-agents-python/quickstart/"
+      ]
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/deployment-checklist",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "openai-api",
+        "learning-resources"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Building guardrails for agents",
+      "url": "https://openai.github.io/openai-agents-python/guardrails/",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Docs MCP",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/learn/docs-mcp.md",
+        "https://developers.openai.com/learn/docs-mcp"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "OpenAI Developers plugin",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": [
+        "https://developers.openai.com/learn/developers-codex-plugin.md",
+        "https://developers.openai.com/learn/developers-codex-plugin"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Orchestrating multiple agents",
+      "url": "https://openai.github.io/openai-agents-python/multi_agent/",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Realtime tool delegation guide",
+      "url": "https://openai.github.io/openai-agents-js/guides/voice-agents/build/#delegation-through-tools",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "url": "https://platform.openai.com/docs/guides/realtime-transcription",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "learning-resources",
+        "learning-resources"
+      ]
+    },
+    {
+      "url": "https://platform.openai.com/docs/guides/speech-to-text",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "learning-resources",
+        "learning-resources"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Tools overview guide",
+      "url": "https://openai.github.io/openai-agents-js/guides/voice-agents/build/#delegation-through-tools",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Tracing module",
+      "url": "https://openai.github.io/openai-agents-python/tracing/",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "url": "https://platform.openai.com/docs/guides/realtime-transcription",
+      "issue": "duplicate_body_versions",
+      "collections": [
+        "learning-resources",
+        "learning-resources"
+      ]
+    },
+    {
+      "collection": "learning-resources",
+      "title": "4o image generation intro",
+      "url": "https://www.youtube.com/watch?v=2f3K43FHRKo",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Balance accuracy, latency, and cost",
+      "url": "https://www.youtube.com/watch?v=Bx6sUDRMx-8",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Build beautiful frontends with OpenAI Codex",
+      "url": "https://www.youtube.com/watch?v=fK_bm84N7bs",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Build hour \u2014 agentic tool calling",
+      "url": "https://webinar.openai.com/on-demand/d1a99ac5-8de8-43c5-b209-21903d76b5b2",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Build hour \u2014 built-in tools",
+      "url": "https://webinar.openai.com/on-demand/c17a0484-d32c-4359-b5ee-d318dad51586",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Building with Open Models",
+      "url": "https://www.youtube.com/watch?v=1HL2YHRj270",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Codex code review",
+      "url": "https://www.youtube.com/watch?v=HwbSWVg5Ln4",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Codex for (almost) everything",
+      "url": "https://www.youtube.com/watch?v=Lm7-yFZ5fZQ",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Codex in JetBrains IDEs",
+      "url": "https://www.youtube.com/watch?v=1XkVsE9-ZK4",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Codex intro",
+      "url": "https://www.youtube.com/watch?v=hhdpnbfH6NU",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Context Engineering & Coding Agents with Cursor",
+      "url": "https://www.youtube.com/watch?v=3KAI__5dUn0",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "DevDay \u2014 distillation breakout",
+      "url": "https://www.youtube.com/watch?v=CqWpJFK-hOo",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "DevDay \u2014 optimization breakout",
+      "url": "https://www.youtube.com/watch?v=Bx6sUDRMx-8",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "DevDay \u2014 realtime breakout",
+      "url": "https://www.youtube.com/watch?v=mM8KhTxwPgs",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "DevDay \u2014 structured outputs breakout",
+      "url": "https://www.youtube.com/watch?v=kE4BkATIl9c",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Introducing the Codex app",
+      "url": "https://www.youtube.com/watch?v=HFM3se4lNiw",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Launch apps with evaluations",
+      "url": "https://vimeo.com/1105244173",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Live Demo Showcase: Tools That 10x Your Codebase",
+      "url": "https://www.youtube.com/watch?v=-l0OqapibAA",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "MCP intro",
+      "url": "https://vimeo.com/1105243308",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "New audio models intro",
+      "url": "https://www.youtube.com/watch?v=lXb0L16ISAc",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "OpenAI Codex in your code editor",
+      "url": "https://www.youtube.com/watch?v=sd21Igx4HtA",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Realtime agent demo",
+      "url": "https://vimeo.com/1105243382",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Responses API \u2014 tools and features",
+      "url": "https://vimeo.com/1105245596",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Shipping with Codex",
+      "url": "https://www.youtube.com/watch?v=Gr41tYOzE20",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Sora, ImageGen, and Codex: The Next Wave of Creative Production",
+      "url": "https://www.youtube.com/watch?v=70ush8Vknx8",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Unlock agentic power \u2014 Agents SDK",
+      "url": "https://vimeo.com/1105245234",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "learning-resources",
+      "title": "Using OpenAI Codex CLI with GPT-5-Codex",
+      "url": "https://www.youtube.com/watch?v=iqNzfK4_meQ",
+      "issue": "external_resource_not_fetched"
+    },
+    {
+      "collection": "developer-blog",
+      "title": "Frontend skill",
+      "issue": "title_mapping_ambiguous_or_missing",
+      "choices": []
+    }
+  ],
+  "semantic_review": "not exhaustive",
+  "raw_full_text_retention": "working-session cache only; not durably retained",
+  "overall_status": "NOT VERIFIED: entire provider websites, courses and videos are not exhaustively covered"
+}

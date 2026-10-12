@@ -101,3 +101,13 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 49 public caption sources processed into 342 timestamp-linked derived records, searchable SQLite and JSON: `research/ai-impact/README.md`. No slides captured; full request NOT VERIFIED.
 
 **Next step for this request:** finish visual capture in an environment with functioning video access, beginning with 45 caption cues and then reviewing all videos for unannounced slides. This creator corpus does not change the 90-day priority or promote unverified tool claims into the OS.
+
+## Latest direct request — official model documentation (2026-10-12)
+Official Anthropic/OpenAI reference layer: `research/official-docs/README.md`. 1,959 source URLs catalogued, 117 model references, 20 first-pass teaching records; catalogue/facts saved, complete source text not durably retained. Full educational/semantic ingestion NOT VERIFIED.
+
+**Next step for this request:** resolve empty training captures, expand actual public course/video content, and derive topic-specific knowledge with retrieval tests. Recheck changing product facts live. Previous AI Impact slide work and the 90-day priority remain unchanged.
+
+## Latest direct request — reading efficiency (2026-10-12)
+A full-file reading instruction in Architect was repaired. Small task maps now select Nate rule/concept sections and official source records. Three independent retrieval trials passed; all-runtime compliance and optimal billing remain NOT VERIFIED. Evidence: `audits/2026-10-12-selective-reading.md`.
+
+**Next step:** repeat varied retrieval tasks in fresh Claude Code/Codex sessions, retaining a small read trace and acceptance checks. Do not load whole creator folders/catalogues for ordinary advice. Official source retention/semantic review and AI Impact slides remain open.

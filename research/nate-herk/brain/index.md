@@ -11,6 +11,10 @@ The knowledge base behind the `architect` advisor (`.claude/agents/architect.md`
 | [log.md](log.md) | History of what was added. |
 | [../README.md](../README.md) | Nate's video list and which are transcribed. |
 
+## Task-specific entry point
+
+Use [retrieval.md](retrieval.md) to select rule/concept sections before reading the large files. This index provides coverage and source routes; it does not require loading every rule, concept or transcript.
+
 ## Sources
 **Primary (read in full, every concept rests on these):**
 - [Steal My Exact AI OS Setup (5 simple tips)](../steal-my-exact-ai-os-setup-5-simple-tips--Ek1NBfnnTH0-transcript.md), Ek1NBfnnTH0, 25:02: failure modes, expertise vs situational, router, audit, freshness, segmentation, cadence, backtracking.

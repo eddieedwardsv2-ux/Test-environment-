@@ -17,6 +17,8 @@ advisor agent reads; raw evidence stays in the transcripts). Anything not from a
 | [Corey Haines](corey-haines/README.md) | Marketing skills; [NewsJack PR relationship](corey-haines/newsjack-relationship.md) (separate authors) | Not catalogued | 0 | – |
 | [The Next New Thing](the-next-new-thing/README.md) | Free GitHub tools round-ups | 161 listed | 24 | [Watch plan (top 10)](the-next-new-thing/watch-plan.md); feeds the [Hands Brain](hands/README.md) |
 
+**Official provider references:** [Anthropic + OpenAI](official-docs/README.md): 1,959 source URLs catalogued (1,745 body captures, 212 landing-only, 2 empty), 117 model references and 20 first-pass teaching records. Full source text is temporary; full ingestion/semantic review remains NOT VERIFIED.
+
 **Queued (Parking Lot):** Dan Martell (second brain).
 
 **Commands** (read `context/environment.md` first for any YouTube or GitHub task):

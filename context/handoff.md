@@ -51,3 +51,9 @@ Guardian paused until then (`context/current-focus.md`, top).
 Direct channel-ingestion request: `research/ai-impact/README.md`. 49 public videos, 49 English caption sources processed, 342 derived records, searchable SQLite + JSON, topic backlinks. Captions worked through native `youtube-transcript-api`; historical keyless endpoint now asks for a key. No paid tools used.
 
 Visual downloads/storyboards returned HTML error pages and browser playback stayed black. No slides captured. 45 caption visual cues are a starting list, not full slide coverage. `research/ai-impact/HANDOFF.md` preserves evidence, retrieval rules and the next visual pass. Full request NOT VERIFIED. Prior handoff items above remain open.
+
+## Additional handoff — official references (2026-10-12)
+`research/official-docs/README.md`: 1,959 source URLs (1,745 body captures, 212 landing-only, 2 empty), 117 model-reference extracts, 20 teaching records from selected sections of seven pages. Saved source catalogue/derived facts and compressed SQLite; original full text stays in temporary working cache, not a durable mirror. Independent review corrected pricing-table context, hidden mapping gaps and false empty-capture success. Full user request remains NOT VERIFIED. See `research/official-docs/HANDOFF.md` for exact limits and next work. Prior pending tasks above remain open.
+
+## Additional handoff — task-specific reading (2026-10-12)
+`audits/2026-10-12-selective-reading.md`: Architect previously required whole rules.md/concepts.md (~26K rough tokens). It now selects complete relevant sections through `research/nate-herk/brain/retrieval.md`. Official docs uses `topics.md` or a bounded query; large index is human browsing. Three independent source-grounded question trials passed; universal compliance and billed usage savings are unverified.

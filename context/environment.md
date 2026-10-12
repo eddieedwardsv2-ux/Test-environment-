@@ -67,3 +67,6 @@ Re-test on the current host before relying on these facts.
 - Direct channel inventory and native `youtube-transcript-api` fetched all 49 English caption sources without keys or paid credits. This overrides the historical caption-access result for this host only.
 - The old keyless youtube-transcript.ai endpoint now requires a free API key; do not rely on the older no-sign-up claim.
 - Video downloads and storyboards returned HTML error pages; browser playback was black. Slides are not captured. Details: `research/ai-impact/HANDOFF.md`.
+
+## Official documentation — current host, 2026-10-12
+Publisher `llms.txt` / `llms-full.txt` exports and page Markdown worked for Claude Platform, Claude Code and OpenAI developer/ChatGPT docs. Root Anthropic export URLs initially returned 403; documented `/docs/llms.txt` and full exports worked later. Body hashes and coverage in `research/official-docs/`. Some OpenAI reference exports are heading-only, and two training pages were empty. Catalogue/derived facts are durable; the full-text cache is not.

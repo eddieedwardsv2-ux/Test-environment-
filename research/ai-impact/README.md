@@ -6,6 +6,10 @@ Source: [AI Impact](https://www.youtube.com/@aiimpact1). Snapshot: 12 October 20
 
 **Slides: 0 captured. Overall: NOT VERIFIED.** Full visual ingestion is blocked; caption coverage is not slide coverage. Creator claims remain attributed and unverified.
 
+## Agent reading route
+
+Filter knowledge.json or query knowledge.sqlite locally for the task. Return a small relevant set of records and evidence links; read their video notes/source context. Do not load all 342 records or the full creator folder for an ordinary question. The topic index is a starting map, not a requirement to read every linked note.
+
 ## Find the knowledge
 
 - [Knowledge records and topic index](index.md): readable on GitHub and a phone.
