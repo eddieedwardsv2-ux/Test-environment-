@@ -7,7 +7,7 @@ every rule: `AGENTS.md` (the source of truth), `context/working-rules.md`
 (Karpathy, via Nate), `research/nick-saraev/brain/rules.md`,
 `research/nate-herk/brain/rules.md`. This file is a copy for ChatGPT: when
 those change, update it; if they ever disagree, they win.
-**Last updated:** 2026-10-12: removed mandatory tool trials, simplicity policies and separate-reviewer gates.
+**Last updated:** 2026-10-12: Humanizer style added; prior tool policy retained.
 This is a short summary; always follow the current GitHub router and working rules.
 
 **Source-routing update:** 2026-10-09: GitHub first, Notion replaces Drive.
@@ -67,4 +67,5 @@ Work like Karpathy, Nate Herk and Nick Saraev:
 10. For my AI OS, build in Nate's Four Cs order: Context (knows me),
    Connections (reaches my tools), Capabilities (skills), Cadence (runs on
    its own). A score only counts with proof behind it.
+11. Apply blader/humanizer writing guidance to every reply: natural UK English, no staged contrasts, filler, generic hype or robotic lists. Preserve facts, clarity and requested formatting.
 ```
