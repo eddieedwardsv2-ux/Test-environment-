@@ -2,6 +2,43 @@
 
 Overwritten by `session-handoff`; history stays in `decisions.md` and Git.
 
+## Latest handoff — brand engagement and style-guide planning
+**Written:** 12 October 2026, 11:30 UK, by ChatGPT/Codex. Charlie requested /sessions-handoff. Research paused before completed engagement analysis or style-guide drafts.
+
+### Working on
+Research large, engaged AI/education brands and plan a few style guides for future outputs. Charlie selected **AI and education**, rather than major consumer brands or a mix. This direct request does not change the existing 90-day priority.
+
+### Summary points
+- Compared relevant saved Nate and AI Impact teaching: shared routing, selective context, source-to-concept processing, evidence links, repeatable workflows, scoped rules and predict/run/compare. AI Impact slide coverage remains missing; agreement does not prove performance.
+- Brand shortlist: Kurzgesagt, Veritasium, 3Blue1Brown, Fireship, Nate Herk, Matt Wolfe/Future Tools and AI Explained. This is a candidate set, not an exhaustive biggest-brand ranking.
+- Direct public YouTube channel pages returned rounded subscriber labels: Kurzgesagt 25.7m; Veritasium 21.4m; 3Blue1Brown 8.69m; Fireship 4.29m; Nate 1.06m; Matt 1.02m; AI Explained 455k. Treat these as a dated snapshot, not engagement measurements.
+- Public SPEAKRJ pages supplied example views, likes and comments for Kurzgesagt, Veritasium, Fireship, 3Blue1Brown and AI Explained. Format/age are not yet controlled. No highest-engagement verdict or median-rate comparison completed.
+- Creator websites inspected for positioning. Fireship describes approachable developer learning; 3Blue1Brown emphasises visual understanding; Kurzgesagt describes approachable complex topics through vector illustration/animation; Veritasium describes experiments/interviews/demos; Future Tools curates AI news/tools; Nate teaches practical AI automation.
+- Proposed directions, not approved final guides: practical teaching; visual explanation; evidence-led analysis. Borrow techniques and develop Charlie's voice, rather than copying another brand.
+- A temporary Python scan initially found subscriber labels but no videos because YouTube now used lockupViewModel rather than videoRenderer. Parser correction started; completion/results were not retrieved before the workspace tool failed. No raw scan/script is durably saved or required to resume.
+- Automatic approval review rejected workspace write_stdin/polling due to a usage-limit review failure, not a safety determination. Do not bypass/retry the rejected workspace action. No paid research/transcript services used.
+
+### Key files / where information lives
+- This section holds the complete durable research starting point; no style-guide draft file exists yet.
+- Nate: research/nate-herk/README.md; lesson-smallest-context.md; steal-my-exact-ai-os-setup-5-simple-tips--Ek1NBfnnTH0-transcript.md; i-built-another-andrej-karpathy-using-claude--bvGptCLDhyo-transcript.md.
+- AI Impact: research/ai-impact/index.md and videos/spT1e-1LpHc.md, z02Y-1OvWSM.md, xUnVQkPrnrA.md, _X5jSMka5e4.md, sOkUzrjeO5s.md, 8mL3D6ku8MQ.md, yP4p3reZUcU.md. Caption-derived summaries; creator claims unverified.
+- Brand primary sources: https://kurzgesagt.org/ ; https://www.veritasium.com/ ; https://www.3blue1brown.com/about/ ; https://fireship.dev/ ; https://futuretools.io/ ; https://www.nateherk.com/ . Channel handles: @kurzgesagt, @veritasium, @3blue1brown, @Fireship, @mreflow, @nateherk, @aiexplained-official.
+- Secondary video metrics: https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats ; UCHnyfMqiRRG1u-2MsSQLbXA ; UCsBjURrPoezykLs9EqgamOA ; UCYO_jab_esuFRV4b17AJtAw ; UCNJ1Ymd5yFuUPtn21xtRbbw (substitute each channel ID in the same URL).
+- Prior work, open decisions and branches remain in the reconciliation below; context/todo.md and current-focus.md remain authoritative for their status.
+
+### Decisions made / open decisions
+Charlie chose AI/education references. No guide direction chosen yet; no need to re-ask the sector. Assume future articles, videos and guides as initial applications, but confirm formats if the choice materially changes the drafts. No current Desk answers were read in this session; preserve prior unknown/open decisions.
+
+### Pick up here
+1. Finish a bounded comparison on one platform (YouTube first): sample ten recent non-Shorts uploads per candidate, record IDs/publication times/durations/views/likes/comments and capture time. Flag missing fields and format differences; exclude very new uploads or use a common age window. Compare median views and median (likes + comments)/views; views/subscribers is a reach proxy, not engagement or retention. Public data cannot establish saves, shares, watch time or causal reasons for success.
+2. Inspect a small matched set of actual content per shortlisted brand (transcripts and visuals where accessible). Extract hook, structure, sentence rhythm, evidence use, visual hierarchy and calls to action. Separate observed patterns from hypotheses about engagement; use existing Nate/AI Impact corpus selectively.
+3. Present three concrete guide briefs with example openings on the same topic: practical teaching (Nate + selective Fireship concision), visual explanation (3Blue1Brown/Kurzgesagt), evidence-led analysis (Veritasium/AI Explained). Include audience, voice, visual rules, output-specific adaptations and quality checks. Do not claim full guides, visual inspection or performance tests until completed.
+
+### Verification / carried forward
+GitHub documents were reread against latest main commit 81d3e0b before saving. Existing handoff preserved verbatim below; nothing dropped or closed without proof. Branch/Desk inventory was not freshly rerun here; use the prior reconciliation as recorded evidence, not a new verification. Workspace audit/page-build could not run after the usage-limit review failure; Claude artifact publishing unavailable. Handoff saving is a separate claim from research quality/independent review. Research/style guides remain NOT VERIFIED.
+
+---
+
 ## Current reconciliation — 12 October 2026, ChatGPT
 This section supersedes stale status statements in the historical 9 Oct handoff
 below. Checked main `c0f2437`, remote branch tips and PR #3; no implementation
