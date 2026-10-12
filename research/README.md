@@ -27,3 +27,5 @@ advisor agent reads; raw evidence stays in the transcripts). Anything not from a
 - Then the `video-tutor` agent for a lesson, or the `brain-ingest` skill for a brain.
 
 Older: a 4-hour watch plan across Karpathy, Nate and Nick (7 Oct, from titles only): [watch-plan-4h.md](watch-plan-4h.md).
+
+**Recent primary-source comparison:** [poteto, Andrej Karpathy and Boris Cherny — five weeks](x-five-weeks/README.md), 7 September–12 October 2026. Available-source inventory, article access labels and targeted comparison; exhaustive coverage NOT VERIFIED.

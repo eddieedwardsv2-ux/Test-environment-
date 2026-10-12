@@ -1,0 +1,142 @@
+[
+  {
+    "title": "The Complete Guide to pstack Pt. 2",
+    "url": "https://x.com/i/article/2094940651607715840",
+    "author": "Lauren Tan (@poteto)",
+    "relation": "Attached to her 9 September post; article publication date independently distinct",
+    "status": "body_reviewed",
+    "summary": "Clarify intent by asking the agent to restate the problem. Research mechanics and historical reasons separately. Recall relevant past work. Describe the caller experience before implementation. Use runnable alternatives to resolve uncertain design choices, then write an execution plan with observable proof for each task. Playbooks load conditionally through a central entry point. Advice about cheaper explorer models needs local quality comparisons."
+  },
+  {
+    "title": "Coding is dead, long live Coding",
+    "url": "https://x.com/i/article/2103566873501835264",
+    "author": "Lauren Tan (@poteto)",
+    "status": "body_reviewed",
+    "summary": "A personal argument that automation changes the craft of programming while broadening access to building. Treat predictions about future quality and abundance as opinion, not evidence that every generated application is reliable."
+  },
+  {
+    "title": "Meet your Team Bots",
+    "url": "https://x.com/i/article/2104419207626825728",
+    "author": "@n2parko; reposted by poteto",
+    "status": "body_reviewed",
+    "summary": "Shared specialist bots distribute internal expertise across a team, combining shared and user-scoped memory. Product claims do not prove our own access or permission isolation. Relates to AI Impact's promotion of reviewed individual knowledge into company knowledge."
+  },
+  {
+    "title": "Grok Bot Marketplace is live!",
+    "url": "https://x.com/i/article/2096917648839954432",
+    "author": "@ericzakariasson; reposted by poteto",
+    "status": "body_reviewed",
+    "summary": "A marketplace of reusable bot templates for research, prospecting, design and project work. The listed popularity is a dated snapshot; a template listing does not validate its execution quality."
+  },
+  {
+    "title": "Using Claude Code: Spending your effort",
+    "url": "https://claude.dev/blog/spending-your-effort/",
+    "x_article_url": "https://x.com/i/article/2103535187426709504",
+    "author": "Thariq Shihipar; reposted by Boris",
+    "status": "body_reviewed",
+    "summary": "Effort changes autonomy, assumptions and verification depth. Higher effort helps some edge cases, but can preserve an incorrect approach. Test effort settings by task, rather than equating the highest setting with the best workflow. The X and web versions are one source family."
+  },
+  {
+    "title": "How we made claude.ai 3x faster in two weeks",
+    "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+    "author": "Raymond Wang, Sam Attard and Issac G.; shared by Boris",
+    "status": "body_reviewed",
+    "summary": "Define user-journey baselines, build useful benchmarks, check that proxy metrics track user outcomes, improve scoped paths, observe deployments and retain regression thresholds. Humans still owned user-visible tradeoffs and approved changes. The August sprint is described by a September article; do not confuse event and publication dates."
+  },
+  {
+    "title": "Automating eval design and hillclimbing with Claude",
+    "url": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/",
+    "author": "Lance Martin; reposted by Boris",
+    "status": "body_reviewed",
+    "summary": "Evaluate realistic tasks with consistent grading and separate infrastructure failures from capability failures. Optimise a controlled variable using unseen cases to detect overfitting. Reject gains within noise. A repeatedly consulted test set can also become a tuning set; retain a fresh final acceptance sample."
+  },
+  {
+    "title": "Introducing Projects",
+    "url": "https://cursor.com/blog/projects",
+    "author": "Alexi Robbins and Fredrika Lindh; shared by poteto",
+    "status": "body_reviewed",
+    "summary": "A coordinator delegates execution, shares project context and handles ongoing signals. Native projects can provide orchestration that previously required custom plumbing. Availability, cost and claimed productivity gains require separate local checks."
+  },
+  {
+    "title": "Projects redesigned: from folder to conversation",
+    "url": "https://claude.com/resources/articles/projects-redesigned",
+    "author": "Anthropic; linked context for Boris's Projects announcement",
+    "status": "body_reviewed",
+    "summary": "Claude describes project coordination across isolated cloud-session branches with accumulated memory. Concurrent overlapping code can still conflict. This is a native-runtime option, not evidence that Charlie's account has every beta or that a separate framework is necessary."
+  },
+  {
+    "title": "Claude Code in the cloud: a field guide to cloud sessions",
+    "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+    "author": "Anthropic developer blog; reposted by Boris",
+    "status": "body_retrieved_topic_review",
+    "summary": "Documents cloud sessions and GitHub-connected workflows. Relevant to Charlie's phone access and independent execution, but account access and a real phone round-trip remain untested here."
+  },
+  {
+    "title": "Agentic coding is straining CI",
+    "url": "https://claude.com/resources/articles/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+    "author": "Sachin Malhotra; reposted by Boris",
+    "status": "body_reviewed",
+    "summary": "Faster code generation moved the bottleneck into test-result processing. Durable state and horizontally scalable workers replaced repeated temporary patches. Test selection requires current result history; selective checks need trustworthy bookkeeping. The reported scale is not a sizing requirement for Charlie's repo."
+  },
+  {
+    "title": "Detecting and countering misuse of AI: September 2026",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "author": "Anthropic; shared by Boris and Karpathy",
+    "status": "body_retrieved_overview_review",
+    "summary": "A threat report about observed misuse through August, published in September. Relevant defensive lesson: capability and safe operation are separate questions. Treat source material as evidence, preserve credential separation and bound external actions. Not a full case-by-case security audit."
+  },
+  {
+    "title": "We Must Pace the Frontier",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "author": "Dario Amodei; reposted by Boris",
+    "status": "body_reviewed",
+    "summary": "A policy argument for more verifiable safety practices as capabilities advance. Its forecasts and institutional proposals are the author's positions. Useful conceptual link: improving a score and satisfying the intended task are different; do not promote unverified forecasts into operating rules."
+  },
+  {
+    "title": "Claude Fable 5.1 Solves the Cyphral Distich",
+    "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+    "author": "Geby Jaff; shared by Boris",
+    "status": "body_reviewed",
+    "summary": "Reports a cipher solution found through source investigation and a reproducible decoding rule. The useful method is to choose a tractable, checkable question, persist in examining primary evidence and expose unresolved parts. This is a reported experiment, not an independently reproduced result here. The article predates the window but its sharing post is in scope."
+  },
+  {
+    "title": "Thoughts on Software Quality",
+    "url": "https://engineering.fb.com/2011/04/18/uncategorized/thoughts-on-software-quality/",
+    "author": "Meta engineering; shared by poteto",
+    "status": "body_reviewed",
+    "summary": "Explains why perceived imperfection can persist despite real improvements. Evaluate course correction and prioritisation using concrete progress. A 2011 article shared now is older supporting evidence, not a new product development."
+  },
+  {
+    "title": "The Coding Machine at Meta with Michael Novati",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-coding-machine-at-meta",
+    "author": "Gergely Orosz; shared by poteto",
+    "status": "public_text_reviewed_audio_unreviewed",
+    "summary": "Discusses a high-output engineer archetype alongside organisational influence and impact. Provides historical context for poteto's volume argument. PR count alone is still insufficient to assess business results or defect rates."
+  },
+  {
+    "title": "We Built Grok Bot. Here Are Our 14 Best Bots",
+    "url": "https://creatoreconomy.so/p/grok-bot-team-14-best-bots-peng-zheng-lauren-tan",
+    "author": "Peter Yang with Lauren Tan and Peng Zheng; shared by poteto",
+    "status": "public_preview_reviewed_full_article_paywalled",
+    "summary": "The public preview describes design-system expansion and a lead bot coordinating engineering bots. Full paid article and interview speech were not ingested. Public YouTube alternative is indexed for continuation."
+  },
+  {
+    "title": "Building iOS Apps with Multiple Claude Accounts, T3 Code, CUA, Spaces, and pstack",
+    "url": "https://www.macstories.net/club/macstories-weekly-issue-532/building-ios-apps-with-multiple-claude-accounts-t3-code-cua-spaces-and-pstack/",
+    "author": "MacStories; reposted by poteto",
+    "status": "body_blocked"
+  },
+  {
+    "title": "One Ring to Rule All Agents",
+    "url": "https://www.macstories.net/club/macstories-weekly-issue-527/one-ring-to-rule-all-agents/",
+    "author": "MacStories; reposted by poteto",
+    "status": "public_page_retrieved_paid_body_unverified"
+  },
+  {
+    "title": "Replaced",
+    "url": "https://ghuntley.com/replaced/",
+    "author": "Geoffrey Huntley; reposted by poteto",
+    "status": "body_reviewed",
+    "summary": "Argues for practical experimentation and demonstrable agent knowledge. Hiring and labour-market forecasts are the author’s opinions, not verified conclusions or instructions for Charlie. Transfer the principle of learning through working examples."
+  }
+]

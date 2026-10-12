@@ -1,3 +1,13 @@
+# Latest research continuation — five-week X ingestion, 12 October 2026
+
+Charlie requested posts/articles from poteto, Andrej Karpathy and Boris Cherny and comparison with existing scripts. Available timelines traversed 27 pages: 445 timeline memberships (205 own posts, 240 reposts); deduplication and individual reply supplements yield 448 source records. Five attached X article bodies retrieved. Twenty associated/supporting reading records carry separate access labels. Inventory is in [Eddie-Ed source inventory](https://github.com/eddieedwardsv2-ux/eddie-ed/tree/main/social/x/2026-09-07--2026-10-12); analytical notes in `research/x-five-weeks/`. Durable retention is metadata, short excerpts, body hashes and summaries, not full-text copies.
+
+Full replies, old-post repost dates, video speech/image pixels, blocked/paywalled bodies and semantic treatment of every repost remain NOT VERIFIED. Selected relevant Nate/AI Impact/Karpathy evidence was compared; no claim of rereading every script. Main lessons: codebase constraints as memory, real journey verification, empirical prototypes, meaningful metrics, unseen acceptance cases and human-readable proof. No architecture rewrite, new installation, automated external messaging, merge policy or schedule activated. TRADEFLOW remains the recorded project focus.
+
+**Pick up here:** use `research/x-five-weeks/comparison.md` for the quote demo's calculation/revision/approval proof; recover media and blocked article evidence if exhaustive research resumes. Every prior continuation is preserved below.
+
+---
+
 # Session hand-off
 
 ## Latest continuation — project and artifact refresh, 12 October 2026

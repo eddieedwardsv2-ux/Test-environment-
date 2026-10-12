@@ -79,7 +79,7 @@ Start at the relevant mini-index, select the needed sections/records, then read 
 | Projects | `projects/<name>/` (list in `projects/README.md`) |
 | Flashcards and lessons (parked) | `learning/` |
 | BTC technical-analysis newsletter | `projects/bitcoin-newsletter/README.md` (issues and editorial checks) |
-| Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |
+| Creator research, transcripts, commands | `research/README.md` (Corey Haines ↔ NewsJack in `research/corey-haines/`; five-week poteto/Karpathy/Boris comparison in `research/x-five-weeks/README.md`) |
 | AI Impact knowledge database and its slide-ingestion status | `research/ai-impact/README.md`, topic index `research/ai-impact/index.md`; slides remain blocked |
 | Official Anthropic/OpenAI model docs and educational reference coverage | `research/official-docs/topics.md` (small task map), `research/official-docs/README.md` (coverage); check current official pages before applying model/API facts |
 | Tools the OS can reach | `connections.md` (API guides in `references/`); approved five-plugin setup/use receipts: `audits/2026-10-12-tool-policy-and-plugins.md` |
