@@ -72,3 +72,7 @@ Nick Saraev work; flashcards; Karpathy brain; Dan Martell; the decorators'
 Facebook post and an unlisted test video; vidIQ (after 5 videos) and Canva
 thumbnails (after 3); the decorating business; Nate-channel audit's 8 older
 decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
+
+## AI Impact channel ingestion (direct request, 2026-10-12)
+- [x] Inventory 49 public videos and retrieve all 49 caption sources; derive 342 evidence-linked knowledge records (`research/ai-impact/README.md`).
+- [ ] Capture and visually verify slides from every video; video/media access is blocked on this host. Start with the 45 visual cues, then inspect the complete videos. Full request NOT VERIFIED; source and continuation in `research/ai-impact/HANDOFF.md`.

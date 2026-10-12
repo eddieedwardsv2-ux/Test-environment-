@@ -62,3 +62,8 @@ Re-test on the current host before relying on these facts.
   library is NOT (tested 2026-10-07): `pip install playwright` (free) each
   session before `tools/screenshot.py`. Never run `playwright install`.
 - Node 22, Python 3.13, ffmpeg.
+
+## AI Impact ingestion — current host, 2026-10-12
+- Direct channel inventory and native `youtube-transcript-api` fetched all 49 English caption sources without keys or paid credits. This overrides the historical caption-access result for this host only.
+- The old keyless youtube-transcript.ai endpoint now requires a free API key; do not rely on the older no-sign-up claim.
+- Video downloads and storyboards returned HTML error pages; browser playback was black. Slides are not captured. Details: `research/ai-impact/HANDOFF.md`.

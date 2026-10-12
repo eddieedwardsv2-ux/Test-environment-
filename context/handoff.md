@@ -46,3 +46,8 @@ Guardian paused until then (`context/current-focus.md`, top).
 
 ## Carried forward / dropped
 - From Codex's hand-off: browser plan (step 3), prototype and test before hosting (todo), Higgsfield/Katana (step 3, Open decisions), research links (Where the information lives), branch WIP (Open decisions). Desk `qm-frontend-design` and `shared-browser-design` closed with outcomes. Nothing dropped.
+
+## Additional handoff — AI Impact (2026-10-12)
+Direct channel-ingestion request: `research/ai-impact/README.md`. 49 public videos, 49 English caption sources processed, 342 derived records, searchable SQLite + JSON, topic backlinks. Captions worked through native `youtube-transcript-api`; historical keyless endpoint now asks for a key. No paid tools used.
+
+Visual downloads/storyboards returned HTML error pages and browser playback stayed black. No slides captured. 45 caption visual cues are a starting list, not full slide coverage. `research/ai-impact/HANDOFF.md` preserves evidence, retrieval rules and the next visual pass. Full request NOT VERIFIED. Prior handoff items above remain open.

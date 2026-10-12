@@ -95,3 +95,8 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 - **Mac items** (Obsidian, `3d-brain`, plugins, Codex check): all in `context/mac-day.md`, started when Charlie says "I'm on Mac"
 - vidIQ (after 5 videos), Canva thumbnails (after 3 videos)
 - Decorating business (parked, not deleted)
+
+## Latest direct request — AI Impact channel ingestion (2026-10-12)
+49 public caption sources processed into 342 timestamp-linked derived records, searchable SQLite and JSON: `research/ai-impact/README.md`. No slides captured; full request NOT VERIFIED.
+
+**Next step for this request:** finish visual capture in an environment with functioning video access, beginning with 45 caption cues and then reviewing all videos for unannounced slides. This creator corpus does not change the 90-day priority or promote unverified tool claims into the OS.

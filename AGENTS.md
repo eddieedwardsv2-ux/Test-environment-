@@ -76,6 +76,7 @@ Google Drive; ignore its old "START HERE" instructions. Existing files stay put.
 | Flashcards and lessons (parked) | `learning/` |
 | BTC technical-analysis newsletter | `projects/bitcoin-newsletter/README.md` (issues and editorial checks) |
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines marketing skills ↔ NewsJack study in `research/corey-haines/`) |
+| AI Impact knowledge database and its slide-ingestion status | `research/ai-impact/README.md`, topic index `research/ai-impact/index.md`; slides remain blocked |
 | Tools the OS can reach | `connections.md` (API guides in `references/`) |
 | Nate's kit licence | `THIRD-PARTY-NOTICES.md` |
 | ChatGPT copy of these rules | `exports/chatgpt-instructions.md` (update when this file or working-rules change) |
