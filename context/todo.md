@@ -107,3 +107,8 @@ decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
   council/watch-path branch commits need targeted comparison before declaring
   them missing: their current files already exist on main. Ancestor branches
   with historical/renamed paths are not automatically unfinished work.
+
+## Brand engagement and style-guide planning (direct request, 2026-10-12)
+- [x] Confirm AI/education focus; gather seven brand candidates and initial public sources. Preliminary evidence and user choice saved in context/handoff.md.
+- [ ] Complete matched YouTube engagement sample; separate audience size/reach from engagement, format, age and private retention metrics.
+- [ ] Inspect selected source content and propose three style-guide briefs with matched examples: practical teaching, visual explanation, evidence-led analysis. No finished guides or validated engagement ranking yet.
