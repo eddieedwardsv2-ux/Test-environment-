@@ -2,7 +2,24 @@
 
 Overwritten by `session-handoff`; history stays in `decisions.md` and Git.
 
-## Latest handoff — brand engagement and style-guide planning
+## Current continuation — brand style-guide drafts, 12 October 2026
+
+Research and three reviewable briefs are now saved:
+- `brainstorms/2026-10-12-brand-engagement-sample.json` (commit 133ce9e): seven brands, ten listed full-length videos each, 70 rows. Five brands have ten matched public-interaction records; Nate/Matt missing. Same count/format, different age ranges/snapshots; title/date matching without video IDs is provisional. No exhaustive biggest-brand or causal claim.
+- `brainstorms/2026-10-12-brand-style-guides.md` (commit 7557c42): practical teacher, visual explainer, evidence-led analyst. Each includes audience, voice, structure, proposed visuals, format adaptations, sample opening, reusable instruction and quality checks.
+- Remote contents fetched back exactly; JS checks: 7 channels, 70 rows, each ten, no flagged Shorts, cutoff held, 50 interaction rows, rates within 0–1. Full transcript/visual review and repo audit were not completed. No independent Guardian verdict; NOT VERIFIED for ranking, causal benefit and runtime guide quality.
+- AI/education remains Charlie's choice. No guide selected or activated. Existing browser/media/research tasks below preserved.
+
+### Pick up here
+1. Read the three briefs and their same-topic examples; use the brief appropriate to the requested output.
+2. Validate with the same verified topic/facts: one 250-word article and one 45–60-second script per style; test beginner understanding and next action. No publishing or paid tooling implied.
+3. Before promoting engagement rankings, resolve video IDs, missing Nate/Matt interaction data and age-matched measurements; before visual claims, inspect actual visuals. Run independent review and audit when available.
+
+The earlier handoff below is the pre-draft starting point; statements there that no guide exists are superseded by this section. No old continuation dropped.
+
+---
+
+## Previous handoff — brand engagement and style-guide planning
 **Written:** 12 October 2026, 11:30 UK, by ChatGPT/Codex. Charlie requested /sessions-handoff. Research paused before completed engagement analysis or style-guide drafts.
 
 ### Working on
