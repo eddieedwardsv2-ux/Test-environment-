@@ -1,0 +1,1185 @@
+{
+  "assessed_on": "2026-10-12",
+  "status": "EXPLORATORY; not an exhaustive ranking or a causal test",
+  "selection": "Latest ten listed non-Shorts uploads published on or before 2026-09-22, duration <=7200 seconds. Provider sample coverage may omit uploads. No fixed maximum age; snapshots differ.",
+  "limitations": [
+    "YouTube video IDs are not retained; matches used publication date, truncated title and approximate view count; same-title same-date Shorts/full-length ambiguity manually checked for 3Blue1Brown.",
+    "Views and subscribers from Prepublish snapshots (mostly Oct 6–12); interaction numerator and denominator together from SPEAKRJ (Oct 9–12). Exact counts may change.",
+    "Nate/Matt interaction fields missing, not zero.",
+    "No private watch time, retention, saves/shares or inference that writing caused engagement.",
+    "Visual motion and thumbnail layout were not inspected; draft visual rules are proposals."
+  ],
+  "channels": [
+    {
+      "handle": "kurzgesagt",
+      "name": "Kurzgesagt",
+      "subscribers": 25700000,
+      "rows": [
+        {
+          "title": "This Is What a Godlike Civilization Would Look Like",
+          "short": false,
+          "date": "Sep 22, 2026",
+          "length": "14:12",
+          "views": 8000000,
+          "interaction_snapshot": {
+            "date": "2026-09-22",
+            "title": "This Is What A Godlike Ci..",
+            "views": 8034493,
+            "likes": 157791,
+            "comments": 6802,
+            "interaction_rate": 0.020485797921536555,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "This Woman Cured Her Cancer with an Insane Method",
+          "short": false,
+          "date": "Sep 15, 2026",
+          "length": "15:14",
+          "views": 21000000,
+          "interaction_snapshot": {
+            "date": "2026-09-15",
+            "title": "This Woman Cured Her Canc..",
+            "views": 20991133,
+            "likes": 226029,
+            "comments": 11386,
+            "interaction_rate": 0.011310251809656963,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "Why Humanity Will Never Leave The Solar System",
+          "short": false,
+          "date": "Aug 4, 2026",
+          "length": "14:08",
+          "views": 10200000,
+          "interaction_snapshot": {
+            "date": "2026-08-04",
+            "title": "Why Humanity Will Never L..",
+            "views": 10227657,
+            "likes": 230850,
+            "comments": 16963,
+            "interaction_rate": 0.024229694054073186,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "How Are Memories Stored Inside Your Brain?",
+          "short": false,
+          "date": "Jun 16, 2026",
+          "length": "13:56",
+          "views": 3300000,
+          "interaction_snapshot": {
+            "date": "2026-06-16",
+            "title": "How Are Memories Stored I..",
+            "views": 3284949,
+            "likes": 117621,
+            "comments": 4437,
+            "interaction_rate": 0.03715674124621113,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "Why Earth Sucks Compared to the Planet Hestia",
+          "short": false,
+          "date": "May 26, 2026",
+          "length": "14:53",
+          "views": 7100000,
+          "interaction_snapshot": {
+            "date": "2026-05-26",
+            "title": "Why Earth Sucks Compared ..",
+            "views": 7152304,
+            "likes": 202781,
+            "comments": 13633,
+            "interaction_rate": 0.030257942056154213,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "The Uncomfortable Truth About Ozempic (Updated Version)",
+          "short": false,
+          "date": "May 19, 2026",
+          "length": "15:53",
+          "views": 6600000,
+          "interaction_snapshot": {
+            "date": "2026-05-19",
+            "title": "The Uncomfortable Truth A..",
+            "views": 6638890,
+            "likes": 155882,
+            "comments": 8988,
+            "interaction_rate": 0.024833970739084395,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "GERMANY IS OVER",
+          "short": false,
+          "date": "May 5, 2026",
+          "length": "14:05",
+          "views": 5100000,
+          "interaction_snapshot": {
+            "date": "2026-05-05",
+            "title": "GERMANY IS OVER",
+            "views": 5092156,
+            "likes": 224319,
+            "comments": 33153,
+            "interaction_rate": 0.05056247294858995,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "Our Minds Are Weirder than You Think",
+          "short": false,
+          "date": "Apr 21, 2026",
+          "length": "12:22",
+          "views": 2800000,
+          "interaction_snapshot": {
+            "date": "2026-04-21",
+            "title": "Our Minds Are Weirder Tha..",
+            "views": 2846066,
+            "likes": 113349,
+            "comments": 3844,
+            "interaction_rate": 0.04117718984731907,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "The Most Insane Megaproject You Never Heard About",
+          "short": false,
+          "date": "Mar 30, 2026",
+          "length": "13:06",
+          "views": 3600000,
+          "interaction_snapshot": {
+            "date": "2026-03-30",
+            "title": "The Most Insane Megaproje..",
+            "views": 3634633,
+            "likes": 119634,
+            "comments": 5182,
+            "interaction_rate": 0.03434074361840659,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        },
+        {
+          "title": "This Is the Scariest Place in The Universe",
+          "short": false,
+          "date": "Mar 10, 2026",
+          "length": "9:14",
+          "views": 8300000,
+          "interaction_snapshot": {
+            "date": "2026-03-10",
+            "title": "This Is The Scariest Plac..",
+            "views": 8335790,
+            "likes": 273007,
+            "comments": 10218,
+            "interaction_rate": 0.033976983585239075,
+            "source_url": "https://www.speakrj.com/audit/report/UCsXVk37bltHxD1rDPwtNM8Q/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/kurzgesagt"
+        }
+      ],
+      "n": 10,
+      "median_views": 6850000,
+      "newest": "Sep 22, 2026",
+      "oldest": "Mar 10, 2026",
+      "interaction_n": 10,
+      "median_interaction_rate": 0.03211746282069664
+    },
+    {
+      "handle": "veritasium",
+      "name": "Veritasium",
+      "subscribers": 21300000,
+      "rows": [
+        {
+          "title": "The Insane Real Engineering of the Nazi Enigma Machine",
+          "short": false,
+          "date": "Sep 21, 2026",
+          "length": "47:42",
+          "views": 17100000,
+          "interaction_snapshot": {
+            "date": "2026-09-21",
+            "title": "The Insane Real Engineeri..",
+            "views": 18279583,
+            "likes": 137297,
+            "comments": 6993,
+            "interaction_rate": 0.007893506104597681,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "We sent a camera to space to film the solar eclipse",
+          "short": false,
+          "date": "Aug 17, 2026",
+          "length": "22:45",
+          "views": 2700000,
+          "interaction_snapshot": {
+            "date": "2026-08-17",
+            "title": "We Sent A Camera To Space..",
+            "views": 2745833,
+            "likes": 67788,
+            "comments": 3315,
+            "interaction_rate": 0.025894874160227517,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "Is spider web really stronger than steel?",
+          "short": false,
+          "date": "Aug 2, 2026",
+          "length": "26:58",
+          "views": 9600000,
+          "interaction_snapshot": {
+            "date": "2026-08-02",
+            "title": "Is Spider Web Really Stro..",
+            "views": 9625562,
+            "likes": 142922,
+            "comments": 5962,
+            "interaction_rate": 0.015467564387409276,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "Why does every mammal get 1 billion heartbeats in their life?",
+          "short": false,
+          "date": "Jul 25, 2026",
+          "length": "35:32",
+          "views": 6600000,
+          "interaction_snapshot": {
+            "date": "2026-07-25",
+            "title": "Why Does Every Mammal Get..",
+            "views": 6607427,
+            "likes": 153294,
+            "comments": 10849,
+            "interaction_rate": 0.02484219651613253,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "The Scariest Chart in Electrical Engineering",
+          "short": false,
+          "date": "Jul 14, 2026",
+          "length": "39:44",
+          "views": 6100000,
+          "interaction_snapshot": {
+            "date": "2026-07-14",
+            "title": "The Scariest Chart In Ele..",
+            "views": 6249810,
+            "likes": 151073,
+            "comments": 7388,
+            "interaction_rate": 0.025354530777735643,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "We've Been Using The Wrong Science In Court For 50 years",
+          "short": false,
+          "date": "Jun 22, 2026",
+          "length": "23:22",
+          "views": 2700000,
+          "interaction_snapshot": {
+            "date": "2026-06-22",
+            "title": "We've Been Using The Wron..",
+            "views": 2672090,
+            "likes": 78343,
+            "comments": 4261,
+            "interaction_rate": 0.030913629406195152,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "We're 99.9% sure this pattern is true, but no one can prove it",
+          "short": false,
+          "date": "Jun 14, 2026",
+          "length": "41:30",
+          "views": 6500000,
+          "interaction_snapshot": {
+            "date": "2026-06-14",
+            "title": "We're 99.9% Sure This Pat..",
+            "views": 6536775,
+            "likes": 110710,
+            "comments": 5545,
+            "interaction_rate": 0.017784763893510178,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "Something is jamming GPS over Europe. Here's what we found",
+          "short": false,
+          "date": "Jun 5, 2026",
+          "length": "34:17",
+          "views": 12100000,
+          "interaction_snapshot": {
+            "date": "2026-06-05",
+            "title": "Something Is Jamming GPS ..",
+            "views": 12110452,
+            "likes": 294031,
+            "comments": 19984,
+            "interaction_rate": 0.025929255159097282,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "Google Maps is unreasonably fast. Let me explain",
+          "short": false,
+          "date": "May 30, 2026",
+          "length": "29:54",
+          "views": 8700000,
+          "interaction_snapshot": {
+            "date": "2026-05-30",
+            "title": "Google Maps Is Unreasonab..",
+            "views": 8710572,
+            "likes": 167847,
+            "comments": 5301,
+            "interaction_rate": 0.019877913872935096,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        },
+        {
+          "title": "The CIA's new tech doesn't make sense",
+          "short": false,
+          "date": "May 3, 2026",
+          "length": "21:18",
+          "views": 3300000,
+          "interaction_snapshot": {
+            "date": "2026-05-03",
+            "title": "The CIA's New Tech Doesn'..",
+            "views": 3289700,
+            "likes": 82646,
+            "comments": 6065,
+            "interaction_rate": 0.02696628871933611,
+            "source_url": "https://www.speakrj.com/audit/report/UCHnyfMqiRRG1u-2MsSQLbXA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/veritasium"
+        }
+      ],
+      "n": 10,
+      "median_views": 6550000,
+      "newest": "Sep 21, 2026",
+      "oldest": "May 3, 2026",
+      "interaction_n": 10,
+      "median_interaction_rate": 0.025098363646934088
+    },
+    {
+      "handle": "3blue1brown",
+      "name": "3Blue1Brown",
+      "subscribers": 8680000,
+      "rows": [
+        {
+          "title": "The last IMO problem AI could not solve",
+          "short": false,
+          "date": "Sep 18, 2026",
+          "length": "51:56",
+          "views": 2900000,
+          "interaction_snapshot": {
+            "date": "2026-09-18",
+            "title": "The Last IMO Problem AI C..",
+            "views": 2898129,
+            "likes": 30741,
+            "comments": 1706,
+            "interaction_rate": 0.01119584393931395,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "But what is cross-entropy? | Compression is Intelligence Part 2",
+          "short": false,
+          "date": "Jul 16, 2026",
+          "length": "33:51",
+          "views": 850800,
+          "interaction_snapshot": {
+            "date": "2026-07-16",
+            "title": "But What Is Cross-entropy..",
+            "views": 850437,
+            "likes": 21956,
+            "comments": 962,
+            "interaction_rate": 0.026948498242668182,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "Reinventing Entropy | Compression is Intelligence Part 1",
+          "short": false,
+          "date": "Jun 7, 2026",
+          "length": "32:20",
+          "views": 1600000,
+          "interaction_snapshot": {
+            "date": "2026-06-07",
+            "title": "Reinventing Entropy | Com..",
+            "views": 1625798,
+            "likes": 54913,
+            "comments": 2357,
+            "interaction_rate": 0.035225778356228754,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "How (and why) to take a logarithm of an image",
+          "short": false,
+          "date": "Mar 22, 2026",
+          "length": "44:52",
+          "views": 2300000,
+          "interaction_snapshot": {
+            "date": "2026-03-22",
+            "title": "How (and Why) To Take A L..",
+            "views": 2272772,
+            "likes": 82152,
+            "comments": 3731,
+            "interaction_rate": 0.0377877763365617,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "The most beautiful formula not enough people understand",
+          "short": false,
+          "date": "Feb 27, 2026",
+          "length": "1:00:24",
+          "views": 1500000,
+          "interaction_snapshot": {
+            "date": "2026-02-27",
+            "title": "The Most Beautiful Formul..",
+            "views": 1534021,
+            "likes": 45173,
+            "comments": 2541,
+            "interaction_rate": 0.031103876674439267,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "Why you can't comb a hairy ball, and why we care",
+          "short": false,
+          "date": "Jan 31, 2026",
+          "length": "29:40",
+          "views": 3600000,
+          "interaction_snapshot": {
+            "date": "2026-01-31",
+            "title": "Why You Can't Comb A Hair..",
+            "views": 3568810,
+            "likes": 94921,
+            "comments": 4078,
+            "interaction_rate": 0.02774005901126706,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "Why Laplace transforms are so useful",
+          "short": false,
+          "date": "Nov 5, 2025",
+          "length": "23:05",
+          "views": 837300,
+          "interaction_snapshot": {
+            "date": "2025-11-05",
+            "title": "Why Laplace Transforms Ar..",
+            "views": 837139,
+            "likes": 25097,
+            "comments": 898,
+            "interaction_rate": 0.03105219085480428,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "But what is a Laplace Transform?",
+          "short": false,
+          "date": "Oct 12, 2025",
+          "length": "34:41",
+          "views": 2000000,
+          "interaction_snapshot": {
+            "date": "2025-10-12",
+            "title": "But What Is A Laplace Tra..",
+            "views": 2000363,
+            "likes": 56390,
+            "comments": 1824,
+            "interaction_rate": 0.029101718038176072,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "The Physics of Euler's Formula | Laplace Transform Prelude",
+          "short": false,
+          "date": "Oct 5, 2025",
+          "length": "27:49",
+          "views": 1200000,
+          "interaction_snapshot": {
+            "date": "2025-10-05",
+            "title": "The Physics Of Euler's Fo..",
+            "views": 1211175,
+            "likes": 41537,
+            "comments": 1376,
+            "interaction_rate": 0.035430883233223937,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        },
+        {
+          "title": "What was Euclid really doing? | Guest video by Ben Syversen",
+          "short": false,
+          "date": "Sep 18, 2025",
+          "length": "33:29",
+          "views": 807100,
+          "interaction_snapshot": {
+            "date": "2025-09-18",
+            "title": "What Was Euclid Really Do..",
+            "views": 807031,
+            "likes": 26667,
+            "comments": 1395,
+            "interaction_rate": 0.034771898477258,
+            "source_url": "https://www.speakrj.com/audit/report/UCYO_jab_esuFRV4b17AJtAw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/3blue1brown"
+        }
+      ],
+      "n": 10,
+      "median_views": 1550000,
+      "newest": "Sep 18, 2026",
+      "oldest": "Sep 18, 2025",
+      "interaction_n": 10,
+      "median_interaction_rate": 0.031078033764621774
+    },
+    {
+      "handle": "fireship",
+      "name": "Fireship",
+      "subscribers": 4290000,
+      "rows": [
+        {
+          "title": "An ex-OpenAI researcher just deleted language from the LLM...",
+          "short": false,
+          "date": "Sep 21, 2026",
+          "length": "5:27",
+          "views": 2900000,
+          "interaction_snapshot": {
+            "date": "2026-09-21",
+            "title": "An Ex-OpenAI Researcher J..",
+            "views": 2968465,
+            "likes": 31556,
+            "comments": 1312,
+            "interaction_rate": 0.01107238926515893,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "Did Google just kickstart the intelligence explosion?",
+          "short": false,
+          "date": "Sep 17, 2026",
+          "length": "4:59",
+          "views": 2000000,
+          "interaction_snapshot": {
+            "date": "2026-09-17",
+            "title": "Did Google Just Kickstart..",
+            "views": 1979958,
+            "likes": 25962,
+            "comments": 1618,
+            "interaction_rate": 0.01392958840541062,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "Anthropic researchers are quitting... and now we know why",
+          "short": false,
+          "date": "Sep 15, 2026",
+          "length": "6:17",
+          "views": 2700000,
+          "interaction_snapshot": {
+            "date": "2026-09-15",
+            "title": "Anthropic Researchers Are..",
+            "views": 2766471,
+            "likes": 37580,
+            "comments": 2741,
+            "interaction_rate": 0.014574886199783045,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "OpenAI's biggest math breakthrough is getting ugly...",
+          "short": false,
+          "date": "Sep 11, 2026",
+          "length": "5:45",
+          "views": 3400000,
+          "interaction_snapshot": {
+            "date": "2026-09-11",
+            "title": "OpenAI's Biggest Math Bre..",
+            "views": 3428383,
+            "likes": 30696,
+            "comments": 2179,
+            "interaction_rate": 0.009589068665898764,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "I built the same game with Astra and Fable 5.1... only one was fun",
+          "short": false,
+          "date": "Sep 9, 2026",
+          "length": "6:08",
+          "views": 2900000,
+          "interaction_snapshot": {
+            "date": "2026-09-09",
+            "title": "I Built The Same Game Wit..",
+            "views": 2958548,
+            "likes": 32166,
+            "comments": 1640,
+            "interaction_rate": 0.011426551132515004,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "5 open source tools that replaced my $320/mo AI stack...",
+          "short": false,
+          "date": "Sep 7, 2026",
+          "length": "5:26",
+          "views": 1300000,
+          "interaction_snapshot": {
+            "date": "2026-09-07",
+            "title": "5 Open Source Tools That ..",
+            "views": 1266708,
+            "likes": 19706,
+            "comments": 955,
+            "interaction_rate": 0.016310783542852814,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "Did OpenAI actually build AGI? GPT-6 Astra first look",
+          "short": false,
+          "date": "Sep 4, 2026",
+          "length": "7:27",
+          "views": 4200000,
+          "interaction_snapshot": {
+            "date": "2026-09-04",
+            "title": "Did OpenAI Actually Build..",
+            "views": 4225863,
+            "likes": 46218,
+            "comments": 2819,
+            "interaction_rate": 0.011604020291239919,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "The most interesting hack in history just got weirder...",
+          "short": false,
+          "date": "Sep 2, 2026",
+          "length": "6:46",
+          "views": 1900000,
+          "interaction_snapshot": {
+            "date": "2026-09-02",
+            "title": "The Most Interesting Hack..",
+            "views": 1880913,
+            "likes": 28687,
+            "comments": 1927,
+            "interaction_rate": 0.016276138237122078,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "The mystery is solved... and the answer is 40x cheaper than Claude",
+          "short": false,
+          "date": "Sep 1, 2026",
+          "length": "5:33",
+          "views": 1800000,
+          "interaction_snapshot": {
+            "date": "2026-09-01",
+            "title": "The Mystery Is Solved... ..",
+            "views": 1766137,
+            "likes": 22700,
+            "comments": 781,
+            "interaction_rate": 0.013295118102389565,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        },
+        {
+          "title": "The most expensive software bug in history...",
+          "short": false,
+          "date": "Aug 27, 2026",
+          "length": "5:19",
+          "views": 1300000,
+          "interaction_snapshot": {
+            "date": "2026-08-27",
+            "title": "The Most Expensive Softwa..",
+            "views": 1324838,
+            "likes": 17483,
+            "comments": 528,
+            "interaction_rate": 0.01359486971237238,
+            "source_url": "https://www.speakrj.com/audit/report/UCsBjURrPoezykLs9EqgamOA/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/fireship"
+        }
+      ],
+      "n": 10,
+      "median_views": 2350000,
+      "newest": "Sep 21, 2026",
+      "oldest": "Aug 27, 2026",
+      "interaction_n": 10,
+      "median_interaction_rate": 0.013444993907380973
+    },
+    {
+      "handle": "nateherk",
+      "name": "Nate Herk",
+      "subscribers": 1060000,
+      "rows": [
+        {
+          "title": "I Tested Jev on 12 Real Use Cases. My Honest Thoughts.",
+          "short": false,
+          "date": "Sep 19, 2026",
+          "length": "16:08",
+          "views": 361100,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "How to Build Codex Skills Better than 99% of People",
+          "short": false,
+          "date": "Sep 19, 2026",
+          "length": "27:05",
+          "views": 48500,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "Anthropic’s CEO: How to Build a 1 Person Business with Claude",
+          "short": false,
+          "date": "Sep 18, 2026",
+          "length": "11:40",
+          "views": 172100,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "This ONE GPT-6 Astra Skill Replaces Your Higgsfield Subscription",
+          "short": false,
+          "date": "Sep 18, 2026",
+          "length": "12:01",
+          "views": 118600,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "How to Build GPT-6 Astra Automations (that don’t eat your usage limit)",
+          "short": false,
+          "date": "Sep 16, 2026",
+          "length": "35:26",
+          "views": 70600,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "Grok Bot Manages My Inbox (and has its own)",
+          "short": false,
+          "date": "Sep 16, 2026",
+          "length": "14:29",
+          "views": 46400,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "AI News in 10 mins: 10% chance AI kills all humans",
+          "short": false,
+          "date": "Sep 13, 2026",
+          "length": "10:26",
+          "views": 40200,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "Anthropic Engineer Explains: What to Build Instead of AI Agents",
+          "short": false,
+          "date": "Sep 13, 2026",
+          "length": "9:48",
+          "views": 356100,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "How to Actually Choose the Right AI Agent",
+          "short": false,
+          "date": "Sep 11, 2026",
+          "length": "34:09",
+          "views": 72100,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        },
+        {
+          "title": "Thank You for 1M Subscribers",
+          "short": false,
+          "date": "Sep 9, 2026",
+          "length": "6:40",
+          "views": 37100,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/nateherk"
+        }
+      ],
+      "n": 10,
+      "median_views": 71350,
+      "newest": "Sep 19, 2026",
+      "oldest": "Sep 9, 2026",
+      "interaction_n": 0,
+      "median_interaction_rate": null
+    },
+    {
+      "handle": "mreflow",
+      "name": "Matt Wolfe",
+      "subscribers": 1020000,
+      "rows": [
+        {
+          "title": "Claude Opus 5.5 Didn’t Need to Go This Hard",
+          "short": false,
+          "date": "Sep 22, 2026",
+          "length": "18:17",
+          "views": 221200,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "AI News: The AI Slowdown: What You Need to Know",
+          "short": false,
+          "date": "Sep 18, 2026",
+          "length": "27:15",
+          "views": 118100,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "He Built The Ultimate Spy Tool (Free and Open-Source)",
+          "short": false,
+          "date": "Sep 16, 2026",
+          "length": "21:48",
+          "views": 235300,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "AI News: The AI World is REALLY Scared Right Now",
+          "short": false,
+          "date": "Sep 11, 2026",
+          "length": "35:45",
+          "views": 216100,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "I Built A Tool To Detect AI Video (You Can Have It)",
+          "short": false,
+          "date": "Sep 9, 2026",
+          "length": "20:11",
+          "views": 64300,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "AI News: The Most Insane Week So Far This Year!",
+          "short": false,
+          "date": "Sep 4, 2026",
+          "length": "30:56",
+          "views": 170400,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "GPT-6 Astra Is Finally Here (And It’s REALLY Good)",
+          "short": false,
+          "date": "Sep 3, 2026",
+          "length": "19:32",
+          "views": 501200,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "Why Aren't People Talking About This Google Model?",
+          "short": false,
+          "date": "Sep 3, 2026",
+          "length": "26:29",
+          "views": 98300,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "AI News: OpenAI Made a Massive Move Against NVIDIA",
+          "short": false,
+          "date": "Aug 28, 2026",
+          "length": "29:31",
+          "views": 141900,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        },
+        {
+          "title": "I Built a FREE App That Runs Your Entire Business",
+          "short": false,
+          "date": "Aug 26, 2026",
+          "length": "27:37",
+          "views": 112900,
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/mreflow"
+        }
+      ],
+      "n": 10,
+      "median_views": 156150,
+      "newest": "Sep 22, 2026",
+      "oldest": "Aug 26, 2026",
+      "interaction_n": 0,
+      "median_interaction_rate": null
+    },
+    {
+      "handle": "aiexplained-official",
+      "name": "AI Explained",
+      "subscribers": 455000,
+      "rows": [
+        {
+          "title": "What AI Researchers Saw, Before Their Demand to ‘Pace’ AI",
+          "short": false,
+          "date": "Sep 16, 2026",
+          "length": "24:53",
+          "views": 234000,
+          "interaction_snapshot": {
+            "date": "2026-09-16",
+            "title": "What AI Researchers S..",
+            "views": 233926,
+            "likes": 4716,
+            "comments": 1009,
+            "interaction_rate": 0.024473551464993203,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "GPT 6 Astra, so good even OpenAI are worried",
+          "short": false,
+          "date": "Sep 4, 2026",
+          "length": "29:05",
+          "views": 855400,
+          "interaction_snapshot": {
+            "date": "2026-09-04",
+            "title": "GPT 6 Astra, So Good Even..",
+            "views": 855417,
+            "likes": 10717,
+            "comments": 1343,
+            "interaction_rate": 0.014098387102430745,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "Sam Altman :‘AGI in 2026’, just as Models Start to [Mis]Train Themselves",
+          "short": false,
+          "date": "Aug 27, 2026",
+          "length": "23:41",
+          "views": 209200,
+          "interaction_snapshot": {
+            "date": "2026-08-27",
+            "title": "Sam Altman :‘AGI In 2..",
+            "views": 209142,
+            "likes": 3328,
+            "comments": 711,
+            "interaction_rate": 0.019312237618460185,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "AI is getting a little out of control",
+          "short": false,
+          "date": "Aug 6, 2026",
+          "length": "31:43",
+          "views": 110400,
+          "interaction_snapshot": {
+            "date": "2026-08-06",
+            "title": "AI Is Getting A Little Ou..",
+            "views": 110396,
+            "likes": 3865,
+            "comments": 688,
+            "interaction_rate": 0.04124243632015653,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "GPT-6 Goes Rogue? The HuggingFace Incident, Sans Hype",
+          "short": false,
+          "date": "Jul 22, 2026",
+          "length": "14:36",
+          "views": 128600,
+          "interaction_snapshot": {
+            "date": "2026-07-22",
+            "title": "GPT-6 Goes Rogue? The Hug..",
+            "views": 128620,
+            "likes": 4224,
+            "comments": 714,
+            "interaction_rate": 0.03839216296065931,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "A Model Explosion: GPT 5.6 Sol, Grok 4.5 and Meta Muse Rewrite the Rules",
+          "short": false,
+          "date": "Jul 10, 2026",
+          "length": "17:34",
+          "views": 89000,
+          "interaction_snapshot": {
+            "date": "2026-07-10",
+            "title": "A Model Explosion: GPT 5...",
+            "views": 89039,
+            "likes": 3044,
+            "comments": 328,
+            "interaction_rate": 0.03787104527229641,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "Fable 5 vs GPT 5.6 Sol: The Early Results",
+          "short": false,
+          "date": "Jul 2, 2026",
+          "length": "18:03",
+          "views": 122200,
+          "interaction_snapshot": {
+            "date": "2026-07-02",
+            "title": "Fable 5 Vs GPT 5.6 Sol: T..",
+            "views": 122192,
+            "likes": 2871,
+            "comments": 418,
+            "interaction_rate": 0.02691665575487757,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "Claude Fable Blocked - 11 Quiet Details on What’s Next",
+          "short": false,
+          "date": "Jun 14, 2026",
+          "length": "13:21",
+          "views": 77300,
+          "interaction_snapshot": {
+            "date": "2026-06-14",
+            "title": "Claude Fable Blocked - ..",
+            "views": 77332,
+            "likes": 2876,
+            "comments": 540,
+            "interaction_rate": 0.044173175399575854,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "Claude Fable 5 - Full 319 page Breakdown",
+          "short": false,
+          "date": "Jun 10, 2026",
+          "length": "34:00",
+          "views": 115500,
+          "interaction_snapshot": {
+            "date": "2026-06-10",
+            "title": "Claude Fable 5 - Full 319..",
+            "views": 115514,
+            "likes": 4508,
+            "comments": 399,
+            "interaction_rate": 0.042479699430372074,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        },
+        {
+          "title": "New Claude Opus 4.8: 15 Things You May’ve Missed",
+          "short": false,
+          "date": "May 29, 2026",
+          "length": "22:29",
+          "views": 87500,
+          "interaction_snapshot": {
+            "date": "2026-05-29",
+            "title": "New Claude Opus 4.8: 15..",
+            "views": 87457,
+            "likes": 3207,
+            "comments": 269,
+            "interaction_rate": 0.03974524623529277,
+            "source_url": "https://www.speakrj.com/audit/report/UCNJ1Ymd5yFuUPtn21xtRbbw/youtube/media-stats"
+          },
+          "video_id": null,
+          "source_url": "https://prepublish.ai/youtube-channel/aiexplained-official"
+        }
+      ],
+      "n": 10,
+      "median_views": 118850,
+      "newest": "Sep 16, 2026",
+      "oldest": "May 29, 2026",
+      "interaction_n": 10,
+      "median_interaction_rate": 0.038131604116477855
+    }
+  ]
+}
