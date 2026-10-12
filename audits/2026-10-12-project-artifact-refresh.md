@@ -42,3 +42,11 @@ journey preview, corrected in this run. The retired Guardian gate is not restore
 Other project gates remain accurate: no beginner setup or style-reader success
 invented; no media/browser branch merged; no slide coverage or full corpus
 completeness promoted. See the project review and preserved handoff continuations.
+
+## Sign-in interruption — 12 October, 19:30 UK
+
+The secure browserAuth request stalled and returned a tool timeout. The browser
+runtime then lost its retained tab binding, so sign-in success is unknown;
+automated credential entry stopped. No original Claude page was republished.
+The published private Artifact Desk and saved GitHub updates were completed
+before this request. Do not repeat the long sign-in request automatically.
