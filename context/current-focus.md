@@ -72,6 +72,7 @@ they are, but no Nick work while the set-up kit is the priority (v1 done; kept p
 **Everything unfinished, in one list:** `context/todo.md`.
 
 ## Waiting on Charlie
+- AI Impact ingestion commit `06acbb112e4a5b182aa31c1fdb4e87edbe1b7156` needs the repo’s next Guardian review. Caption-derived corpus is saved; slides remain blocked and result is NOT VERIFIED. No payment or account decision is needed.
 - Answered 9 Oct late evening: both browser routes (Claude's own browser on Mac day; Codex
   writes its shared phone-browser plan next), TinyFish removed, Higgsfield sign-in moved to
   Mac day (Charlie couldn't find a way from the phone). Open: `qm-frontend-design` (preview page to compare).
