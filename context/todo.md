@@ -112,3 +112,7 @@ decisions (`audits/2026-10-08-nate-channel.md`); `tools/` → `scripts/` rename.
 - [x] Write all three topics in all three styles: nine articles and nine short scripts (`brainstorms/2026-10-12-style-guide-test-drafts.md`); ranges and fixed inputs checked, author semantic review recorded.
 - [ ] Collect real beginner answers with the fixed answer keys and blind style comparison. No responses yet; understanding, duration and independent review remain NOT VERIFIED. Choose/activate a guide only after useful results.
 - [ ] Complete the outstanding factual/visual/reader checks and page updates; no mandatory separate-reviewer verdict.
+
+## Project/artifact refresh (12 October 2026)
+- [x] Reviewed current project records; corrected stale journey parking, setup-plan version and retired tool route; rebuilt sources and published the existing private Artifact Desk with 29 entries.
+- [ ] Republish the nine original Claude pages identified by `tools/pages_status.py`; current browser requires Claude sign-in. Updated sources are saved; no publication fingerprint is marked. See `audits/2026-10-12-project-artifact-refresh.md`.

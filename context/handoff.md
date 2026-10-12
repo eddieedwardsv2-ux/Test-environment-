@@ -1,5 +1,29 @@
 # Session hand-off
 
+## Latest continuation — project and artifact refresh, 12 October 2026
+
+Charlie requested project review and artifact updates. Current project evidence
+is in `projects/status-review-2026-10-12.md`; receipts in
+`audits/2026-10-12-project-artifact-refresh.md`.
+Corrected project records and rebuilt page sources are on main (`eb8e16b`).
+The existing private Artifact Desk is updated and published successfully:
+https://charlies-artifact-desk.vocalox3.chatgpt.site . It has 29 entries and
+preserves original links, saved browser preferences and owner-only access.
+
+Fresh main audit: 0 errors, 9 original-Claude-page publication warnings.
+Nine original pages still need actual republication; their updated sources
+are saved. The current browser reaches Claude sign-in, with no publishing
+connector. No publication fingerprint is marked. Browser/device rendering and
+original account data are unverified. The setup-kit priority and every project
+continuation below remain intact. Media/browser branches remain unmerged.
+
+**Pick up here:** finish authenticated original Claude republication using
+`system/pages.md`, then mark only pages actually republished. Use the updated
+Desk and project review to select authorised work. Mac plugin loading remains
+open; no repeat merge/tool approvals are required.
+
+---
+
 ## Latest continuation — PR #4 merged, 12 October 2026
 
 Charlie explicitly approved merging PR #4. It was marked ready and merged

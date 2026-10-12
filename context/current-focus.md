@@ -22,7 +22,7 @@ Plugin activation and practical-use receipts: `audits/2026-10-12-tool-policy-and
 
 **Hand-off for a new session:** `context/handoff.md` (read it first).
 
-**Next step (merge completed, 2026-10-12):** Charlie approved PR #4; merged as `4f5aa1c`. Removed policies and approved-plugin configuration are now on main. Fresh main audit: 0 errors, 8 page-publication warnings; doctor: no warnings. Use approved tools directly. Actual Mac/plugin load and eight external page publications remain open; see `context/handoff.md`.
+**Next step (artifact refresh, 2026-10-12):** current project records and rebuilt page sources are on main; the private Artifact Desk is published with 29 entries. Fresh audit: 0 errors, 9 original-Claude-page publication warnings. Finish actual original-page republication on an authenticated Claude host; Mac plugin loading remains open. PR #4 is merged and needs no repeat approval. Receipts: `audits/2026-10-12-project-artifact-refresh.md`.
 
 **Continuation (style-guide trials, 2026-10-12):** all nine articles and nine scripts are saved in `brainstorms/2026-10-12-style-guide-test-drafts.md` with fact packets and checks alongside. Collect real beginner answers and compare understanding separately from preference. Draft checks are author review, not audience or independent approval. Current continuation: `context/handoff.md`. Existing browser/video work and the 90-day priority remain unchanged.
 
