@@ -32,7 +32,7 @@
  "research/nate-herk/brain/map/enate.html": {
   "page": "Architect (Nate)",
   "url": "https://claude.ai/artifact/7zEayuFD7i4FNrMqzoM7KJ",
-  "sha256": "eed95be45df36b5e",
+  "sha256": "8a666cab77a38cf3",
   "published": "2026-10-15"
  },
  "system/journey-video/journey-video.html": {
@@ -50,13 +50,13 @@
  "research/nate-herk/brain/map/brain-map.html": {
   "page": "Brain dashboard",
   "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
-  "sha256": "c584e23d22f8cb70",
+  "sha256": "cdef52a78b7ae2c8",
   "published": "2026-10-15"
  },
  "system/merge-map/merge-map.html": {
   "page": "Nate-first map",
   "url": "https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky",
-  "sha256": "2312f6ec30fc3822",
+  "sha256": "1306bc18e2e64251",
   "published": "2026-10-15"
  },
  "projects/ai-os-setup-kit/compare/kit-compare.html": {
