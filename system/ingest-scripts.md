@@ -30,6 +30,23 @@ out of it rather than moving them.
   `codex/next-new-thing-tools-audit-2026-10-15`. It's a test of a scraping
   tool, not an ingest script, but it's saved on GitHub there.
 
+## ChatGPT and Codex ingests (checked 15 Oct)
+The data is saved, but the code that made two of the biggest ingests is not.
+I searched every branch and the full history, and neither script exists anywhere in git.
+| Ingest | Data on main | Script saved? |
+|---|---|---|
+| AI Impact, 49 videos into 342 knowledge records | `research/ai-impact/` (records, SQLite, per-video notes) | **No.** It ran in ChatGPT's own sandbox with `youtube-transcript-api` |
+| Official Anthropic/OpenAI docs catalogue | `research/official-docs/` (SQLite, JSON, topic map) | **No.** Same |
+| Nate video-editing workflow notes (7jHXoPGnA4c) | transcript on main; notes file only on branch `chatgpt/nate-video-editing-ingest-2026-10-10` | n/a (notes only) |
+| Journey Short video tools (`align_source.py`, `edit.js`, `inspect_video.py`, `prepare_audio.py`, `transcribe_check.py`) | branch `chatgpt/nate-video-editing-ingest-2026-10-10` (PR #3) | Yes, on that branch |
+
+Also from `research/ai-impact/HANDOFF.md`: on 12 Oct, `research/get_transcript.py`'s
+free service started asking for an API key. Test it before relying on it in a new repo.
+
+To recover the two missing scripts, ask ChatGPT/Codex in the chat that did the
+ingest: "Commit the exact scripts you used to fetch and build research/ai-impact
+and research/official-docs into research/<folder>/scripts/ on a new branch."
+
 ## When copying
 Paths inside the scripts assume this repo's layout (`research/<creator>/`,
 `research/hands/`). If the new repo uses a different layout, such as
