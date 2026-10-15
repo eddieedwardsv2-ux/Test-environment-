@@ -44,19 +44,19 @@
  "system/reader/reader.html": {
   "page": "Reading Room",
   "url": "https://claude.ai/artifact/E5Skrh9G7ey8DpAUDGXbds",
-  "sha256": "9333f8f626478d66",
+  "sha256": "004ba6fa8d3c60d0",
   "published": "2026-10-15"
  },
  "research/nate-herk/brain/map/brain-map.html": {
   "page": "Brain dashboard",
   "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
-  "sha256": "253745f4a3892888",
+  "sha256": "c584e23d22f8cb70",
   "published": "2026-10-15"
  },
  "system/merge-map/merge-map.html": {
   "page": "Nate-first map",
   "url": "https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky",
-  "sha256": "fc9e7b7553c569e8",
+  "sha256": "2312f6ec30fc3822",
   "published": "2026-10-15"
  },
  "projects/ai-os-setup-kit/compare/kit-compare.html": {
