@@ -84,6 +84,7 @@ Start at the relevant mini-index, select the needed sections/records, then read 
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines ↔ NewsJack in `research/corey-haines/`; five-week poteto/Karpathy/Boris comparison in `research/x-five-weeks/README.md`) |
 | AI Impact knowledge database and its slide-ingestion status | `research/ai-impact/README.md`, topic index `research/ai-impact/index.md`; slides remain blocked |
 | Official Anthropic/OpenAI model docs and educational reference coverage | `research/official-docs/topics.md` (small task map), `research/official-docs/README.md` (coverage); check current official pages before applying model/API facts |
+| Every ingest script and skill (copy list for a new repo) | `system/ingest-scripts.md` |
 | Tools the OS can reach | `connections.md` (API guides in `references/`); approved five-plugin setup/use receipts: `audits/2026-10-12-tool-policy-and-plugins.md` |
 | Nate's kit licence | `THIRD-PARTY-NOTICES.md` |
 | ChatGPT copy of these rules | `exports/chatgpt-instructions.md` (update when this file or working-rules change) |
