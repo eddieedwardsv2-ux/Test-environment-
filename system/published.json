@@ -8,8 +8,8 @@
  "system/system-map/system-map.html": {
   "page": "System map",
   "url": "https://claude.ai/artifact/EjVEwU5bNAoU99FPbYSHDh",
-  "sha256": "5b05f49a8bdda991",
-  "published": "2026-10-09"
+  "sha256": "6e30f261cb07a34c",
+  "published": "2026-10-15"
  },
  "system/voice-practice/voice-practice.html": {
   "page": "Voice Gym",
@@ -21,43 +21,43 @@
   "page": "Quartermaster",
   "url": "https://claude.ai/artifact/QVni63FtP7cG1z9UrajfCL",
   "sha256": "ee41e360c7722f96",
-  "published": "2026-10-10"
+  "published": "2026-10-15"
  },
  "system/guide/guide.html": {
   "page": "OS Guide",
   "url": "https://claude.ai/artifact/UMdY5JYymKneEhi9ZLhewa",
-  "sha256": "0bc96bccb881f892",
-  "published": "2026-10-09"
+  "sha256": "f9f963570526b098",
+  "published": "2026-10-15"
  },
  "research/nate-herk/brain/map/enate.html": {
   "page": "Architect (Nate)",
   "url": "https://claude.ai/artifact/7zEayuFD7i4FNrMqzoM7KJ",
-  "sha256": "76e4a6f2e996ed41",
-  "published": "2026-10-10"
+  "sha256": "eed95be45df36b5e",
+  "published": "2026-10-15"
  },
  "system/journey-video/journey-video.html": {
   "page": "Journey video drafts",
   "url": "https://claude.ai/artifact/83pyWDYaEvNmEx8oXP4dX2",
-  "sha256": "3e2dd68b40af9a92",
-  "published": "2026-10-09"
+  "sha256": "6f0b727d4e22f6ab",
+  "published": "2026-10-15"
  },
  "system/reader/reader.html": {
   "page": "Reading Room",
   "url": "https://claude.ai/artifact/E5Skrh9G7ey8DpAUDGXbds",
-  "sha256": "695a43989093a5b6",
-  "published": "2026-10-10"
+  "sha256": "9333f8f626478d66",
+  "published": "2026-10-15"
  },
  "research/nate-herk/brain/map/brain-map.html": {
   "page": "Brain dashboard",
   "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
-  "sha256": "68a3f6c488ba8212",
-  "published": "2026-10-10"
+  "sha256": "253745f4a3892888",
+  "published": "2026-10-15"
  },
  "system/merge-map/merge-map.html": {
   "page": "Nate-first map",
   "url": "https://claude.ai/artifact/BM1CEX52wfMKT5G4B8X6ky",
-  "sha256": "fb98e07ecb0e118d",
-  "published": "2026-10-10"
+  "sha256": "fc9e7b7553c569e8",
+  "published": "2026-10-15"
  },
  "projects/ai-os-setup-kit/compare/kit-compare.html": {
   "page": "Kit Compare",
@@ -74,7 +74,7 @@
  "system/guide-preview/guide-preview.html": {
   "page": "OS Guide, new look",
   "url": "https://claude.ai/artifact/WjXLNv4SiTPSDEzuHH8Abe",
-  "sha256": "91bde27262995ea9",
-  "published": "2026-10-09"
+  "sha256": "bdd00af960e52595",
+  "published": "2026-10-15"
  }
 }

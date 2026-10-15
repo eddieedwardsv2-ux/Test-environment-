@@ -47,4 +47,4 @@ Their "In your repo" sections name `MISSION.md` and `NOTES.md` from the first te
 
 ## Project/status refresh — 12 October 2026
 
-Current project evidence: `projects/status-review-2026-10-12.md`. The existing private Artifact Desk is at https://charlies-artifact-desk.vocalox3.chatgpt.site. Its inventory and status can be refreshed here; it opens the original Claude artifacts so their controls and databases stay intact. Original Claude publication remains separate: this browser reaches sign-in and no ArtifactData/publishing capability is exposed. Never mark a source published because it was rebuilt or linked from the Desk.
+Current project evidence: `projects/status-review-2026-10-12.md`. The existing private Artifact Desk is at https://charlies-artifact-desk.vocalox3.chatgpt.site. Its inventory and status can be refreshed here; it opens the original Claude artifacts so their controls and databases stay intact. Original Claude pages were republished from a Claude session on 15 October (receipt in `audits/2026-10-12-project-artifact-refresh.md`). Never mark a source published because it was rebuilt or linked from the Desk.

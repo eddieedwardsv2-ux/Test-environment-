@@ -65,3 +65,16 @@ Use the supported manual browser sign-in handoff instead of repeating the
 stalled credential request. Verify a positive signed-in signal before any
 artifact update; no passwords or codes in chat. All nine original-page
 publications remain pending. Earlier delivered dashboard/source updates stand.
+
+## Original-page republication — 15 October, 13:40 UK
+
+Done from an authenticated Claude session. Before each publish the live page
+was read and compared with the repo: each matched an earlier repo version
+exactly (only the host's 3 wrapper lines differ), so no in-page content was
+overwritten. Page databases and declared capabilities were carried forward.
+Republished: OS Guide, System map, Quartermaster, Architect (Nate), Charlie's
+Brain, Nate-first map, Reading Room, OS Guide new look, Journey video drafts.
+System map page states changed from "source updated; republish" to "current".
+`tools/pages_status.py`: 0 behind. `tools/audit.py`: 0 errors, 13 warnings
+(was 23; remaining are unreachable research notes, unrelated). Phone
+rendering not checked in this session.
