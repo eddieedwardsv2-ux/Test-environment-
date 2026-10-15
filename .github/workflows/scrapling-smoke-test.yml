@@ -1,0 +1,38 @@
+name: Scrapling isolated smoke test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scrapling:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Scrapling isolated
+        run: |
+          python -m venv /tmp/scrapling-audit-venv
+          . /tmp/scrapling-audit-venv/bin/activate
+          python -m pip install --disable-pip-version-check 'scrapling[shell]'
+          python -m pip freeze > /tmp/scrapling-dependencies.txt
+      - name: Parse local fixture (no external scraping)
+        run: |
+          . /tmp/scrapling-audit-venv/bin/activate
+          python - <<'PY'
+          from scrapling.parser import Selector
+          html = '<html><body><h1>Fixture Test</h1><p class="value">Pass</p></body></html>'
+          doc = Selector(text=html)
+          assert doc.css('h1::text').get() == 'Fixture Test'
+          assert doc.css('.value::text').get() == 'Pass'
+          print('PASS: local HTML extraction')
+          PY
+      - name: Record dependencies
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrapling-dependency-snapshot
+          path: /tmp/scrapling-dependencies.txt
+          if-no-files-found: warn
