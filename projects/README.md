@@ -10,6 +10,7 @@ Deliverables live here.
 | `ai-os-setup-kit/` | the 90-day priority (paused until the first friend set-up) |
 | `youtube-channel/` | real r5 journey Short produced on media branch / PR #3; remaining checks and integration open |
 | `bitcoin-newsletter/` | side project, only when Charlie asks |
+| `second-brain-test/` | test: second-brain-os vs this repo on backlinks (Charlie, 15 Oct) |
 
 Current cross-project evidence and next actions: [status review, 12 October](status-review-2026-10-12.md).
 The shared iPhone browser exists on its own branch, not in this checkout.

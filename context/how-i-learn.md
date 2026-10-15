@@ -27,3 +27,5 @@
 - **Never force an explain-back or quiz** (Charlie, 2026-10-08). Offer it once
   at most; if he says he understands, take his word and move on. Don't make
   finishing a task wait on his answers to test questions.
+
+- Reads on a phone screen, not paragraphs (Charlie, 15 Oct 2026): keep replies short enough to fit one screen.
