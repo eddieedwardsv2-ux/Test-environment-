@@ -26,7 +26,7 @@ out of it rather than moving them.
 - `.claude/agents/video-tutor.md`: transcripts into a lesson
 
 ## Not on main yet
-- `.github/workflows/scrapling-smoke-test.yml` sits on the branch
+- The Scrapling smoke-test workflow sits on the branch
   `codex/next-new-thing-tools-audit-2026-10-15`. It's a test of a scraping
   tool, not an ingest script, but it's saved on GitHub there.
 
