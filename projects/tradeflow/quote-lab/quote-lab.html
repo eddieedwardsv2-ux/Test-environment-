@@ -1,0 +1,520 @@
+<title>TRADEFLOW Quote Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a decorator's job sheet. One column on a phone, two on a desk:
+   the left is what the customer told us, the right is what we'd charge.
+   Colour: dust-sheet grey-green with one Brunswick-green accent; amber means "still need this". */
+:root{
+  --bg:#eef1ef; --surface:#ffffff; --sunk:#f5f7f6; --ink:#17211d; --muted:#56635e; --line:#d3dbd7;
+  --accent:#1d5b4b; --accent-ink:#ffffff; --accent-soft:#e2eeea;
+  --warn:#8a4f00; --warn-bg:#fff2dc; --ok:#1b6f3d; --ok-bg:#e3f3e8; --bad:#a3262e; --bad-bg:#fbe7e8;
+  --display:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;
+  --body:'Public Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111715; --surface:#19211e; --sunk:#151c19; --ink:#e5ebe8; --muted:#9aa8a2; --line:#2c3833;
+  --accent:#62c2a2; --accent-ink:#0b1310; --accent-soft:#1d2e28;
+  --warn:#f0a94f; --warn-bg:#2d2416; --ok:#6bd394; --ok-bg:#15281c; --bad:#f08a90; --bad-bg:#2e1719; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111715; --surface:#19211e; --sunk:#151c19; --ink:#e5ebe8; --muted:#9aa8a2; --line:#2c3833;
+  --accent:#62c2a2; --accent-ink:#0b1310; --accent-soft:#1d2e28;
+  --warn:#f0a94f; --warn-bg:#2d2416; --ok:#6bd394; --ok-bg:#15281c; --bad:#f08a90; --bad-bg:#2e1719; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body);margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 64px;display:grid;gap:18px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.01em;margin:0;text-wrap:balance}
+h1{font-size:clamp(30px,6vw,42px);line-height:1}
+h2{font-size:24px;line-height:1.1;display:flex;gap:10px;align-items:center}
+h3{font-size:19px}
+.step{font:600 13px var(--mono);color:var(--accent-ink);background:var(--accent);border-radius:4px;padding:1px 7px}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+header{display:grid;gap:8px}
+.demo{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--warn);background:var(--warn-bg);border-radius:8px;padding:8px 12px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.cols{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+@media (min-width:980px){.cols{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.col{display:grid;gap:18px;min-width:0}
+section.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:14px;min-width:0}
+label{display:grid;gap:4px;font-size:14px;font-weight:600}
+label.inline{display:flex;gap:8px;align-items:center;font-weight:600}
+input[type=text],input[type=number],input:not([type]),select,textarea{font:16px var(--body);color:var(--ink);background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:9px 10px;width:100%;min-width:0}
+textarea{min-height:120px;resize:vertical;line-height:1.5}
+input.need,select.need{border-color:var(--warn);background:var(--warn-bg)}
+input.bad{border-color:var(--bad);background:var(--bad-bg)}
+input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.room{border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:12px;background:var(--sunk)}
+.room .top{display:flex;gap:10px;align-items:end}
+.room .top label{flex:1}
+.checks{display:flex;flex-wrap:wrap;gap:8px 18px}
+button{font:600 15px var(--body);border-radius:8px;padding:9px 14px;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink);min-height:42px}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button.ghost{background:transparent}
+button:disabled{opacity:.45;cursor:not-allowed}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.pill{font:600 13px var(--mono);border-radius:999px;padding:4px 10px;white-space:nowrap}
+.pill.needs{color:var(--warn);background:var(--warn-bg)}
+.pill.draft{color:var(--ink);background:var(--accent-soft)}
+.pill.approved{color:var(--ok);background:var(--ok-bg)}
+.pill.changed{color:var(--bad);background:var(--bad-bg)}
+ul.missing{margin:0;padding-left:20px;display:grid;gap:4px}
+.msg{white-space:pre-wrap;font:15px/1.55 var(--body);background:var(--sunk);border:1px dashed var(--line);border-radius:8px;padding:12px;overflow-wrap:anywhere}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:440px}
+th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font:600 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.group td{font-weight:700;background:var(--sunk);font-family:var(--display);font-size:18px}
+tr.tot td{border-bottom:0;font-weight:600}
+tr.grand td{font-size:19px;font-weight:700;border-top:2px solid var(--ink)}
+.qty{color:var(--muted);font-size:13px;font-family:var(--mono)}
+.versions{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+.versions li{display:flex;justify-content:space-between;gap:10px;font-size:14px;border-bottom:1px solid var(--line);padding-bottom:6px}
+details{border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;font-weight:700}
+.rates{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-top:10px}
+.status{font-size:14px;color:var(--muted);min-height:20px}
+.empty{color:var(--muted);border:1px dashed var(--line);border-radius:10px;padding:14px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>TRADEFLOW Quote Lab</h1>
+    <p class="muted">From a customer's message to an approved painting quote and a follow-up you can send. Claude reads the enquiry; the prices come from fixed rates and checked sums, never from the AI.</p>
+    <div class="demo" role="note"><b>Demo</b><span>Sample enquiry and sample rates, not real prices.</span><span>Nothing is ever sent to a customer from here.</span></div>
+    <div class="bar">
+      <label class="small" for="saved" style="flex:1;min-width:200px">Saved quotes
+        <select id="saved"><option value="">This quote (not saved yet)</option></select>
+      </label>
+      <button id="newq" class="ghost" type="button">New blank quote</button>
+      <button id="sampleq" class="ghost" type="button">Load the sample job</button>
+    </div>
+    <p class="status" id="savestate" role="status"></p>
+  </header>
+
+  <div class="cols">
+    <div class="col">
+      <section class="panel" aria-labelledby="h1s">
+        <h2 id="h1s"><span class="step">1</span>The enquiry</h2>
+        <label for="enquiry">What the customer sent
+          <textarea id="enquiry" data-f="enquiry"></textarea>
+        </label>
+        <div class="bar">
+          <button id="readai" type="button" hidden>Read it with Claude</button>
+          <span class="small muted" id="aistate"></span>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="h2s">
+        <h2 id="h2s"><span class="step">2</span>Job details</h2>
+        <p class="small muted">Amber boxes are still unknown. Measurements in metres.</p>
+        <div class="grid2">
+          <label for="f-customer">Customer's name<input id="f-customer" data-f="customer" autocomplete="off"></label>
+          <label for="f-access">Parking and access<input id="f-access" data-f="access" autocomplete="off" placeholder="e.g. park on the drive"></label>
+          <label for="f-furniture">Who moves the furniture?
+            <select id="f-furniture" data-f="furniture"><option value="">Not known yet</option><option value="customer">The customer</option><option value="us">We do (charged)</option></select></label>
+          <label for="f-paint">Who supplies the paint?
+            <select id="f-paint" data-f="paint"><option value="">Not known yet</option><option value="us">We do (charged)</option><option value="customer">The customer</option></select></label>
+        </div>
+        <div id="rooms" class="col"></div>
+        <div class="bar"><button id="addroom" type="button">Add a room</button></div>
+      </section>
+    </div>
+
+    <div class="col">
+      <section class="panel" aria-labelledby="h3s">
+        <h2 id="h3s"><span class="step">3</span>What we still need</h2>
+        <div id="missing"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="h4s">
+        <div class="bar" style="justify-content:space-between"><h2 id="h4s"><span class="step">4</span>The quote</h2><span id="pill" class="pill"></span></div>
+        <div id="quote"></div>
+        <div class="bar">
+          <button id="save" type="button">Save draft</button>
+          <button id="approve" class="primary" type="button">Approve quote</button>
+        </div>
+        <p class="small muted" id="approvenote"></p>
+        <div id="history"></div>
+        <details>
+          <summary>Rates and business details (sample)</summary>
+          <p class="small muted" style="margin-top:8px">Change any rate and the quote recalculates. Each approved version keeps the rates it used.</p>
+          <label class="inline small" for="r-vat" style="margin-top:10px"><input type="checkbox" id="r-vat" data-r="vatRegistered"> VAT registered (adds 20%)</label>
+          <div class="rates" id="rates"></div>
+        </details>
+      </section>
+
+      <section class="panel" aria-labelledby="h5s">
+        <h2 id="h5s"><span class="step">5</span>Follow-up message</h2>
+        <div id="followup"></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+// ==PRICING START==
+// Pure functions, tested by projects/tradeflow/tests/test_pricing.mjs
+const DEFAULT_RATES = {
+  wallPerM2Coat: 320,     // pence per m² per coat (walls)
+  ceilingPerM2Coat: 380,  // pence per m² per coat (ceilings)
+  skirtingPerM: 450,      // pence per metre (undercoat and gloss)
+  doorEach: 6500,         // pence per door, both sides
+  windowEach: 4500,       // pence per window frame
+  furniturePerRoom: 2500, // pence, if we move the furniture
+  sundriesPerRoom: 1500,  // pence: filler, tape, sheets
+  prepFairPct: 15,        // % of a room's labour, "a bit tired"
+  prepPoorPct: 35,        // % of a room's labour, poor condition
+  emulsionTin: 2400,      // pence per 2.5 L tin (covers 30 m² per coat)
+  woodworkTin: 1800,      // pence per 1 L tin
+  vatRegistered: false
+};
+const DOOR_H = 190, WINDOW_H = 150, DOOR_WIDTH_CM = 90, TIN_COVER_H = 3000;
+const roundDiv = (n, d) => Math.floor((2 * n + d) / (2 * d)); // half-up, n >= 0
+function parseMetres(v){
+  const s = String(v ?? "").trim();
+  if (s === "") return {missing: true};
+  if (!/^\d+(\.\d+)?$/.test(s)) return {bad: true};
+  const [i, f = ""] = s.split(".");
+  const f3 = (f + "000").slice(0, 3);
+  let cm = parseInt(i, 10) * 100 + parseInt(f3.slice(0, 2), 10);
+  if (+f3[2] >= 5) cm += 1;
+  if (cm <= 0) return {bad: true};
+  return {cm};
+}
+function parseCount(v){
+  const s = String(v ?? "").trim();
+  if (s === "") return {missing: true};
+  if (!/^\d+$/.test(s)) return {bad: true};
+  return {n: parseInt(s, 10)};
+}
+function roomLabel(r, i){ return (r.name || "").trim() || "Room " + (i + 1); }
+function validate(job){
+  const missing = [], bad = [];
+  if (!(job.customer || "").trim()) missing.push({key: "customer", ask: "your name"});
+  if (!(job.access || "").trim()) missing.push({key: "access", ask: "where we can park and how we get in"});
+  if (!job.furniture) missing.push({key: "furniture", ask: "whether you'll move the furniture or want us to"});
+  if (!job.paint) missing.push({key: "paint", ask: "whether you'd like us to supply the paint"});
+  if (!job.rooms || !job.rooms.length) missing.push({key: "rooms", ask: "which rooms you'd like painting"});
+  (job.rooms || []).forEach((r, i) => {
+    const n = roomLabel(r, i);
+    for (const [k, word] of [["length", "length"], ["width", "width"], ["height", "ceiling height"]]){
+      const p = parseMetres(r[k]);
+      if (p.missing) missing.push({key: `rooms.${i}.${k}`, ask: `the ${word} of the ${n.toLowerCase()}`});
+      if (p.bad) bad.push({key: `rooms.${i}.${k}`, msg: `${n}: the ${word} must be a number of metres above zero, like 3.45`});
+    }
+    for (const [k, word] of [["doors", "doors"], ["windows", "windows"]]){
+      const p = parseCount(r[k]);
+      if (p.missing) missing.push({key: `rooms.${i}.${k}`, ask: `how many ${word} the ${n.toLowerCase()} has`});
+      if (p.bad) bad.push({key: `rooms.${i}.${k}`, msg: `${n}: ${word} must be a whole number, like 0, 1 or 2`});
+    }
+    if (!r.walls && !r.ceiling && !r.woodwork) missing.push({key: `rooms.${i}.what`, ask: `what you'd like painting in the ${n.toLowerCase()}`});
+    if (!r.condition) missing.push({key: `rooms.${i}.condition`, ask: `what condition the ${n.toLowerCase()} is in (cracks, flaking, old wallpaper?)`});
+  });
+  return {missing, bad, ok: !missing.length && !bad.length};
+}
+function priceJob(job, rates){
+  const R = {...DEFAULT_RATES, ...rates};
+  const rooms = [], mat = {wallH: 0, ceilH: 0, woodMl: 0};
+  let subtotal = 0;
+  job.rooms.forEach((r, i) => {
+    const L = parseMetres(r.length).cm, W = parseMetres(r.width).cm, H = parseMetres(r.height).cm;
+    const doors = parseCount(r.doors).n, windows = parseCount(r.windows).n;
+    const lines = []; let labour = 0;
+    if (r.walls){
+      const area = Math.max(0, roundDiv(2 * (L + W) * H, 100) - doors * DOOR_H - windows * WINDOW_H);
+      const coats = 2 + (r.darkChange ? 1 : 0);
+      const pence = roundDiv(area * coats * R.wallPerM2Coat, 100);
+      lines.push({desc: "Walls", qty: `${h2(area)} m² × ${coats} coats${r.darkChange ? " (colour change)" : ""}`, pence});
+      labour += pence; mat.wallH += area * coats;
+    }
+    if (r.ceiling){
+      const area = roundDiv(L * W, 100);
+      const pence = roundDiv(area * 2 * R.ceilingPerM2Coat, 100);
+      lines.push({desc: "Ceiling", qty: `${h2(area)} m² × 2 coats`, pence});
+      labour += pence; mat.ceilH += area * 2;
+    }
+    if (r.woodwork){
+      const skirt = Math.max(0, 2 * (L + W) - doors * DOOR_WIDTH_CM);
+      const sp = roundDiv(skirt * R.skirtingPerM, 100);
+      lines.push({desc: "Skirting", qty: `${h2(skirt)} m`, pence: sp}); labour += sp;
+      if (doors){ const p = doors * R.doorEach; lines.push({desc: "Doors and frames", qty: `${doors} × ${money(R.doorEach)}`, pence: p}); labour += p; }
+      if (windows){ const p = windows * R.windowEach; lines.push({desc: "Window frames", qty: `${windows} × ${money(R.windowEach)}`, pence: p}); labour += p; }
+      mat.woodMl += doors * 350 + windows * 200 + roundDiv(skirt * 3, 10);
+    }
+    const pct = r.condition === "fair" ? R.prepFairPct : r.condition === "poor" ? R.prepPoorPct : 0;
+    if (pct){ const p = roundDiv(labour * pct, 100); lines.push({desc: "Preparation", qty: `${pct}% of labour (${r.condition === "fair" ? "a bit tired" : "poor condition"})`, pence: p}); }
+    if (job.furniture === "us") lines.push({desc: "Moving and covering furniture", qty: "", pence: R.furniturePerRoom});
+    lines.push({desc: "Sundries", qty: "filler, tape, dust sheets", pence: R.sundriesPerRoom});
+    const total = lines.reduce((a, l) => a + l.pence, 0);
+    subtotal += total;
+    rooms.push({name: roomLabel(r, i), lines, total});
+  });
+  const materials = [];
+  if (job.paint === "us"){
+    const wt = Math.ceil(mat.wallH / TIN_COVER_H), ct = Math.ceil(mat.ceilH / TIN_COVER_H), kt = Math.ceil(mat.woodMl / 1000);
+    if (wt) materials.push({desc: "Wall emulsion", qty: `${wt} × 2.5 L tin`, pence: wt * R.emulsionTin});
+    if (ct) materials.push({desc: "Ceiling emulsion", qty: `${ct} × 2.5 L tin`, pence: ct * R.emulsionTin});
+    if (kt) materials.push({desc: "Woodwork paint", qty: `${kt} × 1 L tin`, pence: kt * R.woodworkTin});
+  }
+  subtotal += materials.reduce((a, l) => a + l.pence, 0);
+  const vat = R.vatRegistered ? roundDiv(subtotal * 20, 100) : 0;
+  return {rooms, materials, subtotal, vat, total: subtotal + vat};
+}
+function h2(h){ return (Math.floor(h / 100)) + "." + String(h % 100).padStart(2, "0"); }
+function money(p){ const s = String(Math.abs(p)); const pounds = s.length > 2 ? s.slice(0, -2) : "0"; return "£" + pounds.replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "." + s.slice(-2).padStart(2, "0"); }
+// ==PRICING END==
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $ = id => document.getElementById(id);
+const clone = o => JSON.parse(JSON.stringify(o));
+const SAMPLE_ENQUIRY = "Hi, we're after a quote to paint our living room and the main bedroom. Living room is about 5m by 4m, walls and ceiling, and the woodwork is looking a bit tired (two doors and one window). It's magnolia now and we'd like a dark green on the walls. Bedroom is roughly 3.5 x 3.2, just the walls, skirting and the door. Ceilings are standard height I think. We'll move the furniture ourselves. Free most of November. Thanks, Sarah";
+const SAMPLE_REPLY = "Thanks! Ceilings are 2.4 m in both rooms. You can park on the drive and we'll leave a key. Yes please supply the paint. The bedroom's in good nick and has one window.";
+const blankRoom = () => ({name: "", length: "", width: "", height: "", walls: true, ceiling: false, woodwork: false, doors: "", windows: "", condition: "", darkChange: false});
+function sampleState(){
+  return {id: null, ref: newRef(), createdAt: new Date().toISOString(), versions: [], rates: clone(DEFAULT_RATES),
+    business: {name: "Your Decorating Co.", signer: "Charlie"},
+    job: {enquiry: SAMPLE_ENQUIRY, customer: "Sarah", access: "", furniture: "customer", paint: "",
+      rooms: [
+        {name: "Living room", length: "5", width: "4", height: "", walls: true, ceiling: true, woodwork: true, doors: "2", windows: "1", condition: "fair", darkChange: true},
+        {name: "Main bedroom", length: "3.5", width: "3.2", height: "", walls: true, ceiling: false, woodwork: true, doors: "1", windows: "", condition: "", darkChange: false}
+      ]}};
+}
+function blankState(){ return {id: null, ref: newRef(), createdAt: new Date().toISOString(), versions: [], rates: clone(DEFAULT_RATES), business: {name: "Your Decorating Co.", signer: "Charlie"}, job: {enquiry: "", customer: "", access: "", furniture: "", paint: "", rooms: [blankRoom()]}}; }
+function newRef(){ const a = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; let s = ""; const b = new Uint8Array(4); crypto.getRandomValues(b); b.forEach(x => s += a[x % a.length]); return "Q-" + s; }
+
+let S = sampleState(), dirty = true, db = null, user = null, sample = null, canApprove = true, savedList = [];
+const hashOf = st => JSON.stringify({job: {...st.job, enquiry: undefined}, rates: st.rates});
+
+// ---------- form ----------
+function renderForm(){
+  $("enquiry").value = S.job.enquiry;
+  for (const k of ["customer", "access", "furniture", "paint"]) $("f-" + k).value = S.job[k] || "";
+  $("r-vat").checked = !!S.rates.vatRegistered;
+  $("rooms").innerHTML = S.job.rooms.map((r, i) => `
+    <div class="room" data-room="${i}">
+      <div class="top"><label for="rn-${i}">Room<input id="rn-${i}" data-room-f="name" value="${esc(r.name)}" placeholder="e.g. Kitchen"></label>
+        <button type="button" class="ghost" data-remove="${i}" aria-label="Remove ${esc(roomLabel(r, i))}">Remove</button></div>
+      <div class="grid3">
+        <label for="rl-${i}">Length (m)<input id="rl-${i}" data-room-f="length" inputmode="decimal" value="${esc(r.length)}"></label>
+        <label for="rw-${i}">Width (m)<input id="rw-${i}" data-room-f="width" inputmode="decimal" value="${esc(r.width)}"></label>
+        <label for="rh-${i}">Height (m)<input id="rh-${i}" data-room-f="height" inputmode="decimal" value="${esc(r.height)}"></label>
+      </div>
+      <div class="checks">
+        <label class="inline" for="cw-${i}"><input type="checkbox" id="cw-${i}" data-room-f="walls" ${r.walls ? "checked" : ""}> Walls</label>
+        <label class="inline" for="cc-${i}"><input type="checkbox" id="cc-${i}" data-room-f="ceiling" ${r.ceiling ? "checked" : ""}> Ceiling</label>
+        <label class="inline" for="ck-${i}"><input type="checkbox" id="ck-${i}" data-room-f="woodwork" ${r.woodwork ? "checked" : ""}> Woodwork</label>
+        <label class="inline" for="cd-${i}"><input type="checkbox" id="cd-${i}" data-room-f="darkChange" ${r.darkChange ? "checked" : ""}> Big colour change (extra coat)</label>
+      </div>
+      <div class="grid3">
+        <label for="rd-${i}">Doors<input id="rd-${i}" data-room-f="doors" inputmode="numeric" value="${esc(r.doors)}"></label>
+        <label for="rx-${i}">Windows<input id="rx-${i}" data-room-f="windows" inputmode="numeric" value="${esc(r.windows)}"></label>
+        <label for="ro-${i}">Condition<select id="ro-${i}" data-room-f="condition">
+          <option value="">Not known yet</option>
+          <option value="good" ${r.condition === "good" ? "selected" : ""}>Good</option>
+          <option value="fair" ${r.condition === "fair" ? "selected" : ""}>A bit tired</option>
+          <option value="poor" ${r.condition === "poor" ? "selected" : ""}>Poor</option></select></label>
+      </div>
+    </div>`).join("") || `<p class="empty">No rooms yet. Add the first one.</p>`;
+  const R = S.rates, fields = [
+    ["wallPerM2Coat", "Walls, per m² per coat"], ["ceilingPerM2Coat", "Ceilings, per m² per coat"], ["skirtingPerM", "Skirting, per metre"],
+    ["doorEach", "Each door"], ["windowEach", "Each window frame"], ["furniturePerRoom", "Moving furniture, per room"],
+    ["sundriesPerRoom", "Sundries, per room"], ["emulsionTin", "Emulsion, 2.5 L tin"], ["woodworkTin", "Woodwork paint, 1 L tin"],
+    ["prepFairPct", "Prep, a bit tired (%)"], ["prepPoorPct", "Prep, poor (%)"]];
+  $("rates").innerHTML = fields.map(([k, l]) => {
+    const pct = k.endsWith("Pct"); const v = pct ? R[k] : h2(R[k]);
+    return `<label for="rate-${k}">${l}${pct ? "" : " (£)"}<input id="rate-${k}" data-r="${k}" inputmode="decimal" value="${v}"></label>`;
+  }).join("") + `<label for="b-name">Business name<input id="b-name" data-b="name" value="${esc(S.business.name)}"></label>
+    <label for="b-signer">Signed by<input id="b-signer" data-b="signer" value="${esc(S.business.signer)}"></label>`;
+  update();
+}
+document.addEventListener("input", onEdit); document.addEventListener("change", onEdit);
+function onEdit(e){
+  const t = e.target;
+  if (t.dataset.f){ S.job[t.dataset.f] = t.value; }
+  else if (t.dataset.roomF){ const i = +t.closest("[data-room]").dataset.room; S.job.rooms[i][t.dataset.roomF] = t.type === "checkbox" ? t.checked : t.value; }
+  else if (t.dataset.r){
+    const k = t.dataset.r;
+    if (k === "vatRegistered") S.rates.vatRegistered = t.checked;
+    else if (k.endsWith("Pct")){ const p = parseCount(t.value); t.classList.toggle("bad", !!p.bad); if (p.n != null) S.rates[k] = p.n; }
+    else { const p = parseMetres(t.value); t.classList.toggle("bad", !!(p.bad || p.missing)); if (p.cm != null) S.rates[k] = p.cm; }
+  }
+  else if (t.dataset.b){ S.business[t.dataset.b] = t.value; }
+  else return;
+  dirty = true; update();
+}
+$("addroom").onclick = () => { S.job.rooms.push(blankRoom()); dirty = true; renderForm(); $("rn-" + (S.job.rooms.length - 1)).focus(); };
+$("rooms").addEventListener("click", e => { const b = e.target.closest("[data-remove]"); if (!b) return; S.job.rooms.splice(+b.dataset.remove, 1); dirty = true; renderForm(); });
+
+// ---------- status, missing, quote ----------
+function statusOf(v){
+  if (!v.ok) return {k: "needs", label: v.bad.length ? "Fix the numbers" : `Needs ${v.missing.length} detail${v.missing.length > 1 ? "s" : ""}`};
+  const last = S.versions[S.versions.length - 1];
+  if (!last) return {k: "draft", label: "Draft, not approved"};
+  if (last.hash === hashOf(S)) return {k: "approved", label: `Approved v${last.n}`};
+  return {k: "changed", label: `Changed since v${last.n}`};
+}
+function update(){
+  const v = validate(S.job), st = statusOf(v);
+  document.querySelectorAll("input.need,select.need,input.bad").forEach(el => { if (!el.dataset.r) el.classList.remove("need", "bad"); });
+  const mark = (key, cls) => {
+    const m = key.match(/^rooms\.(\d+)\.(\w+)$/);
+    const sel = m ? `[data-room="${m[1]}"] [data-room-f="${m[2]}"]` : `[data-f="${key}"]`;
+    document.querySelectorAll(sel).forEach(el => { if (el.type !== "checkbox") el.classList.add(cls); });
+  };
+  v.missing.forEach(m => mark(m.key, "need")); v.bad.forEach(b => mark(b.key, "bad"));
+  const pill = $("pill"); pill.className = "pill " + st.k; pill.textContent = st.label;
+
+  const first = (S.job.customer || "").trim() || "there";
+  if (v.ok){
+    $("missing").innerHTML = `<p>Nothing missing. Every measurement and answer needed to price the job is in.</p>`;
+  } else {
+    const ask = v.missing.filter(m => m.key !== "customer").map(m => "- " + m.ask);
+    const draft = `Hi ${first},\n\nThanks for getting in touch. To give you an accurate price I just need a few more details:\n\n${ask.join("\n")}\n\nThanks,\n${S.business.signer}\n${S.business.name}`;
+    $("missing").innerHTML = (v.bad.length ? `<ul class="missing">${v.bad.map(b => `<li style="color:var(--bad)">${esc(b.msg)}</li>`).join("")}</ul>` : "") +
+      (v.missing.length ? `<p class="small muted">The quote can't be priced until these are known. A message to ask the customer:</p>
+      <div class="msg" id="askmsg">${esc(draft)}</div>
+      <div class="bar"><button type="button" data-copy="askmsg">Copy message</button>
+      ${S.job.enquiry === SAMPLE_ENQUIRY ? `<button type="button" id="fillreply">Use the sample customer's reply</button>` : ""}</div>` : "");
+    const fr = $("fillreply"); if (fr) fr.onclick = applySampleReply;
+  }
+
+  if (!v.ok){
+    $("quote").innerHTML = `<p class="empty">No price yet. ${v.bad.length ? "Fix the numbers in red first." : "Fill in the amber details, or send the message on the left and add the answers when they come back."}</p>`;
+  } else {
+    const q = priceJob(S.job, S.rates);
+    $("quote").innerHTML = quoteTable(q);
+  }
+  $("approve").disabled = !v.ok || st.k === "approved" || !canApprove;
+  $("approve").textContent = st.k === "changed" ? `Approve as v${S.versions.length + 1}` : st.k === "approved" ? "Approved" : "Approve quote";
+  $("approvenote").textContent = !canApprove ? "Only the business owner can approve quotes."
+    : st.k === "changed" ? `You've changed the job since v${S.versions.length} was approved, so that approval no longer covers it. v${S.versions.length} is kept below.` : "";
+  $("history").innerHTML = S.versions.length ? `<h3>Approved versions</h3><ul class="versions">${S.versions.slice().reverse().map(x =>
+    `<li><span>v${x.n} · ${new Date(x.approvedAt).toLocaleString("en-GB", {day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"})}</span><b class="num">${money(x.total)}</b></li>`).join("")}</ul>` : "";
+  renderFollowup(st);
+  $("savestate").textContent = !db ? "Saving is off: open this page in Claude, signed in, to keep quotes."
+    : dirty ? `${S.ref}: unsaved changes` : `${S.ref}: saved`;
+}
+function quoteTable(q){
+  const rows = q.rooms.map(r => `<tr class="group"><td colspan="2">${esc(r.name)}</td><td class="num">${money(r.total)}</td></tr>` +
+    r.lines.map(l => `<tr><td>${esc(l.desc)}</td><td class="qty">${esc(l.qty)}</td><td class="num">${money(l.pence)}</td></tr>`).join("")).join("") +
+    (q.materials.length ? `<tr class="group"><td colspan="2">Paint and materials</td><td class="num">${money(q.materials.reduce((a, l) => a + l.pence, 0))}</td></tr>` +
+      q.materials.map(l => `<tr><td>${esc(l.desc)}</td><td class="qty">${esc(l.qty)}</td><td class="num">${money(l.pence)}</td></tr>`).join("") : "");
+  return `<p class="small muted">${esc(S.ref)} for ${esc(S.job.customer)}. Sample rates.</p>
+  <div class="tbl"><table><thead><tr><th>Item</th><th>Worked out from</th><th class="num">Price</th></tr></thead><tbody>${rows}
+  <tr class="tot"><td colspan="2">Subtotal</td><td class="num">${money(q.subtotal)}</td></tr>
+  <tr class="tot"><td colspan="2">${S.rates.vatRegistered ? "VAT at 20%" : "VAT (not registered)"}</td><td class="num">${money(q.vat)}</td></tr>
+  <tr class="grand"><td colspan="2">Total</td><td class="num">${money(q.total)}</td></tr></tbody></table></div>
+  ${S.job.paint === "customer" ? `<p class="small muted">Paint supplied by the customer, so no materials are charged.</p>` : ""}`;
+}
+function renderFollowup(st){
+  const last = S.versions[S.versions.length - 1];
+  if (st.k !== "approved"){
+    $("followup").innerHTML = `<p class="empty">${st.k === "changed" ? `Approve v${S.versions.length + 1} first. The follow-up always matches the latest approved quote.` : "Appears once the quote is approved."}</p>`;
+    return;
+  }
+  const j = last.job, names = j.rooms.map((r, i) => roomLabel(r, i).toLowerCase());
+  const roomsTxt = names.length > 1 ? names.slice(0, -1).join(", ") + " and " + names[names.length - 1] : names[0];
+  const bits = j.rooms.map((r, i) => { const w = [r.walls && "walls", r.ceiling && "ceiling", r.woodwork && "woodwork"].filter(Boolean); return `${roomLabel(r, i)}: ${w.join(", ")}`; });
+  const msg = `Subject: Your painting quote ${S.ref} (version ${last.n})\n\nHi ${(j.customer || "").trim()},\n\nThanks for sending the details over. Here's my quote for painting your ${roomsTxt}.\n\nTotal: ${money(last.total)}${last.vat ? ` including ${money(last.vat)} VAT` : ""}\n\nWhat's included:\n${bits.map(b => "- " + b).join("\n")}\n- ${j.paint === "us" ? "All paint and materials" : "Labour only, with you supplying the paint"}\n- ${j.furniture === "us" ? "Moving and covering your furniture" : "Dust sheets and protection (you'll move the furniture before we start)"}\n\nThe quote is valid for 30 days. If you'd like to go ahead, just reply with a start date that suits you.\n\nThanks,\n${S.business.signer}\n${S.business.name}`;
+  $("followup").innerHTML = `<p class="small muted">Draft for v${last.n}. Not sent: copy it into your email or text when you're ready.</p>
+    <div class="msg" id="fumsg">${esc(msg)}</div><div class="bar"><button type="button" data-copy="fumsg">Copy message</button></div>`;
+}
+document.addEventListener("click", async e => {
+  const b = e.target.closest("[data-copy]"); if (!b) return;
+  const el = $(b.dataset.copy), txt = el.textContent;
+  try { await navigator.clipboard.writeText(txt); b.textContent = "Copied"; }
+  catch { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selected: press copy"; }
+  setTimeout(() => b.textContent = "Copy message", 2000);
+});
+function applySampleReply(){
+  S.job.access = "Park on the drive; key left for us";
+  S.job.paint = "us";
+  S.job.rooms.forEach(r => { r.height = "2.4"; });
+  if (S.job.rooms[1]){ S.job.rooms[1].condition = "good"; S.job.rooms[1].windows = "1"; }
+  S.job.enquiry = S.job.enquiry + "\n\nCustomer's reply: " + SAMPLE_REPLY;
+  dirty = true; renderForm();
+}
+
+// ---------- approve and save ----------
+$("approve").onclick = async () => {
+  const v = validate(S.job); if (!v.ok || !canApprove) return;
+  const q = priceJob(S.job, S.rates);
+  let by = null; try { by = user && user.id ? await user.id() : null; } catch {}
+  S.versions.push({n: S.versions.length + 1, hash: hashOf(S), job: clone({...S.job, enquiry: undefined}), rates: clone(S.rates), subtotal: q.subtotal, vat: q.vat, total: q.total, approvedAt: new Date().toISOString(), approvedBy: by});
+  dirty = true; update(); await save();
+};
+$("save").onclick = save;
+async function save(){
+  if (!db){ update(); return; }
+  if (!S.id) S.id = S.ref.toLowerCase();
+  const v = validate(S.job), body = {ref: S.ref, createdAt: S.createdAt, updatedAt: new Date().toISOString(), job: clone(S.job), rates: clone(S.rates), business: clone(S.business), versions: clone(S.versions), customer: S.job.customer || "", total: v.ok ? priceJob(S.job, S.rates).total : null};
+  $("savestate").textContent = "Saving…";
+  try { await db.collection("quotes").doc(S.id).set(body); dirty = false; update(); }
+  catch (err){ $("savestate").textContent = err && err.code === "quota_exceeded" ? "Not saved: the quote store is full. Delete old quotes first." : "Not saved. Check your connection and press Save draft again."; }
+}
+$("newq").onclick = () => { S = blankState(); dirty = true; $("saved").value = ""; $("aistate").textContent = ""; renderForm(); };
+$("sampleq").onclick = () => { S = sampleState(); dirty = true; $("saved").value = ""; $("aistate").textContent = ""; renderForm(); };
+$("saved").onchange = e => {
+  const d = savedList.find(x => x.id === e.target.value); if (!d) return;
+  S = {id: d.id, ...clone(d.data)}; S.rates = {...DEFAULT_RATES, ...S.rates}; S.versions = S.versions || []; S.business = S.business || {name: "", signer: ""};
+  dirty = false; renderForm();
+};
+function renderSaved(){
+  const sel = $("saved"), cur = S.id || "";
+  sel.innerHTML = `<option value="">${S.id ? "Unsaved quote" : "This quote (not saved yet)"}</option>` + savedList.map(d => {
+    const x = d.data, last = (x.versions || []).slice(-1)[0];
+    return `<option value="${esc(d.id)}">${esc(x.ref)} · ${esc(x.customer || "no name")} · ${last ? "approved v" + last.n + " " + money(last.total) : "draft"}</option>`;
+  }).join("");
+  sel.value = savedList.some(d => d.id === cur) ? cur : "";
+}
+
+// ---------- Claude reads the enquiry ----------
+$("readai").onclick = async () => {
+  if (!sample) return;
+  const st = $("aistate"), btn = $("readai"); btn.disabled = true; st.textContent = "Claude is reading the enquiry…";
+  const prompt = `You extract job details from a customer's message to a UK painter and decorator. Return JSON only, in this shape:
+{"customer": string|null, "access": string|null, "furniture": "customer"|"us"|null, "paint": "customer"|"us"|null,
+ "rooms": [{"name": string, "length": number|null, "width": number|null, "height": number|null, "walls": boolean, "ceiling": boolean, "woodwork": boolean, "darkChange": boolean, "doors": integer|null, "windows": integer|null, "condition": "good"|"fair"|"poor"|null}]}
+Rules: use null for anything the message does not state clearly. Never guess a measurement or a count: "standard height I think" is null. Measurements in metres. "furniture" is "customer" if they say they will move it. "woodwork" is true if skirting, doors or window frames are mentioned for that room. "darkChange" is true only for a big change in colour, such as light to dark. "condition": "fair" for tired or scuffed, "poor" for cracked, flaking or damp, "good" only if they say so.
+Message:
+"""${S.job.enquiry}"""`;
+  try {
+    const out = await sample.json(prompt);
+    const s = v => v == null ? "" : String(v);
+    S.job.customer = s(out.customer); S.job.access = s(out.access);
+    S.job.furniture = ["customer", "us"].includes(out.furniture) ? out.furniture : "";
+    S.job.paint = ["customer", "us"].includes(out.paint) ? out.paint : "";
+    S.job.rooms = (Array.isArray(out.rooms) ? out.rooms : []).map(r => ({name: s(r.name), length: s(r.length), width: s(r.width), height: s(r.height),
+      walls: !!r.walls, ceiling: !!r.ceiling, woodwork: !!r.woodwork, darkChange: !!r.darkChange, doors: s(r.doors), windows: s(r.windows),
+      condition: ["good", "fair", "poor"].includes(r.condition) ? r.condition : ""}));
+    dirty = true; renderForm(); st.textContent = "Filled in from the enquiry. Check it: anything not stated is left amber.";
+  } catch (err){
+    st.textContent = err && err.code === "not_granted" ? "Claude isn't available on this page for you." : err && err.code === "rate_limited" ? "Too many requests just now. Try again in a minute." : "Claude couldn't read that one. Fill the details in by hand.";
+  }
+  btn.disabled = false;
+};
+
+renderForm();
+(async () => {
+  if (!window.claude || !window.claude.use) return;
+  const [d, u, sm] = await Promise.all([claude.use("db"), claude.use("user"), claude.use("sample")]);
+  db = d; user = u; sample = sm;
+  if (user){ try { canApprove = user.isOwner() || user.canEdit(); } catch { canApprove = true; } }
+  if (sample) $("readai").hidden = false;
+  if (db){
+    db.collection("quotes").onSnapshot(snap => {
+      savedList = snap.docs.filter(x => x.exists).map(x => ({id: x.id, data: x.data()})).sort((a, b) => String(b.data.updatedAt).localeCompare(String(a.data.updatedAt)));
+      renderSaved();
+    }, () => {});
+  }
+  update();
+})();
+</script>

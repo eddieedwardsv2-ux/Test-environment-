@@ -16,6 +16,7 @@ OS Guide) also need their facts checked when a part of the OS changes.
 
 | Page | Link | Source | Rebuild, then republish |
 |---|---|---|---|
+| **TRADEFLOW Quote Lab** (active focus): painting enquiry to approved quote and follow-up, sample rates | https://claude.ai/artifact/UbhWogxi5n8EJXzTA8oUNE | `projects/tradeflow/quote-lab/quote-lab.html` | edit by hand, run `projects/tradeflow/tests/`, republish; saved quotes live in its `quotes` database |
 | **Chief's Desk** (was the Decision Desk): every question waiting for Charlie (the `decide` skill) | https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx | `system/decision-desk/decision-desk.html` | none; questions live in its `decisions` database (ArtifactData); Send saves `poke.json` inside the page, with saving proven; waking a watching Claude session remains unverified (`decide` skill) |
 | **System map**: the Chief's Desk, the elders round it, which pages each uses, and what needs work | https://claude.ai/artifact/EjVEwU5bNAoU99FPbYSHDh | `system/system-map/system-map.html` | edit by hand (scores from the latest `audits/` report, pages from this table) |
 | **Voice Gym**: practice messages written the AI way; Charlie rewrites them, the differences become his voice notes | https://claude.ai/artifact/VftqKWwvitMR2RF2mvQT76 | `system/voice-practice/voice-practice.html` | none; drills and his versions live in its `drills` database (ArtifactData); voice notes go in `aios-intake.md` Q2 |

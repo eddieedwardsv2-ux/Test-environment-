@@ -6,6 +6,7 @@ Deliverables live here.
 
 | Project | State |
 |---|---|
+| `tradeflow/` | **active focus**: TRADEFLOW Quote Lab built in Claude 15 Oct; maths tested, real-browser and unseen-enquiry checks open |
 | `ai-os-setup-kit/` | the 90-day priority (paused until the first friend set-up) |
 | `youtube-channel/` | real r5 journey Short produced on media branch / PR #3; remaining checks and integration open |
 | `bitcoin-newsletter/` | side project, only when Charlie asks |

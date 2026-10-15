@@ -1,0 +1,1012 @@
+{
+ "priced": [
+  {
+   "name": "sample job after reply",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "us",
+    "rooms": [
+     {
+      "name": "Living room",
+      "length": "5",
+      "width": "4",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": true,
+      "doors": "2",
+      "windows": "1",
+      "condition": "fair",
+      "darkChange": true
+     },
+     {
+      "name": "Main bedroom",
+      "length": "3.5",
+      "width": "3.2",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": true,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 150461,
+    "vat": 0,
+    "total": 150461
+   }
+  },
+  {
+   "name": "walls only, labour only",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 20828,
+    "vat": 0,
+    "total": 20828
+   }
+  },
+  {
+   "name": "walls only with VAT",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": true,
+   "rates": {},
+   "expect": {
+    "subtotal": 20828,
+    "vat": 4166,
+    "total": 24994
+   }
+  },
+  {
+   "name": "ceiling only",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": false,
+      "ceiling": true,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 10620,
+    "vat": 0,
+    "total": 10620
+   }
+  },
+  {
+   "name": "woodwork only, no doors",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": false,
+      "ceiling": false,
+      "woodwork": true,
+      "doors": "0",
+      "windows": "0",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 7800,
+    "vat": 0,
+    "total": 7800
+   }
+  },
+  {
+   "name": "poor condition prep",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": true,
+      "doors": "1",
+      "windows": "1",
+      "condition": "poor",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 62713,
+    "vat": 0,
+    "total": 62713
+   }
+  },
+  {
+   "name": "fair condition prep",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "fair",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 23727,
+    "vat": 0,
+    "total": 23727
+   }
+  },
+  {
+   "name": "we move furniture, 3 rooms",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "us",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     },
+     {
+      "name": "B",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     },
+     {
+      "name": "C",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 69984,
+    "vat": 0,
+    "total": 69984
+   }
+  },
+  {
+   "name": "odd decimals 3.333 x 2.789 x 2.455",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "3.333",
+      "width": "2.789",
+      "height": "2.455",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": true,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 41757,
+    "vat": 0,
+    "total": 41757
+   }
+  },
+  {
+   "name": "half-up dims 2.005",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "2.005",
+      "width": "2.005",
+      "height": "2.005",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 12736,
+    "vat": 0,
+    "total": 12736
+   }
+  },
+  {
+   "name": "tiny cupboard, deductions exceed wall",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "0.5",
+      "width": "0.4",
+      "height": "1",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "3",
+      "windows": "2",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 1500,
+    "vat": 0,
+    "total": 1500
+   }
+  },
+  {
+   "name": "big room, paint supplied",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "us",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "12.5",
+      "width": "9.75",
+      "height": "3.1",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": true,
+      "doors": "4",
+      "windows": "6",
+      "condition": "good",
+      "darkChange": true
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 342030,
+    "vat": 0,
+    "total": 342030
+   }
+  },
+  {
+   "name": "paint supplied, VAT",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "us",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": true,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": true,
+   "rates": {},
+   "expect": {
+    "subtotal": 58243,
+    "vat": 11649,
+    "total": 69892
+   }
+  },
+  {
+   "name": "many windows no woodwork",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "0",
+      "windows": "5",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 18204,
+    "vat": 0,
+    "total": 18204
+   }
+  },
+  {
+   "name": "dark change only",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": true
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 30492,
+    "vat": 0,
+    "total": 30492
+   }
+  },
+  {
+   "name": "changed rates",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": true,
+      "doors": "1",
+      "windows": "1",
+      "condition": "fair",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {
+    "wall": "4.10",
+    "door": "80.00",
+    "fair": 20
+   },
+   "expect": {
+    "subtotal": 64235,
+    "vat": 0,
+    "total": 64235
+   }
+  },
+  {
+   "name": "VAT rounding 0.5p",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "1.01",
+      "width": "1.01",
+      "height": "1.01",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "0",
+      "windows": "0",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": true,
+   "rates": {},
+   "expect": {
+    "subtotal": 4111,
+    "vat": 822,
+    "total": 4933
+   }
+  },
+  {
+   "name": "five rooms mixed",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "us",
+    "paint": "us",
+    "rooms": [
+     {
+      "name": "0",
+      "length": "3.00",
+      "width": "2.00",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": true,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     },
+     {
+      "name": "1",
+      "length": "3.37",
+      "width": "2.21",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "fair",
+      "darkChange": false
+     },
+     {
+      "name": "2",
+      "length": "3.74",
+      "width": "2.42",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "poor",
+      "darkChange": false
+     },
+     {
+      "name": "3",
+      "length": "4.11",
+      "width": "2.63",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": true,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     },
+     {
+      "name": "4",
+      "length": "4.48",
+      "width": "2.84",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": true,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "fair",
+      "darkChange": true
+     }
+    ]
+   },
+   "vat": true,
+   "rates": {},
+   "expect": {
+    "subtotal": 215689,
+    "vat": 43138,
+    "total": 258827
+   }
+  },
+  {
+   "name": "zero doors and windows",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": true,
+      "doors": "0",
+      "windows": "0",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 29304,
+    "vat": 0,
+    "total": 29304
+   }
+  },
+  {
+   "name": "2.4 vs 2.40 same",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.40",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "vat": false,
+   "rates": {},
+   "expect": {
+    "subtotal": 20828,
+    "vat": 0,
+    "total": 20828
+   }
+  }
+ ],
+ "validation": [
+  {
+   "name": "missing height blocks price",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false
+  },
+  {
+   "name": "missing condition blocks price",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false
+  },
+  {
+   "name": "missing paint answer blocks price",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false
+  },
+  {
+   "name": "missing access blocks price",
+   "job": {
+    "customer": "Test",
+    "access": "",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false
+  },
+  {
+   "name": "no rooms blocks price",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": []
+   },
+   "valid": false
+  },
+  {
+   "name": "nothing to paint blocks price",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": false,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false
+  },
+  {
+   "name": "comma decimal rejected",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "3,5",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false,
+   "bad": true
+  },
+  {
+   "name": "negative rejected",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "-2",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false,
+   "bad": true
+  },
+  {
+   "name": "zero length rejected",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "0",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false,
+   "bad": true
+  },
+  {
+   "name": "text rejected",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "tall",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false,
+   "bad": true
+  },
+  {
+   "name": "half a door rejected",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1.5",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": false,
+   "bad": true
+  },
+  {
+   "name": "complete job is valid",
+   "job": {
+    "customer": "Test",
+    "access": "Drive",
+    "furniture": "customer",
+    "paint": "customer",
+    "rooms": [
+     {
+      "name": "Room",
+      "length": "4",
+      "width": "3",
+      "height": "2.4",
+      "walls": true,
+      "ceiling": false,
+      "woodwork": false,
+      "doors": "1",
+      "windows": "1",
+      "condition": "good",
+      "darkChange": false
+     }
+    ]
+   },
+   "valid": true
+  }
+ ]
+}

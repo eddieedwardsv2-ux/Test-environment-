@@ -76,5 +76,11 @@
   "url": "https://claude.ai/artifact/WjXLNv4SiTPSDEzuHH8Abe",
   "sha256": "bdd00af960e52595",
   "published": "2026-10-15"
+ },
+ "projects/tradeflow/quote-lab/quote-lab.html": {
+  "page": "TRADEFLOW Quote Lab",
+  "url": "https://claude.ai/artifact/UbhWogxi5n8EJXzTA8oUNE",
+  "sha256": "51c36a1c6a5213d4",
+  "published": "2026-10-15"
  }
 }
