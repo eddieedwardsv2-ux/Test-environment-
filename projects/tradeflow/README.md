@@ -44,6 +44,6 @@ cases, rounding); approval 10/10. Sample job total after the customer's reply:
 £1,504.61 (sample rates, no VAT). Receipt: `evidence-2026-10-15.md`.
 
 ## Not verified yet
-Real-browser rendering on phone and desktop, keyboard use, and Claude's reading
-of the enquiry (needs Charlie to open the page). The unseen-enquiry test.
+Sample job verified live on Charlie's device 15 Oct (see the receipt). Still open:
+Claude's reading of a new enquiry, the unseen-enquiry test, keyboard use, desktop.
 Any real business pricing, VAT position, privacy or sending.
