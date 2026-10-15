@@ -43,9 +43,12 @@ I searched every branch and the full history, and neither script exists anywhere
 Also from `research/ai-impact/HANDOFF.md`: on 12 Oct, `research/get_transcript.py`'s
 free service started asking for an API key. Test it before relying on it in a new repo.
 
-To recover the two missing scripts, ask ChatGPT/Codex in the chat that did the
-ingest: "Commit the exact scripts you used to fetch and build research/ai-impact
-and research/official-docs into research/<folder>/scripts/ on a new branch."
+15 Oct, evening: ChatGPT said every script it scraped with is already saved here.
+Re-checked after that: no new commits or branches, and still no AI Impact or
+official-docs build script anywhere in git. It most likely ran one-off code
+that was never saved. The data is safe; if either needs refreshing, write a
+new script then (the AI Impact method is in its `HANDOFF.md`: native YouTube
+captions via `youtube-transcript-api`).
 
 ## When copying
 Paths inside the scripts assume this repo's layout (`research/<creator>/`,
