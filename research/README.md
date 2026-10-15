@@ -15,6 +15,7 @@ advisor agent reads; raw evidence stays in the transcripts). Anything not from a
 | [Andrej Karpathy](andrej-karpathy/README.md) | How LLMs work; teaching by building; rigour | 17 listed | 4 | – |
 | [AI Impact](ai-impact/README.md) | Company brains, AI OS, OODA, business data and automation | 49 public videos inventoried | 0 | [342 knowledge records](ai-impact/index.md); [visual gap](ai-impact/HANDOFF.md) |
 | [Corey Haines](corey-haines/README.md) | Marketing skills; [NewsJack PR relationship](corey-haines/newsjack-relationship.md) (separate authors) | Not catalogued | 0 | – |
+| [Yarchi (@undefinedKi)](yarchi/README.md) | X threads on AI papers and repos; Second Brain OS guide | X only | 0 | – |
 | [The Next New Thing](the-next-new-thing/README.md) | Free GitHub tools round-ups | 161 listed | 24 | [Watch plan (top 10)](the-next-new-thing/watch-plan.md); feeds the [Hands Brain](hands/README.md) |
 
 **Official provider references:** [Anthropic + OpenAI](official-docs/README.md): 1,959 source URLs catalogued (1,745 body captures, 212 landing-only, 2 empty), 117 model references and 20 first-pass teaching records. Full source text is temporary; full ingestion/semantic review remains NOT VERIFIED.
