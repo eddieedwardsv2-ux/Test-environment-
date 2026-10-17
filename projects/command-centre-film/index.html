@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Command Centre Film</title>
+<style>
+@font-face{font-family:"Serif4";src:url(fonts/serif-400.ttf);font-weight:400}
+@font-face{font-family:"Serif4";src:url(fonts/serif-600.ttf);font-weight:600}
+:root{
+  --paper:#F4F1EA; --paper2:#ECE7DC; --card:#FBFAF6; --ink:#1F1E1B; --muted:#6B675E;
+  --line:#DDD6C8; --clay:#C4623F; --clay-soft:#F1D9CC; --sage:#5E7A6B; --slate:#3B5B8C;
+  --wa-bg:#0B141A; --wa-out:#005C4B; --wa-in:#202C33; --wa-text:#E9EDEF; --wa-mute:#8696A0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--paper)}
+body{font-family:"Inter",Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:var(--paper)}
+.abs{position:absolute}
+.serif{font-family:"Serif4",Georgia,serif;font-weight:400;letter-spacing:-0.02em}
+.h-xl{font-size:104px;line-height:1.02}
+.h-l{font-size:84px;line-height:1.05}
+.sub{font-size:40px;line-height:1.3;color:var(--muted)}
+.word{display:inline-block;will-change:transform,opacity}
+/* chips */
+.chip{display:flex;align-items:center;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 30px 22px 22px;box-shadow:0 18px 40px rgba(60,45,20,.08);white-space:nowrap}
+.chip i{width:52px;height:52px;border-radius:14px;display:block}
+.chip b{font-size:30px;font-weight:600}
+.chip span{font-size:22px;color:var(--muted);display:block;margin-top:2px}
+/* dashboard */
+#dash{left:160px;top:150px;width:1600px;height:780px;background:var(--card);border:1px solid var(--line);border-radius:36px;box-shadow:0 40px 90px rgba(60,45,20,.12);transform-origin:0 0;overflow:hidden}
+.d-head{position:absolute;left:40px;top:34px;right:40px;display:flex;align-items:center;justify-content:space-between}
+.d-title{font-size:32px;font-weight:600;display:flex;align-items:center;gap:16px}
+.live{width:14px;height:14px;border-radius:50%;background:var(--sage)}
+.d-meta{font-size:22px;color:var(--muted)}
+.kpi{position:absolute;top:110px;width:362px;height:150px;border-radius:24px;background:var(--paper);padding:26px 30px;border:2px solid transparent}
+.kpi .l{font-size:22px;color:var(--muted);font-weight:500}
+.kpi .v{font-size:56px;font-weight:600;letter-spacing:-0.02em;margin-top:10px;font-variant-numeric:tabular-nums}
+.kpi .d{position:absolute;right:28px;top:28px;font-size:20px;font-weight:600;padding:6px 12px;border-radius:999px}
+.panel{position:absolute;border-radius:24px;background:var(--paper);padding:28px 32px}
+.panel h4{font-size:24px;font-weight:600}
+.panel small{font-size:20px;color:var(--muted)}
+.todo{display:flex;align-items:center;gap:16px;font-size:24px;padding:12px 0;border-top:1px solid var(--line)}
+.todo:first-of-type{border-top:none}
+.dot{width:12px;height:12px;border-radius:50%;flex:none}
+/* phone */
+#phone{left:1270px;top:80px;width:480px;height:920px;background:var(--wa-bg);border-radius:60px;border:10px solid #1B1B1D;box-shadow:0 50px 100px rgba(20,15,5,.28);overflow:hidden;color:var(--wa-text)}
+.p-head{position:absolute;left:0;right:0;top:0;height:120px;background:#1F2C34;display:flex;align-items:flex-end;padding:0 26px 20px;gap:16px}
+.p-ava{width:52px;height:52px;border-radius:50%;background:var(--clay);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:24px;color:#fff}
+.p-name{font-size:25px;font-weight:600}
+.p-stat{font-size:19px;color:var(--wa-mute)}
+.bub{position:absolute;font-size:24px;line-height:1.38;padding:16px 20px;border-radius:20px;max-width:370px}
+.out{right:22px;background:var(--wa-out)}
+.in{left:22px;background:var(--wa-in)}
+.p-input{position:absolute;left:16px;right:16px;bottom:20px;height:68px;border-radius:34px;background:#1F2C34;display:flex;align-items:center;padding:0 26px;font-size:24px;color:var(--wa-mute)}
+.typing{left:22px;background:var(--wa-in);padding:20px 24px;border-radius:20px;display:flex;gap:9px}
+.typing i{width:12px;height:12px;border-radius:50%;background:var(--wa-mute);display:block}
+.btn{display:inline-block;margin-top:12px;padding:10px 20px;border-radius:999px;background:#2A3942;color:#53BDEB;font-weight:600;font-size:22px}
+/* notification */
+#notif{left:560px;top:430px;width:800px;background:rgba(251,250,246,.92);border:1px solid var(--line);border-radius:34px;padding:34px 40px;box-shadow:0 40px 80px rgba(60,45,20,.16)}
+#notif .nh{display:flex;align-items:center;gap:16px;font-size:24px;color:var(--muted)}
+#notif .nh i{width:40px;height:40px;border-radius:11px;background:#25D366;display:block}
+#notif p{font-size:34px;line-height:1.4;margin-top:16px}
+.ctl{display:flex;align-items:center;gap:28px;font-size:46px;font-family:"Serif4",Georgia,serif;letter-spacing:-0.01em}
+.ctl svg{flex:none}
+.tag{font-size:22px;color:var(--muted);letter-spacing:.02em}
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- soft background wash -->
+  <div id="wash" class="abs" style="left:0;top:0;width:1920px;height:1080px;background:radial-gradient(1200px 700px at 78% 30%, #EFE3D6 0%, rgba(244,241,234,0) 70%)"></div>
+
+  <!-- Scene 1/2 headline -->
+  <div id="h1" class="abs serif h-xl" style="left:160px;top:180px;width:900px"></div>
+  <div id="s1sub" class="abs sub" style="left:164px;top:440px;width:820px">So a simple question takes an hour.</div>
+  <div id="timer" class="abs" style="left:164px;top:540px;font-size:30px;color:var(--clay);font-weight:600;font-variant-numeric:tabular-nums"></div>
+
+  <!-- connection lines -->
+  <svg id="links" class="abs" width="1920" height="1080" style="left:0;top:0" viewBox="0 0 1920 1080"></svg>
+
+  <!-- hub -->
+  <div id="hub" class="abs" style="left:1240px;top:440px;width:200px;height:200px;border-radius:50%;background:var(--clay);display:flex;align-items:center;justify-content:center;color:#FBFAF6;font-size:28px;font-weight:600;text-align:center;line-height:1.2;box-shadow:0 30px 80px rgba(196,98,63,.35)">One<br>data hub</div>
+
+  <!-- chips -->
+  <div id="chips"></div>
+
+  <!-- Dashboard -->
+  <div id="dash" class="abs">
+    <div class="d-head">
+      <div class="d-title"><span class="live" id="live"></span>Command Centre <span style="font-weight:400;color:var(--muted)">· Today</span></div>
+      <div class="d-meta">Sample data · updated just now</div>
+    </div>
+    <div class="kpi" id="k0" style="left:40px"><div class="l">Cash in bank</div><div class="v" id="v0">£0</div></div>
+    <div class="kpi" id="k1" style="left:426px"><div class="l">Invoiced this week</div><div class="v" id="v1">£0</div><div class="d" style="background:#DCE8DF;color:#3F5E4E">+12%</div></div>
+    <div class="kpi" id="k2" style="left:812px"><div class="l">Unpaid invoices</div><div class="v" id="v2">£0</div><div class="d" style="background:var(--clay-soft);color:#8E3E22">3 overdue</div></div>
+    <div class="kpi" id="k3" style="left:1198px"><div class="l">Bookings tomorrow</div><div class="v" id="v3">0</div></div>
+
+    <div class="panel" style="left:40px;top:290px;width:960px;height:450px">
+      <h4>Sales, last 12 weeks <small>· £ thousands</small></h4>
+      <svg id="line" width="896" height="350" viewBox="0 0 896 350" style="position:absolute;left:32px;top:80px"></svg>
+    </div>
+    <div class="panel" style="left:1024px;top:290px;width:536px;height:210px" id="leadsP">
+      <h4>New leads by source</h4>
+      <svg id="bars" width="472" height="140" viewBox="0 0 472 140" style="position:absolute;left:32px;top:62px"></svg>
+    </div>
+    <div class="panel" style="left:1024px;top:520px;width:536px;height:220px;padding-top:24px">
+      <h4 style="margin-bottom:6px">Needs you today</h4>
+      <div class="todo" id="t0"><span class="dot" style="background:var(--clay)"></span>3 invoices overdue</div>
+      <div class="todo" id="t1"><span class="dot" style="background:var(--slate)"></span>2 leads waiting for a reply</div>
+      <div class="todo" id="t2"><span class="dot" style="background:var(--sage)"></span>Thursday is fully booked</div>
+    </div>
+  </div>
+
+  <div id="dashCap" class="abs serif h-l" style="left:160px;top:960px;width:1600px;font-size:0"></div>
+
+  <!-- link from phone to KPI -->
+  <svg id="sync" class="abs" width="1920" height="1080" style="left:0;top:0" viewBox="0 0 1920 1080">
+    <path id="syncPath" d="" fill="none" stroke="#C4623F" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12"/>
+    <circle id="syncDot" r="9" fill="#C4623F"/>
+  </svg>
+
+  <div id="waCap" class="abs serif h-l" style="left:80px;top:770px;width:1100px">And on WhatsApp.</div>
+  <div id="waSub" class="abs sub" style="left:84px;top:885px;width:1160px;font-size:34px">Ask like you’d ask your office manager. It answers from the same data.</div>
+
+  <!-- Phone -->
+  <div id="phone" class="abs">
+    <div class="p-head"><div class="p-ava">CC</div><div><div class="p-name">Command Centre</div><div class="p-stat" id="pstat">online</div></div></div>
+    <div class="bub out" id="m1" style="top:170px">Who still owes us money?</div>
+    <div class="abs typing" id="typ" style="top:270px"><i></i><i></i><i></i></div>
+    <div class="bub in" id="m2" style="top:270px">3 invoices are unpaid, <b>£3,150</b> in total. The oldest is 18 days overdue. Want me to draft a reminder?</div>
+    <div class="bub out" id="m3" style="top:478px">Yes, draft it.</div>
+    <div class="bub in" id="m4" style="top:566px">Draft ready. Nothing goes to your customer until you approve it.<br><span class="btn">Review draft</span></div>
+    <div class="p-input" id="pin">Message</div>
+  </div>
+
+  <!-- Morning summary -->
+  <div id="clock" class="abs serif" style="left:0;top:150px;width:1920px;text-align:center;font-size:220px;line-height:1;color:var(--ink)">8:00</div>
+  <div id="notif" class="abs">
+    <div class="nh"><i></i>WhatsApp · Command Centre · now</div>
+    <p>Good morning. Yesterday: <b>£1,240</b> taken across 6 jobs. Today: <b>14 bookings</b>. One invoice is now overdue.</p>
+  </div>
+  <div id="mornCap" class="abs sub" style="left:0;top:820px;width:1920px;text-align:center">Your numbers come to you, every morning at 8.</div>
+
+  <!-- Control -->
+  <div id="ctlH" class="abs serif h-l" style="left:160px;top:170px;width:1000px">You stay in control of your data.</div>
+  <div id="ctlList" class="abs" style="left:160px;top:420px;display:flex;flex-direction:column;gap:34px"></div>
+  <svg id="shield" class="abs" width="520" height="600" viewBox="0 0 520 600" style="left:1260px;top:250px">
+    <path id="shieldP" d="M260 30 L470 110 L470 300 C470 430 380 520 260 570 C140 520 50 430 50 300 L50 110 Z" fill="#F1D9CC" stroke="#C4623F" stroke-width="8" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+    <path id="shieldC" d="M170 300 L235 365 L360 230" fill="none" stroke="#C4623F" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+  </svg>
+
+  <!-- End card -->
+  <div id="end1" class="abs serif" style="left:160px;top:260px;width:1700px;font-size:100px;line-height:1.04">Your business, live on one screen.</div>
+  <div id="end2" class="abs serif" style="left:160px;top:380px;width:1700px;font-size:100px;line-height:1.04;color:var(--clay)">And on WhatsApp.</div>
+  <div id="end3" class="abs sub" style="left:164px;top:560px;width:1500px">Live in about three weeks. Start with one question you ask every week.</div>
+  <div id="end4" class="abs" style="left:164px;top:680px;display:flex;align-items:center;gap:28px">
+    <span style="background:var(--ink);color:var(--paper);font-size:30px;font-weight:600;padding:22px 36px;border-radius:999px">Book a 30-minute call</span>
+    <span style="font-size:30px;color:var(--muted)">[Your company name] · [Booking link]</span>
+  </div>
+  <div id="end5" class="abs tag" style="left:164px;top:960px">Built with Claude · Figures shown are sample data</div>
+
+</div>
+
+<script>
+const DURATION = 56;
+const $ = id => document.getElementById(id);
+const clamp = (x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const seg = (t,a,b)=>clamp((t-a)/(b-a));
+const eo = x=>1-Math.pow(1-x,3);              // ease out cubic
+const eio = x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const back = x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,p)=>a+(b-a)*p;
+function show(el,o,tx=0,ty=0,s=1){el.style.opacity=o;el.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;el.style.visibility=o<=0.001?'hidden':'visible'}
+// fade window: in over [a,a+d], out over [b-d2,b]
+function win(t,a,b,d=.6,d2=.5){return Math.min(eo(seg(t,a,a+d)), 1-eio(seg(t,b-d2,b)))}
+const gbp=n=>'£'+Math.round(n).toLocaleString('en-GB');
+
+/* ---------- build: headline words ---------- */
+const H1A = "Your numbers live in five places.".split(' ');
+const H1B = "Connect once.".split(' ');
+function words(arr){return arr.map(w=>`<span class="word">${w}&nbsp;</span>`).join('')}
+
+/* ---------- build: chips ---------- */
+const CHIPS=[
+ {n:'Bookings',s:'14 tomorrow',c:'#5E7A6B',x:1180,y:150},
+ {n:'Invoices',s:'£8,420 this week',c:'#C4623F',x:1420,y:330},
+ {n:'Payments',s:'£1,240 yesterday',c:'#3B5B8C',x:1100,y:520},
+ {n:'Leads',s:'2 waiting',c:'#B08A3E',x:1440,y:700},
+ {n:'Spreadsheets',s:'budget_v7_FINAL.xlsx',c:'#7C6A9A',x:1060,y:850},
+];
+const chipsEl=$('chips');
+CHIPS.forEach((c,i)=>{const d=document.createElement('div');d.className='chip abs';d.id='c'+i;d.style.left=c.x+'px';d.style.top=c.y+'px';d.innerHTML=`<i style="background:${c.c}"></i><div><b>${c.n}</b><span>${c.s}</span></div>`;chipsEl.appendChild(d)});
+const HUB={x:1340,y:540};
+
+/* ---------- build: line chart ---------- */
+const SALES=[5.2,5.8,5.5,6.4,6.1,7.0,6.8,7.6,7.3,8.1,8.6,8.4];
+(function(){
+ const W=896,H=350,pad=30,max=10;
+ const xs=i=>pad+i*(W-2*pad)/(SALES.length-1), ys=v=>H-24-(v/max)*(H-60);
+ let grid='';for(let g=0;g<=4;g++){const y=H-24-g*(H-60)/4;grid+=`<line x1="${pad}" x2="${W-pad}" y1="${y}" y2="${y}" stroke="#DDD6C8" stroke-width="1.5"/>`}
+ const pts=SALES.map((v,i)=>[xs(i),ys(v)]);
+ let d=`M${pts[0][0]},${pts[0][1]}`;for(let i=1;i<pts.length;i++){const [x0,y0]=pts[i-1],[x1,y1]=pts[i],cx=(x0+x1)/2;d+=` C${cx},${y0} ${cx},${y1} ${x1},${y1}`}
+ const area=d+` L${pts.at(-1)[0]},${H-24} L${pts[0][0]},${H-24} Z`;
+ $('line').innerHTML=`<defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C4623F" stop-opacity=".28"/><stop offset="1" stop-color="#C4623F" stop-opacity="0"/></linearGradient><clipPath id="lc"><rect id="lcr" x="0" y="0" width="0" height="${H}"/></clipPath></defs>${grid}
+ <path d="${area}" fill="url(#ag)" clip-path="url(#lc)"/>
+ <path id="lp" d="${d}" fill="none" stroke="#C4623F" stroke-width="5" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+ <circle id="lh" r="10" fill="#FBFAF6" stroke="#C4623F" stroke-width="5" cx="${pts.at(-1)[0]}" cy="${pts.at(-1)[1]}"/>`;
+ window.__lineEnd=pts.at(-1);
+})();
+/* ---------- build: bars ---------- */
+const LEADS=[['Website',18,'#3B5B8C'],['Referrals',12,'#5E7A6B'],['Google',9,'#B08A3E'],['Instagram',6,'#7C6A9A']];
+$('bars').innerHTML=LEADS.map((l,i)=>`<text x="0" y="${i*34+22}" font-family="Inter" font-size="20" fill="#6B675E">${l[0]}</text><rect id="b${i}" x="120" y="${i*34+6}" height="22" rx="6" width="0" fill="${l[2]}"/><text id="bt${i}" x="0" y="${i*34+23}" font-family="Inter" font-size="20" font-weight="600" fill="#1F1E1B"></text>`).join('');
+
+/* ---------- build: control list ---------- */
+const CTL=["Only your number can ask.","Read-only to start.","You approve anything that goes out.","Your accounts, your logins."];
+$('ctlList').innerHTML=CTL.map((c,i)=>`<div class="ctl" id="ct${i}"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="26" fill="#C4623F"/><path id="ck${i}" d="M16 29 L25 38 L41 20" fill="none" stroke="#FBFAF6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg>${c}</div>`).join('');
+
+/* ---------- render ---------- */
+function render(t){
+  // ===== Scene 1+2: scattered -> connect (0-10s) =====
+  const h1=$('h1');
+  const useB=t>=5.6;
+  const want=useB?'B':'A';
+  if(h1.dataset.v!==want){h1.innerHTML=words(useB?H1B:H1A);h1.dataset.v=want}
+  const ws=h1.querySelectorAll('.word');
+  const s1out=1-eio(seg(t,5.1,5.6));
+  ws.forEach((w,i)=>{
+    if(!useB){const p=eo(seg(t,.3+i*.16,.9+i*.16));show(w,p*s1out,0,(1-p)*40)}
+    else{const p=eo(seg(t,5.8+i*.18,6.5+i*.18));const o=p*(1-eio(seg(t,9.4,10)));show(w,o,0,(1-p)*40)}
+  });
+  show($('s1sub'),win(t,2.0,5.6,.7,.5),0,(1-eo(seg(t,2,2.7)))*20);
+  // timer: counts up to 1:00:00 to dramatise "an hour"
+  const tp=eio(seg(t,2.6,5.0));const secs=Math.round(tp*3600);
+  $('timer').textContent=`⏱ ${String(Math.floor(secs/3600)).padStart(1,'0')}:${String(Math.floor(secs/60)%60).padStart(2,'0')}:${String(secs%60).padStart(2,'0')}`;
+  show($('timer'),win(t,2.6,5.6,.4,.5));
+
+  // chips float, then fly to hub
+  let linkSvg='';
+  CHIPS.forEach((c,i)=>{
+    const el=$('c'+i);
+    const pin=back(seg(t,.5+i*.22,1.3+i*.22));
+    const fx=Math.sin(t*1.1+i*1.7)*10, fy=Math.cos(t*.9+i*2.1)*12;
+    const fly=eio(seg(t,6.4+i*.12,7.8+i*.12));
+    const w=el.offsetWidth,h=el.offsetHeight;
+    const cx=c.x+w/2, cy=c.y+h/2;
+    const tx=lerp(fx,HUB.x-cx,fly), ty=lerp(fy,HUB.y-cy,fly);
+    const sc=lerp(1,.25,fly)*Math.max(.001,pin);
+    show(el,Math.min(1,pin)*(1-seg(t,7.4+i*.12,7.9+i*.12)),tx,ty,sc);
+    // links drawn while flying
+    const lp=eo(seg(t,6.0+i*.1,6.8+i*.1))*(1-seg(t,8.6,9.4));
+    if(lp>0){linkSvg+=`<line x1="${cx+fx}" y1="${cy+fy}" x2="${lerp(cx+fx,HUB.x,lp)}" y2="${lerp(cy+fy,HUB.y,lp)}" stroke="#C4623F" stroke-opacity=".5" stroke-width="3" stroke-dasharray="8 10"/>`}
+  });
+  $('links').innerHTML=linkSvg;
+  // hub
+  const hubIn=back(seg(t,6.0,6.8));
+  const pulse=1+Math.max(0,Math.sin((t-7.9)*9))*.08*seg(t,7.8,8.0)*(1-seg(t,8.6,9));
+  const hubOut=eio(seg(t,9.4,10.4));
+  show($('hub'),hubIn*Math.pow(1-hubOut,2),0,0,Math.max(.001,hubIn)*pulse*lerp(1,4,hubOut));$('hub').style.color=`rgba(251,250,246,${1-seg(t,9.2,9.5)})`;
+
+  // ===== Scene 3: dashboard (10-24) / Scene 4 shrink (24-38) =====
+  const dash=$('dash');
+  const dIn=eo(seg(t,9.8,11.0));
+  const dOut=1-eio(seg(t,37.4,38.2));
+  const shrink=eio(seg(t,23.6,25.0));
+  const sc=lerp(lerp(.92,1,dIn),.66,shrink);
+  const left=lerp(160,80,shrink), top=lerp(150,170,shrink);
+  dash.style.left=left+'px';dash.style.top=top+'px';
+  dash.style.opacity=dIn*dOut;dash.style.visibility=dIn*dOut<=0?'hidden':'visible';
+  dash.style.transform=`translateY(${(1-dIn)*40}px) scale(${sc})`;
+  $('live').style.opacity=.45+.55*Math.abs(Math.sin(t*2.4));
+  const K=[[24180,0],[8420,1],[3150,2],[14,3]];
+  K.forEach(([v,i])=>{
+    const p=eo(seg(t,10.8+i*.35,11.4+i*.35));
+    show($('k'+i),p,0,(1-p)*24);
+    const cnt=eio(seg(t,11.0+i*.35,12.8+i*.35));
+    $('v'+i).textContent=i===3?Math.round(v*cnt):gbp(v*cnt);
+  });
+  // line chart draw
+  const lp=eio(seg(t,12.4,15.4));
+  $('lp').setAttribute('stroke-dashoffset',1-lp);
+  $('lcr').setAttribute('width',896*lp);
+  const lh=back(seg(t,15.2,15.7));$('lh').setAttribute('r',Math.max(0,10*lh));
+  // bars
+  LEADS.forEach((l,i)=>{const p=eo(seg(t,13.4+i*.25,14.6+i*.25));const w=p*l[1]*15;$('b'+i).setAttribute('width',w);const tt=$('bt'+i);tt.setAttribute('x',120+w+12);tt.textContent=p>.05?Math.round(l[1]*p):''});
+  // todos
+  [0,1,2].forEach(i=>{const p=eo(seg(t,15.6+i*.4,16.3+i*.4));show($('t'+i),p,(1-p)*30,0)});
+  // dashboard caption
+  const cap=$('dashCap');
+  cap.style.fontSize='64px';
+  if(t<19.6){cap.textContent='Everything, live on one screen.'}else{cap.textContent='No exports. No logging in to five apps.'}
+  const c1=Math.min(eo(seg(t,16.6,17.3)),1-eio(seg(t,19.0,19.5)));
+  const c2=Math.min(eo(seg(t,19.7,20.4)),1-eio(seg(t,23.2,23.7)));
+  const cv=t<19.6?c1:c2;
+  show(cap,cv,0,(1-cv)*20);
+  cap.style.top='962px';
+  // KPI highlight during WhatsApp answer
+  const hl=eo(seg(t,30.0,30.6))*(1-eio(seg(t,36.5,37.2)));
+  const k2=$('k2');k2.style.borderColor=`rgba(196,98,63,${hl})`;k2.style.boxShadow=`0 0 0 ${10*hl}px rgba(196,98,63,${.16*hl})`;
+
+  // ===== Scene 4: WhatsApp (24-38) =====
+  const ph=$('phone');
+  const pIn=eo(seg(t,24.2,25.4)), pOut=1-eio(seg(t,37.4,38.2));
+  show(ph,pIn*pOut,(1-pIn)*520,0);
+  show($('waCap'),win(t,24.8,38.0,.7,.6),0,(1-eo(seg(t,24.8,25.5)))*24);
+  show($('waSub'),win(t,25.4,38.0,.7,.6));
+  // typing into input
+  const q='Who still owes us money?';
+  const ty=seg(t,26.0,27.4);
+  const pin=$('pin');
+  if(t<27.6&&ty>0){pin.textContent=q.slice(0,Math.round(q.length*ty));pin.style.color='#E9EDEF'}
+  else if(t>=33.0&&t<33.9){const a='Yes, draft it.';pin.textContent=a.slice(0,Math.round(a.length*seg(t,33.0,33.7)));pin.style.color='#E9EDEF'}
+  else{pin.textContent='Message';pin.style.color='#8696A0'}
+  const pop=(id,a)=>{const p=back(seg(t,a,a+.45));show($(id),Math.min(1,seg(t,a,a+.2)*1.0),0,(1-Math.min(1,p))*16,Math.max(.001,lerp(.9,1,Math.min(1,p))))};
+  pop('m1',27.6);
+  const typing=seg(t,28.1,28.3)*(1-seg(t,29.6,29.7));
+  show($('typ'),typing);
+  document.querySelectorAll('#typ i').forEach((d,i)=>{d.style.transform=`translateY(${-6*Math.max(0,Math.sin(t*9-i*.9))}px)`});
+  $('pstat').textContent=(t>28.1&&t<29.7)||(t>34.3&&t<35.3)?'typing…':'online';
+  pop('m2',29.7);
+  pop('m3',33.9);
+  const typ2=seg(t,34.3,34.5)*(1-seg(t,35.2,35.3));
+  if(t>34.2&&t<35.4){const ty2=$('typ');ty2.style.top='566px';show(ty2,typ2)}else{$('typ').style.top='270px'}
+  pop('m4',35.3);
+  // sync line from reply bubble to KPI tile
+  const sp=eio(seg(t,30.0,31.0))*(1-eio(seg(t,36.5,37.2)));
+  const x1=1292,y1=400, x2=80+(812+181)*.66, y2=170+110*.66;
+  $('syncPath').setAttribute('d',`M${x1},${y1} C1200,90 ${x2+40},70 ${x2},${y2}`);
+  $('sync').style.opacity=sp;
+  $('syncPath').setAttribute('stroke-dashoffset',-t*40);
+  const along=(t*0.6)%1;const P=$('syncPath');
+  if(sp>0){const L=P.getTotalLength();const pt=P.getPointAtLength(L*along);$('syncDot').setAttribute('cx',pt.x);$('syncDot').setAttribute('cy',pt.y)}
+
+  // ===== Scene 5: Morning summary (38-44.5) =====
+  const ck=win(t,38.4,44.6,.8,.6);
+  show($('clock'),ck,0,(1-eo(seg(t,38.4,39.2)))*30);
+  const nIn=back(seg(t,39.6,40.3));
+  show($('notif'),Math.min(1,seg(t,39.6,39.9))*(1-eio(seg(t,44.0,44.6))),0,(1-Math.min(1,nIn))*-120,Math.max(.001,lerp(.94,1,Math.min(1,nIn))));
+  show($('mornCap'),win(t,40.6,44.6,.6,.6));
+
+  // ===== Scene 6: Control (44.6-50.6) =====
+  const cH=win(t,44.8,50.6,.7,.5);
+  show($('ctlH'),cH,0,(1-eo(seg(t,44.8,45.5)))*24);
+  CTL.forEach((c,i)=>{const a=45.6+i*.7;const p=eo(seg(t,a,a+.5));show($('ct'+i),p*(1-eio(seg(t,50.1,50.6))),(1-p)*-30,0);$('ck'+i).setAttribute('stroke-dashoffset',1-eio(seg(t,a+.2,a+.7)))});
+  const sh=$('shield');
+  show(sh,win(t,45.0,50.6,.5,.5),0,0,lerp(.9,1,eo(seg(t,45,46))));
+  $('shieldP').setAttribute('stroke-dashoffset',1-eio(seg(t,45.0,46.6)));
+  $('shieldC').setAttribute('stroke-dashoffset',1-eio(seg(t,48.4,49.2)));
+
+  // ===== Scene 7: End (50.6-56) =====
+  const e1=eo(seg(t,50.9,51.6)), e2=eo(seg(t,51.7,52.4)), e3=eo(seg(t,52.7,53.3)), e4=eo(seg(t,53.3,53.9)), e5=eo(seg(t,53.8,54.4));
+  show($('end1'),e1,0,(1-e1)*30);
+  show($('end2'),e2,0,(1-e2)*30);
+  show($('end3'),e3,0,(1-e3)*20);
+  show($('end4'),e4,0,(1-e4)*20);
+  show($('end5'),e5);
+
+  // background wash drifts
+  $('wash').style.transform=`translate(${Math.sin(t*.2)*60}px,${Math.cos(t*.17)*40}px)`;
+}
+window.DURATION=DURATION;window.render=render;
+document.fonts.ready.then(()=>{render(0);window.__ready=true});
+</script>
+</body>
+</html>

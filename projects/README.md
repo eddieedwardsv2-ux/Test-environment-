@@ -10,6 +10,7 @@ Deliverables live here.
 | `ai-os-setup-kit/` | the 90-day priority (paused until the first friend set-up) |
 | `youtube-channel/` | real r5 journey Short produced on media branch / PR #3; remaining checks and integration open |
 | `bitcoin-newsletter/` | side project, only when Charlie asks |
+| `command-centre-film/` | 56s launch video for the Business Command Centre idea (17 Oct); sample data, no audio yet |
 | `second-brain-test/` | test: second-brain-os vs this repo on backlinks (Charlie, 15 Oct) |
 
 Current cross-project evidence and next actions: [status review, 12 October](status-review-2026-10-12.md).
