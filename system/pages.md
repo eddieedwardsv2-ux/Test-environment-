@@ -33,6 +33,11 @@ OS Guide) also need their facts checked when a part of the OS changes.
 | **OS Guide, new look** (preview from the frontend-design trial; Charlie compares it with the live Guide, Desk `qm-frontend-design`) | https://claude.ai/artifact/WjXLNv4SiTPSDEzuHH8Abe | `system/guide-preview/guide-preview.html` | edit by hand; delete if the verdict is drop or later |
 | **Thread Notes No1** (7 Oct; private conversation, so its content never comes into this public repo; kept, Charlie 9 Oct) | https://claude.ai/artifact/PQn4jTAa9PzUizgtYynEFW | none in the repo | none |
 | **Flashcards** (parked) | https://claude.ai/artifact/BSzHf834mYsTUZJnyVo144 | `learning/flashcards-app.html` | none; its `cards` database is the source of truth. `learning/flashcards.md` is a backup: regenerate it after adding cards |
+| **Business Command Centre** (8-slide sales deck: live dashboard plus WhatsApp assistant for small businesses; placeholders for prices and name) | https://claude.ai/artifact/4qjwwGNWD6FLfW15qhiqg3 | its own files on the page (Slides type) | edit slides on the page or ask Claude |
+| **Command Centre Launch** (17 Oct: the same deck's text in an Apple-keynote style, dark, gradient accents, auto builds; video version in `projects/command-centre-film/`) | https://claude.ai/artifact/CZBGf96hM1GLMjdepPtNij | its own files on the page (Slides type) | edit slides on the page or ask Claude |
+| **ExplAIned Logos** (made 16 Oct in another session; found unlisted 17 Oct, contents not checked) | https://claude.ai/artifact/Q7f5QcjFhyTLjeQEJ82B26 | not recorded | check what it is before editing |
+| **Loops to Graphs** (made 16 Oct in another session; found unlisted 17 Oct, contents not checked) | https://claude.ai/artifact/92stZWJj2VMSJUzS83Gy4p | not recorded | check what it is before editing |
+| **Screens, Not Paragraphs** (made 15 Oct in another session; found unlisted 17 Oct, contents not checked) | https://claude.ai/artifact/W5qTt7rkCHbPetaKCPTUGG | not recorded | check what it is before editing |
 
 Check any page looks right: `python3 tools/screenshot.py <page>`, then look
 at the PNGs (needs `pip install playwright` each cloud session).
