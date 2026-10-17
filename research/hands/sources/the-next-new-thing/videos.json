@@ -1,5 +1,570 @@
 [
  {
+  "id": "kqn_mSjSWMs",
+  "title": "GitHub’s top: Copy any app, create gorgeous videos, 3d print anything & more",
+  "duration": 1603,
+  "views": 12439,
+  "date": "2026-10-16",
+  "desc": "Resources: https://thenextnewthing.ai/l/github-repos-oct16\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Adam explore AI tools that copy apps, reverse-engineer software, create videos and diagrams, and build custom apps and 3D designs.\n\nAndrew Warner and Adam break down this week’s top GitHub repos, including REA for reverse engineering apps, Matt Pocock’s developer skills, Hyperframes for AI-generated videos, and Ghidra, the NSA’s decompiler. They also explore tools for creating branded diagrams, extending AI coding sessions with compressed context, generating 3D-printable designs with Text to CAD, improving SwiftUI development, and tracking workouts with an open-source gym app. The big takeaway: AI agents are making powerful developer tools more accessible, while specialized tools still offer greater control, better workflows, and more customization.\n\nRepos featured:\n\n• REA — AI-powered reverse engineering for apps\n• Matt Pocock's Skills — Improve AI coding with proven workflows\n• Hyperframes — Create videos using HTML and AI\n• Ghidra — Reverse-engineer software with NSA tools\n• Billion Context — Extend AI coding sessions with compressed context\n• Text to CAD — Generate 3D-printable designs from prompts\n• SwiftUI Agent Skill — Help AI build better SwiftUI apps\n• Gym Tracker You Own — Track workouts with open-source software\n\nTimestamps:\n\n00:00 - Top GitHub Repos: Apps, AI Videos & Diagrams\n00:21 - REA: Copy Apps with AI Agents\n03:27 - REA Demo: Rebuilding the 2048 Game\n05:11 - PS5 Game Files: Reverse Engineering Without an Emulator\n06:29 - Matt Pocock's Skills: Better AI Coding with TDD\n09:32 - Why Developers Use Battle-Tested Skills\n09:42 - Zapier: Supporting AI Builders\n10:10 - Hyperframes: Turn Webpages into Videos\n11:41 - Hyperframes Demo: Generate a YouTube Short\n12:46 - Branded Diagrams: Create Clean, Custom Visuals\n14:40 - Ghidra: The NSA's Decompiler Meets AI Agents\n16:07 - REA + Ghidra: Making Reverse Engineering Easier\n17:00 - Billion Context: Extend AI Coding Sessions\n18:15 - Why Compressed AI Context Can Lose Details\n20:31 - Text to CAD: Generate 3D-Printable Designs\n21:46 - AI + 3D Printing: Build and Refine Products\n23:09 - SwiftUI Agent Skill: Give AI Better Documentation\n24:18 - Gym Tracker You Own: An Open-Source Fitness App\n25:04 - Why Open-Source Apps Can Beat Ad-Driven Alternatives\n26:04 - The Goal: 100,000 Subscribers\n\n👉 Media/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W42",
+  "links": [],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Top GitHub Repos: Apps, AI Videos & Diagrams"
+   },
+   {
+    "t": "00:21",
+    "title": "- REA: Copy Apps with AI Agents"
+   },
+   {
+    "t": "03:27",
+    "title": "- REA Demo: Rebuilding the 2048 Game"
+   },
+   {
+    "t": "05:11",
+    "title": "- PS5 Game Files: Reverse Engineering Without an Emulator"
+   },
+   {
+    "t": "06:29",
+    "title": "- Matt Pocock's Skills: Better AI Coding with TDD"
+   },
+   {
+    "t": "09:32",
+    "title": "- Why Developers Use Battle-Tested Skills"
+   },
+   {
+    "t": "09:42",
+    "title": "- Zapier: Supporting AI Builders"
+   },
+   {
+    "t": "10:10",
+    "title": "- Hyperframes: Turn Webpages into Videos"
+   },
+   {
+    "t": "11:41",
+    "title": "- Hyperframes Demo: Generate a YouTube Short"
+   },
+   {
+    "t": "12:46",
+    "title": "- Branded Diagrams: Create Clean, Custom Visuals"
+   },
+   {
+    "t": "14:40",
+    "title": "- Ghidra: The NSA's Decompiler Meets AI Agents"
+   },
+   {
+    "t": "16:07",
+    "title": "- REA + Ghidra: Making Reverse Engineering Easier"
+   },
+   {
+    "t": "17:00",
+    "title": "- Billion Context: Extend AI Coding Sessions"
+   },
+   {
+    "t": "18:15",
+    "title": "- Why Compressed AI Context Can Lose Details"
+   },
+   {
+    "t": "20:31",
+    "title": "- Text to CAD: Generate 3D-Printable Designs"
+   },
+   {
+    "t": "21:46",
+    "title": "- AI + 3D Printing: Build and Refine Products"
+   },
+   {
+    "t": "23:09",
+    "title": "- SwiftUI Agent Skill: Give AI Better Documentation"
+   },
+   {
+    "t": "24:18",
+    "title": "- Gym Tracker You Own: An Open-Source Fitness App"
+   },
+   {
+    "t": "25:04",
+    "title": "- Why Open-Source Apps Can Beat Ad-Driven Alternatives"
+   },
+   {
+    "t": "26:04",
+    "title": "- The Goal: 100,000 Subscribers"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "AiZ4HWBlLow",
+  "title": "Copy any software (free), clone viral videos, and more",
+  "duration": 777,
+  "views": 17701,
+  "date": "2026-10-15",
+  "desc": "https://thenextnewthing.ai/l/corey-ganim-shownotes-oct15\nPresented by Zapier: https://zapier.com/\nAndrew Warner and Corey Ganim explore five AI-powered business opportunities, from reverse-engineering software for free to getting products discovered through AI agents and cloning viral video formats.\n\nIn this episode, discover REA (Reverse Engineer Anything), a tool that lets you recreate software products and customize your own versions. Andrew and Corey discuss Grok Bot’s new connector marketplace and how businesses can turn their workflows into plugins that AI agents can discover and use. They also explore Agent Use Cases, the new Grok Voice 3.0 model, and Hypit, which helps recreate viral video formats. Finally, they break down how 1 Million Pixels is reportedly generating $37,000 in revenue in just five days—and what this says about the business opportunities emerging from simple ideas and AI-powered distribution.\n\nLinks featured:\n\n- Reverse Engineer Anything (REA): https://rea.tools/\n- Demo video: https://www.youtube.com/watch?v=FnB9tHKBJXQ\n- Grok Bot Plugin Marketplace: https://x.ai/bot/marketplace/submit-a-plugin\n- Discussion by Shub Gaur: https://x.com/shubgaur/status/2110436619895570567\n- Agent Use Cases: https://agentusecases.ai/\n- Alex Finn’s post: https://x.com/AlexFinn/status/2110082377552888312\n- Hypit: https://hypit.ai/\n- Alex Prompter’s post: https://x.com/alex_prompter/status/2110630504819241137\n- 1 Million Pixels: https://1milllionpixels.com/\n- MakerThrive’s post: https://x.com/MakerThrive/status/2092776507018006976\n- Zapier: https://zapier.com/\n\n00:00 - Five AI Launches and Business Opportunities\n00:18 - REA: Reverse Engineer Almost Any Software\n00:52 - Clone Existing Apps and Rebuild Expensive Tools\n01:54 - Grok Bot: A New Connector Marketplace\n02:51 - Turn Your Product Into an AI Agent Plugin\n03:39 - Automate AI Assessments With Connectors\n04:20 - Agent Use Cases: Find Ideas for AI Agents\n05:03 - Can AI Use-Case Marketplaces Become Businesses?\n06:32 - Grok Voice 3.0: The Future of AI Receptionists\n07:48 - Hypit: Recreate Viral Videos With AI\n08:45 - Why Short-Form AI Videos Can Drive More Views\n09:50 - 1 Million Pixels: A Surprisingly Profitable Idea\n10:24 - How a Pixel Advertising Site Made $37,000 in Five Days\n11:04 - Why Simple Business Ideas Can Work\n11:45 - Is This a Real Business or a Short-Term Cash Grab?\n12:34 - What AI Means for New Business Opportunities\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W42",
+  "links": [
+   {
+    "name": "Reverse Engineer Anything (REA)",
+    "url": "https://rea.tools/"
+   },
+   {
+    "name": "Demo video",
+    "url": "https://www.youtube.com/watch?v=FnB9tHKBJXQ"
+   },
+   {
+    "name": "Grok Bot Plugin Marketplace",
+    "url": "https://x.ai/bot/marketplace/submit-a-plugin"
+   },
+   {
+    "name": "Discussion by Shub Gaur",
+    "url": "https://x.com/shubgaur/status/2110436619895570567"
+   },
+   {
+    "name": "Agent Use Cases",
+    "url": "https://agentusecases.ai/"
+   },
+   {
+    "name": "Alex Finn’s post",
+    "url": "https://x.com/AlexFinn/status/2110082377552888312"
+   },
+   {
+    "name": "Hypit",
+    "url": "https://hypit.ai/"
+   },
+   {
+    "name": "Alex Prompter’s post",
+    "url": "https://x.com/alex_prompter/status/2110630504819241137"
+   },
+   {
+    "name": "1 Million Pixels",
+    "url": "https://1milllionpixels.com/"
+   },
+   {
+    "name": "MakerThrive’s post",
+    "url": "https://x.com/MakerThrive/status/2092776507018006976"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Five AI Launches and Business Opportunities"
+   },
+   {
+    "t": "00:18",
+    "title": "- REA: Reverse Engineer Almost Any Software"
+   },
+   {
+    "t": "00:52",
+    "title": "- Clone Existing Apps and Rebuild Expensive Tools"
+   },
+   {
+    "t": "01:54",
+    "title": "- Grok Bot: A New Connector Marketplace"
+   },
+   {
+    "t": "02:51",
+    "title": "- Turn Your Product Into an AI Agent Plugin"
+   },
+   {
+    "t": "03:39",
+    "title": "- Automate AI Assessments With Connectors"
+   },
+   {
+    "t": "04:20",
+    "title": "- Agent Use Cases: Find Ideas for AI Agents"
+   },
+   {
+    "t": "05:03",
+    "title": "- Can AI Use-Case Marketplaces Become Businesses?"
+   },
+   {
+    "t": "06:32",
+    "title": "- Grok Voice 3.0: The Future of AI Receptionists"
+   },
+   {
+    "t": "07:48",
+    "title": "- Hypit: Recreate Viral Videos With AI"
+   },
+   {
+    "t": "08:45",
+    "title": "- Why Short-Form AI Videos Can Drive More Views"
+   },
+   {
+    "t": "09:50",
+    "title": "- 1 Million Pixels: A Surprisingly Profitable Idea"
+   },
+   {
+    "t": "10:24",
+    "title": "- How a Pixel Advertising Site Made $37,000 in Five Days"
+   },
+   {
+    "t": "11:04",
+    "title": "- Why Simple Business Ideas Can Work"
+   },
+   {
+    "t": "11:45",
+    "title": "- Is This a Real Business or a Short-Term Cash Grab?"
+   },
+   {
+    "t": "12:34",
+    "title": "- What AI Means for New Business Opportunities"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "7rVTo_sy4Po",
+  "title": "Replace ElevenLabs, Jira, Slack & Granola for Your AI Agents (Free on GitHub)",
+  "duration": 1556,
+  "views": 35853,
+  "date": "2026-10-14",
+  "desc": "Link to Resource: https://thenextnewthing.ai/l/github-agent-subs-oct14\nGet Windows Early Access: https://thenextnewthing.ai/l/agent-subs-windows\nPresented by Zapier: https://zapier.com/\n\nAndrew Warner shares seven open-source alternatives to popular paid AI tools that can help you reduce subscription costs, customize your workflows, and build a more capable team of AI agents.\n\nDiscover FluidVoice and Fluid Meet for private, on-device dictation and meeting notes, Paperclip for managing teams of AI agents, Basic Memory for storing agent knowledge in plain Markdown files, and Free LLM API for connecting to hundreds of free model options. Andrew also explores VoiceStudio for AI voice generation, Scrapling for web scraping, and Buzz for bringing AI agents into team chat. Throughout the episode, he explains what each tool does well, where it falls short, and how open-source alternatives can give you more control over your data, tools, and workflows.\n\nRepos featured:\n\n- FluidVoice: https://github.com/altic-dev/FluidVoice\n- Paperclip: https://github.com/paperclipai/paperclip\n- Basic Memory: https://github.com/basicmachines-co/basic-memory\n- Free LLM API: https://github.com/tashfeenahmed/freellmapi\n- VoiceStudio: https://github.com/debpalash/VoiceStudio\n- Scrapling: https://github.com/D4Vinci/Scrapling\n- Buzz: https://github.com/block/buzz\n\n00:00 - AI Subscriptions: Find free open-source alternatives\n00:27 - FluidVoice: Replace paid meeting transcription tools\n01:03 - Fluid Meet: Record private on-device meetings\n01:48 - Windows Early Access: Get access to Fluid Meet\n03:09 - Paperclip: Manage teams of AI agents\n04:30 - Agent Management: Coordinate humans and AI workers\n06:18 - Basic Memory: Store agent knowledge in Markdown\n07:30 - Open-Source Memory: Connect agents through local files\n09:27 - Zapier: Reduce repetitive AI automation costs\n10:30 - Free LLM API: Connect hundreds of free models\n12:36 - Model Switching: Reduce AI usage costs\n14:42 - VoiceStudio: Generate voices without subscriptions\n16:30 - AI Voice Tools: Create narration and audiobooks\n18:27 - Scrapling: Scrape websites for AI agents\n19:39 - Web Scraping: Extract clean data for AI workflows\n21:00 - Buzz: Bring AI agents into team chat\n22:30 - Agent Collaboration: Give AI workers their own seats\n24:27 - Open-Source Tools: Choose platforms built for agents\n25:30 - Subscribe: Help us reach 100,000 subscribers\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W42",
+  "links": [
+   {
+    "name": "FluidVoice",
+    "url": "https://github.com/altic-dev/FluidVoice"
+   },
+   {
+    "name": "Paperclip",
+    "url": "https://github.com/paperclipai/paperclip"
+   },
+   {
+    "name": "Basic Memory",
+    "url": "https://github.com/basicmachines-co/basic-memory"
+   },
+   {
+    "name": "Free LLM API",
+    "url": "https://github.com/tashfeenahmed/freellmapi"
+   },
+   {
+    "name": "VoiceStudio",
+    "url": "https://github.com/debpalash/VoiceStudio"
+   },
+   {
+    "name": "Scrapling",
+    "url": "https://github.com/D4Vinci/Scrapling"
+   },
+   {
+    "name": "Buzz",
+    "url": "https://github.com/block/buzz"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- AI Subscriptions: Find free open-source alternatives"
+   },
+   {
+    "t": "00:27",
+    "title": "- FluidVoice: Replace paid meeting transcription tools"
+   },
+   {
+    "t": "01:03",
+    "title": "- Fluid Meet: Record private on-device meetings"
+   },
+   {
+    "t": "01:48",
+    "title": "- Windows Early Access: Get access to Fluid Meet"
+   },
+   {
+    "t": "03:09",
+    "title": "- Paperclip: Manage teams of AI agents"
+   },
+   {
+    "t": "04:30",
+    "title": "- Agent Management: Coordinate humans and AI workers"
+   },
+   {
+    "t": "06:18",
+    "title": "- Basic Memory: Store agent knowledge in Markdown"
+   },
+   {
+    "t": "07:30",
+    "title": "- Open-Source Memory: Connect agents through local files"
+   },
+   {
+    "t": "09:27",
+    "title": "- Zapier: Reduce repetitive AI automation costs"
+   },
+   {
+    "t": "10:30",
+    "title": "- Free LLM API: Connect hundreds of free models"
+   },
+   {
+    "t": "12:36",
+    "title": "- Model Switching: Reduce AI usage costs"
+   },
+   {
+    "t": "14:42",
+    "title": "- VoiceStudio: Generate voices without subscriptions"
+   },
+   {
+    "t": "16:30",
+    "title": "- AI Voice Tools: Create narration and audiobooks"
+   },
+   {
+    "t": "18:27",
+    "title": "- Scrapling: Scrape websites for AI agents"
+   },
+   {
+    "t": "19:39",
+    "title": "- Web Scraping: Extract clean data for AI workflows"
+   },
+   {
+    "t": "21:00",
+    "title": "- Buzz: Bring AI agents into team chat"
+   },
+   {
+    "t": "22:30",
+    "title": "- Agent Collaboration: Give AI workers their own seats"
+   },
+   {
+    "t": "24:27",
+    "title": "- Open-Source Tools: Choose platforms built for agents"
+   },
+   {
+    "t": "25:30",
+    "title": "- Subscribe: Help us reach 100,000 subscribers"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "-1qUSNwKHis",
+  "title": "I gave 10 AI agents real jobs. Here's what they did",
+  "duration": 1315,
+  "views": 7909,
+  "date": "2026-10-13",
+  "desc": "Link to Resource: https://thenextnewthing.ai/l/grokbot-oct13\nPresented by Zapier: https://zapier.com/\nAndrew Warner shares how he uses GrokBot AI agents to run his business and personal life, from managing rental properties and email to getting publicity, selling items, and planning his anniversary.\n\nIn this episode, Andrew walks through real examples of how he uses specialized GrokBot agents to automate everyday work. He demonstrates how his PR agent finds opportunities to promote his work, how a property management agent tracks rent and creates invoices, and how Zapier helps reduce costly AI automation usage. You'll also see agents managing Facebook Marketplace listings, organizing email and physical mail, updating WhatsApp contacts, cleaning up an address book, and planning anniversary gifts and experiences. Andrew shares the actual workflows, results, and mistakes along the way, showing what it takes to build a team of AI agents that can handle meaningful tasks.\n\n**Links featured:**\n\n- GrokBot: https://x.ai/bot\n- Zapier: https://zapier.com/\n- Facebook Marketplace: https://www.facebook.com/marketplace/\n- PhysicalAddress.com: https://physicaladdress.com/\n\n00:00 - GrokBot: Run your business with AI agents\n00:17 - PR Agent: Discover publicity opportunities automatically\n00:49 - Perry: Generate daily promotional ideas\n01:32 - GrokBot: Create content that gets attention\n02:11 - AI Publicity: Turn viral posts into follow-ups\n03:26 - Notion: Track testimonials and business wins\n04:07 - Property Management: Automate rental property tasks\n04:37 - Maggie: Detect rent payments automatically\n05:11 - AI Invoicing: Track tenant bills in Notion\n05:26 - Utility Bills: Calculate accurate tenant charges\n06:30 - Zapier: Reduce expensive AI automation costs\n07:59 - NextGen Zaps: Replace repetitive agent tasks\n08:35 - Facebook Marketplace: Sell items using AI agents\n09:28 - Marketplace Manager: Automate listings and negotiations\n10:15 - AI Sales: Track offers and completed sales\n11:20 - Work Mail Butler: Organize your email inbox\n12:13 - AI Agents: Learn from mistakes and improve\n13:42 - Postman: Manage physical mail automatically\n14:44 - GrokBot: Handle government correspondence\n15:23 - WhatsApp: Identify and organize unknown contacts\n16:44 - Address Book: Clean up duplicate contacts\n17:21 - Contact Management: Back up and merge records\n18:48 - Anniversary Agent: Find personalized gift ideas\n19:39 - AI Planning: Organize anniversary experiences\n20:53 - GrokBot: Review and edit AI-generated documents\n21:32 - AI Workflows: Refine results through feedback\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W42",
+  "links": [
+   {
+    "name": "GrokBot",
+    "url": "https://x.ai/bot"
+   },
+   {
+    "name": "Facebook Marketplace",
+    "url": "https://www.facebook.com/marketplace/"
+   },
+   {
+    "name": "PhysicalAddress.com",
+    "url": "https://physicaladdress.com/"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- GrokBot: Run your business with AI agents"
+   },
+   {
+    "t": "00:17",
+    "title": "- PR Agent: Discover publicity opportunities automatically"
+   },
+   {
+    "t": "00:49",
+    "title": "- Perry: Generate daily promotional ideas"
+   },
+   {
+    "t": "01:32",
+    "title": "- GrokBot: Create content that gets attention"
+   },
+   {
+    "t": "02:11",
+    "title": "- AI Publicity: Turn viral posts into follow-ups"
+   },
+   {
+    "t": "03:26",
+    "title": "- Notion: Track testimonials and business wins"
+   },
+   {
+    "t": "04:07",
+    "title": "- Property Management: Automate rental property tasks"
+   },
+   {
+    "t": "04:37",
+    "title": "- Maggie: Detect rent payments automatically"
+   },
+   {
+    "t": "05:11",
+    "title": "- AI Invoicing: Track tenant bills in Notion"
+   },
+   {
+    "t": "05:26",
+    "title": "- Utility Bills: Calculate accurate tenant charges"
+   },
+   {
+    "t": "06:30",
+    "title": "- Zapier: Reduce expensive AI automation costs"
+   },
+   {
+    "t": "07:59",
+    "title": "- NextGen Zaps: Replace repetitive agent tasks"
+   },
+   {
+    "t": "08:35",
+    "title": "- Facebook Marketplace: Sell items using AI agents"
+   },
+   {
+    "t": "09:28",
+    "title": "- Marketplace Manager: Automate listings and negotiations"
+   },
+   {
+    "t": "10:15",
+    "title": "- AI Sales: Track offers and completed sales"
+   },
+   {
+    "t": "11:20",
+    "title": "- Work Mail Butler: Organize your email inbox"
+   },
+   {
+    "t": "12:13",
+    "title": "- AI Agents: Learn from mistakes and improve"
+   },
+   {
+    "t": "13:42",
+    "title": "- Postman: Manage physical mail automatically"
+   },
+   {
+    "t": "14:44",
+    "title": "- GrokBot: Handle government correspondence"
+   },
+   {
+    "t": "15:23",
+    "title": "- WhatsApp: Identify and organize unknown contacts"
+   },
+   {
+    "t": "16:44",
+    "title": "- Address Book: Clean up duplicate contacts"
+   },
+   {
+    "t": "17:21",
+    "title": "- Contact Management: Back up and merge records"
+   },
+   {
+    "t": "18:48",
+    "title": "- Anniversary Agent: Find personalized gift ideas"
+   },
+   {
+    "t": "19:39",
+    "title": "- AI Planning: Organize anniversary experiences"
+   },
+   {
+    "t": "20:53",
+    "title": "- GrokBot: Review and edit AI-generated documents"
+   },
+   {
+    "t": "21:32",
+    "title": "- AI Workflows: Refine results through feedback"
+   }
+  ],
+  "transcript": null
+ },
+ {
+  "id": "EUavfcfHtu4",
+  "title": "Your AI Website Looks Like Slop. Here's the Free Fix.",
+  "duration": 1102,
+  "views": 30400,
+  "date": "2026-10-12",
+  "desc": "Link to Resources: https://thenextnewthing.ai/my-resources\nPresented by Zapier: https://zapier.com/\nAndrew Warner sits down with Paul Bakaus, creator of Impeccable, to show how this free, open-source tool helps AI coding agents create more distinctive, polished, and functional website designs.\n\nInstead of settling for generic AI-generated websites, Impeccable critiques your design, asks about your goals and target audience, explores different visual directions, and helps you refine the results through live visual feedback. Paul demonstrates how to generate design variations, edit elements directly on a development server, draw annotations, add new sections, and improve websites using design systems and reusable visual styles. The conversation also explores how Impeccable works with Claude Code and Codex, detects common AI design patterns, and makes better design accessible to developers building with AI.\n\nLinks featured\n\n- Impeccable: https://github.com/pbakaus/impeccable\n- Zapier: https://zapier.com/\n\n00:00 - Impeccable: Transform generic AI website designs\n00:25 - AI Design: Recognize common website patterns\n00:54 - Impeccable Worlds: Explore different visual directions\n02:06 - Design Systems: Understand and refine creative choices\n04:21 - Impeccable Live: Edit websites visually in real time\n05:06 - Live Editing: Go beyond basic AI annotations\n06:18 - Design Systems: Preview fonts, colors, and styles\n06:45 - Visual Picker: Select and improve page elements\n07:21 - Live Feedback: Edit copy and use voice commands\n07:48 - Annotations: Draw directly on website designs\n08:18 - Design Variations: Generate and compare alternatives\n09:27 - Insert Mode: Add new website sections visually\n10:12 - AI Design: Collaborate with your coding agent\n10:48 - Design Critique: Identify and fix website problems\n12:36 - Design Partner: Customize websites for your audience\n13:21 - Impeccable: Keep the open-source tool free\n15:09 - GitHub Repo: Explore agent-specific implementations\n15:45 - Rust Engine: Detect common AI design patterns\n16:30 - Installation: Add Impeccable to your project\n16:48 - Before and After: Compare AI-generated websites\n17:24 - Design Gallery: Create more distinctive websites\n17:51 - Functional Design: Balance aesthetics and usability\n\nMedia/Sponsorship Inquiries: https://thenextnewthing.ai/l/sponsor\n\n👉 Join us: https://thenextnewthing.ai/",
+  "week": "2026-W42",
+  "links": [
+   {
+    "name": "Impeccable",
+    "url": "https://github.com/pbakaus/impeccable"
+   }
+  ],
+  "chapters": [
+   {
+    "t": "00:00",
+    "title": "- Impeccable: Transform generic AI website designs"
+   },
+   {
+    "t": "00:25",
+    "title": "- AI Design: Recognize common website patterns"
+   },
+   {
+    "t": "00:54",
+    "title": "- Impeccable Worlds: Explore different visual directions"
+   },
+   {
+    "t": "02:06",
+    "title": "- Design Systems: Understand and refine creative choices"
+   },
+   {
+    "t": "04:21",
+    "title": "- Impeccable Live: Edit websites visually in real time"
+   },
+   {
+    "t": "05:06",
+    "title": "- Live Editing: Go beyond basic AI annotations"
+   },
+   {
+    "t": "06:18",
+    "title": "- Design Systems: Preview fonts, colors, and styles"
+   },
+   {
+    "t": "06:45",
+    "title": "- Visual Picker: Select and improve page elements"
+   },
+   {
+    "t": "07:21",
+    "title": "- Live Feedback: Edit copy and use voice commands"
+   },
+   {
+    "t": "07:48",
+    "title": "- Annotations: Draw directly on website designs"
+   },
+   {
+    "t": "08:18",
+    "title": "- Design Variations: Generate and compare alternatives"
+   },
+   {
+    "t": "09:27",
+    "title": "- Insert Mode: Add new website sections visually"
+   },
+   {
+    "t": "10:12",
+    "title": "- AI Design: Collaborate with your coding agent"
+   },
+   {
+    "t": "10:48",
+    "title": "- Design Critique: Identify and fix website problems"
+   },
+   {
+    "t": "12:36",
+    "title": "- Design Partner: Customize websites for your audience"
+   },
+   {
+    "t": "13:21",
+    "title": "- Impeccable: Keep the open-source tool free"
+   },
+   {
+    "t": "15:09",
+    "title": "- GitHub Repo: Explore agent-specific implementations"
+   },
+   {
+    "t": "15:45",
+    "title": "- Rust Engine: Detect common AI design patterns"
+   },
+   {
+    "t": "16:30",
+    "title": "- Installation: Add Impeccable to your project"
+   },
+   {
+    "t": "16:48",
+    "title": "- Before and After: Compare AI-generated websites"
+   },
+   {
+    "t": "17:24",
+    "title": "- Design Gallery: Create more distinctive websites"
+   },
+   {
+    "t": "17:51",
+    "title": "- Functional Design: Balance aesthetics and usability"
+   }
+  ],
+  "transcript": null
+ },
+ {
   "id": "Wsru44p-J14",
   "title": "This week’s repos: PS5 game on a PC! Turn agents into employees. AI video maker.",
   "duration": 1427,
@@ -2457,6 +3022,17 @@
   "desc": "",
   "date_approx": true,
   "week": "2026-W37",
+  "links": [],
+  "chapters": [],
+  "transcript": null
+ },
+ {
+  "id": "0SDz3rjZBC4",
+  "title": "Get your agent past Web blocks!",
+  "duration": 0,
+  "views": null,
+  "date": null,
+  "desc": "",
   "links": [],
   "chapters": [],
   "transcript": null

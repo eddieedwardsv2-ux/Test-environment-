@@ -24,9 +24,11 @@ Re-test on the current host before relying on these facts.
   Playwright: Cloudflare/login walls), WebFetch.
 - WORKS for listing: video lists, titles, descriptions, chapters
   (yt-dlp `--flat-playlist`; Invidious `https://invidious.f5.si/api/v1/videos/<id>`).
-- WORKS for transcripts, no sign-up: `python3 research/get_transcript.py <creator> <url>`
-  (youtube-transcript.ai's free keyless endpoint). Rate-limited after ~4 calls,
-  so fetch a few videos at a time.
+- **Transcripts BLOCKED since 17 Oct 2026:** youtube-transcript.ai (both its text and MCP
+  routes) now needs a free key, 10 videos a day. `python3 research/get_transcript.py <creator> <url>`
+  sends it from the `YTT_API_KEY` environment secret (and the same secret on GitHub for the
+  queue) once Charlie creates one (Desk card `ytt-api-key`). Also tried 17 Oct: vidIQ's
+  transcript tool (0 credits until 5 Nov) and yt-dlp subtitles (HTTP 429).
 - **Automatic queue (no phone, no sign-up):** add `<creator> <video-id>` lines
   to `research/transcript-queue.txt` and push. GitHub Actions
   (`.github/workflows/transcripts.yml`) runs hourly at :23, fetches up to 9 (3 jobs x 3)

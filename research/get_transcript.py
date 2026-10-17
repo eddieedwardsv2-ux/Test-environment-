@@ -17,6 +17,7 @@ import json
 import re
 import sys
 import time
+import os
 import urllib.request
 from pathlib import Path
 
@@ -33,7 +34,7 @@ def rpc(method, params=None, msg_id=1):
         body["params"] = params
     if msg_id is not None:
         body["id"] = msg_id
-    req = urllib.request.Request(ENDPOINT, json.dumps(body).encode(), HEADERS)
+    req = urllib.request.Request(ENDPOINT, json.dumps(body).encode(), {**HEADERS, **AUTH})
     text = urllib.request.urlopen(req, timeout=180).read().decode()
     if "data:" in text[:30]:  # server-sent-events framing
         text = "".join(l[5:] for l in text.splitlines() if l.startswith("data:"))
@@ -41,13 +42,17 @@ def rpc(method, params=None, msg_id=1):
 
 
 TXT = "https://youtube-transcript.ai/transcript/{video}.txt?lang=en"
+# Since 17 Oct 2026 the service needs a free key (10 a day). Put it in the
+# YTT_API_KEY environment secret (never in git); it is sent as a Bearer header.
+KEY = os.environ.get("YTT_API_KEY", "")
+AUTH = {"Authorization": f"Bearer {KEY}"} if KEY else {}
 
 
 def fetch(video):
     """Plain-text download first: it returns the full transcript. The MCP
     route below cuts transcripts at 120,000 characters (found 2026-10-07 when
     3-4 hour courses came back with only the first 30-97 minutes)."""
-    req = urllib.request.Request(TXT.format(video=video), headers={"User-Agent": "curl/8.5.0", "Accept": "*/*"})
+    req = urllib.request.Request(TXT.format(video=video), headers={"User-Agent": "curl/8.5.0", "Accept": "*/*", **AUTH})
     for attempt in range(3):  # the service briefly refuses back-to-back big downloads
         try:
             text = urllib.request.urlopen(req, timeout=180).read().decode()

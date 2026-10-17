@@ -20,8 +20,8 @@
  "research/hands/site/hands.html": {
   "page": "Quartermaster",
   "url": "https://claude.ai/artifact/QVni63FtP7cG1z9UrajfCL",
-  "sha256": "ee41e360c7722f96",
-  "published": "2026-10-15"
+  "sha256": "f0f31b9428f667ec",
+  "published": "2026-10-17"
  },
  "system/guide/guide.html": {
   "page": "OS Guide",
@@ -50,8 +50,8 @@
  "research/nate-herk/brain/map/brain-map.html": {
   "page": "Brain dashboard",
   "url": "https://claude.ai/artifact/LhRdXG3KpeBnGpxNhFQsjf",
-  "sha256": "cdef52a78b7ae2c8",
-  "published": "2026-10-15"
+  "sha256": "6b5952230b9f7d1f",
+  "published": "2026-10-17"
  },
  "system/merge-map/merge-map.html": {
   "page": "Nate-first map",

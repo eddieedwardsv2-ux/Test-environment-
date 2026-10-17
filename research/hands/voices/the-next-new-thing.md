@@ -1,7 +1,7 @@
 # The Next New Thing: the show's voice
 
 **Now covers 4 weeks (W38 to W41, 21 videos, 115 tools with an opinion), 2026-10-09.**
-Week by week evidence, every point with a verbatim quote and timestamp: [W41](notes/2026-W41.md) · [W40](notes/2026-W40.md) · [W39](notes/2026-W39.md) · [W38](notes/2026-W38.md).
+Week by week evidence, every point with a verbatim quote and timestamp: [W42](notes/2026-W42.md) (no quotes yet: transcripts blocked) · [W41](notes/2026-W41.md) · [W40](notes/2026-W40.md) · [W39](notes/2026-W39.md) · [W38](notes/2026-W38.md).
 The per-tool opinions live in `../weeks/<week>.json` (`opinion`, `our_view`); this page is the summary.
 
 ## Across all four weeks

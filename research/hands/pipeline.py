@@ -44,7 +44,7 @@ for line in listing:
         time.sleep(1)
         pub = dt.datetime.fromtimestamp(j["published"], dt.UTC).date() if j.get("published") else None
         desc = j.get("description", "")
-        v = {"id": vid, "title": title, "duration": int(float(dur or 0)), "views": j.get("viewCount"),
+        v = {"id": vid, "title": title, "duration": int(float(dur)) if dur not in (None, "", "NA") else 0, "views": j.get("viewCount"),
              "date": pub.isoformat() if pub else None, "desc": desc}
         if not pub and approx.isdigit():          # Invidious refused: YouTube's approximate date
             v["date"], v["date_approx"] = f"{approx[:4]}-{approx[4:6]}-{approx[6:]}", True

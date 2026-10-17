@@ -29,6 +29,7 @@ jobs:
           CREATOR: ${{ inputs.creator }}
           VIDEOS: ${{ inputs.videos }}
           SHARD: ${{ matrix.shard }}
+          YTT_API_KEY: ${{ secrets.YTT_API_KEY }}
         run: |
           if [ -n "$CREATOR" ] && [ -n "$VIDEOS" ]; then
             [ "$SHARD" = "1" ] && { python3 research/get_transcript.py "$CREATOR" $VIDEOS || true; }
