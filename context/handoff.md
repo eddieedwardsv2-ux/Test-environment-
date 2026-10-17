@@ -1,3 +1,47 @@
+# Session hand-off
+**Written:** 17 October 2026, 07:40 UK, by Claude (cloud session). Charlie asked for `/session-handoff` after shipping the Command Centre film.
+
+## Working on
+Side work on the Business Command Centre idea (dashboard plus WhatsApp agent for small businesses): a keynote-style deck and a launch film. All of it is shipped. TRADEFLOW is still the active focus (`context/current-focus.md`).
+
+## Summary points
+- Zapier-MCP was added at user scope inside this cloud container only, so it is wiped with the container. Charlie got the Mac steps. Status: needs authentication. Now in `context/todo.md`.
+- New deck: **Command Centre Launch** (https://claude.ai/artifact/CZBGf96hM1GLMjdepPtNij). It keeps the original 8 slides' text word for word in an Apple-keynote look with automatic builds. The original deck is untouched.
+- New film: `projects/command-centre-film/command-centre-film.mp4`, 56s, 1080p, 30fps, no audio. All figures are labelled sample data. Source `index.html` plus `render.js` (Playwright → ffmpeg). Frames were checked by eye and three layout faults fixed.
+- PR #7 merged (`6b31395`). It also carried the Zack Kirk transcript queue entry (`3c08610`).
+- The Brain dashboard and Nate-first map were republished after the router edit and marked. Five unlisted pages were added to `system/pages.md`.
+- Blocked here: installing Impeccable, Taste and HyperFrames (the safety check needs a permission rule), and Higgsfield (needs Charlie's sign-in). Design rules from Impeccable and Taste were read from their published instructions and applied by hand.
+
+## Key files
+`projects/command-centre-film/README.md` (scenes, re-render steps, limits); `system/pages.md`; `context/todo.md` (4 new items at the top of "Needs Charlie"); `AGENTS.md` (router row for the film).
+
+## Where the information lives
+- Original deck: https://claude.ai/artifact/4qjwwGNWD6FLfW15qhiqg3 (its text, speaker notes and placeholders).
+- Higgsfield routes: `references/higgsfield-api.md`. Tool picks: Quartermaster (`research/hands/tools.json`; HyperFrames is its #1 for video).
+- Desk: https://claude.ai/artifact/R7efnQ6QZtGKVsyV1fCuxx, `decisions` collection.
+
+## Decisions made
+- "Ship": Charlie approved merging PR #7 (done).
+- No company name or booking link yet. The film and deck keep the `[Your company name]` and `[Booking link]` placeholders as drafts. Don't ask again.
+- Charlie wants Higgsfield, Impeccable and Taste used. That's approval to install them once a route allows it; don't re-ask.
+
+## Open decisions
+- Desk `audit-fixes-2026-10-16` (open): which of the 5 audit fixes to make.
+- Desk `qm-agent-reach` (answered "yes" 10 Oct): the trial is recorded as approved, but the card was never closed (it's part of tidy-up item 5 on the audit card).
+- Waiting on Charlie: Higgsfield connector sign-in; Zapier-MCP on the Mac; a permission rule for skill installs (or install them on the Mac).
+
+## Pick up here
+1. Read `context/current-focus.md` and continue TRADEFLOW (open item: one unseen enquiry through the Quote Lab).
+2. Read the Desk's `audit-fixes-2026-10-16` answer, if any, and make the fixes chosen.
+3. If Higgsfield is connected: make a hero still and a thumbnail for the film. If skills are allowed: install Impeccable, Taste and HyperFrames into the project and re-check the film with them.
+
+## Carried forward / dropped
+Every section of the previous hand-off is kept below, unchanged, under "Earlier continuations". Nothing was dropped. Its open items (Whisper runtime test, X research media, style-guide reader answers, browser and media branches, page republishing) are still open there or in `context/todo.md`.
+
+---
+
+# Earlier continuations (preserved from previous hand-offs)
+
 # Session hand-off — Whisper installation and free AI tool research, 12 October 2026
 
 ## Working on
