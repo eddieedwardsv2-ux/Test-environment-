@@ -79,6 +79,7 @@ Start at the relevant mini-index, select the needed sections/records, then read 
 | Past decisions | `decisions.md` (new ones at the top, dated) |
 | Projects | `projects/<name>/` (list in `projects/README.md`) |
 | TRADEFLOW quote demo (active focus) | `projects/tradeflow/README.md` (page, tests, what's unverified) |
+| Business Command Centre launch video (source, re-render steps) | `projects/command-centre-film/README.md` |
 | Flashcards and lessons (parked) | `learning/` |
 | BTC technical-analysis newsletter | `projects/bitcoin-newsletter/README.md` (issues and editorial checks) |
 | Creator research, transcripts, commands | `research/README.md` (Corey Haines ↔ NewsJack in `research/corey-haines/`; five-week poteto/Karpathy/Boris comparison in `research/x-five-weeks/README.md`) |
